@@ -161,7 +161,7 @@ export default function ProductPage({ params }: Props) {
               src={product.image}
               alt={product.name}
               fill
-              className="object-cover"
+              className="object-contain p-8"
               priority
               sizes="(max-width: 1024px) 100vw, 50vw"
             />

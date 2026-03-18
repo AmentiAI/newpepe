@@ -20,15 +20,15 @@ export default function ProductCard({ product }: Props) {
   return (
     <div className="glass-card overflow-hidden group hover:border-neon-green/30 transition-all duration-300">
       {/* Image */}
-      <div className="relative h-48 overflow-hidden bg-dark-700">
+      <div className="relative h-64 overflow-hidden bg-dark-800">
         <Image
           src={product.image}
           alt={product.name}
           fill
-          className="object-cover group-hover:scale-105 transition-transform duration-500"
+          className="object-contain p-4 group-hover:scale-105 transition-transform duration-500"
           sizes="(max-width: 768px) 100vw, 33vw"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-dark-900/80 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-dark-900/60 to-transparent pointer-events-none" />
         <span className={`absolute top-3 left-3 text-xs font-semibold px-2 py-1 rounded-full border ${colorClass}`}>
           {product.category}
         </span>
