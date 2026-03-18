@@ -28,7 +28,7 @@ export default function Footer() {
               rel="noopener noreferrer"
               className="btn-cta text-sm inline-flex items-center gap-2"
             >
-              Shop Apollo Peptides <ExternalLink className="w-4 h-4" />
+              Shop <ExternalLink className="w-4 h-4" />
             </a>
           </div>
 
@@ -36,13 +36,22 @@ export default function Footer() {
           <div>
             <h3 className="text-white font-semibold mb-4 text-sm uppercase tracking-wider">Peptides</h3>
             <ul className="space-y-2">
-              {['BPC-157', 'TB-500', 'Ipamorelin', 'CJC-1295', 'GHK-Cu', 'Epithalon', 'Selank', 'Semax'].map((name) => (
-                <li key={name}>
+              {[
+                { label: 'BPC-157', slug: 'bpc-157' },
+                { label: 'TB-500', slug: 'tb-500' },
+                { label: 'CJC-1295 + Ipamorelin', slug: 'cjc1295-ipamorelin' },
+                { label: 'GHK-Cu', slug: 'ghk-cu' },
+                { label: 'Epithalon', slug: 'epithalon' },
+                { label: 'NAD+', slug: 'nad' },
+                { label: 'Semaglutide', slug: 'glp-1s-semaglutide' },
+                { label: 'Tirzepatide', slug: 'glp-2t-tirzepatide' },
+              ].map(({ label, slug }) => (
+                <li key={slug}>
                   <Link
-                    href={`/products/${name.toLowerCase().replace(/ /g, '-').replace(/\//g, '')}`}
+                    href={`/products/${slug}`}
                     className="text-slate-400 hover:text-neon-green text-sm transition-colors"
                   >
-                    {name}
+                    {label}
                   </Link>
                 </li>
               ))}
@@ -76,7 +85,7 @@ export default function Footer() {
         <div className="border-t border-neon-green/10 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-slate-500 text-xs text-center md:text-left">
-              © 2025 BPC-157 Stack. For research and educational purposes only.
+              © 2025 BPC-157 Stack. All rights reserved.
               Not medical advice. Consult a physician before use.
             </p>
             <p className="text-slate-600 text-xs">

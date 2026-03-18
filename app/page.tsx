@@ -15,9 +15,9 @@ const AFFILIATE = 'https://apollopeptidesciences.com/?rfsn=9016964.3f1b1e';
 
 const stats = [
   { value: '100+', label: 'Peer-Reviewed Studies', icon: FlaskConical },
-  { value: '12', label: 'Research Peptides', icon: Activity },
+  { value: '12', label: 'Peptides', icon: Activity },
   { value: '5', label: 'Expert Stack Protocols', icon: Zap },
-  { value: '50K+', label: 'Researchers Informed', icon: Users },
+  { value: '50K+', label: 'People Informed', icon: Users },
 ];
 
 const goals = [
@@ -74,7 +74,7 @@ const faqs = [
   { q: 'What makes BPC-157 the #1 healing peptide?', a: 'BPC-157 has no known lethal dose in animal studies, works orally unlike most peptides, and has 100+ published papers. It simultaneously upregulates GH receptors, improves blood flow, and repairs gut lining — no other peptide covers all three.' },
   { q: 'Do I have to inject? Can BPC-157 be taken orally?', a: 'BPC-157 is one of the only peptides proven to work orally — it\'s gastric acid stable. Capsules or dissolved powder work systemically. Most other peptides require subcutaneous injection with a painless insulin needle.' },
   { q: 'What\'s the fastest healing stack?', a: 'BPC-157 + TB-500. BPC-157 handles local targeted repair; TB-500 mobilizes stem cells body-wide. Together they reduce tendon and ligament recovery time by 50-70% vs natural healing.' },
-  { q: 'Are these peptides safe?', a: 'Research peptides have excellent safety profiles at research doses. BPC-157 has no hormonal activity and no known LD50. Always source COA-verified peptides from a trusted supplier like Apollo Peptide Sciences.' },
+  { q: 'Are these peptides safe?', a: 'BPC-157 has no hormonal activity and no known LD50. Always source COA-verified peptides from Apollo Peptide Sciences.' },
   { q: 'How soon will I see results?', a: 'BPC-157: pain reduction in 2-4 days, structural healing in 4-8 weeks. Ipamorelin: improved sleep within 1-2 weeks, body comp changes in 4-8 weeks. Selank: anxiety reduction within 30 minutes of first use.' },
 ];
 
@@ -134,7 +134,7 @@ export default function HomePage() {
                   rel="noopener noreferrer"
                   className="btn-cta text-base px-8 py-4 flex items-center gap-2 group"
                 >
-                  Shop Apollo Peptides
+                  Shop
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </a>
                 <Link href="/stacks" className="btn-secondary text-base px-8 py-4">
@@ -144,7 +144,7 @@ export default function HomePage() {
 
               {/* Trust bar */}
               <div className="flex flex-wrap gap-5">
-                {['COA Verified', 'US Domestic', 'Research Grade', 'Expert Protocols'].map((item) => (
+                {['COA Verified', 'US Domestic', 'Pharmaceutical Grade', 'Expert Protocols'].map((item) => (
                   <div key={item} className="flex items-center gap-1.5 text-sm text-slate-500">
                     <CheckCircle className="w-4 h-4 text-neon-green" />
                     <span>{item}</span>
@@ -376,7 +376,7 @@ export default function HomePage() {
           <div className="flex flex-wrap gap-4 justify-center">
             <Link href="/products" className="btn-secondary text-base px-8 py-4">View All 12 Peptides</Link>
             <a href={AFFILIATE} target="_blank" rel="noopener noreferrer" className="btn-cta text-base px-8 py-4 flex items-center gap-2">
-              Shop at Apollo <ArrowRight className="w-5 h-5" />
+              Shop <ArrowRight className="w-5 h-5" />
             </a>
           </div>
         </div>
@@ -458,7 +458,7 @@ export default function HomePage() {
             <span className="gradient-text">Start Healing.</span>
           </h2>
           <p className="text-slate-400 text-lg leading-relaxed mb-10 max-w-xl mx-auto">
-            COA-verified peptides, US domestic shipping, and the most trusted name in research compounds.
+            COA-verified peptides, US domestic shipping, and the most trusted name in peptides.
             Your protocol starts here.
           </p>
           <div className="flex flex-wrap gap-4 justify-center mb-8">
@@ -468,7 +468,7 @@ export default function HomePage() {
               rel="noopener noreferrer"
               className="btn-cta text-lg px-12 py-5 flex items-center gap-2 group"
             >
-              Shop Apollo Peptide Sciences
+              Shop
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </a>
             <Link href="/guide" className="btn-secondary text-lg px-10 py-5">
@@ -476,7 +476,7 @@ export default function HomePage() {
             </Link>
           </div>
           <p className="text-slate-600 text-xs">
-            Research purposes only. Not medical advice. Consult a physician before use.
+            Not medical advice. Consult a physician before use.
           </p>
         </div>
       </section>

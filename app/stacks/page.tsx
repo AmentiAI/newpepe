@@ -103,7 +103,7 @@ export default function StacksPage() {
           <div className="flex flex-wrap gap-4 justify-center">
             <a href={AFFILIATE} target="_blank" rel="noopener noreferrer"
               className="btn-cta text-base px-8 py-4 inline-flex items-center gap-2">
-              Shop All Peptides at Apollo <ArrowRight className="w-5 h-5" />
+              Shop <ArrowRight className="w-5 h-5" />
             </a>
             <a href="#stacks" className="btn-secondary text-base px-8 py-4">
               Browse All Stacks ↓
@@ -376,9 +376,9 @@ export default function StacksPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
             {[
-              { icon: '🔬', title: 'Research Grade', sub: 'COA verified purity on every batch' },
+              { icon: '🔬', title: 'COA Verified', sub: 'Certificate of analysis on every batch' },
               { icon: '🇺🇸', title: 'US Domestic', sub: 'Ships from US, arrives in 2–3 days' },
-              { icon: '📋', title: '100+ Studies', sub: 'Every protocol backed by published research' },
+              { icon: '📋', title: '100+ Studies', sub: 'Every protocol backed by clinical studies' },
               { icon: '⚡', title: 'Fast Processing', sub: 'Orders processed same day' },
             ].map((item) => (
               <div key={item.title}>
@@ -403,13 +403,13 @@ export default function StacksPage() {
               </h2>
               <p className="text-slate-300 text-lg mb-2 max-w-xl mx-auto">
                 All peptides across every stack available at Apollo Peptide Sciences —
-                the most trusted research peptide supplier.
+                the most trusted peptide supplier.
               </p>
-              <p className="text-slate-500 text-sm mb-8">COA verified · US domestic · 24–48hr shipping · Research grade</p>
+              <p className="text-slate-500 text-sm mb-8">COA verified · US domestic · 24–48hr shipping</p>
               <div className="flex flex-wrap gap-4 justify-center">
                 <a href={AFFILIATE} target="_blank" rel="noopener noreferrer"
                   className="btn-cta text-base px-10 py-4 inline-flex items-center gap-2">
-                  Shop at Apollo Peptide Sciences <ArrowRight className="w-5 h-5" />
+                  Shop <ArrowRight className="w-5 h-5" />
                 </a>
                 <Link href="/products" className="btn-secondary text-base px-8 py-4">
                   Browse All Peptides

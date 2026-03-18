@@ -77,7 +77,7 @@ const vsHGH = [
   { feature: 'Side Effect Profile', gh: 'Carpal tunnel, joint pain, potential HGH gut', peptide: 'Extremely minimal — mild water retention only' },
   { feature: 'Water Retention', gh: 'Significant — face and hands', peptide: 'Mild to moderate, resolves in weeks' },
   { feature: 'IGF-1 Elevation', gh: 'Direct — significant elevation', peptide: 'Indirect via natural GH pulses — more physiological' },
-  { feature: 'Legal Status', gh: 'Prescription only', peptide: 'Research compound' },
+  { feature: 'Legal Status', gh: 'Prescription only', peptide: 'No prescription required' },
 ];
 
 export default function BodyCompositionPage() {
@@ -111,7 +111,7 @@ export default function BodyCompositionPage() {
               <div className="flex flex-wrap gap-4">
                 <a href={AFFILIATE} target="_blank" rel="noopener noreferrer"
                   className="btn-cta text-base px-8 py-4 flex items-center gap-2">
-                  Shop Body Comp Peptides <ArrowRight className="w-5 h-5" />
+                  Shop <ArrowRight className="w-5 h-5" />
                 </a>
                 <Link href="/stacks/body-recomp" className="btn-secondary text-base px-8 py-4">
                   Full Recomp Protocol
@@ -310,7 +310,7 @@ export default function BodyCompositionPage() {
               </div>
               <a href={AFFILIATE} target="_blank" rel="noopener noreferrer"
                 className="btn-cta text-sm px-6 py-3 flex items-center gap-2 inline-flex">
-                Shop GLP Peptides <ArrowRight className="w-4 h-4" />
+                Shop <ArrowRight className="w-4 h-4" />
               </a>
             </div>
             <div className="glass-card p-6">
@@ -415,11 +415,11 @@ export default function BodyCompositionPage() {
               <p className="text-slate-300 text-lg mb-2 max-w-xl mx-auto">
                 CJC-1295, Ipamorelin, IGF-1 LR3, and GLP peptides from Apollo Peptide Sciences.
               </p>
-              <p className="text-slate-500 text-sm mb-8">COA verified · US domestic · Fast shipping · Research grade purity</p>
+              <p className="text-slate-500 text-sm mb-8">COA verified · US domestic · Fast shipping</p>
               <div className="flex flex-wrap gap-4 justify-center">
                 <a href={AFFILIATE} target="_blank" rel="noopener noreferrer"
                   className="btn-cta text-base px-10 py-4 inline-flex items-center gap-2">
-                  Shop Body Comp Peptides <ArrowRight className="w-5 h-5" />
+                  Shop <ArrowRight className="w-5 h-5" />
                 </a>
                 <Link href="/stacks/body-recomp" className="btn-secondary text-base px-8 py-4">
                   View Full Recomp Stack

@@ -4,7 +4,7 @@ import { ArrowRight, BookOpen, AlertTriangle, CheckCircle } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'Complete BPC-157 Beginner Guide | How to Use Peptides Safely | BPC-157 Stack',
-  description: 'The definitive beginner guide to BPC-157 and research peptides. Learn how to reconstitute, dose, inject, and stack peptides safely for maximum results.',
+  description: 'The definitive beginner guide to BPC-157 and peptides. Learn how to reconstitute, dose, inject, and stack peptides safely for maximum results.',
 };
 
 const AFFILIATE = 'https://apollopeptidesciences.com/?rfsn=9016964.3f1b1e';
@@ -32,7 +32,7 @@ export default function GuidePage() {
             How to Use <span className="gradient-text">Peptides</span>
           </h1>
           <p className="text-slate-400 text-lg max-w-xl mx-auto">
-            Everything you need to know to start using BPC-157 and research peptides safely and effectively.
+            Everything you need to know to start using BPC-157 and peptides safely and effectively.
           </p>
         </div>
 
@@ -40,10 +40,9 @@ export default function GuidePage() {
         <div className="flex gap-3 bg-amber-500/10 border border-amber-500/20 rounded-xl p-5 mb-10">
           <AlertTriangle className="w-5 h-5 text-amber-400 shrink-0 mt-0.5" />
           <div>
-            <p className="text-amber-400 font-semibold text-sm mb-1">Research Purposes Only</p>
+            <p className="text-amber-400 font-semibold text-sm mb-1">Important Notice</p>
             <p className="text-slate-400 text-sm">
-              This content is for educational and research purposes only. Consult a licensed healthcare provider before using any peptide or research compound.
-              Peptides sold by Apollo Peptide Sciences are for research use only, not human consumption.
+              This content is for educational purposes only. Consult a licensed healthcare provider before using any peptide.
             </p>
           </div>
         </div>
@@ -100,10 +99,10 @@ export default function GuidePage() {
         {/* Buy CTA */}
         <div className="text-center p-10 glass-card">
           <h2 className="text-2xl font-bold text-white mb-3">Ready to Start?</h2>
-          <p className="text-slate-400 mb-6">Get your peptides from Apollo Peptide Sciences — COA verified, US domestic, and trusted by researchers.</p>
+          <p className="text-slate-400 mb-6">Get your peptides from Apollo Peptide Sciences — COA verified, US domestic.</p>
           <div className="flex flex-wrap gap-4 justify-center">
             <a href={AFFILIATE} target="_blank" rel="noopener noreferrer" className="btn-cta text-base px-8 py-4 flex items-center gap-2">
-              Shop at Apollo Peptides <ArrowRight className="w-5 h-5" />
+              Shop <ArrowRight className="w-5 h-5" />
             </a>
             <Link href="/stacks" className="btn-secondary text-base px-8 py-4">Browse Stacks</Link>
           </div>

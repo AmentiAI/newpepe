@@ -98,7 +98,7 @@ const categoryTheme: Record<string, {
     glow: 'rgba(100, 116, 139, 0.12)',
     heroBg: 'from-slate-950/40 to-transparent',
     icon: <FlaskConical className="w-5 h-5 text-slate-400" />,
-    categoryLabel: 'Research Supplies',
+    categoryLabel: 'Lab Supplies',
   },
 };
 
@@ -208,11 +208,11 @@ export default function ProductPage({ params }: Props) {
                 rel="noopener noreferrer"
                 className="btn-cta text-base py-4 w-full flex items-center justify-center gap-2"
               >
-                Buy {product.name} at Apollo <ArrowRight className="w-5 h-5" />
+                Buy {product.name} <ArrowRight className="w-5 h-5" />
               </a>
             </div>
             <p className="text-slate-600 text-xs text-center">
-              COA verified · US domestic shipping · Research purposes only
+              COA verified · US domestic shipping
             </p>
           </div>
         </div>
@@ -308,11 +308,9 @@ export default function ProductPage({ params }: Props) {
               </div>
             </div>
 
-            {/* Research disclaimer */}
             <div className="rounded-xl p-4 bg-dark-800/30 border border-slate-800/50">
               <p className="text-slate-600 text-xs leading-relaxed">
-                <strong className="text-slate-500">Research Purposes Only:</strong> All information on this site is for educational purposes only.
-                {product.name} is a research compound. Always consult with a qualified healthcare provider before use.
+                All information on this site is for educational purposes only. Always consult with a qualified healthcare provider before use.
                 COA documentation is available from Apollo Peptide Sciences for all products.
               </p>
             </div>
@@ -332,14 +330,14 @@ export default function ProductPage({ params }: Props) {
                 rel="noopener noreferrer"
                 className="btn-cta text-sm py-3 w-full text-center flex items-center justify-center gap-2 mb-3"
               >
-                Buy at Apollo <ArrowRight className="w-4 h-4" />
+                Shop <ArrowRight className="w-4 h-4" />
               </a>
               <Link href="/stacks" className="btn-secondary text-sm py-3 w-full text-center block mb-4">
                 View Stack Protocols
               </Link>
 
               <div className="space-y-2">
-                {['Certificate of Analysis (COA)', 'US Domestic Shipping', 'Research Grade Purity', '24–48hr Processing'].map((f) => (
+                {['Certificate of Analysis (COA)', 'US Domestic Shipping', 'COA-Verified Purity', '24–48hr Processing'].map((f) => (
                   <div key={f} className="flex items-center gap-2 text-xs text-slate-400">
                     <CheckCircle className={`w-3.5 h-3.5 ${theme.accentLight}`} /> {f}
                   </div>
@@ -398,7 +396,7 @@ export default function ProductPage({ params }: Props) {
                 rel="noopener noreferrer"
                 className="btn-cta text-sm py-3 px-6 inline-flex items-center gap-2"
               >
-                Shop {product.name} at Apollo <ArrowRight className="w-4 h-4" />
+                Shop {product.name} <ArrowRight className="w-4 h-4" />
               </a>
             </div>
           </div>
@@ -428,7 +426,7 @@ export default function ProductPage({ params }: Props) {
                 rel="noopener noreferrer"
                 className="btn-cta text-base px-8 py-4 inline-flex items-center gap-2"
               >
-                Shop All Peptides at Apollo Peptide Sciences <ArrowRight className="w-5 h-5" />
+                Shop <ArrowRight className="w-5 h-5" />
               </a>
             </div>
           </div>

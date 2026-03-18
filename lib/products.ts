@@ -570,7 +570,7 @@ Semaglutide has shown benefits beyond weight loss:
 
 **Research Context**
 
-This product is sold for research purposes only. Semaglutide is commercially available by prescription in pharmaceutical grade formulations.`,
+`,
     benefits: [
       '15-20% body weight reduction in 68-week clinical trials — most effective pharmacological weight loss studied',
       'Dramatically reduces appetite and food cravings via hypothalamic GLP-1 receptors',
@@ -588,7 +588,7 @@ This product is sold for research purposes only. Semaglutide is commercially ava
 - Week 13+: 2mg subcutaneous weekly (maintenance)
 
 **Injection:** Once weekly subcutaneous. Rotate injection sites (abdomen, thigh, upper arm).
-**Note:** For research purposes. Consult a physician for clinical use.`,
+**Note:** Consult a physician if using therapeutically.`,
     synergies: ['glp-2t-tirzepatide', 'nad', 'bpc-157'],
     seoTitle: 'GLP-1 S Semaglutide | 15-20% Weight Loss Research Peptide | BPC-157 Stack',
     deepDiveTitle: 'Semaglutide (GLP-1 S): The Research Peptide Behind the Weight Loss Revolution',
@@ -651,7 +651,7 @@ In the SURPASS-2 trial directly comparing tirzepatide vs semaglutide, tirzepatid
 - Week 17+: 12.5-15mg (maximum dose, as tolerated)
 
 **Injection:** Once weekly subcutaneous. Rotate sites.
-**Note:** For research purposes only.`,
+`,
     synergies: ['glp-1s-semaglutide', 'glp-3r-retatrutide', 'nad'],
     seoTitle: 'GLP-2 T Tirzepatide | Dual GIP/GLP-1 for 22.5% Weight Loss | BPC-157 Stack',
     deepDiveTitle: 'Tirzepatide (GLP-2 T): The Dual Agonist That Outperformed Semaglutide in Every Trial',
@@ -714,7 +714,7 @@ Retatrutide is currently in Phase III trials. If results hold, it will represent
 - 12mg weekly (maintenance)
 
 **Injection:** Once weekly subcutaneous.
-**Note:** Phase III compound — for research purposes only. Clinical data pending.`,
+**Note:** Phase III compound. Clinical data pending.`,
     synergies: ['glp-2t-tirzepatide', 'glp-1s-semaglutide', 'nad'],
     seoTitle: 'GLP-3 R Retatrutide | Triple Agonist with 24% Weight Loss in Phase II | BPC-157 Stack',
     deepDiveTitle: 'Retatrutide (GLP-3 R): The Triple Receptor Agonist Rewriting Weight Loss Science',
@@ -772,7 +772,7 @@ Cagrisema is in Phase III trials. Early data positions it between tirzepatide an
 - Combined weekly injection, subcutaneous
 - Escalation over 16 weeks from starting dose
 
-**Note:** For research purposes only. Phase III compound. Clinical guidance required for pharmaceutical use.`,
+ Phase III compound. Clinical guidance required for pharmaceutical use.`,
     synergies: ['glp-1s-semaglutide', 'glp-2t-tirzepatide', 'glp-3r-retatrutide', 'nad'],
     seoTitle: 'Cagrisema GLP-1 C + GLP-1 S | Dual Amylin/GLP-1 for 25% Weight Loss | BPC-157 Stack',
     deepDiveTitle: 'Cagrisema: The Amylin + Semaglutide Combination That Rewrites Weight Loss Expectations',
@@ -803,7 +803,7 @@ Semaglutide (Ozempic/Wegovy active compound) has demonstrated 15-20% body weight
     benefits: [
       '15-20% body weight reduction in clinical trials at therapeutic doses',
       'Ideal starter size for dose titration and GI adaptation',
-      'Same compound as Ozempic/Wegovy — research grade',
+      'Same compound as Ozempic/Wegovy',
       'Dramatically reduces appetite via hypothalamic GLP-1 receptors',
       'Glucose-dependent insulin stimulation — low hypoglycemia risk',
     ],
@@ -840,7 +840,7 @@ At 2.4mg/week: 16.9% average body weight reduction at 68 weeks, with 86% of part
     benefits: [
       'Best per-milligram value for maintenance-phase semaglutide protocols',
       'Covers 7-15 weeks at therapeutic doses depending on dose level',
-      '15-20% weight loss efficacy — same as Ozempic/Wegovy research',
+      '15-20% weight loss efficacy — same as Ozempic/Wegovy',
       'Fewer reconstitutions for better sterility and convenience',
       '20% cardiovascular event reduction — SELECT trial',
     ],
@@ -1039,7 +1039,7 @@ At highest dose (15mg), tirzepatide produced 22.5% body weight reduction — sig
     image: IMG.bacwater,
     affiliateUrl: AFFILIATE,
     shortDescription: 'Pharmaceutical-grade bacteriostatic water for safe peptide reconstitution — contains 0.9% benzyl alcohol to prevent bacterial growth in multi-use vials.',
-    fullDescription: `Bacteriostatic water is sterile water containing 0.9% benzyl alcohol as a bacteriostatic agent. It is specifically designed for reconstituting lyophilized (freeze-dried) peptides and other research compounds. Using the correct reconstitution solution is essential for maintaining peptide integrity, purity, and sterility.
+    fullDescription: `Bacteriostatic water is sterile water containing 0.9% benzyl alcohol as a bacteriostatic agent. It is specifically designed for reconstituting lyophilized (freeze-dried) peptides and other compounds. Using the correct reconstitution solution is essential for maintaining peptide integrity, purity, and sterility.
 
 **Why Bacteriostatic Water, Not Sterile Water**
 
@@ -1064,7 +1064,7 @@ Reconstituted peptides stored with bacteriostatic water should be refrigerated a
       'Essential for all lyophilized peptide reconstitution',
       'Maintains peptide sterility and integrity between uses',
       'Standard 10mL vial — sufficient for multiple reconstitutions',
-      'Compatible with all research peptides',
+      'Compatible with all peptides',
       'Must-have supply for any peptide protocol',
       'From Apollo Peptide Sciences — same trusted source as your peptides',
     ],
@@ -1084,7 +1084,7 @@ Reconstituted peptides stored with bacteriostatic water should be refrigerated a
       { title: 'Bacteriostatic Protection', body: '0.9% benzyl alcohol prevents bacterial contamination for 28+ days after opening — essential for multi-use vials and repeated dosing.' },
       { title: 'Peptide Integrity', body: 'Correct reconstitution preserves the peptide\'s structure and potency. Wrong solutions can denature peptides, reducing efficacy and safety.' },
       { title: '10mL Volume', body: 'A 10mL vial provides enough reconstitution solution for multiple peptide vials — practical for running multiple protocols simultaneously.' },
-      { title: 'Same Source', body: 'Bacteriostatic water from Apollo Peptide Sciences — pharmaceutical-grade from the same trusted source as all your research peptides.' },
+      { title: 'Same Source', body: 'Bacteriostatic water from Apollo Peptide Sciences — pharmaceutical-grade from the same trusted source as all your peptides.' },
     ],
   },
 ];

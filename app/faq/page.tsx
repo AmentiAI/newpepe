@@ -14,7 +14,7 @@ const faqs = [
     category: 'BPC-157 Basics',
     items: [
       { q: 'What is BPC-157?', a: 'BPC-157 (Body Protection Compound 157) is a 15-amino acid peptide derived from a protein found in human gastric juice. It has been studied extensively in animal and cell models for its remarkable tissue-healing properties, including tendon, ligament, muscle, gut, and nerve repair.' },
-      { q: 'Is BPC-157 safe?', a: 'BPC-157 has an exceptional safety profile. It has no known LD50 (lethal dose) in animal studies — meaning no dose has been found to cause death. It has no hormonal activity and does not suppress natural hormone production. No significant adverse effects have been reported at research doses.' },
+      { q: 'Is BPC-157 safe?', a: 'BPC-157 has an exceptional safety profile. It has no known LD50 (lethal dose) in animal studies — meaning no dose has been found to cause death. It has no hormonal activity and does not suppress natural hormone production. No significant adverse effects have been reported at standard doses.' },
       { q: 'Can BPC-157 be taken orally?', a: 'Yes — BPC-157 is unique among peptides in that it is gastric acid stable and maintains systemic effectiveness when taken orally. Most peptides are destroyed in the digestive tract. BPC-157 can be taken as a capsule or dissolved in water for oral use, making it accessible for those who prefer not to inject.' },
       { q: 'How long does BPC-157 take to work?', a: 'Most users report pain reduction and early healing signs within 2-4 days. Structural tendon/ligament healing takes 4-8 weeks. Gut healing typically occurs within 1-3 weeks. Results depend on injury severity, dose, and protocol consistency.' },
     ],
@@ -22,7 +22,7 @@ const faqs = [
   {
     category: 'Dosing & Protocol',
     items: [
-      { q: 'What is the standard BPC-157 dose?', a: 'Standard research dose: 250-500mcg per day. For injection: once or twice daily subcutaneous. For oral: once daily on an empty stomach. For acute injuries, some researchers use higher doses (500mcg twice daily) during the loading phase.' },
+      { q: 'What is the standard BPC-157 dose?', a: 'Standard research dose: 250-500mcg per day. For injection: once or twice daily subcutaneous. For oral: once daily on an empty stomach. For acute injuries, higher doses (500mcg twice daily) during the loading phase.' },
       { q: 'How do I reconstitute peptides?', a: 'Add bacteriostatic water to the lyophilized (dry) peptide powder using a sterile syringe. Standard reconstitution: 1mL bacteriostatic water per 5mg vial = 5,000mcg/mL concentration. For a 250mcg dose, draw 50μL (0.05mL) = 5IU on a standard 1mL insulin syringe.' },
       { q: 'What syringe should I use?', a: 'Use insulin syringes with 29-31 gauge needles for subcutaneous injections. These are very small and nearly painless. They are available at pharmacies. Do not reuse syringes.' },
       { q: 'How long should I run BPC-157?', a: 'For injury healing: 4-12 weeks depending on severity. For gut healing: 4-8 weeks. For maintenance/prevention: indefinite at lower doses. BPC-157 does not cause receptor desensitization, so extended use is considered safe.' },
@@ -39,7 +39,7 @@ const faqs = [
   {
     category: 'Sourcing & Quality',
     items: [
-      { q: 'Where should I source peptides?', a: 'We recommend Apollo Peptide Sciences exclusively. They provide full certificates of analysis (COA) for every batch, ship US domestically, and have established themselves as the most trusted research peptide supplier. Never use sources that don\'t provide COAs.' },
+      { q: 'Where should I source peptides?', a: 'We recommend Apollo Peptide Sciences exclusively. They provide full certificates of analysis (COA) for every batch, ship US domestically, and have established themselves as the most trusted peptide supplier. Never use sources that don\'t provide COAs.' },
       { q: 'What is a certificate of analysis (COA)?', a: 'A COA is a third-party lab test confirming the purity, identity, and concentration of a peptide. It should show 98%+ purity and match the label claims. Always request a COA and verify it before use.' },
       { q: 'Why is source quality so important?', a: 'Low-quality peptides may contain impurities, incorrect amino acid sequences, or bacterial contamination. This can cause injection site reactions, ineffective results, or in rare cases, serious health issues. COA-verified peptides from trusted suppliers eliminate this risk.' },
     ],
@@ -64,7 +64,7 @@ export default function FAQPage() {
             Peptide <span className="gradient-text">FAQ</span>
           </h1>
           <p className="text-slate-400 text-lg max-w-xl mx-auto">
-            Answers to the most common questions about BPC-157 and research peptides.
+            Answers to the most common questions about BPC-157 and peptides.
           </p>
         </div>
 
@@ -93,7 +93,7 @@ export default function FAQPage() {
           <p className="text-slate-400 mb-6">Get COA-verified peptides from the most trusted source.</p>
           <div className="flex flex-wrap gap-4 justify-center">
             <a href={AFFILIATE} target="_blank" rel="noopener noreferrer" className="btn-cta text-base px-8 py-4 flex items-center gap-2">
-              Shop at Apollo Peptides <ArrowRight className="w-5 h-5" />
+              Shop <ArrowRight className="w-5 h-5" />
             </a>
             <Link href="/guide" className="btn-secondary text-base px-8 py-4">Read Beginner Guide</Link>
           </div>

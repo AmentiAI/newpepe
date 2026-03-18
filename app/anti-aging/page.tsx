@@ -109,13 +109,13 @@ export default function AntiAgingPage() {
             The most comprehensive longevity protocol available outside of a clinical trial.
           </p>
           <p className="text-slate-500 text-base mb-10 max-w-2xl mx-auto">
-            These are not general wellness supplements. They are research-grade compounds with peer-reviewed evidence
+            These are clinically studied compounds with peer-reviewed evidence
             targeting the actual molecular mechanisms of biological aging.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <a href={AFFILIATE} target="_blank" rel="noopener noreferrer"
               className="btn-cta text-base px-8 py-4 flex items-center gap-2">
-              Shop Anti-Aging Peptides <ArrowRight className="w-5 h-5" />
+              Shop <ArrowRight className="w-5 h-5" />
             </a>
             <Link href="/stacks/anti-aging-longevity" className="btn-secondary text-base px-8 py-4">
               View Full Longevity Stack
@@ -191,7 +191,7 @@ export default function AntiAgingPage() {
               </h2>
               <p className="text-slate-300 leading-relaxed mb-6">
                 No single intervention can address all hallmarks of aging simultaneously.
-                The anti-aging stack combines five research-grade compounds that work on
+                The anti-aging stack combines five clinically studied compounds that work on
                 complementary mechanisms — targeting aging at the genetic, epigenetic,
                 mitochondrial, cellular, and structural levels.
               </p>
@@ -260,7 +260,7 @@ export default function AntiAgingPage() {
             </tbody>
           </table>
         </div>
-        <p className="text-slate-600 text-xs text-center mt-4">*Based on peer-reviewed animal and human studies. Individual results vary. Research use only.</p>
+        <p className="text-slate-600 text-xs text-center mt-4">*Based on peer-reviewed animal and human studies. Individual results vary.</p>
       </section>
 
       {/* Research History */}

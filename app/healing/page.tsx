@@ -110,7 +110,7 @@ export default function HealingPage() {
               <div className="flex flex-wrap gap-4">
                 <a href={AFFILIATE} target="_blank" rel="noopener noreferrer"
                   className="btn-cta text-base px-8 py-4 flex items-center gap-2">
-                  Shop Healing Peptides <ArrowRight className="w-5 h-5" />
+                  Shop <ArrowRight className="w-5 h-5" />
                 </a>
                 <Link href="/stacks/ultimate-healing" className="btn-secondary text-base px-8 py-4">
                   View Full Healing Stack
@@ -303,7 +303,7 @@ export default function HealingPage() {
             </tbody>
           </table>
         </div>
-        <p className="text-slate-600 text-xs text-center mt-4">*Based on peer-reviewed animal studies. For research purposes only.</p>
+        <p className="text-slate-600 text-xs text-center mt-4">*Based on peer-reviewed animal studies.</p>
       </section>
 
       {/* Protocols — 3 phase cards */}
@@ -332,7 +332,7 @@ export default function HealingPage() {
               </div>
             ))}
           </div>
-          <p className="text-center text-slate-600 text-xs mt-6">Research use only. Consult a healthcare provider before use.</p>
+          <p className="text-center text-slate-600 text-xs mt-6">Consult a healthcare provider before use.</p>
         </div>
       </section>
 
@@ -437,11 +437,11 @@ export default function HealingPage() {
               <p className="text-slate-300 text-lg mb-2 max-w-xl mx-auto">
                 BPC-157 and TB-500 from Apollo Peptide Sciences — COA verified, US domestic, ships in 24–48 hours.
               </p>
-              <p className="text-slate-500 text-sm mb-8">No prescription needed. Research-grade purity. Same-day processing.</p>
+              <p className="text-slate-500 text-sm mb-8">No prescription needed. COA-verified purity. Same-day processing.</p>
               <div className="flex flex-wrap gap-4 justify-center">
                 <a href={AFFILIATE} target="_blank" rel="noopener noreferrer"
                   className="btn-cta text-base px-10 py-4 inline-flex items-center gap-2">
-                  Shop Healing Peptides at Apollo <ArrowRight className="w-5 h-5" />
+                  Shop <ArrowRight className="w-5 h-5" />
                 </a>
                 <Link href="/stacks/ultimate-healing" className="btn-secondary text-base px-8 py-4">
                   View Full Protocol

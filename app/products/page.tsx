@@ -4,8 +4,8 @@ import ProductCard from '@/components/ProductCard';
 import { ArrowRight, FlaskConical } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'All Research Peptides | BPC-157, TB-500, Ipamorelin & More | BPC-157 Stack',
-  description: 'Complete peptide catalog with protocols and dosing guides. BPC-157, TB-500, GHK-Cu, Ipamorelin, Epithalon, and 30+ more research peptides from Apollo Peptide Sciences.',
+  title: 'All Peptides | BPC-157, TB-500, Ipamorelin & More | BPC-157 Stack',
+  description: 'Complete peptide catalog with protocols and dosing guides. BPC-157, TB-500, GHK-Cu, Ipamorelin, Epithalon, and more from Apollo Peptide Sciences.',
 };
 
 const AFFILIATE = 'https://apollopeptidesciences.com/?rfsn=9016964.3f1b1e';
@@ -28,7 +28,7 @@ export default function ProductsPage() {
             <span className="text-neon-green text-sm font-medium">Complete Peptide Catalog</span>
           </div>
           <h1 className="text-4xl sm:text-5xl font-black text-white mb-4">
-            Research <span className="gradient-text">Peptides</span>
+            Our <span className="gradient-text">Peptides</span>
           </h1>
           <p className="text-slate-400 text-lg max-w-2xl mx-auto">
             Every peptide with full protocols, dosing guides, and stack recommendations.

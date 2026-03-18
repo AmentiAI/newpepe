@@ -139,7 +139,7 @@ export default function StackPage({ params }: Props) {
                 rel="noopener noreferrer"
                 className="btn-cta text-sm py-3 w-full text-center flex items-center justify-center gap-2 mb-3"
               >
-                Shop the Stack at Apollo <ArrowRight className="w-4 h-4" />
+                Shop <ArrowRight className="w-4 h-4" />
               </a>
               <Link href="/stacks" className="btn-secondary text-sm py-3 w-full text-center block mb-4">
                 ← View All Stacks
@@ -175,7 +175,7 @@ export default function StackPage({ params }: Props) {
             rel="noopener noreferrer"
             className="btn-cta text-base px-8 py-4 inline-flex items-center gap-2"
           >
-            Shop {stack.name} Peptides at Apollo <ArrowRight className="w-5 h-5" />
+            Shop <ArrowRight className="w-5 h-5" />
           </a>
         </div>
       </div>
