@@ -97,7 +97,7 @@ This is the most comprehensive anti-aging peptide protocol available outside of 
     goal: 'Body Composition & Fat Loss',
     difficulty: 'Intermediate',
     duration: '3-6 months',
-    peptides: ['ipamorelin', 'cjc-1295', 'hgh-frag-176-191'],
+    peptides: ['cjc1295-ipamorelin', 'igf-1lr3', 'mots-c'],
     protocol: `**Morning (fasted):**
 - HGH Fragment 176-191: 250-500mcg subcutaneous
 
@@ -135,7 +135,7 @@ Combined, this stack is the most effective non-hormonal approach to body recompo
     goal: 'Cognitive Performance & Mental Health',
     difficulty: 'Beginner',
     duration: 'Ongoing / 10-day cycles',
-    peptides: ['semax', 'selank'],
+    peptides: ['nad', 'ghk-cu', 'epithalon'],
     protocol: `**Morning (Semax):**
 - 200-400mcg intranasal (or 100-200mcg subcutaneous)
 - On empty stomach for best absorption
@@ -172,7 +172,7 @@ Together, this stack creates a state of calm, focused mental clarity with enhanc
     goal: 'Athletic Performance & Recovery',
     difficulty: 'Advanced',
     duration: '8-16 weeks',
-    peptides: ['bpc-157', 'tb-500', 'ipamorelin', 'cjc-1295'],
+    peptides: ['bpc-157', 'tb-500', 'cjc1295-ipamorelin'],
     protocol: `**Morning:**
 - BPC-157: 250mcg subcutaneous or oral
 
