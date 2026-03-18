@@ -29,9 +29,16 @@ const IMG = {
   nad: 'https://apollopeptidesciences.com/wp-content/uploads/2025/09/nad_500mg.webp',
   igf: 'https://apollopeptidesciences.com/wp-content/uploads/2025/09/igf-1lr3-1mg.webp',
   snap8: 'https://apollopeptidesciences.com/wp-content/uploads/2025/01/snap-8_10mg.webp',
+  sema5: 'https://apollopeptidesciences.com/wp-content/uploads/2024/10/semaglutide_5mg.webp',
   sema: 'https://apollopeptidesciences.com/wp-content/uploads/2024/10/semaglutide_10mg-1.webp',
+  sema15: 'https://apollopeptidesciences.com/wp-content/uploads/2024/06/semaglutide_15mg.webp',
   tirz: 'https://apollopeptidesciences.com/wp-content/uploads/2024/04/tirzepatide_15mg-1.webp',
+  tirz30: 'https://apollopeptidesciences.com/wp-content/uploads/2024/06/tirzepatide_30mg.webp',
+  tirz60: 'https://apollopeptidesciences.com/wp-content/uploads/2025/12/tirzepatide_60mg-1.webp',
   reta: 'https://apollopeptidesciences.com/wp-content/uploads/2024/04/retatrutide_10mg-1.webp',
+  reta15: 'https://apollopeptidesciences.com/wp-content/uploads/2024/06/retatrutide_15mg.webp',
+  reta30: 'https://apollopeptidesciences.com/wp-content/uploads/2025/12/retatrutide_30mg.webp',
+  reta60: 'https://apollopeptidesciences.com/wp-content/uploads/2025/12/retatrutide_60mg.webp',
   cagri: 'https://apollopeptidesciences.com/wp-content/uploads/2025/09/cagri_sema_5_5mg-1.webp',
   bacwater: 'https://apollopeptidesciences.com/wp-content/uploads/2024/06/reconsitution_solution_10ml.webp',
 };
@@ -91,7 +98,7 @@ BPC-157 has no known LD50 in animal studies — no dose has been found to cause 
 - For acute injuries: 500mcg twice daily for first 2 weeks (loading)
 
 **Storage:** Refrigerate reconstituted peptide; use within 30 days`,
-    synergies: ['tb-500', 'ghk-cu', 'kpv', 'cjc1295-ipamorelin'],
+    synergies: ['tb-500', 'ghk-cu', 'nad', 'cjc1295-ipamorelin'],
     seoTitle: 'BPC-157 10mg | #1 Healing Peptide for Tendons, Gut & Recovery | BPC-157 Stack',
     deepDiveTitle: 'BPC-157: The Complete Research Guide to the Most Powerful Healing Peptide',
     highlights: [
@@ -105,7 +112,7 @@ BPC-157 has no known LD50 in animal studies — no dose has been found to cause 
     slug: 'tb-500',
     name: 'TB-500',
     tagline: 'Systemic Body-Wide Repair & Flexibility',
-    price: 64.99,
+    price: 59.99,
     category: 'Healing',
     tags: ['healing', 'flexibility', 'muscle', 'tendons', 'systemic', 'stem cells'],
     image: IMG.tb500,
@@ -165,71 +172,13 @@ Flexibility improvements within 2-3 weeks. Chronic tendon injuries show measurab
       { title: 'Scar Reduction', body: 'Reduces fibrotic scar tissue formation compared to natural healing — leading to higher-quality tissue repair with better function.' },
     ],
   },
-  {
-    slug: 'kpv',
-    name: 'KPV',
-    tagline: 'Potent Anti-Inflammatory Gut Healer',
-    price: 39.99,
-    category: 'Healing',
-    tags: ['anti-inflammatory', 'gut', 'IBD', 'Crohn\'s', 'skin', 'immune'],
-    image: IMG.bpc157,
-    affiliateUrl: AFFILIATE,
-    shortDescription: 'KPV is a potent anti-inflammatory tripeptide from alpha-MSH — penetrates cells and inhibits NF-κB at the nuclear level for IBD, leaky gut, and skin inflammation.',
-    fullDescription: `KPV (Lys-Pro-Val) is a C-terminal tripeptide fragment of alpha-melanocyte-stimulating hormone (alpha-MSH). It carries the full anti-inflammatory potency of its parent hormone in a smaller, more bioavailable package that can actually penetrate cell membranes.
-
-**How It Works**
-
-KPV works at the nuclear level — it penetrates cell membranes and directly inhibits NF-κB, the master transcription factor controlling inflammatory gene expression. This is fundamentally different from surface-level anti-inflammatories. It suppresses TNF-α, IL-6, and IL-8 without blunting immune function.
-
-**Primary Applications**
-
-IBD, Crohn's Disease, and Ulcerative Colitis: Oral KPV delivers the peptide directly to inflamed intestinal tissue. Studies show remarkable reduction in gut inflammation markers.
-
-Skin inflammation: Topical KPV reduces psoriasis plaques, eczema lesions, and contact dermatitis — visible results within 1-2 weeks.
-
-Neuroinflammation: Reduces brain inflammation linked to depression, cognitive decline, and neurological disorders.
-
-**Stacking with BPC-157**
-
-KPV + BPC-157 is the definitive gut healing stack. BPC-157 repairs structural integrity; KPV eliminates the inflammatory cascade that caused the damage. Together they address both cause and effect.`,
-    benefits: [
-      'Penetrates cell membranes and inhibits NF-κB at nuclear level',
-      'Directly reduces TNF-α, IL-6, and IL-8 — master inflammatory cytokines',
-      'Proven efficacy for IBD, Crohn\'s, and ulcerative colitis',
-      'Topically effective for psoriasis, eczema, and contact dermatitis',
-      'Reduces neuroinflammation linked to depression and brain fog',
-      'Does not suppress overall immune function',
-      'Compatible with BPC-157 for comprehensive gut healing',
-      'Oral and injectable routes both effective',
-    ],
-    protocol: `**Gut Healing Protocol:**
-- Dose: 500mcg-2mg orally, 2-3x daily before meals
-- Cycle: 4-8 weeks
-
-**Skin Protocol:**
-- Topical: 1-2% KPV in a carrier cream, applied 2x daily
-
-**Injectable:**
-- 250-500mcg subcutaneous, 1-2x daily for systemic inflammation
-
-**Best Stack:** KPV + BPC-157 oral = most comprehensive gut healing protocol.`,
-    synergies: ['bpc-157', 'tb-500', 'ghk-cu', 'nad'],
-    seoTitle: 'KPV Peptide | Anti-Inflammatory for IBD, Crohn\'s & Gut Healing | BPC-157 Stack',
-    deepDiveTitle: 'KPV: The Nuclear Anti-Inflammatory That Heals IBD, Skin, and Neuroinflammation',
-    highlights: [
-      { title: 'Nuclear Action', body: 'KPV penetrates cell membranes and acts directly at the nuclear level — more targeted than any surface-level anti-inflammatory.' },
-      { title: 'Gut-Specific Delivery', body: 'Oral KPV reaches the intestinal wall — ideal for IBD, Crohn\'s, and leaky gut when combined with BPC-157 for complete gut repair.' },
-      { title: 'No Immune Suppression', body: 'Unlike steroids, KPV selectively reduces damaging inflammation while preserving the immune functions that protect against infection.' },
-      { title: 'Skin Results', body: 'Topical KPV reduces redness, scaling, and itching in inflammatory skin conditions — visible results in as little as 2 weeks.' },
-    ],
-  },
 
   // ─── ANTI-AGING ─────────────────────────────────────────────────────────────
   {
     slug: 'ghk-cu',
     name: 'GHK-Cu',
     tagline: 'Copper Peptide That Resets Your Genes',
-    price: 49.99,
+    price: 50.00,
     category: 'Anti-Aging',
     tags: ['anti-aging', 'skin', 'collagen', 'copper', 'hair', 'gene-reset', 'longevity'],
     image: IMG.ghkcu,
@@ -277,7 +226,7 @@ GHK-Cu enlarges hair follicle size, prolongs the growth phase, and blocks DHT lo
 - Use consistently — minimum 8 weeks for visible results
 
 **Best Stack:** GHK-Cu + Epithalon for comprehensive anti-aging protocol.`,
-    synergies: ['epithalon', 'bpc-157', 'snap-8', 'ss-31', 'nad'],
+    synergies: ['epithalon', 'bpc-157', 'snap-8', 'nad'],
     seoTitle: 'GHK-Cu Copper Peptide | Reverses 31% of Aged Genes | BPC-157 Stack',
     deepDiveTitle: 'GHK-Cu: The Copper Peptide That Resets Your Genes and Reverses Biological Aging',
     highlights: [
@@ -291,7 +240,7 @@ GHK-Cu enlarges hair follicle size, prolongs the growth phase, and blocks DHT lo
     slug: 'epithalon',
     name: 'Epithalon',
     tagline: 'Telomere Extension & Longevity Master',
-    price: 79.99,
+    price: 139.99,
     category: 'Anti-Aging',
     tags: ['longevity', 'telomeres', 'telomerase', 'sleep', 'epigenetics', 'mortality'],
     image: IMG.epithalon,
@@ -339,7 +288,7 @@ Epithalon normalizes the hypothalamus-pituitary axis and restores pineal gland f
 - 20 days on, 4-month break, repeat 2x/year
 
 **Storage:** Lyophilized powder — refrigerate; reconstitute with bacteriostatic water just before use.`,
-    synergies: ['ghk-cu', 'ss-31', 'nad', 'snap-8'],
+    synergies: ['ghk-cu', 'nad', 'epithalon', 'snap-8'],
     seoTitle: 'Epithalon 50mg | Telomere Extension & 28% Mortality Reduction | BPC-157 Stack',
     deepDiveTitle: 'Epithalon: The Russian Longevity Peptide With 60 Studies and 12-Year Human Trial Data',
     highlights: [
@@ -353,7 +302,7 @@ Epithalon normalizes the hypothalamus-pituitary axis and restores pineal gland f
     slug: 'nad',
     name: 'NAD+ 500mg',
     tagline: 'Cellular Energy & Longevity Cofactor',
-    price: 44.99,
+    price: 45.00,
     category: 'Anti-Aging',
     tags: ['NAD+', 'longevity', 'mitochondria', 'energy', 'DNA repair', 'sirtuins'],
     image: IMG.nad,
@@ -397,7 +346,7 @@ Users report significant increases in physical energy within 1-2 weeks. Exercise
 - Frequency: Daily to 3x weekly
 
 **Stack with:** Epithalon + GHK-Cu for comprehensive anti-aging protocol.`,
-    synergies: ['epithalon', 'ghk-cu', 'ss-31', 'mots-c'],
+    synergies: ['epithalon', 'ghk-cu', 'nad'],
     seoTitle: 'NAD+ 500mg | Cellular Energy, Sirtuins & Longevity | BPC-157 Stack',
     deepDiveTitle: 'NAD+: The Master Longevity Molecule That Powers Every Cell in Your Body',
     highlights: [
@@ -411,7 +360,7 @@ Users report significant increases in physical energy within 1-2 weeks. Exercise
     slug: 'snap-8',
     name: 'SNAP-8',
     tagline: 'Botox-Alternative Wrinkle Peptide',
-    price: 44.99,
+    price: 69.99,
     category: 'Anti-Aging',
     tags: ['anti-aging', 'skin', 'wrinkles', 'expression lines', 'topical', 'Botox-alternative'],
     image: IMG.snap8,
@@ -464,68 +413,13 @@ SNAP-8 + GHK-Cu is the definitive topical anti-aging stack: SNAP-8 reduces expre
       { title: 'Dual-Stack Power', body: 'Combined with GHK-Cu, SNAP-8 addresses wrinkles from two directions — neuromuscular reduction from above, collagen rebuilding from below.' },
     ],
   },
-  {
-    slug: 'ss-31',
-    name: 'SS-31 (Elamipretide)',
-    tagline: 'Mitochondrial Inner Membrane Repair',
-    price: 89.99,
-    category: 'Anti-Aging',
-    tags: ['mitochondria', 'anti-aging', 'energy', 'longevity', 'cardioprotection', 'ATP'],
-    image: IMG.nad,
-    affiliateUrl: AFFILIATE,
-    shortDescription: 'SS-31 (Elamipretide) concentrates in the mitochondrial inner membrane — restoring cardiolipin integrity and ATP production that collapse with aging. Phase II/III clinical trials.',
-    fullDescription: `SS-31 (also called Elamipretide or MTP-131) is a mitochondria-targeted tetrapeptide that selectively accumulates in the inner mitochondrial membrane — the most critical and most commonly overlooked site of cellular aging.
-
-**Why the Inner Membrane Matters**
-
-The inner mitochondrial membrane (IMM) is where ATP production actually happens. It houses the electron transport chain (ETC) and ATP synthase. The IMM contains a unique phospholipid called cardiolipin that is essential for ETC function. With age, cardiolipin oxidizes and the membrane loses structural integrity — causing the collapse in energy production that characterizes aging.
-
-**How SS-31 Works**
-
-SS-31 selectively binds to cardiolipin in the IMM, stabilizing its structure and protecting it from oxidative damage. This:
-1. Restores electron transport chain efficiency
-2. Dramatically increases ATP output
-3. Reduces mitochondrial ROS (reactive oxygen species)
-4. Restores the membrane potential required for healthy mitochondrial function
-
-**Clinical Evidence**
-
-SS-31 has advanced to Phase II and III clinical trials for heart failure — extraordinary evidence for a longevity peptide. Results show improved exercise capacity, reduced cardiac damage markers, and restored mitochondrial function in patients with heart failure.`,
-    benefits: [
-      'Directly targets and stabilizes cardiolipin in the mitochondrial inner membrane',
-      'Restores electron transport chain efficiency and ATP production',
-      'Reduces mitochondrial ROS — primary driver of mitochondrial aging',
-      'Phase II/III clinical trials for heart failure — strongest evidence base of any longevity peptide',
-      'Improves exercise capacity and physical energy measurably',
-      'Protects against ischemia-reperfusion injury',
-      'Reverses age-related mitochondrial structural changes',
-      'Reduces inflammation through mitochondrial pathway normalization',
-    ],
-    protocol: `**Standard Protocol:**
-- Dose: 1-5mg subcutaneous daily
-- Frequency: Daily for ongoing protection; or 8-12 week cycles
-- Timing: Morning
-
-**Cardioprotective:** Clinical trials use IV infusion; subcutaneous at 1-3mg daily is the research standard for longevity use.
-
-**Best Stack:** SS-31 + NAD+ + Epithalon = comprehensive mitochondrial and telomeric anti-aging protocol.`,
-    synergies: ['epithalon', 'ghk-cu', 'nad', 'mots-c'],
-    seoTitle: 'SS-31 Elamipretide | Mitochondrial Repair for Energy & Anti-Aging | BPC-157 Stack',
-    deepDiveTitle: 'SS-31: The Mitochondrial Peptide in Phase III Trials That Restores Cellular Energy',
-    highlights: [
-      { title: 'Inner Membrane Targeting', body: 'One of the few compounds that concentrates specifically in the mitochondrial inner membrane — the most critical site for energy production.' },
-      { title: 'Phase III Clinical Trials', body: 'SS-31 has reached Phase II and III clinical trials for heart failure — extraordinary evidence for a research peptide.' },
-      { title: 'Cardiolipin Restoration', body: 'Protects and stabilizes cardiolipin — the phospholipid anchor of the electron transport chain whose degradation is a primary cause of mitochondrial aging.' },
-      { title: 'Energy Surge', body: 'Users report noticeable increases in physical energy and exercise capacity — the direct consequence of restored ATP output in muscle mitochondria.' },
-    ],
-  },
 
   // ─── BODY COMPOSITION ───────────────────────────────────────────────────────
   {
     slug: 'cjc1295-ipamorelin',
     name: 'CJC-1295 / Ipamorelin',
     tagline: 'The Gold Standard GH Peptide Stack',
-    price: 59.99,
+    price: 50.00,
     category: 'Body Composition',
     tags: ['growth hormone', 'GH', 'fat loss', 'muscle', 'sleep', 'recovery', 'GHRH', 'GHRP'],
     image: IMG.cjcipa,
@@ -586,7 +480,7 @@ Months 2-4: Lean muscle gains, significant body composition shift`,
     slug: 'igf-1lr3',
     name: 'IGF-1 LR3',
     tagline: 'Insulin-Like Growth Factor for Muscle & Recovery',
-    price: 69.99,
+    price: 79.99,
     category: 'Body Composition',
     tags: ['IGF-1', 'muscle growth', 'recovery', 'anabolic', 'satellite cells', 'performance'],
     image: IMG.igf,
@@ -643,68 +537,13 @@ IGF-1 LR3 is a potent compound. Due to its anabolic potency, it's best used in s
       { title: 'Post-Workout Prime', body: 'Most effective when injected post-workout — amplifying the anabolic window when satellite cells are most receptive to growth signals.' },
     ],
   },
-  {
-    slug: 'mots-c',
-    name: 'MOTS-c',
-    tagline: 'Mitochondrial Metabolic Hormone',
-    price: 74.99,
-    category: 'Body Composition',
-    tags: ['metabolism', 'fat loss', 'AMPK', 'insulin', 'longevity', 'mitochondria', 'exercise-mimetic'],
-    image: IMG.nad,
-    affiliateUrl: AFFILIATE,
-    shortDescription: 'MOTS-c is a mitochondria-encoded peptide hormone that activates AMPK, improves insulin sensitivity, and acts as a powerful exercise mimetic for fat loss and longevity.',
-    fullDescription: `MOTS-c is encoded in the mitochondrial genome — making it one of the few peptides with this distinction. It circulates as a hormone, traveling from mitochondria to the nucleus where it regulates hundreds of metabolic genes. It represents a fundamentally new class of compound: the mitochondrial hormone.
-
-**Exercise in a Peptide**
-
-Exercise raises MOTS-c levels in muscle and blood. Exogenous MOTS-c mimics and amplifies the metabolic benefits of exercise at the cellular level — activating the same pathways that make exercise so profoundly beneficial for metabolic health. This makes it genuinely an "exercise mimetic."
-
-**AMPK Activation**
-
-MOTS-c's primary mechanism is AMPK (AMP-activated protein kinase) activation — the cellular energy sensor that switches cells from fat storage to fat burning mode. AMPK activation:
-- Increases fatty acid oxidation
-- Improves insulin sensitivity and glucose uptake
-- Inhibits mTOR (reducing fat storage)
-- Stimulates mitochondrial biogenesis
-
-**Longevity Connection**
-
-Higher circulating MOTS-c levels are associated with longer lifespan across multiple species. Levels decline with age. Japanese centenarians have been found to carry genetic variants associated with elevated MOTS-c signaling.`,
-    benefits: [
-      'Activates AMPK — the metabolic master switch from fat storage to fat burning',
-      'Improves insulin sensitivity and glucose regulation',
-      'Exercise mimetic — replicates metabolic benefits of physical activity',
-      'Mitochondria-encoded longevity signal — declines with age',
-      'Reduces adipogenesis (blocks new fat cell formation)',
-      'Improves physical endurance and reduces fatigue',
-      'Anti-inflammatory via metabolic pathway normalization',
-      'Centenarian genetics associated with elevated MOTS-c signaling',
-    ],
-    protocol: `**Metabolic Protocol:**
-- Dose: 5-10mg per week total
-- Method: Subcutaneous injection
-- Frequency: 2-3 injections per week
-- Timing: Pre-exercise for synergistic metabolic effect
-- Cycle: 8-16 weeks
-
-**Best Stack:** MOTS-c + CJC-1295/Ipamorelin for comprehensive body recomposition.`,
-    synergies: ['cjc1295-ipamorelin', 'nad', 'ss-31', 'bpc-157'],
-    seoTitle: 'MOTS-c Peptide | Mitochondrial Metabolic Hormone for Fat Loss & Longevity | BPC-157 Stack',
-    deepDiveTitle: 'MOTS-c: The Mitochondrial Hormone That Makes Your Metabolism Act 20 Years Younger',
-    highlights: [
-      { title: 'Mitochondrial Hormone', body: 'Encoded in the mitochondrial genome — MOTS-c is a new class of peptide that acts as a systemic metabolic regulator throughout the body.' },
-      { title: 'AMPK Master Switch', body: 'Activates the same cellular pathway triggered by exercise and caloric restriction — flipping metabolism from storage mode to burning mode.' },
-      { title: 'Exercise Amplifier', body: 'MOTS-c rises with exercise; exogenous MOTS-c amplifies training adaptations — making every workout more metabolically effective.' },
-      { title: 'Centenarian Signal', body: 'Genetic variants that increase MOTS-c signaling are overrepresented in centenarians — making it one of the most exciting longevity-associated molecules found.' },
-    ],
-  },
 
   // ─── WEIGHT LOSS (GLP) ──────────────────────────────────────────────────────
   {
     slug: 'glp-1s-semaglutide',
     name: 'GLP-1 S (Semaglutide)',
     tagline: 'Next-Gen GLP-1 Receptor Agonist for Weight Loss',
-    price: 129.99,
+    price: 99.99,
     category: 'Weight Loss',
     tags: ['GLP-1', 'semaglutide', 'weight loss', 'insulin', 'Ozempic', 'Wegovy', 'metabolic'],
     image: IMG.sema,
@@ -750,7 +589,7 @@ This product is sold for research purposes only. Semaglutide is commercially ava
 
 **Injection:** Once weekly subcutaneous. Rotate injection sites (abdomen, thigh, upper arm).
 **Note:** For research purposes. Consult a physician for clinical use.`,
-    synergies: ['glp-2t-tirzepatide', 'nad', 'bpc-157', 'mots-c'],
+    synergies: ['glp-2t-tirzepatide', 'nad', 'bpc-157'],
     seoTitle: 'GLP-1 S Semaglutide | 15-20% Weight Loss Research Peptide | BPC-157 Stack',
     deepDiveTitle: 'Semaglutide (GLP-1 S): The Research Peptide Behind the Weight Loss Revolution',
     highlights: [
@@ -813,7 +652,7 @@ In the SURPASS-2 trial directly comparing tirzepatide vs semaglutide, tirzepatid
 
 **Injection:** Once weekly subcutaneous. Rotate sites.
 **Note:** For research purposes only.`,
-    synergies: ['glp-1s-semaglutide', 'glp-3r-retatrutide', 'nad', 'mots-c'],
+    synergies: ['glp-1s-semaglutide', 'glp-3r-retatrutide', 'nad'],
     seoTitle: 'GLP-2 T Tirzepatide | Dual GIP/GLP-1 for 22.5% Weight Loss | BPC-157 Stack',
     deepDiveTitle: 'Tirzepatide (GLP-2 T): The Dual Agonist That Outperformed Semaglutide in Every Trial',
     highlights: [
@@ -827,7 +666,7 @@ In the SURPASS-2 trial directly comparing tirzepatide vs semaglutide, tirzepatid
     slug: 'glp-3r-retatrutide',
     name: 'GLP-3 R (Retatrutide)',
     tagline: 'Triple Receptor Agonist — Next-Level Weight Loss',
-    price: 179.99,
+    price: 149.99,
     category: 'Weight Loss',
     tags: ['GLP-1', 'GIP', 'glucagon', 'retatrutide', 'triple agonist', 'weight loss', 'next-gen'],
     image: IMG.reta,
@@ -876,7 +715,7 @@ Retatrutide is currently in Phase III trials. If results hold, it will represent
 
 **Injection:** Once weekly subcutaneous.
 **Note:** Phase III compound — for research purposes only. Clinical data pending.`,
-    synergies: ['glp-2t-tirzepatide', 'glp-1s-semaglutide', 'nad', 'mots-c'],
+    synergies: ['glp-2t-tirzepatide', 'glp-1s-semaglutide', 'nad'],
     seoTitle: 'GLP-3 R Retatrutide | Triple Agonist with 24% Weight Loss in Phase II | BPC-157 Stack',
     deepDiveTitle: 'Retatrutide (GLP-3 R): The Triple Receptor Agonist Rewriting Weight Loss Science',
     highlights: [
@@ -890,7 +729,7 @@ Retatrutide is currently in Phase III trials. If results hold, it will represent
     slug: 'cagri-sema',
     name: 'GLP-1 C + GLP-1 S (Cagrisema)',
     tagline: 'Cagrilintide + Semaglutide — Dual Peptide Combination',
-    price: 189.99,
+    price: 109.99,
     category: 'Weight Loss',
     tags: ['cagrilintide', 'semaglutide', 'amylin', 'GLP-1', 'combination', 'weight loss', 'next-gen'],
     image: IMG.cagri,
@@ -945,12 +784,256 @@ Cagrisema is in Phase III trials. Early data positions it between tirzepatide an
     ],
   },
 
+  // ─── GLP DOSAGE VARIANTS ────────────────────────────────────────────────────
+  {
+    slug: 'glp-1s-semaglutide-5mg',
+    name: 'GLP-1 S Semaglutide 5mg',
+    tagline: 'Starter Dose — GLP-1 Receptor Agonist for Weight Loss',
+    price: 79.99,
+    category: 'Weight Loss',
+    tags: ['GLP-1', 'semaglutide', 'weight loss', 'Ozempic', 'starter', 'metabolic'],
+    image: IMG.sema5,
+    affiliateUrl: AFFILIATE,
+    shortDescription: 'Semaglutide 5mg — ideal starter vial for GLP-1 weight loss protocols. Same compound as Ozempic/Wegovy at a research-grade price point for dose titration.',
+    fullDescription: `Semaglutide 5mg is the preferred starting size for GLP-1 receptor agonist protocols. At 0.25mg/week starting dose, a 5mg vial provides roughly 20 weeks of initial dosing — ideal for those new to GLP-1 therapy assessing tolerability before committing to larger vials.
+
+**Clinical Results**
+
+Semaglutide (Ozempic/Wegovy active compound) has demonstrated 15-20% body weight reduction in 68-week clinical trials.`,
+    benefits: [
+      '15-20% body weight reduction in clinical trials at therapeutic doses',
+      'Ideal starter size for dose titration and GI adaptation',
+      'Same compound as Ozempic/Wegovy — research grade',
+      'Dramatically reduces appetite via hypothalamic GLP-1 receptors',
+      'Glucose-dependent insulin stimulation — low hypoglycemia risk',
+    ],
+    protocol: `**Starter Protocol:**
+- Reconstitute with 2mL bacteriostatic water (2.5mg/mL)
+- Week 1-4: 0.1mL (0.25mg) subcutaneous weekly
+- Week 5-8: 0.2mL (0.5mg) weekly
+- Move to 10mg vial to continue escalation`,
+    synergies: ['glp-2t-tirzepatide', 'glp-1s-semaglutide', 'nad', 'bpc-157'],
+    seoTitle: 'Semaglutide 5mg | GLP-1 S Starter Dose Weight Loss | BPC-157 Stack',
+    deepDiveTitle: 'Semaglutide 5mg: The Right Starting Size for Your GLP-1 Protocol',
+    highlights: [
+      { title: 'Starter Value', body: 'Perfect first vial — 20 weeks of starter dosing at 0.25mg/week while you assess tolerability.' },
+      { title: 'Same as Ozempic', body: 'Identical active compound to Ozempic and Wegovy at a fraction of pharmaceutical pricing.' },
+      { title: '15-20% Weight Loss', body: 'At therapeutic doses, semaglutide produces 15-20% body weight reduction in 68-week trials.' },
+      { title: 'GI Adaptation', body: 'Starting low allows the gut to adapt — minimizing nausea and improving tolerability at therapeutic doses.' },
+    ],
+  },
+  {
+    slug: 'glp-1s-semaglutide-15mg',
+    name: 'GLP-1 S Semaglutide 15mg',
+    tagline: 'Full-Course Supply — Maximum Dose Weight Loss Protocol',
+    price: 159.99,
+    category: 'Weight Loss',
+    tags: ['GLP-1', 'semaglutide', 'weight loss', 'Wegovy', 'maintenance', 'full course'],
+    image: IMG.sema15,
+    affiliateUrl: AFFILIATE,
+    shortDescription: 'Semaglutide 15mg — the largest single-vial option for full-protocol GLP-1 weight loss. Covers multiple months at maintenance doses for maximum weight reduction.',
+    fullDescription: `Semaglutide 15mg is the most cost-effective option for experienced GLP-1 users at therapeutic doses. At 2mg/week, a 15mg vial provides 7.5 weeks of maximum-dose coverage. At 1mg/week, it covers 15 weeks — making it the best value for committed users.
+
+**STEP-1 Trial Data**
+
+At 2.4mg/week: 16.9% average body weight reduction at 68 weeks, with 86% of participants achieving at least 5% weight loss.`,
+    benefits: [
+      'Best per-milligram value for maintenance-phase semaglutide protocols',
+      'Covers 7-15 weeks at therapeutic doses depending on dose level',
+      '15-20% weight loss efficacy — same as Ozempic/Wegovy research',
+      'Fewer reconstitutions for better sterility and convenience',
+      '20% cardiovascular event reduction — SELECT trial',
+    ],
+    protocol: `**Maintenance Protocol:**
+- Reconstitute with 3mL bacteriostatic water (5mg/mL)
+- Maintenance: 0.2mL (1mg) or 0.4mL (2mg) weekly
+- Store reconstituted; use within 28 days`,
+    synergies: ['glp-2t-tirzepatide', 'glp-1s-semaglutide', 'nad', 'bpc-157'],
+    seoTitle: 'Semaglutide 15mg | GLP-1 S Maximum Dose Long-Term Supply | BPC-157 Stack',
+    deepDiveTitle: 'Semaglutide 15mg: Most Economical Option for Full-Protocol GLP-1 Weight Loss',
+    highlights: [
+      { title: 'Best Value', body: 'Lowest per-milligram semaglutide price — optimal for users maintaining therapeutic doses.' },
+      { title: '15 Weeks Supply', body: 'At 1mg/week, a single 15mg vial covers 15 full weeks of maintenance dosing.' },
+      { title: '16.9% Average Loss', body: 'STEP-1 trial at 2.4mg/week: 16.9% average body weight reduction at 68 weeks.' },
+      { title: 'Maintenance Grade', body: 'Designed for committed users who have found their optimal dose and want cost-effective long-term access.' },
+    ],
+  },
+  {
+    slug: 'glp-2t-tirzepatide-30mg',
+    name: 'GLP-2 T Tirzepatide 30mg',
+    tagline: 'High-Dose Dual GIP/GLP-1 — Full Escalation Supply',
+    price: 279.99,
+    category: 'Weight Loss',
+    tags: ['GLP-1', 'GIP', 'tirzepatide', 'Mounjaro', 'high dose', 'escalation', 'dual agonist'],
+    image: IMG.tirz30,
+    affiliateUrl: AFFILIATE,
+    shortDescription: 'Tirzepatide 30mg — covers the complete escalation from 2.5mg to 7.5mg/week in one vial. Optimal size for full SURMOUNT protocol dosing.',
+    fullDescription: `Tirzepatide 30mg is the ideal vial for running a complete escalation protocol. SURMOUNT trial goes from 2.5mg/week to 15mg/week — a 30mg vial covers the first 3 escalation steps.
+
+**SURMOUNT-1 Results**
+
+At highest dose (15mg), tirzepatide produced 22.5% body weight reduction — significantly exceeding semaglutide's 15-16% in comparable populations.`,
+    benefits: [
+      'Up to 22.5% body weight reduction — superior to semaglutide',
+      'Dual GIP + GLP-1 agonism for complementary metabolic effects',
+      'Covers first 12 weeks of SURMOUNT escalation protocol',
+      'Outperformed semaglutide at all doses in SURPASS-2 trial',
+      'Preferential visceral fat reduction',
+    ],
+    protocol: `**Escalation from 30mg Vial:**
+- Reconstitute with 3mL bacteriostatic water (10mg/mL)
+- Weeks 1-4: 0.25mL (2.5mg) weekly
+- Weeks 5-8: 0.5mL (5mg) weekly
+- Weeks 9-12: 0.75mL (7.5mg) weekly — 22.5mg used`,
+    synergies: ['glp-1s-semaglutide', 'glp-3r-retatrutide', 'glp-2t-tirzepatide', 'nad'],
+    seoTitle: 'Tirzepatide 30mg | GLP-2 T Full Escalation Dual Agonist | BPC-157 Stack',
+    deepDiveTitle: 'Tirzepatide 30mg: Optimal Vial for Full-Protocol Dual GIP/GLP-1 Weight Loss',
+    highlights: [
+      { title: '22.5% Weight Loss', body: 'SURMOUNT-1 at 15mg: 22.5% body weight reduction — the highest weight loss ever demonstrated in a controlled trial at that time.' },
+      { title: 'Scalable Protocol', body: '30mg covers the first 12 weeks of escalation — ideal first phase before moving to higher-dose vials.' },
+      { title: 'Beat Semaglutide', body: 'SURPASS-2 direct comparison: tirzepatide outperformed semaglutide at 5mg, 10mg, and 15mg — at every dose tested.' },
+      { title: 'Dual Mechanism', body: 'GIP + GLP-1 synergistic weight loss that neither receptor can achieve alone.' },
+    ],
+  },
+  {
+    slug: 'glp-2t-tirzepatide-60mg',
+    name: 'GLP-2 T Tirzepatide 60mg',
+    tagline: 'Bulk Supply — Long-Term Tirzepatide Maintenance Protocol',
+    price: 489.99,
+    category: 'Weight Loss',
+    tags: ['GLP-1', 'GIP', 'tirzepatide', 'Mounjaro', 'bulk', 'maintenance', 'long-term'],
+    image: IMG.tirz60,
+    affiliateUrl: AFFILIATE,
+    shortDescription: 'Tirzepatide 60mg — maximum bulk supply for long-term protocols at 10-15mg/week maintenance. Best per-milligram pricing for committed tirzepatide users.',
+    fullDescription: `Tirzepatide 60mg provides the best economy of scale for users at maintenance dosing of 10-15mg/week. At 10mg/week, one vial covers 6 weeks. SURMOUNT-4 withdrawal data demonstrates significant weight regain after stopping — making continuous long-term supply essential.`,
+    benefits: [
+      'Lowest per-milligram cost for tirzepatide',
+      '6 weeks at 10mg/week or 4 weeks at 15mg/week maintenance',
+      'SURMOUNT-3: continued weight loss beyond 72 weeks without plateau',
+      'Minimizes reconstitution frequency for long-term protocols',
+      'Superior to semaglutide in every head-to-head comparison',
+    ],
+    protocol: `**Long-Term Maintenance:**
+- Reconstitute with 4-6mL bacteriostatic water
+- At 10mg/week: 0.5mL/week — 6 weeks supply
+- At 15mg/week: 0.75mL/week — 4 weeks supply
+- Refrigerate; use within 28 days`,
+    synergies: ['glp-1s-semaglutide', 'glp-3r-retatrutide', 'glp-2t-tirzepatide-30mg', 'nad'],
+    seoTitle: 'Tirzepatide 60mg | GLP-2 T Bulk Long-Term Weight Loss Supply | BPC-157 Stack',
+    deepDiveTitle: 'Tirzepatide 60mg: Bulk Supply for Sustained Long-Term Dual Agonist Weight Loss',
+    highlights: [
+      { title: 'Best Value', body: 'Lowest per-milligram tirzepatide cost — for users committed to long-term maintenance.' },
+      { title: 'No Plateau', body: 'SURMOUNT-3: continued weight loss beyond 72 weeks, supporting uninterrupted long-term use.' },
+      { title: 'Withdrawal Risk', body: 'SURMOUNT-4: significant weight regain after stopping — bulk supply ensures continuous protocol.' },
+      { title: '6 Weeks Supply', body: 'At 10mg/week, one 60mg vial provides 6 full weeks of maintenance treatment.' },
+    ],
+  },
+  {
+    slug: 'glp-3r-retatrutide-15mg',
+    name: 'GLP-3 R Retatrutide 15mg',
+    tagline: 'Triple Agonist — Escalation Protocol Starter',
+    price: 189.99,
+    category: 'Weight Loss',
+    tags: ['GLP-1', 'GIP', 'glucagon', 'retatrutide', 'triple agonist', 'Phase III', 'escalation'],
+    image: IMG.reta15,
+    affiliateUrl: AFFILIATE,
+    shortDescription: 'Retatrutide 15mg — starter vial for the world\'s most potent weight loss peptide in Phase III development. 24% weight loss with no plateau at 48 weeks.',
+    fullDescription: `Retatrutide 15mg covers the first 7+ weeks of the escalation protocol at 2mg/week. The triple receptor mechanism (GLP-1 + GIP + glucagon) adds hepatic fat oxidation and metabolic rate elevation beyond dual agonists — explaining the 24% Phase II weight loss data.`,
+    benefits: [
+      '24.2% weight reduction in Phase II at 48 weeks — unprecedented',
+      '15mg covers 7+ weeks of starter escalation at 2mg/week',
+      'Triple GLP-1/GIP/glucagon mechanism',
+      'No plateau at 48 weeks — continued weight loss trajectory',
+      'Phase III trials ongoing — most advanced pipeline compound',
+    ],
+    protocol: `**Escalation from 15mg Vial:**
+- Reconstitute with 3mL bacteriostatic water (5mg/mL)
+- Weeks 1-4: 0.4mL (2mg) weekly
+- Weeks 5-8: 0.8mL (4mg) weekly — all 15mg used
+- Continue with 30mg or 60mg vial`,
+    synergies: ['glp-2t-tirzepatide', 'glp-1s-semaglutide', 'glp-3r-retatrutide', 'nad'],
+    seoTitle: 'Retatrutide 15mg | GLP-3 R Triple Agonist Starter | BPC-157 Stack',
+    deepDiveTitle: 'Retatrutide 15mg: Entry Point to the Most Potent Weight Loss Peptide in Development',
+    highlights: [
+      { title: '24% Weight Loss', body: 'Phase II: 24.2% body weight reduction at 48 weeks — highest ever in weight loss clinical history.' },
+      { title: 'Starter Vial', body: '15mg covers first 7+ weeks at 2mg/week — perfect for assessing tolerability.' },
+      { title: 'Triple Mechanism', body: 'GLP-1 + GIP + glucagon: the glucagon arm adds hepatic fat burning and raises metabolic rate.' },
+      { title: 'Phase III Active', body: 'In TRIUMPH Phase III trials — expected to be the most effective anti-obesity drug ever approved.' },
+    ],
+  },
+  {
+    slug: 'glp-3r-retatrutide-30mg',
+    name: 'GLP-3 R Retatrutide 30mg',
+    tagline: 'Triple Agonist — Full Escalation Vial',
+    price: 349.99,
+    category: 'Weight Loss',
+    tags: ['GLP-1', 'GIP', 'glucagon', 'retatrutide', 'triple agonist', 'escalation', 'weight loss'],
+    image: IMG.reta30,
+    affiliateUrl: AFFILIATE,
+    shortDescription: 'Retatrutide 30mg — most practical vial for the complete triple agonist escalation protocol. Covers weeks 1-12 of the Phase II reference dosing schedule.',
+    fullDescription: `Retatrutide 30mg covers the complete initial escalation from 2mg to 8mg/week over the first 8 weeks. With 30mg, you run 4 weeks at 2mg (8mg total) and 4 weeks at 4mg (16mg total) — 24mg used, leaving 6mg for a bridging dose before moving to 60mg for high-dose maintenance.`,
+    benefits: [
+      'Covers weeks 1-8 of complete escalation protocol from a single vial',
+      '24% body weight reduction in Phase II — outperforms all competitors',
+      'Triple mechanism: GLP-1 + GIP + glucagon receptor agonism',
+      'Glucagon agonism raises metabolic rate beyond dual agonists',
+      'Phase III trials ongoing with highest expected peak efficacy',
+    ],
+    protocol: `**Full Escalation from 30mg:**
+- Reconstitute with 3mL bacteriostatic water (10mg/mL)
+- Weeks 1-4: 2mg (0.2mL) weekly — 8mg used
+- Weeks 5-8: 4mg (0.4mL) weekly — 24mg used
+- Remaining 6mg bridges to 60mg vial`,
+    synergies: ['glp-2t-tirzepatide', 'glp-1s-semaglutide', 'glp-3r-retatrutide-15mg', 'nad'],
+    seoTitle: 'Retatrutide 30mg | GLP-3 R Full Escalation Triple Agonist | BPC-157 Stack',
+    deepDiveTitle: 'Retatrutide 30mg: Most Efficient Vial for Triple Agonist Escalation Protocol',
+    highlights: [
+      { title: 'Full 8-Week Escalation', body: 'Covers weeks 1-8 from 2mg to 4mg/week — the most efficient single vial for starting the retatrutide protocol.' },
+      { title: '24% Outperforms All', body: 'Phase II: 24% weight reduction outperforms tirzepatide and semaglutide at comparable timepoints.' },
+      { title: 'Glucagon Advantage', body: 'Third receptor adds hepatic fat burning and basal metabolic rate elevation — explaining the superior clinical data.' },
+      { title: 'Phase III Pipeline', body: 'Most likely to become the highest-efficacy approved anti-obesity drug — Phase III data expected 2025-2026.' },
+    ],
+  },
+  {
+    slug: 'glp-3r-retatrutide-60mg',
+    name: 'GLP-3 R Retatrutide 60mg',
+    tagline: 'Triple Agonist Bulk — Peak Maintenance Dosing',
+    price: 589.99,
+    category: 'Weight Loss',
+    tags: ['GLP-1', 'GIP', 'glucagon', 'retatrutide', 'triple agonist', 'bulk', 'maximum dose'],
+    image: IMG.reta60,
+    affiliateUrl: AFFILIATE,
+    shortDescription: 'Retatrutide 60mg — bulk supply for the most potent weight loss peptide in Phase III. Optimal for maintenance dosing at 8-12mg/week with the lowest per-mg cost.',
+    fullDescription: `Retatrutide 60mg is for experienced users at maintenance doses of 8-12mg/week. At 12mg/week it provides 5 full weeks. Phase II data at 12mg/week showed continued weight loss through 48 weeks without plateau — supporting continuous uninterrupted use.`,
+    benefits: [
+      'Most economical per-milligram retatrutide price',
+      '5-7 weeks at 8-12mg/week maintenance from one vial',
+      'Phase II: continued weight loss without plateau through 48 weeks',
+      'Full triple receptor engagement at peak doses',
+      'Minimizes reconstitution for long-term protocols',
+    ],
+    protocol: `**Peak Maintenance from 60mg:**
+- Reconstitute with 6mL bacteriostatic water (10mg/mL)
+- At 8mg/week: 0.8mL weekly — 7.5 weeks supply
+- At 12mg/week: 1.2mL weekly — 5 weeks supply
+- Refrigerate; use within 28 days`,
+    synergies: ['glp-2t-tirzepatide-60mg', 'glp-1s-semaglutide-15mg', 'glp-3r-retatrutide-30mg', 'nad'],
+    seoTitle: 'Retatrutide 60mg | GLP-3 R Bulk Maximum Dose Triple Agonist | BPC-157 Stack',
+    deepDiveTitle: 'Retatrutide 60mg: Bulk Maintenance Supply for the Most Potent Weight Loss Peptide',
+    highlights: [
+      { title: 'Best Bulk Value', body: 'Lowest per-mg retatrutide cost — for experienced users maintaining at 8-12mg/week long-term.' },
+      { title: 'No Plateau', body: 'Phase II: continued weight loss at 48 weeks — supporting continuous high-dose protocols.' },
+      { title: '7.5 Weeks Supply', body: 'At 8mg/week, one 60mg vial covers 7.5 full weeks of uninterrupted triple agonist therapy.' },
+      { title: 'Full Triple Engagement', body: 'All three receptor types fully engaged at maintenance doses — maximum synergistic effect.' },
+    ],
+  },
+
   // ─── SUPPLIES ───────────────────────────────────────────────────────────────
   {
     slug: 'bacteriostatic-water',
     name: 'Bacteriostatic Water 10mL',
     tagline: 'Essential Reconstitution Solution',
-    price: 12.99,
+    price: 9.99,
     category: 'Supplies',
     tags: ['reconstitution', 'bacteriostatic water', 'injection supplies', 'essential', 'peptide prep'],
     image: IMG.bacwater,

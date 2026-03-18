@@ -9,14 +9,13 @@ export const metadata: Metadata = {
 };
 
 const AFFILIATE = 'https://apollopeptidesciences.com/?rfsn=9016964.3f1b1e';
-const categories = ['All', 'Healing', 'Anti-Aging', 'Body Composition', 'Cognitive'];
-
 export default function ProductsPage() {
   const categorized = {
     Healing: products.filter((p) => p.category === 'Healing'),
     'Anti-Aging': products.filter((p) => p.category === 'Anti-Aging'),
     'Body Composition': products.filter((p) => p.category === 'Body Composition'),
-    Cognitive: products.filter((p) => p.category === 'Cognitive'),
+    'Weight Loss': products.filter((p) => p.category === 'Weight Loss'),
+    Supplies: products.filter((p) => p.category === 'Supplies'),
   };
 
   return (
@@ -31,18 +30,10 @@ export default function ProductsPage() {
           <h1 className="text-4xl sm:text-5xl font-black text-white mb-4">
             Research <span className="gradient-text">Peptides</span>
           </h1>
-          <p className="text-slate-400 text-lg max-w-2xl mx-auto mb-8">
+          <p className="text-slate-400 text-lg max-w-2xl mx-auto">
             Every peptide with full protocols, dosing guides, and stack recommendations.
             Sourced exclusively from Apollo Peptide Sciences.
           </p>
-          <a
-            href={AFFILIATE}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn-cta text-base px-8 py-4 inline-flex items-center gap-2"
-          >
-            Shop All at Apollo Peptides <ArrowRight className="w-5 h-5" />
-          </a>
         </div>
 
         {/* By Category */}

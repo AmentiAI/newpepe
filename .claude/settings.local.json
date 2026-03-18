@@ -5,7 +5,8 @@
       "Bash(npm run:*)",
       "WebFetch(domain:apollopeptidesciences.com)",
       "Bash(npm install:*)",
-      "Bash(node -e \"require\\(''sharp''\\); console.log\\(''sharp ok''\\)\")"
+      "Bash(node -e \"require\\(''sharp''\\); console.log\\(''sharp ok''\\)\")",
+      "Bash(grep -n \"^  {$\\\\|slug:\" /mnt/c/Users/Wilso/newpepe/lib/products.ts)"
     ]
   }
 }
