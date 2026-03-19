@@ -87,7 +87,7 @@ export default function Navbar() {
               rel="noopener noreferrer"
               className="btn-cta text-sm text-center mt-3"
             >
-              Shop Peptides at Apollo →
+              Shop →
             </a>
           </div>
         </div>

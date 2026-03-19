@@ -344,7 +344,7 @@ export default function HomePage() {
 
           <div className="text-center">
             <a href={AFFILIATE} target="_blank" rel="noopener noreferrer" className="btn-cta text-base px-10 py-4 inline-flex items-center gap-2">
-              Get All Stack Peptides at Apollo <ArrowRight className="w-5 h-5" />
+              Shop <ArrowRight className="w-5 h-5" />
             </a>
           </div>
         </div>

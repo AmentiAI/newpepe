@@ -67,7 +67,7 @@ export default function ProductsPage() {
             rel="noopener noreferrer"
             className="btn-cta text-base px-8 py-4 inline-flex items-center gap-2"
           >
-            Visit Apollo Peptide Sciences <ArrowRight className="w-5 h-5" />
+            Shop <ArrowRight className="w-5 h-5" />
           </a>
         </div>
       </div>

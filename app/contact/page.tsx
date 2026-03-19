@@ -42,7 +42,7 @@ export default function ContactPage() {
                 rel="noopener noreferrer"
                 className="text-neon-green text-sm flex items-center gap-1 hover:underline"
               >
-                Apollo Peptide Sciences <ExternalLink className="w-3 h-3" />
+                Shop <ExternalLink className="w-3 h-3" />
               </a>
             </div>
           </div>
