@@ -268,6 +268,98 @@ const registry: InterLink[] = [
       'muscle', 'body-composition', 'gh', 'growth hormone', 'sleep', 'recomp',
     ],
   },
+
+  // ── New high-traffic keyword pages ───────────────────────────────────────
+  {
+    path: '/peptides-for-weight-loss',
+    anchor: 'peptides for weight loss',
+    description: 'GLP-1 vs GH secretagogue fat loss peptide hub',
+    keywords: [
+      'semaglutide', 'tirzepatide', 'retatrutide', 'weight loss', 'fat loss',
+      'glp', 'body-composition', 'appetite', 'ipamorelin', 'cjc-1295', 'igf-1',
+    ],
+  },
+  {
+    path: '/semaglutide-vs-tirzepatide-vs-retatrutide',
+    anchor: 'semaglutide vs tirzepatide vs retatrutide comparison',
+    description: 'Full GLP-1 peptide head-to-head comparison',
+    keywords: [
+      'semaglutide', 'tirzepatide', 'retatrutide', 'glp', 'fat loss',
+      'weight loss', 'body-composition', 'appetite', 'comparison',
+    ],
+  },
+  {
+    path: '/bpc-157-for-gut-health',
+    anchor: 'BPC-157 for gut health & leaky gut',
+    description: 'BPC-157 oral and injectable gut healing protocol',
+    keywords: [
+      'bpc-157', 'gut', 'leaky gut', 'ibd', 'ibs', 'healing', 'oral',
+      'inflammation', 'gut-brain', 'collagen', 'repair',
+    ],
+  },
+  {
+    path: '/peptides-for-women',
+    anchor: 'best peptides for women',
+    description: 'Fat loss, anti-aging, and healing peptides for women',
+    keywords: [
+      'ghk-cu', 'semaglutide', 'bpc-157', 'epithalon', 'snap-8',
+      'anti-aging', 'fat loss', 'skin', 'healing', 'collagen', 'longevity',
+    ],
+  },
+  {
+    path: '/ghk-cu-for-hair-loss',
+    anchor: 'GHK-Cu for hair loss & regrowth',
+    description: 'Copper peptide hair regrowth mechanisms and protocol',
+    keywords: [
+      'ghk-cu', 'hair loss', 'anti-aging', 'skin', 'collagen',
+      'copper peptide', 'aging', 'gene expression', 'angiogenesis',
+    ],
+  },
+  {
+    path: '/bpc-157-for-tendons',
+    anchor: 'BPC-157 for tendon & ligament healing',
+    description: 'BPC-157 tendon healing protocol by injury type',
+    keywords: [
+      'bpc-157', 'tendon', 'ligament', 'healing', 'injury',
+      'repair', 'collagen', 'inflammation', 'recovery', 'tb-500',
+    ],
+  },
+  {
+    path: '/best-peptides-for-men-over-50',
+    anchor: 'best peptides for men over 50',
+    description: 'GH restoration, muscle, longevity peptides for men 50+',
+    keywords: [
+      'cjc-1295', 'ipamorelin', 'bpc-157', 'epithalon', 'ghk-cu', 'nad',
+      'anti-aging', 'longevity', 'gh', 'growth hormone', 'muscle', 'aging',
+    ],
+  },
+  {
+    path: '/bpc-157-for-anxiety',
+    anchor: 'BPC-157 for anxiety & depression',
+    description: 'BPC-157 gut-brain axis, dopamine, and GABA mechanisms for anxiety',
+    keywords: [
+      'bpc-157', 'gut', 'healing', 'inflammation', 'gut-brain',
+      'oral', 'repair', 'collagen', 'recovery', 'ibs',
+    ],
+  },
+  {
+    path: '/bpc-157-oral-vs-injectable',
+    anchor: 'BPC-157 oral vs injectable comparison',
+    description: 'Which BPC-157 administration route is best for different goals',
+    keywords: [
+      'bpc-157', 'oral', 'injectable', 'healing', 'gut', 'protocol',
+      'dosing', 'beginner', 'reconstitute', 'inject', 'how to',
+    ],
+  },
+  {
+    path: '/epithalon-complete-guide',
+    anchor: 'Epithalon complete guide',
+    description: 'Telomere lengthening, dosing protocol, and longevity research',
+    keywords: [
+      'epithalon', 'anti-aging', 'telomere', 'longevity', 'pineal',
+      'aging', 'gene expression', 'mortality', 'mitochondria', 'nad',
+    ],
+  },
 ];
 
 /**
