@@ -8,6 +8,17 @@ export const metadata: Metadata = {
   title: 'Peptide Stack Protocols | BPC-157, Anti-Aging & Body Recomp Stacks | BPC-157 Stack',
   description: 'Proven peptide stack protocols designed for maximum results. Healing, anti-aging, body recomposition, cognitive, and athlete performance stacks with complete dosing guides.',
   keywords: 'peptide stacks, BPC-157 stack, healing peptide stack, anti-aging protocol, body recomposition peptides, cognitive peptide stack',
+  openGraph: {
+    title: 'Peptide Stack Protocols | BPC-157, Anti-Aging & Body Recomp Stacks',
+    description: 'Proven peptide stack protocols for healing, anti-aging, body recomposition, cognitive performance, and athletics.',
+    type: 'website',
+    url: 'https://bp157stack.com/stacks',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Peptide Stack Protocols | BPC-157, Anti-Aging & Body Recomp Stacks',
+    description: 'Proven peptide stack protocols for healing, anti-aging, body recomposition, and cognitive performance.',
+  },
 };
 
 const AFFILIATE = 'https://apollopeptidesciences.com/?rfsn=9016964.3f1b1e';

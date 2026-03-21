@@ -6,9 +6,20 @@ import ProductCard from '@/components/ProductCard';
 import InternalLinks from '@/components/InternalLinks';
 
 export const metadata: Metadata = {
-  title: 'Anti-Aging Peptides: Epithalon, GHK-Cu, SS-31 & NAD+ | Longevity Protocols | BPC-157 Stack',
+  title: 'Best Anti-Aging Peptides 2026: Epithalon, GHK-Cu, SS-31 & NAD+ | Longevity Protocols',
   description: 'The most scientifically advanced anti-aging peptide protocols. Epithalon lengthens telomeres, GHK-Cu resets 31% of aged genes, SS-31 restores mitochondrial function. Full dosing protocols.',
   keywords: 'anti-aging peptides, Epithalon telomere, GHK-Cu copper peptide, SS-31 mitochondria, NAD+ longevity, SNAP-8 wrinkles, longevity protocol',
+  openGraph: {
+    title: 'Anti-Aging Peptides: Epithalon, GHK-Cu, SS-31 & NAD+ | Longevity Protocols',
+    description: 'Epithalon lengthens telomeres, GHK-Cu resets 31% of aged genes, SS-31 restores mitochondrial function. Full dosing protocols.',
+    type: 'article',
+    url: 'https://bp157stack.com/anti-aging',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Anti-Aging Peptides: Epithalon, GHK-Cu, SS-31 & NAD+',
+    description: 'The most scientifically advanced anti-aging peptide protocols for longevity.',
+  },
 };
 
 const AFFILIATE = 'https://apollopeptidesciences.com/?rfsn=9016964.3f1b1e';

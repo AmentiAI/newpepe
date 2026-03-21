@@ -9,6 +9,17 @@ export const metadata: Metadata = {
   title: 'Body Composition Peptides | CJC-1295, Ipamorelin, IGF-1 LR3 & GLP Peptides | BPC-157 Stack',
   description: 'The complete body recomposition peptide guide. CJC-1295 + Ipamorelin, IGF-1 LR3, MOTS-c, and GLP peptides for fat loss, lean muscle, and GH optimization. Evidence-based protocols.',
   keywords: 'body composition peptides, CJC-1295 Ipamorelin, IGF-1 LR3 muscle, MOTS-c fat loss, semaglutide, tirzepatide, peptide fat burning',
+  openGraph: {
+    title: 'Body Composition Peptides | CJC-1295, Ipamorelin, IGF-1 LR3 & GLP Peptides',
+    description: 'CJC-1295 + Ipamorelin, IGF-1 LR3, MOTS-c, and GLP peptides for fat loss, lean muscle, and GH optimization.',
+    type: 'article',
+    url: 'https://bp157stack.com/body-composition',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Body Composition Peptides | CJC-1295, Ipamorelin & GLP Peptides',
+    description: 'Burn fat and build muscle with the most effective body recomposition peptide protocols.',
+  },
 };
 
 const AFFILIATE = 'https://apollopeptidesciences.com/?rfsn=9016964.3f1b1e';

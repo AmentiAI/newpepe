@@ -6,6 +6,7 @@ import { ArrowRight, CheckCircle, FlaskConical, Microscope, Shield, Zap, Flame, 
 import { products, getProductBySlug, getRelatedProducts } from '@/lib/products';
 import ProductCard from '@/components/ProductCard';
 import InternalLinks from '@/components/InternalLinks';
+import { productFaqs } from '@/lib/product-faqs';
 
 interface Props {
   params: { slug: string };
@@ -18,14 +19,23 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const product = getProductBySlug(params.slug);
   if (!product) return { title: 'Peptide Not Found' };
+  const keywords = [product.name, ...product.tags, product.category, 'peptide', 'BPC-157 stack'].join(', ');
   return {
     title: product.seoTitle,
     description: product.shortDescription,
+    keywords,
     openGraph: {
       title: product.seoTitle,
       description: product.shortDescription,
-      images: [product.image],
+      images: [{ url: product.image, width: 600, alt: product.name }],
       type: 'website',
+      url: `https://bp157stack.com/products/${params.slug}`,
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: product.seoTitle,
+      description: product.shortDescription,
+      images: [product.image],
     },
   };
 }
@@ -111,6 +121,7 @@ export default function ProductPage({ params }: Props) {
 
   const related = getRelatedProducts(product.synergies).slice(0, 3);
   const theme = categoryTheme[product.category] ?? defaultTheme;
+  const faqs = productFaqs[product.slug] ?? [];
 
   const descLines = product.fullDescription.split('\n').filter(Boolean);
 
@@ -120,20 +131,41 @@ export default function ProductPage({ params }: Props) {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'Product',
-            name: product.name,
-            description: product.shortDescription,
-            image: product.image,
-            offers: {
-              '@type': 'Offer',
-              price: product.price,
-              priceCurrency: 'USD',
-              availability: 'https://schema.org/InStock',
-              url: product.affiliateUrl,
+          __html: JSON.stringify([
+            {
+              '@context': 'https://schema.org',
+              '@type': 'BreadcrumbList',
+              itemListElement: [
+                { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://bp157stack.com' },
+                { '@type': 'ListItem', position: 2, name: 'Products', item: 'https://bp157stack.com/products' },
+                { '@type': 'ListItem', position: 3, name: product.name, item: `https://bp157stack.com/products/${product.slug}` },
+              ],
             },
-          }),
+            {
+              '@context': 'https://schema.org',
+              '@type': 'Product',
+              name: product.name,
+              description: product.shortDescription,
+              image: product.image,
+              keywords: [product.name, ...product.tags].join(', '),
+              offers: {
+                '@type': 'Offer',
+                price: product.price,
+                priceCurrency: 'USD',
+                availability: 'https://schema.org/InStock',
+                url: product.affiliateUrl,
+              },
+            },
+            ...(faqs.length > 0 ? [{
+              '@context': 'https://schema.org',
+              '@type': 'FAQPage',
+              mainEntity: faqs.map(({ q, a }) => ({
+                '@type': 'Question',
+                name: q,
+                acceptedAnswer: { '@type': 'Answer', text: a },
+              })),
+            }] : []),
+          ]),
         }}
       />
 
@@ -429,6 +461,27 @@ export default function ProductPage({ params }: Props) {
               >
                 Shop <ArrowRight className="w-5 h-5" />
               </a>
+            </div>
+          </div>
+        )}
+
+        {faqs.length > 0 && (
+          <div className="mt-16">
+            <h2 className="text-2xl font-black text-white mb-6">
+              Common <span className={theme.accentLight}>Questions</span>
+            </h2>
+            <div className="space-y-3">
+              {faqs.map(({ q, a }) => (
+                <details key={q} className="glass-card group">
+                  <summary className="p-5 cursor-pointer list-none flex items-center justify-between">
+                    <span className="text-white font-semibold text-sm pr-4">{q}</span>
+                    <span className={`${theme.accentLight} text-lg shrink-0 group-open:rotate-45 transition-transform`}>+</span>
+                  </summary>
+                  <div className="px-5 pb-5">
+                    <p className="text-slate-400 text-sm leading-relaxed">{a}</p>
+                  </div>
+                </details>
+              ))}
             </div>
           </div>
         )}

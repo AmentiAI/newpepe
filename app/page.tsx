@@ -90,6 +90,26 @@ export default function HomePage() {
 
   return (
     <div className="overflow-hidden">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'WebPage',
+            name: 'BPC-157 Stack — #1 Peptide Protocols for Healing, Performance & Longevity',
+            description: 'The most comprehensive BPC-157 and peptide protocol resource. Science-backed stacks for injury healing, body recomposition, anti-aging, and cognitive enhancement.',
+            url: 'https://bp157stack.com',
+            isPartOf: { '@type': 'WebSite', name: 'BPC-157 Stack', url: 'https://bp157stack.com' },
+            about: [
+              { '@type': 'Thing', name: 'BPC-157' },
+              { '@type': 'Thing', name: 'TB-500' },
+              { '@type': 'Thing', name: 'Peptide Protocols' },
+              { '@type': 'Thing', name: 'Injury Healing' },
+              { '@type': 'Thing', name: 'Anti-Aging' },
+            ],
+          }),
+        }}
+      />
 
       {/* ═══════════════════════════════════════════════
           HERO — Full viewport, cinematic
@@ -115,7 +135,10 @@ export default function HomePage() {
                 <span className="text-neon-green text-xs font-semibold uppercase tracking-widest">Apollo Peptide Sciences Partner</span>
               </div>
 
-              <h1 className="text-6xl sm:text-7xl lg:text-8xl font-black leading-[0.95] mb-6 tracking-tight">
+              <h1
+                aria-label="BPC-157 Peptide Protocols — Heal. Optimize. Dominate."
+                className="text-6xl sm:text-7xl lg:text-8xl font-black leading-[0.95] mb-6 tracking-tight"
+              >
                 <span className="text-white block">Heal.</span>
                 <span className="block" style={{ WebkitTextStroke: '2px #00ff88', color: 'transparent' }}>Optimize.</span>
                 <span className="text-white block">Dominate.</span>

@@ -18,9 +18,24 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const stack = getStackById(params.slug);
   if (!stack) return { title: 'Stack Not Found' };
+  const keywords = [stack.name, ...stack.peptides, stack.goal, 'peptide stack', 'peptide protocol', 'BPC-157 stack'].join(', ');
   return {
     title: stack.seoTitle,
     description: stack.tagline,
+    keywords,
+    openGraph: {
+      title: stack.seoTitle,
+      description: stack.tagline,
+      type: 'article',
+      url: `https://bp157stack.com/stacks/${params.slug}`,
+      images: [{ url: stack.image, width: 600, alt: stack.name }],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: stack.seoTitle,
+      description: stack.tagline,
+      images: [stack.image],
+    },
   };
 }
 
@@ -34,6 +49,33 @@ export default function StackPage({ params }: Props) {
 
   return (
     <div className="grid-bg min-h-screen pt-24 pb-20">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify([
+            {
+              '@context': 'https://schema.org',
+              '@type': 'BreadcrumbList',
+              itemListElement: [
+                { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://bp157stack.com' },
+                { '@type': 'ListItem', position: 2, name: 'Stacks', item: 'https://bp157stack.com/stacks' },
+                { '@type': 'ListItem', position: 3, name: stack.name, item: `https://bp157stack.com/stacks/${stack.id}` },
+              ],
+            },
+            {
+              '@context': 'https://schema.org',
+              '@type': 'Article',
+              headline: stack.name,
+              description: stack.tagline,
+              image: stack.image,
+              author: { '@type': 'Organization', name: 'BPC-157 Stack', url: 'https://bp157stack.com' },
+              publisher: { '@type': 'Organization', name: 'BPC-157 Stack', url: 'https://bp157stack.com' },
+              about: stack.goal,
+              keywords: [stack.name, ...stack.peptides, stack.goal].join(', '),
+            },
+          ]),
+        }}
+      />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Breadcrumb */}
         <div className="flex items-center gap-2 mb-8 text-sm text-slate-500">

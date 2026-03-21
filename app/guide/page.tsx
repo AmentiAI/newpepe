@@ -4,8 +4,20 @@ import { ArrowRight, BookOpen, AlertTriangle, CheckCircle } from 'lucide-react';
 import InternalLinks from '@/components/InternalLinks';
 
 export const metadata: Metadata = {
-  title: 'Complete BPC-157 Beginner Guide | How to Use Peptides Safely | BPC-157 Stack',
+  title: 'Complete BPC-157 Guide 2026 | How to Use Peptides Safely | BPC-157 Stack',
   description: 'The definitive beginner guide to BPC-157 and peptides. Learn how to reconstitute, dose, inject, and stack peptides safely for maximum results.',
+  keywords: 'BPC-157 beginner guide, how to use peptides, peptide reconstitution, peptide dosing, how to inject BPC-157, bacteriostatic water, peptide protocol, insulin syringe peptides',
+  openGraph: {
+    title: 'Complete BPC-157 Beginner Guide | How to Use Peptides Safely',
+    description: 'Learn how to reconstitute, dose, inject, and stack peptides safely. The definitive beginner guide.',
+    type: 'article',
+    url: 'https://bp157stack.com/guide',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Complete BPC-157 Beginner Guide | How to Use Peptides Safely',
+    description: 'Learn how to reconstitute, dose, inject, and stack peptides safely for maximum results.',
+  },
 };
 
 const AFFILIATE = 'https://apollopeptidesciences.com/?rfsn=9016964.3f1b1e';
@@ -22,6 +34,23 @@ const steps = [
 export default function GuidePage() {
   return (
     <div className="grid-bg min-h-screen pt-24 pb-20">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'HowTo',
+            name: 'How to Use Peptides Safely: Complete Beginner Guide',
+            description: 'The definitive beginner guide to BPC-157 and peptides. Learn how to reconstitute, dose, inject, and stack peptides safely for maximum results.',
+            step: steps.map((s, i) => ({
+              '@type': 'HowToStep',
+              position: i + 1,
+              name: s.title,
+              text: s.desc,
+            })),
+          }),
+        }}
+      />
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Hero */}
         <div className="text-center mb-16">

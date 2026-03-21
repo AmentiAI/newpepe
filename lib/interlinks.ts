@@ -221,6 +221,53 @@ const registry: InterLink[] = [
       'beginner', 'guide', 'protocol', 'how to', 'inject',
     ],
   },
+
+  // ── High-value content pages ──────────────────────────────────────────────
+  {
+    path: '/wolverine-stack',
+    anchor: 'the Wolverine Stack (BPC-157 + TB-500)',
+    description: 'The Wolverine Stack complete protocol guide',
+    keywords: [
+      'bpc-157', 'tb-500', 'wolverine', 'healing', 'injury', 'stack',
+      'protocol', 'recovery', 'repair', 'tendon', 'ligament',
+    ],
+  },
+  {
+    path: '/bpc-157-vs-tb-500',
+    anchor: 'BPC-157 vs TB-500 comparison',
+    description: 'Which healing peptide is better and when to use each',
+    keywords: [
+      'bpc-157', 'tb-500', 'comparison', 'healing', 'injury',
+      'vs', 'difference', 'which is better', 'tendon', 'gut',
+    ],
+  },
+  {
+    path: '/is-bpc-157-legal',
+    anchor: 'is BPC-157 legal?',
+    description: 'BPC-157 FDA status, WADA rules, and research chemical law',
+    keywords: [
+      'bpc-157', 'legal', 'fda', 'wada', 'research chemical',
+      'safety', 'banned', 'regulated', 'protocol',
+    ],
+  },
+  {
+    path: '/how-to-reconstitute-peptides',
+    anchor: 'how to reconstitute peptides',
+    description: 'Step-by-step guide with dose reference table',
+    keywords: [
+      'reconstitute', 'reconstitution', 'bacteriostatic water', 'how to',
+      'beginner', 'guide', 'inject', 'protocol', 'insulin syringe', 'dosing',
+    ],
+  },
+  {
+    path: '/cjc-1295-ipamorelin-results',
+    anchor: 'CJC-1295 Ipamorelin results timeline',
+    description: 'Week-by-week results: sleep, fat loss, muscle',
+    keywords: [
+      'cjc-1295', 'ipamorelin', 'results', 'timeline', 'fat loss',
+      'muscle', 'body-composition', 'gh', 'growth hormone', 'sleep', 'recomp',
+    ],
+  },
 ];
 
 /**

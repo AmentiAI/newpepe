@@ -3,32 +3,40 @@ import { products } from '@/lib/products';
 import { stacks } from '@/lib/stacks';
 
 const BASE_URL = 'https://bp157stack.com';
+// Update this date when content is meaningfully revised
+const CONTENT_DATE = new Date('2025-03-01');
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticPages: MetadataRoute.Sitemap = [
-    { url: BASE_URL, priority: 1.0, changeFrequency: 'weekly' },
-    { url: `${BASE_URL}/products`, priority: 0.9, changeFrequency: 'weekly' },
-    { url: `${BASE_URL}/stacks`, priority: 0.9, changeFrequency: 'weekly' },
-    { url: `${BASE_URL}/healing`, priority: 0.8, changeFrequency: 'monthly' },
-    { url: `${BASE_URL}/anti-aging`, priority: 0.8, changeFrequency: 'monthly' },
-    { url: `${BASE_URL}/body-composition`, priority: 0.8, changeFrequency: 'monthly' },
-    { url: `${BASE_URL}/guide`, priority: 0.7, changeFrequency: 'monthly' },
-    { url: `${BASE_URL}/faq`, priority: 0.6, changeFrequency: 'monthly' },
-    { url: `${BASE_URL}/contact`, priority: 0.4, changeFrequency: 'yearly' },
+    { url: BASE_URL, priority: 1.0, changeFrequency: 'weekly', lastModified: CONTENT_DATE },
+    { url: `${BASE_URL}/products`, priority: 0.9, changeFrequency: 'weekly', lastModified: CONTENT_DATE },
+    { url: `${BASE_URL}/stacks`, priority: 0.9, changeFrequency: 'weekly', lastModified: CONTENT_DATE },
+    { url: `${BASE_URL}/healing`, priority: 0.9, changeFrequency: 'monthly', lastModified: CONTENT_DATE },
+    { url: `${BASE_URL}/anti-aging`, priority: 0.9, changeFrequency: 'monthly', lastModified: CONTENT_DATE },
+    { url: `${BASE_URL}/body-composition`, priority: 0.9, changeFrequency: 'monthly', lastModified: CONTENT_DATE },
+    // High-value comparison & intent pages
+    { url: `${BASE_URL}/wolverine-stack`, priority: 0.9, changeFrequency: 'monthly', lastModified: CONTENT_DATE },
+    { url: `${BASE_URL}/bpc-157-vs-tb-500`, priority: 0.9, changeFrequency: 'monthly', lastModified: CONTENT_DATE },
+    { url: `${BASE_URL}/is-bpc-157-legal`, priority: 0.8, changeFrequency: 'monthly', lastModified: CONTENT_DATE },
+    { url: `${BASE_URL}/how-to-reconstitute-peptides`, priority: 0.8, changeFrequency: 'monthly', lastModified: CONTENT_DATE },
+    { url: `${BASE_URL}/cjc-1295-ipamorelin-results`, priority: 0.8, changeFrequency: 'monthly', lastModified: CONTENT_DATE },
+    { url: `${BASE_URL}/guide`, priority: 0.8, changeFrequency: 'monthly', lastModified: CONTENT_DATE },
+    { url: `${BASE_URL}/faq`, priority: 0.7, changeFrequency: 'monthly', lastModified: CONTENT_DATE },
+    { url: `${BASE_URL}/contact`, priority: 0.4, changeFrequency: 'yearly', lastModified: CONTENT_DATE },
   ];
 
   const productPages: MetadataRoute.Sitemap = products.map((p) => ({
     url: `${BASE_URL}/products/${p.slug}`,
     priority: 0.8,
-    changeFrequency: 'weekly' as const,
-    lastModified: new Date(),
+    changeFrequency: 'monthly' as const,
+    lastModified: CONTENT_DATE,
   }));
 
   const stackPages: MetadataRoute.Sitemap = stacks.map((s) => ({
     url: `${BASE_URL}/stacks/${s.id}`,
     priority: 0.7,
     changeFrequency: 'monthly' as const,
-    lastModified: new Date(),
+    lastModified: CONTENT_DATE,
   }));
 
   return [...staticPages, ...productPages, ...stackPages];

@@ -45,13 +45,31 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              '@context': 'https://schema.org',
-              '@type': 'Organization',
-              name: 'BPC-157 Stack',
-              url: 'https://bp157stack.com',
-              description: 'Expert peptide stack guides and protocols for healing, anti-aging, and performance. Powered by Apollo Peptide Sciences.',
-            }),
+            __html: JSON.stringify([
+              {
+                '@context': 'https://schema.org',
+                '@type': 'WebSite',
+                name: 'BPC-157 Stack',
+                url: 'https://bp157stack.com',
+                description: 'Expert peptide stack guides and protocols for healing, anti-aging, and performance.',
+                potentialAction: {
+                  '@type': 'SearchAction',
+                  target: {
+                    '@type': 'EntryPoint',
+                    urlTemplate: 'https://bp157stack.com/products?q={search_term_string}',
+                  },
+                  'query-input': 'required name=search_term_string',
+                },
+              },
+              {
+                '@context': 'https://schema.org',
+                '@type': 'Organization',
+                name: 'BPC-157 Stack',
+                url: 'https://bp157stack.com',
+                description: 'Expert peptide stack guides and protocols for healing, anti-aging, and performance. Powered by Apollo Peptide Sciences.',
+                sameAs: ['https://bp157stack.com'],
+              },
+            ]),
           }}
         />
       </head>

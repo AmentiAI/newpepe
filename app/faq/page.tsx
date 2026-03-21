@@ -4,8 +4,20 @@ import { ArrowRight } from 'lucide-react';
 import InternalLinks from '@/components/InternalLinks';
 
 export const metadata: Metadata = {
-  title: 'BPC-157 FAQ | Common Questions About Peptides & Protocols | BPC-157 Stack',
+  title: 'BPC-157 FAQ 2026 | Common Questions About Peptides & Protocols | BPC-157 Stack',
   description: 'Answers to the most common BPC-157 questions — dosing, safety, stacking, oral vs injectable, sourcing, and more. Expert peptide FAQs.',
+  keywords: 'BPC-157 FAQ, peptide questions, BPC-157 dosing, is BPC-157 safe, BPC-157 oral, peptide reconstitution, TB-500 stack, peptide sourcing, COA peptides',
+  openGraph: {
+    title: 'BPC-157 FAQ | Common Peptide Questions Answered',
+    description: 'Answers to the most common BPC-157 questions — dosing, safety, stacking, oral vs injectable, sourcing, and more.',
+    type: 'website',
+    url: 'https://bp157stack.com/faq',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'BPC-157 FAQ | Common Peptide Questions Answered',
+    description: 'Answers to the most common BPC-157 questions — dosing, safety, stacking, oral vs injectable.',
+  },
 };
 
 const AFFILIATE = 'https://apollopeptidesciences.com/?rfsn=9016964.3f1b1e';
@@ -55,9 +67,25 @@ const faqs = [
   },
 ];
 
+const allFaqItems = faqs.flatMap((g) => g.items);
+
 export default function FAQPage() {
   return (
     <div className="grid-bg min-h-screen pt-24 pb-20">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'FAQPage',
+            mainEntity: allFaqItems.map(({ q, a }) => ({
+              '@type': 'Question',
+              name: q,
+              acceptedAnswer: { '@type': 'Answer', text: a },
+            })),
+          }),
+        }}
+      />
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Hero */}
         <div className="text-center mb-16">

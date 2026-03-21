@@ -7,9 +7,20 @@ import ProductCard from '@/components/ProductCard';
 import InternalLinks from '@/components/InternalLinks';
 
 export const metadata: Metadata = {
-  title: 'BPC-157 & TB-500 Healing Peptides | Fastest Injury Recovery Protocols | BPC-157 Stack',
+  title: 'BPC-157 & TB-500 Healing Peptides 2026 | Fastest Injury Recovery Protocols | BPC-157 Stack',
   description: 'BPC-157 and TB-500 are the most studied healing peptides in the world. Complete guide to dosing, protocols, and injury recovery for tendons, ligaments, muscles, gut, and nerves.',
   keywords: 'BPC-157, TB-500, healing peptides, injury recovery, tendon repair, ligament healing, gut healing, KPV anti-inflammatory',
+  openGraph: {
+    title: 'BPC-157 & TB-500 Healing Peptides | Injury Recovery Protocols',
+    description: 'BPC-157 and TB-500 are the most studied healing peptides. Complete guide for tendons, ligaments, gut, and nerve repair.',
+    type: 'article',
+    url: 'https://bp157stack.com/healing',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'BPC-157 & TB-500 Healing Peptides | Injury Recovery Protocols',
+    description: 'BPC-157 and TB-500: the most studied healing peptides. Heal injuries 2–4x faster.',
+  },
 };
 
 const AFFILIATE = 'https://apollopeptidesciences.com/?rfsn=9016964.3f1b1e';
