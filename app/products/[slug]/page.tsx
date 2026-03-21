@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { ArrowRight, CheckCircle, FlaskConical, Microscope, Shield, Zap, Flame, Star } from 'lucide-react';
 import { products, getProductBySlug, getRelatedProducts } from '@/lib/products';
 import ProductCard from '@/components/ProductCard';
+import InternalLinks from '@/components/InternalLinks';
 
 interface Props {
   params: { slug: string };
@@ -431,6 +432,8 @@ export default function ProductPage({ params }: Props) {
             </div>
           </div>
         )}
+
+        <InternalLinks path={`/products/${params.slug}`} title="Related Peptides & Guides" />
       </div>
     </div>
   );

@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
+import InternalLinks from '@/components/InternalLinks';
 
 export const metadata: Metadata = {
   title: 'BPC-157 FAQ | Common Questions About Peptides & Protocols | BPC-157 Stack',
@@ -99,6 +100,8 @@ export default function FAQPage() {
           </div>
         </div>
       </div>
+
+      <InternalLinks path="/faq" />
     </div>
   );
 }

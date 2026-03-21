@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { ArrowRight, Clock, Layers, Shield, Sparkles, TrendingUp, Brain, Activity, ChevronRight, Star, Zap } from 'lucide-react';
 import { stacks } from '@/lib/stacks';
+import InternalLinks from '@/components/InternalLinks';
 
 export const metadata: Metadata = {
   title: 'Peptide Stack Protocols | BPC-157, Anti-Aging & Body Recomp Stacks | BPC-157 Stack',
@@ -419,6 +420,8 @@ export default function StacksPage() {
           </div>
         </div>
       </section>
+
+      <InternalLinks path="/stacks" />
     </div>
   );
 }

@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { ArrowRight, CheckCircle, TrendingUp, Zap, Moon, Flame, BarChart3, Scale, Activity } from 'lucide-react';
 import { getProductsByCategory } from '@/lib/products';
 import ProductCard from '@/components/ProductCard';
+import InternalLinks from '@/components/InternalLinks';
 
 export const metadata: Metadata = {
   title: 'Body Composition Peptides | CJC-1295, Ipamorelin, IGF-1 LR3 & GLP Peptides | BPC-157 Stack',
@@ -429,6 +430,8 @@ export default function BodyCompositionPage() {
           </div>
         </div>
       </section>
+
+      <InternalLinks path="/body-composition" />
     </div>
   );
 }

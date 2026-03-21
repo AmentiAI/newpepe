@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { ArrowRight, BookOpen, AlertTriangle, CheckCircle } from 'lucide-react';
+import InternalLinks from '@/components/InternalLinks';
 
 export const metadata: Metadata = {
   title: 'Complete BPC-157 Beginner Guide | How to Use Peptides Safely | BPC-157 Stack',
@@ -108,6 +109,8 @@ export default function GuidePage() {
           </div>
         </div>
       </div>
+
+      <InternalLinks path="/guide" />
     </div>
   );
 }

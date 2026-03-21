@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { ArrowRight, CheckCircle, Sparkles, Dna, Zap, Clock, TrendingDown, Brain, Activity } from 'lucide-react';
 import { getProductsByCategory } from '@/lib/products';
 import ProductCard from '@/components/ProductCard';
+import InternalLinks from '@/components/InternalLinks';
 
 export const metadata: Metadata = {
   title: 'Anti-Aging Peptides: Epithalon, GHK-Cu, SS-31 & NAD+ | Longevity Protocols | BPC-157 Stack',
@@ -345,6 +346,8 @@ export default function AntiAgingPage() {
           </div>
         </div>
       </section>
+
+      <InternalLinks path="/anti-aging" />
     </div>
   );
 }

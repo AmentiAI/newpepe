@@ -5,6 +5,7 @@ import { ArrowRight, CheckCircle, Clock, ChevronLeft } from 'lucide-react';
 import { stacks, getStackById } from '@/lib/stacks';
 import { getRelatedProducts } from '@/lib/products';
 import ProductCard from '@/components/ProductCard';
+import InternalLinks from '@/components/InternalLinks';
 
 interface Props {
   params: { slug: string };
@@ -162,6 +163,8 @@ export default function StackPage({ params }: Props) {
             </div>
           </div>
         </div>
+
+        <InternalLinks path={`/stacks/${params.slug}`} title="Related Protocols" />
 
         {/* Bottom CTA */}
         <div className="mt-16 text-center p-10 glass-card">

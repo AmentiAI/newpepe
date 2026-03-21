@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { ArrowRight, CheckCircle, Shield, Zap, Clock, TrendingUp, AlertTriangle, Activity, Microscope, Star } from 'lucide-react';
 import { getProductsByCategory } from '@/lib/products';
 import ProductCard from '@/components/ProductCard';
+import InternalLinks from '@/components/InternalLinks';
 
 export const metadata: Metadata = {
   title: 'BPC-157 & TB-500 Healing Peptides | Fastest Injury Recovery Protocols | BPC-157 Stack',
@@ -451,6 +452,8 @@ export default function HealingPage() {
           </div>
         </div>
       </section>
+
+      <InternalLinks path="/healing" />
     </div>
   );
 }
