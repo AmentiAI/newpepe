@@ -191,7 +191,7 @@ export default function GhkCuHairLossPage() {
           <h2 className="text-2xl font-black text-white mb-3">Get GHK-Cu Copper Peptide</h2>
           <p className="text-slate-400 mb-6">COA-verified GHK-Cu — for topical hair application and systemic anti-aging.</p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <a href={AFFILIATE} target="_blank" rel="noopener noreferrer"
+            <a href={AFFILIATE} target="_blank" rel="nofollow sponsored noopener noreferrer"
               className="btn-cta px-8 py-4 flex items-center gap-2">
               Shop GHK-Cu <ArrowRight className="w-5 h-5" />
             </a>

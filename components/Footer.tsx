@@ -25,7 +25,7 @@ export default function Footer() {
             <a
               href={AFFILIATE}
               target="_blank"
-              rel="noopener noreferrer"
+              rel="nofollow sponsored noopener noreferrer"
               className="btn-cta text-sm inline-flex items-center gap-2"
             >
               Shop <ExternalLink className="w-4 h-4" />

@@ -216,7 +216,7 @@ export default function Bpc157TendonsPage() {
           <h2 className="text-2xl font-black text-white mb-3">Get BPC-157 for Tendon Healing</h2>
           <p className="text-slate-400 mb-6">COA-verified BPC-157 — the most potent tendon repair peptide available.</p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <a href={AFFILIATE} target="_blank" rel="noopener noreferrer"
+            <a href={AFFILIATE} target="_blank" rel="nofollow sponsored noopener noreferrer"
               className="btn-cta px-8 py-4 flex items-center gap-2">
               Shop BPC-157 <ArrowRight className="w-5 h-5" />
             </a>

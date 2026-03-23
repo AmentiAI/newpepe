@@ -179,7 +179,7 @@ export default function StackPage({ params }: Props) {
               <a
                 href={AFFILIATE}
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="nofollow sponsored noopener noreferrer"
                 className="btn-cta text-sm py-3 w-full text-center flex items-center justify-center gap-2 mb-3"
               >
                 Shop <ArrowRight className="w-4 h-4" />
@@ -217,7 +217,7 @@ export default function StackPage({ params }: Props) {
           <a
             href={AFFILIATE}
             target="_blank"
-            rel="noopener noreferrer"
+            rel="nofollow sponsored noopener noreferrer"
             className="btn-cta text-base px-8 py-4 inline-flex items-center gap-2"
           >
             Shop <ArrowRight className="w-5 h-5" />

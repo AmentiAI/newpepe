@@ -238,7 +238,7 @@ export default function ProductPage({ params }: Props) {
               <a
                 href={product.affiliateUrl}
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="nofollow sponsored noopener noreferrer"
                 className="btn-cta text-base py-4 w-full flex items-center justify-center gap-2"
               >
                 Buy {product.name} <ArrowRight className="w-5 h-5" />
@@ -360,7 +360,7 @@ export default function ProductPage({ params }: Props) {
               <a
                 href={product.affiliateUrl}
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="nofollow sponsored noopener noreferrer"
                 className="btn-cta text-sm py-3 w-full text-center flex items-center justify-center gap-2 mb-3"
               >
                 Shop <ArrowRight className="w-4 h-4" />
@@ -426,7 +426,7 @@ export default function ProductPage({ params }: Props) {
               <a
                 href={product.affiliateUrl}
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="nofollow sponsored noopener noreferrer"
                 className="btn-cta text-sm py-3 px-6 inline-flex items-center gap-2"
               >
                 Shop {product.name} <ArrowRight className="w-4 h-4" />
@@ -442,7 +442,7 @@ export default function ProductPage({ params }: Props) {
               <h2 className="text-2xl font-black text-white">
                 Stack <span className={theme.accentLight}>{product.name}</span> With
               </h2>
-              <a href={product.affiliateUrl} target="_blank" rel="noopener noreferrer"
+              <a href={product.affiliateUrl} target="_blank" rel="nofollow sponsored noopener noreferrer"
                 className="btn-cta text-sm px-5 py-2.5 flex items-center gap-2 hidden sm:flex">
                 Shop the Full Stack <ArrowRight className="w-4 h-4" />
               </a>
@@ -456,7 +456,7 @@ export default function ProductPage({ params }: Props) {
               <a
                 href={product.affiliateUrl}
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="nofollow sponsored noopener noreferrer"
                 className="btn-cta text-base px-8 py-4 inline-flex items-center gap-2"
               >
                 Shop <ArrowRight className="w-5 h-5" />

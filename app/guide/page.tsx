@@ -131,7 +131,7 @@ export default function GuidePage() {
           <h2 className="text-2xl font-bold text-white mb-3">Ready to Start?</h2>
           <p className="text-slate-400 mb-6">Get your peptides from Apollo Peptide Sciences — COA verified, US domestic.</p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <a href={AFFILIATE} target="_blank" rel="noopener noreferrer" className="btn-cta text-base px-8 py-4 flex items-center gap-2">
+            <a href={AFFILIATE} target="_blank" rel="nofollow sponsored noopener noreferrer" className="btn-cta text-base px-8 py-4 flex items-center gap-2">
               Shop <ArrowRight className="w-5 h-5" />
             </a>
             <Link href="/stacks" className="btn-secondary text-base px-8 py-4">Browse Stacks</Link>

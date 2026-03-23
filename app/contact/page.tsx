@@ -39,7 +39,7 @@ export default function ContactPage() {
               <a
                 href={AFFILIATE}
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="nofollow sponsored noopener noreferrer"
                 className="text-neon-green text-sm flex items-center gap-1 hover:underline"
               >
                 Shop <ExternalLink className="w-3 h-3" />
@@ -54,7 +54,7 @@ export default function ContactPage() {
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <Link href="/faq" className="btn-secondary text-sm px-6 py-3">Browse FAQ</Link>
-            <a href={AFFILIATE} target="_blank" rel="noopener noreferrer" className="btn-cta text-sm px-6 py-3 flex items-center gap-2">
+            <a href={AFFILIATE} target="_blank" rel="nofollow sponsored noopener noreferrer" className="btn-cta text-sm px-6 py-3 flex items-center gap-2">
               Shop Peptides <ArrowRight className="w-4 h-4" />
             </a>
           </div>

@@ -64,7 +64,7 @@ export default function ProductsPage() {
           <a
             href={AFFILIATE}
             target="_blank"
-            rel="noopener noreferrer"
+            rel="nofollow sponsored noopener noreferrer"
             className="btn-cta text-base px-8 py-4 inline-flex items-center gap-2"
           >
             Shop <ArrowRight className="w-5 h-5" />

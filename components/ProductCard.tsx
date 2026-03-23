@@ -66,7 +66,7 @@ export default function ProductCard({ product }: Props) {
             <a
               href={product.affiliateUrl}
               target="_blank"
-              rel="noopener noreferrer"
+              rel="nofollow sponsored noopener noreferrer"
               className="btn-cta text-xs px-3 py-2 flex items-center gap-1"
             >
               Buy Now <ArrowRight className="w-3 h-3" />

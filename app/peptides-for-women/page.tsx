@@ -229,7 +229,7 @@ export default function PeptidesForWomenPage() {
           <h2 className="text-2xl font-black text-white mb-3">Shop Peptides</h2>
           <p className="text-slate-400 mb-6">COA-verified. US domestic. All peptides listed above available now.</p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <a href={AFFILIATE} target="_blank" rel="noopener noreferrer"
+            <a href={AFFILIATE} target="_blank" rel="nofollow sponsored noopener noreferrer"
               className="btn-cta px-8 py-4 flex items-center gap-2">
               Shop All Peptides <ArrowRight className="w-5 h-5" />
             </a>

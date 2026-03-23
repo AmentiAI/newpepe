@@ -50,7 +50,7 @@ export default function Navbar() {
             <a
               href={AFFILIATE}
               target="_blank"
-              rel="noopener noreferrer"
+              rel="nofollow sponsored noopener noreferrer"
               className="btn-cta text-sm"
             >
               Shop Peptides →
@@ -84,7 +84,7 @@ export default function Navbar() {
             <a
               href={AFFILIATE}
               target="_blank"
-              rel="noopener noreferrer"
+              rel="nofollow sponsored noopener noreferrer"
               className="btn-cta text-sm text-center mt-3"
             >
               Shop →

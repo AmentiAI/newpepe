@@ -93,7 +93,7 @@ export default function WolverineStackPage() {
             Backed by 100+ peer-reviewed studies and decades of animal research showing 50–70% reduction in recovery time.
           </p>
           <div className="flex flex-wrap gap-4 mb-12">
-            <a href={AFFILIATE} target="_blank" rel="noopener noreferrer"
+            <a href={AFFILIATE} target="_blank" rel="nofollow sponsored noopener noreferrer"
               className="btn-cta text-base px-8 py-4 flex items-center gap-2">
               Shop the Stack <ArrowRight className="w-5 h-5" />
             </a>
@@ -228,7 +228,7 @@ export default function WolverineStackPage() {
                 BPC-157 and TB-500 from Apollo Peptide Sciences — COA verified, US domestic, ships in 24–48 hours.
               </p>
               <div className="flex flex-wrap gap-4 justify-center">
-                <a href={AFFILIATE} target="_blank" rel="noopener noreferrer"
+                <a href={AFFILIATE} target="_blank" rel="nofollow sponsored noopener noreferrer"
                   className="btn-cta text-base px-10 py-4 inline-flex items-center gap-2">
                   Shop <ArrowRight className="w-5 h-5" />
                 </a>

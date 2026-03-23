@@ -154,7 +154,7 @@ export default function HomePage() {
                 <a
                   href={AFFILIATE}
                   target="_blank"
-                  rel="noopener noreferrer"
+                  rel="nofollow sponsored noopener noreferrer"
                   className="btn-cta text-base px-8 py-4 flex items-center gap-2 group"
                 >
                   Shop
@@ -356,7 +356,7 @@ export default function HomePage() {
 
                   <div className="flex gap-2 mt-auto">
                     <Link href={`/stacks/${stack.id}`} className="btn-secondary text-xs px-4 py-2 flex-1 text-center">Protocol</Link>
-                    <a href={AFFILIATE} target="_blank" rel="noopener noreferrer" className="btn-cta text-xs px-4 py-2 flex items-center gap-1">
+                    <a href={AFFILIATE} target="_blank" rel="nofollow sponsored noopener noreferrer" className="btn-cta text-xs px-4 py-2 flex items-center gap-1">
                       Shop <ArrowRight className="w-3 h-3" />
                     </a>
                   </div>
@@ -366,7 +366,7 @@ export default function HomePage() {
           </div>
 
           <div className="text-center">
-            <a href={AFFILIATE} target="_blank" rel="noopener noreferrer" className="btn-cta text-base px-10 py-4 inline-flex items-center gap-2">
+            <a href={AFFILIATE} target="_blank" rel="nofollow sponsored noopener noreferrer" className="btn-cta text-base px-10 py-4 inline-flex items-center gap-2">
               Shop <ArrowRight className="w-5 h-5" />
             </a>
           </div>
@@ -398,7 +398,7 @@ export default function HomePage() {
 
           <div className="flex flex-wrap gap-4 justify-center">
             <Link href="/products" className="btn-secondary text-base px-8 py-4">View All 12 Peptides</Link>
-            <a href={AFFILIATE} target="_blank" rel="noopener noreferrer" className="btn-cta text-base px-8 py-4 flex items-center gap-2">
+            <a href={AFFILIATE} target="_blank" rel="nofollow sponsored noopener noreferrer" className="btn-cta text-base px-8 py-4 flex items-center gap-2">
               Shop <ArrowRight className="w-5 h-5" />
             </a>
           </div>
@@ -488,7 +488,7 @@ export default function HomePage() {
             <a
               href={AFFILIATE}
               target="_blank"
-              rel="noopener noreferrer"
+              rel="nofollow sponsored noopener noreferrer"
               className="btn-cta text-lg px-12 py-5 flex items-center gap-2 group"
             >
               Shop

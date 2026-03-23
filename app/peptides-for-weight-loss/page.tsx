@@ -203,7 +203,7 @@ export default function PeptidesForWeightLossPage() {
           <h2 className="text-2xl font-black text-white mb-3">Shop Weight Loss Peptides</h2>
           <p className="text-slate-400 mb-6">Semaglutide, tirzepatide, retatrutide, CJC-1295 Ipamorelin — COA verified, US domestic.</p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <a href={AFFILIATE} target="_blank" rel="noopener noreferrer" className="btn-cta px-8 py-4 flex items-center gap-2">Shop <ArrowRight className="w-5 h-5" /></a>
+            <a href={AFFILIATE} target="_blank" rel="nofollow sponsored noopener noreferrer" className="btn-cta px-8 py-4 flex items-center gap-2">Shop <ArrowRight className="w-5 h-5" /></a>
             <Link href="/semaglutide-vs-tirzepatide-vs-retatrutide" className="btn-secondary px-8 py-4">Compare GLP-1s</Link>
           </div>
         </div>

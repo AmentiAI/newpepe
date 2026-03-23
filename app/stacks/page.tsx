@@ -113,7 +113,7 @@ export default function StacksPage() {
             Every stack is available at Apollo Peptide Sciences — COA verified, US domestic, ships 24–48 hours.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <a href={AFFILIATE} target="_blank" rel="noopener noreferrer"
+            <a href={AFFILIATE} target="_blank" rel="nofollow sponsored noopener noreferrer"
               className="btn-cta text-base px-8 py-4 inline-flex items-center gap-2">
               Shop <ArrowRight className="w-5 h-5" />
             </a>
@@ -207,7 +207,7 @@ export default function StacksPage() {
                         className="btn-secondary text-sm px-6 py-3 flex items-center gap-2">
                         Full Protocol Guide <ChevronRight className="w-4 h-4" />
                       </Link>
-                      <a href={AFFILIATE} target="_blank" rel="noopener noreferrer"
+                      <a href={AFFILIATE} target="_blank" rel="nofollow sponsored noopener noreferrer"
                         className="btn-cta text-sm px-6 py-3 flex items-center gap-2">
                         Shop This Stack <ArrowRight className="w-4 h-4" />
                       </a>
@@ -419,7 +419,7 @@ export default function StacksPage() {
               </p>
               <p className="text-slate-500 text-sm mb-8">COA verified · US domestic · 24–48hr shipping</p>
               <div className="flex flex-wrap gap-4 justify-center">
-                <a href={AFFILIATE} target="_blank" rel="noopener noreferrer"
+                <a href={AFFILIATE} target="_blank" rel="nofollow sponsored noopener noreferrer"
                   className="btn-cta text-base px-10 py-4 inline-flex items-center gap-2">
                   Shop <ArrowRight className="w-5 h-5" />
                 </a>

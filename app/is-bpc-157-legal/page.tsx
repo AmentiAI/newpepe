@@ -162,7 +162,7 @@ export default function IsBpc157LegalPage() {
             Research chemicals are not subject to the same regulatory framework as pharmaceutical drugs. They are legal to purchase and possess, though they are marketed for research purposes rather than human consumption.
           </p>
           <div className="flex gap-3 mt-4">
-            <a href={AFFILIATE} target="_blank" rel="noopener noreferrer"
+            <a href={AFFILIATE} target="_blank" rel="nofollow sponsored noopener noreferrer"
               className="btn-cta text-sm px-6 py-3 flex items-center gap-2">
               Shop COA-Verified BPC-157 <ArrowRight className="w-4 h-4" />
             </a>

@@ -223,7 +223,7 @@ export default function PeptidesForMenOver50Page() {
           <h2 className="text-2xl font-black text-white mb-3">Start Your Protocol</h2>
           <p className="text-slate-400 mb-6">COA-verified peptides — CJC-1295/Ipamorelin, BPC-157, Epithalon, GHK-Cu, and NAD+.</p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <a href={AFFILIATE} target="_blank" rel="noopener noreferrer"
+            <a href={AFFILIATE} target="_blank" rel="nofollow sponsored noopener noreferrer"
               className="btn-cta px-8 py-4 flex items-center gap-2">
               Shop All Peptides <ArrowRight className="w-5 h-5" />
             </a>
