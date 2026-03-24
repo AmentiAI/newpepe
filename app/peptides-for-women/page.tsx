@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   },
 };
 
-const AFFILIATE = 'https://apollopeptidesciences.com/?rfsn=9016964.3f1b1e';
+const SOURCE_URL = 'https://apollopeptidesciences.com/?rfsn=9016964.3f1b1e';
 
 const peptides = [
   {
@@ -229,9 +229,9 @@ export default function PeptidesForWomenPage() {
           <h2 className="text-2xl font-black text-white mb-3">Shop Peptides</h2>
           <p className="text-slate-400 mb-6">COA-verified. US domestic. All peptides listed above available now.</p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <a href={AFFILIATE} target="_blank" rel="nofollow sponsored noopener noreferrer"
+            <a href={SOURCE_URL} target="_blank" rel="nofollow noopener noreferrer"
               className="btn-cta px-8 py-4 flex items-center gap-2">
-              Shop All Peptides <ArrowRight className="w-5 h-5" />
+              View All Peptides <ArrowRight className="w-5 h-5" />
             </a>
             <Link href="/anti-aging" className="btn-secondary px-8 py-4">Anti-Aging Protocols</Link>
           </div>

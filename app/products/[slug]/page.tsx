@@ -231,17 +231,17 @@ export default function ProductPage({ params }: Props) {
               <div className="flex items-center gap-3 mb-4">
                 <span className="text-4xl font-black text-white">${product.price}</span>
                 <div>
-                  <div className="text-slate-400 text-xs">at Apollo Peptide Sciences</div>
+                  <div className="text-slate-400 text-xs">COA Verified · Third-Party Tested</div>
                   <div className={`${theme.accentLight} text-xs font-semibold`}>COA Verified · US Domestic</div>
                 </div>
               </div>
               <a
                 href={product.affiliateUrl}
                 target="_blank"
-                rel="nofollow sponsored noopener noreferrer"
+                rel="nofollow noopener noreferrer"
                 className="btn-cta text-base py-4 w-full flex items-center justify-center gap-2"
               >
-                Buy {product.name} <ArrowRight className="w-5 h-5" />
+                View {product.name} <ArrowRight className="w-5 h-5" />
               </a>
             </div>
             <p className="text-slate-600 text-xs text-center">
@@ -344,7 +344,7 @@ export default function ProductPage({ params }: Props) {
             <div className="rounded-xl p-4 bg-dark-800/30 border border-slate-800/50">
               <p className="text-slate-600 text-xs leading-relaxed">
                 All information on this site is for educational purposes only. Always consult with a qualified healthcare provider before use.
-                COA documentation is available from Apollo Peptide Sciences for all products.
+                COA documentation is available for all products.
               </p>
             </div>
           </div>
@@ -353,17 +353,17 @@ export default function ProductPage({ params }: Props) {
           <div className="space-y-5">
             {/* Buy box sticky */}
             <div className="glass-card p-6 sticky top-24">
-              <h3 className="text-white font-black mb-1">Get {product.name}</h3>
+              <h3 className="text-white font-black mb-1">{product.name}</h3>
               <p className="text-slate-400 text-xs mb-4">
-                Apollo Peptide Sciences — COA verified, US domestic, fast shipping.
+                COA verified · Third-party tested · US domestic shipping
               </p>
               <a
                 href={product.affiliateUrl}
                 target="_blank"
-                rel="nofollow sponsored noopener noreferrer"
+                rel="nofollow noopener noreferrer"
                 className="btn-cta text-sm py-3 w-full text-center flex items-center justify-center gap-2 mb-3"
               >
-                Shop <ArrowRight className="w-4 h-4" />
+                View <ArrowRight className="w-4 h-4" />
               </a>
               <Link href="/stacks" className="btn-secondary text-sm py-3 w-full text-center block mb-4">
                 View Stack Protocols
@@ -379,7 +379,6 @@ export default function ProductPage({ params }: Props) {
 
               <div className="mt-4 pt-4 border-t border-white/5">
                 <div className={`text-3xl font-black text-white`}>${product.price}</div>
-                <div className="text-slate-500 text-xs">at Apollo Peptide Sciences</div>
               </div>
             </div>
 
@@ -426,10 +425,10 @@ export default function ProductPage({ params }: Props) {
               <a
                 href={product.affiliateUrl}
                 target="_blank"
-                rel="nofollow sponsored noopener noreferrer"
+                rel="nofollow noopener noreferrer"
                 className="btn-cta text-sm py-3 px-6 inline-flex items-center gap-2"
               >
-                Shop {product.name} <ArrowRight className="w-4 h-4" />
+                View {product.name} <ArrowRight className="w-4 h-4" />
               </a>
             </div>
           </div>
@@ -442,9 +441,9 @@ export default function ProductPage({ params }: Props) {
               <h2 className="text-2xl font-black text-white">
                 Stack <span className={theme.accentLight}>{product.name}</span> With
               </h2>
-              <a href={product.affiliateUrl} target="_blank" rel="nofollow sponsored noopener noreferrer"
+              <a href={product.affiliateUrl} target="_blank" rel="nofollow noopener noreferrer"
                 className="btn-cta text-sm px-5 py-2.5 flex items-center gap-2 hidden sm:flex">
-                Shop the Full Stack <ArrowRight className="w-4 h-4" />
+                View the Full Stack <ArrowRight className="w-4 h-4" />
               </a>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
@@ -456,10 +455,10 @@ export default function ProductPage({ params }: Props) {
               <a
                 href={product.affiliateUrl}
                 target="_blank"
-                rel="nofollow sponsored noopener noreferrer"
+                rel="nofollow noopener noreferrer"
                 className="btn-cta text-base px-8 py-4 inline-flex items-center gap-2"
               >
-                Shop <ArrowRight className="w-5 h-5" />
+                View <ArrowRight className="w-5 h-5" />
               </a>
             </div>
           </div>

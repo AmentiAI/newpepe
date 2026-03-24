@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   },
 };
 
-const AFFILIATE = 'https://apollopeptidesciences.com/?rfsn=9016964.3f1b1e';
+const SOURCE_URL = 'https://apollopeptidesciences.com/?rfsn=9016964.3f1b1e';
 
 const ageIssues = [
   { issue: 'GH decline', detail: 'Growth hormone drops 14% per decade after 30. By 50, most men have 50–60% less GH than at peak. This drives muscle loss, fat gain, poor sleep, and slower recovery.' },
@@ -223,9 +223,9 @@ export default function PeptidesForMenOver50Page() {
           <h2 className="text-2xl font-black text-white mb-3">Start Your Protocol</h2>
           <p className="text-slate-400 mb-6">COA-verified peptides — CJC-1295/Ipamorelin, BPC-157, Epithalon, GHK-Cu, and NAD+.</p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <a href={AFFILIATE} target="_blank" rel="nofollow sponsored noopener noreferrer"
+            <a href={SOURCE_URL} target="_blank" rel="nofollow noopener noreferrer"
               className="btn-cta px-8 py-4 flex items-center gap-2">
-              Shop All Peptides <ArrowRight className="w-5 h-5" />
+              View All Peptides <ArrowRight className="w-5 h-5" />
             </a>
             <Link href="/anti-aging" className="btn-secondary px-8 py-4">Anti-Aging Protocols</Link>
           </div>

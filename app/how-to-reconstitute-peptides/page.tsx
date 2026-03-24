@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   },
 };
 
-const AFFILIATE = 'https://apollopeptidesciences.com/?rfsn=9016964.3f1b1e';
+const SOURCE_URL = 'https://apollopeptidesciences.com/?rfsn=9016964.3f1b1e';
 
 const steps = [
   {
@@ -222,9 +222,9 @@ export default function HowToReconstitutePage() {
           <h2 className="text-2xl font-bold text-white mb-3">Get COA-Verified Peptides & Supplies</h2>
           <p className="text-slate-400 mb-6">BPC-157, TB-500, bacteriostatic water, and insulin syringes — everything you need.</p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <a href={AFFILIATE} target="_blank" rel="nofollow sponsored noopener noreferrer"
+            <a href={SOURCE_URL} target="_blank" rel="nofollow noopener noreferrer"
               className="btn-cta text-base px-8 py-4 flex items-center gap-2">
-              Shop <ArrowRight className="w-5 h-5" />
+              View <ArrowRight className="w-5 h-5" />
             </a>
             <Link href="/guide" className="btn-secondary text-base px-8 py-4">Full Beginner Guide</Link>
           </div>

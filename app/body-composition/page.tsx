@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   },
 };
 
-const AFFILIATE = 'https://apollopeptidesciences.com/?rfsn=9016964.3f1b1e';
+const SOURCE_URL = 'https://apollopeptidesciences.com/?rfsn=9016964.3f1b1e';
 
 const ghPulseSteps = [
   { num: '01', title: 'CJC-1295 Primes the Pituitary', color: 'blue', desc: 'CJC-1295 (no-DAC) is a GHRH analog — it binds GHRH receptors on somatotroph cells in the pituitary, priming them to release GH. Without this step, subsequent GHRP stimulus is significantly weaker.' },
@@ -121,9 +121,9 @@ export default function BodyCompositionPage() {
                 that compounds over 12 weeks.
               </p>
               <div className="flex flex-wrap gap-4">
-                <a href={AFFILIATE} target="_blank" rel="nofollow sponsored noopener noreferrer"
+                <a href={SOURCE_URL} target="_blank" rel="nofollow noopener noreferrer"
                   className="btn-cta text-base px-8 py-4 flex items-center gap-2">
-                  Shop <ArrowRight className="w-5 h-5" />
+                  View <ArrowRight className="w-5 h-5" />
                 </a>
                 <Link href="/stacks/body-recomp" className="btn-secondary text-base px-8 py-4">
                   Full Recomp Protocol
@@ -320,9 +320,9 @@ export default function BodyCompositionPage() {
                   </div>
                 </div>
               </div>
-              <a href={AFFILIATE} target="_blank" rel="nofollow sponsored noopener noreferrer"
+              <a href={SOURCE_URL} target="_blank" rel="nofollow noopener noreferrer"
                 className="btn-cta text-sm px-6 py-3 flex items-center gap-2 inline-flex">
-                Shop <ArrowRight className="w-4 h-4" />
+                View <ArrowRight className="w-4 h-4" />
               </a>
             </div>
             <div className="glass-card p-6">
@@ -361,9 +361,9 @@ export default function BodyCompositionPage() {
             <h2 className="text-3xl font-black text-white">Body Composition Peptides</h2>
             <p className="text-slate-400 mt-1">GH peptides, metabolic activators, and GLP weight loss compounds</p>
           </div>
-          <a href={AFFILIATE} target="_blank" rel="nofollow sponsored noopener noreferrer"
+          <a href={SOURCE_URL} target="_blank" rel="nofollow noopener noreferrer"
             className="btn-cta text-sm px-5 py-2.5 flex items-center gap-2 hidden sm:flex">
-            Shop All <ArrowRight className="w-4 h-4" />
+            View All <ArrowRight className="w-4 h-4" />
           </a>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -425,13 +425,13 @@ export default function BodyCompositionPage() {
                 Start Your Recomp Protocol Today
               </h2>
               <p className="text-slate-300 text-lg mb-2 max-w-xl mx-auto">
-                CJC-1295, Ipamorelin, IGF-1 LR3, and GLP peptides from Apollo Peptide Sciences.
+                CJC-1295, Ipamorelin, IGF-1 LR3, and GLP peptides from our recommended supplier.
               </p>
               <p className="text-slate-500 text-sm mb-8">COA verified · US domestic · Fast shipping</p>
               <div className="flex flex-wrap gap-4 justify-center">
-                <a href={AFFILIATE} target="_blank" rel="nofollow sponsored noopener noreferrer"
+                <a href={SOURCE_URL} target="_blank" rel="nofollow noopener noreferrer"
                   className="btn-cta text-base px-10 py-4 inline-flex items-center gap-2">
-                  Shop <ArrowRight className="w-5 h-5" />
+                  View <ArrowRight className="w-5 h-5" />
                 </a>
                 <Link href="/stacks/body-recomp" className="btn-secondary text-base px-8 py-4">
                   View Full Recomp Stack

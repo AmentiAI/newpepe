@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   },
 };
 
-const AFFILIATE = 'https://apollopeptidesciences.com/?rfsn=9016964.3f1b1e';
+const SOURCE_URL = 'https://apollopeptidesciences.com/?rfsn=9016964.3f1b1e';
 
 const mechanisms = [
   { title: 'Follicle Stem Cell Activation', desc: 'GHK-Cu reactivates dormant hair follicle stem cells that have stopped cycling. This is the core mechanism for hair regrowth — getting miniaturized follicles cycling again.' },
@@ -191,9 +191,9 @@ export default function GhkCuHairLossPage() {
           <h2 className="text-2xl font-black text-white mb-3">Get GHK-Cu Copper Peptide</h2>
           <p className="text-slate-400 mb-6">COA-verified GHK-Cu — for topical hair application and systemic anti-aging.</p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <a href={AFFILIATE} target="_blank" rel="nofollow sponsored noopener noreferrer"
+            <a href={SOURCE_URL} target="_blank" rel="nofollow noopener noreferrer"
               className="btn-cta px-8 py-4 flex items-center gap-2">
-              Shop GHK-Cu <ArrowRight className="w-5 h-5" />
+              View GHK-Cu <ArrowRight className="w-5 h-5" />
             </a>
             <Link href="/products/ghk-cu" className="btn-secondary px-8 py-4">GHK-Cu Product Page</Link>
           </div>

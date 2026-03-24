@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   },
 };
 
-const AFFILIATE = 'https://apollopeptidesciences.com/?rfsn=9016964.3f1b1e';
+const SOURCE_URL = 'https://apollopeptidesciences.com/?rfsn=9016964.3f1b1e';
 
 const faqs = [
   {
@@ -52,7 +52,7 @@ const faqs = [
   {
     category: 'Sourcing & Quality',
     items: [
-      { q: 'Where should I source peptides?', a: 'We recommend Apollo Peptide Sciences exclusively. They provide full certificates of analysis (COA) for every batch, ship US domestically, and have established themselves as the most trusted peptide supplier. Never use sources that don\'t provide COAs.' },
+      { q: 'Where should I source peptides?', a: 'We recommend sourcing exclusively from COA-verified suppliers. Look for suppliers that provide full certificates of analysis (COA) for every batch and ship US domestically. Never use sources that don\'t provide COAs.' },
       { q: 'What is a certificate of analysis (COA)?', a: 'A COA is a third-party lab test confirming the purity, identity, and concentration of a peptide. It should show 98%+ purity and match the label claims. Always request a COA and verify it before use.' },
       { q: 'Why is source quality so important?', a: 'Low-quality peptides may contain impurities, incorrect amino acid sequences, or bacterial contamination. This can cause injection site reactions, ineffective results, or in rare cases, serious health issues. COA-verified peptides from trusted suppliers eliminate this risk.' },
     ],
@@ -121,8 +121,8 @@ export default function FAQPage() {
           <h2 className="text-2xl font-bold text-white mb-3">Ready to Start?</h2>
           <p className="text-slate-400 mb-6">Get COA-verified peptides from the most trusted source.</p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <a href={AFFILIATE} target="_blank" rel="nofollow sponsored noopener noreferrer" className="btn-cta text-base px-8 py-4 flex items-center gap-2">
-              Shop <ArrowRight className="w-5 h-5" />
+            <a href={SOURCE_URL} target="_blank" rel="nofollow noopener noreferrer" className="btn-cta text-base px-8 py-4 flex items-center gap-2">
+              View <ArrowRight className="w-5 h-5" />
             </a>
             <Link href="/guide" className="btn-secondary text-base px-8 py-4">Read Beginner Guide</Link>
           </div>

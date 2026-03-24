@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   },
 };
 
-const AFFILIATE = 'https://apollopeptidesciences.com/?rfsn=9016964.3f1b1e';
+const SOURCE_URL = 'https://apollopeptidesciences.com/?rfsn=9016964.3f1b1e';
 
 const injuries = [
   { injury: 'Achilles Tendon', dose: '250–500mcg/day', site: 'Local SC near Achilles', timeline: '4–8 weeks', notes: 'Most researched BPC-157 tendon application. Inject subcutaneously near (not into) the tendon. Local + systemic protocol for severe tears.' },
@@ -216,9 +216,9 @@ export default function Bpc157TendonsPage() {
           <h2 className="text-2xl font-black text-white mb-3">Get BPC-157 for Tendon Healing</h2>
           <p className="text-slate-400 mb-6">COA-verified BPC-157 — the most potent tendon repair peptide available.</p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <a href={AFFILIATE} target="_blank" rel="nofollow sponsored noopener noreferrer"
+            <a href={SOURCE_URL} target="_blank" rel="nofollow noopener noreferrer"
               className="btn-cta px-8 py-4 flex items-center gap-2">
-              Shop BPC-157 <ArrowRight className="w-5 h-5" />
+              View BPC-157 <ArrowRight className="w-5 h-5" />
             </a>
             <Link href="/products/tb-500" className="btn-secondary px-8 py-4">Add TB-500</Link>
           </div>

@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   description: 'Discover the most effective BPC-157 stacks and peptide protocols. Science-backed guides for injury healing, body recomposition, anti-aging, and cognitive enhancement.',
 };
 
-const AFFILIATE = 'https://apollopeptidesciences.com/?rfsn=9016964.3f1b1e';
+const SOURCE_URL = 'https://apollopeptidesciences.com/?rfsn=9016964.3f1b1e';
 
 const stats = [
   { value: '100+', label: 'Peer-Reviewed Studies', icon: FlaskConical },
@@ -74,7 +74,7 @@ const faqs = [
   { q: 'What makes BPC-157 the #1 healing peptide?', a: 'BPC-157 has no known lethal dose in animal studies, works orally unlike most peptides, and has 100+ published papers. It simultaneously upregulates GH receptors, improves blood flow, and repairs gut lining — no other peptide covers all three.' },
   { q: 'Do I have to inject? Can BPC-157 be taken orally?', a: 'BPC-157 is one of the only peptides proven to work orally — it\'s gastric acid stable. Capsules or dissolved powder work systemically. Most other peptides require subcutaneous injection with a painless insulin needle.' },
   { q: 'What\'s the fastest healing stack?', a: 'BPC-157 + TB-500. BPC-157 handles local targeted repair; TB-500 mobilizes stem cells body-wide. Together they reduce tendon and ligament recovery time by 50-70% vs natural healing.' },
-  { q: 'Are these peptides safe?', a: 'BPC-157 has no hormonal activity and no known LD50. Always source COA-verified peptides from Apollo Peptide Sciences.' },
+  { q: 'Are these peptides safe?', a: 'BPC-157 has no hormonal activity and no known LD50. Always source COA-verified peptides from a reputable supplier.' },
   { q: 'How soon will I see results?', a: 'BPC-157: pain reduction in 2-4 days, structural healing in 4-8 weeks. Ipamorelin: improved sleep within 1-2 weeks, body comp changes in 4-8 weeks. Selank: anxiety reduction within 30 minutes of first use.' },
 ];
 
@@ -132,7 +132,7 @@ export default function HomePage() {
               {/* Eyebrow badge */}
               <div className="inline-flex items-center gap-2 bg-neon-green/10 border border-neon-green/25 rounded-full px-4 py-1.5 mb-8">
                 <span className="w-2 h-2 bg-neon-green rounded-full animate-pulse" />
-                <span className="text-neon-green text-xs font-semibold uppercase tracking-widest">Apollo Peptide Sciences Partner</span>
+                <span className="text-neon-green text-xs font-semibold uppercase tracking-widest">Trusted Peptide Protocols</span>
               </div>
 
               <h1
@@ -152,12 +152,12 @@ export default function HomePage() {
 
               <div className="flex flex-wrap gap-3 mb-12">
                 <a
-                  href={AFFILIATE}
+                  href={SOURCE_URL}
                   target="_blank"
-                  rel="nofollow sponsored noopener noreferrer"
+                  rel="nofollow noopener noreferrer"
                   className="btn-cta text-base px-8 py-4 flex items-center gap-2 group"
                 >
-                  Shop
+                  View
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </a>
                 <Link href="/stacks" className="btn-secondary text-base px-8 py-4">
@@ -190,7 +190,7 @@ export default function HomePage() {
                     <div className="absolute inset-0 bg-neon-green/5 rounded-full blur-3xl" />
                     <Image
                       src="https://apollopeptidesciences.com/wp-content/uploads/2025/09/bpc157_10mg.webp"
-                      alt="BPC-157 by Apollo Peptide Sciences"
+                      alt="BPC-157 — Research Grade"
                       fill
                       className="object-contain drop-shadow-2xl"
                       priority
@@ -356,8 +356,8 @@ export default function HomePage() {
 
                   <div className="flex gap-2 mt-auto">
                     <Link href={`/stacks/${stack.id}`} className="btn-secondary text-xs px-4 py-2 flex-1 text-center">Protocol</Link>
-                    <a href={AFFILIATE} target="_blank" rel="nofollow sponsored noopener noreferrer" className="btn-cta text-xs px-4 py-2 flex items-center gap-1">
-                      Shop <ArrowRight className="w-3 h-3" />
+                    <a href={SOURCE_URL} target="_blank" rel="nofollow noopener noreferrer" className="btn-cta text-xs px-4 py-2 flex items-center gap-1">
+                      View <ArrowRight className="w-3 h-3" />
                     </a>
                   </div>
                 </div>
@@ -366,21 +366,21 @@ export default function HomePage() {
           </div>
 
           <div className="text-center">
-            <a href={AFFILIATE} target="_blank" rel="nofollow sponsored noopener noreferrer" className="btn-cta text-base px-10 py-4 inline-flex items-center gap-2">
-              Shop <ArrowRight className="w-5 h-5" />
+            <a href={SOURCE_URL} target="_blank" rel="nofollow noopener noreferrer" className="btn-cta text-base px-10 py-4 inline-flex items-center gap-2">
+              View <ArrowRight className="w-5 h-5" />
             </a>
           </div>
         </div>
       </section>
 
       {/* ═══════════════════════════════════════════════
-          PRODUCT SHOWCASE — Real Apollo images
+          PRODUCT SHOWCASE
       ═══════════════════════════════════════════════ */}
       <section className="py-24 bg-dark-900 grid-bg">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-end justify-between mb-14">
             <div>
-              <p className="text-neon-green text-xs font-semibold uppercase tracking-widest mb-3">From Apollo Peptide Sciences</p>
+              <p className="text-neon-green text-xs font-semibold uppercase tracking-widest mb-3">COA-Verified · Research Grade</p>
               <h2 className="text-4xl sm:text-5xl font-black text-white">
                 Featured <span className="gradient-text">Peptides</span>
               </h2>
@@ -398,8 +398,8 @@ export default function HomePage() {
 
           <div className="flex flex-wrap gap-4 justify-center">
             <Link href="/products" className="btn-secondary text-base px-8 py-4">View All 12 Peptides</Link>
-            <a href={AFFILIATE} target="_blank" rel="nofollow sponsored noopener noreferrer" className="btn-cta text-base px-8 py-4 flex items-center gap-2">
-              Shop <ArrowRight className="w-5 h-5" />
+            <a href={SOURCE_URL} target="_blank" rel="nofollow noopener noreferrer" className="btn-cta text-base px-8 py-4 flex items-center gap-2">
+              View <ArrowRight className="w-5 h-5" />
             </a>
           </div>
         </div>
@@ -486,12 +486,12 @@ export default function HomePage() {
           </p>
           <div className="flex flex-wrap gap-4 justify-center mb-8">
             <a
-              href={AFFILIATE}
+              href={SOURCE_URL}
               target="_blank"
-              rel="nofollow sponsored noopener noreferrer"
+              rel="nofollow noopener noreferrer"
               className="btn-cta text-lg px-12 py-5 flex items-center gap-2 group"
             >
-              Shop
+              View
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </a>
             <Link href="/guide" className="btn-secondary text-lg px-10 py-5">

@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   },
 };
 
-const AFFILIATE = 'https://apollopeptidesciences.com/?rfsn=9016964.3f1b1e';
+const SOURCE_URL = 'https://apollopeptidesciences.com/?rfsn=9016964.3f1b1e';
 
 const protocol = [
   { phase: 'Loading (Weeks 1–6)', steps: ['BPC-157: 500mcg subcutaneous or oral, once daily', 'TB-500: 2.5mg subcutaneous, twice per week', 'Inject BPC-157 near injury site or abdomen', 'TB-500 in abdomen or thigh — systemic, location less critical'] },
@@ -93,9 +93,9 @@ export default function WolverineStackPage() {
             Backed by 100+ peer-reviewed studies and decades of animal research showing 50–70% reduction in recovery time.
           </p>
           <div className="flex flex-wrap gap-4 mb-12">
-            <a href={AFFILIATE} target="_blank" rel="nofollow sponsored noopener noreferrer"
+            <a href={SOURCE_URL} target="_blank" rel="nofollow noopener noreferrer"
               className="btn-cta text-base px-8 py-4 flex items-center gap-2">
-              Shop the Stack <ArrowRight className="w-5 h-5" />
+              View the Stack <ArrowRight className="w-5 h-5" />
             </a>
             <Link href="/stacks/ultimate-healing" className="btn-secondary text-base px-8 py-4">
               Full Protocol Guide
@@ -225,12 +225,12 @@ export default function WolverineStackPage() {
             <div className="relative">
               <h2 className="text-3xl font-black text-white mb-4">Get the Wolverine Stack</h2>
               <p className="text-slate-300 text-lg mb-8 max-w-xl mx-auto">
-                BPC-157 and TB-500 from Apollo Peptide Sciences — COA verified, US domestic, ships in 24–48 hours.
+                BPC-157 and TB-500 from our recommended supplier — COA verified, US domestic, ships in 24–48 hours.
               </p>
               <div className="flex flex-wrap gap-4 justify-center">
-                <a href={AFFILIATE} target="_blank" rel="nofollow sponsored noopener noreferrer"
+                <a href={SOURCE_URL} target="_blank" rel="nofollow noopener noreferrer"
                   className="btn-cta text-base px-10 py-4 inline-flex items-center gap-2">
-                  Shop <ArrowRight className="w-5 h-5" />
+                  View <ArrowRight className="w-5 h-5" />
                 </a>
                 <Link href="/stacks/ultimate-healing" className="btn-secondary text-base px-8 py-4">
                   Full Protocol Guide

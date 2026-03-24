@@ -9,7 +9,8 @@
       "Bash(grep -n \"^  {$\\\\|slug:\" /mnt/c/Users/Wilso/newpepe/lib/products.ts)",
       "Bash(ls -la /mnt/c/Users/Wilso/newpepe/next.config.*)",
       "Bash(npx tsc:*)",
-      "WebSearch"
+      "WebSearch",
+      "Bash(xargs sed:*)"
     ]
   }
 }

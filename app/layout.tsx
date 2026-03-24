@@ -9,8 +9,8 @@ const inter = Inter({ subsets: ['latin'], display: 'swap' });
 
 export const metadata: Metadata = {
   title: 'BPC-157 Stack | #1 Peptide Protocols for Healing, Performance & Longevity',
-  description: 'Science-backed BPC-157 stacks and peptide protocols for injury healing, body composition, and anti-aging. Curated from Apollo Peptide Sciences — the most trusted peptide source.',
-  keywords: 'BPC-157, BPC 157, peptide stack, TB-500, healing peptide, BPC-157 protocol, peptide guide, Apollo Peptides, peptides',
+  description: 'Science-backed BPC-157 stacks and peptide protocols for injury healing, body composition, and anti-aging. Expert-curated peptide protocols for research and optimization.',
+  keywords: 'BPC-157, BPC 157, peptide stack, TB-500, healing peptide, BPC-157 protocol, peptide guide, peptides',
   authors: [{ name: 'BPC-157 Stack' }],
   openGraph: {
     title: 'BPC-157 Stack | Expert Peptide Protocols',
@@ -66,7 +66,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 '@type': 'Organization',
                 name: 'BPC-157 Stack',
                 url: 'https://bp157stack.com',
-                description: 'Expert peptide stack guides and protocols for healing, anti-aging, and performance. Powered by Apollo Peptide Sciences.',
+                description: 'Expert peptide stack guides and protocols for healing, anti-aging, and performance.',
                 sameAs: ['https://bp157stack.com'],
               },
             ]),

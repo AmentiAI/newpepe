@@ -5,10 +5,10 @@ import { ArrowRight, FlaskConical } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'All Peptides | BPC-157, TB-500, Ipamorelin & More | BPC-157 Stack',
-  description: 'Complete peptide catalog with protocols and dosing guides. BPC-157, TB-500, GHK-Cu, Ipamorelin, Epithalon, and more from Apollo Peptide Sciences.',
+  description: 'Complete peptide catalog with protocols and dosing guides. BPC-157, TB-500, GHK-Cu, Ipamorelin, Epithalon, and more.',
 };
 
-const AFFILIATE = 'https://apollopeptidesciences.com/?rfsn=9016964.3f1b1e';
+const SOURCE_URL = 'https://apollopeptidesciences.com/?rfsn=9016964.3f1b1e';
 export default function ProductsPage() {
   const categorized = {
     Healing: products.filter((p) => p.category === 'Healing'),
@@ -32,7 +32,7 @@ export default function ProductsPage() {
           </h1>
           <p className="text-slate-400 text-lg max-w-2xl mx-auto">
             Every peptide with full protocols, dosing guides, and stack recommendations.
-            Sourced exclusively from Apollo Peptide Sciences.
+            COA-verified, third-party tested, US domestic.
           </p>
         </div>
 
@@ -59,15 +59,15 @@ export default function ProductsPage() {
             Ready to Order?
           </h2>
           <p className="text-slate-400 mb-6">
-            All peptides on this site are available at Apollo Peptide Sciences — COA verified, US domestic shipping.
+            All peptides on this site are available from our recommended supplier — COA verified, US domestic shipping.
           </p>
           <a
-            href={AFFILIATE}
+            href={SOURCE_URL}
             target="_blank"
-            rel="nofollow sponsored noopener noreferrer"
+            rel="nofollow noopener noreferrer"
             className="btn-cta text-base px-8 py-4 inline-flex items-center gap-2"
           >
-            Shop <ArrowRight className="w-5 h-5" />
+            View <ArrowRight className="w-5 h-5" />
           </a>
         </div>
       </div>

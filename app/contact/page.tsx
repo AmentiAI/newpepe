@@ -4,10 +4,10 @@ import { ArrowRight, Mail, ExternalLink } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'Contact | BPC-157 Stack — Peptide Protocol Questions',
-  description: 'Contact BPC-157 Stack for questions about peptide protocols, stacks, or sourcing. We also recommend Apollo Peptide Sciences for purchase queries.',
+  description: 'Contact BPC-157 Stack for questions about peptide protocols, stacks, or sourcing.',
 };
 
-const AFFILIATE = 'https://apollopeptidesciences.com/?rfsn=9016964.3f1b1e';
+const SOURCE_URL = 'https://apollopeptidesciences.com/?rfsn=9016964.3f1b1e';
 
 export default function ContactPage() {
   return (
@@ -35,14 +35,14 @@ export default function ContactPage() {
             </div>
             <div className="bg-dark-700/50 rounded-xl p-4 border border-neon-green/10">
               <p className="text-neon-green text-sm font-semibold mb-1">Purchase Questions</p>
-              <p className="text-slate-400 text-sm mb-2">For purchase, shipping, or product questions, contact Apollo Peptide Sciences directly:</p>
+              <p className="text-slate-400 text-sm mb-2">For purchase, shipping, or product questions, visit our recommended supplier directly:</p>
               <a
-                href={AFFILIATE}
+                href={SOURCE_URL}
                 target="_blank"
-                rel="nofollow sponsored noopener noreferrer"
+                rel="nofollow noopener noreferrer"
                 className="text-neon-green text-sm flex items-center gap-1 hover:underline"
               >
-                Shop <ExternalLink className="w-3 h-3" />
+                View <ExternalLink className="w-3 h-3" />
               </a>
             </div>
           </div>
@@ -54,8 +54,8 @@ export default function ContactPage() {
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <Link href="/faq" className="btn-secondary text-sm px-6 py-3">Browse FAQ</Link>
-            <a href={AFFILIATE} target="_blank" rel="nofollow sponsored noopener noreferrer" className="btn-cta text-sm px-6 py-3 flex items-center gap-2">
-              Shop Peptides <ArrowRight className="w-4 h-4" />
+            <a href={SOURCE_URL} target="_blank" rel="nofollow noopener noreferrer" className="btn-cta text-sm px-6 py-3 flex items-center gap-2">
+              View Peptides <ArrowRight className="w-4 h-4" />
             </a>
           </div>
         </div>

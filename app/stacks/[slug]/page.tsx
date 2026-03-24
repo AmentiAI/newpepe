@@ -39,7 +39,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
-const AFFILIATE = 'https://apollopeptidesciences.com/?rfsn=9016964.3f1b1e';
+const SOURCE_URL = 'https://apollopeptidesciences.com/?rfsn=9016964.3f1b1e';
 
 export default function StackPage({ params }: Props) {
   const stack = getStackById(params.slug);
@@ -174,15 +174,15 @@ export default function StackPage({ params }: Props) {
             <div className="glass-card p-6 sticky top-24">
               <h3 className="text-white font-bold mb-2">Get This Stack</h3>
               <p className="text-slate-400 text-sm mb-4">
-                All peptides in the {stack.name} are available at Apollo Peptide Sciences.
+                All peptides in the {stack.name} are available from our recommended supplier.
               </p>
               <a
-                href={AFFILIATE}
+                href={SOURCE_URL}
                 target="_blank"
-                rel="nofollow sponsored noopener noreferrer"
+                rel="nofollow noopener noreferrer"
                 className="btn-cta text-sm py-3 w-full text-center flex items-center justify-center gap-2 mb-3"
               >
-                Shop <ArrowRight className="w-4 h-4" />
+                View <ArrowRight className="w-4 h-4" />
               </a>
               <Link href="/stacks" className="btn-secondary text-sm py-3 w-full text-center block mb-4">
                 ← View All Stacks
@@ -212,15 +212,15 @@ export default function StackPage({ params }: Props) {
         <div className="mt-16 text-center p-10 glass-card">
           <h2 className="text-2xl font-bold text-white mb-3">Ready to Start This Protocol?</h2>
           <p className="text-slate-400 mb-6">
-            Source all peptides for the {stack.name} from Apollo Peptide Sciences — the most trusted, COA-verified source.
+            Source all peptides for the {stack.name} from our recommended supplier — the most trusted, COA-verified source.
           </p>
           <a
-            href={AFFILIATE}
+            href={SOURCE_URL}
             target="_blank"
-            rel="nofollow sponsored noopener noreferrer"
+            rel="nofollow noopener noreferrer"
             className="btn-cta text-base px-8 py-4 inline-flex items-center gap-2"
           >
-            Shop <ArrowRight className="w-5 h-5" />
+            View <ArrowRight className="w-5 h-5" />
           </a>
         </div>
       </div>

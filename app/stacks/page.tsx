@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   },
 };
 
-const AFFILIATE = 'https://apollopeptidesciences.com/?rfsn=9016964.3f1b1e';
+const SOURCE_URL = 'https://apollopeptidesciences.com/?rfsn=9016964.3f1b1e';
 
 const stackMeta: Record<string, { emoji: string; color: string; borderColor: string; glowColor: string; category: string; highlight: string }> = {
   'ultimate-healing': {
@@ -82,7 +82,7 @@ const difficultyStyle: Record<string, string> = {
 
 const howItWorksSteps = [
   { num: '01', title: 'Choose Your Goal', desc: 'Healing, anti-aging, body recomp, cognitive, or athletic performance — pick the protocol that matches your primary objective.' },
-  { num: '02', title: 'Order the Peptides', desc: 'All peptides in every stack are available at Apollo Peptide Sciences — COA verified, US domestic, fast shipping.' },
+  { num: '02', title: 'Source the Peptides', desc: 'Use a COA-verified, third-party tested vendor with US domestic shipping for every compound in your stack.' },
   { num: '03', title: 'Follow the Protocol', desc: 'Each stack comes with exact dosing, timing, and cycle length. No guessing — just follow the research-backed protocol.' },
   { num: '04', title: 'Track and Optimize', desc: 'Results compound over 4–12 weeks. Track biomarkers, adjust doses, and stack complementary protocols as goals evolve.' },
 ];
@@ -110,12 +110,12 @@ export default function StacksPage() {
             with complete dosing guides, timing protocols, and expected outcomes.
           </p>
           <p className="text-slate-500 text-base mb-10 max-w-2xl mx-auto">
-            Every stack is available at Apollo Peptide Sciences — COA verified, US domestic, ships 24–48 hours.
+            Every stack is available from our recommended supplier — COA verified, US domestic, ships 24–48 hours.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <a href={AFFILIATE} target="_blank" rel="nofollow sponsored noopener noreferrer"
+            <a href={SOURCE_URL} target="_blank" rel="nofollow noopener noreferrer"
               className="btn-cta text-base px-8 py-4 inline-flex items-center gap-2">
-              Shop <ArrowRight className="w-5 h-5" />
+              View <ArrowRight className="w-5 h-5" />
             </a>
             <a href="#stacks" className="btn-secondary text-base px-8 py-4">
               Browse All Stacks ↓
@@ -207,9 +207,9 @@ export default function StacksPage() {
                         className="btn-secondary text-sm px-6 py-3 flex items-center gap-2">
                         Full Protocol Guide <ChevronRight className="w-4 h-4" />
                       </Link>
-                      <a href={AFFILIATE} target="_blank" rel="nofollow sponsored noopener noreferrer"
+                      <a href={SOURCE_URL} target="_blank" rel="nofollow noopener noreferrer"
                         className="btn-cta text-sm px-6 py-3 flex items-center gap-2">
-                        Shop This Stack <ArrowRight className="w-4 h-4" />
+                        View This Stack <ArrowRight className="w-4 h-4" />
                       </a>
                     </div>
                   </div>
@@ -414,14 +414,14 @@ export default function StacksPage() {
                 Build Your Peptide Stack Today
               </h2>
               <p className="text-slate-300 text-lg mb-2 max-w-xl mx-auto">
-                All peptides across every stack available at Apollo Peptide Sciences —
+                All peptides across every stack available from our recommended supplier —
                 the most trusted peptide supplier.
               </p>
               <p className="text-slate-500 text-sm mb-8">COA verified · US domestic · 24–48hr shipping</p>
               <div className="flex flex-wrap gap-4 justify-center">
-                <a href={AFFILIATE} target="_blank" rel="nofollow sponsored noopener noreferrer"
+                <a href={SOURCE_URL} target="_blank" rel="nofollow noopener noreferrer"
                   className="btn-cta text-base px-10 py-4 inline-flex items-center gap-2">
-                  Shop <ArrowRight className="w-5 h-5" />
+                  View <ArrowRight className="w-5 h-5" />
                 </a>
                 <Link href="/products" className="btn-secondary text-base px-8 py-4">
                   Browse All Peptides

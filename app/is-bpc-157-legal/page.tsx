@@ -20,13 +20,13 @@ export const metadata: Metadata = {
   },
 };
 
-const AFFILIATE = 'https://apollopeptidesciences.com/?rfsn=9016964.3f1b1e';
+const SOURCE_URL = 'https://apollopeptidesciences.com/?rfsn=9016964.3f1b1e';
 
 const faqs = [
   { q: 'Is BPC-157 legal in the United States?', a: 'BPC-157 is legal to purchase, possess, and use in the United States as a research chemical. It is not a controlled substance under DEA scheduling. The FDA has included BPC-157 on a list of bulk drug substances that cannot be compounded for patient use by licensed pharmacies — but this restriction affects pharmacies and prescribers, not individuals purchasing research chemicals. As a research chemical, BPC-157 is legally sold and purchased in the US.' },
   { q: 'Is BPC-157 banned by WADA?', a: 'BPC-157 is listed on the WADA Prohibited List under Section S2 (Peptide Hormones, Growth Factors, Related Substances and Mimetics). It is prohibited in-competition and out-of-competition for athletes in WADA-governed sports. Athletes subject to anti-doping testing should not use BPC-157. Non-tested recreational users are not affected by WADA rules.' },
   { q: 'What did the FDA do to BPC-157?', a: 'In 2022, the FDA included BPC-157 on its list of bulk drug substances that present "demonstrable difficulties for compounding" and substances that "may present significant safety risks." This means FDA-regulated compounding pharmacies cannot make BPC-157 for patients. This does not make BPC-157 a controlled substance or make individual purchase illegal — it specifically regulates pharmaceutical compounding.' },
-  { q: 'Can I buy BPC-157 online legally?', a: 'Yes — BPC-157 is legally sold online in the United States as a research chemical. Reputable suppliers like Apollo Peptide Sciences sell it with certificates of analysis (COA) for research purposes. The research chemical designation means it is sold for laboratory and research use, not for human consumption. This is the legal framework under which peptide suppliers currently operate.' },
+  { q: 'Can I buy BPC-157 online legally?', a: 'Yes — BPC-157 is legally sold online in the United States as a research chemical. Reputable suppliers sell it with certificates of analysis (COA) for research purposes. The research chemical designation means it is sold for laboratory and research use, not for human consumption. This is the legal framework under which peptide suppliers currently operate.' },
   { q: 'Is BPC-157 legal in Canada, UK, Australia?', a: 'Canada: BPC-157 is not a scheduled substance and can be purchased as a research chemical, though regulatory status can vary. UK: Not listed as a controlled substance; legal as a research chemical. Australia: Listed on the Therapeutic Goods Administration (TGA) schedule; purchase for research purposes falls in a grey area — check current local regulations. Always verify with current local laws before purchasing.' },
   { q: 'Is BPC-157 a steroid?', a: 'No — BPC-157 is a peptide, not a steroid. Steroids are lipid-based compounds that interact with steroid hormone receptors. BPC-157 is a 15-amino acid peptide chain with no hormonal activity whatsoever. It does not affect testosterone, estrogen, cortisol, or any other steroid hormone. No PCT (post-cycle therapy) is needed after using BPC-157.' },
 ];
@@ -156,15 +156,15 @@ export default function IsBpc157LegalPage() {
         <div className="glass-card p-8">
           <h2 className="text-2xl font-black text-white mb-4">Research Chemical Status: How People Legally Buy BPC-157</h2>
           <p className="text-slate-300 leading-relaxed mb-4">
-            BPC-157 is sold legally throughout the US as a research chemical — a designation for chemical compounds sold for laboratory and research purposes. Suppliers like Apollo Peptide Sciences operate under this framework, providing certificates of analysis (COA) confirming purity and identity.
+            BPC-157 is sold legally throughout the US as a research chemical — a designation for chemical compounds sold for laboratory and research purposes. Reputable suppliers operate under this framework, providing certificates of analysis (COA) confirming purity and identity.
           </p>
           <p className="text-slate-300 leading-relaxed mb-4">
             Research chemicals are not subject to the same regulatory framework as pharmaceutical drugs. They are legal to purchase and possess, though they are marketed for research purposes rather than human consumption.
           </p>
           <div className="flex gap-3 mt-4">
-            <a href={AFFILIATE} target="_blank" rel="nofollow sponsored noopener noreferrer"
+            <a href={SOURCE_URL} target="_blank" rel="nofollow noopener noreferrer"
               className="btn-cta text-sm px-6 py-3 flex items-center gap-2">
-              Shop COA-Verified BPC-157 <ArrowRight className="w-4 h-4" />
+              View COA-Verified BPC-157 <ArrowRight className="w-4 h-4" />
             </a>
           </div>
         </div>

@@ -3,7 +3,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 import { Menu, X, Zap } from 'lucide-react';
 
-const AFFILIATE = 'https://apollopeptidesciences.com/?rfsn=9016964.3f1b1e';
+const SOURCE_URL = 'https://apollopeptidesciences.com/?rfsn=9016964.3f1b1e';
 
 const navLinks = [
   { href: '/products', label: 'Peptides' },
@@ -48,12 +48,12 @@ export default function Navbar() {
           {/* CTA */}
           <div className="hidden lg:flex items-center gap-3">
             <a
-              href={AFFILIATE}
+              href={SOURCE_URL}
               target="_blank"
-              rel="nofollow sponsored noopener noreferrer"
+              rel="nofollow noopener noreferrer"
               className="btn-cta text-sm"
             >
-              Shop Peptides →
+              Get Peptides →
             </a>
           </div>
 
@@ -82,12 +82,12 @@ export default function Navbar() {
               </Link>
             ))}
             <a
-              href={AFFILIATE}
+              href={SOURCE_URL}
               target="_blank"
-              rel="nofollow sponsored noopener noreferrer"
+              rel="nofollow noopener noreferrer"
               className="btn-cta text-sm text-center mt-3"
             >
-              Shop →
+              Get Peptides →
             </a>
           </div>
         </div>

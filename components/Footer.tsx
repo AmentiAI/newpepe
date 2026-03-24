@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { Zap, ExternalLink } from 'lucide-react';
 
-const AFFILIATE = 'https://apollopeptidesciences.com/?rfsn=9016964.3f1b1e';
+const SOURCE_URL = 'https://apollopeptidesciences.com/?rfsn=9016964.3f1b1e';
 
 export default function Footer() {
   return (
@@ -23,12 +23,12 @@ export default function Footer() {
               Science-backed stacks for healing, performance, and longevity.
             </p>
             <a
-              href={AFFILIATE}
+              href={SOURCE_URL}
               target="_blank"
-              rel="nofollow sponsored noopener noreferrer"
+              rel="nofollow noopener noreferrer"
               className="btn-cta text-sm inline-flex items-center gap-2"
             >
-              Shop <ExternalLink className="w-4 h-4" />
+              View <ExternalLink className="w-4 h-4" />
             </a>
           </div>
 
@@ -89,7 +89,7 @@ export default function Footer() {
               Not medical advice. Consult a physician before use.
             </p>
             <p className="text-slate-600 text-xs">
-              Affiliate disclosure: We earn a commission on qualifying purchases through Apollo Peptide Sciences.
+              For research purposes only. Not medical advice.
             </p>
           </div>
         </div>

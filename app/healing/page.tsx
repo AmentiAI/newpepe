@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   },
 };
 
-const AFFILIATE = 'https://apollopeptidesciences.com/?rfsn=9016964.3f1b1e';
+const SOURCE_URL = 'https://apollopeptidesciences.com/?rfsn=9016964.3f1b1e';
 
 const injuryTypes = [
   { icon: '🦴', label: 'Tendons & Ligaments', time: '4–8 weeks', desc: 'ACL, MCL, rotator cuff, Achilles — BPC-157 directly activates tendon fibroblasts and growth factor receptors at the injury site.' },
@@ -120,9 +120,9 @@ export default function HealingPage() {
                 not just the pain.
               </p>
               <div className="flex flex-wrap gap-4">
-                <a href={AFFILIATE} target="_blank" rel="nofollow sponsored noopener noreferrer"
+                <a href={SOURCE_URL} target="_blank" rel="nofollow noopener noreferrer"
                   className="btn-cta text-base px-8 py-4 flex items-center gap-2">
-                  Shop <ArrowRight className="w-5 h-5" />
+                  View <ArrowRight className="w-5 h-5" />
                 </a>
                 <Link href="/stacks/ultimate-healing" className="btn-secondary text-base px-8 py-4">
                   View Full Healing Stack
@@ -219,9 +219,9 @@ export default function HealingPage() {
                 ))}
               </div>
               <div className="flex gap-3 mt-8">
-                <a href={AFFILIATE} target="_blank" rel="nofollow sponsored noopener noreferrer"
+                <a href={SOURCE_URL} target="_blank" rel="nofollow noopener noreferrer"
                   className="btn-cta text-sm px-6 py-3 flex items-center gap-2">
-                  Shop the Stack <ArrowRight className="w-4 h-4" />
+                  View the Stack <ArrowRight className="w-4 h-4" />
                 </a>
                 <Link href="/stacks/ultimate-healing" className="btn-secondary text-sm px-6 py-3">
                   Full Protocol Guide
@@ -383,9 +383,9 @@ export default function HealingPage() {
             <h2 className="text-3xl font-black text-white">Healing Peptides</h2>
             <p className="text-slate-400 mt-1">BPC-157, TB-500, and KPV — the complete healing stack</p>
           </div>
-          <a href={AFFILIATE} target="_blank" rel="nofollow sponsored noopener noreferrer"
+          <a href={SOURCE_URL} target="_blank" rel="nofollow noopener noreferrer"
             className="btn-cta text-sm px-5 py-2.5 flex items-center gap-2 hidden sm:flex">
-            Shop All <ArrowRight className="w-4 h-4" />
+            View All <ArrowRight className="w-4 h-4" />
           </a>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -447,13 +447,13 @@ export default function HealingPage() {
                 Start Healing Faster Today
               </h2>
               <p className="text-slate-300 text-lg mb-2 max-w-xl mx-auto">
-                BPC-157 and TB-500 from Apollo Peptide Sciences — COA verified, US domestic, ships in 24–48 hours.
+                BPC-157 and TB-500 from our recommended supplier — COA verified, US domestic, ships in 24–48 hours.
               </p>
               <p className="text-slate-500 text-sm mb-8">No prescription needed. COA-verified purity. Same-day processing.</p>
               <div className="flex flex-wrap gap-4 justify-center">
-                <a href={AFFILIATE} target="_blank" rel="nofollow sponsored noopener noreferrer"
+                <a href={SOURCE_URL} target="_blank" rel="nofollow noopener noreferrer"
                   className="btn-cta text-base px-10 py-4 inline-flex items-center gap-2">
-                  Shop <ArrowRight className="w-5 h-5" />
+                  View <ArrowRight className="w-5 h-5" />
                 </a>
                 <Link href="/stacks/ultimate-healing" className="btn-secondary text-base px-8 py-4">
                   View Full Protocol

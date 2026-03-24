@@ -20,11 +20,11 @@ export const metadata: Metadata = {
   },
 };
 
-const AFFILIATE = 'https://apollopeptidesciences.com/?rfsn=9016964.3f1b1e';
+const SOURCE_URL = 'https://apollopeptidesciences.com/?rfsn=9016964.3f1b1e';
 
 const steps = [
   { num: '01', title: 'Choose Your Goal', desc: 'Identify what you\'re targeting — injury healing, anti-aging, body composition, or cognitive enhancement. Your goal determines your stack.' },
-  { num: '02', title: 'Source Quality Peptides', desc: 'Use only COA-verified, US domestic peptides from a trusted supplier. Apollo Peptide Sciences provides full certificates of analysis.' },
+  { num: '02', title: 'Source Quality Peptides', desc: 'Use only COA-verified, US domestic peptides from a trusted supplier. Always verify that full certificates of analysis are provided.' },
   { num: '03', title: 'Reconstitute Correctly', desc: 'Add bacteriostatic water to lyophilized powder using a sterile syringe. Standard: 1mL water per 5mg vial = 5,000mcg/mL.' },
   { num: '04', title: 'Dose & Inject', desc: 'Use an insulin syringe (29-31 gauge). Pinch skin, insert at 45°, inject slowly. Rotate injection sites. Most peptides: subcutaneous.' },
   { num: '05', title: 'Track & Adjust', desc: 'Log your doses, symptoms, and results. Adjust based on response after 2-4 weeks. Most people see initial results within 1-2 weeks.' },
@@ -129,10 +129,10 @@ export default function GuidePage() {
         {/* Buy CTA */}
         <div className="text-center p-10 glass-card">
           <h2 className="text-2xl font-bold text-white mb-3">Ready to Start?</h2>
-          <p className="text-slate-400 mb-6">Get your peptides from Apollo Peptide Sciences — COA verified, US domestic.</p>
+          <p className="text-slate-400 mb-6">Get your peptides from our recommended supplier — COA verified, US domestic.</p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <a href={AFFILIATE} target="_blank" rel="nofollow sponsored noopener noreferrer" className="btn-cta text-base px-8 py-4 flex items-center gap-2">
-              Shop <ArrowRight className="w-5 h-5" />
+            <a href={SOURCE_URL} target="_blank" rel="nofollow noopener noreferrer" className="btn-cta text-base px-8 py-4 flex items-center gap-2">
+              View <ArrowRight className="w-5 h-5" />
             </a>
             <Link href="/stacks" className="btn-secondary text-base px-8 py-4">Browse Stacks</Link>
           </div>
