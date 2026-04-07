@@ -32,6 +32,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/guide`,                                         priority: 0.8, changeFrequency: 'monthly', lastModified: new Date('2026-03-10') },
     { url: `${BASE_URL}/faq`,                                           priority: 0.7, changeFrequency: 'monthly', lastModified: new Date('2026-03-08') },
     { url: `${BASE_URL}/contact`,                                       priority: 0.4, changeFrequency: 'yearly',  lastModified: new Date('2026-03-01') },
+    // Looksmaxxing pages
+    { url: `${BASE_URL}/looksmaxxing-peptides`,                        priority: 0.9, changeFrequency: 'monthly', lastModified: new Date('2026-04-05') },
+    { url: `${BASE_URL}/peptides-for-skin-quality`,                    priority: 0.9, changeFrequency: 'monthly', lastModified: new Date('2026-04-05') },
+    { url: `${BASE_URL}/ghk-cu-skin-protocol`,                         priority: 0.8, changeFrequency: 'monthly', lastModified: new Date('2026-04-04') },
+    { url: `${BASE_URL}/snap-8-anti-wrinkle-peptide`,                  priority: 0.8, changeFrequency: 'monthly', lastModified: new Date('2026-04-04') },
+    { url: `${BASE_URL}/bpc-157-scar-healing`,                         priority: 0.8, changeFrequency: 'monthly', lastModified: new Date('2026-04-03') },
+    { url: `${BASE_URL}/peptides-for-collagen`,                        priority: 0.9, changeFrequency: 'monthly', lastModified: new Date('2026-04-03') },
+    { url: `${BASE_URL}/peptides-for-beard-growth`,                    priority: 0.8, changeFrequency: 'monthly', lastModified: new Date('2026-04-02') },
+    { url: `${BASE_URL}/igf-1-looksmaxxing`,                           priority: 0.8, changeFrequency: 'monthly', lastModified: new Date('2026-04-02') },
+    { url: `${BASE_URL}/peptides-for-acne-skin`,                       priority: 0.8, changeFrequency: 'monthly', lastModified: new Date('2026-04-01') },
+    { url: `${BASE_URL}/looksmaxxing-stack`,                           priority: 0.9, changeFrequency: 'monthly', lastModified: new Date('2026-04-01') },
   ];
 
   const productPages: MetadataRoute.Sitemap = products.map((p) => ({

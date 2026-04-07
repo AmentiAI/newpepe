@@ -360,6 +360,98 @@ const registry: InterLink[] = [
       'aging', 'gene expression', 'mortality', 'mitochondria', 'nad',
     ],
   },
+
+  // ── Looksmaxxing pages ────────────────────────────────────────────────────
+  {
+    path: '/looksmaxxing-peptides',
+    anchor: 'looksmaxxing peptides guide',
+    description: 'Complete guide to peptides for appearance optimization',
+    keywords: [
+      'looksmaxxing', 'appearance', 'skin', 'collagen', 'ghk-cu', 'snap-8',
+      'igf-1', 'bpc-157', 'face', 'beard', 'acne', 'anti-aging', 'protocol',
+    ],
+  },
+  {
+    path: '/peptides-for-skin-quality',
+    anchor: 'peptides for skin quality & glow',
+    description: 'Best peptides for skin texture, firmness, and luminosity',
+    keywords: [
+      'skin', 'collagen', 'ghk-cu', 'snap-8', 'bpc-157', 'epithalon',
+      'appearance', 'anti-aging', 'looksmaxxing', 'texture', 'glow', 'pores',
+    ],
+  },
+  {
+    path: '/ghk-cu-skin-protocol',
+    anchor: 'GHK-Cu skin protocol',
+    description: 'GHK-Cu copper peptide complete skin application guide',
+    keywords: [
+      'ghk-cu', 'skin', 'collagen', 'anti-aging', 'copper peptide',
+      'looksmaxxing', 'appearance', 'topical', 'gene expression', 'aging',
+    ],
+  },
+  {
+    path: '/snap-8-anti-wrinkle-peptide',
+    anchor: 'SNAP-8 anti-wrinkle peptide guide',
+    description: 'SNAP-8 neuropeptide vs Botox — topical anti-wrinkle protocol',
+    keywords: [
+      'snap-8', 'wrinkles', 'anti-aging', 'skin', 'topical', 'neuropeptide',
+      'looksmaxxing', 'appearance', 'expression lines', 'botox',
+    ],
+  },
+  {
+    path: '/bpc-157-scar-healing',
+    anchor: 'BPC-157 for scar healing & skin repair',
+    description: 'BPC-157 scar remodeling protocol by scar type',
+    keywords: [
+      'bpc-157', 'scars', 'skin', 'healing', 'collagen', 'appearance',
+      'looksmaxxing', 'acne scars', 'wound healing', 'repair', 'ghk-cu',
+    ],
+  },
+  {
+    path: '/peptides-for-collagen',
+    anchor: 'peptides for collagen production',
+    description: 'Evidence-ranked guide to collagen-boosting peptides',
+    keywords: [
+      'collagen', 'ghk-cu', 'igf-1', 'bpc-157', 'skin', 'anti-aging',
+      'looksmaxxing', 'appearance', 'synthesis', 'cjc-1295', 'epithalon',
+    ],
+  },
+  {
+    path: '/peptides-for-beard-growth',
+    anchor: 'peptides for beard growth & density',
+    description: 'GHK-Cu, IGF-1 and TB-500 beard growth protocol',
+    keywords: [
+      'beard', 'hair', 'ghk-cu', 'igf-1', 'looksmaxxing', 'appearance',
+      'follicle', 'growth', 'facial hair', 'tb-500', 'bpc-157',
+    ],
+  },
+  {
+    path: '/igf-1-looksmaxxing',
+    anchor: 'IGF-1 for appearance & looksmaxxing',
+    description: 'IGF-1 LR3 appearance effects — collagen, structure, skin',
+    keywords: [
+      'igf-1', 'looksmaxxing', 'appearance', 'collagen', 'skin', 'muscle',
+      'body-composition', 'gh', 'growth hormone', 'cjc-1295', 'facial structure',
+    ],
+  },
+  {
+    path: '/peptides-for-acne-skin',
+    anchor: 'peptides for acne & problem skin',
+    description: 'BPC-157 gut-skin axis and GHK-Cu for acne resolution',
+    keywords: [
+      'acne', 'skin', 'bpc-157', 'ghk-cu', 'looksmaxxing', 'appearance',
+      'gut', 'inflammation', 'healing', 'repair', 'scars',
+    ],
+  },
+  {
+    path: '/looksmaxxing-stack',
+    anchor: 'the complete looksmaxxing peptide stack',
+    description: 'Full appearance optimization stack — 3 tiers by budget',
+    keywords: [
+      'looksmaxxing', 'stack', 'protocol', 'ghk-cu', 'snap-8', 'igf-1',
+      'bpc-157', 'skin', 'beard', 'collagen', 'appearance', 'anti-aging',
+    ],
+  },
 ];
 
 /**
