@@ -39,7 +39,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
-const SOURCE_URL = 'https://apollopeptidesciences.com/?rfsn=9016964.3f1b1e';
+const SOURCE_URL = '/out';
 
 export default function StackPage({ params }: Props) {
   const stack = getStackById(params.slug);

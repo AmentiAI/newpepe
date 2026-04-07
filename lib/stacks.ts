@@ -13,7 +13,7 @@ export interface Stack {
   image: string;
 }
 
-const AFFILIATE = 'https://apollopeptidesciences.com/?rfsn=9016964.3f1b1e';
+const AFFILIATE = '/out';
 
 export const stacks: Stack[] = [
   {

@@ -8,27 +8,30 @@ import ChatWidget from '@/components/ChatWidget';
 const inter = Inter({ subsets: ['latin'], display: 'swap' });
 
 export const metadata: Metadata = {
-  title: 'BPC-157 Stack | #1 Peptide Protocols for Healing, Performance & Longevity',
-  description: 'Science-backed BPC-157 stacks and peptide protocols for injury healing, body composition, and anti-aging. Expert-curated peptide protocols for research and optimization.',
-  keywords: 'BPC-157, BPC 157, peptide stack, TB-500, healing peptide, BPC-157 protocol, peptide guide, peptides',
+  title: {
+    default: 'BPC-157 Stack — Peptide Protocols for Healing, Performance & Longevity',
+    template: '%s | BPC-157 Stack',
+  },
+  description: 'Science-backed BPC-157 stacks and peptide protocols for injury healing, body composition, and anti-aging. 100+ studies. Expert-curated protocols for 2026.',
+  keywords: [
+    'BPC-157 stack', 'BPC-157 protocol', 'BPC157 stack', 'peptide stack guide',
+    'BPC-157 healing stack', 'tb-500 bpc-157 stack', 'peptide stacks 2026',
+    'bp157stack', 'bpc157stack', 'BPC-157 tb-500 protocol',
+  ],
   authors: [{ name: 'BPC-157 Stack' }],
   openGraph: {
-    title: 'BPC-157 Stack | Expert Peptide Protocols',
-    description: 'The most comprehensive BPC-157 and peptide stack guide. Healing, anti-aging, and performance protocols backed by clinical science.',
+    title: 'BPC-157 Stack — Expert Peptide Protocols',
+    description: 'The most comprehensive BPC-157 and peptide stack guide. Healing, anti-aging, and performance protocols backed by 100+ clinical studies.',
     type: 'website',
     url: 'https://bp157stack.com',
     siteName: 'BPC-157 Stack',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'BPC-157 Stack | Expert Peptide Protocols',
-    description: 'Science-backed peptide stacks for healing, performance & longevity.',
+    title: 'BPC-157 Stack — Expert Peptide Protocols',
+    description: 'Science-backed peptide stacks for healing, performance & longevity. 100+ studies.',
   },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: { index: true, follow: true },
-  },
+  robots: { index: true, follow: true },
   metadataBase: new URL('https://bp157stack.com'),
 };
 

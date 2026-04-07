@@ -1,7 +1,12 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
-import { ArrowRight, Zap, Shield, TrendingUp, Brain, FlaskConical, Star, CheckCircle, Activity, Clock, Users, Award } from 'lucide-react';
+import {
+  ArrowRight, Zap, Shield, TrendingUp, Brain, FlaskConical, Star,
+  CheckCircle, Activity, Clock, Users, Award, Target, BookOpen,
+  Microscope, Dna, HeartPulse, Leaf, Wind, ExternalLink,
+  AlertTriangle, Package, Thermometer, BadgeCheck,
+} from 'lucide-react';
 import { products } from '@/lib/products';
 import { stacks } from '@/lib/stacks';
 import ProductCard from '@/components/ProductCard';
@@ -11,7 +16,7 @@ export const metadata: Metadata = {
   description: 'Discover the most effective BPC-157 stacks and peptide protocols. Science-backed guides for injury healing, body recomposition, anti-aging, and cognitive enhancement.',
 };
 
-const SOURCE_URL = 'https://apollopeptidesciences.com/?rfsn=9016964.3f1b1e';
+const SOURCE_URL = '/out';
 
 const stats = [
   { value: '100+', label: 'Peer-Reviewed Studies', icon: FlaskConical },
@@ -82,6 +87,193 @@ const marqueeItems = [
   '✦ BPC-157 — Ultimate Healer', '✦ TB-500 — Systemic Repair', '✦ GHK-Cu — Gene Reset',
   '✦ Epithalon — Telomere Extension', '✦ Ipamorelin — Clean GH', '✦ Selank — Anti-Anxiety',
   '✦ Semax — BDNF Surge', '✦ SS-31 — Mitochondrial Repair', '✦ MOTS-c — Metabolic Master',
+];
+
+const howItWorksSteps = [
+  {
+    step: '01',
+    icon: Target,
+    title: 'Choose Your Goal',
+    desc: 'Identify what you\'re targeting: healing, anti-aging, body comp, or cognitive enhancement. Each goal maps to a distinct set of peptides with different mechanisms.',
+    color: 'emerald',
+  },
+  {
+    step: '02',
+    icon: Zap,
+    title: 'Pick Your Protocol',
+    desc: 'Browse our evidence-based stacks or individual peptides for your specific needs. Every protocol includes dosing, timing, cycle length, and what to expect week by week.',
+    color: 'blue',
+  },
+  {
+    step: '03',
+    icon: CheckCircle,
+    title: 'Source & Start',
+    desc: 'Get COA-verified peptides from our recommended supplier and follow the protocol. US domestic shipping means your peptides arrive cold and uncompromised.',
+    color: 'neon',
+  },
+];
+
+const researchStudies = [
+  {
+    peptide: 'BPC-157',
+    title: 'Achilles Tendon Healing Accelerated 2-4×',
+    citation: 'Sikiric et al., 2010',
+    finding: 'BPC-157 accelerates Achilles tendon healing by 2-4× vs controls — with full structural repair confirmed histologically.',
+    href: '/products/bpc-157',
+    color: 'emerald',
+    icon: Activity,
+  },
+  {
+    peptide: 'Epithalon',
+    title: 'Telomere Extension & 28% Mortality Reduction',
+    citation: 'Khavinson et al., 2012',
+    finding: 'Epithalon extends telomere length and reduces mortality by 28% in human trials spanning 12 years — the strongest longevity data for any peptide.',
+    href: '/products/epithalon',
+    color: 'purple',
+    icon: Dna,
+  },
+  {
+    peptide: 'GHK-Cu',
+    title: '31% of Age-Related Gene Changes Reversed',
+    citation: 'Pickart et al., 2015',
+    finding: 'GHK-Cu reverses 31% of age-related gene expression changes identified in aging tissue, restoring youthful transcriptional patterns at the cellular level.',
+    href: '/products/ghk-cu',
+    color: 'amber',
+    icon: Microscope,
+  },
+  {
+    peptide: 'TB-500',
+    title: 'Stem Cell Mobilization & Accelerated Repair',
+    citation: 'Hinkel et al., 2015',
+    finding: 'TB-500 mobilizes endogenous stem cells from bone marrow and accelerates muscle and wound healing — confirmed in both cardiac and skeletal muscle tissue.',
+    href: '/products/tb-500',
+    color: 'blue',
+    icon: HeartPulse,
+  },
+];
+
+const userTargets = [
+  {
+    icon: Activity,
+    title: 'Tendon & Ligament Healing',
+    badge: 'Most Popular',
+    desc: 'Chronic tendinopathies, post-surgical repair, and sports injuries. BPC-157 + TB-500 is the gold standard protocol.',
+    href: '/healing',
+    color: 'emerald',
+  },
+  {
+    icon: Leaf,
+    title: 'Gut & Digestive Health',
+    badge: null,
+    desc: 'Leaky gut, IBD, Crohn\'s, and chronic GI inflammation. BPC-157 oral is uniquely effective for intestinal tissue.',
+    href: '/guide',
+    color: 'green',
+  },
+  {
+    icon: Dna,
+    title: 'Anti-Aging & Longevity',
+    badge: null,
+    desc: 'Telomere extension, gene expression reset, and mitochondrial repair. The triple-protocol with Epithalon, GHK-Cu, and SS-31.',
+    href: '/anti-aging',
+    color: 'purple',
+  },
+  {
+    icon: TrendingUp,
+    title: 'Body Recomposition',
+    badge: null,
+    desc: 'Fat loss with muscle preservation. GH secretagogues like Ipamorelin + CJC-1295 produce clean GH pulses without side effects.',
+    href: '/body-composition',
+    color: 'blue',
+  },
+  {
+    icon: Brain,
+    title: 'Anxiety & Mood',
+    badge: null,
+    desc: 'Selank provides rapid anxiolytic effects without sedation. Semax simultaneously raises BDNF for cognitive clarity and mood stability.',
+    href: '/stacks/cognitive-stack',
+    color: 'amber',
+  },
+  {
+    icon: Wind,
+    title: 'Hair Loss',
+    badge: null,
+    desc: 'GHK-Cu stimulates hair follicle growth and increases hair density. One of the most well-documented cosmetic applications of any peptide.',
+    href: '/ghk-cu-for-hair-loss',
+    color: 'rose',
+  },
+];
+
+const recentGuides = [
+  {
+    title: 'BPC-157 for Tendons: The Complete Protocol',
+    desc: 'Dosing, timing, injection sites, and what to expect at weeks 1, 4, and 8. The most detailed tendon protocol available.',
+    href: '/bpc-157-for-tendons',
+    tag: 'Healing',
+    tagColor: 'emerald',
+  },
+  {
+    title: 'GHK-Cu for Hair Loss: Does It Actually Work?',
+    desc: 'The science behind copper peptides and hair follicle stimulation. Real data, real dosing, realistic expectations.',
+    href: '/ghk-cu-for-hair-loss',
+    tag: 'Anti-Aging',
+    tagColor: 'purple',
+  },
+  {
+    title: 'Semaglutide vs Tirzepatide vs Retatrutide: The Comparison',
+    desc: 'Side-by-side breakdown of the three leading GLP-1 peptides — efficacy, side effects, cost, and who each one is for.',
+    href: '/semaglutide-vs-tirzepatide-vs-retatrutide',
+    tag: 'Weight Loss',
+    tagColor: 'blue',
+  },
+  {
+    title: 'Is BPC-157 Legal? FDA Status 2026',
+    desc: 'Current legal status, the FDA\'s 2024 reclassification attempt, and what it means for research use in 2026.',
+    href: '/is-bpc-157-legal',
+    tag: 'Legal',
+    tagColor: 'amber',
+  },
+  {
+    title: 'How to Reconstitute Peptides (Step-by-Step)',
+    desc: 'A complete visual guide to mixing lyophilized peptides with bacteriostatic water — no experience required.',
+    href: '/how-to-reconstitute-peptides',
+    tag: 'Beginner',
+    tagColor: 'slate',
+  },
+  {
+    title: 'CJC-1295/Ipamorelin: Week-by-Week Results',
+    desc: 'Detailed week-by-week log of what to expect from the most popular GH secretagogue stack, with dosing and timing.',
+    href: '/cjc-1295-ipamorelin-results',
+    tag: 'Body Comp',
+    tagColor: 'rose',
+  },
+];
+
+const coaPoints = [
+  {
+    icon: AlertTriangle,
+    title: 'What Low-Quality Peptides Look Like',
+    desc: 'Underdosed vials, mystery filler compounds, no third-party testing, and foreign origin with no cold-chain shipping. The peptide research market has a counterfeiting problem — without a COA you have no idea what you\'re injecting.',
+    color: 'red',
+  },
+  {
+    icon: BadgeCheck,
+    title: 'What to Verify in a COA',
+    desc: 'Identity confirmation (HPLC or MS), purity percentage (look for 98%+), heavy metals panel (lead, arsenic, mercury, cadmium), and endotoxin testing. A real COA comes from an accredited independent lab — not the manufacturer.',
+    color: 'emerald',
+  },
+  {
+    icon: Thermometer,
+    title: 'Why US Domestic Shipping Matters',
+    desc: 'Lyophilized peptides are stable at room temperature for weeks, but reconstituted peptides degrade quickly above 8°C. US domestic suppliers can ship overnight on ice. International orders from overseas labs spend days in customs at ambient temperatures.',
+    color: 'blue',
+  },
+  {
+    icon: Package,
+    title: 'Our Sourcing Recommendation',
+    desc: 'We recommend Apollo Peptide Sciences — every batch ships with a full third-party COA, 98%+ purity guarantee, US domestic fulfillment, and cold-chain packaging. They are the only supplier we link to on this site.',
+    color: 'neon',
+    isAffiliate: true,
+  },
 ];
 
 export default function HomePage() {
@@ -189,7 +381,7 @@ export default function HomePage() {
                   <div className="relative w-56 h-56">
                     <div className="absolute inset-0 bg-neon-green/5 rounded-full blur-3xl" />
                     <Image
-                      src="https://apollopeptidesciences.com/wp-content/uploads/2025/09/bpc157_10mg.webp"
+                      src={products.find(p => p.slug === 'bpc-157')!.image}
                       alt="BPC-157 — Research Grade"
                       fill
                       className="object-contain drop-shadow-2xl"
@@ -243,9 +435,64 @@ export default function HomePage() {
       </div>
 
       {/* ═══════════════════════════════════════════════
+          HOW IT WORKS — 3-step education section
+      ═══════════════════════════════════════════════ */}
+      <section className="py-24 bg-dark-900">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <p className="text-neon-green text-xs font-semibold uppercase tracking-widest mb-3">Simple Process</p>
+            <h2 className="text-4xl sm:text-5xl font-black text-white mb-4">
+              How It <span className="gradient-text">Works</span>
+            </h2>
+            <p className="text-slate-400 max-w-xl mx-auto">
+              From identifying your goal to running your first protocol — three steps is all it takes.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 relative">
+            {/* Connector line — desktop only */}
+            <div className="hidden md:block absolute top-14 left-[calc(16.67%+1rem)] right-[calc(16.67%+1rem)] h-px bg-gradient-to-r from-emerald-400/30 via-blue-400/30 to-neon-green/30" />
+
+            {howItWorksSteps.map(({ step, icon: Icon, title, desc, color }) => {
+              const colorMap: Record<string, string> = {
+                emerald: 'bg-emerald-400/10 border-emerald-400/20 text-emerald-400',
+                blue: 'bg-blue-400/10 border-blue-400/20 text-blue-400',
+                neon: 'bg-neon-green/10 border-neon-green/20 text-neon-green',
+              };
+              const stepColor: Record<string, string> = {
+                emerald: 'text-emerald-400 border-emerald-400/30',
+                blue: 'text-blue-400 border-blue-400/30',
+                neon: 'text-neon-green border-neon-green/30',
+              };
+              return (
+                <div key={step} className="glass-card p-8 flex flex-col items-center text-center relative">
+                  {/* Step number */}
+                  <div className={`text-xs font-black font-mono mb-5 px-3 py-1 rounded-full border ${stepColor[color]}`}>
+                    STEP {step}
+                  </div>
+                  {/* Icon circle */}
+                  <div className={`w-16 h-16 rounded-2xl border flex items-center justify-center mb-6 ${colorMap[color]}`}>
+                    <Icon className="w-7 h-7" />
+                  </div>
+                  <h3 className="text-white font-bold text-xl mb-3">{title}</h3>
+                  <p className="text-slate-400 text-sm leading-relaxed">{desc}</p>
+                </div>
+              );
+            })}
+          </div>
+
+          <div className="text-center mt-10">
+            <Link href="/guide" className="btn-secondary text-sm px-8 py-3 inline-flex items-center gap-2">
+              Read the Full Beginner Guide <ArrowRight className="w-4 h-4" />
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* ═══════════════════════════════════════════════
           GOAL SELECTOR — 2×2 grid, large cards
       ═══════════════════════════════════════════════ */}
-      <section className="bg-dark-900 py-24 grid-bg">
+      <section className="bg-dark-800 py-24 grid-bg border-y border-white/5">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <p className="text-neon-green text-xs font-semibold uppercase tracking-widest mb-3">Choose Your Protocol</p>
@@ -311,9 +558,131 @@ export default function HomePage() {
       </section>
 
       {/* ═══════════════════════════════════════════════
-          FEATURED STACKS — Horizontal scroll feel
+          RESEARCH & EVIDENCE — 4 study highlight cards
+      ═══════════════════════════════════════════════ */}
+      <section className="py-24 bg-dark-900 grid-bg">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <p className="text-neon-green text-xs font-semibold uppercase tracking-widest mb-3">Peer-Reviewed Science</p>
+            <h2 className="text-4xl sm:text-5xl font-black text-white mb-4">
+              Backed by <span className="gradient-text">30+ Years of Research</span>
+            </h2>
+            <p className="text-slate-400 max-w-2xl mx-auto">
+              These are not supplements with vague health claims. Every peptide on this site has published human or animal trials
+              demonstrating specific, measurable outcomes.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+            {researchStudies.map(({ peptide, title, citation, finding, href, color, icon: Icon }) => {
+              const colorMap: Record<string, string> = {
+                emerald: 'text-emerald-400 bg-emerald-400/10 border-emerald-400/20',
+                purple: 'text-purple-400 bg-purple-400/10 border-purple-400/20',
+                amber: 'text-amber-400 bg-amber-400/10 border-amber-400/20',
+                blue: 'text-blue-400 bg-blue-400/10 border-blue-400/20',
+              };
+              const badgeColor: Record<string, string> = {
+                emerald: 'bg-emerald-400/10 text-emerald-400 border-emerald-400/20',
+                purple: 'bg-purple-400/10 text-purple-400 border-purple-400/20',
+                amber: 'bg-amber-400/10 text-amber-400 border-amber-400/20',
+                blue: 'bg-blue-400/10 text-blue-400 border-blue-400/20',
+              };
+              return (
+                <div key={title} className="glass-card p-7 flex flex-col gap-4">
+                  <div className="flex items-start justify-between gap-4">
+                    <div className={`w-10 h-10 rounded-xl flex items-center justify-center shrink-0 border ${colorMap[color]}`}>
+                      <Icon className="w-5 h-5" />
+                    </div>
+                    <span className={`text-xs font-mono px-2.5 py-1 rounded-full border ${badgeColor[color]}`}>
+                      {peptide}
+                    </span>
+                  </div>
+                  <div>
+                    <h3 className="text-white font-bold text-lg mb-1">{title}</h3>
+                    <p className="text-slate-500 text-xs font-mono mb-3">{citation}</p>
+                    <p className="text-slate-400 text-sm leading-relaxed">{finding}</p>
+                  </div>
+                  <div className="mt-auto pt-3 border-t border-white/5">
+                    <Link href={href} className="text-neon-green text-sm font-semibold flex items-center gap-1 hover:gap-2 transition-all">
+                      View Peptide <ArrowRight className="w-4 h-4" />
+                    </Link>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      {/* ═══════════════════════════════════════════════
+          WHAT USERS ARE TARGETING — Goal stats grid
       ═══════════════════════════════════════════════ */}
       <section className="py-24 bg-dark-800 border-y border-white/5">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <p className="text-neon-green text-xs font-semibold uppercase tracking-widest mb-3">Community Goals</p>
+            <h2 className="text-4xl sm:text-5xl font-black text-white mb-4">
+              What Our Users Are <span className="gradient-text">Targeting</span>
+            </h2>
+            <p className="text-slate-400 max-w-xl mx-auto">
+              Every visitor to this site comes with a specific goal. Here is what the community is working on.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+            {userTargets.map(({ icon: Icon, title, badge, desc, href, color }) => {
+              const colorClasses: Record<string, string> = {
+                emerald: 'text-emerald-400 bg-emerald-400/10 border-emerald-400/20 hover:border-emerald-400/40',
+                green: 'text-green-400 bg-green-400/10 border-green-400/20 hover:border-green-400/40',
+                purple: 'text-purple-400 bg-purple-400/10 border-purple-400/20 hover:border-purple-400/40',
+                blue: 'text-blue-400 bg-blue-400/10 border-blue-400/20 hover:border-blue-400/40',
+                amber: 'text-amber-400 bg-amber-400/10 border-amber-400/20 hover:border-amber-400/40',
+                rose: 'text-rose-400 bg-rose-400/10 border-rose-400/20 hover:border-rose-400/40',
+              };
+              const iconClasses: Record<string, string> = {
+                emerald: 'bg-emerald-400/10 text-emerald-400',
+                green: 'bg-green-400/10 text-green-400',
+                purple: 'bg-purple-400/10 text-purple-400',
+                blue: 'bg-blue-400/10 text-blue-400',
+                amber: 'bg-amber-400/10 text-amber-400',
+                rose: 'bg-rose-400/10 text-rose-400',
+              };
+              return (
+                <Link
+                  key={title}
+                  href={href}
+                  className={`group glass-card p-6 flex flex-col gap-4 border transition-all duration-200 ${colorClasses[color]}`}
+                >
+                  <div className="flex items-center justify-between">
+                    <div className={`w-10 h-10 rounded-xl flex items-center justify-center ${iconClasses[color]}`}>
+                      <Icon className="w-5 h-5" />
+                    </div>
+                    {badge && (
+                      <span className="text-xs font-semibold text-neon-green bg-neon-green/10 border border-neon-green/20 px-2.5 py-0.5 rounded-full">
+                        {badge}
+                      </span>
+                    )}
+                  </div>
+                  <div>
+                    <h3 className="text-white font-bold text-base mb-1.5">{title}</h3>
+                    <p className="text-slate-400 text-sm leading-relaxed">{desc}</p>
+                  </div>
+                  <div className="mt-auto flex items-center gap-1 text-sm font-semibold group-hover:gap-2 transition-all" style={{
+                    color: color === 'emerald' ? '#34d399' : color === 'green' ? '#4ade80' : color === 'purple' ? '#c084fc' : color === 'blue' ? '#60a5fa' : color === 'amber' ? '#fbbf24' : '#fb7185',
+                  }}>
+                    Explore Protocol <ArrowRight className="w-4 h-4" />
+                  </div>
+                </Link>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      {/* ═══════════════════════════════════════════════
+          FEATURED STACKS — Horizontal scroll feel
+      ═══════════════════════════════════════════════ */}
+      <section className="py-24 bg-dark-900 grid-bg">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-end justify-between mb-14">
             <div>
@@ -376,7 +745,7 @@ export default function HomePage() {
       {/* ═══════════════════════════════════════════════
           PRODUCT SHOWCASE
       ═══════════════════════════════════════════════ */}
-      <section className="py-24 bg-dark-900 grid-bg">
+      <section className="py-24 bg-dark-800 border-y border-white/5">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-end justify-between mb-14">
             <div>
@@ -406,9 +775,115 @@ export default function HomePage() {
       </section>
 
       {/* ═══════════════════════════════════════════════
-          SOCIAL PROOF — Testimonials + Stars
+          RECENT GUIDES — 6 article cards
+      ═══════════════════════════════════════════════ */}
+      <section className="py-24 bg-dark-900 grid-bg">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex items-end justify-between mb-14">
+            <div>
+              <p className="text-neon-green text-xs font-semibold uppercase tracking-widest mb-3">In-Depth Content</p>
+              <h2 className="text-4xl sm:text-5xl font-black text-white">
+                Recent <span className="gradient-text">Guides</span>
+              </h2>
+            </div>
+            <Link href="/guide" className="btn-secondary text-sm hidden sm:flex items-center gap-1">
+              All Guides <ArrowRight className="w-4 h-4" />
+            </Link>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+            {recentGuides.map(({ title, desc, href, tag, tagColor }) => {
+              const tagClasses: Record<string, string> = {
+                emerald: 'bg-emerald-400/10 text-emerald-400 border-emerald-400/20',
+                purple: 'bg-purple-400/10 text-purple-400 border-purple-400/20',
+                blue: 'bg-blue-400/10 text-blue-400 border-blue-400/20',
+                amber: 'bg-amber-400/10 text-amber-400 border-amber-400/20',
+                slate: 'bg-slate-400/10 text-slate-400 border-slate-400/20',
+                rose: 'bg-rose-400/10 text-rose-400 border-rose-400/20',
+              };
+              return (
+                <Link
+                  key={href}
+                  href={href}
+                  className="group glass-card p-6 flex flex-col gap-4 hover:border-neon-green/20 transition-all duration-200"
+                >
+                  <div className="flex items-center justify-between">
+                    <span className={`text-xs font-semibold px-2.5 py-0.5 rounded-full border ${tagClasses[tagColor]}`}>
+                      {tag}
+                    </span>
+                    <BookOpen className="w-4 h-4 text-slate-600 group-hover:text-neon-green transition-colors" />
+                  </div>
+                  <div>
+                    <h3 className="text-white font-bold text-base leading-snug mb-2 group-hover:text-neon-green transition-colors">{title}</h3>
+                    <p className="text-slate-400 text-sm leading-relaxed">{desc}</p>
+                  </div>
+                  <div className="mt-auto flex items-center gap-1 text-neon-green text-sm font-semibold opacity-0 group-hover:opacity-100 transition-opacity">
+                    Read Guide <ArrowRight className="w-4 h-4" />
+                  </div>
+                </Link>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      {/* ═══════════════════════════════════════════════
+          WHY SOURCE QUALITY MATTERS
       ═══════════════════════════════════════════════ */}
       <section className="py-24 bg-dark-800 border-y border-white/5">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <p className="text-neon-green text-xs font-semibold uppercase tracking-widest mb-3">Sourcing Integrity</p>
+            <h2 className="text-4xl sm:text-5xl font-black text-white mb-4">
+              Why Source Quality <span className="gradient-text">Matters</span>
+            </h2>
+            <p className="text-slate-400 max-w-2xl mx-auto">
+              A COA-verified peptide and a random vial from an unvetted lab look identical. What you inject is not.
+              Here is what separates research-grade peptides from the counterfeits circulating the market.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+            {coaPoints.map(({ icon: Icon, title, desc, color, isAffiliate }) => {
+              const colorMap: Record<string, string> = {
+                red: 'text-red-400 bg-red-400/10 border-red-400/20',
+                emerald: 'text-emerald-400 bg-emerald-400/10 border-emerald-400/20',
+                blue: 'text-blue-400 bg-blue-400/10 border-blue-400/20',
+                neon: 'text-neon-green bg-neon-green/10 border-neon-green/20',
+              };
+              return (
+                <div key={title} className={`glass-card p-7 flex flex-col gap-4 ${color === 'neon' ? 'border-neon-green/20' : ''}`}>
+                  <div className={`w-11 h-11 rounded-xl flex items-center justify-center border ${colorMap[color]}`}>
+                    <Icon className="w-5 h-5" />
+                  </div>
+                  <div>
+                    <h3 className="text-white font-bold text-lg mb-2">{title}</h3>
+                    <p className="text-slate-400 text-sm leading-relaxed">{desc}</p>
+                  </div>
+                  {isAffiliate && (
+                    <div className="mt-auto pt-4 border-t border-white/5">
+                      <a
+                        href={SOURCE_URL}
+                        target="_blank"
+                        rel="nofollow noopener noreferrer"
+                        className="btn-cta text-sm px-6 py-2.5 inline-flex items-center gap-2"
+                      >
+                        View Apollo Peptide Sciences <ExternalLink className="w-4 h-4" />
+                      </a>
+                      <p className="text-slate-600 text-xs mt-2">Affiliate link — we earn a commission at no cost to you.</p>
+                    </div>
+                  )}
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      {/* ═══════════════════════════════════════════════
+          SOCIAL PROOF — Testimonials + Stars
+      ═══════════════════════════════════════════════ */}
+      <section className="py-24 bg-dark-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-14">
             <p className="text-neon-green text-xs font-semibold uppercase tracking-widest mb-3">Real Results</p>
@@ -439,7 +914,7 @@ export default function HomePage() {
       {/* ═══════════════════════════════════════════════
           FAQ
       ═══════════════════════════════════════════════ */}
-      <section className="py-24 bg-dark-900">
+      <section className="py-24 bg-dark-800 border-y border-white/5">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-14">
             <p className="text-neon-green text-xs font-semibold uppercase tracking-widest mb-3">Quick Answers</p>

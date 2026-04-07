@@ -21,20 +21,22 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!product) return { title: 'Peptide Not Found' };
   const keywords = [product.name, ...product.tags, product.category, 'peptide', 'BPC-157 stack'].join(', ');
   return {
-    title: product.seoTitle,
+    title: { absolute: product.seoTitle },
     description: product.shortDescription,
     keywords,
+    alternates: { canonical: `https://bp157stack.com/products/${params.slug}` },
     openGraph: {
       title: product.seoTitle,
       description: product.shortDescription,
       images: [{ url: product.image, width: 600, alt: product.name }],
       type: 'website',
       url: `https://bp157stack.com/products/${params.slug}`,
+      siteName: 'BPC-157 Stack',
     },
     twitter: {
       card: 'summary_large_image',
       title: product.seoTitle,
-      description: product.shortDescription,
+      description: product.shortDescription.slice(0, 155),
       images: [product.image],
     },
   };
@@ -148,12 +150,14 @@ export default function ProductPage({ params }: Props) {
               description: product.shortDescription,
               image: product.image,
               keywords: [product.name, ...product.tags].join(', '),
+              brand: { '@type': 'Brand', name: 'BPC-157 Stack' },
               offers: {
                 '@type': 'Offer',
-                price: product.price,
+                price: product.price.toString(),
                 priceCurrency: 'USD',
                 availability: 'https://schema.org/InStock',
-                url: product.affiliateUrl,
+                seller: { '@type': 'Organization', name: 'BPC-157 Stack' },
+                url: `https://bp157stack.com/products/${product.slug}`,
               },
             },
             ...(faqs.length > 0 ? [{

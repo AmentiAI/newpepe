@@ -1,7 +1,8 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { ArrowRight, BookOpen, AlertTriangle, CheckCircle } from 'lucide-react';
+import { ArrowRight, BookOpen, AlertTriangle, CheckCircle, RotateCcw, XCircle } from 'lucide-react';
 import InternalLinks from '@/components/InternalLinks';
+import DosageCalculator from '@/components/DosageCalculator';
 
 export const metadata: Metadata = {
   title: 'Complete BPC-157 Guide 2026 | How to Use Peptides Safely | BPC-157 Stack',
@@ -20,7 +21,7 @@ export const metadata: Metadata = {
   },
 };
 
-const SOURCE_URL = 'https://apollopeptidesciences.com/?rfsn=9016964.3f1b1e';
+const SOURCE_URL = '/out';
 
 const steps = [
   { num: '01', title: 'Choose Your Goal', desc: 'Identify what you\'re targeting — injury healing, anti-aging, body composition, or cognitive enhancement. Your goal determines your stack.' },
@@ -29,6 +30,65 @@ const steps = [
   { num: '04', title: 'Dose & Inject', desc: 'Use an insulin syringe (29-31 gauge). Pinch skin, insert at 45°, inject slowly. Rotate injection sites. Most peptides: subcutaneous.' },
   { num: '05', title: 'Track & Adjust', desc: 'Log your doses, symptoms, and results. Adjust based on response after 2-4 weeks. Most people see initial results within 1-2 weeks.' },
   { num: '06', title: 'Cycle Responsibly', desc: 'Most peptides: 8-12 weeks on, 4-6 weeks off. Some (BPC-157, Selank) can be used as-needed. Epithalon: 2x yearly.' },
+];
+
+const injectionSites = [
+  {
+    site: 'Abdomen',
+    ideal: true,
+    notes: 'The abdomen (2 inches around the navel) is the most popular subcutaneous injection site. Fat is plentiful, absorption is consistent, and it is easy to self-administer. Avoid injecting within 2 inches of the navel itself. Rotate within a 2-inch grid — never inject the same spot twice in a row.',
+  },
+  {
+    site: 'Thigh (Outer)',
+    ideal: true,
+    notes: 'The outer thigh (lateral quadriceps area) is the second most common site. Use the middle third of the outer thigh. This site has slower absorption than the abdomen, making it useful for peptides where a slower release is preferred. Easier to reach than the glute area. Rotate left and right thigh on alternating days.',
+  },
+  {
+    site: 'Glutes (Upper Outer)',
+    ideal: false,
+    notes: 'The upper outer quadrant of the gluteal muscle can be used for subcutaneous or intramuscular injections. Subcutaneous injections here are less common due to difficulty of self-administration. Useful for longer-acting compounds. Harder to reach solo — only practical with a partner or mirror. Ensure you stay in the upper outer quadrant to avoid the sciatic nerve.',
+  },
+  {
+    site: 'Deltoid (Upper Arm)',
+    ideal: false,
+    notes: 'The lateral deltoid (outer upper arm) can be used for subcutaneous injections when other sites are overused or irritated. The subcutaneous fat layer here is thinner, so use shorter needles (0.5 inch / 12mm). Not recommended as a primary site due to limited fat tissue and increased soreness. Reserve as a rotation option when other sites need rest.',
+  },
+];
+
+const beginnerMistakes = [
+  {
+    mistake: 'Reusing Syringes',
+    detail: 'Used needles become dull and jagged at a microscopic level after one use, causing unnecessary pain and tissue damage. They also carry contamination risk. Insulin syringes are inexpensive — use a fresh one every injection.',
+  },
+  {
+    mistake: 'Using the Wrong Water',
+    detail: 'Tap water, distilled water, and sterile saline are not bacteriostatic and will allow bacteria to grow in your vial after the first draw. Always use bacteriostatic water (0.9% benzyl alcohol) for multi-use peptide vials. This is non-negotiable.',
+  },
+  {
+    mistake: 'Storing at Wrong Temperature',
+    detail: 'Lyophilized (dry) peptides are stable at room temperature for weeks but degrade faster with heat or moisture. Reconstituted peptides must be refrigerated at 2-8°C and used within 28-30 days. Never freeze a reconstituted peptide — ice crystals shear the amino acid chains.',
+  },
+  {
+    mistake: 'Skipping Alcohol Swabs',
+    detail: 'Always swab the rubber top of your vial with a 70% isopropyl alcohol pad before every draw. Let it air-dry for 10 seconds before inserting the needle. This prevents introducing surface bacteria into your sterile vial. Do the same for your injection site skin.',
+  },
+  {
+    mistake: 'Injecting Too Fast',
+    detail: 'Rapidly pushing the plunger creates a pressure jet under the skin that causes a burning sensation and uneven distribution. Inject slowly and steadily over 5-10 seconds. After the full dose is injected, hold the needle in place for 3-5 seconds before withdrawing to prevent backflow.',
+  },
+  {
+    mistake: 'Not Tracking Doses or Results',
+    detail: 'Without a log, it is impossible to know whether a peptide is working, whether you are dosing consistently, or when to cycle off. Keep a simple spreadsheet or notes app entry: date, peptide, dose, injection site, and any subjective notes. Review every 2 weeks and adjust accordingly.',
+  },
+];
+
+const cyclingTable = [
+  { peptide: 'BPC-157', cycle: '4-12 weeks (injury)', rest: 'None required / as-needed', notes: 'Non-hormonal; no receptor downregulation. Acute injury: 8-12 weeks. Maintenance: indefinite at 250mcg/day.' },
+  { peptide: 'TB-500', cycle: '4-6 weeks loading', rest: '2-4 weeks', notes: 'Loading phase: 2-4mg twice weekly. Maintenance: 2mg monthly. Stack with BPC-157 for synergistic healing.' },
+  { peptide: 'CJC-1295 / Ipamorelin', cycle: '8-12 weeks', rest: '4-6 weeks', notes: 'Inject before bed for natural GH pulse alignment. 100-300mcg Ipamorelin + 100-300mcg CJC-1295 (no DAC) per dose.' },
+  { peptide: 'Epithalon', cycle: '10-20 days (twice yearly)', rest: '~6 months between cycles', notes: 'Telomerase activator. 5-10mg per day for 10-20 days. Run in spring and fall. No daily ongoing use needed.' },
+  { peptide: 'GHK-Cu', cycle: 'Continuous or 12-week cycles', rest: 'Optional 4 weeks off between cycles', notes: 'Topical: daily. Systemic: 1-2mg 3x weekly. No downregulation documented; well tolerated long-term.' },
+  { peptide: 'Semaglutide', cycle: 'Continuous (weight management)', rest: 'Defined goals may use 12-week cycles', notes: 'Start 0.25mg/week, titrate slowly. GI side effects diminish with proper titration. Continuous use common for metabolic management.' },
 ];
 
 export default function GuidePage() {
@@ -91,9 +151,12 @@ export default function GuidePage() {
           ))}
         </div>
 
-        {/* Reconstitution guide */}
+        {/* Interactive Dosage Calculator — client component */}
+        <DosageCalculator />
+
+        {/* Static reconstitution reference */}
         <div className="glass-card p-8 mb-8">
-          <h2 className="text-xl font-bold text-white mb-4">Reconstitution Calculator</h2>
+          <h2 className="text-xl font-bold text-white mb-4">Reconstitution Reference</h2>
           <p className="text-slate-400 text-sm mb-4">Use this formula to calculate your dose per injection:</p>
           <div className="bg-dark-700/50 rounded-xl p-4 font-mono text-sm border border-neon-green/10 mb-4">
             <p className="text-neon-green mb-2"># Standard reconstitution:</p>
@@ -124,6 +187,94 @@ export default function GuidePage() {
               </div>
             ))}
           </div>
+        </div>
+
+        {/* Injection Site Rotation Guide */}
+        <div className="glass-card p-8 mb-8">
+          <div className="flex items-center gap-3 mb-2">
+            <RotateCcw className="w-5 h-5 text-neon-green" />
+            <h2 className="text-xl font-bold text-white">Injection Site Rotation Guide</h2>
+          </div>
+          <p className="text-slate-400 text-sm mb-6">
+            Rotating injection sites prevents lipohypertrophy (scar tissue build-up), maintains consistent absorption, and reduces soreness. Never inject the same exact spot two days in a row.
+          </p>
+          <div className="space-y-4">
+            {injectionSites.map(({ site, ideal, notes }) => (
+              <div key={site} className="bg-dark-700/50 rounded-xl p-5 border border-neon-green/10">
+                <div className="flex items-center gap-3 mb-2">
+                  <h3 className="text-white font-semibold">{site}</h3>
+                  {ideal ? (
+                    <span className="text-xs px-2 py-0.5 rounded-full bg-neon-green/10 border border-neon-green/20 text-neon-green">Recommended Primary</span>
+                  ) : (
+                    <span className="text-xs px-2 py-0.5 rounded-full bg-slate-700/50 border border-slate-600/30 text-slate-400">Secondary / Rotation</span>
+                  )}
+                </div>
+                <p className="text-slate-400 text-sm leading-relaxed">{notes}</p>
+              </div>
+            ))}
+          </div>
+          <div className="mt-4 bg-neon-green/5 border border-neon-green/15 rounded-lg px-4 py-3">
+            <p className="text-slate-400 text-xs leading-relaxed">
+              <span className="text-neon-green font-semibold">Rotation tip: </span>
+              Map your abdomen into a 3x3 grid (9 zones). Rotate through zones 1-9, then start over. This allows each zone 8 days of rest between injections, virtually eliminating site-related tissue changes.
+            </p>
+          </div>
+        </div>
+
+        {/* Common Beginner Mistakes */}
+        <div className="glass-card p-8 mb-8">
+          <div className="flex items-center gap-3 mb-2">
+            <XCircle className="w-5 h-5 text-red-400" />
+            <h2 className="text-xl font-bold text-white">Common Beginner Mistakes</h2>
+          </div>
+          <p className="text-slate-400 text-sm mb-6">
+            Avoiding these six mistakes is more important than any other optimization. Most failed protocols come down to one of these errors.
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            {beginnerMistakes.map(({ mistake, detail }) => (
+              <div key={mistake} className="bg-dark-700/50 rounded-xl p-5 border border-red-500/10">
+                <div className="flex items-start gap-2 mb-2">
+                  <XCircle className="w-4 h-4 text-red-400 shrink-0 mt-0.5" />
+                  <h3 className="text-white font-semibold text-sm">{mistake}</h3>
+                </div>
+                <p className="text-slate-400 text-xs leading-relaxed pl-6">{detail}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Peptide Cycling Reference Table */}
+        <div className="glass-card p-8 mb-8 overflow-x-auto">
+          <div className="flex items-center gap-3 mb-2">
+            <CheckCircle className="w-5 h-5 text-neon-green" />
+            <h2 className="text-xl font-bold text-white">Peptide Cycling Reference Table</h2>
+          </div>
+          <p className="text-slate-400 text-sm mb-6">
+            Standard cycling protocols for the most commonly used peptides. Always start at the lower end of ranges and adjust based on individual response.
+          </p>
+          <table className="w-full text-sm min-w-[600px]">
+            <thead>
+              <tr className="border-b border-neon-green/10">
+                <th className="text-left text-neon-green text-xs font-semibold uppercase tracking-wide pb-3 pr-4">Peptide</th>
+                <th className="text-left text-neon-green text-xs font-semibold uppercase tracking-wide pb-3 pr-4">Cycle Length</th>
+                <th className="text-left text-neon-green text-xs font-semibold uppercase tracking-wide pb-3 pr-4">Rest Period</th>
+                <th className="text-left text-neon-green text-xs font-semibold uppercase tracking-wide pb-3">Notes</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-neon-green/5">
+              {cyclingTable.map(({ peptide, cycle, rest, notes }) => (
+                <tr key={peptide} className="hover:bg-neon-green/3 transition-colors">
+                  <td className="py-3 pr-4 text-white font-semibold whitespace-nowrap">{peptide}</td>
+                  <td className="py-3 pr-4 text-slate-300 whitespace-nowrap">{cycle}</td>
+                  <td className="py-3 pr-4 text-slate-400 whitespace-nowrap">{rest}</td>
+                  <td className="py-3 text-slate-500 text-xs leading-relaxed">{notes}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+          <p className="text-slate-600 text-xs mt-4">
+            This table reflects general community protocols. Individual response varies. Consult a healthcare provider for personalized guidance.
+          </p>
         </div>
 
         {/* Buy CTA */}

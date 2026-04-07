@@ -1,10 +1,10 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import Image from 'next/image';
 import { ArrowRight, CheckCircle, Shield, Zap, Clock, TrendingUp, AlertTriangle, Activity, Microscope, Star } from 'lucide-react';
 import { getProductsByCategory } from '@/lib/products';
 import ProductCard from '@/components/ProductCard';
 import InternalLinks from '@/components/InternalLinks';
+import InjuryAssessment from '@/components/InjuryAssessment';
 
 export const metadata: Metadata = {
   title: 'BPC-157 & TB-500 Healing Peptides 2026 | Fastest Injury Recovery Protocols | BPC-157 Stack',
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   },
 };
 
-const SOURCE_URL = 'https://apollopeptidesciences.com/?rfsn=9016964.3f1b1e';
+const SOURCE_URL = '/out';
 
 const injuryTypes = [
   { icon: '🦴', label: 'Tendons & Ligaments', time: '4–8 weeks', desc: 'ACL, MCL, rotator cuff, Achilles — BPC-157 directly activates tendon fibroblasts and growth factor receptors at the injury site.' },
@@ -96,10 +96,9 @@ export default function HealingPage() {
   return (
     <div className="min-h-screen" style={{ background: 'linear-gradient(180deg, #060610 0%, #071a10 50%, #060610 100%)' }}>
 
-      {/* Hero — cinematic */}
+      {/* Hero */}
       <section className="relative pt-32 pb-20 overflow-hidden">
         <div className="absolute inset-0 grid-bg opacity-40" />
-        {/* Green glow */}
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] bg-emerald-500/10 blur-[120px] rounded-full pointer-events-none" />
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -130,7 +129,6 @@ export default function HealingPage() {
               </div>
             </div>
 
-            {/* Stats column */}
             <div className="grid grid-cols-2 gap-4">
               {[
                 { num: '100+', label: 'Peer-Reviewed Studies', sub: 'on BPC-157 alone' },
@@ -151,12 +149,69 @@ export default function HealingPage() {
         </div>
       </section>
 
+      {/* HOW THE BODY HEALS — Foundational Science */}
+      <section className="py-16" style={{ background: 'rgba(6,6,16,0.8)' }}>
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="inline-flex items-center gap-2 bg-emerald-500/10 border border-emerald-500/30 rounded-full px-4 py-2 mb-6">
+            <Microscope className="w-4 h-4 text-emerald-400" />
+            <span className="text-emerald-400 text-sm font-semibold tracking-wide">FOUNDATIONAL SCIENCE</span>
+          </div>
+          <h2 className="text-4xl font-black text-white mb-6">
+            How the Body Heals:<br />
+            <span style={{ color: '#00ff88' }}>And Why It&apos;s So Slow</span>
+          </h2>
+
+          <div className="space-y-6 text-slate-300 leading-relaxed">
+            <p>
+              The human body&apos;s healing capacity is remarkable by most biological standards. But it operates on a timeline measured in months for serious injuries — and years for the complete maturation of repaired tissue. Understanding exactly why healing takes so long is the first step to understanding how BPC-157 and TB-500 shortcut this timeline without compromising the quality of repair.
+            </p>
+
+            {/* Phase 1 */}
+            <div className="rounded-2xl p-6" style={{ background: 'rgba(239,68,68,0.05)', border: '1px solid rgba(239,68,68,0.15)' }}>
+              <h3 className="text-red-400 font-black text-lg mb-3">Phase 1: Inflammatory (Days 0–7)</h3>
+              <p className="text-slate-300 text-sm leading-relaxed mb-3">
+                The moment tissue is damaged, a cascade of vascular and cellular events begins. Damaged cells release histamine, prostaglandins, bradykinin, and substance P, causing local vasodilation and increased vascular permeability. Blood flow surges to the injury. Neutrophils arrive within hours to clear cellular debris and bacteria. Macrophages follow, phagocytizing dead tissue and releasing growth factors that recruit the cells needed for the next phase. The hallmarks: pain, swelling, heat, and redness. This phase is necessary — without it, healing cannot begin. But it is also destructive: inflammatory cytokines cause collateral damage to surrounding healthy tissue, and the phase can persist pathologically in chronic injuries where the inflammatory stimulus never fully resolves.
+              </p>
+              <p className="text-slate-300 text-sm leading-relaxed">
+                <strong className="text-white">How BPC-157 + TB-500 optimize Phase 1:</strong> BPC-157 modulates the inflammatory response without suppressing it — it reduces the duration and intensity of the destructive aspects (via COX and nitric oxide pathway modulation) while preserving the pro-healing signals. TB-500 inhibits NF-κB, the master transcription factor for inflammatory cytokine production, reducing collateral tissue damage without blocking the macrophage activity needed to transition to Phase 2. Neither peptide is immunosuppressive — they are inflammatory modulators, not suppressors.
+              </p>
+            </div>
+
+            {/* Phase 2 */}
+            <div className="rounded-2xl p-6" style={{ background: 'rgba(245,158,11,0.05)', border: '1px solid rgba(245,158,11,0.15)' }}>
+              <h3 className="text-amber-400 font-black text-lg mb-3">Phase 2: Proliferative (Days 4 – Weeks 6–8)</h3>
+              <p className="text-slate-300 text-sm leading-relaxed mb-3">
+                With the debris cleared, the body shifts into construction mode. Fibroblasts — the collagen-producing cells of connective tissue — migrate into the injury site and begin laying down a collagen scaffold. Early collagen deposition is primarily type III: a looser, weaker matrix that serves as initial structural scaffolding. Simultaneously, new blood vessels are formed through angiogenesis (VEGF-driven) to supply the metabolically active repair tissue with oxygen and nutrients. This is the longest phase and the critical bottleneck for most injuries. The rate of collagen synthesis is limited by: fibroblast numbers, growth factor signaling, vascular supply, and the availability of amino acid building blocks. In tendons and ligaments, vascular supply is particularly limiting — these are inherently hypovascular tissues, which is why Achilles and rotator cuff injuries are notoriously slow to heal.
+              </p>
+              <p className="text-slate-300 text-sm leading-relaxed">
+                <strong className="text-white">How BPC-157 + TB-500 dominate Phase 2:</strong> BPC-157 is a powerful activator of VEGF — dramatically increasing neovascularization at the injury site and resolving the vascular supply bottleneck that limits tendon and ligament healing. It directly upregulates growth hormone receptors in fibroblasts, amplifying their response to GH and IGF-1 signals. It activates Egr-1, the transcription factor that drives tendon-specific collagen synthesis. TB-500 mobilizes CD34+ stem cell progenitors from bone marrow — flooding the injury site with cells that differentiate into fibroblasts, endothelial cells, and tissue-specific repair cells. Together, they accelerate Phase 2 by 2–3× in animal models — compressing what should take 6–8 weeks into 2–3 weeks.
+              </p>
+            </div>
+
+            {/* Phase 3 */}
+            <div className="rounded-2xl p-6" style={{ background: 'rgba(16,185,129,0.05)', border: '1px solid rgba(16,185,129,0.15)' }}>
+              <h3 className="text-emerald-400 font-black text-lg mb-3">Phase 3: Remodeling (Months 2–24)</h3>
+              <p className="text-slate-300 text-sm leading-relaxed mb-3">
+                The most underappreciated phase of healing is also the longest. The type III collagen scaffold laid down in Phase 2 must be gradually replaced by type I collagen — the load-bearing form that gives tendons, ligaments, and skin their mechanical strength. This process is driven by mechanical loading signals (which stimulate collagen fiber alignment along stress axes) and by the persistent activity of matrix metalloproteinases (MMPs) that remodel the existing matrix. The bottleneck here is chemical: collagen crosslinking requires lysyl oxidase activity, which requires adequate copper, vitamin C, and zinc — and simply takes time regardless of substrate availability. Even with optimal nutrition, remodeling from type III to mature type I collagen takes 12–24 months in tendons.
+              </p>
+              <p className="text-slate-300 text-sm leading-relaxed">
+                <strong className="text-white">How BPC-157 + TB-500 accelerate Phase 3:</strong> BPC-157 directly stimulates type I collagen synthesis (rather than type III) — when the peptide is present during the proliferative phase, the initial collagen deposition skews toward the load-bearing form, accelerating the transition that would normally take months. TB-500 continues to support MMP activity for extracellular matrix remodeling. The combination effect means that at the 8–12 week mark on the Wolverine Stack, tissue histology frequently shows characteristics of 6–12 months of natural healing — measurably superior collagen organization, fiber alignment, and mechanical tensile strength.
+              </p>
+            </div>
+
+            <div className="rounded-2xl p-5" style={{ background: 'rgba(0,255,136,0.04)', border: '1px solid rgba(0,255,136,0.12)' }}>
+              <p className="text-slate-300 text-sm leading-relaxed">
+                <strong className="text-white">The collagen crosslinking bottleneck</strong> — the final constraint on healing speed — cannot be fully eliminated by any current intervention. But by accelerating the upstream phases so dramatically, BPC-157 and TB-500 allow the body to enter Phase 3 with a higher-quality collagen matrix to remodel, resulting in faster return of mechanical strength and function even before full crosslinking maturity is achieved.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Injury Type Grid */}
       <section className="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-10">
-          <h2 className="text-3xl font-black text-white mb-3">
-            What Injuries Does BPC-157 Heal?
-          </h2>
+          <h2 className="text-3xl font-black text-white mb-3">What Injuries Does BPC-157 Heal?</h2>
           <p className="text-slate-400 max-w-2xl mx-auto">
             Unlike any other compound, BPC-157 shows activity across virtually every tissue type studied —
             with documented healing effects in controlled animal models.
@@ -182,7 +237,22 @@ export default function HealingPage() {
         </div>
       </section>
 
-      {/* The Gold Standard Stack — full detail */}
+      {/* Injury Assessment Widget */}
+      <section className="py-16 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-10">
+          <div className="inline-flex items-center gap-2 bg-emerald-500/10 border border-emerald-500/30 rounded-full px-4 py-2 mb-4">
+            <Activity className="w-4 h-4 text-emerald-400" />
+            <span className="text-emerald-400 text-sm font-semibold tracking-wide">INJURY ASSESSMENT</span>
+          </div>
+          <h2 className="text-3xl font-black text-white mb-3">Find Your Recommended Protocol</h2>
+          <p className="text-slate-400 max-w-xl mx-auto">
+            Answer 4 questions about your injury and get a personalized peptide stack recommendation with doses and timeline.
+          </p>
+        </div>
+        <InjuryAssessment />
+      </section>
+
+      {/* The Gold Standard Stack */}
       <section className="py-16 bg-dark-800/50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
@@ -229,7 +299,6 @@ export default function HealingPage() {
               </div>
             </div>
 
-            {/* Mechanism comparison */}
             <div className="space-y-4">
               <div className="rounded-2xl p-6" style={{ background: 'rgba(16, 185, 129, 0.05)', border: '1px solid rgba(16, 185, 129, 0.2)' }}>
                 <div className="flex items-center gap-3 mb-4">
@@ -285,11 +354,9 @@ export default function HealingPage() {
         </div>
       </section>
 
-      {/* BPC-157 vs NSAIDs — Comparison Table */}
+      {/* Comparison Table */}
       <section className="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-black text-white mb-3 text-center">
-          BPC-157 vs. TB-500 vs. NSAIDs
-        </h2>
+        <h2 className="text-3xl font-black text-white mb-3 text-center">BPC-157 vs. TB-500 vs. NSAIDs</h2>
         <p className="text-slate-400 text-center mb-10 max-w-xl mx-auto">
           NSAIDs are the default recommendation for injuries. Here&apos;s what the research actually shows when you compare them.
         </p>
@@ -318,7 +385,7 @@ export default function HealingPage() {
         <p className="text-slate-600 text-xs text-center mt-4">*Based on peer-reviewed animal studies.</p>
       </section>
 
-      {/* Protocols — 3 phase cards */}
+      {/* Protocols */}
       <section className="py-16" style={{ background: 'rgba(6, 6, 16, 0.8)' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
@@ -345,6 +412,200 @@ export default function HealingPage() {
             ))}
           </div>
           <p className="text-center text-slate-600 text-xs mt-6">Consult a healthcare provider before use.</p>
+        </div>
+      </section>
+
+      {/* HEALING PEPTIDE PROTOCOLS BY SPORT */}
+      <section className="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-12">
+          <div className="inline-flex items-center gap-2 bg-emerald-500/10 border border-emerald-500/30 rounded-full px-4 py-2 mb-4">
+            <Star className="w-4 h-4 text-emerald-400" />
+            <span className="text-emerald-400 text-sm font-semibold tracking-wide">SPORT-SPECIFIC PROTOCOLS</span>
+          </div>
+          <h2 className="text-3xl font-black text-white mb-3">Healing Protocols by Sport</h2>
+          <p className="text-slate-400 max-w-2xl mx-auto">
+            Every sport has its characteristic injury patterns. These sport-specific protocols target the most common presentations with optimized peptide combinations.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+          {[
+            {
+              sport: 'Running',
+              icon: '🏃',
+              focus: 'Lower Leg Focus',
+              injuries: ['Achilles tendinopathy', 'Plantar fasciitis', 'Patellar tendon', 'Tibial stress injuries'],
+              protocol: 'BPC-157 500 mcg SC at Achilles/plantar fascia daily. TB-500 2.5 mg 2× weekly. Cycle: 8 weeks. Inject BPC-157 at the zone of maximal tenderness. Begin eccentric heel drops from week 3.',
+              color: '#00ff88',
+            },
+            {
+              sport: 'Strength Training',
+              icon: '🏋️',
+              focus: 'Shoulder & Knee',
+              injuries: ['Rotator cuff tears', 'Patellar/quad tendon', 'Biceps tendon', 'AC joint issues'],
+              protocol: 'BPC-157 500 mcg SC near supraspinatus or patellar insertion daily. TB-500 2.5 mg 2× weekly for systemic coverage. 8–10 week cycle. Add vitamin C 2g daily for collagen synthesis cofactor.',
+              color: '#3b82f6',
+            },
+            {
+              sport: 'Martial Arts',
+              icon: '🥋',
+              focus: 'Multi-Joint',
+              injuries: ['Finger/hand ligaments', 'Ankle sprains', 'Rib injuries', 'Shoulder dislocations'],
+              protocol: 'Multi-site protocol: BPC-157 500 mcg SC abdominal for systemic delivery + local injection at primary injury. TB-500 2.5 mg 2× weekly. Oral BPC-157 500 mcg additionally for comprehensive coverage.',
+              color: '#f59e0b',
+            },
+            {
+              sport: 'Cycling',
+              icon: '🚴',
+              focus: 'Knee & Hip',
+              injuries: ['IT band syndrome', 'Patellofemoral pain', 'Hip flexor strain', 'Knee cartilage wear'],
+              protocol: 'BPC-157 500 mcg SC near lateral knee/hip flexor daily. TB-500 2.5 mg 2× weekly for flexibility — a key benefit for the tight cycling position. Bike fit assessment alongside peptide protocol.',
+              color: '#10b981',
+            },
+            {
+              sport: 'Golf & Tennis',
+              icon: '🎾',
+              focus: 'Elbow & Shoulder',
+              injuries: ['Tennis/golfer elbow (epicondylitis)', 'Rotator cuff irritation', 'Wrist tendinopathy', 'Forearm muscle tears'],
+              protocol: 'BPC-157 500 mcg SC at the lateral or medial epicondyle (inject at point of maximal tendon tenderness). TB-500 2.5 mg 2× weekly. 6–8 week cycle. Eccentric wrist exercises from week 3 essential.',
+              color: '#a855f7',
+            },
+            {
+              sport: 'Swimming',
+              icon: '🏊',
+              focus: 'Shoulder-Dominant',
+              injuries: ['Swimmer\'s shoulder (impingement)', 'Rotator cuff tendinopathy', 'Biceps long head tendon', 'Thoracic outlet issues'],
+              protocol: 'BPC-157 500 mcg SC near supraspinatus/biceps long head tendon daily. TB-500 2.5 mg 2× weekly for range-of-motion improvement. Swimming technique correction mandatory alongside peptides — re-injury risk is high without stroke mechanics fix.',
+              color: '#06b6d4',
+            },
+          ].map((sp) => (
+            <div key={sp.sport} className="glass-card p-6">
+              <div className="flex items-center gap-3 mb-3">
+                <span className="text-3xl">{sp.icon}</span>
+                <div>
+                  <h3 className="text-white font-bold">{sp.sport}</h3>
+                  <div className="text-xs font-semibold" style={{ color: sp.color }}>{sp.focus}</div>
+                </div>
+              </div>
+              <div className="mb-3">
+                <div className="text-slate-500 text-xs font-bold tracking-widest mb-1">COMMON INJURIES</div>
+                <div className="flex flex-wrap gap-1">
+                  {sp.injuries.map((inj) => (
+                    <span key={inj} className="text-xs px-2 py-0.5 rounded-full text-slate-400" style={{ background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.08)' }}>
+                      {inj}
+                    </span>
+                  ))}
+                </div>
+              </div>
+              <div>
+                <div className="text-slate-500 text-xs font-bold tracking-widest mb-1">PROTOCOL</div>
+                <p className="text-slate-400 text-xs leading-relaxed">{sp.protocol}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* NUTRITION FOR HEALING */}
+      <section className="py-16" style={{ background: 'rgba(6,6,16,0.8)' }}>
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="inline-flex items-center gap-2 bg-emerald-500/10 border border-emerald-500/30 rounded-full px-4 py-2 mb-6">
+            <TrendingUp className="w-4 h-4 text-emerald-400" />
+            <span className="text-emerald-400 text-sm font-semibold tracking-wide">COMPANION GUIDE</span>
+          </div>
+          <h2 className="text-4xl font-black text-white mb-4">
+            Nutrition for<br />
+            <span style={{ color: '#00ff88' }}>Accelerated Healing</span>
+          </h2>
+          <p className="text-slate-400 mb-8 max-w-2xl">
+            Peptides accelerate the signaling that drives healing — but the raw material for building new tissue must come from your diet. These nutritional requirements are non-negotiable if you want maximum results from your protocol.
+          </p>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+            {/* Protein */}
+            <div className="glass-card p-6">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-10 h-10 rounded-full bg-emerald-500/20 flex items-center justify-center text-xl">💪</div>
+                <div>
+                  <h3 className="text-white font-bold">Protein: Minimum 1.6g/kg/day</h3>
+                  <div className="text-emerald-400 text-xs">The fundamental substrate for tissue repair</div>
+                </div>
+              </div>
+              <p className="text-slate-400 text-sm leading-relaxed mb-3">
+                BPC-157 dramatically increases the rate of collagen synthesis and fibroblast activity — but collagen is made of amino acids, particularly glycine, proline, and hydroxyproline. If dietary protein is inadequate, the peptide-driven signaling has no substrate to work with. For active healing, target 1.6–2.2g/kg of bodyweight per day. Spread across 4–5 meals to maximize muscle protein synthesis throughout the day.
+              </p>
+              <div className="space-y-1">
+                <div className="text-slate-500 text-xs font-bold tracking-widest">TOP SOURCES</div>
+                {['Chicken, turkey, lean beef — complete amino acid profiles', 'Collagen peptides (15g/day) — direct glycine/proline substrate for tendon repair', 'Eggs — glycine-rich and high bioavailability', 'Greek yogurt, cottage cheese — casein for overnight repair'].map((s) => (
+                  <div key={s} className="text-slate-400 text-xs flex items-start gap-1.5">
+                    <span className="text-emerald-400 mt-0.5">•</span>{s}
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Key micronutrients */}
+            <div className="glass-card p-6">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-10 h-10 rounded-full bg-amber-500/20 flex items-center justify-center text-xl">⚗️</div>
+                <div>
+                  <h3 className="text-white font-bold">Critical Healing Micronutrients</h3>
+                  <div className="text-amber-400 text-xs">Cofactors for collagen synthesis and tissue repair</div>
+                </div>
+              </div>
+              <div className="space-y-3">
+                {[
+                  { name: 'Vitamin C — 1–2g/day', desc: 'Required for hydroxylation of proline to hydroxyproline — a rate-limiting step in collagen synthesis. Without adequate vitamin C, even optimal peptide signaling cannot produce mature collagen.' },
+                  { name: 'Zinc — 25–30mg/day', desc: 'Cofactor for over 300 enzymes involved in wound healing, including matrix metalloproteinases that remodel scar tissue.' },
+                  { name: 'Magnesium — 400mg/day', desc: 'Required for ATP production, protein synthesis, and muscle relaxation. Deficiency significantly impairs healing and sleep quality.' },
+                  { name: 'Copper — 2–4mg/day', desc: 'Essential for lysyl oxidase — the enzyme responsible for collagen crosslinking in the remodeling phase.' },
+                ].map((n) => (
+                  <div key={n.name}>
+                    <div className="text-white text-sm font-bold">{n.name}</div>
+                    <div className="text-slate-400 text-xs leading-relaxed">{n.desc}</div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          {/* Foods that inhibit healing */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+            <div className="rounded-2xl p-6" style={{ background: 'rgba(239,68,68,0.05)', border: '1px solid rgba(239,68,68,0.15)' }}>
+              <h3 className="text-red-400 font-bold mb-3 flex items-center gap-2">
+                <AlertTriangle className="w-4 h-4" /> Foods That Inhibit Healing
+              </h3>
+              <div className="space-y-2">
+                {[
+                  { item: 'Alcohol', reason: 'Directly impairs collagen synthesis, disrupts sleep architecture (the primary anabolic window), and depletes zinc and magnesium' },
+                  { item: 'Excessive linoleic acid (seed oils)', reason: 'Promotes the arachidonic acid cascade and chronic inflammatory signaling — works against BPC-157\'s inflammatory modulation' },
+                  { item: 'Ultra-processed foods', reason: 'High advanced glycation end-products (AGEs) crosslink collagen in dysfunctional ways and promote senescent cell accumulation' },
+                  { item: 'High-sugar diet', reason: 'Hyperglycemia impairs fibroblast function and reduces growth factor receptor sensitivity — the opposite of what BPC-157 is trying to achieve' },
+                ].map((f) => (
+                  <div key={f.item}>
+                    <div className="text-white text-sm font-bold">{f.item}</div>
+                    <div className="text-slate-400 text-xs leading-relaxed">{f.reason}</div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div className="rounded-2xl p-6" style={{ background: 'rgba(16,185,129,0.05)', border: '1px solid rgba(16,185,129,0.15)' }}>
+              <h3 className="text-emerald-400 font-bold mb-3">Timing Protein Around Peptide Doses</h3>
+              <div className="space-y-3">
+                {[
+                  { time: 'Morning (with BPC-157 injection)', action: '30–40g protein within 30 minutes — activates mTOR signaling alongside BPC-157\'s growth factor upregulation for synergistic effect' },
+                  { time: 'Post-training', action: '30–40g protein + collagen peptides (15g) with vitamin C (500mg) — the most critical anabolic window for injury repair' },
+                  { time: 'Pre-sleep', action: '30–40g casein protein — sustained overnight amino acid delivery to match the GH pulsatility of deep sleep, which TB-500 and BPC-157 may synergize with' },
+                ].map((t) => (
+                  <div key={t.time}>
+                    <div className="text-white text-sm font-bold">{t.time}</div>
+                    <div className="text-slate-400 text-xs leading-relaxed">{t.action}</div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -403,23 +664,35 @@ export default function HealingPage() {
             {[
               {
                 q: 'Can I use BPC-157 orally or does it need to be injected?',
-                a: 'BPC-157 is active both orally and via subcutaneous injection. For gut and systemic conditions, oral use is convenient and effective. For localized injuries (tendon, ligament), subcutaneous injection near the site is more targeted, though oral administration also shows systemic effects.'
+                a: 'BPC-157 is active both orally and via subcutaneous injection. For gut and systemic conditions, oral use is convenient and effective. For localized injuries (tendon, ligament), subcutaneous injection near the site is more targeted, though oral administration also shows systemic effects.',
               },
               {
                 q: 'How long until I see results with BPC-157?',
-                a: 'Most users report noticeable improvement in pain and function within 1–2 weeks. Structural tissue healing (tendon/ligament repair) typically shows measurable progress at 4–6 weeks on imaging. Gut healing often occurs fastest — within days to 2 weeks.'
+                a: 'Most users report noticeable improvement in pain and function within 1–2 weeks. Structural tissue healing (tendon/ligament repair) typically shows measurable progress at 4–6 weeks on imaging. Gut healing often occurs fastest — within days to 2 weeks.',
               },
               {
                 q: 'Is BPC-157 safe to use long-term?',
-                a: 'BPC-157 has no known LD50 (lethal dose) in animal studies — no dose has been found to cause systemic toxicity. Researchers have studied it for over 30 years without identifying meaningful side effects. Standard protocols run 4–8 weeks with optional breaks.'
+                a: 'BPC-157 has no known LD50 (lethal dose) in animal studies — no dose has been found to cause systemic toxicity. Researchers have studied it for over 30 years without identifying meaningful side effects. Standard protocols run 4–8 weeks with optional breaks.',
               },
               {
                 q: 'Should I take BPC-157 and TB-500 together?',
-                a: 'Yes — they are complementary and synergistic, not redundant. BPC-157 drives local healing at the injury site; TB-500 provides systemic effects and stem cell mobilization. Used together they consistently produce faster and more complete recovery than either alone.'
+                a: 'Yes — they are complementary and synergistic, not redundant. BPC-157 drives local healing at the injury site; TB-500 provides systemic effects and stem cell mobilization. Used together they consistently produce faster and more complete recovery than either alone.',
               },
               {
                 q: 'What is KPV and how does it fit into healing protocols?',
-                a: 'KPV (Lys-Pro-Val) is a tripeptide fragment of α-MSH with potent anti-inflammatory properties. It is particularly effective for gut inflammation, IBD, and Crohn\'s disease. It can be used alongside BPC-157 as an oral supplement for gut-focused protocols.'
+                a: "KPV (Lys-Pro-Val) is a tripeptide fragment of α-MSH with potent anti-inflammatory properties. It is particularly effective for gut inflammation, IBD, and Crohn's disease. It can be used alongside BPC-157 as an oral supplement for gut-focused protocols.",
+              },
+              {
+                q: 'Can I use ice or heat therapy alongside BPC-157?',
+                a: 'Yes, with important nuances. Cold (ice) therapy reduces acute inflammation and swelling — which aligns well with BPC-157\'s anti-inflammatory mechanisms in the first 72 hours. After the acute phase, heat therapy promotes vasodilation and increases local blood flow, complementing BPC-157\'s VEGF-driven neovascularization. The important exception: prolonged ice application (cryotherapy longer than 20 minutes) has been shown to impair macrophage activity and slow the transition to the proliferative healing phase. Use ice conservatively in the first 48 hours, then transition to heat from day 3 onward.',
+              },
+              {
+                q: 'Do NSAIDs interfere with BPC-157?',
+                a: 'Yes — this is an important consideration. NSAIDs (ibuprofen, naproxen, aspirin) work by inhibiting COX-1 and COX-2 enzymes, reducing prostaglandin synthesis. BPC-157 modulates some of the same prostaglandin pathways as part of its anti-inflammatory activity. More significantly, COX enzymes are involved in the downstream signaling that BPC-157 leverages for tissue repair — and NSAID-mediated COX inhibition has been shown in several studies to blunt BPC-157\'s healing response. Additionally, NSAIDs are known to independently impair bone healing, tendon healing, and gut integrity — the opposite of what BPC-157 is doing. If you are on the Wolverine Stack or any BPC-157 protocol, minimize or eliminate NSAID use. If pain management is necessary, acetaminophen (paracetamol) does not share these interactions.',
+              },
+              {
+                q: 'What bloodwork should I monitor during a healing protocol?',
+                a: 'BPC-157 and TB-500 have no known effects on the hormonal axes, liver enzymes, or kidney function at standard research doses. However, for comprehensive monitoring during extended protocols, useful baseline and follow-up markers include: CRP (C-reactive protein) as an inflammation marker — should decrease over time on the protocol; IGF-1 if running extended protocols, as BPC-157\'s growth hormone receptor upregulation may subtly increase IGF-1 in some users; complete blood count (CBC) to establish baseline; and a basic metabolic panel for kidney and liver function. For users over 50 or with pre-existing conditions, quarterly bloodwork during extended protocols is a reasonable precaution. There are no specific markers that indicate BPC-157 or TB-500 toxicity — the primary purpose of monitoring is baseline health assessment rather than peptide-specific safety surveillance.',
               },
             ].map((faq) => (
               <details key={faq.q} className="glass-card group">
@@ -443,9 +716,7 @@ export default function HealingPage() {
             <div className="absolute inset-0 bg-gradient-to-br from-emerald-500/5 to-transparent" />
             <div className="relative">
               <div className="text-5xl mb-6">🛡️</div>
-              <h2 className="text-3xl font-black text-white mb-4">
-                Start Healing Faster Today
-              </h2>
+              <h2 className="text-3xl font-black text-white mb-4">Start Healing Faster Today</h2>
               <p className="text-slate-300 text-lg mb-2 max-w-xl mx-auto">
                 BPC-157 and TB-500 from our recommended supplier — COA verified, US domestic, ships in 24–48 hours.
               </p>

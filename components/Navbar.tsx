@@ -3,7 +3,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 import { Menu, X, Zap } from 'lucide-react';
 
-const SOURCE_URL = 'https://apollopeptidesciences.com/?rfsn=9016964.3f1b1e';
+const SOURCE_URL = '/out';
 
 const navLinks = [
   { href: '/products', label: 'Peptides' },

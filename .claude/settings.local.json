@@ -10,7 +10,15 @@
       "Bash(ls -la /mnt/c/Users/Wilso/newpepe/next.config.*)",
       "Bash(npx tsc:*)",
       "WebSearch",
-      "Bash(xargs sed:*)"
+      "Bash(xargs sed:*)",
+      "Bash(node:*)",
+      "Bash(ls:*)",
+      "Bash(npx next:*)",
+      "Bash(node -e \"const { FlaskConical, Calendar, BookOpen, Users } = require\\(''''lucide-react''''\\); console.log\\(''''FlaskConical:'''', !!FlaskConical, ''''Calendar:'''', !!Calendar, ''''BookOpen:'''', !!BookOpen, ''''Users:'''', !!Users\\);\")",
+      "Bash(npx -y node-modules-check)",
+      "Bash(find /mnt/c/Users/Wilso/newpepe -name out -o -name redirect* -o -name *affiliate*)",
+      "Bash(grep -r apollopeptidesciences /mnt/c/Users/Wilso/newpepe/ --include=*.tsx --include=*.ts -l)",
+      "Bash(grep -r apollopeptidesciences /mnt/c/Users/Wilso/newpepe/ --include=*.tsx --include=*.ts --include=*.mjs -n)"
     ]
   }
 }

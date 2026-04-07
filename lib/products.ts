@@ -17,9 +17,7 @@ export interface Product {
   highlights: { title: string; body: string }[];
 }
 
-const BASE = 'https://apollopeptidesciences.com';
-const RFSN = '?rfsn=9016964.3f1b1e';
-const aff = (slug: string) => `${BASE}/product/${slug}/${RFSN}`;
+const aff = (slug: string) => `/out?p=${slug}`;
 
 // All real product image URLs from Apollo Peptide Sciences
 const IMG = {

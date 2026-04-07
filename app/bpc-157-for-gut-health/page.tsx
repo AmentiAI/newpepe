@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { ArrowRight, CheckCircle, Shield } from 'lucide-react';
 import InternalLinks from '@/components/InternalLinks';
+import GutSymptomChecker from '@/components/GutSymptomChecker';
 
 export const metadata: Metadata = {
   title: 'BPC-157 for Gut Health: Leaky Gut, IBD & IBS Protocol (2026)',
@@ -20,7 +21,7 @@ export const metadata: Metadata = {
   },
 };
 
-const SOURCE_URL = 'https://apollopeptidesciences.com/?rfsn=9016964.3f1b1e';
+const SOURCE_URL = '/out';
 
 const benefits = [
   { title: 'Intestinal Wall Repair', desc: 'BPC-157 upregulates tight junction proteins (occludin, claudin) that seal gaps in the intestinal wall — directly addressing the mechanism of leaky gut syndrome.' },
@@ -43,7 +44,149 @@ const faqs = [
   { q: 'How long does BPC-157 take to heal the gut?', a: 'Most users report noticeable improvement in gut symptoms (bloating, urgency, cramping) within 1–2 weeks of starting oral BPC-157. Significant healing (barrier repair, reduced inflammation markers) typically takes 4–8 weeks of consistent use. For chronic conditions like Crohn\'s or long-standing leaky gut, 3–6 month protocols are common before reassessing.' },
   { q: 'Is BPC-157 safe for long-term gut use?', a: 'BPC-157 has an excellent safety profile in animal models even at high doses — no toxicity, no carcinogenicity, no organ stress markers. Human clinical experience (primarily through research use) similarly shows very few adverse effects. It does not suppress stomach acid or alter gut microbiome composition, making it safer for long-term use than PPIs or antibiotics for gut management.' },
   { q: 'Can BPC-157 help with Crohn\'s disease?', a: 'BPC-157 has shown significant anti-inflammatory and intestinal healing effects in Crohn\'s-relevant animal models, including reduction of TNF-α and IL-6 — the primary cytokines driving Crohn\'s pathology. Anecdotally, many Crohn\'s patients report meaningful symptom reduction on BPC-157 protocols. It should be considered adjunctive to, not a replacement for, prescribed Crohn\'s medications without physician oversight.' },
+  { q: 'How does BPC-157 interact with gut dysbiosis?', a: 'Gut dysbiosis — an imbalance in microbial populations — and gut inflammation exist in a self-reinforcing cycle: dysbiosis drives mucosal inflammation, and inflammation creates an environment that further disrupts microbial balance. BPC-157 breaks this cycle from the inflammation side. By reducing pro-inflammatory cytokines (TNF-α, IL-6) and restoring tight junction integrity, BPC-157 creates a more hospitable environment for commensal bacteria to re-establish. It does not directly act as a prebiotic or probiotic — it does not feed beneficial bacteria or introduce new strains. Instead, it removes the inflammatory barrier that prevents healthy microbiome restoration. For best results with dysbiosis, combine BPC-157 with targeted probiotic supplementation (Lactobacillus and Bifidobacterium strains) and prebiotic fiber foods.' },
+  { q: 'Can BPC-157 help with food intolerances?', a: 'Many food intolerances — particularly non-IgE-mediated sensitivities to gluten, dairy, FODMAPs, and other foods — are driven or exacerbated by intestinal hyperpermeability (leaky gut). When the intestinal barrier is compromised, partially digested food proteins pass into the bloodstream, triggering immune reactions that manifest as food sensitivity symptoms. By restoring tight junction integrity, BPC-157 can meaningfully reduce the immune exposure that drives acquired food sensitivities. Many users report that food sensitivities they had for years diminish or resolve after 4–8 weeks of oral BPC-157. Celiac disease (autoimmune, genetic) and true food allergies (IgE-mediated) are different mechanisms and would not be expected to resolve with BPC-157 alone.' },
+  { q: 'How does BPC-157 affect the enteric nervous system?', a: 'The enteric nervous system (ENS) — sometimes called "the second brain" — is an extensive network of roughly 500 million neurons embedded in the gut wall that controls motility, secretion, and local immune responses autonomously. BPC-157 has multiple documented effects on the ENS and gut neurotransmission: it modulates nitric oxide (NO) production in the gut wall (affecting smooth muscle relaxation and motility), influences serotonin signaling in enterochromaffin cells (gut serotonin cells), and reduces neuroinflammation through its anti-TNF effects. This ENS modulation may explain the gut motility improvements many users report — reduced spastic cramping in IBS-C and IBS-D — beyond simple barrier repair. BPC-157 also enhances vagal tone, the dominant ENS-to-brain signaling pathway, which creates downstream effects on mood, cognitive clarity, and stress response.' },
 ];
+
+const comparisonData = [
+  {
+    treatment: 'BPC-157',
+    mechanism: 'Tight junction upregulation, anti-inflammatory, mucosal repair, VEGF',
+    gutBarrier: 'Direct — primary effect',
+    sideEffects: 'Minimal (injection site soreness)',
+    dependency: 'None',
+    cost: '$80–150/month',
+    timeline: '2–8 weeks',
+    color: 'text-emerald-400',
+  },
+  {
+    treatment: 'PPIs (Omeprazole etc.)',
+    mechanism: 'Proton pump inhibition — reduces stomach acid',
+    gutBarrier: 'Indirect — only mucosal protection via reduced acid',
+    sideEffects: 'Microbiome disruption, nutrient malabsorption, rebound hypersecretion',
+    dependency: 'High — rebound acid on cessation',
+    cost: '$10–30/month',
+    timeline: '1–2 weeks (symptom relief only)',
+    color: 'text-amber-400',
+  },
+  {
+    treatment: 'Antibiotics',
+    mechanism: 'Kill pathogenic bacteria (and commensal bacteria)',
+    gutBarrier: 'Can worsen barrier long-term via dysbiosis',
+    sideEffects: 'Significant dysbiosis, C. diff risk, resistance',
+    dependency: 'Low (acute courses)',
+    cost: '$10–50/course',
+    timeline: '7–14 days (for targeted pathogens)',
+    color: 'text-red-400',
+  },
+  {
+    treatment: 'Probiotics',
+    mechanism: 'Introduce beneficial bacteria to compete with pathogens',
+    gutBarrier: 'Indirect — microbiome modulation may support barrier',
+    sideEffects: 'Generally minimal; bloating initially',
+    dependency: 'None',
+    cost: '$20–60/month',
+    timeline: '4–12 weeks',
+    color: 'text-blue-400',
+  },
+  {
+    treatment: 'L-Glutamine',
+    mechanism: 'Primary fuel for enterocytes — supports epithelial repair',
+    gutBarrier: 'Direct — supports tight junction assembly',
+    sideEffects: 'Minimal at standard doses',
+    dependency: 'None',
+    cost: '$15–30/month',
+    timeline: '4–8 weeks',
+    color: 'text-indigo-400',
+  },
+];
+
+const dietProtocol = {
+  firstTwoWeeks: {
+    title: 'Weeks 1–2: Elimination & Repair Phase',
+    description: 'During the first two weeks of BPC-157 gut healing, the priority is removing inflammatory inputs and maximizing the peptide\'s repair environment.',
+    eat: [
+      'Bone broth (daily — provides glycine, proline, hydroxyproline for mucosal repair)',
+      'Well-cooked vegetables (steamed/roasted — reduces fermentation load)',
+      'White rice and oats (easy-to-digest starches)',
+      'Lean proteins: chicken, turkey, white fish (cooked simply)',
+      'Fermented foods if tolerated: kefir, yogurt, kimchi (small amounts)',
+      'Ginger and turmeric (anti-inflammatory cofactors)',
+      'Cooked leafy greens (spinach, kale — high in glutamine precursors)',
+    ],
+    avoid: [
+      'Gluten-containing foods (bread, pasta, wheat products)',
+      'Alcohol — directly disrupts tight junctions',
+      'Industrial seed oils (soybean, canola, sunflower)',
+      'Processed and ultra-processed foods',
+      'Raw cruciferous vegetables (cabbage, broccoli — high fermentation load)',
+      'High-FODMAP foods if you have IBS-pattern symptoms',
+      'NSAIDs (ibuprofen, aspirin) — directly damage gastric mucosa',
+    ],
+  },
+  reintroductionPhase: {
+    title: 'Weeks 3–6: Reintroduction Phase',
+    description: 'As BPC-157 repairs the barrier, introduce higher-fiber and more diverse foods gradually — each reintroduction tests tolerance.',
+    introduce: [
+      'Cooked legumes (lentils, chickpeas — high prebiotic fiber, introduce slowly)',
+      'Raw salads and vegetables (as tolerance improves)',
+      'Whole grains: quinoa, brown rice, oats',
+      'Diverse fermented foods: kombucha, miso, sauerkraut',
+      'Higher-fat foods: avocado, olive oil (if tolerated)',
+      'Nuts and seeds (introduce one variety at a time)',
+    ],
+  },
+  permanentAvoid: [
+    'Ultra-processed foods with emulsifiers (carrageenan, polysorbate-80 — directly damage gut barrier)',
+    'Artificial sweeteners (sorbitol, sucralose — alter microbiome composition)',
+    'Chronic NSAID use (PPI-dependent individuals should discuss alternatives with physician)',
+    'Alcohol in excess (dose-dependent gut barrier disruption)',
+    'Gluten — if confirmed sensitivity or celiac disease',
+  ],
+  supplements: [
+    { name: 'L-Glutamine', dose: '5g/day', notes: 'Primary enterocyte fuel. Directly synergistic with BPC-157 for tight junction repair.' },
+    { name: 'Zinc Carnosine', dose: '75mg/day', notes: 'Clinically validated for gastric and intestinal mucosal protection. Pairs well with BPC-157 for H. pylori and ulcer healing.' },
+    { name: 'Digestive Enzymes', dose: 'With main meals', notes: 'Reduces undigested protein load reaching compromised gut sections. Lessens immune activation from food particles.' },
+    { name: 'Collagen Peptides', dose: '10–15g/day', notes: 'Provides glycine and hydroxyproline — structural amino acids used in mucosal layer synthesis.' },
+    { name: 'Soil-Based Probiotics', dose: 'Per product', notes: 'Bacillus coagulans, Saccharomyces boulardii — more resilient strains that survive gastric transit and support microbiome diversity.' },
+  ],
+};
+
+const microbiomeSection = {
+  intro: `The gut microbiome — the community of approximately 100 trillion microorganisms residing in the gastrointestinal tract — is not merely a passenger in gut health. It is an active participant that profoundly influences intestinal barrier integrity, immune regulation, and inflammatory tone. The relationship between gut microbiome composition and conditions like IBD, leaky gut, and IBS is bidirectional and self-reinforcing: dysbiosis (microbial imbalance) drives inflammation, and inflammation drives further dysbiosis.`,
+  microbiomedisease: `In inflammatory bowel conditions, characteristic microbiome shifts have been consistently documented. IBD patients show reduced diversity overall, with dramatic decreases in Faecalibacterium prausnitzii — a butyrate-producing bacterium that serves as a primary energy source for colonocytes and actively suppresses intestinal inflammation through its metabolite profile. They also show increases in pro-inflammatory species like Escherichia coli and Ruminococcus gnavus that produce lipopolysaccharides (LPS) — bacterial toxins that activate TLR4 receptors and drive TNF-α and IL-6 production throughout the gut wall. This dysbiosis-inflammation cycle is the core mechanism underlying why IBD is so difficult to treat once established.`,
+  bpcMicrobiome: `BPC-157 does not act as a probiotic — it does not introduce new bacterial strains or directly feed beneficial organisms. However, its anti-inflammatory and barrier-repair effects create the gut environment in which microbiome restoration becomes possible. By suppressing TNF-α and IL-6, BPC-157 reduces the inflammatory milieu that selectively favors pro-inflammatory gram-negative bacteria. By restoring tight junction integrity, it reduces the bacterial translocation (bacteria crossing the gut wall into systemic circulation) that amplifies immune activation and perpetuates the dysbiosis cycle. In essence, BPC-157 converts the gut from an environment hostile to commensal bacteria into one permissive for their recovery.`,
+  synergisticFoods: [
+    {
+      category: 'Fermented Foods',
+      examples: 'Kefir, yogurt, kimchi, sauerkraut, miso, kombucha',
+      mechanism: 'Introduce live Lactobacillus and Bifidobacterium strains directly. Particularly powerful when the gut environment has been restored by BPC-157\'s anti-inflammatory action — bacteria encounter a hospitable rather than hostile environment.',
+    },
+    {
+      category: 'Bone Broth & Collagen',
+      examples: 'Slow-simmered bone broth (12–24 hours), collagen peptide supplements',
+      mechanism: 'Provides glycine, proline, and hydroxyproline — the amino acid building blocks of the mucosal collagen layer. BPC-157 upregulates the cellular machinery for tissue repair; collagen provides the raw materials.',
+    },
+    {
+      category: 'Prebiotic Fiber Foods',
+      examples: 'Jerusalem artichokes, garlic, onions, asparagus, green bananas, oats',
+      mechanism: 'Fermentable fibers feed butyrate-producing bacteria (Faecalibacterium, Bifidobacterium). Butyrate is the primary energy source for colonocytes and has direct anti-inflammatory effects in the colon — synergistic with BPC-157\'s mucosal repair.',
+    },
+    {
+      category: 'Polyphenol-Rich Foods',
+      examples: 'Berries, dark chocolate, green tea, olive oil, pomegranate',
+      mechanism: 'Polyphenols are selectively metabolized by beneficial microbiome species and act as prebiotics for commensal bacteria while inhibiting the growth of pro-inflammatory strains.',
+    },
+  ],
+  avoidDuring: [
+    'Alcohol — directly disrupts tight junctions and alters microbiome composition within hours of ingestion',
+    'Artificial sweeteners (aspartame, sucralose, saccharin) — alter microbiome composition and reduce beneficial species',
+    'Emulsifiers in processed foods (carrageenan, lecithin, polysorbate-80) — directly disrupt mucus layer integrity',
+    'Industrial seed oils in excess (omega-6 load drives intestinal inflammation)',
+    'Low-fiber processed diets — starve the prebiotic-dependent butyrate producers',
+  ],
+};
 
 export default function Bpc157GutHealthPage() {
   return (
@@ -129,8 +272,19 @@ export default function Bpc157GutHealthPage() {
         </div>
       </section>
 
+      {/* Gut Symptom Checker */}
+      <section className="py-16" style={{ background: 'rgba(6,6,16,0.8)' }}>
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-black text-white mb-3">Gut Symptom Protocol Finder</h2>
+          <p className="text-slate-400 mb-8">
+            Not sure whether you need oral BPC-157, injectable, or a combination? Check your symptoms below and get a personalized protocol recommendation with estimated timeline.
+          </p>
+          <GutSymptomChecker />
+        </div>
+      </section>
+
       {/* Protocol */}
-      <section className="py-12" style={{ background: 'rgba(6,6,16,0.8)' }}>
+      <section className="py-12">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl font-black text-white mb-8">Gut Healing Protocol Options</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
@@ -180,6 +334,164 @@ export default function Bpc157GutHealthPage() {
               ))}
             </tbody>
           </table>
+        </div>
+      </section>
+
+      {/* BPC-157 vs Other Gut Treatments */}
+      <section className="py-16" style={{ background: 'rgba(6,6,16,0.8)' }}>
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-black text-white mb-3">BPC-157 vs. Other Gut Treatments</h2>
+          <p className="text-slate-400 mb-10">
+            How BPC-157 compares to the most commonly used gut interventions across mechanism, actual barrier repair, side effects, and realistic timelines.
+          </p>
+          <div className="overflow-x-auto rounded-2xl border border-white/10">
+            <table className="w-full text-xs">
+              <thead>
+                <tr style={{ background: 'rgba(255,255,255,0.04)' }}>
+                  <th className="text-left py-3 px-3 text-slate-400 font-semibold">Treatment</th>
+                  <th className="text-left py-3 px-3 text-slate-400 font-semibold">Mechanism</th>
+                  <th className="text-left py-3 px-3 text-slate-400 font-semibold">Gut Barrier Repair</th>
+                  <th className="text-left py-3 px-3 text-slate-400 font-semibold">Side Effects</th>
+                  <th className="text-left py-3 px-3 text-slate-400 font-semibold">Dependency</th>
+                  <th className="text-left py-3 px-3 text-slate-400 font-semibold">Cost/Mo</th>
+                  <th className="text-left py-3 px-3 text-slate-400 font-semibold">Timeline</th>
+                </tr>
+              </thead>
+              <tbody>
+                {comparisonData.map((row, i) => (
+                  <tr key={row.treatment} style={{ borderTop: '1px solid rgba(255,255,255,0.04)', background: i % 2 === 0 ? 'rgba(255,255,255,0.01)' : 'transparent' }}>
+                    <td className={`py-3 px-3 font-bold ${row.color}`}>{row.treatment}</td>
+                    <td className="py-3 px-3 text-slate-300">{row.mechanism}</td>
+                    <td className="py-3 px-3 text-slate-300">{row.gutBarrier}</td>
+                    <td className="py-3 px-3 text-slate-400">{row.sideEffects}</td>
+                    <td className="py-3 px-3 text-slate-400">{row.dependency}</td>
+                    <td className="py-3 px-3 text-slate-300">{row.cost}</td>
+                    <td className="py-3 px-3 text-slate-400">{row.timeline}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      {/* Gut Microbiome & BPC-157 */}
+      <section className="py-16 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 className="text-3xl font-black text-white mb-3">Gut Microbiome &amp; BPC-157</h2>
+        <p className="text-slate-400 mb-10 text-lg">How BPC-157's anti-inflammatory effects create the environment for microbiome recovery — and the foods that amplify results.</p>
+
+        <div className="space-y-6">
+          <div className="glass-card p-8">
+            <h3 className="text-xl font-black text-emerald-400 mb-4">The Microbiome-Inflammation Cycle</h3>
+            <div className="space-y-4 text-slate-300 text-sm leading-relaxed">
+              <p>{microbiomeSection.intro}</p>
+              <p>{microbiomeSection.microbiomedisease}</p>
+              <p>{microbiomeSection.bpcMicrobiome}</p>
+            </div>
+          </div>
+
+          <div className="glass-card p-8">
+            <h3 className="text-xl font-black text-emerald-400 mb-6">Foods That Synergize With BPC-157 Gut Healing</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+              {microbiomeSection.synergisticFoods.map((food) => (
+                <div key={food.category} className="bg-white/3 rounded-xl p-5 border border-white/8">
+                  <h4 className="text-white font-bold mb-1">{food.category}</h4>
+                  <p className="text-emerald-400 text-xs mb-2">{food.examples}</p>
+                  <p className="text-slate-400 text-xs leading-relaxed">{food.mechanism}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className="glass-card p-6">
+            <h3 className="text-lg font-black text-white mb-4">Foods &amp; Habits to Avoid During Protocol</h3>
+            <ul className="space-y-2">
+              {microbiomeSection.avoidDuring.map((item) => (
+                <li key={item} className="flex items-start gap-2 text-slate-400 text-sm">
+                  <span className="text-red-400 shrink-0 mt-0.5">✕</span> {item}
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      {/* Diet Protocol */}
+      <section className="py-16" style={{ background: 'rgba(6,6,16,0.8)' }}>
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-black text-white mb-3">Diet Protocol During BPC-157 Gut Healing</h2>
+          <p className="text-slate-400 mb-10">
+            What you eat during a BPC-157 gut healing protocol significantly amplifies or undermines results. This phase-by-phase diet framework is calibrated to the biological stages of gut repair.
+          </p>
+
+          <div className="space-y-6">
+            {/* Week 1-2 */}
+            <div className="glass-card p-8">
+              <h3 className="text-xl font-black text-emerald-400 mb-2">{dietProtocol.firstTwoWeeks.title}</h3>
+              <p className="text-slate-400 text-sm mb-6">{dietProtocol.firstTwoWeeks.description}</p>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                  <p className="text-xs font-bold tracking-widest text-emerald-400 mb-3">EAT FREELY</p>
+                  <ul className="space-y-2">
+                    {dietProtocol.firstTwoWeeks.eat.map((item) => (
+                      <li key={item} className="flex items-start gap-2 text-slate-300 text-sm">
+                        <CheckCircle className="w-3.5 h-3.5 text-emerald-400 shrink-0 mt-0.5" /> {item}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                <div>
+                  <p className="text-xs font-bold tracking-widest text-red-400 mb-3">AVOID</p>
+                  <ul className="space-y-2">
+                    {dietProtocol.firstTwoWeeks.avoid.map((item) => (
+                      <li key={item} className="flex items-start gap-2 text-slate-400 text-sm">
+                        <span className="text-red-400 shrink-0 mt-0.5">✕</span> {item}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            {/* Reintroduction */}
+            <div className="glass-card p-8">
+              <h3 className="text-xl font-black text-emerald-400 mb-2">{dietProtocol.reintroductionPhase.title}</h3>
+              <p className="text-slate-400 text-sm mb-5">{dietProtocol.reintroductionPhase.description}</p>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                {dietProtocol.reintroductionPhase.introduce.map((item) => (
+                  <div key={item} className="flex items-start gap-2 text-slate-300 text-sm">
+                    <CheckCircle className="w-3.5 h-3.5 text-emerald-400 shrink-0 mt-0.5" /> {item}
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Permanent avoid */}
+            <div className="glass-card p-6">
+              <h3 className="text-lg font-black text-white mb-4">Foods to Permanently Minimize</h3>
+              <ul className="space-y-2">
+                {dietProtocol.permanentAvoid.map((item) => (
+                  <li key={item} className="flex items-start gap-2 text-slate-400 text-sm">
+                    <span className="text-red-400 shrink-0 mt-0.5">✕</span> {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Supplement stack */}
+            <div className="glass-card p-6">
+              <h3 className="text-lg font-black text-white mb-5">Supplements That Stack Well With BPC-157</h3>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                {dietProtocol.supplements.map((s) => (
+                  <div key={s.name} className="bg-white/3 rounded-xl p-4 border border-white/8">
+                    <p className="text-emerald-400 font-bold text-sm mb-1">{s.name}</p>
+                    <p className="text-white text-xs font-mono mb-2">{s.dose}</p>
+                    <p className="text-slate-400 text-xs leading-relaxed">{s.notes}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
