@@ -18,7 +18,10 @@
       "Bash(npx -y node-modules-check)",
       "Bash(find /mnt/c/Users/Wilso/newpepe -name out -o -name redirect* -o -name *affiliate*)",
       "Bash(grep -r apollopeptidesciences /mnt/c/Users/Wilso/newpepe/ --include=*.tsx --include=*.ts -l)",
-      "Bash(grep -r apollopeptidesciences /mnt/c/Users/Wilso/newpepe/ --include=*.tsx --include=*.ts --include=*.mjs -n)"
+      "Bash(grep -r apollopeptidesciences /mnt/c/Users/Wilso/newpepe/ --include=*.tsx --include=*.ts --include=*.mjs -n)",
+      "Read(//tmp/**)",
+      "Bash(node_modules/.bin/tsc --noEmit)",
+      "Bash(echo \"Exit: $?\")"
     ]
   }
 }

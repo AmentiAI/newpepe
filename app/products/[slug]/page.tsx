@@ -216,7 +216,7 @@ export default function ProductPage({ params }: Props) {
               <FlaskConical className={`w-4 h-4 ${theme.accentLight}`} />
               <span className={`${theme.accentLight} text-sm font-mono font-semibold`}>{product.category.toUpperCase()}</span>
             </div>
-            <h1 className="text-4xl sm:text-5xl font-black text-white mb-2 leading-tight">{product.name}</h1>
+            <h1 className="text-4xl sm:text-5xl font-black text-white mb-2 leading-tight">Buy {product.name}</h1>
             <p className={`text-xl ${theme.accentLight} font-semibold mb-4`}>{product.tagline}</p>
             <p className="text-slate-300 leading-relaxed mb-6 text-base">{product.shortDescription}</p>
 

@@ -99,7 +99,7 @@ BPC-157 has no known LD50 in animal studies — no dose has been found to cause 
 
 **Storage:** Refrigerate reconstituted peptide; use within 30 days`,
     synergies: ['tb-500', 'ghk-cu', 'nad', 'cjc1295-ipamorelin'],
-    seoTitle: 'BPC-157 10mg | #1 Healing Peptide for Tendons, Gut & Recovery | BPC-157 Stack',
+    seoTitle: 'Buy BPC-157 10mg | #1 Healing Peptide for Tendons, Gut & Recovery | BPC-157 Stack',
     deepDiveTitle: 'BPC-157: The Complete Research Guide to the Most Powerful Healing Peptide',
     highlights: [
       { title: 'Gut Healer', body: 'Repairs intestinal barrier integrity — the most researched peptide for leaky gut, IBS, and Crohn\'s. Oral delivery works directly on intestinal tissue.' },
@@ -163,7 +163,7 @@ Flexibility improvements within 2-3 weeks. Chronic tendon injuries show measurab
 
 **Best Stack:** Combine with BPC-157 for comprehensive local + systemic healing.`,
     synergies: ['bpc-157', 'ghk-cu', 'cjc1295-ipamorelin', 'igf-1lr3'],
-    seoTitle: 'TB-500 Thymosin Beta-4 | Systemic Healing & Flexibility Peptide | BPC-157 Stack',
+    seoTitle: 'Buy TB-500 Thymosin Beta-4 | Systemic Healing & Flexibility Peptide | BPC-157 Stack',
     deepDiveTitle: 'TB-500: The Systemic Healing Peptide That Completes the BPC-157 Stack',
     highlights: [
       { title: 'Systemic vs Local', body: 'TB-500 circulates body-wide via bloodstream — healing multiple injury sites at once, while BPC-157 excels at local targeted repair.' },
@@ -227,7 +227,7 @@ GHK-Cu enlarges hair follicle size, prolongs the growth phase, and blocks DHT lo
 
 **Best Stack:** GHK-Cu + Epithalon for comprehensive anti-aging protocol.`,
     synergies: ['epithalon', 'bpc-157', 'snap-8', 'nad'],
-    seoTitle: 'GHK-Cu Copper Peptide | Reverses 31% of Aged Genes | BPC-157 Stack',
+    seoTitle: 'Buy GHK-Cu Copper Peptide | Reverses 31% of Aged Genes | BPC-157 Stack',
     deepDiveTitle: 'GHK-Cu: The Copper Peptide That Resets Your Genes and Reverses Biological Aging',
     highlights: [
       { title: '31% Gene Reset', body: 'Landmark research shows GHK-Cu reverses 31% of aged gene expression — the most powerful anti-aging molecular signal discovered to date.' },
@@ -289,7 +289,7 @@ Epithalon normalizes the hypothalamus-pituitary axis and restores pineal gland f
 
 **Storage:** Lyophilized powder — refrigerate; reconstitute with bacteriostatic water just before use.`,
     synergies: ['ghk-cu', 'nad', 'epithalon', 'snap-8'],
-    seoTitle: 'Epithalon 50mg | Telomere Extension & 28% Mortality Reduction | BPC-157 Stack',
+    seoTitle: 'Buy Epithalon 50mg | Telomere Extension & 28% Mortality Reduction | BPC-157 Stack',
     deepDiveTitle: 'Epithalon: The Russian Longevity Peptide With 60 Studies and 12-Year Human Trial Data',
     highlights: [
       { title: 'Telomerase Activation', body: 'The only compound proven to activate telomerase and actually lengthen telomeres in humans — reversing a core mechanism of cellular aging.' },
@@ -347,7 +347,7 @@ Users report significant increases in physical energy within 1-2 weeks. Exercise
 
 **Stack with:** Epithalon + GHK-Cu for comprehensive anti-aging protocol.`,
     synergies: ['epithalon', 'ghk-cu', 'nad'],
-    seoTitle: 'NAD+ 500mg | Cellular Energy, Sirtuins & Longevity | BPC-157 Stack',
+    seoTitle: 'Buy NAD+ 500mg | Cellular Energy, Sirtuins & Longevity | BPC-157 Stack',
     deepDiveTitle: 'NAD+: The Master Longevity Molecule That Powers Every Cell in Your Body',
     highlights: [
       { title: '50% Decline by 50', body: 'NAD+ levels drop approximately 50% between ages 20 and 50 — this decline drives most of the biochemical hallmarks of aging.' },
@@ -404,7 +404,7 @@ SNAP-8 + GHK-Cu is the definitive topical anti-aging stack: SNAP-8 reduces expre
 
 **Best Combined Application:** Apply GHK-Cu serum first, then SNAP-8 after absorption.`,
     synergies: ['ghk-cu', 'epithalon', 'nad', 'bpc-157'],
-    seoTitle: 'SNAP-8 Peptide | Botox-Alternative Wrinkle Reduction | BPC-157 Stack',
+    seoTitle: 'Buy SNAP-8 Peptide | Botox-Alternative Wrinkle Reduction | BPC-157 Stack',
     deepDiveTitle: 'SNAP-8: The Topical Peptide That Reduces Expression Wrinkles by 63% Without Injections',
     highlights: [
       { title: '63% Wrinkle Reduction', body: 'Double-blind clinical trial: SNAP-8 reduced wrinkle volume by up to 63% over 28 days — the strongest topical peptide efficacy data available.' },
@@ -467,7 +467,7 @@ Months 2-4: Lean muscle gains, significant body composition shift`,
 
 **Cycle Length:** 3-6 months minimum for meaningful body composition changes.`,
     synergies: ['bpc-157', 'tb-500', 'igf-1lr3', 'nad'],
-    seoTitle: 'CJC-1295 Ipamorelin | Gold Standard GH Stack for Fat Loss & Muscle | BPC-157 Stack',
+    seoTitle: 'Buy CJC-1295 Ipamorelin | Gold Standard GH Stack for Fat Loss & Muscle | BPC-157 Stack',
     deepDiveTitle: 'CJC-1295 / Ipamorelin: The Clinic-Standard GH Peptide Stack That Transforms Body Composition',
     highlights: [
       { title: '8-10x GH Amplification', body: 'Synergistic GHRH + GHRP action produces 8-10x more GH than either peptide alone — the most powerful legal GH optimization available.' },
@@ -528,7 +528,7 @@ IGF-1 LR3 is a potent compound. Due to its anabolic potency, it's best used in s
 
 **Caution:** Start at lowest dose (20mcg) to assess response. Monitor blood glucose — IGF-1 has mild hypoglycemic effects. Use with food nearby.`,
     synergies: ['cjc1295-ipamorelin', 'tb-500', 'bpc-157', 'nad'],
-    seoTitle: 'IGF-1 LR3 | Muscle Satellite Cell Activator for Hypertrophy | BPC-157 Stack',
+    seoTitle: 'Buy IGF-1 LR3 | Muscle Satellite Cell Activator for Hypertrophy | BPC-157 Stack',
     deepDiveTitle: 'IGF-1 LR3: The Long-Acting Growth Factor That Activates Muscle Satellite Cells',
     highlights: [
       { title: 'Satellite Cell Activation', body: 'IGF-1 LR3 activates muscle satellite cells — the stem cells that create new muscle fibers. This is the mechanism behind muscle hyperplasia, not just hypertrophy.' },
@@ -590,7 +590,7 @@ Semaglutide has shown benefits beyond weight loss:
 **Injection:** Once weekly subcutaneous. Rotate injection sites (abdomen, thigh, upper arm).
 **Note:** Consult a physician if using therapeutically.`,
     synergies: ['glp-2t-tirzepatide', 'nad', 'bpc-157'],
-    seoTitle: 'GLP-1 S Semaglutide | 15-20% Weight Loss Research Peptide | BPC-157 Stack',
+    seoTitle: 'Buy GLP-1 S Semaglutide | 15-20% Weight Loss Research Peptide | BPC-157 Stack',
     deepDiveTitle: 'Semaglutide (GLP-1 S): The Research Peptide Behind the Weight Loss Revolution',
     highlights: [
       { title: '15-20% Weight Reduction', body: 'STEP trials: average 15-20% body weight reduction over 68 weeks — the highest efficacy ever demonstrated in pharmaceutical weight loss research.' },
@@ -653,7 +653,7 @@ In the SURPASS-2 trial directly comparing tirzepatide vs semaglutide, tirzepatid
 **Injection:** Once weekly subcutaneous. Rotate sites.
 `,
     synergies: ['glp-1s-semaglutide', 'glp-3r-retatrutide', 'nad'],
-    seoTitle: 'GLP-2 T Tirzepatide | Dual GIP/GLP-1 for 22.5% Weight Loss | BPC-157 Stack',
+    seoTitle: 'Buy GLP-2 T Tirzepatide | Dual GIP/GLP-1 for 22.5% Weight Loss | BPC-157 Stack',
     deepDiveTitle: 'Tirzepatide (GLP-2 T): The Dual Agonist That Outperformed Semaglutide in Every Trial',
     highlights: [
       { title: '22.5% Weight Reduction', body: 'SURMOUNT-1: maximum dose achieved 22.5% body weight reduction — the highest efficacy ever demonstrated in controlled weight loss trials at the time of publication.' },
@@ -716,7 +716,7 @@ Retatrutide is currently in Phase III trials. If results hold, it will represent
 **Injection:** Once weekly subcutaneous.
 **Note:** Phase III compound. Clinical data pending.`,
     synergies: ['glp-2t-tirzepatide', 'glp-1s-semaglutide', 'nad'],
-    seoTitle: 'GLP-3 R Retatrutide | Triple Agonist with 24% Weight Loss in Phase II | BPC-157 Stack',
+    seoTitle: 'Buy GLP-3 R Retatrutide | Triple Agonist with 24% Weight Loss in Phase II | BPC-157 Stack',
     deepDiveTitle: 'Retatrutide (GLP-3 R): The Triple Receptor Agonist Rewriting Weight Loss Science',
     highlights: [
       { title: '24% Weight Reduction', body: 'Phase II results: 24.2% body weight reduction at 48 weeks — with no plateau. The highest weight loss ever demonstrated in a clinical trial at that point.' },
@@ -774,7 +774,7 @@ Cagrisema is in Phase III trials. Early data positions it between tirzepatide an
 
  Phase III compound. Clinical guidance required for pharmaceutical use.`,
     synergies: ['glp-1s-semaglutide', 'glp-2t-tirzepatide', 'glp-3r-retatrutide', 'nad'],
-    seoTitle: 'Cagrisema GLP-1 C + GLP-1 S | Dual Amylin/GLP-1 for 25% Weight Loss | BPC-157 Stack',
+    seoTitle: 'Buy Cagrisema GLP-1 C + GLP-1 S | Dual Amylin/GLP-1 for 25% Weight Loss | BPC-157 Stack',
     deepDiveTitle: 'Cagrisema: The Amylin + Semaglutide Combination That Rewrites Weight Loss Expectations',
     highlights: [
       { title: '25% vs 15%', body: 'REDEFINE trials: cagrisema achieved ~25% weight reduction vs ~15% for semaglutide alone — a 67% improvement from adding the amylin pathway.' },
@@ -813,7 +813,7 @@ Semaglutide (Ozempic/Wegovy active compound) has demonstrated 15-20% body weight
 - Week 5-8: 0.2mL (0.5mg) weekly
 - Move to 10mg vial to continue escalation`,
     synergies: ['glp-2t-tirzepatide', 'glp-1s-semaglutide', 'nad', 'bpc-157'],
-    seoTitle: 'Semaglutide 5mg | GLP-1 S Starter Dose Weight Loss | BPC-157 Stack',
+    seoTitle: 'Buy Semaglutide 5mg | GLP-1 S Starter Dose Weight Loss | BPC-157 Stack',
     deepDiveTitle: 'Semaglutide 5mg: The Right Starting Size for Your GLP-1 Protocol',
     highlights: [
       { title: 'Starter Value', body: 'Perfect first vial — 20 weeks of starter dosing at 0.25mg/week while you assess tolerability.' },
@@ -849,7 +849,7 @@ At 2.4mg/week: 16.9% average body weight reduction at 68 weeks, with 86% of part
 - Maintenance: 0.2mL (1mg) or 0.4mL (2mg) weekly
 - Store reconstituted; use within 28 days`,
     synergies: ['glp-2t-tirzepatide', 'glp-1s-semaglutide', 'nad', 'bpc-157'],
-    seoTitle: 'Semaglutide 15mg | GLP-1 S Maximum Dose Long-Term Supply | BPC-157 Stack',
+    seoTitle: 'Buy Semaglutide 15mg | GLP-1 S Maximum Dose Long-Term Supply | BPC-157 Stack',
     deepDiveTitle: 'Semaglutide 15mg: Most Economical Option for Full-Protocol GLP-1 Weight Loss',
     highlights: [
       { title: 'Best Value', body: 'Lowest per-milligram semaglutide price — optimal for users maintaining therapeutic doses.' },
@@ -886,7 +886,7 @@ At highest dose (15mg), tirzepatide produced 22.5% body weight reduction — sig
 - Weeks 5-8: 0.5mL (5mg) weekly
 - Weeks 9-12: 0.75mL (7.5mg) weekly — 22.5mg used`,
     synergies: ['glp-1s-semaglutide', 'glp-3r-retatrutide', 'glp-2t-tirzepatide', 'nad'],
-    seoTitle: 'Tirzepatide 30mg | GLP-2 T Full Escalation Dual Agonist | BPC-157 Stack',
+    seoTitle: 'Buy Tirzepatide 30mg | GLP-2 T Full Escalation Dual Agonist | BPC-157 Stack',
     deepDiveTitle: 'Tirzepatide 30mg: Optimal Vial for Full-Protocol Dual GIP/GLP-1 Weight Loss',
     highlights: [
       { title: '22.5% Weight Loss', body: 'SURMOUNT-1 at 15mg: 22.5% body weight reduction — the highest weight loss ever demonstrated in a controlled trial at that time.' },
@@ -919,7 +919,7 @@ At highest dose (15mg), tirzepatide produced 22.5% body weight reduction — sig
 - At 15mg/week: 0.75mL/week — 4 weeks supply
 - Refrigerate; use within 28 days`,
     synergies: ['glp-1s-semaglutide', 'glp-3r-retatrutide', 'glp-2t-tirzepatide-30mg', 'nad'],
-    seoTitle: 'Tirzepatide 60mg | GLP-2 T Bulk Long-Term Weight Loss Supply | BPC-157 Stack',
+    seoTitle: 'Buy Tirzepatide 60mg | GLP-2 T Bulk Long-Term Weight Loss Supply | BPC-157 Stack',
     deepDiveTitle: 'Tirzepatide 60mg: Bulk Supply for Sustained Long-Term Dual Agonist Weight Loss',
     highlights: [
       { title: 'Best Value', body: 'Lowest per-milligram tirzepatide cost — for users committed to long-term maintenance.' },
@@ -952,7 +952,7 @@ At highest dose (15mg), tirzepatide produced 22.5% body weight reduction — sig
 - Weeks 5-8: 0.8mL (4mg) weekly — all 15mg used
 - Continue with 30mg or 60mg vial`,
     synergies: ['glp-2t-tirzepatide', 'glp-1s-semaglutide', 'glp-3r-retatrutide', 'nad'],
-    seoTitle: 'Retatrutide 15mg | GLP-3 R Triple Agonist Starter | BPC-157 Stack',
+    seoTitle: 'Buy Retatrutide 15mg | GLP-3 R Triple Agonist Starter | BPC-157 Stack',
     deepDiveTitle: 'Retatrutide 15mg: Entry Point to the Most Potent Weight Loss Peptide in Development',
     highlights: [
       { title: '24% Weight Loss', body: 'Phase II: 24.2% body weight reduction at 48 weeks — highest ever in weight loss clinical history.' },
@@ -985,7 +985,7 @@ At highest dose (15mg), tirzepatide produced 22.5% body weight reduction — sig
 - Weeks 5-8: 4mg (0.4mL) weekly — 24mg used
 - Remaining 6mg bridges to 60mg vial`,
     synergies: ['glp-2t-tirzepatide', 'glp-1s-semaglutide', 'glp-3r-retatrutide-15mg', 'nad'],
-    seoTitle: 'Retatrutide 30mg | GLP-3 R Full Escalation Triple Agonist | BPC-157 Stack',
+    seoTitle: 'Buy Retatrutide 30mg | GLP-3 R Full Escalation Triple Agonist | BPC-157 Stack',
     deepDiveTitle: 'Retatrutide 30mg: Most Efficient Vial for Triple Agonist Escalation Protocol',
     highlights: [
       { title: 'Full 8-Week Escalation', body: 'Covers weeks 1-8 from 2mg to 4mg/week — the most efficient single vial for starting the retatrutide protocol.' },
@@ -1018,7 +1018,7 @@ At highest dose (15mg), tirzepatide produced 22.5% body weight reduction — sig
 - At 12mg/week: 1.2mL weekly — 5 weeks supply
 - Refrigerate; use within 28 days`,
     synergies: ['glp-2t-tirzepatide-60mg', 'glp-1s-semaglutide-15mg', 'glp-3r-retatrutide-30mg', 'nad'],
-    seoTitle: 'Retatrutide 60mg | GLP-3 R Bulk Maximum Dose Triple Agonist | BPC-157 Stack',
+    seoTitle: 'Buy Retatrutide 60mg | GLP-3 R Bulk Maximum Dose Triple Agonist | BPC-157 Stack',
     deepDiveTitle: 'Retatrutide 60mg: Bulk Maintenance Supply for the Most Potent Weight Loss Peptide',
     highlights: [
       { title: 'Best Bulk Value', body: 'Lowest per-mg retatrutide cost — for experienced users maintaining at 8-12mg/week long-term.' },
@@ -1078,7 +1078,7 @@ Reconstituted peptides stored with bacteriostatic water should be refrigerated a
 
 **Standard ratio:** 1mL per 5mg peptide = 5,000mcg/mL concentration.`,
     synergies: ['bpc-157', 'tb-500', 'cjc1295-ipamorelin', 'epithalon'],
-    seoTitle: 'Bacteriostatic Water 10mL | Peptide Reconstitution Solution | BPC-157 Stack',
+    seoTitle: 'Buy Bacteriostatic Water 10mL | Peptide Reconstitution Solution | BPC-157 Stack',
     deepDiveTitle: 'Bacteriostatic Water: Why Correct Reconstitution Is Critical for Peptide Safety and Efficacy',
     highlights: [
       { title: 'Bacteriostatic Protection', body: '0.9% benzyl alcohol prevents bacterial contamination for 28+ days after opening — essential for multi-use vials and repeated dosing.' },

@@ -277,8 +277,14 @@ const coaPoints = [
 ];
 
 export default function HomePage() {
-  const featuredProducts = products.slice(0, 3);
+  const featuredProducts = products.slice(0, 6);
   const featuredStacks = stacks.slice(0, 3);
+  const heroProducts = [
+    products.find(p => p.slug === 'bpc-157')!,
+    products.find(p => p.slug === 'tb-500')!,
+    products.find(p => p.slug === 'ghk-cu')!,
+    products.find(p => p.slug === 'epithalon')!,
+  ];
 
   return (
     <div className="overflow-hidden">
@@ -342,19 +348,46 @@ export default function HomePage() {
                 anti-aging, and cognitive enhancement.
               </p>
 
-              <div className="flex flex-wrap gap-3 mb-12">
+              <div className="flex flex-wrap gap-3 mb-6">
                 <a
                   href={SOURCE_URL}
                   target="_blank"
                   rel="nofollow noopener noreferrer"
                   className="btn-cta text-base px-8 py-4 flex items-center gap-2 group"
                 >
-                  View
+                  Shop Peptides
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </a>
-                <Link href="/stacks" className="btn-secondary text-base px-8 py-4">
-                  View Protocols
+                <Link href="/products" className="btn-secondary text-base px-8 py-4 flex items-center gap-2">
+                  Browse All 20 <ArrowRight className="w-4 h-4" />
                 </Link>
+                <Link href="/stacks" className="btn-secondary text-base px-8 py-4">
+                  View Stacks
+                </Link>
+              </div>
+
+              {/* Product quick-links */}
+              <div className="flex flex-wrap gap-2 mb-8">
+                {[
+                  { label: 'BPC-157', href: '/bpc-157', color: 'emerald' },
+                  { label: 'TB-500', href: '/tb-500', color: 'blue' },
+                  { label: 'GHK-Cu', href: '/ghk-cu', color: 'purple' },
+                  { label: 'Epithalon', href: '/epithalon', color: 'amber' },
+                  { label: 'Ipamorelin', href: '/ipamorelin', color: 'rose' },
+                ].map(({ label, href, color }) => {
+                  const c: Record<string, string> = {
+                    emerald: 'bg-emerald-400/10 text-emerald-400 border-emerald-400/20 hover:border-emerald-400/50',
+                    blue: 'bg-blue-400/10 text-blue-400 border-blue-400/20 hover:border-blue-400/50',
+                    purple: 'bg-purple-400/10 text-purple-400 border-purple-400/20 hover:border-purple-400/50',
+                    amber: 'bg-amber-400/10 text-amber-400 border-amber-400/20 hover:border-amber-400/50',
+                    rose: 'bg-rose-400/10 text-rose-400 border-rose-400/20 hover:border-rose-400/50',
+                  };
+                  return (
+                    <Link key={label} href={href} className={`text-xs font-semibold px-3 py-1.5 rounded-full border transition-all duration-200 ${c[color]}`}>
+                      {label} →
+                    </Link>
+                  );
+                })}
               </div>
 
               {/* Trust bar */}
@@ -368,37 +401,71 @@ export default function HomePage() {
               </div>
             </div>
 
-            {/* Right — Product showcase */}
+            {/* Right — Multi-product showcase */}
             <div className="relative hidden lg:block">
-              {/* Main vial image */}
-              <div className="relative w-full aspect-square max-w-md mx-auto">
-                {/* Glowing ring */}
-                <div className="absolute inset-8 rounded-full border border-neon-green/20 animate-pulse-slow" />
-                <div className="absolute inset-4 rounded-full border border-neon-green/10" />
+              {/* Glow orb behind grid */}
+              <div className="absolute inset-0 bg-neon-green/3 rounded-3xl blur-3xl pointer-events-none" />
 
-                {/* Center product image */}
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="relative w-56 h-56">
-                    <div className="absolute inset-0 bg-neon-green/5 rounded-full blur-3xl" />
-                    <Image
-                      src={products.find(p => p.slug === 'bpc-157')!.image}
-                      alt="BPC-157 — Research Grade"
-                      fill
-                      className="object-contain drop-shadow-2xl"
-                      priority
-                    />
-                  </div>
+              <div className="relative">
+                {/* Header row */}
+                <div className="flex items-center justify-between mb-4">
+                  <p className="text-neon-green text-xs font-semibold uppercase tracking-widest">Top Peptides</p>
+                  <Link href="/products" className="text-xs text-slate-500 hover:text-neon-green transition-colors flex items-center gap-1">
+                    See All 20+ <ArrowRight className="w-3 h-3" />
+                  </Link>
                 </div>
 
-                {/* Floating badges */}
-                <div className="absolute top-8 -right-4 bg-dark-700 border border-neon-green/20 rounded-xl px-3 py-2 text-xs font-semibold text-neon-green shadow-xl">
-                  #1 Healing Peptide
+                {/* 2×2 product grid */}
+                <div className="grid grid-cols-2 gap-3 mb-3">
+                  {heroProducts.map((product) => (
+                    <Link
+                      key={product.slug}
+                      href={`/products/${product.slug}`}
+                      className="group glass-card p-3 hover:border-neon-green/40 transition-all duration-200 block"
+                    >
+                      <div className="relative h-32 mb-3 overflow-hidden rounded-lg bg-dark-700/60">
+                        <Image
+                          src={product.image}
+                          alt={product.name}
+                          fill
+                          className="object-contain p-3 group-hover:scale-105 transition-transform duration-300"
+                          sizes="200px"
+                        />
+                      </div>
+                      <p className="text-white font-bold text-sm mb-0.5 group-hover:text-neon-green transition-colors">{product.name}</p>
+                      <p className="text-slate-500 text-xs mb-2 line-clamp-1">{product.tagline.split(' ').slice(0, 5).join(' ')}…</p>
+                      <div className="flex items-center justify-between">
+                        <span className="text-neon-green text-sm font-black">${product.price}</span>
+                        <span className="text-xs text-slate-500 group-hover:text-neon-green flex items-center gap-0.5 transition-colors">
+                          View <ArrowRight className="w-3 h-3" />
+                        </span>
+                      </div>
+                    </Link>
+                  ))}
                 </div>
-                <div className="absolute bottom-12 -left-4 bg-dark-700 border border-blue-500/20 rounded-xl px-3 py-2 text-xs font-semibold text-blue-400 shadow-xl">
-                  100+ Studies
+
+                {/* Bottom action row */}
+                <div className="flex gap-2">
+                  <Link href="/products" className="flex-1 btn-secondary text-xs py-2.5 text-center">
+                    All Peptides
+                  </Link>
+                  <a
+                    href={SOURCE_URL}
+                    target="_blank"
+                    rel="nofollow noopener noreferrer"
+                    className="flex-1 btn-cta text-xs py-2.5 text-center flex items-center justify-center gap-1"
+                  >
+                    Shop Now <ArrowRight className="w-3 h-3" />
+                  </a>
                 </div>
-                <div className="absolute top-1/2 -right-8 bg-dark-700 border border-purple-500/20 rounded-xl px-3 py-2 text-xs font-semibold text-purple-400 shadow-xl">
-                  No Known LD50
+
+                {/* Trust badge strip */}
+                <div className="mt-3 flex justify-center gap-4 flex-wrap">
+                  {['98%+ Purity', 'COA Verified', 'US Domestic'].map((t) => (
+                    <span key={t} className="flex items-center gap-1 text-xs text-slate-600">
+                      <CheckCircle className="w-3 h-3 text-neon-green" /> {t}
+                    </span>
+                  ))}
                 </div>
               </div>
             </div>
@@ -765,10 +832,25 @@ export default function HomePage() {
             ))}
           </div>
 
+          {/* Product quick-access links */}
+          <div className="flex flex-wrap gap-2 justify-center mb-8">
+            {[
+              { label: 'BPC-157 Deep Dive', href: '/bpc-157' },
+              { label: 'TB-500 Guide', href: '/tb-500' },
+              { label: 'GHK-Cu Protocol', href: '/ghk-cu' },
+              { label: 'Epithalon Complete Guide', href: '/epithalon' },
+              { label: 'Ipamorelin + CJC-1295', href: '/ipamorelin' },
+            ].map(({ label, href }) => (
+              <Link key={href} href={href} className="text-xs text-slate-400 hover:text-neon-green border border-white/10 hover:border-neon-green/30 px-3 py-1.5 rounded-full transition-all duration-200">
+                {label}
+              </Link>
+            ))}
+          </div>
+
           <div className="flex flex-wrap gap-4 justify-center">
-            <Link href="/products" className="btn-secondary text-base px-8 py-4">View All 12 Peptides</Link>
+            <Link href="/products" className="btn-secondary text-base px-8 py-4">View All 20 Peptides</Link>
             <a href={SOURCE_URL} target="_blank" rel="nofollow noopener noreferrer" className="btn-cta text-base px-8 py-4 flex items-center gap-2">
-              View <ArrowRight className="w-5 h-5" />
+              Shop Apollo Peptides <ArrowRight className="w-5 h-5" />
             </a>
           </div>
         </div>

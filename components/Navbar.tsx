@@ -15,6 +15,14 @@ const navLinks = [
   { href: '/faq', label: 'FAQ' },
 ];
 
+const topProducts = [
+  { href: '/bpc-157', label: 'BPC-157' },
+  { href: '/tb-500', label: 'TB-500' },
+  { href: '/ghk-cu', label: 'GHK-Cu' },
+  { href: '/epithalon', label: 'Epithalon' },
+  { href: '/ipamorelin', label: 'Ipamorelin / CJC' },
+];
+
 export default function Navbar() {
   const [open, setOpen] = useState(false);
 
@@ -81,6 +89,23 @@ export default function Navbar() {
                 {link.label}
               </Link>
             ))}
+
+            {/* Top Products quick-links */}
+            <div className="mt-3 pt-3 border-t border-white/5">
+              <p className="text-slate-600 text-xs font-semibold uppercase tracking-widest px-3 mb-2">Top Peptides</p>
+              {topProducts.map((link) => (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  onClick={() => setOpen(false)}
+                  className="px-3 py-2 text-sm text-slate-500 hover:text-neon-green transition-colors rounded-md flex items-center gap-1.5"
+                >
+                  <span className="w-1.5 h-1.5 rounded-full bg-neon-green/40 shrink-0" />
+                  {link.label}
+                </Link>
+              ))}
+            </div>
+
             <a
               href={SOURCE_URL}
               target="_blank"

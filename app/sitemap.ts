@@ -32,6 +32,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/guide`,                                         priority: 0.8, changeFrequency: 'monthly', lastModified: new Date('2026-03-10') },
     { url: `${BASE_URL}/faq`,                                           priority: 0.7, changeFrequency: 'monthly', lastModified: new Date('2026-03-08') },
     { url: `${BASE_URL}/contact`,                                       priority: 0.4, changeFrequency: 'yearly',  lastModified: new Date('2026-03-01') },
+    // Dedicated product landing pages
+    { url: `${BASE_URL}/bpc-157`,                                         priority: 0.95, changeFrequency: 'monthly', lastModified: new Date('2026-04-08') },
+    { url: `${BASE_URL}/tb-500`,                                          priority: 0.95, changeFrequency: 'monthly', lastModified: new Date('2026-04-08') },
+    { url: `${BASE_URL}/ghk-cu`,                                          priority: 0.95, changeFrequency: 'monthly', lastModified: new Date('2026-04-08') },
+    { url: `${BASE_URL}/epithalon`,                                       priority: 0.95, changeFrequency: 'monthly', lastModified: new Date('2026-04-08') },
+    { url: `${BASE_URL}/ipamorelin`,                                      priority: 0.95, changeFrequency: 'monthly', lastModified: new Date('2026-04-08') },
     // Looksmaxxing pages
     { url: `${BASE_URL}/looksmaxxing-peptides`,                        priority: 0.9, changeFrequency: 'monthly', lastModified: new Date('2026-04-05') },
     { url: `${BASE_URL}/peptides-for-skin-quality`,                    priority: 0.9, changeFrequency: 'monthly', lastModified: new Date('2026-04-05') },
