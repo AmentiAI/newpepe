@@ -312,7 +312,7 @@ export default function HomePage() {
       {/* ═══════════════════════════════════════════════
           HERO — Full viewport, cinematic
       ═══════════════════════════════════════════════ */}
-      <section className="relative pt-20 pb-12 bg-white">
+      <section className="relative pt-16 pb-10 bg-white">
         {/* Animated background grid */}
         <div className="absolute inset-0 grid-bg opacity-100" />
 
@@ -322,12 +322,12 @@ export default function HomePage() {
           <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-yellow-300/10 rounded-full blur-[100px]" />
         </div>
 
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-4 pb-8 w-full">
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-2 pb-6 w-full">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             {/* Left — Copy */}
             <div>
               {/* Eyebrow badge */}
-              <div className="inline-flex items-center gap-2 bg-amber-50 border border-amber-300 rounded-full px-4 py-1.5 mb-8">
+              <div className="inline-flex items-center gap-2 bg-amber-50 border border-amber-300 rounded-full px-4 py-1.5 mb-4">
                 <span className="w-2 h-2 bg-amber-400 rounded-full animate-pulse" />
                 <span className="text-amber-600 text-xs font-semibold uppercase tracking-widest">Trusted Peptide Protocols</span>
               </div>

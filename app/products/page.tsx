@@ -102,7 +102,7 @@ const productFaqs = [
   },
   {
     q: 'How long does shipping take from US domestic?',
-    a: 'Apollo Peptide Sciences ships from within the United States. Standard shipping is 3-5 business days; expedited options are available. Lyophilized peptides are stable at room temperature for weeks, so standard shipping is sufficient. Reconstituted peptides should be refrigerated immediately on arrival.',
+    a: 'Phiogen ships from within the United States. Standard shipping is 3-5 business days; expedited options are available. Lyophilized peptides are stable at room temperature for weeks, so standard shipping is sufficient. Reconstituted peptides should be refrigerated immediately on arrival.',
   },
   {
     q: 'Can I use multiple peptides at once?',
@@ -128,36 +128,36 @@ export default function ProductsPage() {
   };
 
   const colorMap: Record<string, string> = {
-    emerald: 'text-emerald-400 bg-emerald-400/10 border-emerald-400/20 hover:border-emerald-400/40',
-    purple: 'text-purple-400 bg-purple-400/10 border-purple-400/20 hover:border-purple-400/40',
-    blue: 'text-blue-400 bg-blue-400/10 border-blue-400/20 hover:border-blue-400/40',
-    amber: 'text-amber-400 bg-amber-400/10 border-amber-400/20 hover:border-amber-400/40',
-    rose: 'text-rose-400 bg-rose-400/10 border-rose-400/20 hover:border-rose-400/40',
+    emerald: 'text-emerald-600 bg-emerald-50 border-emerald-200 hover:border-emerald-400',
+    purple: 'text-blue-600 bg-blue-50 border-blue-200 hover:border-blue-400',
+    blue: 'text-blue-600 bg-blue-50 border-blue-200 hover:border-blue-400',
+    amber: 'text-amber-600 bg-amber-50 border-amber-200 hover:border-amber-400',
+    rose: 'text-rose-600 bg-rose-50 border-rose-200 hover:border-rose-400',
   };
   const iconBg: Record<string, string> = {
-    emerald: 'bg-emerald-400/10 text-emerald-400',
-    purple: 'bg-purple-400/10 text-purple-400',
-    blue: 'bg-blue-400/10 text-blue-400',
-    amber: 'bg-amber-400/10 text-amber-400',
-    rose: 'bg-rose-400/10 text-rose-400',
+    emerald: 'bg-emerald-50 text-emerald-600',
+    purple: 'bg-blue-50 text-blue-600',
+    blue: 'bg-blue-50 text-blue-600',
+    amber: 'bg-amber-50 text-amber-600',
+    rose: 'bg-rose-50 text-rose-600',
   };
 
   return (
-    <div className="grid-bg min-h-screen pt-24 pb-20">
+    <div className="bg-white min-h-screen pt-24 pb-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* ═══════════════════════════════════════════════
             HEADER
         ═══════════════════════════════════════════════ */}
         <div className="text-center mb-16">
-          <div className="inline-flex items-center gap-2 bg-neon-green/10 border border-neon-green/20 rounded-full px-4 py-2 mb-6">
-            <FlaskConical className="w-4 h-4 text-neon-green" />
-            <span className="text-neon-green text-sm font-medium">Complete Peptide Catalog</span>
+          <div className="inline-flex items-center gap-2 bg-amber-50 border border-amber-200 rounded-full px-4 py-2 mb-6">
+            <FlaskConical className="w-4 h-4 text-amber-600" />
+            <span className="text-amber-600 text-sm font-medium">Complete Peptide Catalog</span>
           </div>
-          <h1 className="text-4xl sm:text-5xl font-black text-white mb-4">
+          <h1 className="text-4xl sm:text-5xl font-black text-gray-900 mb-4">
             Our <span className="gradient-text">Peptides</span>
           </h1>
-          <p className="text-slate-400 text-lg max-w-2xl mx-auto">
+          <p className="text-gray-700 text-lg max-w-2xl mx-auto">
             Every peptide with full protocols, dosing guides, and stack recommendations.
             COA-verified, third-party tested, US domestic.
           </p>
@@ -166,20 +166,20 @@ export default function ProductsPage() {
         {/* ═══════════════════════════════════════════════
             NEW TO PEPTIDES? — Beginner featured card
         ═══════════════════════════════════════════════ */}
-        <div className="mb-14 glass-card p-8 border-neon-green/20 relative overflow-hidden">
+        <div className="mb-14 glass-card p-8 border-amber-200 relative overflow-hidden">
           {/* Background glow */}
-          <div className="absolute top-0 right-0 w-64 h-64 bg-neon-green/5 rounded-full blur-3xl pointer-events-none" />
+          <div className="absolute top-0 right-0 w-64 h-64 bg-amber-50 rounded-full blur-3xl pointer-events-none" />
 
           <div className="relative flex flex-col lg:flex-row gap-8 items-start lg:items-center">
             <div className="flex-1">
-              <div className="inline-flex items-center gap-2 bg-neon-green/10 border border-neon-green/20 rounded-full px-3 py-1 mb-4">
-                <Star className="w-3.5 h-3.5 text-neon-green" />
-                <span className="text-neon-green text-xs font-semibold uppercase tracking-widest">New to Peptides?</span>
+              <div className="inline-flex items-center gap-2 bg-amber-50 border border-amber-200 rounded-full px-3 py-1 mb-4">
+                <Star className="w-3.5 h-3.5 text-amber-600" />
+                <span className="text-amber-600 text-xs font-semibold uppercase tracking-widest">New to Peptides?</span>
               </div>
-              <h2 className="text-2xl sm:text-3xl font-black text-white mb-3">
-                Start Here: <span className="text-neon-green">BPC-157</span>
+              <h2 className="text-2xl sm:text-3xl font-black text-gray-900 mb-3">
+                Start Here: <span className="text-amber-600">BPC-157</span>
               </h2>
-              <p className="text-slate-400 leading-relaxed mb-5 max-w-2xl">
+              <p className="text-gray-700 leading-relaxed mb-5 max-w-2xl">
                 If you are new to peptides, BPC-157 is the universally recommended entry point — and for good reason.
                 It has no known lethal dose, zero hormonal activity, works orally (no injections required), covers more
                 conditions than any other single peptide, and has 100+ published studies. Start with BPC-157 alone for
@@ -201,7 +201,7 @@ export default function ProductsPage() {
               <Link href="/stacks" className="btn-cta text-sm px-6 py-3 flex items-center gap-2">
                 Compare All Stacks <ArrowRight className="w-4 h-4" />
               </Link>
-              <p className="text-slate-600 text-xs lg:text-right max-w-[180px]">
+              <p className="text-gray-500 text-xs lg:text-right max-w-[180px]">
                 Not sure which peptides to combine? Our stacks page has pre-built protocols.
               </p>
             </div>
@@ -213,11 +213,11 @@ export default function ProductsPage() {
         ═══════════════════════════════════════════════ */}
         <div className="mb-16">
           <div className="mb-8">
-            <p className="text-neon-green text-xs font-semibold uppercase tracking-widest mb-2">Decision Guide</p>
-            <h2 className="text-3xl sm:text-4xl font-black text-white mb-3">
+            <p className="text-amber-600 text-xs font-semibold uppercase tracking-widest mb-2">Decision Guide</p>
+            <h2 className="text-3xl sm:text-4xl font-black text-gray-900 mb-3">
               How to Choose a <span className="gradient-text">Peptide</span>
             </h2>
-            <p className="text-slate-400 max-w-2xl">
+            <p className="text-gray-700 max-w-2xl">
               Not sure where to start? Match your primary goal to the peptides designed for it.
               Each card shows the top two options for that objective.
             </p>
@@ -233,18 +233,18 @@ export default function ProductsPage() {
                   <Icon className="w-4.5 h-4.5" />
                 </div>
                 <div>
-                  <h3 className="text-white font-bold text-base mb-0.5">{goal}</h3>
-                  <p className="text-slate-500 text-xs">{tagline}</p>
+                  <h3 className="text-gray-900 font-bold text-lg mb-0.5">{goal}</h3>
+                  <p className="text-gray-600 text-xs">{tagline}</p>
                 </div>
                 <div className="space-y-2">
                   {topPeptides.map(({ name, slug, note }) => (
                     <Link
                       key={slug}
                       href={`/products/${slug}`}
-                      className="block bg-dark-700/60 rounded-lg px-3 py-2 hover:bg-dark-700 transition-colors group"
+                      className="block bg-gray-100 rounded-lg px-3 py-2 hover:bg-gray-200 transition-colors group"
                     >
-                      <p className="text-white text-xs font-semibold group-hover:text-neon-green transition-colors">{name}</p>
-                      <p className="text-slate-500 text-xs leading-tight mt-0.5">{note}</p>
+                      <p className="text-gray-900 text-xs font-bold group-hover:text-amber-600 transition-colors">{name}</p>
+                      <p className="text-gray-600 text-xs leading-tight mt-0.5">{note}</p>
                     </Link>
                   ))}
                 </div>
@@ -253,10 +253,10 @@ export default function ProductsPage() {
           </div>
 
           {/* Stack quiz callout */}
-          <div className="flex items-center gap-4 p-5 rounded-2xl border border-neon-green/15 bg-neon-green/5">
-            <AlertCircle className="w-5 h-5 text-neon-green shrink-0" />
-            <p className="text-slate-300 text-sm">
-              <span className="text-white font-semibold">Not sure which goal fits you?</span>{' '}
+          <div className="flex items-center gap-4 p-5 rounded-2xl border border-amber-200 bg-amber-50">
+            <AlertCircle className="w-5 h-5 text-amber-600 shrink-0" />
+            <p className="text-gray-800 text-sm">
+              <span className="text-gray-900 font-bold">Not sure which goal fits you?</span>{' '}
               Our stacks page organizes everything by condition and goal with detailed explanations.
             </p>
             <Link href="/stacks" className="btn-cta text-xs px-4 py-2 shrink-0 flex items-center gap-1">
@@ -270,23 +270,23 @@ export default function ProductsPage() {
         ═══════════════════════════════════════════════ */}
         <div className="mb-16 glass-card p-8">
           <div className="mb-8">
-            <p className="text-neon-green text-xs font-semibold uppercase tracking-widest mb-2">Strategy</p>
-            <h2 className="text-3xl font-black text-white mb-2">
+            <p className="text-amber-600 text-xs font-semibold uppercase tracking-widest mb-2">Strategy</p>
+            <h2 className="text-3xl font-black text-gray-900 mb-2">
               Stacks vs Single Peptides
             </h2>
-            <p className="text-slate-400 text-sm max-w-2xl">
+            <p className="text-gray-700 text-base max-w-2xl">
               Understanding when to use one peptide versus a combination changes your results and your budget.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
             {/* Single peptide column */}
-            <div className="rounded-2xl border border-blue-400/20 bg-blue-400/5 p-6">
+            <div className="rounded-2xl border border-blue-200 bg-blue-50 p-6">
               <div className="flex items-center gap-3 mb-5">
-                <div className="w-9 h-9 rounded-xl bg-blue-400/10 text-blue-400 flex items-center justify-center">
+                <div className="w-9 h-9 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center">
                   <FlaskConical className="w-4.5 h-4.5" />
                 </div>
-                <h3 className="text-white font-bold text-lg">Single Peptide</h3>
+                <h3 className="text-gray-900 font-bold text-lg">Single Peptide</h3>
               </div>
               <ul className="space-y-3 mb-5">
                 {[
@@ -296,24 +296,24 @@ export default function ProductsPage() {
                   'Easier to identify side effects or sensitivities',
                   'Recommended entry point: BPC-157 alone for 4-8 weeks',
                 ].map((item) => (
-                  <li key={item} className="flex items-start gap-2 text-slate-400 text-sm">
-                    <CheckCircle className="w-4 h-4 text-blue-400 mt-0.5 shrink-0" />
+                  <li key={item} className="flex items-start gap-2 text-gray-700 text-base">
+                    <CheckCircle className="w-4 h-4 text-blue-600 mt-0.5 shrink-0" />
                     {item}
                   </li>
                 ))}
               </ul>
-              <p className="text-blue-400 text-xs font-semibold uppercase tracking-wider">
+              <p className="text-blue-600 text-xs font-semibold uppercase tracking-wider">
                 Best for: First-timers, budget-conscious users, specific targeted issues
               </p>
             </div>
 
             {/* Stack column */}
-            <div className="rounded-2xl border border-neon-green/20 bg-neon-green/5 p-6">
+            <div className="rounded-2xl border border-amber-200 bg-amber-50 p-6">
               <div className="flex items-center gap-3 mb-5">
-                <div className="w-9 h-9 rounded-xl bg-neon-green/10 text-neon-green flex items-center justify-center">
+                <div className="w-9 h-9 rounded-xl bg-amber-50 text-amber-600 flex items-center justify-center">
                   <Layers className="w-4.5 h-4.5" />
                 </div>
-                <h3 className="text-white font-bold text-lg">Peptide Stack</h3>
+                <h3 className="text-gray-900 font-bold text-lg">Peptide Stack</h3>
               </div>
               <ul className="space-y-3 mb-5">
                 {[
@@ -323,13 +323,13 @@ export default function ProductsPage() {
                   'More cost effective per outcome for intermediate users',
                   'Pre-built stacks available with exact dosing — no guesswork',
                 ].map((item) => (
-                  <li key={item} className="flex items-start gap-2 text-slate-400 text-sm">
-                    <CheckCircle className="w-4 h-4 text-neon-green mt-0.5 shrink-0" />
+                  <li key={item} className="flex items-start gap-2 text-gray-700 text-base">
+                    <CheckCircle className="w-4 h-4 text-amber-600 mt-0.5 shrink-0" />
                     {item}
                   </li>
                 ))}
               </ul>
-              <p className="text-neon-green text-xs font-semibold uppercase tracking-wider">
+              <p className="text-amber-600 text-xs font-semibold uppercase tracking-wider">
                 Best for: Intermediate users, serious goals, faster outcomes
               </p>
             </div>
@@ -339,13 +339,13 @@ export default function ProductsPage() {
           <div className="overflow-x-auto mb-6">
             <table className="w-full text-sm">
               <thead>
-                <tr className="border-b border-white/10">
-                  <th className="text-left text-slate-500 font-semibold pb-3 pr-4">Factor</th>
-                  <th className="text-center text-blue-400 font-semibold pb-3 px-4">Single Peptide</th>
-                  <th className="text-center text-neon-green font-semibold pb-3 px-4">Stack</th>
+                <tr className="border-b border-gray-200">
+                  <th className="text-left text-gray-600 font-semibold pb-3 pr-4">Factor</th>
+                  <th className="text-center text-blue-600 font-semibold pb-3 px-4">Single Peptide</th>
+                  <th className="text-center text-amber-600 font-semibold pb-3 px-4">Stack</th>
                 </tr>
               </thead>
-              <tbody className="divide-y divide-white/5">
+              <tbody className="divide-y divide-gray-100">
                 {[
                   ['Monthly cost (est.)', '$50-70', '$80-140'],
                   ['Protocol complexity', 'Low', 'Medium'],
@@ -354,9 +354,9 @@ export default function ProductsPage() {
                   ['Maximum effect ceiling', 'Moderate', 'High'],
                 ].map(([factor, single, stack]) => (
                   <tr key={factor}>
-                    <td className="text-slate-400 py-3 pr-4">{factor}</td>
-                    <td className="text-center text-slate-300 py-3 px-4">{single}</td>
-                    <td className="text-center text-slate-300 py-3 px-4">{stack}</td>
+                    <td className="text-gray-700 py-3 pr-4">{factor}</td>
+                    <td className="text-center text-gray-800 py-3 px-4">{single}</td>
+                    <td className="text-center text-gray-800 py-3 px-4">{stack}</td>
                   </tr>
                 ))}
               </tbody>
@@ -376,16 +376,16 @@ export default function ProductsPage() {
             <div key={category} className="mb-20">
               {/* Category header */}
               <div className="mb-8">
-                <h2 className="text-2xl font-bold text-white mb-1 flex items-center gap-3">
-                  <span className="w-2 h-6 bg-neon-green rounded-full inline-block" />
+                <h2 className="text-2xl font-bold text-gray-900 mb-1 flex items-center gap-3">
+                  <span className="w-2 h-6 bg-amber-600 rounded-full inline-block" />
                   {category === 'Supplies' ? 'Reconstitution Supplies' : `${category} Peptides`}
                 </h2>
                 {categoryDescriptions[category] && (
-                  <div className="mt-4 pl-5 border-l border-neon-green/20">
-                    <p className="text-neon-green text-sm font-semibold mb-1.5">
+                  <div className="mt-4 pl-5 border-l border-amber-200">
+                    <p className="text-amber-600 text-sm font-semibold mb-1.5">
                       {categoryDescriptions[category].heading}
                     </p>
-                    <p className="text-slate-400 text-sm leading-relaxed max-w-3xl">
+                    <p className="text-gray-700 text-base leading-relaxed max-w-3xl">
                       {categoryDescriptions[category].body}
                     </p>
                   </div>
@@ -407,23 +407,23 @@ export default function ProductsPage() {
         ═══════════════════════════════════════════════ */}
         <div className="mb-14">
           <div className="mb-10">
-            <p className="text-neon-green text-xs font-semibold uppercase tracking-widest mb-2">Common Questions</p>
-            <h2 className="text-3xl sm:text-4xl font-black text-white mb-3">
+            <p className="text-amber-600 text-xs font-semibold uppercase tracking-widest mb-2">Common Questions</p>
+            <h2 className="text-3xl sm:text-4xl font-black text-gray-900 mb-3">
               Frequently Asked <span className="gradient-text">Questions</span>
             </h2>
-            <p className="text-slate-400 max-w-xl">
+            <p className="text-gray-700 max-w-xl">
               Questions specific to ordering, sourcing, and using peptides from this catalog.
             </p>
           </div>
 
           <div className="space-y-3">
             {productFaqs.map(({ q, a }, i) => (
-              <div key={i} className="glass-card p-6 border-l-2 border-neon-green/25">
+              <div key={i} className="glass-card p-6 border-l-2 border-amber-400">
                 <div className="flex items-start gap-3">
-                  <HelpCircle className="w-4.5 h-4.5 text-neon-green mt-0.5 shrink-0" />
+                  <HelpCircle className="w-4.5 h-4.5 text-amber-600 mt-0.5 shrink-0" />
                   <div>
-                    <h3 className="text-white font-semibold mb-2">{q}</h3>
-                    <p className="text-slate-400 text-sm leading-relaxed">{a}</p>
+                    <h3 className="text-gray-900 font-black text-lg mb-2">{q}</h3>
+                    <p className="text-gray-700 text-base leading-relaxed">{a}</p>
                   </div>
                 </div>
               </div>
@@ -440,15 +440,15 @@ export default function ProductsPage() {
         {/* ═══════════════════════════════════════════════
             BOTTOM CTA
         ═══════════════════════════════════════════════ */}
-        <div className="text-center mt-4 p-10 glass-card border-neon-green/15">
-          <div className="inline-flex items-center gap-2 bg-neon-green/10 border border-neon-green/20 rounded-full px-4 py-1.5 mb-5">
-            <Package className="w-4 h-4 text-neon-green" />
-            <span className="text-neon-green text-xs font-semibold uppercase tracking-widest">COA-Verified · US Domestic</span>
+        <div className="text-center mt-4 p-10 glass-card">
+          <div className="inline-flex items-center gap-2 bg-amber-50 border border-amber-200 rounded-full px-4 py-1.5 mb-5">
+            <Package className="w-4 h-4 text-amber-600" />
+            <span className="text-amber-600 text-xs font-semibold uppercase tracking-widest">COA-Verified · US Domestic</span>
           </div>
-          <h2 className="text-2xl sm:text-3xl font-bold text-white mb-3">
+          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">
             Ready to Order?
           </h2>
-          <p className="text-slate-400 mb-4 max-w-lg mx-auto">
+          <p className="text-gray-700 mb-4 max-w-lg mx-auto">
             All peptides on this site are available from our recommended supplier — third-party tested,
             98%+ purity guaranteed, with US domestic shipping and cold-chain packaging.
           </p>
@@ -459,7 +459,7 @@ export default function ProductsPage() {
               rel="nofollow noopener noreferrer"
               className="btn-cta text-base px-8 py-4 inline-flex items-center gap-2"
             >
-              View Apollo Peptide Sciences <ArrowRight className="w-5 h-5" />
+              View Phiogen <ArrowRight className="w-5 h-5" />
             </a>
             <Link href="/stacks" className="btn-secondary text-base px-8 py-4">
               Browse Stacks First
@@ -467,13 +467,13 @@ export default function ProductsPage() {
           </div>
           <div className="flex flex-wrap justify-center gap-5 mt-4">
             {['COA Verified', 'US Domestic', '98%+ Purity', 'Cold-Chain Shipping'].map((item) => (
-              <div key={item} className="flex items-center gap-1.5 text-sm text-slate-500">
-                <CheckCircle className="w-4 h-4 text-neon-green" />
+              <div key={item} className="flex items-center gap-1.5 text-sm text-gray-600">
+                <CheckCircle className="w-4 h-4 text-amber-500" />
                 <span>{item}</span>
               </div>
             ))}
           </div>
-          <p className="text-slate-600 text-xs mt-4">
+          <p className="text-gray-500 text-xs mt-4">
             Affiliate link — we earn a commission at no additional cost to you. Not medical advice.
           </p>
         </div>

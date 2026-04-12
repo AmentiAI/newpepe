@@ -28,7 +28,7 @@ const stackMeta: Record<string, { emoji: string; color: string; borderColor: str
   'ultimate-healing': {
     emoji: '🛡️',
     color: 'emerald',
-    borderColor: 'border-emerald-500/30',
+    borderColor: 'border-emerald-200',
     glowColor: 'rgba(16, 185, 129, 0.08)',
     category: 'Healing & Recovery',
     highlight: '50–70% faster recovery',
@@ -42,7 +42,7 @@ const stackMeta: Record<string, { emoji: string; color: string; borderColor: str
   'anti-aging-longevity': {
     emoji: '⏳',
     color: 'purple',
-    borderColor: 'border-purple-500/30',
+    borderColor: 'border-blue-200',
     glowColor: 'rgba(168, 85, 247, 0.08)',
     category: 'Anti-Aging & Longevity',
     highlight: '28% mortality reduction',
@@ -56,7 +56,7 @@ const stackMeta: Record<string, { emoji: string; color: string; borderColor: str
   'body-recomp': {
     emoji: '🔥',
     color: 'blue',
-    borderColor: 'border-blue-500/30',
+    borderColor: 'border-blue-200',
     glowColor: 'rgba(59, 130, 246, 0.08)',
     category: 'Body Composition',
     highlight: '8–10× GH amplification',
@@ -70,7 +70,7 @@ const stackMeta: Record<string, { emoji: string; color: string; borderColor: str
   'cognitive-stack': {
     emoji: '🧠',
     color: 'cyan',
-    borderColor: 'border-cyan-500/30',
+    borderColor: 'border-cyan-200',
     glowColor: 'rgba(6, 182, 212, 0.08)',
     category: 'Cognitive Enhancement',
     highlight: 'BDNF + NAD+ neural optimization',
@@ -84,7 +84,7 @@ const stackMeta: Record<string, { emoji: string; color: string; borderColor: str
   'athlete-performance': {
     emoji: '⚡',
     color: 'amber',
-    borderColor: 'border-amber-500/30',
+    borderColor: 'border-amber-200',
     glowColor: 'rgba(245, 158, 11, 0.08)',
     category: 'Athletic Performance',
     highlight: '2–3× faster recovery',
@@ -98,17 +98,17 @@ const stackMeta: Record<string, { emoji: string; color: string; borderColor: str
 };
 
 const colorClasses: Record<string, { badge: string; text: string; bg: string; dot: string }> = {
-  emerald: { badge: 'text-emerald-400 border-emerald-400/30 bg-emerald-400/10', text: 'text-emerald-400', bg: 'bg-emerald-400/10', dot: 'bg-emerald-400' },
-  purple: { badge: 'text-purple-400 border-purple-400/30 bg-purple-400/10', text: 'text-purple-400', bg: 'bg-purple-400/10', dot: 'bg-purple-400' },
-  blue: { badge: 'text-blue-400 border-blue-400/30 bg-blue-400/10', text: 'text-blue-400', bg: 'bg-blue-400/10', dot: 'bg-blue-400' },
-  cyan: { badge: 'text-cyan-400 border-cyan-400/30 bg-cyan-400/10', text: 'text-cyan-400', bg: 'bg-cyan-400/10', dot: 'bg-cyan-400' },
-  amber: { badge: 'text-amber-400 border-amber-400/30 bg-amber-400/10', text: 'text-amber-400', bg: 'bg-amber-400/10', dot: 'bg-amber-400' },
+  emerald: { badge: 'text-emerald-600 border-emerald-200 bg-emerald-50', text: 'text-emerald-600', bg: 'bg-emerald-50', dot: 'bg-emerald-600' },
+  purple: { badge: 'text-blue-600 border-blue-200 bg-blue-50', text: 'text-blue-600', bg: 'bg-blue-50', dot: 'bg-blue-600' },
+  blue: { badge: 'text-blue-600 border-blue-200 bg-blue-50', text: 'text-blue-600', bg: 'bg-blue-50', dot: 'bg-blue-600' },
+  cyan: { badge: 'text-cyan-600 border-cyan-200 bg-cyan-50', text: 'text-cyan-600', bg: 'bg-cyan-50', dot: 'bg-cyan-600' },
+  amber: { badge: 'text-amber-600 border-amber-200 bg-amber-50', text: 'text-amber-600', bg: 'bg-amber-50', dot: 'bg-amber-600' },
 };
 
 const difficultyStyle: Record<string, string> = {
-  Beginner: 'text-emerald-400 border-emerald-400/30 bg-emerald-400/10',
-  Intermediate: 'text-amber-400 border-amber-400/30 bg-amber-400/10',
-  Advanced: 'text-red-400 border-red-400/30 bg-red-400/10',
+  Beginner: 'text-emerald-600 border-emerald-200 bg-emerald-50',
+  Intermediate: 'text-amber-600 border-amber-200 bg-amber-50',
+  Advanced: 'text-red-600 border-red-200 bg-red-50',
 };
 
 const howItWorksSteps = [
@@ -155,27 +155,27 @@ const stackFaqs = [
 
 export default function StacksPage() {
   return (
-    <div className="min-h-screen" style={{ background: 'linear-gradient(180deg, #060610 0%, #080614 50%, #060610 100%)' }}>
+    <div className="bg-white min-h-screen">
 
       {/* Hero */}
       <section className="relative pt-32 pb-20 overflow-hidden">
-        <div className="absolute inset-0 grid-bg opacity-30" />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[400px] bg-neon-green/5 blur-[150px] rounded-full pointer-events-none" />
+        <div className="absolute inset-0 opacity-30" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[400px] bg-amber-50 blur-[150px] rounded-full pointer-events-none" />
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="inline-flex items-center gap-2 bg-neon-green/10 border border-neon-green/20 rounded-full px-4 py-2 mb-6">
-            <Layers className="w-4 h-4" style={{ color: '#00ff88' }} />
-            <span className="text-sm font-semibold tracking-wide" style={{ color: '#00ff88' }}>EXPERT-DESIGNED PEPTIDE STACKS</span>
+          <div className="inline-flex items-center gap-2 bg-amber-50 border border-amber-200 rounded-full px-4 py-2 mb-6">
+            <Layers className="w-4 h-4 text-amber-600" />
+            <span className="text-sm font-semibold tracking-wide text-amber-600">EXPERT-DESIGNED PEPTIDE STACKS</span>
           </div>
-          <h1 className="text-5xl sm:text-7xl font-black text-white leading-tight mb-6">
+          <h1 className="text-5xl sm:text-7xl font-black text-gray-900 leading-tight mb-6">
             Peptide<br />
-            <span style={{ color: '#00ff88' }}>Stack Protocols</span>
+            <span className="text-amber-600">Stack Protocols</span>
           </h1>
-          <p className="text-slate-300 text-xl leading-relaxed mb-4 max-w-3xl mx-auto">
+          <p className="text-gray-800 text-xl leading-relaxed mb-4 max-w-3xl mx-auto">
             Five evidence-based peptide stacks for every goal. Each protocol is based on peer-reviewed research
             with complete dosing guides, timing protocols, and expected outcomes.
           </p>
-          <p className="text-slate-500 text-base mb-10 max-w-2xl mx-auto">
+          <p className="text-gray-600 text-base mb-10 max-w-2xl mx-auto">
             Every stack is available from our recommended supplier — COA verified, US domestic, ships 24–48 hours.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
@@ -208,23 +208,23 @@ export default function StacksPage() {
       {/* ── STACK COMPARISON MATRIX ── */}
       <section className="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center gap-3 mb-3">
-          <Layers className="w-6 h-6" style={{ color: '#00ff88' }} />
-          <h2 className="text-3xl font-black text-white">Stack Comparison Matrix</h2>
+          <Layers className="w-6 h-6 text-amber-600" />
+          <h2 className="text-3xl font-black text-gray-900">Stack Comparison Matrix</h2>
         </div>
-        <p className="text-slate-400 mb-8 max-w-3xl">Compare all five stacks side-by-side across every relevant dimension to find the right fit for your goals, experience level, and commitment.</p>
+        <p className="text-gray-700 mb-8 max-w-3xl">Compare all five stacks side-by-side across every relevant dimension to find the right fit for your goals, experience level, and commitment.</p>
 
-        <div className="overflow-x-auto rounded-2xl" style={{ border: '1px solid rgba(0,255,136,0.12)' }}>
+        <div className="overflow-x-auto rounded-2xl border border-amber-200">
           <table className="w-full text-xs min-w-[900px]">
             <thead>
-              <tr style={{ background: 'rgba(0,255,136,0.04)' }}>
-                <th className="text-left py-4 px-4 text-slate-400 font-semibold w-36">Stack</th>
-                <th className="text-left py-4 px-4 text-slate-400 font-semibold">Primary Goal</th>
-                <th className="text-left py-4 px-4 text-slate-400 font-semibold">Difficulty</th>
-                <th className="text-left py-4 px-4 text-slate-400 font-semibold">Cycle</th>
-                <th className="text-left py-4 px-4 text-slate-400 font-semibold">Injections/wk</th>
-                <th className="text-left py-4 px-4 text-slate-400 font-semibold">First Results</th>
-                <th className="text-left py-4 px-4 text-slate-400 font-semibold">Best For</th>
-                <th className="text-left py-4 px-4 text-red-400 font-semibold">Not For</th>
+              <tr className="bg-amber-50">
+                <th className="text-left py-4 px-4 text-gray-700 font-semibold w-36">Stack</th>
+                <th className="text-left py-4 px-4 text-gray-700 font-semibold">Primary Goal</th>
+                <th className="text-left py-4 px-4 text-gray-700 font-semibold">Difficulty</th>
+                <th className="text-left py-4 px-4 text-gray-700 font-semibold">Cycle</th>
+                <th className="text-left py-4 px-4 text-gray-700 font-semibold">Injections/wk</th>
+                <th className="text-left py-4 px-4 text-gray-700 font-semibold">First Results</th>
+                <th className="text-left py-4 px-4 text-gray-700 font-semibold">Best For</th>
+                <th className="text-left py-4 px-4 text-red-600 font-semibold">Not For</th>
               </tr>
             </thead>
             <tbody>
@@ -232,22 +232,22 @@ export default function StacksPage() {
                 const meta = stackMeta[stack.id];
                 const cols = colorClasses[meta?.color || 'emerald'];
                 return (
-                  <tr key={stack.id} style={{ borderTop: '1px solid rgba(255,255,255,0.04)', background: i % 2 === 0 ? 'rgba(255,255,255,0.01)' : 'transparent' }}>
+                  <tr key={stack.id} style={{ borderTop: '1px solid rgba(0,0,0,0.06)', background: i % 2 === 0 ? 'rgba(0,0,0,0.01)' : 'transparent' }}>
                     <td className="py-4 px-4">
                       <div className="flex items-center gap-2">
                         <span className="text-lg">{meta?.emoji}</span>
                         <Link href={`/stacks/${stack.id}`} className={`font-bold ${cols.text} hover:underline leading-tight`}>{stack.name}</Link>
                       </div>
                     </td>
-                    <td className="py-4 px-4 text-slate-300">{stack.goal}</td>
+                    <td className="py-4 px-4 text-gray-800">{stack.goal}</td>
                     <td className="py-4 px-4">
                       <span className={`px-2 py-1 rounded-full text-xs font-bold border ${difficultyStyle[stack.difficulty]}`}>{stack.difficulty}</span>
                     </td>
-                    <td className="py-4 px-4 text-slate-400 whitespace-nowrap">{meta?.cycleLength || stack.duration}</td>
-                    <td className="py-4 px-4 text-slate-300 font-mono">{meta?.weeklyInjections || '7'}</td>
-                    <td className="py-4 px-4 text-slate-300">{meta?.firstResults || '1–2 weeks'}</td>
-                    <td className="py-4 px-4 text-slate-400 max-w-[160px]">{meta?.bestFor}</td>
-                    <td className="py-4 px-4 text-red-400/70 max-w-[160px]">{meta?.notFor}</td>
+                    <td className="py-4 px-4 text-gray-700 whitespace-nowrap">{meta?.cycleLength || stack.duration}</td>
+                    <td className="py-4 px-4 text-gray-800 font-mono">{meta?.weeklyInjections || '7'}</td>
+                    <td className="py-4 px-4 text-gray-800">{meta?.firstResults || '1–2 weeks'}</td>
+                    <td className="py-4 px-4 text-gray-700 max-w-[160px]">{meta?.bestFor}</td>
+                    <td className="py-4 px-4 text-red-500 max-w-[160px]">{meta?.notFor}</td>
                   </tr>
                 );
               })}
@@ -258,8 +258,8 @@ export default function StacksPage() {
 
       {/* Stacks Grid */}
       <section id="stacks" className="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-black text-white mb-3">All Stack Protocols</h2>
-        <p className="text-slate-400 mb-10">Full detail on each protocol — benefits, peptides, and how to get started.</p>
+        <h2 className="text-3xl font-black text-gray-900 mb-3">All Stack Protocols</h2>
+        <p className="text-gray-700 mb-10">Full detail on each protocol — benefits, peptides, and how to get started.</p>
         <div className="space-y-8">
           {stacks.map((stack, index) => {
             const meta = stackMeta[stack.id];
@@ -282,7 +282,7 @@ export default function StacksPage() {
                       <span className={`text-xs font-bold px-3 py-1.5 rounded-full border ${difficultyStyle[stack.difficulty]}`}>
                         {stack.difficulty}
                       </span>
-                      <span className="text-xs text-slate-500 border border-slate-700 px-3 py-1.5 rounded-full flex items-center gap-1">
+                      <span className="text-xs text-gray-500 border border-gray-200 px-3 py-1.5 rounded-full flex items-center gap-1">
                         <Clock className="w-3 h-3" /> {stack.duration}
                       </span>
                       <span className={`text-xs font-bold px-3 py-1 rounded-full border ${cols.badge}`}>
@@ -290,16 +290,16 @@ export default function StacksPage() {
                       </span>
                     </div>
 
-                    <h2 className="text-3xl font-black text-white mb-2">{stack.name}</h2>
+                    <h2 className="text-3xl font-black text-gray-900 mb-2">{stack.name}</h2>
                     <p className={`${cols.text} font-semibold mb-4`}>{stack.tagline}</p>
-                    <p className="text-slate-400 leading-relaxed mb-6">
+                    <p className="text-gray-700 leading-relaxed mb-6">
                       {stack.description.split('\n')[0]}
                     </p>
 
                     {/* Benefits list — first 4 */}
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 mb-6">
                       {stack.benefits.slice(0, 4).map((b) => (
-                        <div key={b} className="flex items-start gap-2 text-sm text-slate-300">
+                        <div key={b} className="flex items-start gap-2 text-sm text-gray-800">
                           <span className={`${cols.text} shrink-0 mt-0.5`}>→</span>
                           {b}
                         </div>
@@ -312,7 +312,7 @@ export default function StacksPage() {
                         <Link
                           key={p}
                           href={`/products/${p}`}
-                          className={`text-xs font-mono bg-dark-800 border ${meta?.borderColor} ${cols.text} px-3 py-1.5 rounded-full hover:opacity-80 transition-opacity`}
+                          className={`text-xs font-mono bg-gray-100 text-gray-800 border border-gray-200 px-3 py-1.5 rounded-full hover:opacity-80 transition-opacity`}
                         >
                           {p.toUpperCase()}
                         </Link>
@@ -333,33 +333,33 @@ export default function StacksPage() {
                   </div>
 
                   {/* Right — protocol snapshot */}
-                  <div className="p-6 md:p-8 border-t lg:border-t-0 lg:border-l" style={{ borderColor: 'rgba(255,255,255,0.06)' }}>
-                    <div className="text-xs font-bold text-slate-500 uppercase tracking-widest mb-4">Protocol Snapshot</div>
+                  <div className="p-6 md:p-8 border-t lg:border-t-0 lg:border-l border-gray-200">
+                    <div className="text-xs font-bold text-gray-500 uppercase tracking-widest mb-4">Protocol Snapshot</div>
 
                     {/* Quick stats */}
                     <div className="space-y-4 mb-6">
                       <div>
-                        <div className="text-xs text-slate-500 mb-1">Goal</div>
+                        <div className="text-xs text-gray-500 mb-1">Goal</div>
                         <div className={`text-sm font-semibold ${cols.text}`}>{stack.goal}</div>
                       </div>
                       <div>
-                        <div className="text-xs text-slate-500 mb-1">Duration</div>
-                        <div className="text-sm text-white">{stack.duration}</div>
+                        <div className="text-xs text-gray-500 mb-1">Duration</div>
+                        <div className="text-sm text-gray-900">{stack.duration}</div>
                       </div>
                       <div>
-                        <div className="text-xs text-slate-500 mb-1">Difficulty</div>
-                        <div className="text-sm text-white">{stack.difficulty}</div>
+                        <div className="text-xs text-gray-500 mb-1">Difficulty</div>
+                        <div className="text-sm text-gray-900">{stack.difficulty}</div>
                       </div>
                       <div>
-                        <div className="text-xs text-slate-500 mb-1">Peptides in Stack</div>
-                        <div className="text-sm text-white">{stack.peptides.length} compounds</div>
+                        <div className="text-xs text-gray-500 mb-1">Peptides in Stack</div>
+                        <div className="text-sm text-gray-900">{stack.peptides.length} compounds</div>
                       </div>
                     </div>
 
                     {/* Benefits preview */}
                     <div className="space-y-2 mb-6">
                       {stack.benefits.slice(4).map((b) => (
-                        <div key={b} className="flex items-start gap-2 text-xs text-slate-400">
+                        <div key={b} className="flex items-start gap-2 text-xs text-gray-700">
                           <span className={`${cols.dot} w-1 h-1 rounded-full mt-1.5 shrink-0`} style={{ display: 'inline-block' }} />
                           {b}
                         </div>
@@ -379,25 +379,25 @@ export default function StacksPage() {
       </section>
 
       {/* ── STACK QUIZ WIDGET ── */}
-      <section className="py-16" style={{ background: 'rgba(0, 255, 136, 0.02)', borderTop: '1px solid rgba(0, 255, 136, 0.06)' }}>
+      <section className="py-16 bg-amber-50 border-t border-amber-200">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-8">
             <div className="flex items-center justify-center gap-2 mb-3">
-              <Zap className="w-6 h-6" style={{ color: '#00ff88' }} />
-              <h2 className="text-3xl font-black text-white">Not Sure Which Stack?</h2>
+              <Zap className="w-6 h-6 text-amber-600" />
+              <h2 className="text-3xl font-black text-gray-900">Not Sure Which Stack?</h2>
             </div>
-            <p className="text-slate-400 max-w-xl mx-auto">Answer 5 questions about your goals, experience, and commitment — and get a personalized stack recommendation with estimated cost and next steps.</p>
+            <p className="text-gray-700 max-w-xl mx-auto">Answer 5 questions about your goals, experience, and commitment — and get a personalized stack recommendation with estimated cost and next steps.</p>
           </div>
           <StackQuiz />
         </div>
       </section>
 
       {/* How It Works */}
-      <section className="py-16" style={{ borderTop: '1px solid rgba(255,255,255,0.04)' }}>
+      <section className="py-16 border-t border-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-black text-white mb-3">How Peptide Stacking Works</h2>
-            <p className="text-slate-400 max-w-xl mx-auto">
+            <h2 className="text-3xl font-black text-gray-900 mb-3">How Peptide Stacking Works</h2>
+            <p className="text-gray-700 max-w-xl mx-auto">
               Peptide stacking is the practice of combining compounds that work on complementary mechanisms —
               producing results that are greater than the sum of individual peptides.
             </p>
@@ -405,9 +405,9 @@ export default function StacksPage() {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-5">
             {howItWorksSteps.map((step) => (
               <div key={step.num} className="glass-card p-6 text-center">
-                <div className="text-4xl font-black mb-3" style={{ color: 'rgba(0, 255, 136, 0.2)' }}>{step.num}</div>
-                <h3 className="text-white font-bold mb-3">{step.title}</h3>
-                <p className="text-slate-400 text-sm leading-relaxed">{step.desc}</p>
+                <div className="text-4xl font-black mb-3 text-amber-200">{step.num}</div>
+                <h3 className="text-gray-900 font-bold mb-3">{step.title}</h3>
+                <p className="text-gray-700 text-base leading-relaxed">{step.desc}</p>
               </div>
             ))}
           </div>
@@ -417,46 +417,46 @@ export default function StacksPage() {
       {/* ── HOW TO BUILD YOUR OWN STACK ── */}
       <section className="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center gap-3 mb-3">
-          <BookOpen className="w-6 h-6" style={{ color: '#00ff88' }} />
-          <h2 className="text-3xl font-black text-white">How to Build Your Own Stack</h2>
+          <BookOpen className="w-6 h-6 text-amber-600" />
+          <h2 className="text-3xl font-black text-gray-900">How to Build Your Own Stack</h2>
         </div>
-        <p className="text-slate-400 mb-10 max-w-3xl">The principles behind the pre-built stacks — so you can design intelligently for your specific situation.</p>
+        <p className="text-gray-700 mb-10 max-w-3xl">The principles behind the pre-built stacks — so you can design intelligently for your specific situation.</p>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           <div className="space-y-5">
             <div className="glass-card p-6">
-              <h3 className="text-white font-bold mb-3 flex items-center gap-2">
-                <span style={{ color: '#00ff88' }}>→</span> Synergistic vs. Redundant Peptides
+              <h3 className="text-gray-900 font-bold mb-3 flex items-center gap-2">
+                <span className="text-amber-600">→</span> Synergistic vs. Redundant Peptides
               </h3>
-              <p className="text-slate-400 text-sm leading-relaxed mb-3">The key to effective stacking is choosing peptides that work on different — but complementary — mechanisms. BPC-157 (local tissue repair) + TB-500 (systemic actin remodeling) are synergistic. Adding a third healing peptide that works identically to one of them would be redundant, not additive. Ask: does each compound in my stack do something the others cannot?</p>
+              <p className="text-gray-700 text-base leading-relaxed mb-3">The key to effective stacking is choosing peptides that work on different — but complementary — mechanisms. BPC-157 (local tissue repair) + TB-500 (systemic actin remodeling) are synergistic. Adding a third healing peptide that works identically to one of them would be redundant, not additive. Ask: does each compound in my stack do something the others cannot?</p>
             </div>
 
             <div className="glass-card p-6">
-              <h3 className="text-white font-bold mb-3 flex items-center gap-2">
-                <span style={{ color: '#00ff88' }}>→</span> Loading and Maintenance Phases
+              <h3 className="text-gray-900 font-bold mb-3 flex items-center gap-2">
+                <span className="text-amber-600">→</span> Loading and Maintenance Phases
               </h3>
-              <p className="text-slate-400 text-sm leading-relaxed">Some protocols benefit from a loading phase — higher doses for the first 2 weeks to rapidly establish the target effect, followed by a maintenance dose for the cycle duration. GH peptides (CJC/Ipamorelin) typically do not use a loading phase, while healing protocols sometimes front-load BPC-157 at twice-daily dosing for the first 2 weeks, then drop to once daily. Know your peptide's pharmacodynamics before designing a loading phase.</p>
+              <p className="text-gray-700 text-base leading-relaxed">Some protocols benefit from a loading phase — higher doses for the first 2 weeks to rapidly establish the target effect, followed by a maintenance dose for the cycle duration. GH peptides (CJC/Ipamorelin) typically do not use a loading phase, while healing protocols sometimes front-load BPC-157 at twice-daily dosing for the first 2 weeks, then drop to once daily. Know your peptide's pharmacodynamics before designing a loading phase.</p>
             </div>
 
             <div className="glass-card p-6">
-              <h3 className="text-white font-bold mb-3 flex items-center gap-2">
-                <span style={{ color: '#00ff88' }}>→</span> Cycling Principles
+              <h3 className="text-gray-900 font-bold mb-3 flex items-center gap-2">
+                <span className="text-amber-600">→</span> Cycling Principles
               </h3>
-              <p className="text-slate-400 text-sm leading-relaxed">Most peptides do not require mandatory cycling (they do not cause receptor downregulation or suppression), but cycling prevents tolerance and allows cost-effective use. Standard approach: 8–12 weeks on, 4 weeks off for continuous-use peptides. Pulse protocols (5 days on, 2 days off) can extend the effective window of GH peptides. Epithalon and similar short-cycle peptides are designed for infrequent, intense cycling rather than continuous use.</p>
+              <p className="text-gray-700 text-base leading-relaxed">Most peptides do not require mandatory cycling (they do not cause receptor downregulation or suppression), but cycling prevents tolerance and allows cost-effective use. Standard approach: 8–12 weeks on, 4 weeks off for continuous-use peptides. Pulse protocols (5 days on, 2 days off) can extend the effective window of GH peptides. Epithalon and similar short-cycle peptides are designed for infrequent, intense cycling rather than continuous use.</p>
             </div>
           </div>
 
           <div className="space-y-5">
             <div className="glass-card p-6">
-              <h3 className="text-white font-bold mb-3 flex items-center gap-2">
-                <span style={{ color: '#00ff88' }}>→</span> Combinations to Avoid
+              <h3 className="text-gray-900 font-bold mb-3 flex items-center gap-2">
+                <span className="text-amber-600">→</span> Combinations to Avoid
               </h3>
-              <p className="text-slate-400 text-sm leading-relaxed mb-3">There are very few genuinely antagonistic peptide combinations — peptides generally do not interfere with each other's mechanisms. The caution zones: (1) Multiple GH-releasing compounds simultaneously can overstimulate the axis — stick to one GHRH (CJC-1295) + one GHRP (Ipamorelin) approach, not two GHRHs together. (2) Cognitive peptides with strong anxiolytic effects (Selank) may blunt the stimulatory effects of others — track carefully. (3) When stacking 4+ compounds, add one at a time to identify causes of any effects.</p>
+              <p className="text-gray-700 text-base leading-relaxed mb-3">There are very few genuinely antagonistic peptide combinations — peptides generally do not interfere with each other's mechanisms. The caution zones: (1) Multiple GH-releasing compounds simultaneously can overstimulate the axis — stick to one GHRH (CJC-1295) + one GHRP (Ipamorelin) approach, not two GHRHs together. (2) Cognitive peptides with strong anxiolytic effects (Selank) may blunt the stimulatory effects of others — track carefully. (3) When stacking 4+ compounds, add one at a time to identify causes of any effects.</p>
             </div>
 
             <div className="glass-card p-6">
-              <h3 className="text-white font-bold mb-3 flex items-center gap-2">
-                <span style={{ color: '#00ff88' }}>→</span> Cost Optimization Strategies
+              <h3 className="text-gray-900 font-bold mb-3 flex items-center gap-2">
+                <span className="text-amber-600">→</span> Cost Optimization Strategies
               </h3>
               <ul className="space-y-2">
                 {[
@@ -466,8 +466,8 @@ export default function StacksPage() {
                   { label: 'Front-load important periods', detail: 'Concentrate your most expensive stack during high-demand periods (intense training blocks, post-surgery)' },
                 ].map((item) => (
                   <li key={item.label} className="text-sm">
-                    <span className="text-neon-green font-semibold">{item.label}:</span>
-                    <span className="text-slate-400 ml-2 text-xs">{item.detail}</span>
+                    <span className="text-amber-600 font-semibold">{item.label}:</span>
+                    <span className="text-gray-700 ml-2 text-xs">{item.detail}</span>
                   </li>
                 ))}
               </ul>
@@ -477,27 +477,27 @@ export default function StacksPage() {
       </section>
 
       {/* ── STACK OF THE MONTH: WOLVERINE ── */}
-      <section className="py-16" style={{ background: 'rgba(16,185,129,0.02)', borderTop: '1px solid rgba(16,185,129,0.08)' }}>
+      <section className="py-16 bg-emerald-50 border-t border-emerald-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center gap-3 mb-8">
-            <Star className="w-6 h-6 text-emerald-400" />
+            <Star className="w-6 h-6 text-emerald-600" />
             <div>
-              <div className="text-xs font-bold text-emerald-400 uppercase tracking-widest mb-1">Stack of the Month</div>
-              <h2 className="text-3xl font-black text-white">The Wolverine Stack</h2>
+              <div className="text-xs font-bold text-emerald-600 uppercase tracking-widest mb-1">Stack of the Month</div>
+              <h2 className="text-3xl font-black text-gray-900">The Wolverine Stack</h2>
             </div>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
             {/* Main description */}
             <div className="lg:col-span-2 space-y-5">
-              <div className="glass-card p-6" style={{ border: '1px solid rgba(16,185,129,0.25)' }}>
-                <div className="text-xs font-bold text-emerald-400 uppercase tracking-wide mb-2">What Makes the Wolverine Stack Different</div>
-                <p className="text-slate-300 text-sm leading-relaxed mb-4">The Wolverine Stack — BPC-157 + TB-500 — earns its name from the fictional character's supernatural healing ability. It represents the most complete tissue repair protocol available, combining two peptides with entirely different but perfectly complementary mechanisms. BPC-157 works at the local injury site, recruiting repair factors and regenerating vasculature. TB-500 drives systemic repair through actin regulation and stem cell migration. Together, they cover everything from tendon microtears to muscle belly injuries to ligament damage.</p>
-                <p className="text-slate-300 text-sm leading-relaxed">What sets this month's spotlight on it: the growing volume of anecdotal evidence from athletes recovering from previously "career-threatening" injuries. Injuries that orthopaedic surgeons have projected 6–12 month recovery timelines have resolved in 6–10 weeks on this protocol. The research base behind both peptides is extensive — over 200 studies on BPC-157 alone — making this the most evidence-backed healing stack available.</p>
+              <div className="glass-card p-6 border border-emerald-200">
+                <div className="text-xs font-bold text-emerald-600 uppercase tracking-wide mb-2">What Makes the Wolverine Stack Different</div>
+                <p className="text-gray-800 text-base leading-relaxed mb-4">The Wolverine Stack — BPC-157 + TB-500 — earns its name from the fictional character's supernatural healing ability. It represents the most complete tissue repair protocol available, combining two peptides with entirely different but perfectly complementary mechanisms. BPC-157 works at the local injury site, recruiting repair factors and regenerating vasculature. TB-500 drives systemic repair through actin regulation and stem cell migration. Together, they cover everything from tendon microtears to muscle belly injuries to ligament damage.</p>
+                <p className="text-gray-800 text-base leading-relaxed">What sets this month's spotlight on it: the growing volume of anecdotal evidence from athletes recovering from previously "career-threatening" injuries. Injuries that orthopaedic surgeons have projected 6–12 month recovery timelines have resolved in 6–10 weeks on this protocol. The research base behind both peptides is extensive — over 200 studies on BPC-157 alone — making this the most evidence-backed healing stack available.</p>
               </div>
 
               <div className="glass-card p-6">
-                <div className="text-xs font-bold text-emerald-400 uppercase tracking-wide mb-3">Who It Is For</div>
+                <div className="text-xs font-bold text-emerald-600 uppercase tracking-wide mb-3">Who It Is For</div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                   {[
                     'Post-surgical rehabilitation',
@@ -508,8 +508,8 @@ export default function StacksPage() {
                     'Gut lining repair and IBD management',
                     'Anyone whose injury has "plateaued" with standard PT',
                   ].map((item) => (
-                    <div key={item} className="flex items-start gap-2 text-sm text-slate-300">
-                      <span className="text-emerald-400 shrink-0 mt-0.5">→</span>
+                    <div key={item} className="flex items-start gap-2 text-sm text-gray-800">
+                      <span className="text-emerald-600 shrink-0 mt-0.5">→</span>
                       {item}
                     </div>
                   ))}
@@ -517,19 +517,19 @@ export default function StacksPage() {
               </div>
 
               <div className="glass-card p-6">
-                <div className="text-xs font-bold text-emerald-400 uppercase tracking-wide mb-3">The Protocol</div>
+                <div className="text-xs font-bold text-emerald-600 uppercase tracking-wide mb-3">The Protocol</div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   {[
                     { compound: 'BPC-157', dose: '250–500mcg', timing: 'Twice daily (AM + PM)', route: 'SC injection near injury site', duration: '4–12 weeks' },
                     { compound: 'TB-500', dose: '2.5–5mg/week', timing: 'Once weekly (or split BIW)', route: 'SC injection (any site)', duration: '4–12 weeks' },
                   ].map((item) => (
-                    <div key={item.compound} className="rounded-xl p-4" style={{ background: 'rgba(16,185,129,0.06)', border: '1px solid rgba(16,185,129,0.15)' }}>
-                      <div className="text-white font-black mb-2">{item.compound}</div>
+                    <div key={item.compound} className="rounded-xl p-4 bg-emerald-50 border border-emerald-200">
+                      <div className="text-gray-900 font-black mb-2">{item.compound}</div>
                       <div className="space-y-1">
                         {Object.entries(item).filter(([k]) => k !== 'compound').map(([k, v]) => (
                           <div key={k} className="text-xs">
-                            <span className="text-slate-500 capitalize">{k}: </span>
-                            <span className="text-slate-300">{v}</span>
+                            <span className="text-gray-500 capitalize">{k}: </span>
+                            <span className="text-gray-800">{v}</span>
                           </div>
                         ))}
                       </div>
@@ -541,22 +541,22 @@ export default function StacksPage() {
 
             {/* Success story + CTA */}
             <div className="space-y-5">
-              <div className="glass-card p-6" style={{ border: '1px solid rgba(16,185,129,0.2)' }}>
-                <div className="text-xs font-bold text-emerald-400 uppercase tracking-wide mb-3 flex items-center gap-2">
+              <div className="glass-card p-6 border border-emerald-200">
+                <div className="text-xs font-bold text-emerald-600 uppercase tracking-wide mb-3 flex items-center gap-2">
                   <Users className="w-3.5 h-3.5" /> Community Result
                 </div>
-                <div className="text-slate-500 text-xs mb-3 italic">(Composite of reported experiences — individual results vary)</div>
-                <p className="text-slate-300 text-sm leading-relaxed mb-3">"Partial Achilles tear — was told 4–6 months of non-weight-bearing recovery. Started BPC-157 + TB-500 at week 3 post-injury. By week 8 I was jogging. By week 12 I was back to full training. The physio couldn't believe the imaging at the 3-month mark."</p>
-                <p className="text-slate-300 text-sm leading-relaxed">"Chronic shoulder (rotator cuff) that had been limiting me for 2 years despite surgery and PT. One 8-week cycle and the pain dropped by 80%. Range of motion fully restored. Second cycle completed it."</p>
-                <div className="mt-4 pt-4 border-t border-white/8">
-                  <div className="text-xs text-slate-600">These are anecdotal accounts. Peptides are research compounds. Consult a physician before use.</div>
+                <div className="text-gray-500 text-xs mb-3 italic">(Composite of reported experiences — individual results vary)</div>
+                <p className="text-gray-800 text-base leading-relaxed mb-3">"Partial Achilles tear — was told 4–6 months of non-weight-bearing recovery. Started BPC-157 + TB-500 at week 3 post-injury. By week 8 I was jogging. By week 12 I was back to full training. The physio couldn't believe the imaging at the 3-month mark."</p>
+                <p className="text-gray-800 text-base leading-relaxed">"Chronic shoulder (rotator cuff) that had been limiting me for 2 years despite surgery and PT. One 8-week cycle and the pain dropped by 80%. Range of motion fully restored. Second cycle completed it."</p>
+                <div className="mt-4 pt-4 border-t border-gray-200">
+                  <div className="text-xs text-gray-500">These are anecdotal accounts. Peptides are research compounds. Consult a physician before use.</div>
                 </div>
               </div>
 
               <div className="glass-card p-6 text-center">
                 <div className="text-2xl mb-3">🛡️</div>
-                <h3 className="text-white font-bold mb-2">Ready to Start?</h3>
-                <p className="text-slate-400 text-sm mb-5">Get COA-verified BPC-157 and TB-500 from our recommended supplier.</p>
+                <h3 className="text-gray-900 font-black text-xl mb-2">Ready to Start?</h3>
+                <p className="text-gray-700 text-base mb-5">Get COA-verified BPC-157 and TB-500 from our recommended supplier.</p>
                 <div className="space-y-3">
                   <a href={SOURCE_URL} target="_blank" rel="nofollow noopener noreferrer"
                     className="w-full btn-cta text-sm py-3 flex items-center justify-center gap-2">
@@ -576,36 +576,36 @@ export default function StacksPage() {
       <section className="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           <div>
-            <h2 className="text-3xl font-black text-white mb-6">
+            <h2 className="text-3xl font-black text-gray-900 mb-6">
               Why Peptide Stacks Outperform<br />
-              <span style={{ color: '#00ff88' }}>Single Peptides</span>
+              <span className="text-amber-600">Single Peptides</span>
             </h2>
             <div className="space-y-5">
               <div className="glass-card p-5">
-                <h3 className="text-white font-bold mb-2 flex items-center gap-2">
-                  <span className="text-emerald-400">→</span> Complementary Mechanisms
+                <h3 className="text-gray-900 font-bold mb-2 flex items-center gap-2">
+                  <span className="text-emerald-600">→</span> Complementary Mechanisms
                 </h3>
-                <p className="text-slate-400 text-sm leading-relaxed">
+                <p className="text-gray-700 text-base leading-relaxed">
                   Most biological goals involve multiple interacting systems. A healing peptide that works locally (BPC-157)
                   combined with one that works systemically (TB-500) covers more ground than either alone — both are necessary
                   for complete recovery.
                 </p>
               </div>
               <div className="glass-card p-5">
-                <h3 className="text-white font-bold mb-2 flex items-center gap-2">
-                  <span className="text-emerald-400">→</span> Synergistic Effects
+                <h3 className="text-gray-900 font-bold mb-2 flex items-center gap-2">
+                  <span className="text-emerald-600">→</span> Synergistic Effects
                 </h3>
-                <p className="text-slate-400 text-sm leading-relaxed">
+                <p className="text-gray-700 text-base leading-relaxed">
                   Some combinations produce synergistic rather than merely additive effects. CJC-1295 + Ipamorelin
                   together produce 8–10× more GH than either alone — because they target two different receptors in the
                   same GH release pathway.
                 </p>
               </div>
               <div className="glass-card p-5">
-                <h3 className="text-white font-bold mb-2 flex items-center gap-2">
-                  <span className="text-emerald-400">→</span> Multi-Level Targeting
+                <h3 className="text-gray-900 font-bold mb-2 flex items-center gap-2">
+                  <span className="text-emerald-600">→</span> Multi-Level Targeting
                 </h3>
-                <p className="text-slate-400 text-sm leading-relaxed">
+                <p className="text-gray-700 text-base leading-relaxed">
                   Aging, fat loss, and healing all involve cascades of molecular events. Targeting multiple steps
                   in the cascade — rather than just one — produces faster and more complete results with better
                   long-term maintenance.
@@ -616,7 +616,7 @@ export default function StacksPage() {
 
           {/* Which stack is right for you */}
           <div className="glass-card p-8">
-            <h3 className="text-white font-bold text-xl mb-6">Which Stack Is Right for You?</h3>
+            <h3 className="text-gray-900 font-black text-xl mb-6">Which Stack Is Right for You?</h3>
             <div className="space-y-4">
               {[
                 { goal: 'I have an injury that won\'t heal', stack: 'Ultimate Healing Stack', slug: 'ultimate-healing', icon: '🛡️', color: 'emerald' },
@@ -628,10 +628,10 @@ export default function StacksPage() {
                 const cols = colorClasses[item.color];
                 return (
                   <Link key={item.slug} href={`/stacks/${item.slug}`}
-                    className="flex items-center gap-4 p-4 rounded-xl hover:bg-white/5 transition-colors group">
+                    className="flex items-center gap-4 p-4 rounded-xl hover:bg-gray-100 transition-colors group">
                     <span className="text-2xl">{item.icon}</span>
                     <div className="flex-1 min-w-0">
-                      <div className="text-slate-400 text-xs mb-0.5">&quot;{item.goal}&quot;</div>
+                      <div className="text-gray-700 text-xs mb-0.5">&quot;{item.goal}&quot;</div>
                       <div className={`text-sm font-semibold ${cols.text} group-hover:underline`}>→ {item.stack}</div>
                     </div>
                     <ChevronRight className={`w-4 h-4 ${cols.text} shrink-0`} />
@@ -644,22 +644,22 @@ export default function StacksPage() {
       </section>
 
       {/* ── STACK FAQ ── */}
-      <section className="py-16" style={{ background: 'rgba(6,6,16,0.8)', borderTop: '1px solid rgba(255,255,255,0.04)' }}>
+      <section className="py-16 bg-gray-100 border-t border-gray-100">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center gap-3 mb-3">
-            <Shield className="w-6 h-6" style={{ color: '#00ff88' }} />
-            <h2 className="text-3xl font-black text-white">Frequently Asked Stack Questions</h2>
+            <Shield className="w-6 h-6 text-amber-600" />
+            <h2 className="text-3xl font-black text-gray-900">Frequently Asked Stack Questions</h2>
           </div>
-          <p className="text-slate-400 mb-10">The most important questions before starting a peptide stack protocol — answered directly.</p>
+          <p className="text-gray-700 mb-10">The most important questions before starting a peptide stack protocol — answered directly.</p>
           <div className="space-y-3">
             {stackFaqs.map(({ q, a }) => (
               <details key={q} className="glass-card group">
                 <summary className="p-5 cursor-pointer list-none flex items-center justify-between">
-                  <span className="text-white font-semibold text-sm">{q}</span>
-                  <span className="text-neon-green text-lg group-open:rotate-45 transition-transform shrink-0 ml-4">+</span>
+                  <span className="text-gray-900 font-semibold text-sm">{q}</span>
+                  <span className="text-amber-600 text-lg group-open:rotate-45 transition-transform shrink-0 ml-4">+</span>
                 </summary>
                 <div className="px-5 pb-5">
-                  <p className="text-slate-400 text-sm leading-relaxed">{a}</p>
+                  <p className="text-gray-700 text-base leading-relaxed">{a}</p>
                 </div>
               </details>
             ))}
@@ -668,7 +668,7 @@ export default function StacksPage() {
       </section>
 
       {/* Trust signals */}
-      <section className="py-12 border-t border-white/5">
+      <section className="py-12 border-t border-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
             {[
@@ -679,8 +679,8 @@ export default function StacksPage() {
             ].map((item) => (
               <div key={item.title}>
                 <div className="text-3xl mb-2">{item.icon}</div>
-                <div className="text-white font-bold text-sm">{item.title}</div>
-                <div className="text-slate-500 text-xs mt-1">{item.sub}</div>
+                <div className="text-gray-900 font-bold text-sm">{item.title}</div>
+                <div className="text-gray-600 text-xs mt-1">{item.sub}</div>
               </div>
             ))}
           </div>
@@ -691,17 +691,17 @@ export default function StacksPage() {
       <section className="py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="glass-card p-12 relative overflow-hidden">
-            <div className="absolute inset-0 bg-gradient-to-br from-neon-green/3 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-br from-amber-50 to-transparent" />
             <div className="relative">
               <div className="text-5xl mb-6">🧬</div>
-              <h2 className="text-3xl font-black text-white mb-4">
+              <h2 className="text-3xl font-black text-gray-900 mb-4">
                 Build Your Peptide Stack Today
               </h2>
-              <p className="text-slate-300 text-lg mb-2 max-w-xl mx-auto">
+              <p className="text-gray-800 text-lg mb-2 max-w-xl mx-auto">
                 All peptides across every stack available from our recommended supplier —
                 the most trusted peptide supplier.
               </p>
-              <p className="text-slate-500 text-sm mb-8">COA verified · US domestic · 24–48hr shipping</p>
+              <p className="text-gray-600 text-sm mb-8">COA verified · US domestic · 24–48hr shipping</p>
               <div className="flex flex-wrap gap-4 justify-center">
                 <a href={SOURCE_URL} target="_blank" rel="nofollow noopener noreferrer"
                   className="btn-cta text-base px-10 py-4 inline-flex items-center gap-2">

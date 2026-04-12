@@ -117,7 +117,7 @@ const allFaqItems = faqs.flatMap((g) => g.items);
 
 export default function FAQPage() {
   return (
-    <div className="grid-bg min-h-screen pt-24 pb-20">
+    <div className="bg-white min-h-screen pt-24 pb-20">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -135,23 +135,23 @@ export default function FAQPage() {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Hero */}
         <div className="text-center mb-10">
-          <h1 className="text-4xl sm:text-5xl font-black text-white mb-4">
+          <h1 className="text-4xl sm:text-5xl font-black text-gray-900 mb-4">
             Peptide <span className="gradient-text">FAQ</span>
           </h1>
-          <p className="text-slate-400 text-lg max-w-xl mx-auto">
+          <p className="text-gray-700 text-lg max-w-xl mx-auto">
             Answers to the most common questions about BPC-157 and peptides — across {allFaqItems.length} detailed entries.
           </p>
         </div>
 
         {/* Quick Jump Navigation */}
         <div className="glass-card p-5 mb-12">
-          <p className="text-xs font-semibold text-slate-500 uppercase tracking-wide mb-3">Quick Jump</p>
+          <p className="text-xs font-semibold text-gray-600 uppercase tracking-wide mb-3">Quick Jump</p>
           <div className="flex flex-wrap gap-2">
             {faqs.map(({ id, category }) => (
               <a
                 key={id}
                 href={`#${id}`}
-                className="text-xs px-3 py-1.5 rounded-full bg-neon-green/10 border border-neon-green/20 text-neon-green hover:bg-neon-green/20 transition-colors"
+                className="text-xs px-3 py-1.5 rounded-full bg-amber-50 border border-amber-200 text-amber-600 hover:bg-amber-100 transition-colors"
               >
                 {category}
               </a>
@@ -163,14 +163,14 @@ export default function FAQPage() {
         <div className="space-y-12">
           {faqs.map(({ id, category, items }) => (
             <div key={category} id={id}>
-              <h2 className="text-lg font-bold text-neon-green mb-4 flex items-center gap-2">
-                <span className="w-2 h-4 bg-neon-green rounded-full" /> {category}
+              <h2 className="text-lg font-bold text-amber-600 mb-4 flex items-center gap-2">
+                <span className="w-2 h-4 bg-amber-600 rounded-full" /> {category}
               </h2>
               <div className="space-y-3">
                 {items.map(({ q, a }) => (
-                  <div key={q} className="glass-card p-6">
-                    <h3 className="text-white font-semibold mb-2">{q}</h3>
-                    <p className="text-slate-400 text-sm leading-relaxed">{a}</p>
+                  <div key={q} className="glass-card p-6 border-l-2 border-amber-400">
+                    <h3 className="text-gray-900 font-black text-lg mb-2">{q}</h3>
+                    <p className="text-gray-700 text-base leading-relaxed">{a}</p>
                   </div>
                 ))}
               </div>
@@ -180,39 +180,39 @@ export default function FAQPage() {
 
         {/* Still Have Questions */}
         <div className="mt-14 mb-8 glass-card p-8">
-          <h2 className="text-xl font-bold text-white mb-2">Still Have Questions?</h2>
-          <p className="text-slate-400 text-sm mb-6">
+          <h2 className="text-xl font-bold text-gray-900 mb-2">Still Have Questions?</h2>
+          <p className="text-gray-700 text-sm mb-6">
             Dive deeper with our comprehensive guides and resources below.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             <Link
               href="/guide"
-              className="flex flex-col gap-1 bg-dark-700/50 rounded-xl p-4 border border-neon-green/10 hover:border-neon-green/30 transition-colors group"
+              className="flex flex-col gap-1 bg-gray-100 rounded-xl p-4 border border-amber-200 hover:border-amber-400 transition-colors group"
             >
-              <span className="text-neon-green text-sm font-semibold group-hover:underline">Beginner Guide</span>
-              <span className="text-slate-500 text-xs">Step-by-step instructions for reconstitution, dosing, and injecting peptides safely.</span>
+              <span className="text-amber-600 text-sm font-semibold group-hover:underline">Beginner Guide</span>
+              <span className="text-gray-600 text-xs">Step-by-step instructions for reconstitution, dosing, and injecting peptides safely.</span>
             </Link>
             <Link
               href="/products"
-              className="flex flex-col gap-1 bg-dark-700/50 rounded-xl p-4 border border-neon-green/10 hover:border-neon-green/30 transition-colors group"
+              className="flex flex-col gap-1 bg-gray-100 rounded-xl p-4 border border-amber-200 hover:border-amber-400 transition-colors group"
             >
-              <span className="text-neon-green text-sm font-semibold group-hover:underline">Product Directory</span>
-              <span className="text-slate-500 text-xs">Browse individual peptide profiles with dosing, applications, and cycle guides.</span>
+              <span className="text-amber-600 text-sm font-semibold group-hover:underline">Product Directory</span>
+              <span className="text-gray-600 text-xs">Browse individual peptide profiles with dosing, applications, and cycle guides.</span>
             </Link>
             <Link
               href="/stacks"
-              className="flex flex-col gap-1 bg-dark-700/50 rounded-xl p-4 border border-neon-green/10 hover:border-neon-green/30 transition-colors group"
+              className="flex flex-col gap-1 bg-gray-100 rounded-xl p-4 border border-amber-200 hover:border-amber-400 transition-colors group"
             >
-              <span className="text-neon-green text-sm font-semibold group-hover:underline">Stack Protocols</span>
-              <span className="text-slate-500 text-xs">Pre-built stacks for healing, anti-aging, GH optimization, and body recomposition.</span>
+              <span className="text-amber-600 text-sm font-semibold group-hover:underline">Stack Protocols</span>
+              <span className="text-gray-600 text-xs">Pre-built stacks for healing, anti-aging, GH optimization, and body recomposition.</span>
             </Link>
           </div>
         </div>
 
         {/* CTA */}
         <div className="text-center mt-4 p-10 glass-card">
-          <h2 className="text-2xl font-bold text-white mb-3">Ready to Start?</h2>
-          <p className="text-slate-400 mb-6">Get COA-verified peptides from the most trusted source.</p>
+          <h2 className="text-2xl font-bold text-gray-900 mb-3">Ready to Start?</h2>
+          <p className="text-gray-700 mb-6">Get COA-verified peptides from the most trusted source.</p>
           <div className="flex flex-wrap gap-4 justify-center">
             <a href={SOURCE_URL} target="_blank" rel="nofollow noopener noreferrer" className="btn-cta text-base px-8 py-4 flex items-center gap-2">
               View <ArrowRight className="w-5 h-5" />

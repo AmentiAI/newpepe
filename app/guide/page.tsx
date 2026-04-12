@@ -93,7 +93,7 @@ const cyclingTable = [
 
 export default function GuidePage() {
   return (
-    <div className="grid-bg min-h-screen pt-24 pb-20">
+    <div className="bg-white min-h-screen pt-24 pb-20">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -114,24 +114,24 @@ export default function GuidePage() {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Hero */}
         <div className="text-center mb-16">
-          <div className="inline-flex items-center gap-2 bg-neon-green/10 border border-neon-green/20 rounded-full px-4 py-2 mb-6">
-            <BookOpen className="w-4 h-4 text-neon-green" />
-            <span className="text-neon-green text-sm font-medium">Complete Beginner Guide</span>
+          <div className="inline-flex items-center gap-2 bg-amber-50 border border-amber-200 rounded-full px-4 py-2 mb-6">
+            <BookOpen className="w-4 h-4 text-amber-600" />
+            <span className="text-amber-600 text-sm font-medium">Complete Beginner Guide</span>
           </div>
-          <h1 className="text-4xl sm:text-5xl font-black text-white mb-4">
+          <h1 className="text-4xl sm:text-5xl font-black text-gray-900 mb-4">
             How to Use <span className="gradient-text">Peptides</span>
           </h1>
-          <p className="text-slate-400 text-lg max-w-xl mx-auto">
+          <p className="text-gray-700 text-lg max-w-xl mx-auto">
             Everything you need to know to start using BPC-157 and peptides safely and effectively.
           </p>
         </div>
 
         {/* Disclaimer */}
-        <div className="flex gap-3 bg-amber-500/10 border border-amber-500/20 rounded-xl p-5 mb-10">
-          <AlertTriangle className="w-5 h-5 text-amber-400 shrink-0 mt-0.5" />
+        <div className="flex gap-3 bg-amber-50 border border-amber-200 rounded-xl p-5 mb-10">
+          <AlertTriangle className="w-5 h-5 text-amber-600 shrink-0 mt-0.5" />
           <div>
-            <p className="text-amber-400 font-semibold text-sm mb-1">Important Notice</p>
-            <p className="text-slate-400 text-sm">
+            <p className="text-amber-600 font-semibold text-sm mb-1">Important Notice</p>
+            <p className="text-gray-700 text-sm">
               This content is for educational purposes only. Consult a licensed healthcare provider before using any peptide.
             </p>
           </div>
@@ -139,13 +139,13 @@ export default function GuidePage() {
 
         {/* 6 Steps */}
         <div className="space-y-4 mb-12">
-          <h2 className="text-2xl font-bold text-white">Getting Started in 6 Steps</h2>
+          <h2 className="text-2xl font-bold text-gray-900">Getting Started in 6 Steps</h2>
           {steps.map((step) => (
             <div key={step.num} className="glass-card p-6 flex gap-5">
-              <div className="text-2xl font-black text-neon-green/30 font-mono w-12 shrink-0">{step.num}</div>
+              <div className="text-2xl font-black text-amber-600/30 font-mono w-12 shrink-0">{step.num}</div>
               <div>
-                <h3 className="text-white font-bold mb-1">{step.title}</h3>
-                <p className="text-slate-400 text-sm leading-relaxed">{step.desc}</p>
+                <h3 className="text-gray-900 font-black mb-1">{step.title}</h3>
+                <p className="text-gray-700 text-base leading-relaxed">{step.desc}</p>
               </div>
             </div>
           ))}
@@ -156,24 +156,24 @@ export default function GuidePage() {
 
         {/* Static reconstitution reference */}
         <div className="glass-card p-8 mb-8">
-          <h2 className="text-xl font-bold text-white mb-4">Reconstitution Reference</h2>
-          <p className="text-slate-400 text-sm mb-4">Use this formula to calculate your dose per injection:</p>
-          <div className="bg-dark-700/50 rounded-xl p-4 font-mono text-sm border border-neon-green/10 mb-4">
-            <p className="text-neon-green mb-2"># Standard reconstitution:</p>
-            <p className="text-slate-300">Vial size: 5mg (5,000mcg)</p>
-            <p className="text-slate-300">Water added: 1mL bacteriostatic water</p>
-            <p className="text-slate-300">Concentration: 5,000mcg/mL = 5mcg/μL</p>
+          <h2 className="text-xl font-bold text-gray-900 mb-4">Reconstitution Reference</h2>
+          <p className="text-gray-700 text-sm mb-4">Use this formula to calculate your dose per injection:</p>
+          <div className="bg-gray-100 rounded-xl p-4 font-mono text-sm border border-amber-200 mb-4">
+            <p className="text-amber-600 mb-2"># Standard reconstitution:</p>
+            <p className="text-gray-800">Vial size: 5mg (5,000mcg)</p>
+            <p className="text-gray-800">Water added: 1mL bacteriostatic water</p>
+            <p className="text-gray-800">Concentration: 5,000mcg/mL = 5mcg/μL</p>
             <br />
-            <p className="text-neon-green mb-2"># For 250mcg dose:</p>
-            <p className="text-slate-300">250mcg ÷ 5mcg/μL = 50μL = 0.05mL</p>
-            <p className="text-slate-300">On 1mL insulin syringe: pull to the 5IU mark</p>
+            <p className="text-amber-600 mb-2"># For 250mcg dose:</p>
+            <p className="text-gray-800">250mcg ÷ 5mcg/μL = 50μL = 0.05mL</p>
+            <p className="text-gray-800">On 1mL insulin syringe: pull to the 5IU mark</p>
           </div>
-          <p className="text-slate-500 text-xs">Always use bacteriostatic water (not sterile water) for multi-use vials. Refrigerate after reconstitution. Use within 30 days.</p>
+          <p className="text-gray-600 text-xs">Always use bacteriostatic water (not sterile water) for multi-use vials. Refrigerate after reconstitution. Use within 30 days.</p>
         </div>
 
         {/* Storage */}
         <div className="glass-card p-8 mb-8">
-          <h2 className="text-xl font-bold text-white mb-4">Storage & Handling</h2>
+          <h2 className="text-xl font-bold text-gray-900 mb-4">Storage & Handling</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {[
               { label: 'Lyophilized (dry) powder', value: 'Room temperature, or refrigerate for longevity. Avoid moisture.' },
@@ -181,9 +181,9 @@ export default function GuidePage() {
               { label: 'Syringes', value: 'Use insulin syringes (29-31 gauge). Do not reuse.' },
               { label: 'Bacteriostatic water', value: 'Use for all reconstitutions. Available at pharmacies.' },
             ].map(({ label, value }) => (
-              <div key={label} className="bg-dark-700/50 rounded-lg p-3 border border-neon-green/10">
-                <p className="text-neon-green text-xs font-semibold mb-1">{label}</p>
-                <p className="text-slate-400 text-xs">{value}</p>
+              <div key={label} className="bg-gray-100 rounded-lg p-3 border border-amber-200">
+                <p className="text-amber-600 text-xs font-bold mb-1">{label}</p>
+                <p className="text-gray-700 text-xs">{value}</p>
               </div>
             ))}
           </div>
@@ -192,30 +192,30 @@ export default function GuidePage() {
         {/* Injection Site Rotation Guide */}
         <div className="glass-card p-8 mb-8">
           <div className="flex items-center gap-3 mb-2">
-            <RotateCcw className="w-5 h-5 text-neon-green" />
-            <h2 className="text-xl font-bold text-white">Injection Site Rotation Guide</h2>
+            <RotateCcw className="w-5 h-5 text-amber-600" />
+            <h2 className="text-xl font-bold text-gray-900">Injection Site Rotation Guide</h2>
           </div>
-          <p className="text-slate-400 text-sm mb-6">
+          <p className="text-gray-700 text-sm mb-6">
             Rotating injection sites prevents lipohypertrophy (scar tissue build-up), maintains consistent absorption, and reduces soreness. Never inject the same exact spot two days in a row.
           </p>
           <div className="space-y-4">
             {injectionSites.map(({ site, ideal, notes }) => (
-              <div key={site} className="bg-dark-700/50 rounded-xl p-5 border border-neon-green/10">
+              <div key={site} className="bg-gray-100 rounded-xl p-5 border border-amber-200">
                 <div className="flex items-center gap-3 mb-2">
-                  <h3 className="text-white font-semibold">{site}</h3>
+                  <h3 className="text-gray-900 font-semibold">{site}</h3>
                   {ideal ? (
-                    <span className="text-xs px-2 py-0.5 rounded-full bg-neon-green/10 border border-neon-green/20 text-neon-green">Recommended Primary</span>
+                    <span className="text-xs px-2 py-0.5 rounded-full bg-amber-50 border border-amber-200 text-amber-600">Recommended Primary</span>
                   ) : (
-                    <span className="text-xs px-2 py-0.5 rounded-full bg-slate-700/50 border border-slate-600/30 text-slate-400">Secondary / Rotation</span>
+                    <span className="text-xs px-2 py-0.5 rounded-full bg-gray-100 border border-gray-200 text-gray-500">Secondary / Rotation</span>
                   )}
                 </div>
-                <p className="text-slate-400 text-sm leading-relaxed">{notes}</p>
+                <p className="text-gray-700 text-sm leading-relaxed">{notes}</p>
               </div>
             ))}
           </div>
-          <div className="mt-4 bg-neon-green/5 border border-neon-green/15 rounded-lg px-4 py-3">
-            <p className="text-slate-400 text-xs leading-relaxed">
-              <span className="text-neon-green font-semibold">Rotation tip: </span>
+          <div className="mt-4 bg-amber-50 border border-amber-200 rounded-lg px-4 py-3">
+            <p className="text-gray-700 text-xs leading-relaxed">
+              <span className="text-amber-600 font-semibold">Rotation tip: </span>
               Map your abdomen into a 3x3 grid (9 zones). Rotate through zones 1-9, then start over. This allows each zone 8 days of rest between injections, virtually eliminating site-related tissue changes.
             </p>
           </div>
@@ -224,20 +224,20 @@ export default function GuidePage() {
         {/* Common Beginner Mistakes */}
         <div className="glass-card p-8 mb-8">
           <div className="flex items-center gap-3 mb-2">
-            <XCircle className="w-5 h-5 text-red-400" />
-            <h2 className="text-xl font-bold text-white">Common Beginner Mistakes</h2>
+            <XCircle className="w-5 h-5 text-red-600" />
+            <h2 className="text-xl font-bold text-gray-900">Common Beginner Mistakes</h2>
           </div>
-          <p className="text-slate-400 text-sm mb-6">
+          <p className="text-gray-700 text-sm mb-6">
             Avoiding these six mistakes is more important than any other optimization. Most failed protocols come down to one of these errors.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {beginnerMistakes.map(({ mistake, detail }) => (
-              <div key={mistake} className="bg-dark-700/50 rounded-xl p-5 border border-red-500/10">
+              <div key={mistake} className="bg-gray-100 rounded-xl p-5 border border-red-200">
                 <div className="flex items-start gap-2 mb-2">
-                  <XCircle className="w-4 h-4 text-red-400 shrink-0 mt-0.5" />
-                  <h3 className="text-white font-semibold text-sm">{mistake}</h3>
+                  <XCircle className="w-4 h-4 text-red-600 shrink-0 mt-0.5" />
+                  <h3 className="text-gray-900 font-semibold text-sm">{mistake}</h3>
                 </div>
-                <p className="text-slate-400 text-xs leading-relaxed pl-6">{detail}</p>
+                <p className="text-gray-700 text-xs leading-relaxed pl-6">{detail}</p>
               </div>
             ))}
           </div>
@@ -246,41 +246,41 @@ export default function GuidePage() {
         {/* Peptide Cycling Reference Table */}
         <div className="glass-card p-8 mb-8 overflow-x-auto">
           <div className="flex items-center gap-3 mb-2">
-            <CheckCircle className="w-5 h-5 text-neon-green" />
-            <h2 className="text-xl font-bold text-white">Peptide Cycling Reference Table</h2>
+            <CheckCircle className="w-5 h-5 text-amber-600" />
+            <h2 className="text-xl font-bold text-gray-900">Peptide Cycling Reference Table</h2>
           </div>
-          <p className="text-slate-400 text-sm mb-6">
+          <p className="text-gray-700 text-sm mb-6">
             Standard cycling protocols for the most commonly used peptides. Always start at the lower end of ranges and adjust based on individual response.
           </p>
           <table className="w-full text-sm min-w-[600px]">
             <thead>
-              <tr className="border-b border-neon-green/10">
-                <th className="text-left text-neon-green text-xs font-semibold uppercase tracking-wide pb-3 pr-4">Peptide</th>
-                <th className="text-left text-neon-green text-xs font-semibold uppercase tracking-wide pb-3 pr-4">Cycle Length</th>
-                <th className="text-left text-neon-green text-xs font-semibold uppercase tracking-wide pb-3 pr-4">Rest Period</th>
-                <th className="text-left text-neon-green text-xs font-semibold uppercase tracking-wide pb-3">Notes</th>
+              <tr className="border-b border-amber-200">
+                <th className="text-left text-amber-600 text-xs font-bold uppercase tracking-wide pb-3 pr-4">Peptide</th>
+                <th className="text-left text-amber-600 text-xs font-bold uppercase tracking-wide pb-3 pr-4">Cycle Length</th>
+                <th className="text-left text-amber-600 text-xs font-bold uppercase tracking-wide pb-3 pr-4">Rest Period</th>
+                <th className="text-left text-amber-600 text-xs font-bold uppercase tracking-wide pb-3">Notes</th>
               </tr>
             </thead>
-            <tbody className="divide-y divide-neon-green/5">
+            <tbody className="divide-y divide-amber-50">
               {cyclingTable.map(({ peptide, cycle, rest, notes }) => (
-                <tr key={peptide} className="hover:bg-neon-green/3 transition-colors">
-                  <td className="py-3 pr-4 text-white font-semibold whitespace-nowrap">{peptide}</td>
-                  <td className="py-3 pr-4 text-slate-300 whitespace-nowrap">{cycle}</td>
-                  <td className="py-3 pr-4 text-slate-400 whitespace-nowrap">{rest}</td>
-                  <td className="py-3 text-slate-500 text-xs leading-relaxed">{notes}</td>
+                <tr key={peptide} className="hover:bg-amber-50 transition-colors">
+                  <td className="py-3 pr-4 text-gray-900 font-semibold whitespace-nowrap">{peptide}</td>
+                  <td className="py-3 pr-4 text-gray-800 whitespace-nowrap">{cycle}</td>
+                  <td className="py-3 pr-4 text-gray-700 whitespace-nowrap">{rest}</td>
+                  <td className="py-3 text-gray-600 text-xs leading-relaxed">{notes}</td>
                 </tr>
               ))}
             </tbody>
           </table>
-          <p className="text-slate-600 text-xs mt-4">
+          <p className="text-gray-500 text-xs mt-4">
             This table reflects general community protocols. Individual response varies. Consult a healthcare provider for personalized guidance.
           </p>
         </div>
 
         {/* Buy CTA */}
         <div className="text-center p-10 glass-card">
-          <h2 className="text-2xl font-bold text-white mb-3">Ready to Start?</h2>
-          <p className="text-slate-400 mb-6">Get your peptides from our recommended supplier — COA verified, US domestic.</p>
+          <h2 className="text-2xl font-bold text-gray-900 mb-3">Ready to Start?</h2>
+          <p className="text-gray-700 mb-6">Get your peptides from our recommended supplier — COA verified, US domestic.</p>
           <div className="flex flex-wrap gap-4 justify-center">
             <a href={SOURCE_URL} target="_blank" rel="nofollow noopener noreferrer" className="btn-cta text-base px-8 py-4 flex items-center gap-2">
               View <ArrowRight className="w-5 h-5" />

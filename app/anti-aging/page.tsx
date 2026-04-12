@@ -30,7 +30,7 @@ const agingHallmarks = [
     icon: '🧬',
     title: 'Telomere Shortening',
     peptide: 'Epithalon',
-    color: 'purple',
+    color: 'amber',
     mechanism: 'Telomeres — the protective caps on chromosomes — shorten with every cell division. Epithalon activates telomerase, the enzyme that rebuilds telomeres, slowing and partially reversing cellular aging.',
     evidence: '28% mortality reduction in 12-year human trial (2012)',
   },
@@ -100,27 +100,26 @@ export default function AntiAgingPage() {
   const products = getProductsByCategory('Anti-Aging');
 
   return (
-    <div className="min-h-screen" style={{ background: 'linear-gradient(180deg, #060610 0%, #0f0720 40%, #060610 100%)' }}>
+    <div className="bg-white min-h-screen">
 
       {/* Hero */}
       <section className="relative pt-32 pb-20 overflow-hidden">
-        <div className="absolute inset-0 grid-bg opacity-30" />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[500px] bg-purple-600/8 blur-[150px] rounded-full pointer-events-none" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[500px] bg-amber-50 blur-[150px] rounded-full pointer-events-none" />
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="inline-flex items-center gap-2 bg-purple-500/10 border border-purple-500/30 rounded-full px-4 py-2 mb-6">
-            <Sparkles className="w-4 h-4 text-purple-400" />
-            <span className="text-purple-400 text-sm font-semibold tracking-wide">LONGEVITY & ANTI-AGING PROTOCOLS</span>
+          <div className="inline-flex items-center gap-2 bg-amber-50 border border-amber-200 rounded-full px-4 py-2 mb-6">
+            <Sparkles className="w-4 h-4 text-amber-600" />
+            <span className="text-amber-600 text-sm font-bold tracking-wide">LONGEVITY & ANTI-AGING PROTOCOLS</span>
           </div>
-          <h1 className="text-5xl sm:text-7xl font-black text-white leading-tight mb-6">
+          <h1 className="text-5xl sm:text-7xl font-black text-gray-900 leading-tight mb-6">
             Don&apos;t Just Live<br />
-            <span style={{ color: '#a855f7' }}>Live Younger.</span>
+            <span style={{ color: '#d97706' }}>Live Younger.</span>
           </h1>
-          <p className="text-slate-300 text-xl leading-relaxed mb-4 max-w-3xl mx-auto">
+          <p className="text-gray-800 text-xl leading-relaxed mb-4 max-w-3xl mx-auto">
             Five anti-aging peptides targeting five distinct molecular hallmarks of aging.
             The most comprehensive longevity protocol available outside of a clinical trial.
           </p>
-          <p className="text-slate-500 text-base mb-10 max-w-2xl mx-auto">
+          <p className="text-gray-600 text-base mb-10 max-w-2xl mx-auto">
             These are clinically studied compounds with peer-reviewed evidence
             targeting the actual molecular mechanisms of biological aging.
           </p>
@@ -142,8 +141,8 @@ export default function AntiAgingPage() {
               { num: 'Ph II/III', label: 'SS-31 Clinical Trial Stage' },
             ].map((s) => (
               <div key={s.num} className="glass-card p-4 text-center">
-                <div className="text-2xl font-black text-purple-400">{s.num}</div>
-                <div className="text-slate-400 text-xs mt-1">{s.label}</div>
+                <div className="text-2xl font-black text-amber-600">{s.num}</div>
+                <div className="text-gray-700 text-xs mt-1">{s.label}</div>
               </div>
             ))}
           </div>
@@ -153,12 +152,12 @@ export default function AntiAgingPage() {
       {/* BIOLOGICAL AGE ASSESSMENT WIDGET */}
       <section className="py-16 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-10">
-          <div className="inline-flex items-center gap-2 bg-purple-500/10 border border-purple-500/30 rounded-full px-4 py-2 mb-4">
-            <Brain className="w-4 h-4 text-purple-400" />
-            <span className="text-purple-400 text-sm font-semibold tracking-wide">BIOLOGICAL AGE ASSESSMENT</span>
+          <div className="inline-flex items-center gap-2 bg-amber-50 border border-amber-200 rounded-full px-4 py-2 mb-4">
+            <Brain className="w-4 h-4 text-amber-600" />
+            <span className="text-amber-600 text-sm font-bold tracking-wide">BIOLOGICAL AGE ASSESSMENT</span>
           </div>
-          <h2 className="text-3xl font-black text-white mb-3">How Old Are You, Biologically?</h2>
-          <p className="text-slate-400 max-w-xl mx-auto">
+          <h2 className="text-3xl font-black text-gray-900 mb-3">How Old Are You, Biologically?</h2>
+          <p className="text-gray-700 max-w-xl mx-auto">
             Rate 10 aspects of your current health and vitality. The assessment calculates your estimated biological age gap and recommends a targeted peptide protocol.
           </p>
         </div>
@@ -166,17 +165,17 @@ export default function AntiAgingPage() {
       </section>
 
       {/* 5 HALLMARKS — FULL SCIENCE DEEP DIVE */}
-      <section className="py-16" style={{ background: 'rgba(6,6,16,0.8)' }}>
+      <section className="py-16 bg-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <div className="inline-flex items-center gap-2 bg-purple-500/10 border border-purple-500/30 rounded-full px-4 py-2 mb-4">
-              <FlaskConical className="w-4 h-4 text-purple-400" />
-              <span className="text-purple-400 text-sm font-semibold tracking-wide">SCIENCE DEEP DIVE</span>
+            <div className="inline-flex items-center gap-2 bg-amber-50 border border-amber-200 rounded-full px-4 py-2 mb-4">
+              <FlaskConical className="w-4 h-4 text-amber-600" />
+              <span className="text-amber-600 text-sm font-bold tracking-wide">SCIENCE DEEP DIVE</span>
             </div>
-            <h2 className="text-3xl font-black text-white mb-3">
+            <h2 className="text-3xl font-black text-gray-900 mb-3">
               5 Hallmarks of Aging. 5 Targeted Peptides.
             </h2>
-            <p className="text-slate-400 max-w-2xl mx-auto">
+            <p className="text-gray-700 max-w-2xl mx-auto">
               Aging is not one process — it&apos;s a cascade of simultaneous molecular failures.
               Each peptide targets a different root cause. Here is the full science.
             </p>
@@ -189,32 +188,32 @@ export default function AntiAgingPage() {
               <div className="flex items-center gap-4 mb-5">
                 <span className="text-5xl">🧬</span>
                 <div>
-                  <div className="text-xs font-bold text-purple-400 tracking-widest">HALLMARK 01</div>
-                  <h3 className="text-white font-black text-2xl">Telomere Shortening</h3>
-                  <div className="text-purple-400 font-semibold">Targeted by: Epithalon</div>
+                  <div className="text-xs font-bold text-amber-600 tracking-widest">HALLMARK 01</div>
+                  <h3 className="text-gray-900 font-black text-2xl">Telomere Shortening</h3>
+                  <div className="text-amber-600 font-semibold">Targeted by: Epithalon</div>
                 </div>
               </div>
               <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
                 <div>
-                  <h4 className="text-white font-bold mb-2">What It Is</h4>
-                  <p className="text-slate-400 text-sm leading-relaxed">
+                  <h4 className="text-gray-900 font-bold mb-2">What It Is</h4>
+                  <p className="text-gray-700 text-base leading-relaxed">
                     Telomeres are the repetitive DNA sequences (TTAGGG in humans) capping the ends of chromosomes, protecting them like the plastic tip of a shoelace. Every time a cell divides, the telomere shortens by 50–200 base pairs because DNA polymerase cannot fully replicate the terminal ends. When telomeres shorten below a critical threshold, cells enter senescence (permanent cell cycle arrest) or undergo apoptosis. Critically, many cells with critically short telomeres do neither — they become senescent cells that secrete a pro-inflammatory cocktail called the SASP (senescence-associated secretory phenotype), actively accelerating aging in surrounding tissue. Telomere length is measurable in blood and is one of the most clinically validated biomarkers of biological age.
                   </p>
                 </div>
                 <div>
-                  <h4 className="text-white font-bold mb-2">How It Drives Aging</h4>
-                  <p className="text-slate-400 text-sm leading-relaxed">
+                  <h4 className="text-gray-900 font-bold mb-2">How It Drives Aging</h4>
+                  <p className="text-gray-700 text-base leading-relaxed">
                     Shorter average telomere length in white blood cells (leukocyte telomere length, or LTL) is associated with increased all-cause mortality, cardiovascular disease, Alzheimer&apos;s disease, type 2 diabetes, and multiple cancers. Studies of identical twins show that the twin with shorter telomeres at any given age has significantly higher risk of age-related diseases. The causal relationship is bidirectional: short telomeres accelerate aging, and the hallmarks of aging (inflammation, oxidative stress, metabolic dysfunction) in turn accelerate telomere shortening, creating a vicious cycle that compounds over decades.
                   </p>
                 </div>
                 <div>
-                  <h4 className="text-white font-bold mb-2">Epithalon: Evidence and Timeline</h4>
-                  <p className="text-slate-400 text-sm leading-relaxed">
+                  <h4 className="text-gray-900 font-bold mb-2">Epithalon: Evidence and Timeline</h4>
+                  <p className="text-gray-700 text-base leading-relaxed">
                     Epithalon (Ala-Glu-Asp-Gly), a tetrapeptide from the pineal gland, activates telomerase (hTERT) — the enzyme that adds TTAGGG repeats back to shortened telomeres. In Khavinson&apos;s landmark 12-year human trial (2012), elderly patients receiving Epithalon twice yearly showed 28% mortality reduction versus untreated controls over the full study period. In vitro studies show measurable telomere lengthening within 3–6 months of supplementation. The practical expectation: acute effects within weeks (improved sleep, energy — via Epithalon&apos;s pineal/melatonin regulation), with telomere-level impact accumulating over months to years of twice-annual cycling.
                   </p>
-                  <div className="mt-3 inline-flex items-center gap-2 bg-purple-500/10 border border-purple-500/20 rounded-full px-3 py-1">
-                    <CheckCircle className="w-3.5 h-3.5 text-purple-400" />
-                    <span className="text-purple-300 text-xs font-medium">28% mortality reduction — Khavinson et al., 12-year trial</span>
+                  <div className="mt-3 inline-flex items-center gap-2 bg-amber-50 border border-amber-200 rounded-full px-3 py-1">
+                    <CheckCircle className="w-3.5 h-3.5 text-amber-600" />
+                    <span className="text-amber-600 text-xs font-medium">28% mortality reduction — Khavinson et al., 12-year trial</span>
                   </div>
                 </div>
               </div>
@@ -225,32 +224,32 @@ export default function AntiAgingPage() {
               <div className="flex items-center gap-4 mb-5">
                 <span className="text-5xl">🔬</span>
                 <div>
-                  <div className="text-xs font-bold text-amber-400 tracking-widest">HALLMARK 02</div>
-                  <h3 className="text-white font-black text-2xl">Epigenetic Drift</h3>
-                  <div className="text-amber-400 font-semibold">Targeted by: GHK-Cu</div>
+                  <div className="text-xs font-bold text-amber-600 tracking-widest">HALLMARK 02</div>
+                  <h3 className="text-gray-900 font-black text-2xl">Epigenetic Drift</h3>
+                  <div className="text-amber-600 font-semibold">Targeted by: GHK-Cu</div>
                 </div>
               </div>
               <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
                 <div>
-                  <h4 className="text-white font-bold mb-2">What It Is</h4>
-                  <p className="text-slate-400 text-sm leading-relaxed">
+                  <h4 className="text-gray-900 font-bold mb-2">What It Is</h4>
+                  <p className="text-gray-700 text-base leading-relaxed">
                     Epigenetics refers to changes in gene expression that do not alter the DNA sequence itself but change which genes are switched on or off. DNA methylation patterns — the primary epigenetic clock used to measure biological aging — drift systematically over time. Steve Horvath&apos;s DNA methylation clock (2013) can predict biological age from blood to within 3.6 years with accuracy that surpasses all other known aging biomarkers. As we age, the methylation patterns that kept pro-inflammatory, pro-fibrotic, and oncogenic genes suppressed become dysregulated — turning on genes that should be off and silencing genes that drive youthful cellular function.
                   </p>
                 </div>
                 <div>
-                  <h4 className="text-white font-bold mb-2">How It Drives Aging</h4>
-                  <p className="text-slate-400 text-sm leading-relaxed">
+                  <h4 className="text-gray-900 font-bold mb-2">How It Drives Aging</h4>
+                  <p className="text-gray-700 text-base leading-relaxed">
                     Epigenetic drift is arguably the most encompassing aging mechanism because it determines the expression of every other aging pathway. Drifted methylation patterns upregulate inflammatory cytokines (contributing to inflammaging), downregulate antioxidant genes (exacerbating oxidative stress), and upregulate fibrotic pathways (contributing to tissue stiffening and organ dysfunction). The good news: unlike DNA sequence mutations, epigenetic changes are reversible. Yamanaka factor reprogramming studies have shown that epigenetic age can be reversed — and GHK-Cu represents a peptide-level intervention in this same direction.
                   </p>
                 </div>
                 <div>
-                  <h4 className="text-white font-bold mb-2">GHK-Cu: Evidence and Timeline</h4>
-                  <p className="text-slate-400 text-sm leading-relaxed">
+                  <h4 className="text-gray-900 font-bold mb-2">GHK-Cu: Evidence and Timeline</h4>
+                  <p className="text-gray-700 text-base leading-relaxed">
                     GHK-Cu (glycyl-L-histidyl-L-lysine copper complex) modulates over 4,000 human genes, resetting the expression patterns of aged fibroblasts toward youthful states. Specifically, GHK-Cu upregulates antioxidant genes (SOD1, catalase), anti-inflammatory pathways, collagen synthesis genes, and DNA repair pathways — while downregulating pro-inflammatory and fibrotic genes. Clinical effects appear at 4–8 weeks: measurable improvement in skin collagen density, reduced fine lines, improved wound healing response. The gene expression changes — the deeper anti-aging mechanism — accumulate over months of consistent use.
                   </p>
-                  <div className="mt-3 inline-flex items-center gap-2 bg-amber-500/10 border border-amber-500/20 rounded-full px-3 py-1">
-                    <CheckCircle className="w-3.5 h-3.5 text-amber-400" />
-                    <span className="text-amber-300 text-xs font-medium">4,000+ genes modulated — Pickart &amp; Margolina, 2018</span>
+                  <div className="mt-3 inline-flex items-center gap-2 bg-amber-50 border border-amber-200 rounded-full px-3 py-1">
+                    <CheckCircle className="w-3.5 h-3.5 text-amber-600" />
+                    <span className="text-amber-600 text-xs font-medium">4,000+ genes modulated — Pickart &amp; Margolina, 2018</span>
                   </div>
                 </div>
               </div>
@@ -261,32 +260,32 @@ export default function AntiAgingPage() {
               <div className="flex items-center gap-4 mb-5">
                 <span className="text-5xl">⚡</span>
                 <div>
-                  <div className="text-xs font-bold text-blue-400 tracking-widest">HALLMARK 03</div>
-                  <h3 className="text-white font-black text-2xl">Mitochondrial Dysfunction</h3>
-                  <div className="text-blue-400 font-semibold">Targeted by: SS-31</div>
+                  <div className="text-xs font-bold text-blue-600 tracking-widest">HALLMARK 03</div>
+                  <h3 className="text-gray-900 font-black text-2xl">Mitochondrial Dysfunction</h3>
+                  <div className="text-blue-600 font-semibold">Targeted by: SS-31</div>
                 </div>
               </div>
               <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
                 <div>
-                  <h4 className="text-white font-bold mb-2">What It Is</h4>
-                  <p className="text-slate-400 text-sm leading-relaxed">
+                  <h4 className="text-gray-900 font-bold mb-2">What It Is</h4>
+                  <p className="text-gray-700 text-base leading-relaxed">
                     Mitochondria — the cell&apos;s energy generators — produce ATP through the electron transport chain (ETC) located on the inner mitochondrial membrane (IMM). Cardiolipin, a unique phospholipid found only in the IMM, is essential for maintaining the electrochemical gradient that drives ATP synthase. With age, cardiolipin becomes oxidized and structurally damaged, causing cytochrome c (a critical ETC component) to detach from the inner membrane. This disrupts electron flow, reduces ATP output, increases reactive oxygen species (ROS) production, and — critically — triggers the release of pro-apoptotic signals. By age 70, mitochondrial ATP production in muscle cells has declined by 40–50%.
                   </p>
                 </div>
                 <div>
-                  <h4 className="text-white font-bold mb-2">How It Drives Aging</h4>
-                  <p className="text-slate-400 text-sm leading-relaxed">
+                  <h4 className="text-gray-900 font-bold mb-2">How It Drives Aging</h4>
+                  <p className="text-gray-700 text-base leading-relaxed">
                     Mitochondrial dysfunction drives aging through multiple simultaneous mechanisms. Reduced ATP output impairs every energy-demanding cellular process: protein synthesis, DNA repair, membrane maintenance, and immune function. Increased ROS production from a dysfunctional ETC creates oxidative stress that damages DNA, proteins, and lipids in a self-amplifying cycle. Mitochondrial dysfunction also impairs AMPK signaling (the cellular energy sensor), disrupts autophagy (cellular cleaning), and contributes to the chronic low-grade inflammation (inflammaging) characteristic of aging through mtDNA leakage. Muscle fatigue, cognitive decline, cardiovascular dysfunction, and immune senescence all have mitochondrial dysfunction as a significant contributing factor.
                   </p>
                 </div>
                 <div>
-                  <h4 className="text-white font-bold mb-2">SS-31: Evidence and Timeline</h4>
-                  <p className="text-slate-400 text-sm leading-relaxed">
+                  <h4 className="text-gray-900 font-bold mb-2">SS-31: Evidence and Timeline</h4>
+                  <p className="text-gray-700 text-base leading-relaxed">
                     SS-31 (Elamipretide) is a tetrapeptide that preferentially concentrates on the inner mitochondrial membrane by electrostatic interaction. It binds directly to cardiolipin, stabilizing its structure and preventing cytochrome c dissociation. This restores ETC complex I/III activity, increases ATP production, and dramatically reduces mitochondrial ROS output. In aging mouse models, SS-31 reverses age-associated declines in muscle function, cardiac output, and kidney function. Phase II/III clinical trials show significant improvement in heart failure patients. The timeline: energy improvements and exercise tolerance changes are often noticeable within 2–4 weeks of starting SS-31, with progressive structural mitochondrial improvements accumulating over months.
                   </p>
-                  <div className="mt-3 inline-flex items-center gap-2 bg-blue-500/10 border border-blue-500/20 rounded-full px-3 py-1">
-                    <CheckCircle className="w-3.5 h-3.5 text-blue-400" />
-                    <span className="text-blue-300 text-xs font-medium">Phase II/III trials ongoing — Stealth BioTherapeutics</span>
+                  <div className="mt-3 inline-flex items-center gap-2 bg-blue-50 border border-blue-200 rounded-full px-3 py-1">
+                    <CheckCircle className="w-3.5 h-3.5 text-blue-600" />
+                    <span className="text-blue-600 text-xs font-medium">Phase II/III trials ongoing — Stealth BioTherapeutics</span>
                   </div>
                 </div>
               </div>
@@ -297,32 +296,32 @@ export default function AntiAgingPage() {
               <div className="flex items-center gap-4 mb-5">
                 <span className="text-5xl">🔋</span>
                 <div>
-                  <div className="text-xs font-bold text-emerald-400 tracking-widest">HALLMARK 04</div>
-                  <h3 className="text-white font-black text-2xl">NAD+ Depletion</h3>
-                  <div className="text-emerald-400 font-semibold">Targeted by: NAD+ (direct supplementation)</div>
+                  <div className="text-xs font-bold text-emerald-600 tracking-widest">HALLMARK 04</div>
+                  <h3 className="text-gray-900 font-black text-2xl">NAD+ Depletion</h3>
+                  <div className="text-emerald-600 font-semibold">Targeted by: NAD+ (direct supplementation)</div>
                 </div>
               </div>
               <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
                 <div>
-                  <h4 className="text-white font-bold mb-2">What It Is</h4>
-                  <p className="text-slate-400 text-sm leading-relaxed">
+                  <h4 className="text-gray-900 font-bold mb-2">What It Is</h4>
+                  <p className="text-gray-700 text-base leading-relaxed">
                     NAD+ (nicotinamide adenine dinucleotide) is a coenzyme found in every living cell that serves as the essential cofactor for hundreds of metabolic reactions. Its concentration in human tissue declines by approximately 50% between age 20 and 60 — a consistent finding across tissue types and species. This decline is driven by multiple simultaneous processes: increased consumption by PARP enzymes (which use NAD+ for DNA repair in response to accumulating DNA damage), increased consumption by CD38 (a NAD+ glycohydrolase that increases with aging-associated inflammation), and reduced biosynthetic capacity as the NAD+ salvage pathway declines.
                   </p>
                 </div>
                 <div>
-                  <h4 className="text-white font-bold mb-2">How It Drives Aging</h4>
-                  <p className="text-slate-400 text-sm leading-relaxed">
+                  <h4 className="text-gray-900 font-bold mb-2">How It Drives Aging</h4>
+                  <p className="text-gray-700 text-base leading-relaxed">
                     NAD+ depletion is uniquely impactful because it throttles two of the most critical longevity pathways simultaneously. First, sirtuins (SIRT1-7) — the deacetylase enzymes that regulate DNA repair, inflammation, metabolism, and cellular stress responses — require NAD+ as a cofactor. When NAD+ falls, sirtuin activity falls with it, removing a key brake on aging-associated gene expression changes. Second, PARP enzymes require NAD+ for DNA repair — as DNA damage accumulates with age, PARP demand increases, depleting NAD+ faster and creating a vicious cycle where DNA damage accelerates the depletion of the very coenzyme needed to repair it.
                   </p>
                 </div>
                 <div>
-                  <h4 className="text-white font-bold mb-2">NAD+ Direct: Evidence and Timeline</h4>
-                  <p className="text-slate-400 text-sm leading-relaxed">
+                  <h4 className="text-gray-900 font-bold mb-2">NAD+ Direct: Evidence and Timeline</h4>
+                  <p className="text-gray-700 text-base leading-relaxed">
                     Direct NAD+ supplementation via SC injection or IV delivers the coenzyme without relying on the NMN/NR biosynthetic pathway (which becomes less efficient with age). David Sinclair&apos;s Harvard lab demonstrated that restoring NAD+ levels in aged mice reverts vascular aging, improves muscle function, and enhances DNA repair capacity. Clinical trials of NMN supplementation show measurable improvements in muscle insulin sensitivity and physical performance in older adults. The injectable route achieves serum levels 10–20× higher than oral precursors. Expected timeline: energy, cognitive clarity, and exercise recovery improvements typically appear within 2–4 weeks of daily supplementation.
                   </p>
-                  <div className="mt-3 inline-flex items-center gap-2 bg-emerald-500/10 border border-emerald-500/20 rounded-full px-3 py-1">
-                    <CheckCircle className="w-3.5 h-3.5 text-emerald-400" />
-                    <span className="text-emerald-300 text-xs font-medium">Sirtuin activation — same pathway as caloric restriction</span>
+                  <div className="mt-3 inline-flex items-center gap-2 bg-emerald-50 border border-emerald-200 rounded-full px-3 py-1">
+                    <CheckCircle className="w-3.5 h-3.5 text-emerald-600" />
+                    <span className="text-emerald-600 text-xs font-medium">Sirtuin activation — same pathway as caloric restriction</span>
                   </div>
                 </div>
               </div>
@@ -333,32 +332,32 @@ export default function AntiAgingPage() {
               <div className="flex items-center gap-4 mb-5">
                 <span className="text-5xl">🌸</span>
                 <div>
-                  <div className="text-xs font-bold text-rose-400 tracking-widest">HALLMARK 05</div>
-                  <h3 className="text-white font-black text-2xl">Cellular Senescence & Collagen Breakdown</h3>
-                  <div className="text-rose-400 font-semibold">Targeted by: SNAP-8 + GHK-Cu</div>
+                  <div className="text-xs font-bold text-rose-600 tracking-widest">HALLMARK 05</div>
+                  <h3 className="text-gray-900 font-black text-2xl">Cellular Senescence & Collagen Breakdown</h3>
+                  <div className="text-rose-600 font-semibold">Targeted by: SNAP-8 + GHK-Cu</div>
                 </div>
               </div>
               <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
                 <div>
-                  <h4 className="text-white font-bold mb-2">What It Is</h4>
-                  <p className="text-slate-400 text-sm leading-relaxed">
+                  <h4 className="text-gray-900 font-bold mb-2">What It Is</h4>
+                  <p className="text-gray-700 text-base leading-relaxed">
                     Cellular senescence — the state of permanent cell cycle arrest in response to stress, telomere shortening, or oncogenic signaling — accumulates with age and is a major driver of tissue dysfunction. Senescent cells secrete the SASP (senescence-associated secretory phenotype): a mixture of inflammatory cytokines, matrix metalloproteinases (MMPs), and growth factors that degrade the extracellular matrix, destroy neighboring cells&apos; collagen architecture, and promote chronic inflammation. Structurally, this manifests as declining skin collagen density (1% per year after age 30), increased wrinkle depth, reduced skin elasticity, and the general structural decline of connective tissue throughout the body.
                   </p>
                 </div>
                 <div>
-                  <h4 className="text-white font-bold mb-2">How It Drives Aging</h4>
-                  <p className="text-slate-400 text-sm leading-relaxed">
+                  <h4 className="text-gray-900 font-bold mb-2">How It Drives Aging</h4>
+                  <p className="text-gray-700 text-base leading-relaxed">
                     Senescent cell accumulation drives aging through the SASP — which creates a chronically inflammatory tissue environment that accelerates the aging of neighboring cells, impairs stem cell niches, and disrupts organ function. SASP-derived MMPs break down collagen in skin, joints, and vasculature simultaneously. The visible consequences — sagging skin, deepening wrinkles, joint stiffness, atherosclerosis — are structural manifestations of the same underlying senescent cell burden. Clearance of senescent cells (senolytics) is a major area of longevity research, but simultaneously supporting the extracellular matrix and inhibiting the neuromuscular contractions that accelerate surface aging offers a complementary approach.
                   </p>
                 </div>
                 <div>
-                  <h4 className="text-white font-bold mb-2">SNAP-8 & GHK-Cu: Evidence and Timeline</h4>
-                  <p className="text-slate-400 text-sm leading-relaxed">
+                  <h4 className="text-gray-900 font-bold mb-2">SNAP-8 & GHK-Cu: Evidence and Timeline</h4>
+                  <p className="text-gray-700 text-base leading-relaxed">
                     SNAP-8 (acetyl octapeptide-3) inhibits the SNARE complex at neuromuscular junctions, reducing catecholamine release and the muscle contractions that form dynamic expression lines — a mechanism analogous to Botox but without systemic neuromuscular effects. Clinical trials show 63% reduction in wrinkle depth at the expression lines after 28 days of twice-daily topical application. GHK-Cu simultaneously counteracts SASP-driven MMP overexpression, upregulates TIMP (MMP inhibitors), and drives new collagen synthesis. Together, these two peptides address both the cause (MMP-driven collagen breakdown) and the mechanical driver (neuromuscular contraction) of visible skin aging. Visible effects typically appear at 4–6 weeks; structural collagen changes are measurable at 3 months.
                   </p>
-                  <div className="mt-3 inline-flex items-center gap-2 bg-rose-500/10 border border-rose-500/20 rounded-full px-3 py-1">
-                    <CheckCircle className="w-3.5 h-3.5 text-rose-400" />
-                    <span className="text-rose-300 text-xs font-medium">SNAP-8: 63% wrinkle reduction — 28-day clinical trial</span>
+                  <div className="mt-3 inline-flex items-center gap-2 bg-rose-50 border border-rose-200 rounded-full px-3 py-1">
+                    <CheckCircle className="w-3.5 h-3.5 text-rose-600" />
+                    <span className="text-rose-600 text-xs font-medium">SNAP-8: 63% wrinkle reduction — 28-day clinical trial</span>
                   </div>
                 </div>
               </div>
@@ -370,12 +369,12 @@ export default function AntiAgingPage() {
       {/* ANTI-AGING STACK CALENDAR */}
       <section className="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <div className="inline-flex items-center gap-2 bg-purple-500/10 border border-purple-500/30 rounded-full px-4 py-2 mb-4">
-            <Calendar className="w-4 h-4 text-purple-400" />
-            <span className="text-purple-400 text-sm font-semibold tracking-wide">YEAR-ROUND PROTOCOL</span>
+          <div className="inline-flex items-center gap-2 bg-amber-50 border border-amber-200 rounded-full px-4 py-2 mb-4">
+            <Calendar className="w-4 h-4 text-amber-600" />
+            <span className="text-amber-600 text-sm font-bold tracking-wide">YEAR-ROUND PROTOCOL</span>
           </div>
-          <h2 className="text-3xl font-black text-white mb-3">Anti-Aging Stack Calendar</h2>
-          <p className="text-slate-400 max-w-2xl mx-auto">
+          <h2 className="text-3xl font-black text-gray-900 mb-3">Anti-Aging Stack Calendar</h2>
+          <p className="text-gray-700 max-w-2xl mx-auto">
             The most effective longevity protocol layers cyclical and ongoing interventions across the full year. This calendar represents the optimal annual protocol.
           </p>
         </div>
@@ -386,7 +385,7 @@ export default function AntiAgingPage() {
             {
               period: 'Months 1–2',
               label: 'Telomere Foundation',
-              color: '#a855f7',
+              color: '#d97706',
               peptides: [
                 { name: 'Epithalon', dose: '5–10 mg/day', duration: '10-day cycle × 2', note: 'First telomerase activation cycle of the year' },
                 { name: 'NAD+', dose: '250 mg SC daily', duration: 'Ongoing from month 1', note: 'Start sirtuin activation immediately' },
@@ -407,7 +406,7 @@ export default function AntiAgingPage() {
             {
               period: 'Month 6',
               label: 'Mid-Year Telomere Boost',
-              color: '#a855f7',
+              color: '#d97706',
               peptides: [
                 { name: 'Epithalon', dose: '5–10 mg/day', duration: '10-day cycle', note: 'Second annual telomere cycle — 6-month spacing' },
                 { name: 'CJC-1295/Ipamorelin', dose: '100/100 mcg SC nightly', duration: 'Begin month 6, continue', note: 'Night-time GH pulsatility restoration — enhances sleep, body composition, and skin' },
@@ -431,28 +430,28 @@ export default function AntiAgingPage() {
               <div className="absolute top-0 left-0 right-0 h-0.5" style={{ background: period.color }} />
               <div className="mb-3">
                 <div className="text-xs font-bold tracking-widest mb-1" style={{ color: period.color }}>{period.period}</div>
-                <h3 className="text-white font-bold">{period.label}</h3>
+                <h3 className="text-gray-900 font-bold">{period.label}</h3>
               </div>
               <div className="space-y-3 mb-4">
                 {period.peptides.map((p) => (
-                  <div key={p.name} className="rounded-lg p-3" style={{ background: `${period.color}08`, border: `1px solid ${period.color}20` }}>
+                  <div key={p.name} className="rounded-lg p-3 bg-gray-100 border border-gray-200">
                     <div className="flex items-center justify-between gap-2 flex-wrap mb-1">
-                      <span className="text-white font-bold text-sm">{p.name}</span>
-                      <span className="text-xs font-mono px-1.5 py-0.5 rounded" style={{ background: `${period.color}15`, color: period.color }}>{p.dose}</span>
+                      <span className="text-gray-900 font-bold text-sm">{p.name}</span>
+                      <span className="text-xs font-mono px-1.5 py-0.5 rounded bg-gray-100 text-gray-800 border border-gray-200">{p.dose}</span>
                     </div>
-                    <div className="text-slate-500 text-xs">{p.duration}</div>
-                    <div className="text-slate-400 text-xs mt-1">{p.note}</div>
+                    <div className="text-gray-600 text-xs">{p.duration}</div>
+                    <div className="text-gray-700 text-xs mt-1">{p.note}</div>
                   </div>
                 ))}
               </div>
-              <p className="text-slate-500 text-xs leading-relaxed">{period.notes}</p>
+              <p className="text-gray-600 text-xs leading-relaxed">{period.notes}</p>
             </div>
           ))}
         </div>
 
         {/* Always-on bar */}
         <div className="glass-card p-5">
-          <div className="text-xs font-bold tracking-widest text-purple-400 mb-3">YEAR-ROUND (MONTHS 1–12)</div>
+          <div className="text-xs font-bold tracking-widest text-amber-600 mb-3">YEAR-ROUND (MONTHS 1–12)</div>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             {[
               { name: 'NAD+', detail: '250–500 mg SC or IV daily — sirtuin activation and DNA repair requires consistent year-round NAD+ elevation' },
@@ -460,10 +459,10 @@ export default function AntiAgingPage() {
               { name: 'SNAP-8 topical', detail: '10 mg topical 2× daily — mechanical wrinkle prevention and dermal collagen require daily application for maintained effect' },
             ].map((item) => (
               <div key={item.name} className="flex items-start gap-3">
-                <div className="w-2 h-2 rounded-full bg-purple-400 shrink-0 mt-1.5" />
+                <div className="w-2 h-2 rounded-full bg-amber-600 shrink-0 mt-1.5" />
                 <div>
-                  <div className="text-white font-bold text-sm">{item.name}</div>
-                  <div className="text-slate-400 text-xs leading-relaxed">{item.detail}</div>
+                  <div className="text-gray-900 font-bold text-sm">{item.name}</div>
+                  <div className="text-gray-700 text-xs leading-relaxed">{item.detail}</div>
                 </div>
               </div>
             ))}
@@ -472,25 +471,25 @@ export default function AntiAgingPage() {
       </section>
 
       {/* The Full Longevity Stack */}
-      <section className="py-16" style={{ background: 'rgba(168, 85, 247, 0.03)', borderTop: '1px solid rgba(168, 85, 247, 0.1)', borderBottom: '1px solid rgba(168, 85, 247, 0.1)' }}>
+      <section className="py-16" style={{ background: 'rgba(251,191,36,0.04)', borderTop: '1px solid rgba(217,119,6,0.15)', borderBottom: '1px solid rgba(217,119,6,0.15)' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <div className="inline-flex items-center gap-2 bg-purple-500/10 border border-purple-500/20 rounded-full px-3 py-1.5 mb-4">
-                <Dna className="w-4 h-4 text-purple-400" />
-                <span className="text-purple-400 text-sm font-semibold">THE LONGEVITY STACK</span>
+              <div className="inline-flex items-center gap-2 bg-amber-50 border border-amber-200 rounded-full px-3 py-1.5 mb-4">
+                <Dna className="w-4 h-4 text-amber-600" />
+                <span className="text-amber-600 text-sm font-semibold">THE LONGEVITY STACK</span>
               </div>
-              <h2 className="text-4xl font-black text-white mb-4">
+              <h2 className="text-4xl font-black text-gray-900 mb-4">
                 A Multi-Target<br />
-                <span className="text-purple-400">Longevity Protocol</span>
+                <span className="text-amber-600">Longevity Protocol</span>
               </h2>
-              <p className="text-slate-300 leading-relaxed mb-6">
+              <p className="text-gray-800 leading-relaxed mb-6">
                 No single intervention can address all hallmarks of aging simultaneously.
                 The anti-aging stack combines five clinically studied compounds that work on
                 complementary mechanisms — targeting aging at the genetic, epigenetic,
                 mitochondrial, cellular, and structural levels.
               </p>
-              <p className="text-slate-300 leading-relaxed mb-6">
+              <p className="text-gray-800 leading-relaxed mb-6">
                 This is not anti-aging cosmetics. This is molecular biology — the same mechanisms
                 studied by leading longevity researchers at Harvard, Stanford, and the Buck Institute.
               </p>
@@ -507,17 +506,17 @@ export default function AntiAgingPage() {
 
             <div className="space-y-3">
               {longevityStack.map((item) => (
-                <div key={item.step} className="flex items-center gap-4 p-4 rounded-xl" style={{ background: 'rgba(168, 85, 247, 0.05)', border: '1px solid rgba(168, 85, 247, 0.12)' }}>
-                  <div className="w-10 h-10 rounded-full bg-purple-500/20 border border-purple-500/30 flex items-center justify-center shrink-0">
-                    <span className="text-purple-400 font-black text-sm">{item.step}</span>
+                <div key={item.step} className="flex items-center gap-4 p-4 rounded-xl bg-amber-50 border border-amber-200">
+                  <div className="w-10 h-10 rounded-full bg-amber-50 border border-amber-200 flex items-center justify-center shrink-0">
+                    <span className="text-amber-600 font-black text-sm">{item.step}</span>
                   </div>
                   <div className="flex-1 min-w-0">
                     <div className="flex items-center gap-2 flex-wrap">
-                      <span className="text-white font-bold">{item.peptide}</span>
-                      <span className="text-purple-400 text-xs font-mono border border-purple-500/30 px-2 py-0.5 rounded">{item.dose}</span>
-                      <span className="text-slate-500 text-xs">{item.freq}</span>
+                      <span className="text-gray-900 font-bold">{item.peptide}</span>
+                      <span className="text-amber-600 text-xs font-mono border border-amber-200 px-2 py-0.5 rounded bg-gray-100 text-gray-800">{item.dose}</span>
+                      <span className="text-gray-600 text-xs">{item.freq}</span>
                     </div>
-                    <div className="text-slate-400 text-xs mt-0.5">{item.role}</div>
+                    <div className="text-gray-700 text-xs mt-0.5">{item.role}</div>
                   </div>
                 </div>
               ))}
@@ -527,17 +526,17 @@ export default function AntiAgingPage() {
       </section>
 
       {/* ANTI-AGING BLOOD PANEL GUIDE */}
-      <section className="py-16" style={{ background: 'rgba(6,6,16,0.8)' }}>
+      <section className="py-16 bg-gray-100">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="inline-flex items-center gap-2 bg-purple-500/10 border border-purple-500/30 rounded-full px-4 py-2 mb-6">
-            <Activity className="w-4 h-4 text-purple-400" />
-            <span className="text-purple-400 text-sm font-semibold tracking-wide">BIOMARKER GUIDE</span>
+          <div className="inline-flex items-center gap-2 bg-amber-50 border border-amber-200 rounded-full px-4 py-2 mb-6">
+            <Activity className="w-4 h-4 text-amber-600" />
+            <span className="text-amber-600 text-sm font-bold tracking-wide">BIOMARKER GUIDE</span>
           </div>
-          <h2 className="text-4xl font-black text-white mb-4">
+          <h2 className="text-4xl font-black text-gray-900 mb-4">
             Anti-Aging Blood Panel:<br />
-            <span style={{ color: '#a855f7' }}>What to Test and When</span>
+            <span style={{ color: '#d97706' }}>What to Test and When</span>
           </h2>
-          <p className="text-slate-400 mb-8 max-w-2xl">
+          <p className="text-gray-700 mb-8 max-w-2xl">
             Objective biomarker tracking is the most powerful way to confirm that your longevity protocol is working at the cellular level. Test before starting, and retest at 3–6 months. Here is what to measure and what the results mean.
           </p>
 
@@ -545,7 +544,7 @@ export default function AntiAgingPage() {
             {[
               {
                 category: 'Hormonal Axis',
-                color: '#a855f7',
+                color: '#d97706',
                 markers: [
                   { name: 'IGF-1', normal: '100–300 ng/mL depending on age', what: 'Growth hormone/IGF-1 axis status. BPC-157 upregulates GHR; CJC-1295/Ipamorelin should increase IGF-1 measurably by 3 months.' },
                   { name: 'Total & Free Testosterone', normal: 'Age-specific reference ranges', what: 'Decline with age is well-established. Epithalon and NAD+ may partially support hormonal optimization. Track trend, not single value.' },
@@ -587,10 +586,10 @@ export default function AntiAgingPage() {
                   {cat.markers.map((m) => (
                     <div key={m.name}>
                       <div className="flex items-center gap-2 mb-1">
-                        <span className="text-white font-bold text-sm">{m.name}</span>
-                        <span className="text-xs px-1.5 py-0.5 rounded" style={{ background: `${cat.color}15`, color: cat.color }}>{m.normal}</span>
+                        <span className="text-gray-900 font-bold text-sm">{m.name}</span>
+                        <span className="text-xs px-1.5 py-0.5 rounded bg-gray-100 text-gray-800 border border-gray-200">{m.normal}</span>
                       </div>
-                      <p className="text-slate-400 text-xs leading-relaxed">{m.what}</p>
+                      <p className="text-gray-700 text-xs leading-relaxed">{m.what}</p>
                     </div>
                   ))}
                 </div>
@@ -598,20 +597,20 @@ export default function AntiAgingPage() {
             ))}
           </div>
 
-          <div className="mt-6 rounded-2xl p-5" style={{ background: 'rgba(168,85,247,0.04)', border: '1px solid rgba(168,85,247,0.12)' }}>
-            <h3 className="text-purple-400 font-bold mb-2">Testing Timeline Recommendation</h3>
+          <div className="mt-6 rounded-2xl p-5 bg-amber-50 border border-amber-200">
+            <h3 className="text-amber-600 font-bold mb-2">Testing Timeline Recommendation</h3>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-sm">
               <div>
-                <div className="text-white font-bold">Baseline (before starting)</div>
-                <p className="text-slate-400 text-xs mt-1">Complete hormonal panel, hsCRP, metabolic panel, HbA1c, fasting insulin. Optional: telomere length and DNAm clock for motivated users.</p>
+                <div className="text-gray-900 font-bold">Baseline (before starting)</div>
+                <p className="text-gray-700 text-xs mt-1">Complete hormonal panel, hsCRP, metabolic panel, HbA1c, fasting insulin. Optional: telomere length and DNAm clock for motivated users.</p>
               </div>
               <div>
-                <div className="text-white font-bold">Month 3 Retest</div>
-                <p className="text-slate-400 text-xs mt-1">hsCRP, IGF-1, metabolic panel. Early response markers should already show improvement — validates protocol is working.</p>
+                <div className="text-gray-900 font-bold">Month 3 Retest</div>
+                <p className="text-gray-700 text-xs mt-1">hsCRP, IGF-1, metabolic panel. Early response markers should already show improvement — validates protocol is working.</p>
               </div>
               <div>
-                <div className="text-white font-bold">Month 6–12 Full Retest</div>
-                <p className="text-slate-400 text-xs mt-1">Full panel including telomere length and DNAm clock if available. This is the window where the deepest longevity biomarker changes become measurable.</p>
+                <div className="text-gray-900 font-bold">Month 6–12 Full Retest</div>
+                <p className="text-gray-700 text-xs mt-1">Full panel including telomere length and DNAm clock if available. This is the window where the deepest longevity biomarker changes become measurable.</p>
               </div>
             </div>
           </div>
@@ -620,53 +619,53 @@ export default function AntiAgingPage() {
 
       {/* Expected Outcomes Table */}
       <section className="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-black text-white mb-3 text-center">Expected Outcomes by Biomarker</h2>
-        <p className="text-slate-400 text-center mb-10 max-w-xl mx-auto">
+        <h2 className="text-3xl font-black text-gray-900 mb-3 text-center">Expected Outcomes by Biomarker</h2>
+        <p className="text-gray-700 text-center mb-10 max-w-xl mx-auto">
           Based on peer-reviewed literature and documented research findings for each peptide.
         </p>
-        <div className="overflow-x-auto rounded-2xl" style={{ border: '1px solid rgba(168, 85, 247, 0.15)' }}>
+        <div className="overflow-x-auto rounded-2xl border border-amber-200">
           <table className="w-full text-sm">
             <thead>
-              <tr style={{ background: 'rgba(168, 85, 247, 0.05)' }}>
-                <th className="text-left py-4 px-5 text-slate-400 font-semibold">Biomarker / Outcome</th>
-                <th className="text-left py-4 px-5 text-slate-500 font-semibold">Untreated Aging</th>
-                <th className="text-left py-4 px-5 text-purple-400 font-semibold">With Protocol</th>
-                <th className="text-left py-4 px-5 text-slate-400 font-semibold">Key Peptide</th>
+              <tr className="bg-amber-50">
+                <th className="text-left py-4 px-5 text-gray-700 font-semibold">Biomarker / Outcome</th>
+                <th className="text-left py-4 px-5 text-gray-600 font-semibold">Untreated Aging</th>
+                <th className="text-left py-4 px-5 text-amber-600 font-semibold">With Protocol</th>
+                <th className="text-left py-4 px-5 text-gray-700 font-semibold">Key Peptide</th>
               </tr>
             </thead>
             <tbody>
               {beforeAfterMetrics.map((row, i) => (
-                <tr key={row.metric} style={{ background: i % 2 === 0 ? 'rgba(255,255,255,0.01)' : 'transparent', borderTop: '1px solid rgba(255,255,255,0.04)' }}>
-                  <td className="py-3 px-5 text-white font-medium">{row.metric}</td>
-                  <td className="py-3 px-5 text-slate-500">{row.before}</td>
-                  <td className="py-3 px-5 text-purple-300">{row.after}</td>
-                  <td className="py-3 px-5 text-slate-400 text-xs font-mono">{row.peptide}</td>
+                <tr key={row.metric} style={{ background: i % 2 === 0 ? 'rgba(0,0,0,0.02)' : 'transparent', borderTop: '1px solid rgba(0,0,0,0.06)' }}>
+                  <td className="py-3 px-5 text-gray-900 font-medium">{row.metric}</td>
+                  <td className="py-3 px-5 text-gray-600">{row.before}</td>
+                  <td className="py-3 px-5 text-amber-600">{row.after}</td>
+                  <td className="py-3 px-5 text-gray-700 text-xs font-mono">{row.peptide}</td>
                 </tr>
               ))}
             </tbody>
           </table>
         </div>
-        <p className="text-slate-600 text-xs text-center mt-4">*Based on peer-reviewed animal and human studies. Individual results vary.</p>
+        <p className="text-gray-500 text-xs text-center mt-4">*Based on peer-reviewed animal and human studies. Individual results vary.</p>
       </section>
 
       {/* Research History */}
-      <section className="py-16" style={{ background: 'rgba(6, 6, 16, 0.8)' }}>
+      <section className="py-16 bg-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-black text-white mb-3">The Science Timeline</h2>
-            <p className="text-slate-400 max-w-xl mx-auto">Three decades of longevity peptide research leading to today&apos;s protocols.</p>
+            <h2 className="text-3xl font-black text-gray-900 mb-3">The Science Timeline</h2>
+            <p className="text-gray-700 max-w-xl mx-auto">Three decades of longevity peptide research leading to today&apos;s protocols.</p>
           </div>
           <div className="relative">
-            <div className="absolute left-6 top-0 bottom-0 w-px bg-gradient-to-b from-purple-500/50 via-purple-500/20 to-transparent" />
+            <div className="absolute left-6 top-0 bottom-0 w-px bg-gradient-to-b from-amber-600/50 via-amber-600/20 to-transparent" />
             <div className="space-y-5 pl-16">
               {ageingResearch.map((item) => (
                 <div key={item.year} className="relative">
-                  <div className="absolute -left-[41px] w-8 h-8 rounded-full bg-dark-800 border border-purple-500/40 flex items-center justify-center">
-                    <div className="w-2 h-2 rounded-full bg-purple-400" />
+                  <div className="absolute -left-[41px] w-8 h-8 rounded-full bg-white border border-amber-200 flex items-center justify-center">
+                    <div className="w-2 h-2 rounded-full bg-amber-600" />
                   </div>
                   <div className="glass-card p-5">
-                    <div className="text-purple-400 font-black text-lg mb-1">{item.year}</div>
-                    <p className="text-slate-300 text-sm leading-relaxed">{item.event}</p>
+                    <div className="text-amber-600 font-black text-lg mb-1">{item.year}</div>
+                    <p className="text-gray-800 text-sm leading-relaxed">{item.event}</p>
                   </div>
                 </div>
               ))}
@@ -679,8 +678,8 @@ export default function AntiAgingPage() {
       <section className="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between mb-8">
           <div>
-            <h2 className="text-3xl font-black text-white">Anti-Aging Peptides</h2>
-            <p className="text-slate-400 mt-1">Epithalon, GHK-Cu, SS-31, NAD+, and SNAP-8 — the complete longevity stack</p>
+            <h2 className="text-3xl font-black text-gray-900">Anti-Aging Peptides</h2>
+            <p className="text-gray-700 mt-1">Epithalon, GHK-Cu, SS-31, NAD+, and SNAP-8 — the complete longevity stack</p>
           </div>
           <a href={SOURCE_URL} target="_blank" rel="nofollow noopener noreferrer"
             className="btn-cta text-sm px-5 py-2.5 flex items-center gap-2 hidden sm:flex">
@@ -695,24 +694,24 @@ export default function AntiAgingPage() {
       </section>
 
       {/* Why Now section */}
-      <section className="py-16" style={{ background: 'rgba(168, 85, 247, 0.03)', borderTop: '1px solid rgba(168, 85, 247, 0.08)' }}>
+      <section className="py-16" style={{ background: 'rgba(251,191,36,0.04)', borderTop: '1px solid rgba(217,119,6,0.1)' }}>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="glass-card p-8 md:p-12">
-            <h2 className="text-3xl font-black text-white mb-6 text-center">
+            <h2 className="text-3xl font-black text-gray-900 mb-6 text-center">
               Why Start a Longevity Protocol Now?
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
               <div>
-                <h3 className="text-purple-400 font-bold mb-3">The Compounding Problem</h3>
-                <p className="text-slate-400 text-sm leading-relaxed">
+                <h3 className="text-amber-600 font-bold mb-3">The Compounding Problem</h3>
+                <p className="text-gray-700 text-sm leading-relaxed">
                   Telomere shortening, mitochondrial decline, and epigenetic drift are cumulative processes.
                   Each year of delay means more cellular damage to reverse. The optimal time to start is
                   before the decline accelerates — typically in your 30s, though benefits are documented at any age.
                 </p>
               </div>
               <div>
-                <h3 className="text-purple-400 font-bold mb-3">The Evidence Window</h3>
-                <p className="text-slate-400 text-sm leading-relaxed">
+                <h3 className="text-amber-600 font-bold mb-3">The Evidence Window</h3>
+                <p className="text-gray-700 text-sm leading-relaxed">
                   Epithalon&apos;s 12-year trial is the longest published longevity peptide study to date.
                   The 28% mortality reduction compounds over time — you cannot retroactively apply years
                   of telomerase activation. The research window is now, not later.
@@ -733,9 +732,9 @@ export default function AntiAgingPage() {
       </section>
 
       {/* FAQ */}
-      <section className="py-16" style={{ background: 'rgba(168,85,247,0.02)', borderTop: '1px solid rgba(168,85,247,0.08)' }}>
+      <section className="py-16" style={{ background: 'rgba(251,191,36,0.02)', borderTop: '1px solid rgba(217,119,6,0.08)' }}>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-black text-white mb-10 text-center">Anti-Aging Peptide FAQ</h2>
+          <h2 className="text-3xl font-black text-gray-900 mb-10 text-center">Anti-Aging Peptide FAQ</h2>
           <div className="space-y-3">
             {[
               {
@@ -757,11 +756,11 @@ export default function AntiAgingPage() {
             ].map(({ q, a }) => (
               <details key={q} className="glass-card group">
                 <summary className="p-5 cursor-pointer list-none flex items-center justify-between">
-                  <span className="text-white font-semibold text-sm">{q}</span>
-                  <span className="text-purple-400 text-lg group-open:rotate-45 transition-transform shrink-0 ml-4">+</span>
+                  <span className="text-gray-900 font-semibold text-sm">{q}</span>
+                  <span className="text-amber-600 text-lg group-open:rotate-45 transition-transform shrink-0 ml-4">+</span>
                 </summary>
-                <div className="px-5 pb-5">
-                  <p className="text-slate-400 text-sm leading-relaxed">{a}</p>
+                <div className="px-5 pb-5 border-l-2 border-amber-400">
+                  <p className="text-gray-700 text-sm leading-relaxed">{a}</p>
                 </div>
               </details>
             ))}

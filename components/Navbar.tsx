@@ -2,6 +2,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { Menu, X, Zap } from 'lucide-react';
+import SearchModal from '@/components/SearchModal';
 
 const SOURCE_URL = '/out';
 
@@ -53,8 +54,9 @@ export default function Navbar() {
             ))}
           </div>
 
-          {/* CTA */}
+          {/* Search + CTA */}
           <div className="hidden lg:flex items-center gap-3">
+            <SearchModal />
             <a
               href={SOURCE_URL}
               target="_blank"
@@ -65,13 +67,16 @@ export default function Navbar() {
             </a>
           </div>
 
-          {/* Mobile menu button */}
-          <button
-            onClick={() => setOpen(!open)}
-            className="lg:hidden p-2 text-gray-500 hover:text-amber-600 transition-colors"
-          >
-            {open ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
-          </button>
+          {/* Mobile: search icon + hamburger */}
+          <div className="lg:hidden flex items-center gap-2">
+            <SearchModal />
+            <button
+              onClick={() => setOpen(!open)}
+              className="p-2 text-gray-500 hover:text-amber-600 transition-colors"
+            >
+              {open ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+            </button>
+          </div>
         </div>
       </div>
 

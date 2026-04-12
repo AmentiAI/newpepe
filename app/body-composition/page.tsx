@@ -97,26 +97,26 @@ export default function BodyCompositionPage() {
   const products = getProductsByCategory('Body Composition');
 
   return (
-    <div className="min-h-screen" style={{ background: 'linear-gradient(180deg, #060610 0%, #060e1a 40%, #060610 100%)' }}>
+    <div className="bg-white min-h-screen">
 
       {/* Hero */}
       <section className="relative pt-32 pb-20 overflow-hidden">
-        <div className="absolute inset-0 grid-bg opacity-30" />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] bg-blue-500/8 blur-[130px] rounded-full pointer-events-none" />
+        <div className="absolute inset-0 opacity-30" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] bg-blue-50 blur-[130px] rounded-full pointer-events-none" />
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <div className="inline-flex items-center gap-2 bg-blue-500/10 border border-blue-500/30 rounded-full px-4 py-2 mb-6">
-                <TrendingUp className="w-4 h-4 text-blue-400" />
-                <span className="text-blue-400 text-sm font-semibold tracking-wide">BODY RECOMPOSITION PROTOCOLS</span>
+              <div className="inline-flex items-center gap-2 bg-blue-50 border border-blue-200 rounded-full px-4 py-2 mb-6">
+                <TrendingUp className="w-4 h-4 text-blue-600" />
+                <span className="text-blue-600 text-sm font-semibold tracking-wide">BODY RECOMPOSITION PROTOCOLS</span>
               </div>
-              <h1 className="text-5xl sm:text-6xl font-black text-white leading-tight mb-6">
+              <h1 className="text-5xl sm:text-6xl font-black text-gray-900 leading-tight mb-6">
                 Burn Fat.<br />
                 Build Muscle.<br />
-                <span className="text-blue-400">Simultaneously.</span>
+                <span className="text-blue-600">Simultaneously.</span>
               </h1>
-              <p className="text-slate-300 text-xl leading-relaxed mb-8">
+              <p className="text-gray-800 text-xl leading-relaxed mb-8">
                 The peptide approach to body recomposition is the closest thing available to &quot;cheat codes&quot;
                 for physique — GH optimization, direct anabolic signaling, and metabolic acceleration
                 that compounds over 12 weeks.
@@ -144,9 +144,9 @@ export default function BodyCompositionPage() {
               ].map((stat) => (
                 <div key={stat.title} className="glass-card p-4 text-center">
                   <div className="text-3xl mb-1">{stat.emoji}</div>
-                  <div className="text-blue-400 font-black">{stat.stat}</div>
-                  <div className="text-white text-sm font-semibold">{stat.title}</div>
-                  <div className="text-slate-500 text-xs">{stat.sub}</div>
+                  <div className="text-blue-600 font-black">{stat.stat}</div>
+                  <div className="text-gray-900 text-sm font-semibold">{stat.title}</div>
+                  <div className="text-gray-600 text-xs">{stat.sub}</div>
                 </div>
               ))}
             </div>
@@ -158,8 +158,8 @@ export default function BodyCompositionPage() {
       <section className="py-16" style={{ background: 'rgba(59, 130, 246, 0.03)', borderTop: '1px solid rgba(59, 130, 246, 0.1)' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-black text-white mb-3">How the GH Peptide Stack Works</h2>
-            <p className="text-slate-400 max-w-2xl mx-auto">
+            <h2 className="text-3xl font-black text-gray-900 mb-3">How the GH Peptide Stack Works</h2>
+            <p className="text-gray-700 max-w-2xl mx-auto">
               CJC-1295 + Ipamorelin work in a 2-step mechanism that mirrors and amplifies
               the body&apos;s own growth hormone regulation system.
             </p>
@@ -168,8 +168,8 @@ export default function BodyCompositionPage() {
             {ghPulseSteps.map((step) => (
               <div key={step.num} className="relative glass-card p-6">
                 <div className="text-4xl font-black text-blue-500/20 mb-3">{step.num}</div>
-                <h3 className="text-white font-bold mb-3">{step.title}</h3>
-                <p className="text-slate-400 text-sm leading-relaxed">{step.desc}</p>
+                <h3 className="text-gray-900 font-black mb-3">{step.title}</h3>
+                <p className="text-gray-700 text-sm leading-relaxed">{step.desc}</p>
                 {step.num !== '04' && (
                   <div className="hidden lg:block absolute -right-3 top-1/2 -translate-y-1/2 text-blue-500/40 text-2xl">→</div>
                 )}
@@ -182,8 +182,8 @@ export default function BodyCompositionPage() {
       {/* Body Recomp Goal Calculator */}
       <section className="py-16 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-10">
-          <h2 className="text-3xl font-black text-white mb-3">Body Recomp Goal Calculator</h2>
-          <p className="text-slate-400 max-w-xl mx-auto">
+          <h2 className="text-3xl font-black text-gray-900 mb-3">Body Recomp Goal Calculator</h2>
+          <p className="text-gray-700 max-w-xl mx-auto">
             Enter your current stats and goal. Get a personalized peptide stack, protein target, and realistic timeline estimate.
           </p>
         </div>
@@ -193,13 +193,13 @@ export default function BodyCompositionPage() {
       {/* The Science of Body Recomposition */}
       <section className="py-16" style={{ background: 'rgba(59, 130, 246, 0.03)', borderTop: '1px solid rgba(59, 130, 246, 0.08)' }}>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="inline-flex items-center gap-2 bg-blue-500/10 border border-blue-500/20 rounded-full px-3 py-1.5 mb-6">
-            <BarChart3 className="w-4 h-4 text-blue-400" />
-            <span className="text-blue-400 text-sm font-semibold">THE SCIENCE</span>
+          <div className="inline-flex items-center gap-2 bg-blue-50 border border-blue-200 rounded-full px-3 py-1.5 mb-6">
+            <BarChart3 className="w-4 h-4 text-blue-600" />
+            <span className="text-blue-600 text-sm font-semibold">THE SCIENCE</span>
           </div>
-          <h2 className="text-3xl font-black text-white mb-8">The Science of Body Recomposition</h2>
+          <h2 className="text-3xl font-black text-gray-900 mb-8">The Science of Body Recomposition</h2>
 
-          <div className="prose-style space-y-6 text-slate-300 leading-relaxed">
+          <div className="prose-style space-y-6 text-gray-800 leading-relaxed">
             <p>
               Natural body recomposition — losing fat and gaining muscle at the same time — is extraordinarily difficult under normal physiological conditions. The reason comes down to a fundamental conflict between anabolic and catabolic signaling. Building muscle requires a caloric surplus that drives anabolic pathways (mTOR, protein synthesis). Losing fat requires a caloric deficit that triggers catabolic pathways (lipolysis, protein breakdown for energy). These signals directly oppose each other, which is why the standard advice has always been to bulk and cut in separate phases.
             </p>
@@ -208,7 +208,7 @@ export default function BodyCompositionPage() {
               Growth hormone peptides solve this conflict at the signaling level. When you amplify your natural GH pulse with CJC-1295 and Ipamorelin, you activate the GH/IGF-1 axis independently of caloric intake. GH is directly lipolytic — it activates hormone-sensitive lipase in adipocytes, mobilizing stored triglycerides for oxidation even during a moderate caloric surplus. Simultaneously, the IGF-1 that GH stimulates in the liver directly binds IGF-1 receptors on skeletal muscle, activating mTOR and protein synthesis without requiring the insulin spike that normally accompanies it. This is the peptide recomp mechanism: anabolic signaling and lipolysis occurring together — not because you&apos;re eating more, but because your GH axis is running at a level it hasn&apos;t seen since your 20s.
             </p>
 
-            <h3 className="text-white font-bold text-xl mt-8 mb-3">IGF-1 and the Muscle Protein Synthesis Cascade</h3>
+            <h3 className="text-gray-900 font-black text-xl mt-8 mb-3">IGF-1 and the Muscle Protein Synthesis Cascade</h3>
             <p>
               IGF-1 LR3, the extended half-life variant, is the downstream executor of the GH signal. Native IGF-1 has a half-life of approximately 10 minutes because it rapidly binds IGF-binding proteins (IGFBPs) that neutralize it. The arginine-3 substitution in IGF-1 LR3 prevents this IGFBP binding, extending the active half-life to 20–30 hours and allowing it to reach muscle tissue at meaningful concentrations.
             </p>
@@ -216,12 +216,12 @@ export default function BodyCompositionPage() {
               At the muscle cell, IGF-1 LR3 binds the IGF-1 receptor and activates the PI3K/Akt/mTOR pathway — the master regulator of muscle protein synthesis. Uniquely, IGF-1 LR3 can stimulate satellite cell proliferation and differentiation, a process called muscle hyperplasia. This is distinct from the hypertrophy (enlarging existing cells) that exercise produces. Hyperplasia is the creation of new muscle fibers — a significantly more powerful mechanism that explains why experienced users report muscle gains that would be impossible naturally.
             </p>
 
-            <h3 className="text-white font-bold text-xl mt-8 mb-3">Insulin Sensitivity and Nutrient Partitioning</h3>
+            <h3 className="text-gray-900 font-black text-xl mt-8 mb-3">Insulin Sensitivity and Nutrient Partitioning</h3>
             <p>
               The metabolic foundation of peptide-assisted recomposition is insulin sensitivity. When GH and IGF-1 levels are optimized, insulin sensitivity at the muscle improves dramatically — meaning more glucose and amino acids are directed to muscle tissue rather than fat cells. MOTS-c enhances this effect further by activating AMPK (AMP-activated protein kinase), the metabolic master switch that mimics caloric restriction and exercise at the cellular level. The net result is a body that preferentially partitions nutrients toward muscle building and away from fat storage — even when eating at maintenance or a slight surplus.
             </p>
 
-            <h3 className="text-white font-bold text-xl mt-8 mb-3">Why CJC-1295 / Ipamorelin Is Specifically Ideal</h3>
+            <h3 className="text-gray-900 font-black text-xl mt-8 mb-3">Why CJC-1295 / Ipamorelin Is Specifically Ideal</h3>
             <p>
               Not all GH-stimulating approaches are equivalent. Pharmaceutical HGH administration is continuous and non-pulsatile — it elevates GH steadily, which blunts natural GH receptor sensitivity over time and eventually suppresses endogenous production. CJC-1295 + Ipamorelin works differently: it amplifies the natural pulsatile GH secretion that the body&apos;s own hypothalamus-pituitary axis produces.
             </p>
@@ -229,7 +229,7 @@ export default function BodyCompositionPage() {
               Pulsatile GH secretion is physiologically critical. GH receptors in muscle, adipose tissue, and liver require periods of low GH between pulses to reset and maintain full sensitivity. By amplifying the body&apos;s own pituitary pulses rather than imposing steady-state exogenous GH, CJC-1295/Ipamorelin preserves receptor sensitivity, does not suppress endogenous production, and produces a more physiological hormonal environment. The nightly dosing aligns with the natural GH peak that occurs during slow-wave sleep — amplifying it 8–10× during the window when the body is already primed for repair and anabolism.
             </p>
 
-            <h3 className="text-white font-bold text-xl mt-8 mb-3">The 12-Week Minimum Commitment</h3>
+            <h3 className="text-gray-900 font-black text-xl mt-8 mb-3">The 12-Week Minimum Commitment</h3>
             <p>
               Body recomposition with peptides requires a minimum 12-week commitment because the changes being driven are structural. Fat oxidation takes weeks to produce visible results as millions of adipocytes reduce in size. Muscle fiber hypertrophy requires progressive mechanical stimulus and repeated protein synthesis cycles over weeks. Satellite cell proliferation (from IGF-1 LR3) and the subsequent integration of new muscle fibers takes 4–8 weeks per cycle. The hormonal environment established by consistent nightly GH pulsing builds cumulatively — the peptide&apos;s effects compound over time rather than being static.
             </p>
@@ -242,16 +242,16 @@ export default function BodyCompositionPage() {
 
       {/* Training Protocol */}
       <section className="py-16 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="inline-flex items-center gap-2 bg-emerald-500/10 border border-emerald-500/20 rounded-full px-3 py-1.5 mb-6">
-          <Activity className="w-4 h-4 text-emerald-400" />
-          <span className="text-emerald-400 text-sm font-semibold">TRAINING PROTOCOL</span>
+        <div className="inline-flex items-center gap-2 bg-emerald-50 border border-emerald-200 rounded-full px-3 py-1.5 mb-6">
+          <Activity className="w-4 h-4 text-emerald-600" />
+          <span className="text-emerald-600 text-sm font-semibold">TRAINING PROTOCOL</span>
         </div>
-        <h2 className="text-3xl font-black text-white mb-8">Training Protocol for Peptide-Assisted Recomp</h2>
+        <h2 className="text-3xl font-black text-gray-900 mb-8">Training Protocol for Peptide-Assisted Recomp</h2>
 
         <div className="space-y-6">
           <div className="glass-card p-6">
-            <h3 className="text-white font-bold text-lg mb-3">Rep Ranges That Maximize GH Response</h3>
-            <p className="text-slate-300 text-sm leading-relaxed mb-4">
+            <h3 className="text-gray-900 font-black text-lg mb-3">Rep Ranges That Maximize GH Response</h3>
+            <p className="text-gray-800 text-sm leading-relaxed mb-4">
               Exercise-induced GH secretion peaks with moderate-to-high intensity training in the 6–12 rep range at 70–85% of 1RM. This intensity window produces the greatest metabolic stress, lactate accumulation, and subsequent GH pulse. Sets taken close to muscular failure in this rep range create the acute GH spike that synergizes with your nightly CJC-1295/Ipamorelin dose — you are essentially adding a training-induced GH pulse on top of the amplified natural sleep pulse.
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
@@ -260,18 +260,18 @@ export default function BodyCompositionPage() {
                 { range: '6–12 reps', effect: 'Hypertrophy peak', gh: 'Maximum GH response' },
                 { range: '15–20 reps', effect: 'Muscular endurance', gh: 'Lower GH response' },
               ].map((r) => (
-                <div key={r.range} className="rounded-xl p-4" style={{ background: r.range === '6–12 reps' ? 'rgba(16,185,129,0.08)' : 'rgba(255,255,255,0.02)', border: r.range === '6–12 reps' ? '1px solid rgba(16,185,129,0.25)' : '1px solid rgba(255,255,255,0.06)' }}>
-                  <div className={`font-black text-lg mb-1 ${r.range === '6–12 reps' ? 'text-emerald-400' : 'text-slate-400'}`}>{r.range}</div>
-                  <div className="text-white text-xs font-semibold">{r.effect}</div>
-                  <div className="text-slate-500 text-xs mt-1">{r.gh}</div>
+                <div key={r.range} className="rounded-xl p-4" style={{ background: r.range === '6–12 reps' ? 'rgba(16,185,129,0.08)' : 'rgba(0,0,0,0.02)', border: r.range === '6–12 reps' ? '1px solid rgba(16,185,129,0.25)' : '1px solid rgba(0,0,0,0.06)' }}>
+                  <div className={`font-black text-lg mb-1 ${r.range === '6–12 reps' ? 'text-emerald-600' : 'text-gray-700'}`}>{r.range}</div>
+                  <div className="text-gray-900 text-xs font-semibold">{r.effect}</div>
+                  <div className="text-gray-600 text-xs mt-1">{r.gh}</div>
                 </div>
               ))}
             </div>
           </div>
 
           <div className="glass-card p-6">
-            <h3 className="text-white font-bold text-lg mb-3">Compound Movements for GH Secretion</h3>
-            <p className="text-slate-300 text-sm leading-relaxed mb-4">
+            <h3 className="text-gray-900 font-black text-lg mb-3">Compound Movements for GH Secretion</h3>
+            <p className="text-gray-800 text-sm leading-relaxed mb-4">
               Compound multi-joint movements involving large muscle groups produce the greatest GH response. Heavy squats and deadlifts are the most potent exercise-induced GH stimulants available — the combination of lower body mass engaged, metabolic stress, and central nervous system activation produces GH pulses that rival pharmacological doses in acute terms. This is why experienced recompers structure every session around these movements first, with isolation work added afterward.
             </p>
             <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
@@ -283,8 +283,8 @@ export default function BodyCompositionPage() {
                 'Leg press (high volume)',
                 'Bench press (compound upper)',
               ].map((m) => (
-                <li key={m} className="flex items-start gap-2 text-sm text-slate-300">
-                  <CheckCircle className="w-3.5 h-3.5 text-emerald-400 shrink-0 mt-0.5" />
+                <li key={m} className="flex items-start gap-2 text-sm text-gray-800">
+                  <CheckCircle className="w-3.5 h-3.5 text-emerald-600 shrink-0 mt-0.5" />
                   {m}
                 </li>
               ))}
@@ -292,15 +292,15 @@ export default function BodyCompositionPage() {
           </div>
 
           <div className="glass-card p-6">
-            <h3 className="text-white font-bold text-lg mb-3">Training Frequency and Recovery Optimization</h3>
-            <p className="text-slate-300 text-sm leading-relaxed">
+            <h3 className="text-gray-900 font-black text-lg mb-3">Training Frequency and Recovery Optimization</h3>
+            <p className="text-gray-800 text-sm leading-relaxed">
               On a GH peptide protocol, recovery dramatically accelerates. Many users can handle training frequency that would overtrain them naturally. Recommended structure: 4 training days per week (upper/lower split or push/pull/legs with one repeat day), with 48–72 hours between sessions hitting the same muscle group. Rest days are not wasted days — the nightly GH pulse is actively repairing and building tissue on days off, often producing the greatest strength gains on the first session back after a rest day.
             </p>
           </div>
 
           <div className="glass-card p-6">
-            <h3 className="text-white font-bold text-lg mb-3">Cardio Timing and the EPOC Synergy</h3>
-            <p className="text-slate-300 text-sm leading-relaxed">
+            <h3 className="text-gray-900 font-black text-lg mb-3">Cardio Timing and the EPOC Synergy</h3>
+            <p className="text-gray-800 text-sm leading-relaxed">
               If doing fasted cardio, schedule it in the morning — 8–12 hours after your peptide injection. This captures the tail end of the elevated GH environment established during sleep, when GH-driven lipolysis is still active. Avoid heavy cardio within 3 hours before your nightly peptide dose: exercise elevates somatostatin (GH inhibitor), which would blunt the CJC-1295/Ipamorelin pulse. High-intensity interval training (HIIT) produces significant EPOC (excess post-exercise oxygen consumption) that extends fat oxidation for 24–48 hours — a potent synergy with the GH-driven lipolytic environment your peptide protocol maintains.
             </p>
           </div>
@@ -308,53 +308,53 @@ export default function BodyCompositionPage() {
       </section>
 
       {/* Nutrition Protocol */}
-      <section className="py-16" style={{ background: 'rgba(6, 6, 16, 0.8)', borderTop: '1px solid rgba(255,255,255,0.04)' }}>
+      <section className="py-16" style={{ background: 'rgba(249, 250, 251, 0.8)', borderTop: '1px solid rgba(0,0,0,0.06)' }}>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="inline-flex items-center gap-2 bg-amber-500/10 border border-amber-500/20 rounded-full px-3 py-1.5 mb-6">
-            <Flame className="w-4 h-4 text-amber-400" />
-            <span className="text-amber-400 text-sm font-semibold">NUTRITION PROTOCOL</span>
+          <div className="inline-flex items-center gap-2 bg-amber-50 border border-amber-200 rounded-full px-3 py-1.5 mb-6">
+            <Flame className="w-4 h-4 text-amber-600" />
+            <span className="text-amber-600 text-sm font-semibold">NUTRITION PROTOCOL</span>
           </div>
-          <h2 className="text-3xl font-black text-white mb-8">Nutrition Optimization for Peptide Recomp</h2>
+          <h2 className="text-3xl font-black text-gray-900 mb-8">Nutrition Optimization for Peptide Recomp</h2>
 
           <div className="space-y-6">
             <div className="glass-card p-6">
-              <h3 className="text-white font-bold text-lg mb-3">Protein Timing and the Post-Injection Window</h3>
-              <p className="text-slate-300 text-sm leading-relaxed">
+              <h3 className="text-gray-900 font-black text-lg mb-3">Protein Timing and the Post-Injection Window</h3>
+              <p className="text-gray-800 text-sm leading-relaxed">
                 The GH pulse triggered by CJC-1295/Ipamorelin peaks 1–3 hours after injection. This GH elevation drives IGF-1 production over the following 6–12 hours. During this window, muscle tissue has elevated sensitivity to amino acid uptake — making the first meal after waking (following a nightly injection) a high-priority protein feeding. Target 40–60g of protein at this meal from fast-digesting sources (eggs, Greek yogurt, protein isolate). If doing a morning workout, consume protein immediately post-training to capitalize on both the exercise-induced mTOR activation and the residual GH/IGF-1 elevation from the previous night.
               </p>
             </div>
 
             <div className="glass-card p-6">
-              <h3 className="text-white font-bold text-lg mb-3">Fasting Before Injection for Maximum GH Pulse</h3>
-              <p className="text-slate-300 text-sm leading-relaxed">
+              <h3 className="text-gray-900 font-black text-lg mb-3">Fasting Before Injection for Maximum GH Pulse</h3>
+              <p className="text-gray-800 text-sm leading-relaxed">
                 Insulin directly suppresses GH secretion. When insulin is elevated after a meal, somatostatin increases and the pituitary&apos;s GH-secreting capacity is blunted. To maximize the CJC-1295/Ipamorelin pulse, inject in a fasted or near-fasted state — at minimum 2 hours after your last meal, ideally 3 hours. This means having your last food of the day by 8–9pm if injecting at 10–11pm before sleep. Avoiding carbohydrates specifically (the strongest insulin trigger) at the final pre-injection meal further enhances GH pulse amplitude.
               </p>
             </div>
 
             <div className="glass-card p-6">
-              <h3 className="text-white font-bold text-lg mb-3">Caloric Targets by Goal</h3>
+              <h3 className="text-gray-900 font-black text-lg mb-3">Caloric Targets by Goal</h3>
               <div className="space-y-4">
                 {[
                   { goal: 'Aggressive Recomp', cals: 'Maintenance ±100 kcal/day', protein: '1.0–1.2g per lb bodyweight', carbs: 'Moderate — prioritize post-workout', note: 'The GH peptide creates the anabolic/lipolytic environment — caloric precision matters less than with diet-only approaches' },
                   { goal: 'Lean Bulk', cals: '+200–400 kcal above maintenance', protein: '1.0–1.3g per lb bodyweight', carbs: 'Higher — fuel the anabolism', note: 'Eating slightly above maintenance with optimal GH signaling produces lean mass gains with minimal fat accumulation' },
                   { goal: 'Cut with Muscle Preservation', cals: '-300–500 kcal below maintenance', protein: '1.2–1.6g per lb bodyweight', carbs: 'Cycled — higher on training days', note: 'GH peptide dramatically reduces the muscle-sparing requirement — you will preserve muscle at deficits that would strip it naturally' },
                 ].map((g) => (
-                  <div key={g.goal} className="rounded-xl p-4" style={{ background: 'rgba(255,255,255,0.02)', border: '1px solid rgba(255,255,255,0.06)' }}>
-                    <div className="text-amber-400 font-bold text-sm mb-2">{g.goal}</div>
+                  <div key={g.goal} className="rounded-xl p-4" style={{ background: 'rgba(0,0,0,0.02)', border: '1px solid rgba(0,0,0,0.06)' }}>
+                    <div className="text-amber-600 font-bold text-sm mb-2">{g.goal}</div>
                     <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-2 text-xs">
-                      <div><span className="text-slate-500">Calories: </span><span className="text-white">{g.cals}</span></div>
-                      <div><span className="text-slate-500">Protein: </span><span className="text-white">{g.protein}</span></div>
-                      <div><span className="text-slate-500">Carbs: </span><span className="text-white">{g.carbs}</span></div>
+                      <div><span className="text-gray-600">Calories: </span><span className="text-gray-900">{g.cals}</span></div>
+                      <div><span className="text-gray-600">Protein: </span><span className="text-gray-900">{g.protein}</span></div>
+                      <div><span className="text-gray-600">Carbs: </span><span className="text-gray-900">{g.carbs}</span></div>
                     </div>
-                    <p className="text-slate-500 text-xs italic">{g.note}</p>
+                    <p className="text-gray-600 text-xs italic">{g.note}</p>
                   </div>
                 ))}
               </div>
             </div>
 
             <div className="glass-card p-6">
-              <h3 className="text-white font-bold text-lg mb-3">Carb Cycling on the 12-Week Protocol</h3>
-              <p className="text-slate-300 text-sm leading-relaxed">
+              <h3 className="text-gray-900 font-black text-lg mb-3">Carb Cycling on the 12-Week Protocol</h3>
+              <p className="text-gray-800 text-sm leading-relaxed">
                 Basic carb cycling amplifies peptide recomposition results significantly. On training days, consume higher carbohydrates (150–250g depending on bodyweight) primarily around training — pre-workout for energy, post-workout to spike insulin and drive nutrient uptake into muscles at peak GH/IGF-1 sensitivity. On rest days, reduce carbohydrates to 50–100g (vegetables, some fruit) while keeping protein constant — this creates intermittent periods of lower insulin that allow GH-driven fat mobilization to proceed unopposed. The cyclical insulin variation prevents the metabolic adaptation that occurs with steady-state diets.
               </p>
             </div>
@@ -365,8 +365,8 @@ export default function BodyCompositionPage() {
       {/* Peptide Profiles */}
       <section className="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-black text-white mb-3">Body Composition Peptide Profiles</h2>
-          <p className="text-slate-400 max-w-xl mx-auto">
+          <h2 className="text-3xl font-black text-gray-900 mb-3">Body Composition Peptide Profiles</h2>
+          <p className="text-gray-700 max-w-xl mx-auto">
             Different peptides for different goals. Start with the stack that matches your primary objective.
           </p>
         </div>
@@ -377,27 +377,27 @@ export default function BodyCompositionPage() {
                 <span className="text-4xl">{p.emoji}</span>
                 <div>
                   <div className="flex items-center gap-2 flex-wrap">
-                    <h3 className="text-white font-black text-xl">{p.name}</h3>
-                    <span className="text-xs font-bold bg-blue-500/10 border border-blue-500/20 text-blue-400 px-2 py-0.5 rounded-full">{p.type}</span>
+                    <h3 className="text-gray-900 font-black text-xl">{p.name}</h3>
+                    <span className="text-xs font-bold bg-gray-100 border border-gray-200 text-gray-800 px-2 py-0.5 rounded-full">{p.type}</span>
                   </div>
-                  <p className="text-slate-400 text-sm mt-1">{p.mechanism}</p>
+                  <p className="text-gray-700 text-base mt-1">{p.mechanism}</p>
                 </div>
               </div>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
                 <ul className="space-y-2">
                   {p.benefits.map((b) => (
-                    <li key={b} className="flex items-start gap-2 text-xs text-slate-300">
-                      <CheckCircle className="w-3.5 h-3.5 text-blue-400 shrink-0 mt-0.5" />
+                    <li key={b} className="flex items-start gap-2 text-xs text-gray-800">
+                      <CheckCircle className="w-3.5 h-3.5 text-blue-600 shrink-0 mt-0.5" />
                       {b}
                     </li>
                   ))}
                 </ul>
                 <div className="space-y-3">
                   <div className="p-3 rounded-xl" style={{ background: 'rgba(59, 130, 246, 0.06)', border: '1px solid rgba(59, 130, 246, 0.15)' }}>
-                    <div className="text-blue-400 text-xs font-semibold mb-1">DOSE GUIDE</div>
-                    <div className="text-white text-sm font-mono">{p.dose}</div>
+                    <div className="text-amber-600 text-xs font-bold mb-1">DOSE GUIDE</div>
+                    <div className="text-gray-900 text-sm font-mono">{p.dose}</div>
                   </div>
-                  <div className="text-xs text-slate-500 leading-relaxed">{p.ideal}</div>
+                  <div className="text-xs text-gray-600 leading-relaxed">{p.ideal}</div>
                 </div>
               </div>
             </div>
@@ -406,20 +406,20 @@ export default function BodyCompositionPage() {
       </section>
 
       {/* 12-Week Timeline */}
-      <section className="py-16" style={{ background: 'rgba(6, 6, 16, 0.8)' }}>
+      <section className="py-16" style={{ background: 'rgba(249, 250, 251, 0.8)' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-black text-white mb-3">The 12-Week Recomp Timeline</h2>
-            <p className="text-slate-400 max-w-xl mx-auto">What to expect week by week on the CJC-1295/Ipamorelin + IGF-1 LR3 stack.</p>
+            <h2 className="text-3xl font-black text-gray-900 mb-3">The 12-Week Recomp Timeline</h2>
+            <p className="text-gray-700 max-w-xl mx-auto">What to expect week by week on the CJC-1295/Ipamorelin + IGF-1 LR3 stack.</p>
           </div>
           <div className="relative">
-            <div className="hidden md:block h-1 bg-gradient-to-r from-blue-500/20 via-blue-500/60 to-blue-500/20 rounded-full mb-10" />
+            <div className="hidden md:block h-1 bg-gradient-to-r from-blue-200 via-blue-400 to-blue-200 rounded-full mb-10" />
             <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
               {recompTimeline.map((phase) => (
                 <div key={phase.week} className="glass-card p-5">
-                  <div className="text-blue-400 font-bold text-xs mb-2 font-mono">{phase.week}</div>
-                  <h3 className="text-white font-bold text-sm mb-2">{phase.title}</h3>
-                  <p className="text-slate-400 text-xs leading-relaxed">{phase.desc}</p>
+                  <div className="text-blue-600 font-bold text-xs mb-2 font-mono">{phase.week}</div>
+                  <h3 className="text-gray-900 font-black text-sm mb-2">{phase.title}</h3>
+                  <p className="text-gray-700 text-xs leading-relaxed">{phase.desc}</p>
                 </div>
               ))}
             </div>
@@ -429,25 +429,25 @@ export default function BodyCompositionPage() {
 
       {/* Peptides vs HGH Comparison */}
       <section className="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-black text-white mb-3 text-center">GH Peptides vs. Actual HGH</h2>
-        <p className="text-slate-400 text-center mb-10 max-w-xl mx-auto">
+        <h2 className="text-3xl font-black text-gray-900 mb-3 text-center">GH Peptides vs. Actual HGH</h2>
+        <p className="text-gray-700 text-center mb-10 max-w-xl mx-auto">
           Why most experts recommend starting with GH peptides before considering pharmaceutical HGH.
         </p>
-        <div className="overflow-x-auto rounded-2xl" style={{ border: '1px solid rgba(59, 130, 246, 0.15)' }}>
+        <div className="overflow-x-auto rounded-2xl border border-gray-200">
           <table className="w-full text-sm">
             <thead>
               <tr style={{ background: 'rgba(59, 130, 246, 0.05)' }}>
-                <th className="text-left py-4 px-5 text-slate-400 font-semibold">Feature</th>
-                <th className="text-center py-4 px-5 text-slate-500 font-semibold">Pharmaceutical HGH</th>
-                <th className="text-center py-4 px-5 text-blue-400 font-bold">GH Peptide Stack</th>
+                <th className="text-left py-4 px-5 text-gray-700 font-semibold">Feature</th>
+                <th className="text-center py-4 px-5 text-gray-600 font-semibold">Pharmaceutical HGH</th>
+                <th className="text-center py-4 px-5 text-blue-600 font-bold">GH Peptide Stack</th>
               </tr>
             </thead>
-            <tbody>
+            <tbody className="divide-y divide-gray-100">
               {vsHGH.map((row, i) => (
-                <tr key={row.feature} style={{ background: i % 2 === 0 ? 'rgba(255,255,255,0.01)' : 'transparent', borderTop: '1px solid rgba(255,255,255,0.04)' }}>
-                  <td className="py-3 px-5 text-slate-300 font-medium">{row.feature}</td>
-                  <td className="py-3 px-5 text-center text-slate-500">{row.gh}</td>
-                  <td className="py-3 px-5 text-center text-blue-300">{row.peptide}</td>
+                <tr key={row.feature} style={{ background: i % 2 === 0 ? 'rgba(0,0,0,0.01)' : 'transparent' }}>
+                  <td className="py-3 px-5 text-gray-800 font-medium">{row.feature}</td>
+                  <td className="py-3 px-5 text-center text-gray-600">{row.gh}</td>
+                  <td className="py-3 px-5 text-center text-blue-600">{row.peptide}</td>
                 </tr>
               ))}
             </tbody>
@@ -460,15 +460,15 @@ export default function BodyCompositionPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <div className="inline-flex items-center gap-2 bg-rose-500/10 border border-rose-500/20 rounded-full px-3 py-1.5 mb-4">
-                <Scale className="w-4 h-4 text-rose-400" />
-                <span className="text-rose-400 text-sm font-semibold">GLP WEIGHT LOSS PEPTIDES</span>
+              <div className="inline-flex items-center gap-2 bg-rose-50 border border-rose-200 rounded-full px-3 py-1.5 mb-4">
+                <Scale className="w-4 h-4 text-rose-600" />
+                <span className="text-rose-600 text-sm font-semibold">GLP WEIGHT LOSS PEPTIDES</span>
               </div>
-              <h2 className="text-4xl font-black text-white mb-4">
+              <h2 className="text-4xl font-black text-gray-900 mb-4">
                 The GLP-1 Revolution:<br />
-                <span className="text-rose-400">Sema, Tirz & Reta</span>
+                <span className="text-rose-600">Sema, Tirz & Reta</span>
               </h2>
-              <p className="text-slate-300 leading-relaxed mb-6">
+              <p className="text-gray-800 leading-relaxed mb-6">
                 GLP-1 receptor agonists like Semaglutide are the most effective weight loss compounds
                 ever studied — producing 15–22% body weight reduction in clinical trials. The research
                 peptide versions (Semaglutide, Tirzepatide, Retatrutide) work via identical mechanisms
@@ -481,12 +481,12 @@ export default function BodyCompositionPage() {
                   { code: 'R', name: 'Retatrutide (GIP/GLP-1/Glucagon)', result: '24% weight loss', desc: 'Triple agonist — the most powerful in the class, Phase III trials' },
                 ].map((item) => (
                   <div key={item.code} className="flex items-start gap-3">
-                    <div className="w-8 h-8 rounded-lg bg-rose-500/10 border border-rose-500/20 flex items-center justify-center shrink-0">
-                      <span className="text-rose-400 text-xs font-bold">{item.code}</span>
+                    <div className="w-8 h-8 rounded-lg bg-rose-50 border border-rose-200 flex items-center justify-center shrink-0">
+                      <span className="text-rose-600 text-xs font-bold">{item.code}</span>
                     </div>
                     <div>
-                      <div className="text-white font-semibold text-sm">{item.name} — {item.result}</div>
-                      <div className="text-slate-400 text-xs">{item.desc}</div>
+                      <div className="text-gray-900 font-semibold text-sm">{item.name} — {item.result}</div>
+                      <div className="text-gray-700 text-xs">{item.desc}</div>
                     </div>
                   </div>
                 ))}
@@ -497,7 +497,7 @@ export default function BodyCompositionPage() {
               </a>
             </div>
             <div className="glass-card p-6">
-              <h3 className="text-white font-bold text-lg mb-4">GLP Peptide Clinical Results</h3>
+              <h3 className="text-gray-900 font-black text-lg mb-4">GLP Peptide Clinical Results</h3>
               <div className="space-y-5">
                 {[
                   { name: 'Semaglutide', loss: 15, trial: 'STEP-1 Trial (n=1961)' },
@@ -507,16 +507,16 @@ export default function BodyCompositionPage() {
                 ].map((drug) => (
                   <div key={drug.name}>
                     <div className="flex justify-between text-sm mb-1.5">
-                      <span className="text-white font-semibold">{drug.name}</span>
-                      <span className="text-rose-400 font-bold">{drug.loss}% weight loss</span>
+                      <span className="text-gray-900 font-semibold">{drug.name}</span>
+                      <span className="text-rose-600 font-bold">{drug.loss}% weight loss</span>
                     </div>
-                    <div className="h-2 bg-dark-700 rounded-full overflow-hidden">
+                    <div className="h-2 bg-gray-100 rounded-full overflow-hidden">
                       <div
                         className="h-full bg-gradient-to-r from-rose-600 to-rose-400 rounded-full"
                         style={{ width: `${drug.loss * 4}%` }}
                       />
                     </div>
-                    <div className="text-slate-600 text-xs mt-1">{drug.trial}</div>
+                    <div className="text-gray-500 text-xs mt-1">{drug.trial}</div>
                   </div>
                 ))}
               </div>
@@ -529,8 +529,8 @@ export default function BodyCompositionPage() {
       <section className="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between mb-8">
           <div>
-            <h2 className="text-3xl font-black text-white">Body Composition Peptides</h2>
-            <p className="text-slate-400 mt-1">GH peptides, metabolic activators, and GLP weight loss compounds</p>
+            <h2 className="text-3xl font-black text-gray-900">Body Composition Peptides</h2>
+            <p className="text-gray-700 mt-1">GH peptides, metabolic activators, and GLP weight loss compounds</p>
           </div>
           <a href={SOURCE_URL} target="_blank" rel="nofollow noopener noreferrer"
             className="btn-cta text-sm px-5 py-2.5 flex items-center gap-2 hidden sm:flex">
@@ -547,7 +547,7 @@ export default function BodyCompositionPage() {
       {/* FAQ */}
       <section className="py-16" style={{ background: 'rgba(59, 130, 246, 0.03)', borderTop: '1px solid rgba(59, 130, 246, 0.08)' }}>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-black text-white mb-10 text-center">Body Composition FAQ</h2>
+          <h2 className="text-3xl font-black text-gray-900 mb-10 text-center">Body Composition FAQ</h2>
           <div className="space-y-4">
             {[
               {
@@ -585,11 +585,11 @@ export default function BodyCompositionPage() {
             ].map((faq) => (
               <details key={faq.q} className="glass-card group">
                 <summary className="p-5 cursor-pointer list-none flex items-center justify-between">
-                  <span className="text-white font-semibold text-sm">{faq.q}</span>
-                  <span className="text-blue-400 text-lg group-open:rotate-45 transition-transform">+</span>
+                  <span className="text-gray-900 font-semibold text-sm">{faq.q}</span>
+                  <span className="text-blue-600 text-lg group-open:rotate-45 transition-transform">+</span>
                 </summary>
-                <div className="px-5 pb-5">
-                  <p className="text-slate-400 text-sm leading-relaxed">{faq.a}</p>
+                <div className="px-5 pb-5 border-l-2 border-amber-400">
+                  <p className="text-gray-700 text-base leading-relaxed">{faq.a}</p>
                 </div>
               </details>
             ))}
@@ -601,16 +601,16 @@ export default function BodyCompositionPage() {
       <section className="py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="glass-card p-12 relative overflow-hidden">
-            <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-br from-blue-50 to-transparent" />
             <div className="relative">
               <div className="text-5xl mb-6">🔥</div>
-              <h2 className="text-3xl font-black text-white mb-4">
+              <h2 className="text-3xl font-black text-gray-900 mb-4">
                 Start Your Recomp Protocol Today
               </h2>
-              <p className="text-slate-300 text-lg mb-2 max-w-xl mx-auto">
+              <p className="text-gray-800 text-lg mb-2 max-w-xl mx-auto">
                 CJC-1295, Ipamorelin, IGF-1 LR3, and GLP peptides from our recommended supplier.
               </p>
-              <p className="text-slate-500 text-sm mb-8">COA verified · US domestic · Fast shipping</p>
+              <p className="text-gray-600 text-sm mb-8">COA verified · US domestic · Fast shipping</p>
               <div className="flex flex-wrap gap-4 justify-center">
                 <a href={SOURCE_URL} target="_blank" rel="nofollow noopener noreferrer"
                   className="btn-cta text-base px-10 py-4 inline-flex items-center gap-2">
