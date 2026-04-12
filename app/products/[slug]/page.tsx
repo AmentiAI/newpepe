@@ -7,6 +7,7 @@ import { products, getProductBySlug, getRelatedProducts } from '@/lib/products';
 import ProductCard from '@/components/ProductCard';
 import InternalLinks from '@/components/InternalLinks';
 import { productFaqs } from '@/lib/product-faqs';
+import ProductUniqueWidget from '@/components/ProductUniqueWidget';
 
 interface Props {
   params: { slug: string };
@@ -298,6 +299,9 @@ export default function ProductPage({ params }: Props) {
                 })}
               </div>
             </div>
+
+            {/* Unique interactive widget — specific to this product */}
+            <ProductUniqueWidget slug={product.slug} />
 
             {/* All benefits — styled to category */}
             <div className="glass-card p-6">

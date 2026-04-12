@@ -21,7 +21,9 @@
       "Bash(grep -r apollopeptidesciences /mnt/c/Users/Wilso/newpepe/ --include=*.tsx --include=*.ts --include=*.mjs -n)",
       "Read(//tmp/**)",
       "Bash(node_modules/.bin/tsc --noEmit)",
-      "Bash(echo \"Exit: $?\")"
+      "Bash(echo \"Exit: $?\")",
+      "WebFetch(domain:phiogen.is)",
+      "Bash(echo \"exit: $?\")"
     ]
   }
 }

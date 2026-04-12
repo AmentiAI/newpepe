@@ -795,11 +795,19 @@ Cagrisema is in Phase III trials. Early data positions it between tirzepatide an
     image: IMG.sema5,
     affiliateUrl: aff('glp-1s-5mg'),
     shortDescription: 'Semaglutide 5mg — ideal starter vial for GLP-1 weight loss protocols. Same compound as Ozempic/Wegovy at a research-grade price point for dose titration.',
-    fullDescription: `Semaglutide 5mg is the preferred starting size for GLP-1 receptor agonist protocols. At 0.25mg/week starting dose, a 5mg vial provides roughly 20 weeks of initial dosing — ideal for those new to GLP-1 therapy assessing tolerability before committing to larger vials.
+    fullDescription: `Semaglutide 5mg is the preferred starting size for GLP-1 receptor agonist protocols. At a 0.25mg/week starting dose, a single 5mg vial provides roughly 20 weeks of initial dosing — making it the ideal entry point for those new to GLP-1 therapy who want to assess tolerability before committing to larger vials. Starting low is not just cautious; it is the protocol that produced the clinical trial results.
 
-**Clinical Results**
+**Why Starting Low Matters**
 
-Semaglutide (Ozempic/Wegovy active compound) has demonstrated 15-20% body weight reduction in 68-week clinical trials.`,
+The standard GLP-1 escalation protocol exists for a reason: GI adaptation. At 0.25mg/week, the gut has time to adjust to slowed gastric emptying — dramatically reducing the nausea, vomiting, and GI discomfort that cause most early dropouts. The clinical trial populations that achieved 15-20% weight loss all followed this slow escalation approach, not aggressive early dosing.
+
+**Clinical Results at Full Dose**
+
+Semaglutide (Ozempic/Wegovy active compound) has demonstrated 15-20% body weight reduction in 68-week clinical trials at 2.4mg/week. Beginning with a 5mg vial sets the foundation for this outcome by allowing the GI system to adapt during weeks 1-8, ensuring maintenance of higher doses becomes possible rather than intolerable.
+
+**Reconstitution and Storage**
+
+A 5mg vial reconstituted with 2mL bacteriostatic water yields a 2.5mg/mL concentration — convenient for dose escalation. Draw 0.1mL for a 0.25mg dose and 0.2mL for a 0.5mg dose using a standard 1mL insulin syringe. Refrigerate after reconstitution and use within 28 days.`,
     benefits: [
       '15-20% body weight reduction in clinical trials at therapeutic doses',
       'Ideal starter size for dose titration and GI adaptation',
@@ -832,11 +840,19 @@ Semaglutide (Ozempic/Wegovy active compound) has demonstrated 15-20% body weight
     image: IMG.sema15,
     affiliateUrl: aff('glp-1s-15mg'),
     shortDescription: 'Semaglutide 15mg — the largest single-vial option for full-protocol GLP-1 weight loss. Covers multiple months at maintenance doses for maximum weight reduction.',
-    fullDescription: `Semaglutide 15mg is the most cost-effective option for experienced GLP-1 users at therapeutic doses. At 2mg/week, a 15mg vial provides 7.5 weeks of maximum-dose coverage. At 1mg/week, it covers 15 weeks — making it the best value for committed users.
+    fullDescription: `Semaglutide 15mg is the most cost-effective option for experienced GLP-1 users already at therapeutic doses. At 2mg/week, a 15mg vial provides 7.5 weeks of maximum-dose coverage. At 1mg/week, it covers 15 full weeks — making it the best value per milligram for committed users who have completed escalation and are maintaining their target dose.
 
-**STEP-1 Trial Data**
+**STEP-1 Trial Data — What Maintenance Achieves**
 
-At 2.4mg/week: 16.9% average body weight reduction at 68 weeks, with 86% of participants achieving at least 5% weight loss.`,
+At 2.4mg/week maintenance: 16.9% average body weight reduction at 68 weeks, with 86% of participants achieving at least 5% weight loss and 69% achieving at least 10%. These results are only achieved when patients stay on the drug — the 15mg vial minimizes supply gaps and per-unit cost for long-term commitment to the protocol.
+
+**SURMOUNT-4 Withdrawal Warning**
+
+The STEP-4 withdrawal trial demonstrated significant weight regain within 20 weeks of stopping semaglutide. Continuous uninterrupted dosing is essential for maintaining results — which makes having a larger supply on hand critical for avoiding gaps. The 15mg vial provides this continuity at the lowest cost per dose.
+
+**Storage and Reconstitution**
+
+Reconstitute with 3mL bacteriostatic water for a 5mg/mL concentration. At 2mg/week, draw 0.4mL per injection. At 1mg/week, draw 0.2mL. Store in the refrigerator after reconstitution and use within 28 days. Use a 1mL insulin syringe for precise measurement.`,
     benefits: [
       'Best per-milligram value for maintenance-phase semaglutide protocols',
       'Covers 7-15 weeks at therapeutic doses depending on dose level',
@@ -868,11 +884,19 @@ At 2.4mg/week: 16.9% average body weight reduction at 68 weeks, with 86% of part
     image: IMG.tirz30,
     affiliateUrl: aff('glp-2t-30mg'),
     shortDescription: 'Tirzepatide 30mg — covers the complete escalation from 2.5mg to 7.5mg/week in one vial. Optimal size for full SURMOUNT protocol dosing.',
-    fullDescription: `Tirzepatide 30mg is the ideal vial for running a complete escalation protocol. SURMOUNT trial goes from 2.5mg/week to 15mg/week — a 30mg vial covers the first 3 escalation steps.
+    fullDescription: `Tirzepatide 30mg is the ideal vial for running a complete escalation protocol from start to the mid-range dose. The SURMOUNT trial escalates from 2.5mg/week to 15mg/week over several months — a 30mg vial covers the first three escalation steps cleanly, providing 4 weeks at each dose level before needing to move to a larger vial.
 
-**SURMOUNT-1 Results**
+**SURMOUNT-1 Results at Maximum Dose**
 
-At highest dose (15mg), tirzepatide produced 22.5% body weight reduction — significantly exceeding semaglutide's 15-16% in comparable populations.`,
+At the highest dose of 15mg, tirzepatide produced 22.5% body weight reduction over 72 weeks — significantly exceeding semaglutide's 15-16% in comparable populations. The SURPASS-2 trial, which directly compared tirzepatide to semaglutide 1mg, showed tirzepatide's superiority at all three doses tested (5mg, 10mg, and 15mg).
+
+**Why the Dual GIP/GLP-1 Mechanism Outperforms**
+
+Adding GIP receptor agonism to GLP-1 creates synergistic metabolic effects that neither receptor can achieve alone. GIP receptors in adipose tissue directly regulate fat storage, GIP potentiates insulin secretion through a different pathway than GLP-1, and the combination produces preferential visceral fat reduction — the metabolically dangerous fat surrounding abdominal organs. This explains the 50% improvement in weight loss over semaglutide.
+
+**Escalation Schedule from 30mg**
+
+Reconstitute with 3mL bacteriostatic water for a 10mg/mL concentration. Week 1-4: 0.25mL (2.5mg); Week 5-8: 0.5mL (5mg); Week 9-12: 0.75mL (7.5mg). After 12 weeks, 22.5mg will have been used, leaving a small bridge dose before transitioning to the 60mg vial for higher-dose maintenance.`,
     benefits: [
       'Up to 22.5% body weight reduction — superior to semaglutide',
       'Dual GIP + GLP-1 agonism for complementary metabolic effects',
@@ -905,7 +929,19 @@ At highest dose (15mg), tirzepatide produced 22.5% body weight reduction — sig
     image: IMG.tirz60,
     affiliateUrl: aff('glp-2-t-60mg'),
     shortDescription: 'Tirzepatide 60mg — maximum bulk supply for long-term protocols at 10-15mg/week maintenance. Best per-milligram pricing for committed tirzepatide users.',
-    fullDescription: `Tirzepatide 60mg provides the best economy of scale for users at maintenance dosing of 10-15mg/week. At 10mg/week, one vial covers 6 weeks. SURMOUNT-4 withdrawal data demonstrates significant weight regain after stopping — making continuous long-term supply essential.`,
+    fullDescription: `Tirzepatide 60mg provides the best economy of scale for users who have completed escalation and are maintaining at 10-15mg/week. At 10mg/week, one vial covers 6 full weeks. At 15mg/week (the maximum dose), a single vial covers 4 weeks. This is the bulk option for committed users who have verified their optimal dose and want to minimize cost and reconstitution frequency.
+
+**SURMOUNT-4 Withdrawal Data — Why Continuous Dosing Matters**
+
+SURMOUNT-4 demonstrated that participants who stopped tirzepatide after achieving significant weight loss regained more than half of their lost weight within 88 weeks. This data is critical: tirzepatide is not a short-term intervention. Long-term continuous dosing is required to maintain results, making a reliable bulk supply essential for anyone serious about the protocol.
+
+**Maximum Dose Results from SURMOUNT-1**
+
+At 15mg/week — which this vial supports for 4 weeks — SURMOUNT-1 demonstrated 22.5% average body weight reduction at 72 weeks. This makes tirzepatide the most effective approved weight loss agent in history at the time of publication, and the 60mg vial is the most practical format for sustained maximum-dose treatment.
+
+**Reconstitution and Dosing at 60mg**
+
+Reconstitute with 4-6mL bacteriostatic water to achieve a working concentration between 10mg/mL and 15mg/mL. At 10mg/mL with a weekly 10mg dose, draw 1mL per injection. Store refrigerated after reconstitution and use within 28 days. Rotate injection sites (abdomen, thigh, upper arm) to prevent site reactions.`,
     benefits: [
       'Lowest per-milligram cost for tirzepatide',
       '6 weeks at 10mg/week or 4 weeks at 15mg/week maintenance',
@@ -938,7 +974,19 @@ At highest dose (15mg), tirzepatide produced 22.5% body weight reduction — sig
     image: IMG.reta15,
     affiliateUrl: aff('glp-3r-15mg'),
     shortDescription: 'Retatrutide 15mg — starter vial for the world\'s most potent weight loss peptide in Phase III development. 24% weight loss with no plateau at 48 weeks.',
-    fullDescription: `Retatrutide 15mg covers the first 7+ weeks of the escalation protocol at 2mg/week. The triple receptor mechanism (GLP-1 + GIP + glucagon) adds hepatic fat oxidation and metabolic rate elevation beyond dual agonists — explaining the 24% Phase II weight loss data.`,
+    fullDescription: `Retatrutide 15mg covers the first 7-8 weeks of the escalation protocol at 2mg/week, making it the ideal entry point for the most advanced weight loss peptide in clinical development. The triple receptor mechanism — simultaneously activating GLP-1, GIP, and glucagon receptors — adds hepatic fat oxidation and basal metabolic rate elevation beyond what dual agonists like tirzepatide can achieve, which is why Phase II data showed 24.2% weight reduction at 48 weeks.
+
+**The Glucagon Receptor Addition — Why It Matters**
+
+Glucagon receptor agonism is what separates retatrutide from every other weight loss compound currently available. Glucagon directly stimulates the liver to burn fat (hepatic fat oxidation), raises basal metabolic rate so more calories are burned at rest, and promotes lipolysis in adipose tissue. These mechanisms are entirely absent from semaglutide and only partially present in tirzepatide. Adding glucagon agonism to the GIP+GLP-1 foundation is what pushed weight loss from tirzepatide's 22.5% to retatrutide's 24.2%.
+
+**Phase II Results and the Absence of a Plateau**
+
+The most remarkable finding from the retatrutide Phase II trial (New England Journal of Medicine, 2023) was not just the 24.2% weight reduction — it was that the weight loss had not plateaued at 48 weeks. This is unprecedented. Every prior compound showed a plateau, where weight loss slowed or stopped. Retatrutide's continued downward trajectory suggests even greater efficacy could be achieved with longer treatment.
+
+**Starting the Protocol with 15mg**
+
+Reconstitute with 3mL bacteriostatic water for a 5mg/mL concentration. At 2mg/week, draw 0.4mL per injection. The 15mg vial covers weeks 1-7 at the starter dose, during which GI adaptation occurs. After the 15mg vial is used, transition to the 30mg or 60mg vial to continue escalation toward 4-12mg/week.`,
     benefits: [
       '24.2% weight reduction in Phase II at 48 weeks — unprecedented',
       '15mg covers 7+ weeks of starter escalation at 2mg/week',
@@ -971,7 +1019,19 @@ At highest dose (15mg), tirzepatide produced 22.5% body weight reduction — sig
     image: IMG.reta30,
     affiliateUrl: aff('glp-3-r-30mg'),
     shortDescription: 'Retatrutide 30mg — most practical vial for the complete triple agonist escalation protocol. Covers weeks 1-12 of the Phase II reference dosing schedule.',
-    fullDescription: `Retatrutide 30mg covers the complete initial escalation from 2mg to 8mg/week over the first 8 weeks. With 30mg, you run 4 weeks at 2mg (8mg total) and 4 weeks at 4mg (16mg total) — 24mg used, leaving 6mg for a bridging dose before moving to 60mg for high-dose maintenance.`,
+    fullDescription: `Retatrutide 30mg covers the complete initial escalation from 2mg to 8mg/week over the first 8-10 weeks. Running 4 weeks at 2mg (8mg total) and 4 weeks at 4mg (16mg total) uses 24mg — leaving 6mg as a bridging dose before moving to the 60mg vial for high-dose maintenance. This makes the 30mg vial the most efficient single purchase for establishing the retatrutide protocol.
+
+**The Phase II Escalation Reference Protocol**
+
+The clinical trial escalation — 2mg, 4mg, 8mg, 12mg weekly at 4-week intervals — produced 24.2% body weight reduction at 48 weeks without hitting a plateau. The 30mg vial covers the first half of this escalation cleanly. At 8mg/week (the Phase II mid-dose), meaningful weight loss and metabolic improvements are already measurable, and the continued trajectory toward 12mg represents the peak of what is currently achievable with any single weight loss compound.
+
+**Triple Mechanism — Compounding With Each Escalation Step**
+
+As doses increase through the escalation, all three receptor pathways intensify simultaneously. GLP-1 agonism deepens appetite suppression. GIP receptor effects on adipose tissue regulation become more pronounced. Glucagon receptor activity raises basal metabolic rate further, directly increasing calorie burn at rest. The compounding of three distinct mechanisms across the dose range explains why retatrutide continues to produce results where other compounds plateau.
+
+**Practical Notes for the 30mg Vial**
+
+Reconstitute with 3mL bacteriostatic water for a 10mg/mL concentration, making dose measurement straightforward. At 2mg/week draw 0.2mL; at 4mg/week draw 0.4mL. Store refrigerated after reconstitution and use within 28 days. Transition to the 60mg vial when the 30mg is nearly depleted to avoid any gap in dosing.`,
     benefits: [
       'Covers weeks 1-8 of complete escalation protocol from a single vial',
       '24% body weight reduction in Phase II — outperforms all competitors',
@@ -1004,7 +1064,19 @@ At highest dose (15mg), tirzepatide produced 22.5% body weight reduction — sig
     image: IMG.reta60,
     affiliateUrl: aff('glp-3-r-60mg'),
     shortDescription: 'Retatrutide 60mg — bulk supply for the most potent weight loss peptide in Phase III. Optimal for maintenance dosing at 8-12mg/week with the lowest per-mg cost.',
-    fullDescription: `Retatrutide 60mg is for experienced users at maintenance doses of 8-12mg/week. At 12mg/week it provides 5 full weeks. Phase II data at 12mg/week showed continued weight loss through 48 weeks without plateau — supporting continuous uninterrupted use.`,
+    fullDescription: `Retatrutide 60mg is the bulk format for experienced users who have completed the escalation protocol and are maintaining at 8-12mg/week. At 12mg/week it provides 5 full weeks of uninterrupted treatment. At 8mg/week, one vial covers 7.5 weeks. Phase II data at 12mg/week showed continued weight loss through 48 weeks without plateau — the only weight loss compound to demonstrate this, and the core reason continuous uninterrupted high-dose use is both achievable and clinically justified.
+
+**No Plateau at 48 Weeks — The Critical Finding**
+
+In every prior GLP-1 class compound, a weight loss plateau is observed as the body adapts to the appetite-suppressing effects. Retatrutide's Phase II data showed no such plateau at 48 weeks at the highest dose. This is attributed to the glucagon receptor arm, which continuously raises basal metabolic rate — meaning the body actually burns more energy even as it loses weight, counteracting the metabolic adaptation that causes other compounds to plateau.
+
+**Hepatic Fat Benefits at Maintenance Doses**
+
+At maintenance doses of 8-12mg/week, retatrutide produces significant reductions in liver fat — relevant for the substantial overlap between obesity and non-alcoholic fatty liver disease (NAFLD/NASH). Glucagon receptor agonism drives hepatic fat oxidation directly, making retatrutide uniquely suited to address both the metabolic and hepatic components of metabolic syndrome simultaneously.
+
+**Storage and Cost Efficiency at 60mg**
+
+The 60mg vial represents the lowest per-milligram cost for retatrutide. Reconstitute with 6mL bacteriostatic water for a 10mg/mL concentration. At 12mg/week, draw 1.2mL per injection using a standard 1mL syringe plus a separate 0.2mL draw, or reconstitute to a different concentration. Refrigerate after reconstitution and use within 28 days.`,
     benefits: [
       'Most economical per-milligram retatrutide price',
       '5-7 weeks at 8-12mg/week maintenance from one vial',
