@@ -19,28 +19,28 @@ export interface Product {
 
 const aff = (slug: string) => `/out?p=${slug}`;
 
-// All real product image URLs from Apollo Peptide Sciences
+// All product image URLs from Phiogen
 const IMG = {
-  bpc157: 'https://apollopeptidesciences.com/wp-content/uploads/2025/09/bpc157_10mg.webp',
-  tb500: 'https://apollopeptidesciences.com/wp-content/uploads/2025/09/TB500_10mg.webp',
-  ghkcu: 'https://apollopeptidesciences.com/wp-content/uploads/2025/01/ghk-cu_50mg.webp',
-  epithalon: 'https://apollopeptidesciences.com/wp-content/uploads/2025/09/epithalon_50mg.webp',
-  cjcipa: 'https://apollopeptidesciences.com/wp-content/uploads/2025/01/cjc1295_5-5mg.webp',
-  nad: 'https://apollopeptidesciences.com/wp-content/uploads/2025/09/nad_500mg.webp',
-  igf: 'https://apollopeptidesciences.com/wp-content/uploads/2025/09/igf-1lr3-1mg.webp',
-  snap8: 'https://apollopeptidesciences.com/wp-content/uploads/2025/01/snap-8_10mg.webp',
-  sema5: 'https://apollopeptidesciences.com/wp-content/uploads/2024/10/semaglutide_5mg.webp',
-  sema: 'https://apollopeptidesciences.com/wp-content/uploads/2024/10/semaglutide_10mg-1.webp',
-  sema15: 'https://apollopeptidesciences.com/wp-content/uploads/2024/06/semaglutide_15mg.webp',
-  tirz: 'https://apollopeptidesciences.com/wp-content/uploads/2024/04/tirzepatide_15mg-1.webp',
-  tirz30: 'https://apollopeptidesciences.com/wp-content/uploads/2024/06/tirzepatide_30mg.webp',
-  tirz60: 'https://apollopeptidesciences.com/wp-content/uploads/2025/12/tirzepatide_60mg-1.webp',
-  reta: 'https://apollopeptidesciences.com/wp-content/uploads/2024/04/retatrutide_10mg-1.webp',
-  reta15: 'https://apollopeptidesciences.com/wp-content/uploads/2024/06/retatrutide_15mg.webp',
-  reta30: 'https://apollopeptidesciences.com/wp-content/uploads/2025/12/retatrutide_30mg.webp',
-  reta60: 'https://apollopeptidesciences.com/wp-content/uploads/2025/12/retatrutide_60mg.webp',
-  cagri: 'https://apollopeptidesciences.com/wp-content/uploads/2025/09/cagri_sema_5_5mg-1.webp',
-  bacwater: 'https://apollopeptidesciences.com/wp-content/uploads/2024/06/reconsitution_solution_10ml.webp',
+  bpc157:   'https://phiogen.is/images/products/bpc-157-10mg.png',
+  tb500:    'https://phiogen.is/images/products/tb-500-thymosin-beta-4-10mg.png',
+  ghkcu:    'https://phiogen.is/images/products/ghk-cu-50mg.png',
+  epithalon:'https://phiogen.is/images/products/epitalon-50mg.png',
+  cjcipa:   'https://phiogen.is/images/products/ipamorelin-cjc-1295-blend-cjc-1295-5mg-ipa-5mg.png',
+  nad:      'https://phiogen.is/images/products/nad-500mg.png',
+  igf:      'https://phiogen.is/images/products/igf-1-lr3-1mg.png',
+  snap8:    'https://phiogen.is/images/products/snap-8-10mg.png',
+  sema5:    'https://phiogen.is/images/products/semaglutide-6mg.png',
+  sema:     'https://phiogen.is/images/products/semaglutide-12mg.png',
+  sema15:   'https://phiogen.is/images/products/semaglutide-20mg.png',
+  tirz:     'https://phiogen.is/images/products/tirzepatide-15mg.png',
+  tirz30:   'https://phiogen.is/images/products/tirzepatide-30mg.png',
+  tirz60:   'https://phiogen.is/images/products/tirzepatide-60mg.png',
+  reta:     'https://phiogen.is/images/products/retatrutide-10mg.png',
+  reta15:   'https://phiogen.is/images/products/retatrutide-15mg.png',
+  reta30:   'https://phiogen.is/images/products/retatrutide-20mg.png',
+  reta60:   'https://phiogen.is/images/products/retatrutide-30mg.png',
+  cagri:    'https://phiogen.is/images/products/cagri-sema-blend-5mg-cagrilintide-5mg-sema-10mg.png',
+  bacwater: 'https://phiogen.is/images/products/bacteriostatic-water-30ml.png',
 };
 
 export const products: Product[] = [

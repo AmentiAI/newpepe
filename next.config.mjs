@@ -3,7 +3,7 @@
 const nextConfig = {
   images: {
     remotePatterns: [
-      { protocol: 'https', hostname: 'apollopeptidesciences.com' },
+      { protocol: 'https', hostname: 'phiogen.is' },
       { protocol: 'https', hostname: 'cdn.shopify.com' },
       { protocol: 'https', hostname: 'images.unsplash.com' },
     ],

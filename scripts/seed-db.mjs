@@ -15,7 +15,7 @@ if (!dbUrl) {
 
 const sql = neon(dbUrl);
 
-const AFFILIATE = 'https://apollopeptidesciences.com/?rfsn=9016964.3f1b1e';
+const AFFILIATE = 'https://phiogen.is/?ref=PEPS';
 
 const products = [
   { slug: 'bpc-157', name: 'BPC-157', category: 'Healing', tags: ['healing', 'gut', 'tendons', 'ligaments'], short_description: 'BPC-157 is the most studied healing peptide — accelerates tendon, ligament, muscle, and gut repair with zero systemic side effects.', price: 54.99, affiliate_url: AFFILIATE },
