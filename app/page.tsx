@@ -270,7 +270,7 @@ const coaPoints = [
   {
     icon: Package,
     title: 'Our Sourcing Recommendation',
-    desc: 'We recommend Apollo Peptide Sciences — every batch ships with a full third-party COA, 98%+ purity guarantee, US domestic fulfillment, and cold-chain packaging. They are the only supplier we link to on this site.',
+    desc: 'We recommend Phiogen — every batch ships with a full third-party COA, 98%+ purity guarantee, US domestic fulfillment, and cold-chain packaging. They are the only supplier we link to on this site.',
     color: 'neon',
     isAffiliate: true,
   },
@@ -312,15 +312,14 @@ export default function HomePage() {
       {/* ═══════════════════════════════════════════════
           HERO — Full viewport, cinematic
       ═══════════════════════════════════════════════ */}
-      <section className="relative min-h-screen flex items-center pt-16 bg-dark-900">
+      <section className="relative min-h-screen flex items-center pt-16 bg-white">
         {/* Animated background grid */}
-        <div className="absolute inset-0 grid-bg opacity-60" />
+        <div className="absolute inset-0 grid-bg opacity-100" />
 
         {/* Radial gradient orbs */}
         <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
-          <div className="absolute top-1/4 -left-32 w-[600px] h-[600px] bg-neon-green/8 rounded-full blur-[120px]" />
-          <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-blue-600/8 rounded-full blur-[100px]" />
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] bg-purple-600/5 rounded-full blur-[80px]" />
+          <div className="absolute top-1/4 -left-32 w-[600px] h-[600px] bg-amber-400/10 rounded-full blur-[120px]" />
+          <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-yellow-300/10 rounded-full blur-[100px]" />
         </div>
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 w-full">
@@ -328,21 +327,21 @@ export default function HomePage() {
             {/* Left — Copy */}
             <div>
               {/* Eyebrow badge */}
-              <div className="inline-flex items-center gap-2 bg-neon-green/10 border border-neon-green/25 rounded-full px-4 py-1.5 mb-8">
-                <span className="w-2 h-2 bg-neon-green rounded-full animate-pulse" />
-                <span className="text-neon-green text-xs font-semibold uppercase tracking-widest">Trusted Peptide Protocols</span>
+              <div className="inline-flex items-center gap-2 bg-amber-50 border border-amber-300 rounded-full px-4 py-1.5 mb-8">
+                <span className="w-2 h-2 bg-amber-400 rounded-full animate-pulse" />
+                <span className="text-amber-600 text-xs font-semibold uppercase tracking-widest">Trusted Peptide Protocols</span>
               </div>
 
               <h1
                 aria-label="BPC-157 Peptide Protocols — Heal. Optimize. Dominate."
                 className="text-6xl sm:text-7xl lg:text-8xl font-black leading-[0.95] mb-6 tracking-tight"
               >
-                <span className="text-white block">Heal.</span>
-                <span className="block" style={{ WebkitTextStroke: '2px #00ff88', color: 'transparent' }}>Optimize.</span>
-                <span className="text-white block">Dominate.</span>
+                <span className="text-gray-900 block">Heal.</span>
+                <span className="block" style={{ WebkitTextStroke: '2px #F59E0B', color: 'transparent' }}>Optimize.</span>
+                <span className="text-gray-900 block">Dominate.</span>
               </h1>
 
-              <p className="text-lg text-slate-400 leading-relaxed mb-10 max-w-lg">
+              <p className="text-lg text-gray-600 leading-relaxed mb-10 max-w-lg">
                 The most comprehensive BPC-157 and peptide protocol resource.
                 Science-backed stacks for injury healing, body recomposition,
                 anti-aging, and cognitive enhancement.
@@ -368,22 +367,10 @@ export default function HomePage() {
 
               {/* Product quick-links */}
               <div className="flex flex-wrap gap-2 mb-8">
-                {[
-                  { label: 'BPC-157', href: '/bpc-157', color: 'emerald' },
-                  { label: 'TB-500', href: '/tb-500', color: 'blue' },
-                  { label: 'GHK-Cu', href: '/ghk-cu', color: 'purple' },
-                  { label: 'Epithalon', href: '/epithalon', color: 'amber' },
-                  { label: 'Ipamorelin', href: '/ipamorelin', color: 'rose' },
-                ].map(({ label, href, color }) => {
-                  const c: Record<string, string> = {
-                    emerald: 'bg-emerald-400/10 text-emerald-400 border-emerald-400/20 hover:border-emerald-400/50',
-                    blue: 'bg-blue-400/10 text-blue-400 border-blue-400/20 hover:border-blue-400/50',
-                    purple: 'bg-purple-400/10 text-purple-400 border-purple-400/20 hover:border-purple-400/50',
-                    amber: 'bg-amber-400/10 text-amber-400 border-amber-400/20 hover:border-amber-400/50',
-                    rose: 'bg-rose-400/10 text-rose-400 border-rose-400/20 hover:border-rose-400/50',
-                  };
+                {['BPC-157', 'TB-500', 'GHK-Cu', 'Epithalon', 'Ipamorelin'].map((label) => {
+                  const href = `/${label.toLowerCase().replace('/', '').replace(' ', '-').replace('ghk-cu', 'ghk-cu').replace('bpc-157', 'bpc-157').replace('tb-500', 'tb-500').replace('epithalon', 'epithalon').replace('ipamorelin', 'ipamorelin')}`;
                   return (
-                    <Link key={label} href={href} className={`text-xs font-semibold px-3 py-1.5 rounded-full border transition-all duration-200 ${c[color]}`}>
+                    <Link key={label} href={href} className="text-xs font-semibold px-3 py-1.5 rounded-full border border-amber-200 bg-amber-50 text-amber-700 hover:border-amber-400 hover:bg-amber-100 transition-all duration-200">
                       {label} →
                     </Link>
                   );
@@ -393,8 +380,8 @@ export default function HomePage() {
               {/* Trust bar */}
               <div className="flex flex-wrap gap-5">
                 {['COA Verified', 'US Domestic', 'Pharmaceutical Grade', 'Expert Protocols'].map((item) => (
-                  <div key={item} className="flex items-center gap-1.5 text-sm text-slate-500">
-                    <CheckCircle className="w-4 h-4 text-neon-green" />
+                  <div key={item} className="flex items-center gap-1.5 text-sm text-gray-500">
+                    <CheckCircle className="w-4 h-4 text-amber-500" />
                     <span>{item}</span>
                   </div>
                 ))}
@@ -403,41 +390,43 @@ export default function HomePage() {
 
             {/* Right — Multi-product showcase */}
             <div className="relative hidden lg:block">
-              {/* Glow orb behind grid */}
-              <div className="absolute inset-0 bg-neon-green/3 rounded-3xl blur-3xl pointer-events-none" />
-
               <div className="relative">
                 {/* Header row */}
-                <div className="flex items-center justify-between mb-4">
-                  <p className="text-neon-green text-xs font-semibold uppercase tracking-widest">Top Peptides</p>
-                  <Link href="/products" className="text-xs text-slate-500 hover:text-neon-green transition-colors flex items-center gap-1">
+                <div className="flex items-center justify-between mb-5">
+                  <p className="text-amber-600 text-xs font-bold uppercase tracking-widest">Top Peptides</p>
+                  <Link href="/products" className="text-xs text-gray-400 hover:text-amber-600 transition-colors flex items-center gap-1">
                     See All 20+ <ArrowRight className="w-3 h-3" />
                   </Link>
                 </div>
 
-                {/* 2×2 product grid */}
-                <div className="grid grid-cols-2 gap-3 mb-3">
+                {/* 2×2 product grid — BIG cards */}
+                <div className="grid grid-cols-2 gap-5 mb-5">
                   {heroProducts.map((product) => (
                     <Link
                       key={product.slug}
                       href={`/products/${product.slug}`}
-                      className="group glass-card p-3 hover:border-neon-green/40 transition-all duration-200 block"
+                      className="group glass-card p-5 hover:border-amber-400/60 transition-all duration-200 block"
                     >
-                      <div className="relative h-32 mb-3 overflow-hidden rounded-lg bg-dark-700/60">
+                      {/* Large image area */}
+                      <div className="relative h-56 mb-4 overflow-hidden rounded-xl bg-gray-50 border border-gray-100">
                         <Image
                           src={product.image}
                           alt={product.name}
                           fill
-                          className="object-contain p-3 group-hover:scale-105 transition-transform duration-300"
-                          sizes="200px"
+                          className="object-contain p-5 group-hover:scale-105 transition-transform duration-300"
+                          sizes="280px"
                         />
                       </div>
-                      <p className="text-white font-bold text-sm mb-0.5 group-hover:text-neon-green transition-colors">{product.name}</p>
-                      <p className="text-slate-500 text-xs mb-2 line-clamp-1">{product.tagline.split(' ').slice(0, 5).join(' ')}…</p>
-                      <div className="flex items-center justify-between">
-                        <span className="text-neon-green text-sm font-black">${product.price}</span>
-                        <span className="text-xs text-slate-500 group-hover:text-neon-green flex items-center gap-0.5 transition-colors">
-                          View <ArrowRight className="w-3 h-3" />
+                      {/* Category badge */}
+                      <span className="inline-block text-xs font-semibold bg-amber-50 text-amber-600 border border-amber-200 px-2.5 py-1 rounded-full mb-2">
+                        {product.category}
+                      </span>
+                      <p className="text-gray-900 font-black text-lg mb-1 group-hover:text-amber-600 transition-colors leading-tight">{product.name}</p>
+                      <p className="text-gray-500 text-sm mb-4 line-clamp-2 leading-snug">{product.tagline}</p>
+                      <div className="flex items-center justify-between pt-3 border-t border-gray-100">
+                        <span className="text-amber-600 text-xl font-black">${product.price}</span>
+                        <span className="text-xs font-semibold text-gray-500 group-hover:text-amber-600 flex items-center gap-1 transition-colors">
+                          View Product <ArrowRight className="w-3.5 h-3.5" />
                         </span>
                       </div>
                     </Link>
@@ -445,25 +434,25 @@ export default function HomePage() {
                 </div>
 
                 {/* Bottom action row */}
-                <div className="flex gap-2">
-                  <Link href="/products" className="flex-1 btn-secondary text-xs py-2.5 text-center">
+                <div className="flex gap-3">
+                  <Link href="/products" className="flex-1 btn-secondary text-sm py-3 text-center font-semibold">
                     All Peptides
                   </Link>
                   <a
                     href={SOURCE_URL}
                     target="_blank"
                     rel="nofollow noopener noreferrer"
-                    className="flex-1 btn-cta text-xs py-2.5 text-center flex items-center justify-center gap-1"
+                    className="flex-1 btn-cta text-sm py-3 text-center flex items-center justify-center gap-1.5 font-semibold"
                   >
-                    Shop Now <ArrowRight className="w-3 h-3" />
+                    Shop Now <ArrowRight className="w-4 h-4" />
                   </a>
                 </div>
 
                 {/* Trust badge strip */}
-                <div className="mt-3 flex justify-center gap-4 flex-wrap">
+                <div className="mt-4 flex justify-center gap-5 flex-wrap">
                   {['98%+ Purity', 'COA Verified', 'US Domestic'].map((t) => (
-                    <span key={t} className="flex items-center gap-1 text-xs text-slate-600">
-                      <CheckCircle className="w-3 h-3 text-neon-green" /> {t}
+                    <span key={t} className="flex items-center gap-1.5 text-xs text-gray-500">
+                      <CheckCircle className="w-3.5 h-3.5 text-amber-500" /> {t}
                     </span>
                   ))}
                 </div>

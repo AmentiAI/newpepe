@@ -8,17 +8,17 @@ module.exports = {
     extend: {
       colors: {
         neon: {
-          green: '#00ff88',
-          blue: '#0066ff',
-          pink: '#ff3366',
-          cyan: '#00e5ff',
+          green: '#F59E0B',   /* yellow accent — replaces green everywhere */
+          blue: '#3B82F6',
+          pink: '#EC4899',
+          cyan: '#06B6D4',
         },
         dark: {
-          900: '#060610',
-          800: '#0a0a1a',
-          700: '#0f0f24',
-          600: '#161630',
-          500: '#1e1e40',
+          900: '#ffffff',
+          800: '#f9fafb',
+          700: '#f3f4f6',
+          600: '#e5e7eb',
+          500: '#d1d5db',
         },
       },
       fontFamily: {
@@ -33,8 +33,8 @@ module.exports = {
       },
       keyframes: {
         glow: {
-          from: { boxShadow: '0 0 10px #00ff88, 0 0 20px #00ff88' },
-          to: { boxShadow: '0 0 20px #00ff88, 0 0 40px #00ff88, 0 0 60px #00ff88' },
+          from: { boxShadow: '0 0 10px #F59E0B, 0 0 20px #F59E0B' },
+          to: { boxShadow: '0 0 20px #F59E0B, 0 0 40px #F59E0B, 0 0 60px #F59E0B' },
         },
         marquee: {
           '0%': { transform: 'translateX(0%)' },

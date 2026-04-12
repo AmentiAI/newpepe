@@ -27,16 +27,16 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-dark-900/95 backdrop-blur-md border-b border-neon-green/10">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 group">
-            <div className="w-8 h-8 rounded-lg bg-neon-green/10 border border-neon-green/30 flex items-center justify-center group-hover:bg-neon-green/20 transition-colors">
-              <Zap className="w-4 h-4 text-neon-green" />
+            <div className="w-8 h-8 rounded-lg bg-amber-50 border border-amber-200 flex items-center justify-center group-hover:bg-amber-100 transition-colors">
+              <Zap className="w-4 h-4 text-amber-500" />
             </div>
-            <span className="font-bold text-lg text-white">
-              BPC<span className="text-neon-green">157</span>Stack
+            <span className="font-bold text-lg text-gray-900">
+              BPC<span className="text-amber-500">157</span>Stack
             </span>
           </Link>
 
@@ -46,7 +46,7 @@ export default function Navbar() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="px-3 py-2 text-sm text-slate-400 hover:text-neon-green transition-colors rounded-md hover:bg-neon-green/5"
+                className="px-3 py-2 text-sm text-gray-600 hover:text-amber-600 transition-colors rounded-md hover:bg-amber-50"
               >
                 {link.label}
               </Link>
@@ -68,7 +68,7 @@ export default function Navbar() {
           {/* Mobile menu button */}
           <button
             onClick={() => setOpen(!open)}
-            className="lg:hidden p-2 text-slate-400 hover:text-neon-green transition-colors"
+            className="lg:hidden p-2 text-gray-500 hover:text-amber-600 transition-colors"
           >
             {open ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
           </button>
@@ -77,30 +77,30 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       {open && (
-        <div className="lg:hidden bg-dark-800 border-b border-neon-green/10 px-4 py-4">
+        <div className="lg:hidden bg-white border-b border-gray-200 px-4 py-4">
           <div className="flex flex-col gap-1">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
                 onClick={() => setOpen(false)}
-                className="px-3 py-2 text-sm text-slate-400 hover:text-neon-green transition-colors rounded-md"
+                className="px-3 py-2 text-sm text-gray-600 hover:text-amber-600 transition-colors rounded-md"
               >
                 {link.label}
               </Link>
             ))}
 
             {/* Top Products quick-links */}
-            <div className="mt-3 pt-3 border-t border-white/5">
-              <p className="text-slate-600 text-xs font-semibold uppercase tracking-widest px-3 mb-2">Top Peptides</p>
+            <div className="mt-3 pt-3 border-t border-gray-100">
+              <p className="text-gray-400 text-xs font-semibold uppercase tracking-widest px-3 mb-2">Top Peptides</p>
               {topProducts.map((link) => (
                 <Link
                   key={link.href}
                   href={link.href}
                   onClick={() => setOpen(false)}
-                  className="px-3 py-2 text-sm text-slate-500 hover:text-neon-green transition-colors rounded-md flex items-center gap-1.5"
+                  className="px-3 py-2 text-sm text-gray-500 hover:text-amber-600 transition-colors rounded-md flex items-center gap-1.5"
                 >
-                  <span className="w-1.5 h-1.5 rounded-full bg-neon-green/40 shrink-0" />
+                  <span className="w-1.5 h-1.5 rounded-full bg-amber-400 shrink-0" />
                   {link.label}
                 </Link>
               ))}
