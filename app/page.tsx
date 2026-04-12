@@ -312,7 +312,7 @@ export default function HomePage() {
       {/* ═══════════════════════════════════════════════
           HERO — Full viewport, cinematic
       ═══════════════════════════════════════════════ */}
-      <section className="relative min-h-screen flex items-center pt-16 bg-white">
+      <section className="relative pt-20 pb-12 bg-white">
         {/* Animated background grid */}
         <div className="absolute inset-0 grid-bg opacity-100" />
 
@@ -322,7 +322,7 @@ export default function HomePage() {
           <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-yellow-300/10 rounded-full blur-[100px]" />
         </div>
 
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 w-full">
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-4 pb-8 w-full">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             {/* Left — Copy */}
             <div>
@@ -418,14 +418,14 @@ export default function HomePage() {
                         />
                       </div>
                       {/* Category badge */}
-                      <span className="inline-block text-xs font-semibold bg-amber-50 text-amber-600 border border-amber-200 px-2.5 py-1 rounded-full mb-2">
+                      <span className="inline-block text-xs font-bold bg-amber-50 text-amber-700 border border-amber-200 px-2.5 py-1 rounded-full mb-2">
                         {product.category}
                       </span>
-                      <p className="text-gray-900 font-black text-lg mb-1 group-hover:text-amber-600 transition-colors leading-tight">{product.name}</p>
-                      <p className="text-gray-500 text-sm mb-4 line-clamp-2 leading-snug">{product.tagline}</p>
-                      <div className="flex items-center justify-between pt-3 border-t border-gray-100">
-                        <span className="text-amber-600 text-xl font-black">${product.price}</span>
-                        <span className="text-xs font-semibold text-gray-500 group-hover:text-amber-600 flex items-center gap-1 transition-colors">
+                      <p className="text-gray-900 font-black text-2xl mb-1 group-hover:text-amber-600 transition-colors leading-tight">{product.name}</p>
+                      <p className="text-gray-700 text-base mb-4 line-clamp-2 leading-snug">{product.tagline}</p>
+                      <div className="flex items-center justify-between pt-3 border-t border-gray-200">
+                        <span className="text-amber-600 text-2xl font-black">${product.price}</span>
+                        <span className="text-sm font-bold text-gray-700 group-hover:text-amber-600 flex items-center gap-1 transition-colors">
                           View Product <ArrowRight className="w-3.5 h-3.5" />
                         </span>
                       </div>
@@ -465,14 +465,14 @@ export default function HomePage() {
       {/* ═══════════════════════════════════════════════
           STATS BAR
       ═══════════════════════════════════════════════ */}
-      <div className="bg-dark-800 border-y border-neon-green/10">
+      <div className="bg-gray-50 border-y border-gray-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
             {stats.map(({ value, label, icon: Icon }) => (
               <div key={label} className="text-center">
-                <Icon className="w-6 h-6 text-neon-green mx-auto mb-2 opacity-70" />
-                <div className="text-4xl font-black text-white mb-1">{value}</div>
-                <div className="text-slate-500 text-sm">{label}</div>
+                <Icon className="w-6 h-6 text-amber-500 mx-auto mb-2" />
+                <div className="text-4xl font-black text-gray-900 mb-1">{value}</div>
+                <div className="text-gray-600 text-sm font-medium">{label}</div>
               </div>
             ))}
           </div>
@@ -482,10 +482,10 @@ export default function HomePage() {
       {/* ═══════════════════════════════════════════════
           MARQUEE
       ═══════════════════════════════════════════════ */}
-      <div className="bg-neon-green/5 border-b border-neon-green/10 py-3 overflow-hidden">
+      <div className="bg-amber-50 border-b border-amber-100 py-3 overflow-hidden">
         <div className="flex gap-12 animate-marquee whitespace-nowrap">
           {[...marqueeItems, ...marqueeItems].map((item, i) => (
-            <span key={i} className="text-neon-green/70 text-xs font-mono tracking-widest shrink-0">{item}</span>
+            <span key={i} className="text-amber-700 text-xs font-mono tracking-widest shrink-0">{item}</span>
           ))}
         </div>
       </div>
@@ -493,32 +493,32 @@ export default function HomePage() {
       {/* ═══════════════════════════════════════════════
           HOW IT WORKS — 3-step education section
       ═══════════════════════════════════════════════ */}
-      <section className="py-24 bg-dark-900">
+      <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <p className="text-neon-green text-xs font-semibold uppercase tracking-widest mb-3">Simple Process</p>
-            <h2 className="text-4xl sm:text-5xl font-black text-white mb-4">
+            <p className="text-amber-600 text-xs font-bold uppercase tracking-widest mb-3">Simple Process</p>
+            <h2 className="text-4xl sm:text-5xl font-black text-gray-900 mb-4">
               How It <span className="gradient-text">Works</span>
             </h2>
-            <p className="text-slate-400 max-w-xl mx-auto">
+            <p className="text-gray-600 text-lg max-w-xl mx-auto">
               From identifying your goal to running your first protocol — three steps is all it takes.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 relative">
             {/* Connector line — desktop only */}
-            <div className="hidden md:block absolute top-14 left-[calc(16.67%+1rem)] right-[calc(16.67%+1rem)] h-px bg-gradient-to-r from-emerald-400/30 via-blue-400/30 to-neon-green/30" />
+            <div className="hidden md:block absolute top-14 left-[calc(16.67%+1rem)] right-[calc(16.67%+1rem)] h-px bg-gradient-to-r from-amber-300/50 via-amber-400/50 to-amber-300/50" />
 
             {howItWorksSteps.map(({ step, icon: Icon, title, desc, color }) => {
               const colorMap: Record<string, string> = {
-                emerald: 'bg-emerald-400/10 border-emerald-400/20 text-emerald-400',
-                blue: 'bg-blue-400/10 border-blue-400/20 text-blue-400',
-                neon: 'bg-neon-green/10 border-neon-green/20 text-neon-green',
+                emerald: 'bg-emerald-50 border-emerald-200 text-emerald-600',
+                blue: 'bg-blue-50 border-blue-200 text-blue-600',
+                neon: 'bg-amber-50 border-amber-200 text-amber-600',
               };
               const stepColor: Record<string, string> = {
-                emerald: 'text-emerald-400 border-emerald-400/30',
-                blue: 'text-blue-400 border-blue-400/30',
-                neon: 'text-neon-green border-neon-green/30',
+                emerald: 'text-emerald-600 border-emerald-200 bg-emerald-50',
+                blue: 'text-blue-600 border-blue-200 bg-blue-50',
+                neon: 'text-amber-600 border-amber-200 bg-amber-50',
               };
               return (
                 <div key={step} className="glass-card p-8 flex flex-col items-center text-center relative">
@@ -530,8 +530,8 @@ export default function HomePage() {
                   <div className={`w-16 h-16 rounded-2xl border flex items-center justify-center mb-6 ${colorMap[color]}`}>
                     <Icon className="w-7 h-7" />
                   </div>
-                  <h3 className="text-white font-bold text-xl mb-3">{title}</h3>
-                  <p className="text-slate-400 text-sm leading-relaxed">{desc}</p>
+                  <h3 className="text-gray-900 font-black text-xl mb-3">{title}</h3>
+                  <p className="text-gray-700 text-base leading-relaxed">{desc}</p>
                 </div>
               );
             })}
@@ -548,14 +548,14 @@ export default function HomePage() {
       {/* ═══════════════════════════════════════════════
           GOAL SELECTOR — 2×2 grid, large cards
       ═══════════════════════════════════════════════ */}
-      <section className="bg-dark-800 py-24 grid-bg border-y border-white/5">
+      <section className="bg-gray-50 py-24 grid-bg border-y border-gray-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <p className="text-neon-green text-xs font-semibold uppercase tracking-widest mb-3">Choose Your Protocol</p>
-            <h2 className="text-4xl sm:text-5xl font-black text-white mb-4">
+            <p className="text-amber-600 text-xs font-bold uppercase tracking-widest mb-3">Choose Your Protocol</p>
+            <h2 className="text-4xl sm:text-5xl font-black text-gray-900 mb-4">
               What Are You <span className="gradient-text">Optimizing For?</span>
             </h2>
-            <p className="text-slate-400 max-w-xl mx-auto">
+            <p className="text-gray-600 text-lg max-w-xl mx-auto">
               Pick your goal. We give you the exact peptide stack, dosing protocol, and where to source it.
             </p>
           </div>
@@ -563,46 +563,46 @@ export default function HomePage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
             {goals.map(({ icon: Icon, title, subtitle, desc, href, color, peptides, stat }) => {
               const colorMap: Record<string, string> = {
-                emerald: 'text-emerald-400 border-emerald-400/20 bg-emerald-400/5 group-hover:border-emerald-400/40',
-                blue: 'text-blue-400 border-blue-400/20 bg-blue-400/5 group-hover:border-blue-400/40',
-                purple: 'text-purple-400 border-purple-400/20 bg-purple-400/5 group-hover:border-purple-400/40',
-                amber: 'text-amber-400 border-amber-400/20 bg-amber-400/5 group-hover:border-amber-400/40',
+                emerald: 'text-emerald-600 border-emerald-200 bg-white group-hover:border-emerald-400',
+                blue: 'text-blue-600 border-blue-200 bg-white group-hover:border-blue-400',
+                purple: 'text-blue-600 border-blue-200 bg-white group-hover:border-blue-400',
+                amber: 'text-amber-600 border-amber-200 bg-white group-hover:border-amber-400',
               };
               const iconBg: Record<string, string> = {
-                emerald: 'bg-emerald-400/10 text-emerald-400',
-                blue: 'bg-blue-400/10 text-blue-400',
-                purple: 'bg-purple-400/10 text-purple-400',
-                amber: 'bg-amber-400/10 text-amber-400',
+                emerald: 'bg-emerald-50 text-emerald-600',
+                blue: 'bg-blue-50 text-blue-600',
+                purple: 'bg-blue-50 text-blue-600',
+                amber: 'bg-amber-50 text-amber-600',
               };
               return (
                 <Link
                   key={title}
                   href={href}
-                  className={`group relative p-8 rounded-2xl border transition-all duration-300 ${colorMap[color]} bg-dark-800/50 backdrop-blur-sm hover:shadow-xl block`}
+                  className={`group relative p-8 rounded-2xl border transition-all duration-300 ${colorMap[color]} hover:shadow-xl block`}
                 >
                   <div className="flex items-start gap-5 mb-6">
                     <div className={`w-12 h-12 rounded-xl flex items-center justify-center shrink-0 ${iconBg[color]}`}>
                       <Icon className="w-6 h-6" />
                     </div>
                     <div>
-                      <p className="text-slate-500 text-xs font-semibold uppercase tracking-wider mb-0.5">{subtitle}</p>
-                      <h3 className="text-white font-black text-2xl">{title}</h3>
+                      <p className="text-gray-500 text-xs font-bold uppercase tracking-wider mb-0.5">{subtitle}</p>
+                      <h3 className="text-gray-900 font-black text-2xl">{title}</h3>
                     </div>
                   </div>
 
-                  <p className="text-slate-400 leading-relaxed mb-6">{desc}</p>
+                  <p className="text-gray-700 text-base leading-relaxed mb-6">{desc}</p>
 
                   {/* Peptide tags */}
                   <div className="flex flex-wrap gap-2 mb-5">
                     {peptides.map((p) => (
-                      <span key={p} className="text-xs font-mono bg-dark-700 text-slate-300 px-2.5 py-1 rounded-lg border border-white/5">{p}</span>
+                      <span key={p} className="text-sm font-semibold bg-gray-100 text-gray-800 px-3 py-1 rounded-lg border border-gray-200">{p}</span>
                     ))}
                   </div>
 
                   {/* Stat callout */}
                   <div className="flex items-center justify-between">
-                    <span className="text-xs text-slate-500 italic">{stat}</span>
-                    <span className="text-sm font-semibold flex items-center gap-1 group-hover:gap-2 transition-all" style={{ color: color === 'emerald' ? '#34d399' : color === 'blue' ? '#60a5fa' : color === 'purple' ? '#c084fc' : '#fbbf24' }}>
+                    <span className="text-sm text-gray-600 italic font-medium">{stat}</span>
+                    <span className="text-sm font-bold flex items-center gap-1 group-hover:gap-2 transition-all" style={{ color: color === 'emerald' ? '#059669' : color === 'blue' ? '#2563EB' : color === 'purple' ? '#2563EB' : '#D97706' }}>
                       See Protocol <ArrowRight className="w-4 h-4" />
                     </span>
                   </div>
@@ -616,14 +616,14 @@ export default function HomePage() {
       {/* ═══════════════════════════════════════════════
           RESEARCH & EVIDENCE — 4 study highlight cards
       ═══════════════════════════════════════════════ */}
-      <section className="py-24 bg-dark-900 grid-bg">
+      <section className="py-24 bg-white grid-bg">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <p className="text-neon-green text-xs font-semibold uppercase tracking-widest mb-3">Peer-Reviewed Science</p>
-            <h2 className="text-4xl sm:text-5xl font-black text-white mb-4">
+            <p className="text-amber-600 text-xs font-bold uppercase tracking-widest mb-3">Peer-Reviewed Science</p>
+            <h2 className="text-4xl sm:text-5xl font-black text-gray-900 mb-4">
               Backed by <span className="gradient-text">30+ Years of Research</span>
             </h2>
-            <p className="text-slate-400 max-w-2xl mx-auto">
+            <p className="text-gray-700 text-lg max-w-2xl mx-auto">
               These are not supplements with vague health claims. Every peptide on this site has published human or animal trials
               demonstrating specific, measurable outcomes.
             </p>
@@ -632,16 +632,16 @@ export default function HomePage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
             {researchStudies.map(({ peptide, title, citation, finding, href, color, icon: Icon }) => {
               const colorMap: Record<string, string> = {
-                emerald: 'text-emerald-400 bg-emerald-400/10 border-emerald-400/20',
-                purple: 'text-purple-400 bg-purple-400/10 border-purple-400/20',
-                amber: 'text-amber-400 bg-amber-400/10 border-amber-400/20',
-                blue: 'text-blue-400 bg-blue-400/10 border-blue-400/20',
+                emerald: 'text-emerald-600 bg-emerald-50 border-emerald-200',
+                purple: 'text-blue-600 bg-blue-50 border-blue-200',
+                amber: 'text-amber-600 bg-amber-50 border-amber-200',
+                blue: 'text-blue-600 bg-blue-50 border-blue-200',
               };
               const badgeColor: Record<string, string> = {
-                emerald: 'bg-emerald-400/10 text-emerald-400 border-emerald-400/20',
-                purple: 'bg-purple-400/10 text-purple-400 border-purple-400/20',
-                amber: 'bg-amber-400/10 text-amber-400 border-amber-400/20',
-                blue: 'bg-blue-400/10 text-blue-400 border-blue-400/20',
+                emerald: 'bg-emerald-50 text-emerald-700 border-emerald-200',
+                purple: 'bg-blue-50 text-blue-700 border-blue-200',
+                amber: 'bg-amber-50 text-amber-700 border-amber-200',
+                blue: 'bg-blue-50 text-blue-700 border-blue-200',
               };
               return (
                 <div key={title} className="glass-card p-7 flex flex-col gap-4">
@@ -649,17 +649,17 @@ export default function HomePage() {
                     <div className={`w-10 h-10 rounded-xl flex items-center justify-center shrink-0 border ${colorMap[color]}`}>
                       <Icon className="w-5 h-5" />
                     </div>
-                    <span className={`text-xs font-mono px-2.5 py-1 rounded-full border ${badgeColor[color]}`}>
+                    <span className={`text-xs font-bold px-2.5 py-1 rounded-full border ${badgeColor[color]}`}>
                       {peptide}
                     </span>
                   </div>
                   <div>
-                    <h3 className="text-white font-bold text-lg mb-1">{title}</h3>
-                    <p className="text-slate-500 text-xs font-mono mb-3">{citation}</p>
-                    <p className="text-slate-400 text-sm leading-relaxed">{finding}</p>
+                    <h3 className="text-gray-900 font-black text-xl mb-1">{title}</h3>
+                    <p className="text-gray-500 text-xs font-mono mb-3">{citation}</p>
+                    <p className="text-gray-700 text-base leading-relaxed">{finding}</p>
                   </div>
-                  <div className="mt-auto pt-3 border-t border-white/5">
-                    <Link href={href} className="text-neon-green text-sm font-semibold flex items-center gap-1 hover:gap-2 transition-all">
+                  <div className="mt-auto pt-3 border-t border-gray-100">
+                    <Link href={href} className="text-amber-600 text-sm font-bold flex items-center gap-1 hover:gap-2 transition-all">
                       View Peptide <ArrowRight className="w-4 h-4" />
                     </Link>
                   </div>
@@ -673,14 +673,14 @@ export default function HomePage() {
       {/* ═══════════════════════════════════════════════
           WHAT USERS ARE TARGETING — Goal stats grid
       ═══════════════════════════════════════════════ */}
-      <section className="py-24 bg-dark-800 border-y border-white/5">
+      <section className="py-24 bg-gray-50 border-y border-gray-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <p className="text-neon-green text-xs font-semibold uppercase tracking-widest mb-3">Community Goals</p>
-            <h2 className="text-4xl sm:text-5xl font-black text-white mb-4">
+            <p className="text-amber-600 text-xs font-bold uppercase tracking-widest mb-3">Community Goals</p>
+            <h2 className="text-4xl sm:text-5xl font-black text-gray-900 mb-4">
               What Our Users Are <span className="gradient-text">Targeting</span>
             </h2>
-            <p className="text-slate-400 max-w-xl mx-auto">
+            <p className="text-gray-600 text-lg max-w-xl mx-auto">
               Every visitor to this site comes with a specific goal. Here is what the community is working on.
             </p>
           </div>
@@ -688,20 +688,20 @@ export default function HomePage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {userTargets.map(({ icon: Icon, title, badge, desc, href, color }) => {
               const colorClasses: Record<string, string> = {
-                emerald: 'text-emerald-400 bg-emerald-400/10 border-emerald-400/20 hover:border-emerald-400/40',
-                green: 'text-green-400 bg-green-400/10 border-green-400/20 hover:border-green-400/40',
-                purple: 'text-purple-400 bg-purple-400/10 border-purple-400/20 hover:border-purple-400/40',
-                blue: 'text-blue-400 bg-blue-400/10 border-blue-400/20 hover:border-blue-400/40',
-                amber: 'text-amber-400 bg-amber-400/10 border-amber-400/20 hover:border-amber-400/40',
-                rose: 'text-rose-400 bg-rose-400/10 border-rose-400/20 hover:border-rose-400/40',
+                emerald: 'text-emerald-600 bg-white border-emerald-200 hover:border-emerald-400',
+                green: 'text-green-600 bg-white border-green-200 hover:border-green-400',
+                purple: 'text-blue-600 bg-white border-blue-200 hover:border-blue-400',
+                blue: 'text-blue-600 bg-white border-blue-200 hover:border-blue-400',
+                amber: 'text-amber-600 bg-white border-amber-200 hover:border-amber-400',
+                rose: 'text-rose-600 bg-white border-rose-200 hover:border-rose-400',
               };
               const iconClasses: Record<string, string> = {
-                emerald: 'bg-emerald-400/10 text-emerald-400',
-                green: 'bg-green-400/10 text-green-400',
-                purple: 'bg-purple-400/10 text-purple-400',
-                blue: 'bg-blue-400/10 text-blue-400',
-                amber: 'bg-amber-400/10 text-amber-400',
-                rose: 'bg-rose-400/10 text-rose-400',
+                emerald: 'bg-emerald-50 text-emerald-600',
+                green: 'bg-green-50 text-green-600',
+                purple: 'bg-blue-50 text-blue-600',
+                blue: 'bg-blue-50 text-blue-600',
+                amber: 'bg-amber-50 text-amber-600',
+                rose: 'bg-rose-50 text-rose-600',
               };
               return (
                 <Link
@@ -714,17 +714,17 @@ export default function HomePage() {
                       <Icon className="w-5 h-5" />
                     </div>
                     {badge && (
-                      <span className="text-xs font-semibold text-neon-green bg-neon-green/10 border border-neon-green/20 px-2.5 py-0.5 rounded-full">
+                      <span className="text-xs font-bold text-amber-700 bg-amber-50 border border-amber-200 px-2.5 py-0.5 rounded-full">
                         {badge}
                       </span>
                     )}
                   </div>
                   <div>
-                    <h3 className="text-white font-bold text-base mb-1.5">{title}</h3>
-                    <p className="text-slate-400 text-sm leading-relaxed">{desc}</p>
+                    <h3 className="text-gray-900 font-black text-lg mb-1.5">{title}</h3>
+                    <p className="text-gray-700 text-base leading-relaxed">{desc}</p>
                   </div>
-                  <div className="mt-auto flex items-center gap-1 text-sm font-semibold group-hover:gap-2 transition-all" style={{
-                    color: color === 'emerald' ? '#34d399' : color === 'green' ? '#4ade80' : color === 'purple' ? '#c084fc' : color === 'blue' ? '#60a5fa' : color === 'amber' ? '#fbbf24' : '#fb7185',
+                  <div className="mt-auto flex items-center gap-1 text-sm font-bold group-hover:gap-2 transition-all" style={{
+                    color: color === 'emerald' ? '#059669' : color === 'green' ? '#16a34a' : color === 'purple' ? '#2563EB' : color === 'blue' ? '#2563EB' : color === 'amber' ? '#D97706' : '#e11d48',
                   }}>
                     Explore Protocol <ArrowRight className="w-4 h-4" />
                   </div>
@@ -738,12 +738,12 @@ export default function HomePage() {
       {/* ═══════════════════════════════════════════════
           FEATURED STACKS — Horizontal scroll feel
       ═══════════════════════════════════════════════ */}
-      <section className="py-24 bg-dark-900 grid-bg">
+      <section className="py-24 bg-white grid-bg">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-end justify-between mb-14">
             <div>
-              <p className="text-neon-green text-xs font-semibold uppercase tracking-widest mb-3">Proven Combinations</p>
-              <h2 className="text-4xl sm:text-5xl font-black text-white">
+              <p className="text-amber-600 text-xs font-bold uppercase tracking-widest mb-3">Proven Combinations</p>
+              <h2 className="text-4xl sm:text-5xl font-black text-gray-900">
                 Top Peptide <span className="gradient-text">Stacks</span>
               </h2>
             </div>
@@ -756,26 +756,26 @@ export default function HomePage() {
             {featuredStacks.map((stack, i) => (
               <div key={stack.id} className="group relative">
                 {/* Numbered indicator */}
-                <div className="absolute -top-4 -left-2 z-10 w-8 h-8 rounded-full bg-dark-900 border border-neon-green/20 flex items-center justify-center text-neon-green text-xs font-black font-mono">
+                <div className="absolute -top-4 -left-2 z-10 w-8 h-8 rounded-full bg-white border border-amber-200 flex items-center justify-center text-amber-600 text-xs font-black font-mono">
                   0{i + 1}
                 </div>
                 <div className="glass-card p-7 h-full flex flex-col">
                   <div className="flex items-center gap-3 mb-5">
                     <span className={`text-xs font-bold px-2.5 py-1 rounded-full border ${
-                      stack.difficulty === 'Beginner' ? 'text-emerald-400 border-emerald-400/30 bg-emerald-400/10' :
-                      stack.difficulty === 'Intermediate' ? 'text-amber-400 border-amber-400/30 bg-amber-400/10' :
-                      'text-red-400 border-red-400/30 bg-red-400/10'
+                      stack.difficulty === 'Beginner' ? 'text-emerald-700 border-emerald-200 bg-emerald-50' :
+                      stack.difficulty === 'Intermediate' ? 'text-amber-700 border-amber-200 bg-amber-50' :
+                      'text-red-700 border-red-200 bg-red-50'
                     }`}>{stack.difficulty}</span>
-                    <span className="text-slate-600 text-xs flex items-center gap-1"><Clock className="w-3 h-3" />{stack.duration}</span>
+                    <span className="text-gray-500 text-xs font-medium flex items-center gap-1"><Clock className="w-3 h-3" />{stack.duration}</span>
                   </div>
 
-                  <h3 className="text-white font-bold text-xl mb-2 group-hover:text-neon-green transition-colors">{stack.name}</h3>
-                  <p className="text-neon-green text-xs font-medium mb-3">{stack.goal}</p>
-                  <p className="text-slate-400 text-sm leading-relaxed mb-5 flex-1">{stack.tagline}</p>
+                  <h3 className="text-gray-900 font-black text-xl mb-2 group-hover:text-amber-600 transition-colors">{stack.name}</h3>
+                  <p className="text-amber-600 text-xs font-bold mb-3">{stack.goal}</p>
+                  <p className="text-gray-700 text-base leading-relaxed mb-5 flex-1">{stack.tagline}</p>
 
                   <div className="flex flex-wrap gap-1.5 mb-6">
                     {stack.peptides.map((p) => (
-                      <span key={p} className="text-xs font-mono bg-dark-700 text-neon-green/70 px-2 py-0.5 rounded">{p.toUpperCase()}</span>
+                      <span key={p} className="text-xs font-bold bg-gray-100 text-gray-800 px-2.5 py-1 rounded border border-gray-200">{p.toUpperCase()}</span>
                     ))}
                   </div>
 
@@ -801,12 +801,12 @@ export default function HomePage() {
       {/* ═══════════════════════════════════════════════
           PRODUCT SHOWCASE
       ═══════════════════════════════════════════════ */}
-      <section className="py-24 bg-dark-800 border-y border-white/5">
+      <section className="py-24 bg-gray-50 border-y border-gray-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-end justify-between mb-14">
             <div>
-              <p className="text-neon-green text-xs font-semibold uppercase tracking-widest mb-3">COA-Verified · Research Grade</p>
-              <h2 className="text-4xl sm:text-5xl font-black text-white">
+              <p className="text-amber-600 text-xs font-bold uppercase tracking-widest mb-3">COA-Verified · Research Grade</p>
+              <h2 className="text-4xl sm:text-5xl font-black text-gray-900">
                 Featured <span className="gradient-text">Peptides</span>
               </h2>
             </div>
@@ -830,7 +830,7 @@ export default function HomePage() {
               { label: 'Epithalon Complete Guide', href: '/epithalon' },
               { label: 'Ipamorelin + CJC-1295', href: '/ipamorelin' },
             ].map(({ label, href }) => (
-              <Link key={href} href={href} className="text-xs text-slate-400 hover:text-neon-green border border-white/10 hover:border-neon-green/30 px-3 py-1.5 rounded-full transition-all duration-200">
+              <Link key={href} href={href} className="text-sm font-semibold text-gray-700 hover:text-amber-700 border border-gray-200 hover:border-amber-300 bg-white px-4 py-1.5 rounded-full transition-all duration-200">
                 {label}
               </Link>
             ))}
@@ -839,7 +839,7 @@ export default function HomePage() {
           <div className="flex flex-wrap gap-4 justify-center">
             <Link href="/products" className="btn-secondary text-base px-8 py-4">View All 20 Peptides</Link>
             <a href={SOURCE_URL} target="_blank" rel="nofollow noopener noreferrer" className="btn-cta text-base px-8 py-4 flex items-center gap-2">
-              Shop Apollo Peptides <ArrowRight className="w-5 h-5" />
+              Shop Phiogen <ArrowRight className="w-5 h-5" />
             </a>
           </div>
         </div>
@@ -848,12 +848,12 @@ export default function HomePage() {
       {/* ═══════════════════════════════════════════════
           RECENT GUIDES — 6 article cards
       ═══════════════════════════════════════════════ */}
-      <section className="py-24 bg-dark-900 grid-bg">
+      <section className="py-24 bg-white grid-bg">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-end justify-between mb-14">
             <div>
-              <p className="text-neon-green text-xs font-semibold uppercase tracking-widest mb-3">In-Depth Content</p>
-              <h2 className="text-4xl sm:text-5xl font-black text-white">
+              <p className="text-amber-600 text-xs font-bold uppercase tracking-widest mb-3">In-Depth Content</p>
+              <h2 className="text-4xl sm:text-5xl font-black text-gray-900">
                 Recent <span className="gradient-text">Guides</span>
               </h2>
             </div>
@@ -865,30 +865,30 @@ export default function HomePage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {recentGuides.map(({ title, desc, href, tag, tagColor }) => {
               const tagClasses: Record<string, string> = {
-                emerald: 'bg-emerald-400/10 text-emerald-400 border-emerald-400/20',
-                purple: 'bg-purple-400/10 text-purple-400 border-purple-400/20',
-                blue: 'bg-blue-400/10 text-blue-400 border-blue-400/20',
-                amber: 'bg-amber-400/10 text-amber-400 border-amber-400/20',
-                slate: 'bg-slate-400/10 text-slate-400 border-slate-400/20',
-                rose: 'bg-rose-400/10 text-rose-400 border-rose-400/20',
+                emerald: 'bg-emerald-50 text-emerald-700 border-emerald-200',
+                purple: 'bg-blue-50 text-blue-700 border-blue-200',
+                blue: 'bg-blue-50 text-blue-700 border-blue-200',
+                amber: 'bg-amber-50 text-amber-700 border-amber-200',
+                slate: 'bg-gray-100 text-gray-700 border-gray-200',
+                rose: 'bg-rose-50 text-rose-700 border-rose-200',
               };
               return (
                 <Link
                   key={href}
                   href={href}
-                  className="group glass-card p-6 flex flex-col gap-4 hover:border-neon-green/20 transition-all duration-200"
+                  className="group glass-card p-6 flex flex-col gap-4 hover:border-amber-300 transition-all duration-200"
                 >
                   <div className="flex items-center justify-between">
-                    <span className={`text-xs font-semibold px-2.5 py-0.5 rounded-full border ${tagClasses[tagColor]}`}>
+                    <span className={`text-xs font-bold px-2.5 py-0.5 rounded-full border ${tagClasses[tagColor]}`}>
                       {tag}
                     </span>
-                    <BookOpen className="w-4 h-4 text-slate-600 group-hover:text-neon-green transition-colors" />
+                    <BookOpen className="w-4 h-4 text-gray-400 group-hover:text-amber-600 transition-colors" />
                   </div>
                   <div>
-                    <h3 className="text-white font-bold text-base leading-snug mb-2 group-hover:text-neon-green transition-colors">{title}</h3>
-                    <p className="text-slate-400 text-sm leading-relaxed">{desc}</p>
+                    <h3 className="text-gray-900 font-black text-lg leading-snug mb-2 group-hover:text-amber-600 transition-colors">{title}</h3>
+                    <p className="text-gray-700 text-base leading-relaxed">{desc}</p>
                   </div>
-                  <div className="mt-auto flex items-center gap-1 text-neon-green text-sm font-semibold opacity-0 group-hover:opacity-100 transition-opacity">
+                  <div className="mt-auto flex items-center gap-1 text-amber-600 text-sm font-bold opacity-0 group-hover:opacity-100 transition-opacity">
                     Read Guide <ArrowRight className="w-4 h-4" />
                   </div>
                 </Link>
@@ -901,14 +901,14 @@ export default function HomePage() {
       {/* ═══════════════════════════════════════════════
           WHY SOURCE QUALITY MATTERS
       ═══════════════════════════════════════════════ */}
-      <section className="py-24 bg-dark-800 border-y border-white/5">
+      <section className="py-24 bg-gray-50 border-y border-gray-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <p className="text-neon-green text-xs font-semibold uppercase tracking-widest mb-3">Sourcing Integrity</p>
-            <h2 className="text-4xl sm:text-5xl font-black text-white mb-4">
+            <p className="text-amber-600 text-xs font-bold uppercase tracking-widest mb-3">Sourcing Integrity</p>
+            <h2 className="text-4xl sm:text-5xl font-black text-gray-900 mb-4">
               Why Source Quality <span className="gradient-text">Matters</span>
             </h2>
-            <p className="text-slate-400 max-w-2xl mx-auto">
+            <p className="text-gray-700 text-lg max-w-2xl mx-auto">
               A COA-verified peptide and a random vial from an unvetted lab look identical. What you inject is not.
               Here is what separates research-grade peptides from the counterfeits circulating the market.
             </p>
@@ -917,31 +917,31 @@ export default function HomePage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
             {coaPoints.map(({ icon: Icon, title, desc, color, isAffiliate }) => {
               const colorMap: Record<string, string> = {
-                red: 'text-red-400 bg-red-400/10 border-red-400/20',
-                emerald: 'text-emerald-400 bg-emerald-400/10 border-emerald-400/20',
-                blue: 'text-blue-400 bg-blue-400/10 border-blue-400/20',
-                neon: 'text-neon-green bg-neon-green/10 border-neon-green/20',
+                red: 'text-red-600 bg-red-50 border-red-200',
+                emerald: 'text-emerald-600 bg-emerald-50 border-emerald-200',
+                blue: 'text-blue-600 bg-blue-50 border-blue-200',
+                neon: 'text-amber-600 bg-amber-50 border-amber-200',
               };
               return (
-                <div key={title} className={`glass-card p-7 flex flex-col gap-4 ${color === 'neon' ? 'border-neon-green/20' : ''}`}>
+                <div key={title} className={`glass-card p-7 flex flex-col gap-4 ${color === 'neon' ? 'border-amber-200' : ''}`}>
                   <div className={`w-11 h-11 rounded-xl flex items-center justify-center border ${colorMap[color]}`}>
                     <Icon className="w-5 h-5" />
                   </div>
                   <div>
-                    <h3 className="text-white font-bold text-lg mb-2">{title}</h3>
-                    <p className="text-slate-400 text-sm leading-relaxed">{desc}</p>
+                    <h3 className="text-gray-900 font-black text-xl mb-2">{title}</h3>
+                    <p className="text-gray-700 text-base leading-relaxed">{desc}</p>
                   </div>
                   {isAffiliate && (
-                    <div className="mt-auto pt-4 border-t border-white/5">
+                    <div className="mt-auto pt-4 border-t border-gray-100">
                       <a
                         href={SOURCE_URL}
                         target="_blank"
                         rel="nofollow noopener noreferrer"
                         className="btn-cta text-sm px-6 py-2.5 inline-flex items-center gap-2"
                       >
-                        View Apollo Peptide Sciences <ExternalLink className="w-4 h-4" />
+                        View Phiogen <ExternalLink className="w-4 h-4" />
                       </a>
-                      <p className="text-slate-600 text-xs mt-2">Affiliate link — we earn a commission at no cost to you.</p>
+                      <p className="text-gray-500 text-xs mt-2">Affiliate link — we earn a commission at no cost to you.</p>
                     </div>
                   )}
                 </div>
@@ -954,11 +954,11 @@ export default function HomePage() {
       {/* ═══════════════════════════════════════════════
           SOCIAL PROOF — Testimonials + Stars
       ═══════════════════════════════════════════════ */}
-      <section className="py-24 bg-dark-900">
+      <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-14">
-            <p className="text-neon-green text-xs font-semibold uppercase tracking-widest mb-3">Real Results</p>
-            <h2 className="text-4xl sm:text-5xl font-black text-white">
+            <p className="text-amber-600 text-xs font-bold uppercase tracking-widest mb-3">Real Results</p>
+            <h2 className="text-4xl sm:text-5xl font-black text-gray-900">
               What Users <span className="gradient-text">Experience</span>
             </h2>
           </div>
@@ -971,10 +971,10 @@ export default function HomePage() {
                     <Star key={j} className="w-4 h-4 text-amber-400 fill-amber-400" />
                   ))}
                 </div>
-                <p className="text-slate-300 text-sm leading-relaxed flex-1 mb-5 italic">&ldquo;{t.text}&rdquo;</p>
-                <div className="border-t border-white/5 pt-4">
-                  <p className="text-white font-semibold text-sm">{t.name}</p>
-                  <p className="text-slate-500 text-xs">{t.role}</p>
+                <p className="text-gray-800 text-base leading-relaxed flex-1 mb-5 italic">&ldquo;{t.text}&rdquo;</p>
+                <div className="border-t border-gray-100 pt-4">
+                  <p className="text-gray-900 font-bold text-sm">{t.name}</p>
+                  <p className="text-gray-500 text-xs">{t.role}</p>
                 </div>
               </div>
             ))}
@@ -985,20 +985,20 @@ export default function HomePage() {
       {/* ═══════════════════════════════════════════════
           FAQ
       ═══════════════════════════════════════════════ */}
-      <section className="py-24 bg-dark-800 border-y border-white/5">
+      <section className="py-24 bg-gray-50 border-y border-gray-200">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-14">
-            <p className="text-neon-green text-xs font-semibold uppercase tracking-widest mb-3">Quick Answers</p>
-            <h2 className="text-4xl sm:text-5xl font-black text-white">
+            <p className="text-amber-600 text-xs font-bold uppercase tracking-widest mb-3">Quick Answers</p>
+            <h2 className="text-4xl sm:text-5xl font-black text-gray-900">
               Common <span className="gradient-text">Questions</span>
             </h2>
           </div>
 
           <div className="space-y-3 mb-10">
             {faqs.map(({ q, a }, i) => (
-              <div key={i} className="glass-card p-6 border-l-2 border-neon-green/30">
-                <h3 className="text-white font-semibold mb-2">{q}</h3>
-                <p className="text-slate-400 text-sm leading-relaxed">{a}</p>
+              <div key={i} className="glass-card p-6 border-l-2 border-amber-400">
+                <h3 className="text-gray-900 font-black text-lg mb-2">{q}</h3>
+                <p className="text-gray-700 text-base leading-relaxed">{a}</p>
               </div>
             ))}
           </div>
@@ -1012,21 +1012,20 @@ export default function HomePage() {
       {/* ═══════════════════════════════════════════════
           FINAL CTA — Full-width banner
       ═══════════════════════════════════════════════ */}
-      <section className="relative py-28 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-dark-800 via-dark-900 to-dark-800" />
+      <section className="relative py-28 overflow-hidden bg-amber-50">
         <div className="absolute inset-0">
-          <div className="absolute top-0 left-1/4 w-96 h-96 bg-neon-green/6 rounded-full blur-[100px]" />
-          <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-blue-600/6 rounded-full blur-[100px]" />
+          <div className="absolute top-0 left-1/4 w-96 h-96 bg-amber-400/15 rounded-full blur-[100px]" />
+          <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-yellow-300/15 rounded-full blur-[100px]" />
         </div>
         <div className="absolute inset-0 grid-bg opacity-30" />
 
         <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <Award className="w-12 h-12 text-neon-green mx-auto mb-6 opacity-70" />
-          <h2 className="text-5xl sm:text-6xl font-black text-white mb-4 leading-tight">
+          <Award className="w-12 h-12 text-amber-500 mx-auto mb-6" />
+          <h2 className="text-5xl sm:text-6xl font-black text-gray-900 mb-4 leading-tight">
             Stop Waiting.<br />
             <span className="gradient-text">Start Healing.</span>
           </h2>
-          <p className="text-slate-400 text-lg leading-relaxed mb-10 max-w-xl mx-auto">
+          <p className="text-gray-700 text-xl leading-relaxed mb-10 max-w-xl mx-auto">
             COA-verified peptides, US domestic shipping, and the most trusted name in peptides.
             Your protocol starts here.
           </p>
@@ -1044,7 +1043,7 @@ export default function HomePage() {
               Read the Guide First
             </Link>
           </div>
-          <p className="text-slate-600 text-xs">
+          <p className="text-gray-500 text-xs">
             Not medical advice. Consult a physician before use.
           </p>
         </div>

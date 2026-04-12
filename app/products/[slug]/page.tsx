@@ -43,7 +43,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
-// Per-category visual themes
+// Per-category visual themes (light theme — no purple)
 const categoryTheme: Record<string, {
   accentColor: string;
   accentLight: string;
@@ -55,63 +55,63 @@ const categoryTheme: Record<string, {
   categoryLabel: string;
 }> = {
   Healing: {
-    accentColor: '#10b981',
-    accentLight: 'text-emerald-400',
-    accentBg: 'bg-emerald-500/10',
-    accentBorder: 'border-emerald-500/20',
-    glow: 'rgba(16, 185, 129, 0.12)',
-    heroBg: 'from-emerald-950/40 to-transparent',
-    icon: <Shield className="w-5 h-5 text-emerald-400" />,
+    accentColor: '#059669',
+    accentLight: 'text-emerald-600',
+    accentBg: 'bg-emerald-50',
+    accentBorder: 'border-emerald-200',
+    glow: 'rgba(16, 185, 129, 0.06)',
+    heroBg: 'from-emerald-100/40 to-transparent',
+    icon: <Shield className="w-5 h-5 text-emerald-600" />,
     categoryLabel: 'Healing & Recovery',
   },
   'Anti-Aging': {
-    accentColor: '#a855f7',
-    accentLight: 'text-purple-400',
-    accentBg: 'bg-purple-500/10',
-    accentBorder: 'border-purple-500/20',
-    glow: 'rgba(168, 85, 247, 0.12)',
-    heroBg: 'from-purple-950/40 to-transparent',
-    icon: <Star className="w-5 h-5 text-purple-400" />,
+    accentColor: '#D97706',
+    accentLight: 'text-amber-600',
+    accentBg: 'bg-amber-50',
+    accentBorder: 'border-amber-200',
+    glow: 'rgba(245, 158, 11, 0.06)',
+    heroBg: 'from-amber-100/40 to-transparent',
+    icon: <Star className="w-5 h-5 text-amber-600" />,
     categoryLabel: 'Anti-Aging & Longevity',
   },
   'Body Composition': {
-    accentColor: '#3b82f6',
-    accentLight: 'text-blue-400',
-    accentBg: 'bg-blue-500/10',
-    accentBorder: 'border-blue-500/20',
-    glow: 'rgba(59, 130, 246, 0.12)',
-    heroBg: 'from-blue-950/40 to-transparent',
-    icon: <Flame className="w-5 h-5 text-blue-400" />,
+    accentColor: '#2563EB',
+    accentLight: 'text-blue-600',
+    accentBg: 'bg-blue-50',
+    accentBorder: 'border-blue-200',
+    glow: 'rgba(59, 130, 246, 0.06)',
+    heroBg: 'from-blue-100/40 to-transparent',
+    icon: <Flame className="w-5 h-5 text-blue-600" />,
     categoryLabel: 'Body Composition',
   },
   'Weight Loss': {
-    accentColor: '#f43f5e',
-    accentLight: 'text-rose-400',
-    accentBg: 'bg-rose-500/10',
-    accentBorder: 'border-rose-500/20',
-    glow: 'rgba(244, 63, 94, 0.12)',
-    heroBg: 'from-rose-950/40 to-transparent',
-    icon: <Zap className="w-5 h-5 text-rose-400" />,
+    accentColor: '#e11d48',
+    accentLight: 'text-rose-600',
+    accentBg: 'bg-rose-50',
+    accentBorder: 'border-rose-200',
+    glow: 'rgba(244, 63, 94, 0.06)',
+    heroBg: 'from-rose-100/40 to-transparent',
+    icon: <Zap className="w-5 h-5 text-rose-600" />,
     categoryLabel: 'Weight Loss',
   },
   Cognitive: {
-    accentColor: '#06b6d4',
-    accentLight: 'text-cyan-400',
-    accentBg: 'bg-cyan-500/10',
-    accentBorder: 'border-cyan-500/20',
-    glow: 'rgba(6, 182, 212, 0.12)',
-    heroBg: 'from-cyan-950/40 to-transparent',
-    icon: <Microscope className="w-5 h-5 text-cyan-400" />,
+    accentColor: '#0891b2',
+    accentLight: 'text-cyan-700',
+    accentBg: 'bg-cyan-50',
+    accentBorder: 'border-cyan-200',
+    glow: 'rgba(6, 182, 212, 0.06)',
+    heroBg: 'from-cyan-100/40 to-transparent',
+    icon: <Microscope className="w-5 h-5 text-cyan-700" />,
     categoryLabel: 'Cognitive Enhancement',
   },
   Supplies: {
-    accentColor: '#64748b',
-    accentLight: 'text-slate-400',
-    accentBg: 'bg-slate-500/10',
-    accentBorder: 'border-slate-500/20',
-    glow: 'rgba(100, 116, 139, 0.12)',
-    heroBg: 'from-slate-950/40 to-transparent',
-    icon: <FlaskConical className="w-5 h-5 text-slate-400" />,
+    accentColor: '#475569',
+    accentLight: 'text-slate-600',
+    accentBg: 'bg-slate-50',
+    accentBorder: 'border-slate-200',
+    glow: 'rgba(100, 116, 139, 0.06)',
+    heroBg: 'from-slate-100/40 to-transparent',
+    icon: <FlaskConical className="w-5 h-5 text-slate-600" />,
     categoryLabel: 'Lab Supplies',
   },
 };
@@ -129,7 +129,7 @@ export default function ProductPage({ params }: Props) {
   const descLines = product.fullDescription.split('\n').filter(Boolean);
 
   return (
-    <div className="grid-bg min-h-screen pt-24 pb-20">
+    <div className="bg-white min-h-screen pt-24 pb-20">
       {/* JSON-LD */}
       <script
         type="application/ld+json"
@@ -182,10 +182,10 @@ export default function ProductPage({ params }: Props) {
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Breadcrumb */}
-        <div className="flex items-center gap-2 mb-8 text-sm text-slate-500">
-          <Link href="/" className="hover:text-neon-green transition-colors">Home</Link>
+        <div className="flex items-center gap-2 mb-8 text-sm text-gray-500">
+          <Link href="/" className="hover:text-amber-600 transition-colors">Home</Link>
           <span>/</span>
-          <Link href="/products" className="hover:text-neon-green transition-colors">Peptides</Link>
+          <Link href="/products" className="hover:text-amber-600 transition-colors">Peptides</Link>
           <span>/</span>
           <span className={theme.accentLight}>{product.name}</span>
         </div>
@@ -217,14 +217,14 @@ export default function ProductPage({ params }: Props) {
               <FlaskConical className={`w-4 h-4 ${theme.accentLight}`} />
               <span className={`${theme.accentLight} text-sm font-mono font-semibold`}>{product.category.toUpperCase()}</span>
             </div>
-            <h1 className="text-4xl sm:text-5xl font-black text-white mb-2 leading-tight">Buy {product.name}</h1>
-            <p className={`text-xl ${theme.accentLight} font-semibold mb-4`}>{product.tagline}</p>
-            <p className="text-slate-300 leading-relaxed mb-6 text-base">{product.shortDescription}</p>
+            <h1 className="text-4xl sm:text-5xl font-black text-gray-900 mb-2 leading-tight">Buy {product.name}</h1>
+            <p className={`text-xl ${theme.accentLight} font-bold mb-4`}>{product.tagline}</p>
+            <p className="text-gray-700 leading-relaxed mb-6 text-base">{product.shortDescription}</p>
 
             {/* Benefits preview */}
             <ul className="space-y-2 mb-8">
               {product.benefits.slice(0, 5).map((b) => (
-                <li key={b} className="flex items-start gap-2 text-sm text-slate-300">
+                <li key={b} className="flex items-start gap-2 text-sm text-gray-800">
                   <CheckCircle className={`w-4 h-4 ${theme.accentLight} shrink-0 mt-0.5`} />
                   {b}
                 </li>
@@ -232,12 +232,12 @@ export default function ProductPage({ params }: Props) {
             </ul>
 
             {/* Price + CTA */}
-            <div className="rounded-xl p-5 mb-4" style={{ background: `${theme.glow}`, border: `1px solid ${theme.accentColor}25` }}>
+            <div className="rounded-xl p-5 mb-4 bg-gray-50 border border-gray-200">
               <div className="flex items-center gap-3 mb-4">
-                <span className="text-4xl font-black text-white">${product.price}</span>
+                <span className="text-4xl font-black text-gray-900">${product.price}</span>
                 <div>
-                  <div className="text-slate-400 text-xs">COA Verified · Third-Party Tested</div>
-                  <div className={`${theme.accentLight} text-xs font-semibold`}>COA Verified · US Domestic</div>
+                  <div className="text-gray-500 text-xs font-medium">COA Verified · Third-Party Tested</div>
+                  <div className={`${theme.accentLight} text-xs font-bold`}>US Domestic Shipping</div>
                 </div>
               </div>
               <a
@@ -249,7 +249,7 @@ export default function ProductPage({ params }: Props) {
                 View {product.name} <ArrowRight className="w-5 h-5" />
               </a>
             </div>
-            <p className="text-slate-600 text-xs text-center">
+            <p className="text-gray-500 text-xs text-center">
               COA verified · US domestic shipping
             </p>
           </div>
@@ -260,13 +260,13 @@ export default function ProductPage({ params }: Props) {
           <div className="lg:col-span-2 space-y-8">
 
             {/* Highlights grid — unique per product via deepDiveTitle */}
-            <div className="rounded-2xl p-6" style={{ background: `${theme.glow}`, border: `1px solid ${theme.accentColor}20` }}>
-              <h2 className="text-xl font-black text-white mb-6">{product.deepDiveTitle}</h2>
+            <div className="rounded-2xl p-6 bg-gray-50 border border-gray-200">
+              <h2 className="text-xl font-black text-gray-900 mb-6">{product.deepDiveTitle}</h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {product.highlights.map((h) => (
                   <div key={h.title} className="glass-card p-5 rounded-xl">
-                    <h3 className={`${theme.accentLight} font-bold text-sm mb-2`}>{h.title}</h3>
-                    <p className="text-slate-400 text-sm leading-relaxed">{h.body}</p>
+                    <h3 className={`${theme.accentLight} font-black text-base mb-2`}>{h.title}</h3>
+                    <p className="text-gray-700 text-sm leading-relaxed">{h.body}</p>
                   </div>
                 ))}
               </div>
@@ -274,14 +274,14 @@ export default function ProductPage({ params }: Props) {
 
             {/* Full description */}
             <div className="glass-card p-6">
-              <h2 className="text-xl font-black text-white mb-6">
+              <h2 className="text-xl font-black text-gray-900 mb-6">
                 The Science Behind <span className={theme.accentLight}>{product.name}</span>
               </h2>
               <div className="prose-dark space-y-3">
                 {descLines.map((line, i) => {
                   if (line.startsWith('**') && line.endsWith('**')) {
                     return (
-                      <h3 key={i} className={`${theme.accentLight} font-bold text-base mt-6 mb-2 flex items-center gap-2`}>
+                      <h3 key={i} className={`${theme.accentLight} font-black text-base mt-6 mb-2 flex items-center gap-2`}>
                         <span style={{ color: theme.accentColor }}>▸</span>
                         {line.replace(/\*\*/g, '')}
                       </h3>
@@ -289,13 +289,13 @@ export default function ProductPage({ params }: Props) {
                   }
                   if (line.startsWith('- ')) {
                     return (
-                      <p key={i} className="text-slate-400 text-sm pl-4 flex items-start gap-2">
+                      <p key={i} className="text-gray-700 text-sm pl-4 flex items-start gap-2">
                         <span className={theme.accentLight}>→</span>
                         {line.slice(2)}
                       </p>
                     );
                   }
-                  return <p key={i} className="text-slate-400 text-sm leading-relaxed">{line}</p>;
+                  return <p key={i} className="text-gray-700 text-sm leading-relaxed">{line}</p>;
                 })}
               </div>
             </div>
@@ -305,12 +305,12 @@ export default function ProductPage({ params }: Props) {
 
             {/* All benefits — styled to category */}
             <div className="glass-card p-6">
-              <h2 className="text-xl font-black text-white mb-6">
+              <h2 className="text-xl font-black text-gray-900 mb-6">
                 Complete {product.name} Benefits
               </h2>
               <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 {product.benefits.map((b) => (
-                  <li key={b} className="flex items-start gap-2 text-sm text-slate-300">
+                  <li key={b} className="flex items-start gap-2 text-sm text-gray-800">
                     <CheckCircle className={`w-4 h-4 ${theme.accentLight} shrink-0 mt-0.5`} />
                     {b}
                   </li>
@@ -326,31 +326,31 @@ export default function ProductPage({ params }: Props) {
                   {product.name} Dosing Protocol
                 </h2>
               </div>
-              <div className="p-6 bg-dark-800/50">
+              <div className="p-6 bg-gray-50">
                 <div className="font-mono text-sm space-y-2">
                   {product.protocol.split('\n').filter(Boolean).map((line, i) => {
                     if (line.startsWith('**')) {
                       return (
-                        <p key={i} className={`${theme.accentLight} font-bold mt-5 mb-2 first:mt-0`}>
+                        <p key={i} className={`${theme.accentLight} font-black mt-5 mb-2 first:mt-0`}>
                           {line.replace(/\*\*/g, '')}
                         </p>
                       );
                     }
                     if (line.startsWith('- ')) {
                       return (
-                        <p key={i} className="text-slate-300 pl-4">
+                        <p key={i} className="text-gray-800 pl-4">
                           <span className={theme.accentLight}>•</span> {line.slice(2)}
                         </p>
                       );
                     }
-                    return <p key={i} className="text-slate-500">{line}</p>;
+                    return <p key={i} className="text-gray-600">{line}</p>;
                   })}
                 </div>
               </div>
             </div>
 
-            <div className="rounded-xl p-4 bg-dark-800/30 border border-slate-800/50">
-              <p className="text-slate-600 text-xs leading-relaxed">
+            <div className="rounded-xl p-4 bg-gray-50 border border-gray-200">
+              <p className="text-gray-500 text-xs leading-relaxed">
                 All information on this site is for educational purposes only. Always consult with a qualified healthcare provider before use.
                 COA documentation is available for all products.
               </p>
@@ -361,8 +361,8 @@ export default function ProductPage({ params }: Props) {
           <div className="space-y-5">
             {/* Buy box sticky */}
             <div className="glass-card p-6 sticky top-24">
-              <h3 className="text-white font-black mb-1">{product.name}</h3>
-              <p className="text-slate-400 text-xs mb-4">
+              <h3 className="text-gray-900 font-black mb-1">{product.name}</h3>
+              <p className="text-gray-500 text-xs mb-4">
                 COA verified · Third-party tested · US domestic shipping
               </p>
               <a
@@ -379,24 +379,24 @@ export default function ProductPage({ params }: Props) {
 
               <div className="space-y-2">
                 {['Certificate of Analysis (COA)', 'US Domestic Shipping', 'COA-Verified Purity', '24–48hr Processing'].map((f) => (
-                  <div key={f} className="flex items-center gap-2 text-xs text-slate-400">
+                  <div key={f} className="flex items-center gap-2 text-xs text-gray-700">
                     <CheckCircle className={`w-3.5 h-3.5 ${theme.accentLight}`} /> {f}
                   </div>
                 ))}
               </div>
 
-              <div className="mt-4 pt-4 border-t border-white/5">
-                <div className={`text-3xl font-black text-white`}>${product.price}</div>
+              <div className="mt-4 pt-4 border-t border-gray-100">
+                <div className="text-3xl font-black text-gray-900">${product.price}</div>
               </div>
             </div>
 
             {/* Category info card */}
-            <div className="rounded-xl p-5" style={{ background: theme.glow, border: `1px solid ${theme.accentColor}20` }}>
+            <div className="rounded-xl p-5 bg-gray-50 border border-gray-200">
               <div className="flex items-center gap-2 mb-3">
                 {theme.icon}
-                <span className={`${theme.accentLight} text-sm font-semibold`}>{theme.categoryLabel}</span>
+                <span className={`${theme.accentLight} text-sm font-bold`}>{theme.categoryLabel}</span>
               </div>
-              <p className="text-slate-400 text-xs leading-relaxed">
+              <p className="text-gray-700 text-xs leading-relaxed">
                 {product.category === 'Healing' && 'Healing peptides repair tissue at the molecular level — activating growth factors, stem cell mobilization, and collagen synthesis.'}
                 {product.category === 'Anti-Aging' && 'Longevity peptides target the root causes of aging — telomere shortening, epigenetic drift, and mitochondrial decline.'}
                 {product.category === 'Body Composition' && 'Body composition peptides optimize the GH/IGF-1 axis and metabolic signaling for simultaneous fat loss and muscle gain.'}
@@ -413,7 +413,7 @@ export default function ProductPage({ params }: Props) {
             {/* Synergy tags */}
             {product.synergies.length > 0 && (
               <div className="glass-card p-5">
-                <h3 className="text-white font-semibold mb-3 text-sm">Stacks Best With</h3>
+                <h3 className="text-gray-900 font-black mb-3 text-sm">Stacks Best With</h3>
                 <div className="flex flex-wrap gap-2">
                   {product.synergies.map((s) => (
                     <Link
@@ -446,7 +446,7 @@ export default function ProductPage({ params }: Props) {
         {related.length > 0 && (
           <div className="mt-16">
             <div className="flex items-center justify-between mb-6">
-              <h2 className="text-2xl font-black text-white">
+              <h2 className="text-2xl font-black text-gray-900">
                 Stack <span className={theme.accentLight}>{product.name}</span> With
               </h2>
               <a href={product.affiliateUrl} target="_blank" rel="nofollow noopener noreferrer"
@@ -474,18 +474,18 @@ export default function ProductPage({ params }: Props) {
 
         {faqs.length > 0 && (
           <div className="mt-16">
-            <h2 className="text-2xl font-black text-white mb-6">
+            <h2 className="text-2xl font-black text-gray-900 mb-6">
               Common <span className={theme.accentLight}>Questions</span>
             </h2>
             <div className="space-y-3">
               {faqs.map(({ q, a }) => (
                 <details key={q} className="glass-card group">
                   <summary className="p-5 cursor-pointer list-none flex items-center justify-between">
-                    <span className="text-white font-semibold text-sm pr-4">{q}</span>
+                    <span className="text-gray-900 font-bold text-base pr-4">{q}</span>
                     <span className={`${theme.accentLight} text-lg shrink-0 group-open:rotate-45 transition-transform`}>+</span>
                   </summary>
                   <div className="px-5 pb-5">
-                    <p className="text-slate-400 text-sm leading-relaxed">{a}</p>
+                    <p className="text-gray-700 text-sm leading-relaxed">{a}</p>
                   </div>
                 </details>
               ))}
