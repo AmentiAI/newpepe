@@ -1,4 +1,6 @@
-import Link from 'next/link';
+'use client';
+
+import { useRouter } from 'next/navigation';
 import { ArrowRight, Tag } from 'lucide-react';
 import type { Product } from '@/lib/products';
 import { sale } from '@/lib/products';
@@ -16,19 +18,14 @@ const categoryColors: Record<string, string> = {
 };
 
 export default function ProductCard({ product }: Props) {
+  const router = useRouter();
   const colorClass = categoryColors[product.category] ?? 'text-amber-700 bg-amber-50 border-amber-200';
 
   return (
-    // Stretched-link pattern: card is relative, Link fills entire card at z-0,
-    // the Buy button sits at relative z-10 so it captures its own clicks.
-    <div className="glass-card overflow-hidden group hover:border-amber-300 transition-all duration-300 flex flex-col relative">
-      {/* Full-card link to internal product page */}
-      <Link
-        href={`/products/${product.slug}`}
-        className="absolute inset-0 z-0"
-        aria-label={`View ${product.name} details`}
-      />
-
+    <div
+      onClick={() => router.push(`/products/${product.slug}`)}
+      className="glass-card overflow-hidden group hover:border-amber-300 transition-all duration-300 flex flex-col cursor-pointer"
+    >
       {/* Image */}
       <div className="relative h-52 overflow-hidden bg-gray-50 shrink-0">
         <ProductImage
@@ -68,12 +65,12 @@ export default function ProductCard({ product }: Props) {
             <span className="text-gray-900 font-black text-xl">${sale(product.price)}</span>
             <span className="text-gray-400 text-xs line-through">${product.price}</span>
           </div>
-          {/* z-10 so this click goes to Phiogen, not the card Link */}
           <a
             href={product.affiliateUrl}
             target="_blank"
             rel="nofollow noopener noreferrer"
-            className="relative z-10 btn-cta text-xs px-4 py-2.5 flex items-center gap-1"
+            onClick={(e) => e.stopPropagation()}
+            className="btn-cta text-xs px-4 py-2.5 flex items-center gap-1"
           >
             Buy Now <ArrowRight className="w-3 h-3" />
           </a>

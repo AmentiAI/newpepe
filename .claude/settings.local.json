@@ -28,7 +28,9 @@
       "Bash(echo \"EXIT:$?\")",
       "Bash(grep -c \"^ {$\\\\|^ { $\" lib/products.ts)",
       "Bash(curl:*)",
-      "Bash(grep -n \"text-8xl\\\\|text-7xl\" app/page.tsx components/*.tsx \"app/stacks/page.tsx\" \"app/anti-aging/page.tsx\")"
+      "Bash(grep -n \"text-8xl\\\\|text-7xl\" app/page.tsx components/*.tsx \"app/stacks/page.tsx\" \"app/anti-aging/page.tsx\")",
+      "Bash(kill %1)",
+      "Bash(wait)"
     ]
   }
 }
