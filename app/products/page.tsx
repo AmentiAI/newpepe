@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Link from 'next/link';
 import { ArrowRight, Tag, FlaskConical } from 'lucide-react';
 import { products, sale } from '@/lib/products';
 import ProductImage from '@/components/ProductImage';
@@ -78,13 +79,17 @@ export default function ProductsPage() {
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {grouped[cat].map(product => (
-                <a
+                <div
                   key={product.slug}
-                  href={product.affiliateUrl}
-                  target="_blank"
-                  rel="nofollow noopener noreferrer"
-                  className="bg-white border border-gray-200 rounded-2xl overflow-hidden hover:border-amber-300 hover:shadow-md transition-all duration-200 group flex flex-col"
+                  className="relative bg-white border border-gray-200 rounded-2xl overflow-hidden hover:border-amber-300 hover:shadow-md transition-all duration-200 group flex flex-col"
                 >
+                  {/* Full-card link to internal product page */}
+                  <Link
+                    href={`/products/${product.slug}`}
+                    className="absolute inset-0 z-0"
+                    aria-label={`View ${product.name} details`}
+                  />
+
                   {/* Image */}
                   <div className="relative h-52 bg-gray-50 overflow-hidden flex-shrink-0">
                     <ProductImage
@@ -121,12 +126,17 @@ export default function ProductsPage() {
                         <span className="text-gray-900 font-black text-xl">${sale(product.price)}</span>
                         <span className="text-gray-400 text-xs line-through">${product.price}</span>
                       </div>
-                      <span className="text-xs font-bold px-3 py-2 rounded-lg bg-amber-500 text-gray-900 hover:bg-amber-600 transition-colors flex items-center gap-1">
-                        Shop Now <ArrowRight className="w-3 h-3" />
-                      </span>
+                      <a
+                        href={product.affiliateUrl}
+                        target="_blank"
+                        rel="nofollow noopener noreferrer"
+                        className="relative z-10 text-xs font-bold px-3 py-2 rounded-lg bg-amber-500 text-gray-900 hover:bg-amber-600 transition-colors flex items-center gap-1"
+                      >
+                        Buy Now <ArrowRight className="w-3 h-3" />
+                      </a>
                     </div>
                   </div>
-                </a>
+                </div>
               ))}
             </div>
           </section>

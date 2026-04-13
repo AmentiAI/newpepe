@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { ArrowRight, Tag } from 'lucide-react';
 import type { Product } from '@/lib/products';
 import { sale } from '@/lib/products';
@@ -18,14 +19,18 @@ export default function ProductCard({ product }: Props) {
   const colorClass = categoryColors[product.category] ?? 'text-amber-700 bg-amber-50 border-amber-200';
 
   return (
-    <div className="glass-card overflow-hidden group hover:border-amber-300 transition-all duration-300 flex flex-col">
-      {/* Image — clicks to Phiogen product page */}
-      <a
-        href={product.affiliateUrl}
-        target="_blank"
-        rel="nofollow noopener noreferrer"
-        className="block relative h-52 overflow-hidden bg-gray-50 shrink-0"
-      >
+    // Stretched-link pattern: card is relative, Link fills entire card at z-0,
+    // the Buy button sits at relative z-10 so it captures its own clicks.
+    <div className="glass-card overflow-hidden group hover:border-amber-300 transition-all duration-300 flex flex-col relative">
+      {/* Full-card link to internal product page */}
+      <Link
+        href={`/products/${product.slug}`}
+        className="absolute inset-0 z-0"
+        aria-label={`View ${product.name} details`}
+      />
+
+      {/* Image */}
+      <div className="relative h-52 overflow-hidden bg-gray-50 shrink-0">
         <ProductImage
           src={product.image}
           alt={product.name}
@@ -36,19 +41,13 @@ export default function ProductCard({ product }: Props) {
         <span className={`absolute top-3 left-3 text-xs font-bold px-2 py-1 rounded-full border ${colorClass}`}>
           {product.category}
         </span>
-      </a>
+      </div>
 
       {/* Content */}
       <div className="p-5 flex flex-col flex-1">
-        <a
-          href={product.affiliateUrl}
-          target="_blank"
-          rel="nofollow noopener noreferrer"
-        >
-          <h3 className="text-gray-900 font-black text-xl mb-1 group-hover:text-amber-600 transition-colors">
-            {product.name}
-          </h3>
-        </a>
+        <h3 className="text-gray-900 font-black text-xl mb-1 group-hover:text-amber-600 transition-colors">
+          {product.name}
+        </h3>
         <p className="text-amber-600 text-sm font-bold mb-2">{product.tagline}</p>
         <p className="text-gray-700 text-sm leading-relaxed mb-4 line-clamp-2">
           {product.shortDescription}
@@ -69,13 +68,14 @@ export default function ProductCard({ product }: Props) {
             <span className="text-gray-900 font-black text-xl">${sale(product.price)}</span>
             <span className="text-gray-400 text-xs line-through">${product.price}</span>
           </div>
+          {/* z-10 so this click goes to Phiogen, not the card Link */}
           <a
             href={product.affiliateUrl}
             target="_blank"
             rel="nofollow noopener noreferrer"
-            className="btn-cta text-xs px-4 py-2.5 flex items-center gap-1"
+            className="relative z-10 btn-cta text-xs px-4 py-2.5 flex items-center gap-1"
           >
-            Shop Now <ArrowRight className="w-3 h-3" />
+            Buy Now <ArrowRight className="w-3 h-3" />
           </a>
         </div>
       </div>

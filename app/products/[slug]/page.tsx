@@ -250,7 +250,7 @@ export default function ProductPage({ params }: Props) {
                 rel="nofollow noopener noreferrer"
                 className="btn-cta text-base py-4 w-full flex items-center justify-center gap-2"
               >
-                View {product.name} <ArrowRight className="w-5 h-5" />
+                Buy {product.name} on Phiogen <ArrowRight className="w-5 h-5" />
               </a>
             </div>
             <p className="text-gray-500 text-xs text-center">
@@ -375,7 +375,7 @@ export default function ProductPage({ params }: Props) {
                 rel="nofollow noopener noreferrer"
                 className="btn-cta text-sm py-3 w-full text-center flex items-center justify-center gap-2 mb-3"
               >
-                View <ArrowRight className="w-4 h-4" />
+                Buy Now <ArrowRight className="w-4 h-4" />
               </a>
               <Link href="/stacks" className="btn-secondary text-sm py-3 w-full text-center block mb-4">
                 View Stack Protocols
@@ -441,7 +441,7 @@ export default function ProductPage({ params }: Props) {
                 rel="nofollow noopener noreferrer"
                 className="btn-cta text-sm py-3 px-6 inline-flex items-center gap-2"
               >
-                View {product.name} <ArrowRight className="w-4 h-4" />
+                Buy {product.name} on Phiogen <ArrowRight className="w-4 h-4" />
               </a>
             </div>
           </div>
@@ -456,7 +456,7 @@ export default function ProductPage({ params }: Props) {
               </h2>
               <a href={product.affiliateUrl} target="_blank" rel="nofollow noopener noreferrer"
                 className="btn-cta text-sm px-5 py-2.5 flex items-center gap-2 hidden sm:flex">
-                View the Full Stack <ArrowRight className="w-4 h-4" />
+                Buy the Full Stack <ArrowRight className="w-4 h-4" />
               </a>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
@@ -471,7 +471,7 @@ export default function ProductPage({ params }: Props) {
                 rel="nofollow noopener noreferrer"
                 className="btn-cta text-base px-8 py-4 inline-flex items-center gap-2"
               >
-                View <ArrowRight className="w-5 h-5" />
+                Buy Now <ArrowRight className="w-5 h-5" />
               </a>
             </div>
           </div>
