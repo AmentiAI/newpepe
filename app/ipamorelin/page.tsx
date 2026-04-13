@@ -45,7 +45,7 @@ export default function IpamorelinPage() {
     <div className="overflow-hidden">
 
       {/* ── HERO ─────────────────────────────────────────── */}
-      <section className="relative min-h-[90vh] flex items-center pt-20 bg-dark-900 grid-bg">
+      <section className="relative min-h-[90vh] flex items-center pt-20 bg-white grid-bg">
         <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
           <div className="absolute top-1/4 -left-32 w-[600px] h-[600px] bg-blue-400/6 rounded-full blur-[120px]" />
           <div className="absolute bottom-0 right-0 w-[400px] h-[400px] bg-emerald-400/5 rounded-full blur-[100px]" />
@@ -150,7 +150,7 @@ export default function IpamorelinPage() {
       </section>
 
       {/* ── STATS BAR ────────────────────────────────────── */}
-      <div className="bg-dark-800 border-y border-blue-400/10">
+      <div className="bg-gray-50 border-y border-blue-400/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
             {stats.map(({ value, label, color }) => (
@@ -168,10 +168,10 @@ export default function IpamorelinPage() {
       </div>
 
       {/* ── HOW IT WORKS ─────────────────────────────────── */}
-      <section className="py-24 bg-dark-900">
+      <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <p className="text-neon-green text-xs font-semibold uppercase tracking-widest mb-3">Synergy Explained</p>
+            <p className="text-emerald-700 text-xs font-semibold uppercase tracking-widest mb-3">Synergy Explained</p>
             <h2 className="text-4xl sm:text-5xl font-black text-gray-900 mb-4">
               Why This Stack <span className="gradient-text">Works So Well</span>
             </h2>
@@ -191,7 +191,7 @@ export default function IpamorelinPage() {
           </div>
 
           <div className="glass-card p-8 border-neon-green/15 text-center mb-12">
-            <Zap className="w-10 h-10 text-neon-green mx-auto mb-4" />
+            <Zap className="w-10 h-10 text-emerald-700 mx-auto mb-4" />
             <h3 className="text-gray-900 font-bold text-2xl mb-3">Together: 8-10× More GH</h3>
             <p className="text-gray-500 max-w-2xl mx-auto">
               CJC-1295 primes the pituitary. Ipamorelin pulls the trigger. The result is a synergistic GH release 8-10× greater than either peptide alone — without any of the side effects of synthetic HGH.
@@ -215,10 +215,10 @@ export default function IpamorelinPage() {
       </section>
 
       {/* ── TIMELINE ─────────────────────────────────────── */}
-      <section className="py-24 bg-dark-800 border-y border-white/5">
+      <section className="py-24 bg-gray-50 border-y border-gray-100">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <p className="text-neon-green text-xs font-semibold uppercase tracking-widest mb-3">Week-by-Week</p>
+            <p className="text-emerald-700 text-xs font-semibold uppercase tracking-widest mb-3">Week-by-Week</p>
             <h2 className="text-4xl font-black text-gray-900 mb-4">
               What to <span className="gradient-text">Expect</span>
             </h2>
@@ -240,7 +240,7 @@ export default function IpamorelinPage() {
 
           <div className="glass-card p-6 border-neon-green/15 text-center">
             <h3 className="text-gray-900 font-bold text-lg mb-2">
-              <Award className="w-5 h-5 text-neon-green inline mr-2" />
+              <Award className="w-5 h-5 text-emerald-700 inline mr-2" />
               Get COA-Verified CJC-1295 / Ipamorelin
             </h3>
             <p className="text-gray-500 text-sm mb-4">Combo vial available · US domestic shipping · third-party tested</p>
@@ -258,7 +258,7 @@ export default function IpamorelinPage() {
       </section>
 
       {/* ── RELATED GUIDES ───────────────────────────────── */}
-      <section className="py-20 bg-dark-900 grid-bg">
+      <section className="py-20 bg-white grid-bg">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-black text-gray-900 mb-8">
             Related <span className="gradient-text">Guides</span>
@@ -283,7 +283,7 @@ export default function IpamorelinPage() {
       </section>
 
       {/* ── BOTTOM CTA ───────────────────────────────────── */}
-      <section className="py-20 bg-dark-800 border-t border-white/5">
+      <section className="py-20 bg-gray-50 border-t border-gray-100">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 text-center">
           <h2 className="text-4xl font-black text-gray-900 mb-4">
             Start Your <span className="gradient-text">GH Protocol</span>

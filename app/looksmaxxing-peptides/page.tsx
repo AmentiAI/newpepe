@@ -70,7 +70,7 @@ const peptideProfiles = [
     fullName: 'Copper Tripeptide GHK-Cu',
     category: 'Collagen + Gene Reset',
     color: 'text-emerald-400',
-    badge: 'bg-emerald-500/20 text-emerald-300 border-emerald-500/30',
+    badge: 'bg-emerald-500/20 text-emerald-700 border-emerald-500/30',
     priority: 'Foundational',
     mechanism: 'GHK-Cu binds copper ions and acts as a gene expression modulator. Lund University research demonstrated GHK-Cu resets the expression of 31% of aged genes back toward a youthful pattern. It directly upregulates collagen I, III, IV, VII, and XVII synthesis; activates proteasome activity to clear damaged proteins; and stimulates angiogenesis.',
     appearance: 'Primary driver of skin quality improvements: collagen density, pore reduction, firmness, and luminosity. Also stimulates hair follicle stem cell activation and beard density.',
@@ -82,7 +82,7 @@ const peptideProfiles = [
     fullName: 'Acetyl Glutamyl Heptapeptide-3',
     category: 'Anti-Wrinkle Neuropeptide',
     color: 'text-purple-400',
-    badge: 'bg-purple-500/20 text-purple-300 border-purple-500/30',
+    badge: 'bg-purple-500/20 text-purple-700 border-purple-500/30',
     priority: 'Targeted',
     mechanism: 'SNAP-8 inhibits the SNARE complex — the same molecular target as botulinum toxin (Botox) but without the neurotoxin. By competing with SNAP-25 in the SNARE protein complex, SNAP-8 reduces acetylcholine vesicle release at neuromuscular junctions, decreasing the strength of facial muscle contractions that cause dynamic wrinkles.',
     appearance: 'Reduces expression line depth by up to 63% in clinical studies. Best for forehead lines, crow\'s feet, frown lines, and perioral wrinkles. Gradual onset (4–6 weeks) vs immediate for Botox, but no risk of paralysis or immune response.',
@@ -94,7 +94,7 @@ const peptideProfiles = [
     fullName: 'Body Protective Compound 157',
     category: 'Gut-Skin Axis + Scar Healing',
     color: 'text-blue-400',
-    badge: 'bg-blue-500/20 text-blue-300 border-blue-500/30',
+    badge: 'bg-blue-500/20 text-blue-700 border-blue-500/30',
     priority: 'Foundational',
     mechanism: 'BPC-157 is a 15 amino acid peptide derived from a gastric protein. It drives angiogenesis (new blood vessel formation), accelerates fibroblast activation for collagen remodeling, and regulates nitric oxide signaling. Its gut-healing effects address the gut-skin axis — leaky gut causes systemic inflammation that manifests as skin disorders.',
     appearance: 'Accelerates wound and scar healing with superior cosmetic outcomes. Systemic gut-skin axis repair reduces inflammatory acne, rosacea, and eczema flares. Scar tissue remodeling from type III collagen to stronger type I collagen improves scar appearance over 3–6 months.',
@@ -106,7 +106,7 @@ const peptideProfiles = [
     fullName: 'Insulin-like Growth Factor 1 Long R3',
     category: 'Collagen + Structural',
     color: 'text-cyan-400',
-    badge: 'bg-cyan-500/20 text-cyan-300 border-cyan-500/30',
+    badge: 'bg-cyan-500/20 text-cyan-700 border-cyan-500/30',
     priority: 'Advanced',
     mechanism: 'IGF-1 LR3 is a synthetic analog of IGF-1 with a 20–30x longer half-life (70–80 hours vs 2–3 hours). It signals through the IGF-1 receptor to drive protein synthesis, collagen production, and tissue remodeling. Unlike systemic IGF-1, the LR3 modification reduces binding to IGF-binding proteins, making more of the peptide bioavailable.',
     appearance: 'Drives collagen matrix remodeling that affects facial volume and structural appearance. Improves muscle protein synthesis and fat oxidation simultaneously — improving body composition and facial definition. Hair follicle proliferation is also stimulated via IGF-1 receptors in the follicle.',
@@ -118,7 +118,7 @@ const peptideProfiles = [
     fullName: 'GHRH Analog + Ghrelin Mimetic Stack',
     category: 'GH Axis → Collagen + Fat Loss',
     color: 'text-amber-400',
-    badge: 'bg-amber-500/20 text-amber-300 border-amber-500/30',
+    badge: 'bg-amber-500/20 text-amber-700 border-amber-500/30',
     priority: 'Advanced',
     mechanism: 'CJC-1295 is a GHRH analog that amplifies pituitary GH release. Ipamorelin is a ghrelin receptor agonist (GHSR) that triggers a GH pulse. Together they produce a synergistic increase in endogenous GH secretion of 3–10x baseline. The GH pulse triggers downstream IGF-1 production in the liver, driving collagen synthesis, fat mobilization, and muscle protein anabolism.',
     appearance: 'The best peptide stack for simultaneous fat loss + collagen gain — the two most impactful body composition variables for facial appearance. Reduces facial adiposity while improving skin collagen density. Hair quality and density improve secondary to GH elevation. Improved sleep quality from ipamorelin further enhances skin recovery.',
@@ -130,7 +130,7 @@ const peptideProfiles = [
     fullName: 'Epithalamin Tetrapeptide (Ala-Glu-Asp-Gly)',
     category: 'Cellular Aging Reversal',
     color: 'text-rose-400',
-    badge: 'bg-rose-500/20 text-rose-300 border-rose-500/30',
+    badge: 'bg-rose-500/20 text-rose-700 border-rose-500/30',
     priority: 'Advanced',
     mechanism: 'Epithalon activates telomerase — the enzyme that extends telomeres on chromosomes. Telomere shortening is a primary molecular driver of cellular aging. By restoring telomerase activity, Epithalon extends cellular lifespan, allowing skin cells and other tissues to replicate more times before senescence. It also acts on the pineal gland to restore circadian rhythm and melatonin production.',
     appearance: 'Addresses the root cause of skin aging at the cellular level — telomere attrition. Epithalon-treated cells in vitro continue dividing past normal Hayflick limits. Clinically, users report significant improvements in skin elasticity, age spot reduction, and overall skin quality sustained for months after a single treatment course.',
@@ -152,7 +152,7 @@ const stackPhilosophy = [
     level: 'Standard Protocol',
     cost: '~$200–280/month',
     color: 'border-emerald-400/30',
-    text: 'text-emerald-300',
+    text: 'text-emerald-700',
     peptides: ['GHK-Cu (continue)', 'BPC-157 (continue)', 'SNAP-8 topical (5–10% serum)', 'CJC-1295/Ipamorelin (2x/week)'],
     rationale: 'Adds targeted wrinkle reduction via SNAP-8 and GH-axis activation via CJC/Ipamorelin. The GH peptides drive fat loss and collagen simultaneously — transforming body composition and skin quality together. This is the most popular protocol among experienced users for balanced, comprehensive improvement.',
   },
@@ -160,7 +160,7 @@ const stackPhilosophy = [
     level: 'Premium Protocol',
     cost: '~$400–600/month',
     color: 'border-purple-400/30',
-    text: 'text-purple-300',
+    text: 'text-purple-700',
     peptides: ['GHK-Cu (injectable + topical)', 'BPC-157', 'SNAP-8', 'CJC-1295/Ipamorelin', 'Epithalon (quarterly cycle)', 'IGF-1 LR3 (4-week cycles)'],
     rationale: 'Full stack targeting all appearance pillars simultaneously. Injectable GHK-Cu provides systemic gene reset effects; Epithalon provides telomere extension; IGF-1 LR3 cycles drive structural collagen improvements. Reserved for serious biohackers and anti-aging enthusiasts with peptide experience.',
   },
@@ -195,9 +195,9 @@ const faqs = [
 
 export default function LooksmaxxingPeptidesPage() {
   return (
-    <main className="bg-dark-900 min-h-screen text-gray-700">
+    <main className="bg-white min-h-screen text-gray-700">
       {/* Hero */}
-      <section className="py-16 bg-gradient-to-b from-dark-800 to-dark-900 border-b border-white/5">
+      <section className="py-16 bg-gray-50 border-b border-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
             <span className="text-xs font-semibold uppercase tracking-widest text-emerald-400 mb-4 block">
@@ -205,7 +205,7 @@ export default function LooksmaxxingPeptidesPage() {
             </span>
             <h1 className="text-4xl sm:text-5xl font-extrabold text-gray-900 mb-6 leading-tight">
               Looksmaxxing with Peptides:{' '}
-              <span className="text-neon-green">The Complete Science-Backed Protocol</span>
+              <span className="text-emerald-700">The Complete Science-Backed Protocol</span>
             </h1>
             <p className="text-xl text-gray-600 mb-8 leading-relaxed">
               Looksmaxxing has moved beyond gym routines and skincare serums. Research peptides — GHK-Cu, SNAP-8, BPC-157, IGF-1 LR3, and others — operate at the gene expression and cellular signaling level, producing appearance improvements that topical cosmetics cannot replicate. This guide covers every appearance-relevant peptide, how they work, and how to stack them strategically.
@@ -243,7 +243,7 @@ export default function LooksmaxxingPeptidesPage() {
                 Importantly, looksmaxxing with peptides is not about achieving unrealistic ideals. The goal is optimization within your genetic ceiling — improving skin quality, reducing signs of aging, optimizing body composition, and enhancing the features you already have. These are measurable, evidence-based outcomes with well-characterized mechanisms.
               </p>
             </div>
-            <div className="bg-dark-800/60 border border-white/10 rounded-xl p-6">
+            <div className="bg-gray-50 border border-gray-200 rounded-xl p-6">
               <h3 className="text-lg font-bold text-gray-900 mb-4 flex items-center gap-2">
                 <Zap className="w-5 h-5 text-emerald-400" />
                 Why Peptides vs. Conventional Cosmetics
@@ -257,7 +257,7 @@ export default function LooksmaxxingPeptidesPage() {
                   { label: 'Scar Remodeling', peptide: 'Fibroblast + angiogenesis (BPC-157)', topical: 'Limited surface effect only' },
                   { label: 'Body Composition', peptide: 'GH axis activation (CJC/Ipamorelin)', topical: 'Not applicable' },
                 ].map((row, i) => (
-                  <div key={i} className="grid grid-cols-3 gap-2 text-xs border-b border-white/5 pb-2">
+                  <div key={i} className="grid grid-cols-3 gap-2 text-xs border-b border-gray-100 pb-2">
                     <span className="text-gray-500 font-medium">{row.label}</span>
                     <span className="text-emerald-400">{row.peptide}</span>
                     <span className="text-gray-500">{row.topical}</span>
@@ -270,7 +270,7 @@ export default function LooksmaxxingPeptidesPage() {
       </section>
 
       {/* 4 Pillars */}
-      <section className="py-16 bg-dark-800/30">
+      <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">The 4 Pillars of Appearance Optimization</h2>
           <p className="text-gray-500 mb-10 max-w-2xl">
@@ -284,7 +284,7 @@ export default function LooksmaxxingPeptidesPage() {
                 <p className="text-sm text-gray-500 mb-3 leading-relaxed">{p.desc}</p>
                 <div className="flex flex-wrap gap-1">
                   {p.peptides.map((pep) => (
-                    <span key={pep} className="text-xs bg-dark-700/80 text-gray-600 border border-white/10 rounded px-2 py-0.5">
+                    <span key={pep} className="text-xs bg-gray-100 text-gray-600 border border-gray-200 rounded px-2 py-0.5">
                       {pep}
                     </span>
                   ))}
@@ -304,7 +304,7 @@ export default function LooksmaxxingPeptidesPage() {
           </p>
           <div className="space-y-5">
             {peptideProfiles.map((pep) => (
-              <div key={pep.name} className="bg-dark-800/60 border border-white/10 rounded-xl p-6">
+              <div key={pep.name} className="bg-gray-50 border border-gray-200 rounded-xl p-6">
                 <div className="flex flex-wrap items-start justify-between gap-3 mb-4">
                   <div>
                     <div className="flex items-center gap-3 mb-1">
@@ -335,7 +335,7 @@ export default function LooksmaxxingPeptidesPage() {
       </section>
 
       {/* Roadmap Component */}
-      <section className="py-16 bg-dark-800/30">
+      <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">Your Phase-by-Phase Looksmaxxing Roadmap</h2>
           <p className="text-gray-500 mb-8 max-w-2xl">
@@ -354,7 +354,7 @@ export default function LooksmaxxingPeptidesPage() {
           </p>
           <div className="grid lg:grid-cols-3 gap-6">
             {stackPhilosophy.map((s) => (
-              <div key={s.level} className={`rounded-xl border p-6 bg-dark-800/40 ${s.color}`}>
+              <div key={s.level} className={`rounded-xl border p-6 bg-gray-50 ${s.color}`}>
                 <div className="flex items-center justify-between mb-4">
                   <h3 className={`font-bold text-lg ${s.text}`}>{s.level}</h3>
                   <span className="text-sm text-gray-500">{s.cost}</span>
@@ -375,12 +375,12 @@ export default function LooksmaxxingPeptidesPage() {
       </section>
 
       {/* FAQ */}
-      <section className="py-16 bg-dark-800/30">
+      <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-10">Frequently Asked Questions</h2>
           <div className="grid md:grid-cols-2 gap-6">
             {faqs.map((faq, i) => (
-              <div key={i} className="bg-dark-800/60 border border-white/10 rounded-xl p-5">
+              <div key={i} className="bg-gray-50 border border-gray-200 rounded-xl p-5">
                 <h3 className="font-semibold text-gray-900 mb-2 flex items-start gap-2">
                   <FlaskConical className="w-4 h-4 text-emerald-400 flex-shrink-0 mt-0.5" />
                   {faq.q}
@@ -416,7 +416,7 @@ export default function LooksmaxxingPeptidesPage() {
       </section>
 
       {/* Explore More */}
-      <section className="py-16 bg-dark-800/30">
+      <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl font-bold text-gray-900 mb-6">Explore the Full Looksmaxxing Library</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-10">
@@ -434,7 +434,7 @@ export default function LooksmaxxingPeptidesPage() {
               <a
                 key={link.href}
                 href={link.href}
-                className="flex items-center gap-2 bg-dark-800/60 border border-white/10 rounded-lg px-4 py-3 text-sm text-gray-600 hover:text-gray-900 hover:border-emerald-500/40 transition-all"
+                className="flex items-center gap-2 bg-gray-50 border border-gray-200 rounded-lg px-4 py-3 text-sm text-gray-600 hover:text-gray-900 hover:border-emerald-500/40 transition-all"
               >
                 <ArrowRight className="w-4 h-4 text-emerald-400 flex-shrink-0" />
                 {link.label}

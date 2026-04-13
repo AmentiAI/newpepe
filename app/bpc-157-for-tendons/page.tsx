@@ -157,7 +157,7 @@ export default function Bpc157TendonsPage() {
         <div className="absolute inset-0 grid-bg opacity-40" />
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] bg-blue-500/8 blur-[120px] rounded-full pointer-events-none" />
         <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="inline-flex items-center gap-2 bg-blue-500/10 border border-blue-500/30 rounded-full px-4 py-2 mb-6">
+          <div className="inline-flex items-center gap-2 bg-blue-50 border border-blue-200 rounded-full px-4 py-2 mb-6">
             <Zap className="w-4 h-4 text-blue-400" />
             <span className="text-blue-400 text-sm font-semibold tracking-wide">BPC-157 TENDON HEALING GUIDE</span>
           </div>
@@ -198,7 +198,7 @@ export default function Bpc157TendonsPage() {
       <section className="py-16 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl font-black text-gray-900 mb-3">Protocol by Injury Type</h2>
         <p className="text-gray-500 mb-8">Dosing, injection site, and expected timeline for the most common tendon and ligament injuries.</p>
-        <div className="overflow-x-auto rounded-2xl border border-white/10">
+        <div className="overflow-x-auto rounded-2xl border border-gray-200">
           <table className="w-full text-sm">
             <thead>
               <tr style={{ background: 'rgba(255,255,255,0.04)' }}>
@@ -328,7 +328,7 @@ export default function Bpc157TendonsPage() {
               <div className="flex flex-wrap items-center gap-3 mb-4">
                 <span className="text-blue-400 font-black text-lg">{phase.phase}</span>
                 <span className="text-gray-500 text-sm">{phase.weeks}</span>
-                <span className="ml-auto text-xs font-semibold bg-blue-500/15 text-blue-300 border border-blue-500/30 rounded-full px-3 py-1">{phase.goal}</span>
+                <span className="ml-auto text-xs font-semibold bg-blue-500/15 text-blue-700 border border-blue-500/30 rounded-full px-3 py-1">{phase.goal}</span>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mb-4">
                 <div>
@@ -352,7 +352,7 @@ export default function Bpc157TendonsPage() {
                   </ul>
                 </div>
               </div>
-              <div className="border-t border-white/10 pt-3">
+              <div className="border-t border-gray-200 pt-3">
                 <p className="text-gray-500 text-xs"><span className="text-blue-400 font-semibold">BPC-157 during this phase:</span> {phase.bpc}</p>
               </div>
             </div>

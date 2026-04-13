@@ -139,7 +139,7 @@ export default function CjcIpamoreinResultsPage() {
         <div className="absolute inset-0 grid-bg opacity-40" />
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] bg-blue-500/8 blur-[120px] rounded-full pointer-events-none" />
         <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="inline-flex items-center gap-2 bg-blue-500/10 border border-blue-500/30 rounded-full px-4 py-2 mb-6">
+          <div className="inline-flex items-center gap-2 bg-blue-50 border border-blue-200 rounded-full px-4 py-2 mb-6">
             <TrendingUp className="w-4 h-4 text-blue-400" />
             <span className="text-blue-400 text-sm font-semibold tracking-wide">CJC-1295 IPAMORELIN RESULTS GUIDE</span>
           </div>
@@ -181,16 +181,16 @@ export default function CjcIpamoreinResultsPage() {
             <h3 className="text-xl font-black text-blue-400 mb-6">CJC-1295: The GHRH Analog</h3>
             <div className="space-y-4 text-gray-600 text-sm leading-relaxed">
               <div>
-                <h4 className="text-blue-300 font-bold mb-2">What GHRH Does Naturally</h4>
+                <h4 className="text-blue-700 font-bold mb-2">What GHRH Does Naturally</h4>
                 <p>Growth Hormone Releasing Hormone (GHRH) is produced by the hypothalamus and travels to the anterior pituitary gland, where it binds GHRH receptors and triggers the synthesis and release of GH into circulation. The problem with natural GHRH: it has a half-life of approximately 30 minutes in blood due to rapid degradation by the enzyme dipeptidyl peptidase IV (DPP-IV).</p>
               </div>
               <div>
-                <h4 className="text-blue-300 font-bold mb-2">The Half-Life Advantage</h4>
+                <h4 className="text-blue-700 font-bold mb-2">The Half-Life Advantage</h4>
                 <p>CJC-1295 (no DAC — Drug Affinity Complex) is a modified GHRH analog engineered to be DPP-IV resistant, extending its half-life to approximately 30 minutes in vivo — matching the window of GH pulsatile release more precisely. This is the version recommended for most protocols because it produces clean, pulsatile GH release rather than continuous elevation.</p>
                 <p className="mt-2">CJC-1295 with DAC extends the half-life to 7–8 days by covalently binding albumin — but this creates continuous, non-pulsatile GH elevation, which is undesirable. Pulsatile GH release is how the body normally operates and is necessary to prevent receptor desensitization and maintain sensitivity of downstream IGF-1 pathways.</p>
               </div>
               <div>
-                <h4 className="text-blue-300 font-bold mb-2">Receptor Saturation: Why Timing Matters</h4>
+                <h4 className="text-blue-700 font-bold mb-2">Receptor Saturation: Why Timing Matters</h4>
                 <p>GHRH receptors on pituitary somatotroph cells can become transiently saturated after a dose. This is why spacing doses (5 nights on, 2 off) and avoiding back-to-back dosing within the same day (unless using the morning + night split with at least 8–10 hours between) maintains pituitary sensitivity and prevents diminishing returns over time.</p>
               </div>
             </div>
@@ -201,15 +201,15 @@ export default function CjcIpamoreinResultsPage() {
             <h3 className="text-xl font-black text-emerald-400 mb-6">Ipamorelin: The Cleanest GHS</h3>
             <div className="space-y-4 text-gray-600 text-sm leading-relaxed">
               <div>
-                <h4 className="text-emerald-300 font-bold mb-2">Ghrelin Mimetic Mechanism</h4>
+                <h4 className="text-emerald-700 font-bold mb-2">Ghrelin Mimetic Mechanism</h4>
                 <p>Ipamorelin belongs to the Growth Hormone Secretagogue (GHS) class — it mimics ghrelin, a gut-derived hormone that acts on GHSR-1a receptors (ghrelin receptors) on pituitary somatotrophs. This is an entirely different receptor pathway from GHRH. Ghrelin normally triggers GH pulses through hunger signaling; Ipamorelin activates this same pathway without causing meaningful hunger stimulation at standard doses.</p>
               </div>
               <div>
-                <h4 className="text-emerald-300 font-bold mb-2">Selectivity: Why Ipamorelin is Uniquely Clean</h4>
+                <h4 className="text-emerald-700 font-bold mb-2">Selectivity: Why Ipamorelin is Uniquely Clean</h4>
                 <p>The critical advantage of Ipamorelin over older GHS agents (like GHRP-2 and GHRP-6) is its remarkable selectivity for GH release only. GHRP-2 and GHRP-6 significantly elevate cortisol and prolactin alongside GH — unwanted hormonal side effects. Ipamorelin was specifically engineered to activate GHSR-1a with minimal cortisol or prolactin stimulation, giving it the best side-effect profile in the GHS class by a wide margin.</p>
               </div>
               <div>
-                <h4 className="text-emerald-300 font-bold mb-2">GH Pulse Magnitude</h4>
+                <h4 className="text-emerald-700 font-bold mb-2">GH Pulse Magnitude</h4>
                 <p>Ipamorelin alone produces roughly 2–3x baseline GH output when dosed at 200–300mcg. The pulse is sharp and short-lived (30–45 minutes), mimicking natural GH pulsatility. This is beneficial for maintaining receptor sensitivity and avoiding the side effects associated with chronically elevated GH (water retention, insulin resistance, acromegaly-like symptoms).</p>
               </div>
             </div>
@@ -340,7 +340,7 @@ export default function CjcIpamoreinResultsPage() {
                       </li>
                     ))}
                   </ul>
-                  <div className="bg-slate-800/50 border border-white/5 rounded-lg px-4 py-2.5">
+                  <div className="bg-slate-800/50 border border-gray-100 rounded-lg px-4 py-2.5">
                     <p className="text-gray-500 text-xs italic">{t.note}</p>
                   </div>
                 </div>
@@ -366,7 +366,7 @@ export default function CjcIpamoreinResultsPage() {
         <h2 className="text-3xl font-black text-gray-900 mb-4">CJC-1295/Ipamorelin vs HGH: Real-World Comparison</h2>
         <p className="text-gray-500 mb-8 max-w-3xl">Direct-inject HGH and GH-releasing peptides are frequently compared. Here is how they genuinely differ across every relevant dimension.</p>
 
-        <div className="overflow-x-auto rounded-2xl border border-white/10 mb-8">
+        <div className="overflow-x-auto rounded-2xl border border-gray-200 mb-8">
           <table className="w-full text-sm">
             <thead>
               <tr style={{ background: 'rgba(96,165,250,0.05)' }}>

@@ -257,7 +257,7 @@ export default function NadCompleteGuide() {
         </p>
         <div className="space-y-4">
           {routeComparison.map((r) => (
-            <div key={r.route} className={`glass-card p-6 border ${r.recommended ? 'border-[#00ff88]/20' : 'border-white/5'}`}>
+            <div key={r.route} className={`glass-card p-6 border ${r.recommended ? 'border-[#00ff88]/20' : 'border-gray-100'}`}>
               <div className="flex items-start justify-between gap-4 flex-wrap mb-3">
                 <div>
                   <h3 className="text-gray-900 font-bold text-lg">{r.route}</h3>
@@ -328,7 +328,7 @@ export default function NadCompleteGuide() {
         <div className="glass-card p-6 overflow-x-auto">
           <table className="w-full text-sm">
             <thead>
-              <tr className="border-b border-white/10">
+              <tr className="border-b border-gray-200">
                 <th className="text-left text-gray-500 font-semibold py-3 pr-4">Peptide</th>
                 <th className="text-left text-gray-500 font-semibold py-3 pr-4">Dose</th>
                 <th className="text-left text-gray-500 font-semibold py-3 pr-4">Timing</th>
@@ -337,7 +337,7 @@ export default function NadCompleteGuide() {
             </thead>
             <tbody>
               {stackProtocol.map((s) => (
-                <tr key={s.peptide} className="border-b border-white/5 hover:bg-white/2 transition-colors">
+                <tr key={s.peptide} className="border-b border-gray-100 hover:bg-white/2 transition-colors">
                   <td className={`py-4 pr-4 font-bold ${s.color}`}>{s.peptide}</td>
                   <td className="py-4 pr-4 text-gray-600">{s.dose}</td>
                   <td className="py-4 pr-4 text-gray-500">{s.timing}</td>

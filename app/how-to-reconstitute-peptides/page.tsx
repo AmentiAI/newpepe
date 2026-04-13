@@ -249,7 +249,7 @@ export default function HowToReconstitutePage() {
         {/* Hero */}
         <div className="text-center mb-16">
           <div className="inline-flex items-center gap-2 bg-neon-green/10 border border-neon-green/20 rounded-full px-4 py-2 mb-6">
-            <span className="text-neon-green text-sm font-medium">Step-by-Step Reconstitution Guide</span>
+            <span className="text-emerald-700 text-sm font-medium">Step-by-Step Reconstitution Guide</span>
           </div>
           <h1 className="text-4xl sm:text-5xl font-black text-gray-900 mb-4">
             How to Reconstitute <span className="gradient-text">Peptides</span>
@@ -263,7 +263,7 @@ export default function HowToReconstitutePage() {
         <div className="bg-amber-500/10 border border-amber-500/20 rounded-xl p-5 mb-12 flex gap-4">
           <AlertTriangle className="w-5 h-5 text-amber-400 shrink-0 mt-0.5" />
           <div>
-            <p className="text-amber-300 font-semibold text-sm mb-1">Before You Begin</p>
+            <p className="text-amber-700 font-semibold text-sm mb-1">Before You Begin</p>
             <p className="text-gray-500 text-sm">Only use bacteriostatic water — not tap water, saline, or regular sterile water for multi-dose vials. Work in a clean environment. Never reuse syringes.</p>
           </div>
         </div>
@@ -271,7 +271,7 @@ export default function HowToReconstitutePage() {
         {/* ── EQUIPMENT CHECKLIST ── */}
         <div className="mb-16">
           <div className="flex items-center gap-3 mb-6">
-            <ClipboardList className="w-6 h-6 text-neon-green" />
+            <ClipboardList className="w-6 h-6 text-emerald-700" />
             <h2 className="text-2xl font-black text-gray-900">Equipment Checklist</h2>
           </div>
           <EquipmentChecklist />
@@ -280,7 +280,7 @@ export default function HowToReconstitutePage() {
         {/* ── RECONSTITUTION CALCULATOR ── */}
         <div className="mb-16">
           <div className="flex items-center gap-3 mb-6">
-            <FlaskConical className="w-6 h-6 text-neon-green" />
+            <FlaskConical className="w-6 h-6 text-emerald-700" />
             <h2 className="text-2xl font-black text-gray-900">Reconstitution Calculator</h2>
           </div>
           <p className="text-gray-500 text-sm mb-6">Enter your vial size, how much bacteriostatic water you plan to add, and your desired dose — the calculator gives you exact syringe markings instantly.</p>
@@ -301,7 +301,7 @@ export default function HowToReconstitutePage() {
                     <h3 className="text-gray-900 font-bold text-lg mb-2">{step.title}</h3>
                     <p className="text-gray-600 text-sm leading-relaxed mb-3">{step.desc}</p>
                     <div className="bg-emerald-500/10 border border-emerald-500/20 rounded-lg px-4 py-2.5">
-                      <p className="text-emerald-300 text-xs"><strong>Tip:</strong> {step.tip}</p>
+                      <p className="text-emerald-700 text-xs"><strong>Tip:</strong> {step.tip}</p>
                     </div>
                   </div>
                 </div>
@@ -371,7 +371,7 @@ export default function HowToReconstitutePage() {
         {/* ── PEPTIDE-SPECIFIC NOTES TABLE ── */}
         <div className="mb-16">
           <div className="flex items-center gap-3 mb-3">
-            <FlaskConical className="w-6 h-6 text-neon-green" />
+            <FlaskConical className="w-6 h-6 text-emerald-700" />
             <h2 className="text-2xl font-black text-gray-900">Peptide-Specific Reconstitution Notes</h2>
           </div>
           <p className="text-gray-500 text-sm mb-6">Each peptide has quirks. Here is what to expect when reconstituting the most common peptides.</p>
@@ -393,7 +393,7 @@ export default function HowToReconstitutePage() {
                     <td className="py-3 px-4 text-gray-600 whitespace-nowrap">{row.dissolve}</td>
                     <td className="py-3 px-4 text-gray-600 whitespace-nowrap">{row.color}</td>
                     <td className="py-3 px-4 text-gray-500 font-mono whitespace-nowrap text-xs">{row.timing}</td>
-                    <td className="py-3 px-4 text-emerald-300 text-xs leading-relaxed">{row.special}</td>
+                    <td className="py-3 px-4 text-emerald-700 text-xs leading-relaxed">{row.special}</td>
                   </tr>
                 ))}
               </tbody>
@@ -404,7 +404,7 @@ export default function HowToReconstitutePage() {
         {/* ── STORAGE TROUBLESHOOTING ── */}
         <div className="mb-16">
           <div className="flex items-center gap-3 mb-3">
-            <Thermometer className="w-6 h-6 text-neon-green" />
+            <Thermometer className="w-6 h-6 text-emerald-700" />
             <h2 className="text-2xl font-black text-gray-900">Storage Troubleshooting</h2>
           </div>
           <p className="text-gray-500 text-sm mb-8">What to do when something looks wrong with your reconstituted peptide — and how to tell normal from problematic.</p>
@@ -429,7 +429,7 @@ export default function HowToReconstitutePage() {
               {
                 title: 'How to Tell if a Peptide Has Degraded',
                 status: 'Watch for These Signs',
-                statusColor: 'text-neon-green',
+                statusColor: 'text-emerald-700',
                 statusBg: 'rgba(0,255,136,0.04)',
                 statusBorder: 'rgba(0,255,136,0.15)',
                 detail: 'Signs of degradation: visible particulate matter that does not dissolve, significant discoloration, unusual smell (peptides should be essentially odorless), reduced effectiveness (anecdotal but a real signal). Peptides degrade faster when: exposed to heat (above 8°C for extended periods), exposed to UV light, stored in non-BAC water, or repeatedly frozen and thawed.',
@@ -473,7 +473,7 @@ export default function HowToReconstitutePage() {
               <details key={q} className="glass-card group">
                 <summary className="p-5 cursor-pointer list-none flex items-center justify-between">
                   <span className="text-gray-900 font-semibold text-sm">{q}</span>
-                  <span className="text-neon-green text-lg group-open:rotate-45 transition-transform shrink-0 ml-4">+</span>
+                  <span className="text-emerald-700 text-lg group-open:rotate-45 transition-transform shrink-0 ml-4">+</span>
                 </summary>
                 <div className="px-5 pb-5">
                   <p className="text-gray-500 text-sm leading-relaxed">{a}</p>

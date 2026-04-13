@@ -35,7 +35,7 @@ const collagenTypes = [
     locations: 'Skin, hair, bones, tendons, ligaments',
     importance: 'The most abundant collagen in the body — accounts for 90% of total body collagen. Primary target for anti-aging skin protocols. Provides skin with tensile strength and prevents sagging.',
     color: 'border-amber-500/40 bg-amber-500/5',
-    badge: 'bg-amber-500/20 text-amber-300 border border-amber-500/40',
+    badge: 'bg-amber-500/20 text-amber-700 border border-amber-500/40',
     topPeptide: 'GHK-Cu, BPC-157, IGF-1 LR3',
   },
   {
@@ -43,7 +43,7 @@ const collagenTypes = [
     locations: 'Skin, blood vessels, internal organs',
     importance: 'Provides skin elasticity and flexibility. The "young skin" collagen — high in young skin, declining with age. Critical for the bounce-back quality of healthy skin. Key in early wound repair.',
     color: 'border-purple-500/40 bg-purple-500/5',
-    badge: 'bg-purple-500/20 text-purple-300 border border-purple-500/40',
+    badge: 'bg-purple-500/20 text-purple-700 border border-purple-500/40',
     topPeptide: 'GHK-Cu, BPC-157',
   },
   {
@@ -51,7 +51,7 @@ const collagenTypes = [
     locations: 'Basement membrane (skin barrier)',
     importance: 'Forms the basement membrane — the anchoring layer of skin that controls what passes through the skin barrier. Affects pore appearance, skin permeability, and overall skin clarity.',
     color: 'border-blue-500/40 bg-blue-500/5',
-    badge: 'bg-blue-500/20 text-blue-300 border border-blue-500/40',
+    badge: 'bg-blue-500/20 text-blue-700 border border-blue-500/40',
     topPeptide: 'GHK-Cu',
   },
   {
@@ -59,7 +59,7 @@ const collagenTypes = [
     locations: 'Skin anchoring fibrils',
     importance: 'Anchoring fibrils that connect the epidermis to the dermis. Critical for skin integrity in sensitive or fragile skin conditions. Low Type VII = skin that bruises easily, blisters, or shows trauma.',
     color: 'border-teal-500/40 bg-teal-500/5',
-    badge: 'bg-teal-500/20 text-teal-300 border border-teal-500/40',
+    badge: 'bg-teal-500/20 text-teal-700 border border-teal-500/40',
     topPeptide: 'GHK-Cu (indirect)',
   },
   {
@@ -67,7 +67,7 @@ const collagenTypes = [
     locations: 'Hair follicle attachment, scalp skin',
     importance: 'Specifically anchors hair follicles to the scalp dermis. Declining Type XVII collagen is associated with follicle miniaturization and age-related hair loss. Unique to hair biology.',
     color: 'border-emerald-500/40 bg-emerald-500/5',
-    badge: 'bg-emerald-500/20 text-emerald-300 border border-emerald-500/40',
+    badge: 'bg-emerald-500/20 text-emerald-700 border border-emerald-500/40',
     topPeptide: 'GHK-Cu, CJC-1295/Ipamorelin',
   },
 ];
@@ -173,18 +173,18 @@ const faqs = [
 
 export default function PeptidesForCollagenPage() {
   return (
-    <main className="min-h-screen bg-dark-900 text-gray-700">
+    <main className="min-h-screen bg-white text-gray-700">
       {/* Hero */}
       <section className="relative py-20 px-4 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-amber-900/20 via-dark-900 to-purple-900/20" />
         <div className="relative max-w-4xl mx-auto text-center space-y-6">
-          <div className="inline-flex items-center gap-2 bg-amber-500/10 border border-amber-500/30 rounded-full px-4 py-2 text-amber-300 text-sm font-semibold">
+          <div className="inline-flex items-center gap-2 bg-amber-50 border border-amber-200 rounded-full px-4 py-2 text-amber-700 text-sm font-semibold">
             <Layers className="w-4 h-4" />
             Collagen Science &amp; Peptides
           </div>
           <h1 className="text-4xl sm:text-5xl font-extrabold text-gray-900 leading-tight">
             Peptides for Collagen:{' '}
-            <span className="text-neon-green">Ranked by Evidence</span>
+            <span className="text-emerald-700">Ranked by Evidence</span>
           </h1>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
             Collagen is the structural foundation of your appearance. Here are the peptides with the strongest evidence for rebuilding it — ranked, explained, and with complete protocols.
@@ -193,7 +193,7 @@ export default function PeptidesForCollagenPage() {
             <Link href={SOURCE_URL} rel="nofollow noopener noreferrer" className="btn-cta flex items-center gap-2">
               View Collagen Peptides <ArrowRight className="w-4 h-4" />
             </Link>
-            <Link href="/guide" className="flex items-center gap-2 px-6 py-3 border border-slate-600 rounded-xl text-gray-600 hover:border-slate-400 transition-colors">
+            <Link href="/guide" className="flex items-center gap-2 px-6 py-3 border border-gray-300 rounded-xl text-gray-600 hover:border-gray-400 transition-colors">
               Full Protocol Guide
             </Link>
           </div>
@@ -233,7 +233,7 @@ export default function PeptidesForCollagenPage() {
                 <p className="text-gray-600 text-sm leading-relaxed">{ct.importance}</p>
                 <div className="pt-2 border-t border-slate-700/50">
                   <span className="text-gray-500 text-xs">Best peptide: </span>
-                  <span className="text-amber-300 text-xs font-semibold">{ct.topPeptide}</span>
+                  <span className="text-amber-700 text-xs font-semibold">{ct.topPeptide}</span>
                 </div>
               </div>
             ))}
@@ -295,13 +295,13 @@ export default function PeptidesForCollagenPage() {
               GHK-Cu (glycyl-L-histidyl-L-lysine copper complex) earns the top ranking for collagen due to its uniquely comprehensive mechanism. While most peptides work through a single pathway, GHK-Cu operates through multiple simultaneous mechanisms that collectively deliver what researchers describe as a "gene expression reset" — returning aged fibroblasts to a more youthful collagen-producing state.
             </p>
             <p className="text-gray-600 leading-relaxed">
-              The key findings from human and animal research: GHK-Cu stimulates collagen synthesis in skin fibroblasts by an average of <strong className="text-amber-300">70%</strong> above baseline in cell culture models. It increases the production of collagen Types I, III, and IV simultaneously. It activates tissue inhibitors of metalloproteinases (TIMPs), which block the MMP enzymes that break down collagen — providing a dual benefit of increasing production and decreasing breakdown. Lunde et al. demonstrated that GHK-Cu applied topically for 12 weeks produced significant improvements in skin density, thickness, and the reduction of fine lines compared to controls.
+              The key findings from human and animal research: GHK-Cu stimulates collagen synthesis in skin fibroblasts by an average of <strong className="text-amber-700">70%</strong> above baseline in cell culture models. It increases the production of collagen Types I, III, and IV simultaneously. It activates tissue inhibitors of metalloproteinases (TIMPs), which block the MMP enzymes that break down collagen — providing a dual benefit of increasing production and decreasing breakdown. Lunde et al. demonstrated that GHK-Cu applied topically for 12 weeks produced significant improvements in skin density, thickness, and the reduction of fine lines compared to controls.
             </p>
             <p className="text-gray-600 leading-relaxed">
               The gene expression research is particularly compelling. A 2010 analysis found that GHK-Cu modulates over 4,000 human genes, with specific effects on 31% of genes that change with aging — returning their expression to a more youthful pattern. Of particular relevance to collagen: GHK-Cu upregulates COLLAGEN1A1 and COLLAGEN3A1 gene expression while downregulating inflammatory genes (IL-6, TNF-α) that suppress fibroblast activity. This is a fundamentally different mechanism from simple "collagen stimulation" — it is resetting the cellular machinery responsible for collagen production at the genetic level.
             </p>
             <div className="border border-amber-500/30 bg-amber-500/5 rounded-xl p-4">
-              <p className="text-amber-300 font-semibold text-sm">Key Clinical Finding</p>
+              <p className="text-amber-700 font-semibold text-sm">Key Clinical Finding</p>
               <p className="text-gray-600 text-sm mt-1">
                 In a randomized, double-blind trial (Finkley et al.), GHK-Cu treatment for 12 weeks produced a 27% reduction in fine lines, 13% improvement in skin firmness, and measurable increase in skin thickness — without side effects. This is comparable to low-dose tretinoin performance.
               </p>
@@ -341,15 +341,15 @@ export default function PeptidesForCollagenPage() {
             {synergyStack.map((item, i) => (
               <div key={item.peptide} className="glass-card p-5 space-y-3">
                 <div className="flex items-center gap-3">
-                  <span className="w-8 h-8 rounded-full bg-purple-500/20 border border-purple-500/40 flex items-center justify-center text-purple-300 font-bold text-sm">
+                  <span className="w-8 h-8 rounded-full bg-purple-500/20 border border-purple-500/40 flex items-center justify-center text-purple-700 font-bold text-sm">
                     {i + 1}
                   </span>
                   <span className="font-bold text-gray-800">{item.peptide}</span>
                 </div>
                 <p className="text-gray-500 text-sm">{item.role}</p>
                 <div className="pt-2 border-t border-slate-700/50 space-y-1">
-                  <p className="text-amber-300 text-xs"><span className="text-gray-500">Dose:</span> {item.dose}</p>
-                  <p className="text-teal-300 text-xs"><span className="text-gray-500">Timing:</span> {item.timing}</p>
+                  <p className="text-amber-700 text-xs"><span className="text-gray-500">Dose:</span> {item.dose}</p>
+                  <p className="text-teal-700 text-xs"><span className="text-gray-500">Timing:</span> {item.timing}</p>
                 </div>
               </div>
             ))}
@@ -383,7 +383,7 @@ export default function PeptidesForCollagenPage() {
                 { title: 'Sunscreen (SPF 30+ daily)', desc: 'UV radiation activates MMP-1 and MMP-3, the primary collagen-degrading enzymes in skin. Daily sunscreen is the single most evidence-based anti-aging intervention — protecting existing collagen while peptides rebuild new collagen.' },
               ].map((item) => (
                 <div key={item.title} className="flex items-start gap-3 p-4 bg-slate-800/60 rounded-xl">
-                  <CheckCircle className="w-5 h-5 text-neon-green mt-0.5 flex-shrink-0" />
+                  <CheckCircle className="w-5 h-5 text-emerald-700 mt-0.5 flex-shrink-0" />
                   <div>
                     <p className="text-gray-700 font-semibold text-sm">{item.title}</p>
                     <p className="text-gray-500 text-xs mt-1 leading-relaxed">{item.desc}</p>
@@ -414,12 +414,12 @@ export default function PeptidesForCollagenPage() {
                     <ul className="space-y-1">
                       {t.changes.map((c) => (
                         <li key={c} className="flex items-start gap-2 text-gray-600 text-sm">
-                          <CheckCircle className="w-4 h-4 text-neon-green mt-0.5 flex-shrink-0" />
+                          <CheckCircle className="w-4 h-4 text-emerald-700 mt-0.5 flex-shrink-0" />
                           {c}
                         </li>
                       ))}
                     </ul>
-                    <p className="text-neon-green text-sm font-medium mt-2">{t.visual}</p>
+                    <p className="text-emerald-700 text-sm font-medium mt-2">{t.visual}</p>
                   </div>
                 </div>
               </div>
@@ -453,7 +453,7 @@ export default function PeptidesForCollagenPage() {
           <p className="text-gray-500">
             GHK-Cu + BPC-157 is the highest-evidence, most cost-effective collagen stack available. Start with the Foundation Stack and see measurable results in 8 weeks.
           </p>
-          <div className="p-3 bg-amber-500/10 border border-amber-500/30 rounded-xl text-amber-200 text-sm">
+          <div className="p-3 bg-amber-50 border border-amber-200 rounded-xl text-amber-200 text-sm">
             <AlertTriangle className="w-4 h-4 inline mr-2" />
             For research purposes only. Consult a qualified physician before use.
           </div>

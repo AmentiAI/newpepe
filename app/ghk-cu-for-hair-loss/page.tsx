@@ -87,7 +87,7 @@ const timelineMonths = [
     month: 'Month 2',
     title: 'Reduced Shedding',
     color: 'border-amber-500/40',
-    badge: 'bg-amber-500/20 text-amber-300',
+    badge: 'bg-amber-500/20 text-amber-700',
     changes: [
       'Noticeable reduction in daily hair shedding',
       'Hairs that do shed may be shorter (broken anagen hairs) — this is a good sign',
@@ -101,7 +101,7 @@ const timelineMonths = [
     month: 'Month 3',
     title: 'Miniaturization Reversal',
     color: 'border-amber-400/50',
-    badge: 'bg-amber-400/20 text-amber-300',
+    badge: 'bg-amber-400/20 text-amber-700',
     changes: [
       'Terminal (thick, pigmented) hairs begin replacing vellus (fine, colorless) hairs',
       'Hair shaft diameter measurably increases in affected areas',
@@ -115,7 +115,7 @@ const timelineMonths = [
     month: 'Month 4',
     title: 'New Growth Emergence',
     color: 'border-emerald-500/50',
-    badge: 'bg-emerald-500/20 text-emerald-300',
+    badge: 'bg-emerald-500/20 text-emerald-700',
     changes: [
       'Short new hairs visible at scalp surface in thinning areas',
       'Density improvement measurable in photos vs. baseline',
@@ -129,7 +129,7 @@ const timelineMonths = [
     month: 'Month 5',
     title: 'Density Consolidation',
     color: 'border-emerald-400/60',
-    badge: 'bg-emerald-400/20 text-emerald-300',
+    badge: 'bg-emerald-400/20 text-emerald-700',
     changes: [
       'New hairs from month 4 becoming longer and more visible',
       'Hair density visibly improved in treated areas',
@@ -143,7 +143,7 @@ const timelineMonths = [
     month: 'Month 6',
     title: 'Visible Transformation',
     color: 'border-neon-green/60',
-    badge: 'bg-emerald-500/20 text-emerald-300',
+    badge: 'bg-emerald-500/20 text-emerald-700',
     changes: [
       'Clear density improvement vs. 6-month-ago baseline photos',
       'Hairline stabilization or partial reversal',
@@ -249,7 +249,7 @@ export default function GhkCuHairLossPage() {
         <div className="absolute inset-0 grid-bg opacity-40" />
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] bg-amber-500/8 blur-[120px] rounded-full pointer-events-none" />
         <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="inline-flex items-center gap-2 bg-amber-500/10 border border-amber-500/30 rounded-full px-4 py-2 mb-6">
+          <div className="inline-flex items-center gap-2 bg-amber-50 border border-amber-200 rounded-full px-4 py-2 mb-6">
             <span className="text-amber-400 text-sm font-semibold tracking-wide">GHK-CU HAIR LOSS GUIDE 2026</span>
           </div>
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-gray-900 leading-tight mb-6">
@@ -279,7 +279,7 @@ export default function GhkCuHairLossPage() {
       {/* Hair Loss Type Quiz */}
       <section className="py-12 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-8">
-          <div className="inline-flex items-center gap-2 bg-amber-500/10 border border-amber-500/30 rounded-full px-3 py-1 mb-4">
+          <div className="inline-flex items-center gap-2 bg-amber-50 border border-amber-200 rounded-full px-3 py-1 mb-4">
             <span className="text-amber-400 text-xs font-bold tracking-widest uppercase">Interactive Tool</span>
           </div>
           <h2 className="text-3xl font-black text-gray-900 mb-3">What Type of Hair Loss Do You Have?</h2>
@@ -308,7 +308,7 @@ export default function GhkCuHairLossPage() {
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl font-black text-gray-900 mb-3">GHK-Cu vs. Other Hair Loss Treatments</h2>
           <p className="text-gray-500 mb-8">How GHK-Cu stacks up against the most common hair loss interventions — and why combining them outperforms any single treatment.</p>
-          <div className="overflow-x-auto rounded-2xl border border-white/10">
+          <div className="overflow-x-auto rounded-2xl border border-gray-200">
             <table className="w-full text-sm min-w-[900px]">
               <thead>
                 <tr style={{ background: 'rgba(255,255,255,0.04)' }}>
@@ -338,7 +338,7 @@ export default function GhkCuHairLossPage() {
                       <span className={`font-black ${row.highlight ? 'text-amber-400' : 'text-gray-900'}`}>
                         {row.treatment}
                         {row.highlight && (
-                          <span className="ml-2 text-[10px] bg-amber-400/20 text-amber-300 px-1.5 py-0.5 rounded-full font-bold">THIS GUIDE</span>
+                          <span className="ml-2 text-[10px] bg-amber-400/20 text-amber-700 px-1.5 py-0.5 rounded-full font-bold">THIS GUIDE</span>
                         )}
                       </span>
                     </td>
@@ -419,7 +419,7 @@ export default function GhkCuHairLossPage() {
             <div className="glass-card p-6">
               <div className="text-amber-400 text-xs font-bold tracking-widest uppercase mb-3">Step 2 — Carrier Solution Recipe (30mL batch)</div>
               <p className="text-gray-600 text-sm mb-4">For a 1mg/mL GHK-Cu serum (30mg total per bottle — approximately 30 daily doses at 1mg each):</p>
-              <div className="overflow-x-auto rounded-xl border border-white/10">
+              <div className="overflow-x-auto rounded-xl border border-gray-200">
                 <table className="w-full text-sm">
                   <thead>
                     <tr style={{ background: 'rgba(255,255,255,0.04)' }}>
@@ -566,7 +566,7 @@ export default function GhkCuHairLossPage() {
       {/* GHK-Cu for Skin */}
       <section className="py-12" style={{ background: 'rgba(6,6,16,0.8)' }}>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="inline-flex items-center gap-2 bg-emerald-500/10 border border-emerald-500/30 rounded-full px-3 py-1 mb-6">
+          <div className="inline-flex items-center gap-2 bg-emerald-50 border border-emerald-200 rounded-full px-3 py-1 mb-6">
             <span className="text-emerald-400 text-xs font-bold tracking-widest uppercase">Bonus: Skin Benefits</span>
           </div>
           <h2 className="text-2xl font-black text-gray-900 mb-3">GHK-Cu for Skin: Anti-Aging Powerhouse</h2>

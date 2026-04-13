@@ -79,9 +79,9 @@ export default function StackPage({ params }: Props) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Breadcrumb */}
         <div className="flex items-center gap-2 mb-8 text-sm text-gray-500">
-          <Link href="/" className="hover:text-neon-green">Home</Link>
+          <Link href="/" className="hover:text-emerald-700">Home</Link>
           <span>/</span>
-          <Link href="/stacks" className="hover:text-neon-green">Stacks</Link>
+          <Link href="/stacks" className="hover:text-emerald-700">Stacks</Link>
           <span>/</span>
           <span className="text-gray-600">{stack.name}</span>
         </div>
@@ -104,7 +104,7 @@ export default function StackPage({ params }: Props) {
             </span>
           </div>
           <h1 className="text-4xl sm:text-5xl font-black text-gray-900 mb-3">{stack.name}</h1>
-          <p className="text-xl text-neon-green font-medium mb-4">{stack.tagline}</p>
+          <p className="text-xl text-emerald-700 font-medium mb-4">{stack.tagline}</p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
@@ -116,7 +116,7 @@ export default function StackPage({ params }: Props) {
               <div className="space-y-3">
                 {stack.description.split('\n').filter(Boolean).map((line, i) => {
                   if (line.startsWith('**') && line.endsWith('**')) {
-                    return <h3 key={i} className="text-neon-green font-semibold">{line.replace(/\*\*/g, '')}</h3>;
+                    return <h3 key={i} className="text-emerald-700 font-semibold">{line.replace(/\*\*/g, '')}</h3>;
                   }
                   return <p key={i} className="text-gray-500 text-sm leading-relaxed">{line}</p>;
                 })}
@@ -129,7 +129,7 @@ export default function StackPage({ params }: Props) {
               <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 {stack.benefits.map((b) => (
                   <li key={b} className="flex items-start gap-2 text-sm text-gray-600">
-                    <CheckCircle className="w-4 h-4 text-neon-green shrink-0 mt-0.5" />
+                    <CheckCircle className="w-4 h-4 text-emerald-700 shrink-0 mt-0.5" />
                     {b}
                   </li>
                 ))}
@@ -143,7 +143,7 @@ export default function StackPage({ params }: Props) {
                 {stack.protocol.split('\n').filter(Boolean).map((line, i) => {
                   if (line.startsWith('**')) {
                     return (
-                      <p key={i} className="text-neon-green font-bold mt-4 mb-1 first:mt-0">
+                      <p key={i} className="text-emerald-700 font-bold mt-4 mb-1 first:mt-0">
                         {line.replace(/\*\*/g, '')}
                       </p>
                     );
@@ -195,7 +195,7 @@ export default function StackPage({ params }: Props) {
                     <Link
                       key={p}
                       href={`/products/${p}`}
-                      className="text-xs font-mono bg-dark-700 border border-neon-green/20 text-neon-green px-2 py-1 rounded hover:border-neon-green/50 transition-colors"
+                      className="text-xs font-mono bg-dark-700 border border-neon-green/20 text-emerald-700 px-2 py-1 rounded hover:border-neon-green/50 transition-colors"
                     >
                       {p.toUpperCase()}
                     </Link>

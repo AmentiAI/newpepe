@@ -29,7 +29,7 @@ const geneResetData = [
   {
     category: 'Upregulated (Anti-aging)',
     color: 'text-emerald-400',
-    badge: 'bg-emerald-500/20 text-emerald-300',
+    badge: 'bg-emerald-500/20 text-emerald-700',
     genes: [
       { gene: 'COL1A1, COL3A1', effect: 'Collagen I and III synthesis — structural skin support' },
       { gene: 'COL4A1', effect: 'Basement membrane collagen — skin adhesion and integrity' },
@@ -42,7 +42,7 @@ const geneResetData = [
   {
     category: 'Downregulated (Pro-aging suppressed)',
     color: 'text-rose-400',
-    badge: 'bg-rose-500/20 text-rose-300',
+    badge: 'bg-rose-500/20 text-rose-700',
     genes: [
       { gene: 'MMP-1, MMP-2, MMP-9', effect: 'Collagenase and gelatinase — enzymes that degrade collagen' },
       { gene: 'IL-6, TNF-α', effect: 'Pro-inflammatory cytokines driving skin aging' },
@@ -173,9 +173,9 @@ const faqs = [
 
 export default function GhkCuSkinProtocolPage() {
   return (
-    <main className="bg-dark-900 min-h-screen text-gray-700">
+    <main className="bg-white min-h-screen text-gray-700">
       {/* Hero */}
-      <section className="py-16 bg-gradient-to-b from-dark-800 to-dark-900 border-b border-white/5">
+      <section className="py-16 bg-gray-50 border-b border-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
             <span className="text-xs font-semibold uppercase tracking-widest text-purple-400 mb-4 block">
@@ -183,7 +183,7 @@ export default function GhkCuSkinProtocolPage() {
             </span>
             <h1 className="text-4xl sm:text-5xl font-extrabold text-gray-900 mb-6 leading-tight">
               GHK-Cu Skin Protocol:{' '}
-              <span className="text-neon-green">31% Gene Reset, 5 Collagen Types</span>
+              <span className="text-emerald-700">31% Gene Reset, 5 Collagen Types</span>
             </h1>
             <p className="text-xl text-gray-600 mb-8 leading-relaxed">
               GHK-Cu (glycyl-l-histidyl-l-lysine copper) is the most comprehensively researched peptide for skin. It resets 31% of aged genes, stimulates five distinct collagen types, drives angiogenesis, activates proteasome function, and suppresses inflammation — producing skin quality changes no cosmetic ingredient can replicate. This guide covers the complete skin protocol: topical concentrations, injectable dosing, combination stacks, and week-by-week timelines.
@@ -212,7 +212,7 @@ export default function GhkCuSkinProtocolPage() {
       </section>
 
       {/* 31% Gene Reset */}
-      <section className="py-16 bg-dark-800/30">
+      <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">The 31% Gene Reset: What It Actually Means</h2>
           <div className="grid lg:grid-cols-2 gap-10 items-start mb-10">
@@ -232,7 +232,7 @@ export default function GhkCuSkinProtocolPage() {
             </div>
             <div className="space-y-4">
               {geneResetData.map((group) => (
-                <div key={group.category} className="bg-dark-800/60 border border-white/10 rounded-xl p-5">
+                <div key={group.category} className="bg-gray-50 border border-gray-200 rounded-xl p-5">
                   <div className={`text-xs font-semibold uppercase tracking-wider mb-3 ${group.color}`}>
                     {group.category}
                   </div>
@@ -262,10 +262,10 @@ export default function GhkCuSkinProtocolPage() {
           </p>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {collagenTypes.map((ct) => (
-              <div key={ct.type} className={`rounded-xl border bg-dark-800/40 p-5 ${ct.color}`}>
+              <div key={ct.type} className={`rounded-xl border bg-gray-50 p-5 ${ct.color}`}>
                 <h3 className="font-bold text-gray-900 mb-2">{ct.type}</h3>
                 <p className="text-sm text-gray-500 mb-3 leading-relaxed">{ct.role}</p>
-                <div className="border-t border-white/5 pt-3">
+                <div className="border-t border-gray-100 pt-3">
                   <p className="text-xs text-gray-500 uppercase tracking-wider mb-1">GHK-Cu Effect</p>
                   <p className="text-xs text-gray-600 leading-relaxed">{ct.ghkEffect}</p>
                 </div>
@@ -276,7 +276,7 @@ export default function GhkCuSkinProtocolPage() {
       </section>
 
       {/* Aging Mechanisms */}
-      <section className="py-16 bg-dark-800/30">
+      <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">Skin Aging Mechanisms GHK-Cu Addresses</h2>
           <p className="text-gray-500 mb-10 max-w-2xl">
@@ -284,10 +284,10 @@ export default function GhkCuSkinProtocolPage() {
           </p>
           <div className="grid sm:grid-cols-2 gap-5">
             {agingMechanisms.map((m) => (
-              <div key={m.mechanism} className="bg-dark-800/60 border border-white/10 rounded-xl p-5">
+              <div key={m.mechanism} className="bg-gray-50 border border-gray-200 rounded-xl p-5">
                 <h3 className={`font-bold text-lg mb-2 ${m.color}`}>{m.mechanism}</h3>
                 <p className="text-sm text-gray-500 mb-3">{m.what}</p>
-                <div className="border-t border-white/5 pt-3">
+                <div className="border-t border-gray-100 pt-3">
                   <p className="text-xs text-gray-500 uppercase tracking-wider mb-1">GHK-Cu Response</p>
                   <p className="text-sm text-gray-600 leading-relaxed">{m.ghkAction}</p>
                 </div>
@@ -306,11 +306,11 @@ export default function GhkCuSkinProtocolPage() {
           </p>
           <div className="grid lg:grid-cols-3 gap-5">
             {combinations.map((combo) => (
-              <div key={combo.stack} className={`rounded-xl border bg-dark-800/40 p-6 ${combo.color}`}>
+              <div key={combo.stack} className={`rounded-xl border bg-gray-50 p-6 ${combo.color}`}>
                 <h3 className="font-bold text-gray-900 mb-1">{combo.stack}</h3>
                 <p className="text-xs text-gray-500 uppercase tracking-wider mb-3">{combo.purpose}</p>
                 <p className="text-sm text-gray-600 leading-relaxed mb-4">{combo.synergy}</p>
-                <div className="border-t border-white/5 pt-3">
+                <div className="border-t border-gray-100 pt-3">
                   <p className="text-xs text-gray-500 uppercase tracking-wider mb-1">Protocol</p>
                   <p className="text-xs text-gray-500 leading-relaxed">{combo.protocol}</p>
                 </div>
@@ -321,12 +321,12 @@ export default function GhkCuSkinProtocolPage() {
       </section>
 
       {/* FAQ */}
-      <section className="py-16 bg-dark-800/30">
+      <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-10">Frequently Asked Questions</h2>
           <div className="grid md:grid-cols-2 gap-6">
             {faqs.map((faq, i) => (
-              <div key={i} className="bg-dark-800/60 border border-white/10 rounded-xl p-5">
+              <div key={i} className="bg-gray-50 border border-gray-200 rounded-xl p-5">
                 <h3 className="font-semibold text-gray-900 mb-2 flex items-start gap-2">
                   <FlaskConical className="w-4 h-4 text-purple-400 flex-shrink-0 mt-0.5" />
                   {faq.q}

@@ -54,7 +54,7 @@ export default function BPC157Page() {
     <div className="overflow-hidden">
 
       {/* ── HERO ─────────────────────────────────────────── */}
-      <section className="relative min-h-[90vh] flex items-center pt-20 bg-dark-900 grid-bg">
+      <section className="relative min-h-[90vh] flex items-center pt-20 bg-white grid-bg">
         <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
           <div className="absolute top-1/4 -left-32 w-[600px] h-[600px] bg-emerald-400/6 rounded-full blur-[120px]" />
           <div className="absolute bottom-0 right-0 w-[400px] h-[400px] bg-neon-green/5 rounded-full blur-[100px]" />
@@ -71,8 +71,8 @@ export default function BPC157Page() {
                   <span className="text-emerald-400 text-xs font-semibold uppercase tracking-widest">#1 Healing Peptide</span>
                 </span>
                 <span className="inline-flex items-center gap-1.5 bg-neon-green/10 border border-neon-green/20 rounded-full px-3 py-1.5">
-                  <Star className="w-3 h-3 text-neon-green" />
-                  <span className="text-neon-green text-xs font-semibold">100+ Studies</span>
+                  <Star className="w-3 h-3 text-emerald-700" />
+                  <span className="text-emerald-700 text-xs font-semibold">100+ Studies</span>
                 </span>
               </div>
 
@@ -145,7 +145,7 @@ export default function BPC157Page() {
                 <div className="absolute -top-4 -right-4 bg-dark-700 border border-emerald-400/30 rounded-xl px-4 py-2 text-sm font-bold text-emerald-400 shadow-xl">
                   $54.99
                 </div>
-                <div className="absolute bottom-8 -left-6 bg-dark-700 border border-neon-green/20 rounded-xl px-3 py-2 text-xs font-semibold text-neon-green shadow-xl">
+                <div className="absolute bottom-8 -left-6 bg-dark-700 border border-neon-green/20 rounded-xl px-3 py-2 text-xs font-semibold text-emerald-700 shadow-xl">
                   100+ Studies
                 </div>
                 <div className="absolute top-1/3 -right-8 bg-dark-700 border border-blue-500/20 rounded-xl px-3 py-2 text-xs font-semibold text-blue-400 shadow-xl">
@@ -159,7 +159,7 @@ export default function BPC157Page() {
       </section>
 
       {/* ── STATS BAR ────────────────────────────────────── */}
-      <div className="bg-dark-800 border-y border-emerald-400/10">
+      <div className="bg-gray-50 border-y border-emerald-400/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
             {stats.map(({ value, label, color }) => (
@@ -177,10 +177,10 @@ export default function BPC157Page() {
       </div>
 
       {/* ── BENEFITS GRID ────────────────────────────────── */}
-      <section className="py-24 bg-dark-900">
+      <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <p className="text-neon-green text-xs font-semibold uppercase tracking-widest mb-3">Evidence-Based Effects</p>
+            <p className="text-emerald-700 text-xs font-semibold uppercase tracking-widest mb-3">Evidence-Based Effects</p>
             <h2 className="text-4xl sm:text-5xl font-black text-gray-900 mb-4">
               What BPC-157 <span className="gradient-text">Actually Does</span>
             </h2>
@@ -212,11 +212,11 @@ export default function BPC157Page() {
       </section>
 
       {/* ── PROTOCOL ─────────────────────────────────────── */}
-      <section className="py-24 bg-dark-800 border-y border-white/5">
+      <section className="py-24 bg-gray-50 border-y border-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
             <div>
-              <p className="text-neon-green text-xs font-semibold uppercase tracking-widest mb-3">Dosing Protocol</p>
+              <p className="text-emerald-700 text-xs font-semibold uppercase tracking-widest mb-3">Dosing Protocol</p>
               <h2 className="text-4xl font-black text-gray-900 mb-6">
                 How to Use <span className="gradient-text">BPC-157</span>
               </h2>
@@ -255,7 +255,7 @@ export default function BPC157Page() {
                     <Link key={name} href={href} className="flex items-start gap-3 p-3 rounded-xl bg-dark-700/60 hover:bg-dark-700 transition-colors group">
                       <div className={`w-2 h-2 rounded-full mt-1.5 shrink-0 ${color === 'emerald' ? 'bg-emerald-400' : color === 'purple' ? 'bg-purple-400' : 'bg-blue-400'}`} />
                       <div>
-                        <p className="text-gray-900 font-semibold text-sm group-hover:text-neon-green transition-colors">{name}</p>
+                        <p className="text-gray-900 font-semibold text-sm group-hover:text-emerald-700 transition-colors">{name}</p>
                         <p className="text-gray-500 text-xs">{desc}</p>
                       </div>
                     </Link>
@@ -267,7 +267,7 @@ export default function BPC157Page() {
               </div>
 
               <div className="glass-card p-6 border-neon-green/15 text-center">
-                <FlaskConical className="w-8 h-8 text-neon-green mx-auto mb-3" />
+                <FlaskConical className="w-8 h-8 text-emerald-700 mx-auto mb-3" />
                 <h3 className="text-gray-900 font-bold mb-2">Ready to Order?</h3>
                 <p className="text-gray-500 text-sm mb-4">COA-verified, 98%+ purity, US domestic shipping.</p>
                 <a href={SOURCE_URL} target="_blank" rel="nofollow noopener noreferrer" className="btn-cta px-8 py-3 inline-flex items-center gap-2">
@@ -281,10 +281,10 @@ export default function BPC157Page() {
       </section>
 
       {/* ── RESEARCH ─────────────────────────────────────── */}
-      <section className="py-24 bg-dark-900 grid-bg">
+      <section className="py-24 bg-white grid-bg">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <p className="text-neon-green text-xs font-semibold uppercase tracking-widest mb-3">Peer-Reviewed Science</p>
+            <p className="text-emerald-700 text-xs font-semibold uppercase tracking-widest mb-3">Peer-Reviewed Science</p>
             <h2 className="text-4xl font-black text-gray-900 mb-4">
               The Research Behind <span className="gradient-text">BPC-157</span>
             </h2>
@@ -312,7 +312,7 @@ export default function BPC157Page() {
       </section>
 
       {/* ── RELATED GUIDES ───────────────────────────────── */}
-      <section className="py-20 bg-dark-800 border-t border-white/5">
+      <section className="py-20 bg-gray-50 border-t border-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-black text-gray-900 mb-8">
             BPC-157 <span className="gradient-text">Deep-Dive Guides</span>
@@ -340,7 +340,7 @@ export default function BPC157Page() {
       </section>
 
       {/* ── BOTTOM CTA ───────────────────────────────────── */}
-      <section className="py-20 bg-dark-900 grid-bg">
+      <section className="py-20 bg-white grid-bg">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 text-center">
           <div className="inline-flex items-center gap-2 bg-emerald-400/10 border border-emerald-400/20 rounded-full px-4 py-1.5 mb-6">
             <CheckCircle className="w-4 h-4 text-emerald-400" />

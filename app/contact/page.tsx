@@ -85,7 +85,7 @@ export default function ContactPage() {
                 href={href}
                 className="glass-card p-5 flex flex-col gap-2 hover:border-neon-green/30 border border-transparent transition-colors group"
               >
-                <span className="text-neon-green font-semibold text-sm group-hover:underline">{label}</span>
+                <span className="text-emerald-700 font-semibold text-sm group-hover:underline">{label}</span>
                 <span className="text-gray-500 text-xs leading-relaxed">{desc}</span>
               </Link>
             ))}
@@ -95,7 +95,7 @@ export default function ContactPage() {
         {/* Popular Resources Grid */}
         <div className="mb-12">
           <div className="flex items-center gap-2 mb-2">
-            <BookOpen className="w-5 h-5 text-neon-green" />
+            <BookOpen className="w-5 h-5 text-emerald-700" />
             <h2 className="text-xl font-bold text-gray-900">Popular Resources</h2>
           </div>
           <p className="text-gray-500 text-sm mb-6">The most visited pages on this site, in one place.</p>
@@ -106,9 +106,9 @@ export default function ContactPage() {
                 href={href}
                 className="flex items-start gap-3 bg-dark-700/40 rounded-xl p-4 border border-neon-green/10 hover:border-neon-green/25 transition-colors group"
               >
-                <ArrowRight className="w-4 h-4 text-neon-green shrink-0 mt-0.5" />
+                <ArrowRight className="w-4 h-4 text-emerald-700 shrink-0 mt-0.5" />
                 <div>
-                  <p className="text-gray-900 text-sm font-semibold group-hover:text-neon-green transition-colors">{label}</p>
+                  <p className="text-gray-900 text-sm font-semibold group-hover:text-emerald-700 transition-colors">{label}</p>
                   <p className="text-gray-500 text-xs mt-0.5 leading-relaxed">{desc}</p>
                 </div>
               </Link>
@@ -119,7 +119,7 @@ export default function ContactPage() {
         {/* Most Asked Questions */}
         <div className="mb-12">
           <div className="flex items-center gap-2 mb-2">
-            <HelpCircle className="w-5 h-5 text-neon-green" />
+            <HelpCircle className="w-5 h-5 text-emerald-700" />
             <h2 className="text-xl font-bold text-gray-900">Most Asked Questions</h2>
           </div>
           <p className="text-gray-500 text-sm mb-6">
@@ -129,7 +129,7 @@ export default function ContactPage() {
             {mostAskedQuestions.map(({ q, a }) => (
               <div key={q} className="glass-card p-6">
                 <h3 className="text-gray-900 font-semibold mb-3 flex items-start gap-2">
-                  <span className="text-neon-green font-black shrink-0">Q.</span>
+                  <span className="text-emerald-700 font-black shrink-0">Q.</span>
                   {q}
                 </h3>
                 <p className="text-gray-500 text-sm leading-relaxed pl-5">{a}</p>
@@ -141,18 +141,18 @@ export default function ContactPage() {
         {/* Contact Options */}
         <div className="glass-card p-8 mb-12">
           <div className="flex items-center gap-3 mb-6">
-            <Mail className="w-5 h-5 text-neon-green" />
+            <Mail className="w-5 h-5 text-emerald-700" />
             <h2 className="text-gray-900 font-bold text-xl">Contact Options</h2>
           </div>
           <div className="space-y-4">
             <div className="bg-dark-700/50 rounded-xl p-5 border border-neon-green/10">
-              <p className="text-neon-green text-sm font-semibold mb-1">AI Chat Assistant (Instant)</p>
+              <p className="text-emerald-700 text-sm font-semibold mb-1">AI Chat Assistant (Instant)</p>
               <p className="text-gray-500 text-sm">
                 Use the chat widget in the bottom right corner for instant answers to protocol, dosing, and stacking questions. The assistant is trained on BPC-157 and peptide research and can provide personalized protocol suggestions.
               </p>
             </div>
             <div className="bg-dark-700/50 rounded-xl p-5 border border-neon-green/10">
-              <p className="text-neon-green text-sm font-semibold mb-1">Purchase, Shipping &amp; Product Questions</p>
+              <p className="text-emerald-700 text-sm font-semibold mb-1">Purchase, Shipping &amp; Product Questions</p>
               <p className="text-gray-500 text-sm mb-3">
                 For questions about ordering, shipping status, or specific products, visit our recommended supplier directly. They handle all order fulfillment and customer service for purchases.
               </p>
@@ -160,13 +160,13 @@ export default function ContactPage() {
                 href={SOURCE_URL}
                 target="_blank"
                 rel="nofollow noopener noreferrer"
-                className="inline-flex items-center gap-1.5 text-neon-green text-sm font-semibold hover:underline"
+                className="inline-flex items-center gap-1.5 text-emerald-700 text-sm font-semibold hover:underline"
               >
                 Visit Supplier <ExternalLink className="w-3.5 h-3.5" />
               </a>
             </div>
             <div className="bg-dark-700/50 rounded-xl p-5 border border-neon-green/10">
-              <p className="text-neon-green text-sm font-semibold mb-1">Content &amp; Editorial Questions</p>
+              <p className="text-emerald-700 text-sm font-semibold mb-1">Content &amp; Editorial Questions</p>
               <p className="text-gray-500 text-sm">
                 For content corrections, protocol feedback, or editorial inquiries about this site, use the AI chat widget or browse the FAQ. We review all feedback and update content regularly to reflect current research.
               </p>
@@ -177,7 +177,7 @@ export default function ContactPage() {
         {/* About This Site */}
         <div className="glass-card p-8 mb-12">
           <div className="flex items-center gap-3 mb-6">
-            <Info className="w-5 h-5 text-neon-green" />
+            <Info className="w-5 h-5 text-emerald-700" />
             <h2 className="text-gray-900 font-bold text-xl">About This Site</h2>
           </div>
 

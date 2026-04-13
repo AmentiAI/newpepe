@@ -36,7 +36,7 @@ const appearanceMechanisms = [
     desc: 'IGF-1 LR3 directly activates IGF-1 receptors on skin fibroblasts, driving upregulation of Type I and III collagen synthesis. Research documents a dose-dependent increase in collagen production in fibroblast cultures. This is the single most important anti-aging mechanism — improving skin firmness, thickness, and wrinkle reduction.',
     timeline: '6–10 weeks',
     color: 'border-cyan-500/40',
-    badge: 'bg-cyan-500/20 text-cyan-300',
+    badge: 'bg-cyan-500/20 text-cyan-700',
   },
   {
     number: '02',
@@ -44,7 +44,7 @@ const appearanceMechanisms = [
     desc: 'IGF-1 receptors are expressed in keratinocytes (skin surface cells). IGF-1 LR3 stimulates keratinocyte proliferation → thicker dermis → skin looks and feels fuller and tighter. Thin, crepey skin — a hallmark of aging and excessive caloric restriction — responds directly to IGF-1 axis optimization.',
     timeline: '8–12 weeks',
     color: 'border-blue-500/40',
-    badge: 'bg-blue-500/20 text-blue-300',
+    badge: 'bg-blue-500/20 text-blue-700',
   },
   {
     number: '03',
@@ -52,7 +52,7 @@ const appearanceMechanisms = [
     desc: 'IGF-1 supports the health of facial fat compartments — reducing pathological catabolic loss of subcutaneous facial fat that produces the "gaunt" or "sunken" look of aging or extreme dieting. Important for maintaining the facial fat volume that creates a youthful vs aged appearance.',
     timeline: '3–6 months',
     color: 'border-indigo-500/40',
-    badge: 'bg-indigo-500/20 text-indigo-300',
+    badge: 'bg-indigo-500/20 text-indigo-700',
   },
   {
     number: '04',
@@ -60,7 +60,7 @@ const appearanceMechanisms = [
     desc: 'Even at subpharmacological appearance doses (20–50 mcg/day), IGF-1 LR3 improves protein synthesis in muscle tissue → better muscle volume → more defined facial structure. Masseter, temporalis, and neck muscle development contribute significantly to the angular, defined look associated with attractive male faces.',
     timeline: '4–8 weeks',
     color: 'border-violet-500/40',
-    badge: 'bg-violet-500/20 text-violet-300',
+    badge: 'bg-violet-500/20 text-violet-700',
   },
   {
     number: '05',
@@ -68,7 +68,7 @@ const appearanceMechanisms = [
     desc: 'IGF-1 is a universal growth factor for all follicle types — scalp, beard, eyebrows, and body. Unlike DHT-dependent mechanisms, IGF-1\'s anagen-prolonging effect applies to all androgenic contexts. Documented in dermal papilla cell research: IGF-1 upregulates VEGF and FGF-7, two key growth factors for follicle cycling.',
     timeline: '8–16 weeks',
     color: 'border-teal-500/40',
-    badge: 'bg-teal-500/20 text-teal-300',
+    badge: 'bg-teal-500/20 text-teal-700',
   },
   {
     number: '06',
@@ -76,7 +76,7 @@ const appearanceMechanisms = [
     desc: 'IGF-1 is one of the primary wound healing growth factors — secreted at wound sites by platelets and macrophages. Elevated systemic IGF-1 from LR3 accelerates healing and improves scar quality. Acne scarring, surgical marks, and any skin trauma heals with better outcomes when IGF-1 levels are optimal.',
     timeline: '2–4 weeks (active healing); 4–8 weeks (scar quality)',
     color: 'border-emerald-500/40',
-    badge: 'bg-emerald-500/20 text-emerald-300',
+    badge: 'bg-emerald-500/20 text-emerald-700',
   },
   {
     number: '07',
@@ -84,7 +84,7 @@ const appearanceMechanisms = [
     desc: 'At research doses, IGF-1 supports osteoblast activity and bone mineral density. Facial bone density is a primary determinant of long-term appearance. The subtle facial bone shrinkage of aging (receding orbital rims, reduced jaw prominence) is driven partly by declining IGF-1 levels. Supporting osteoblast activity preserves facial bone structure over time.',
     timeline: '6–18 months',
     color: 'border-amber-500/40',
-    badge: 'bg-amber-500/20 text-amber-300',
+    badge: 'bg-amber-500/20 text-amber-700',
   },
 ];
 
@@ -98,7 +98,7 @@ const dosingProtocols = [
     cost: '~$60–90/month',
     level: 'Entry',
     color: 'border-cyan-500/40',
-    badge: 'bg-cyan-500/20 text-cyan-300',
+    badge: 'bg-cyan-500/20 text-cyan-700',
   },
   {
     name: 'Body Composition Protocol',
@@ -109,7 +109,7 @@ const dosingProtocols = [
     cost: '~$100–180/month',
     level: 'Intermediate',
     color: 'border-blue-500/40',
-    badge: 'bg-blue-500/20 text-blue-300',
+    badge: 'bg-blue-500/20 text-blue-700',
   },
 ];
 
@@ -171,18 +171,18 @@ const faqs = [
 
 export default function Igf1LooksmaxxingPage() {
   return (
-    <main className="min-h-screen bg-dark-900 text-gray-700">
+    <main className="min-h-screen bg-white text-gray-700">
       {/* Hero */}
       <section className="relative py-20 px-4 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-cyan-900/20 via-dark-900 to-blue-900/20" />
+        <div className="absolute inset-0 bg-gradient-to-br from-cyan-50 to-blue-50/30" />
         <div className="relative max-w-4xl mx-auto text-center space-y-6">
-          <div className="inline-flex items-center gap-2 bg-cyan-500/10 border border-cyan-500/30 rounded-full px-4 py-2 text-cyan-300 text-sm font-semibold">
+          <div className="inline-flex items-center gap-2 bg-cyan-50 border border-cyan-200 rounded-full px-4 py-2 text-cyan-700 text-sm font-semibold">
             <Activity className="w-4 h-4" />
             IGF-1 LR3 &amp; Appearance
           </div>
           <h1 className="text-4xl sm:text-5xl font-extrabold text-gray-900 leading-tight">
             IGF-1 LR3 for{' '}
-            <span className="text-neon-green">Looksmaxxing</span>
+            <span className="text-emerald-700">Looksmaxxing</span>
           </h1>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
             IGF-1 LR3 affects seven distinct appearance mechanisms. Here is exactly how it works, what doses to use, and how to stack it for maximum appearance optimization.
@@ -191,7 +191,7 @@ export default function Igf1LooksmaxxingPage() {
             <Link href={SOURCE_URL} rel="nofollow noopener noreferrer" className="btn-cta flex items-center gap-2">
               View IGF-1 LR3 Sources <ArrowRight className="w-4 h-4" />
             </Link>
-            <Link href="/anti-aging" className="flex items-center gap-2 px-6 py-3 border border-slate-600 rounded-xl text-gray-600 hover:border-slate-400 transition-colors">
+            <Link href="/anti-aging" className="flex items-center gap-2 px-6 py-3 border border-gray-300 rounded-xl text-gray-600 hover:border-gray-400 transition-colors">
               Anti-Aging Stack
             </Link>
           </div>
@@ -207,7 +207,7 @@ export default function Igf1LooksmaxxingPage() {
               IGF-1 LR3 (Insulin-like Growth Factor-1, Long-Arg3) is a modified variant of the naturally occurring IGF-1 hormone. Natural IGF-1 is produced primarily by the liver in response to growth hormone (GH) signaling and has a half-life of just 15 minutes before it is bound by IGF-binding proteins (IGFBPs) that render it inactive.
             </p>
             <p className="text-gray-600 leading-relaxed">
-              IGF-1 LR3 has two specific amino acid modifications that transform this limitation: an arginine substitution at position 3 and an N-terminal extension that together reduce IGFBP binding affinity by approximately <strong className="text-cyan-300">90%</strong>. The result is a peptide that circulates in its fully active form for 20–30 hours after a single injection — providing continuous receptor activation that natural IGF-1 cannot achieve.
+              IGF-1 LR3 has two specific amino acid modifications that transform this limitation: an arginine substitution at position 3 and an N-terminal extension that together reduce IGFBP binding affinity by approximately <strong className="text-cyan-700">90%</strong>. The result is a peptide that circulates in its fully active form for 20–30 hours after a single injection — providing continuous receptor activation that natural IGF-1 cannot achieve.
             </p>
             <p className="text-gray-600 leading-relaxed">
               IGF-1 is the central mediator of growth hormone's anabolic and reparative effects on the body. While GH acts on bone and fat directly, the majority of GH's tissue-building effects — including collagen synthesis, muscle protein synthesis, skin thickness, and hair follicle support — are mediated through IGF-1. By providing sustained IGF-1 receptor stimulation, IGF-1 LR3 unlocks these appearance-relevant effects at doses far below those required with natural IGF-1.
@@ -285,7 +285,7 @@ export default function Igf1LooksmaxxingPage() {
                   </div>
                   <div className="flex justify-between">
                     <span className="text-gray-500">Est. Cost</span>
-                    <span className="text-amber-300 font-semibold">{protocol.cost}</span>
+                    <span className="text-amber-700 font-semibold">{protocol.cost}</span>
                   </div>
                 </div>
                 <div className="pt-2 border-t border-slate-700/50">
@@ -296,7 +296,7 @@ export default function Igf1LooksmaxxingPage() {
           </div>
           <div className="glass-card p-6">
             <p className="text-gray-600 leading-relaxed text-sm">
-              <strong className="text-cyan-300">Injection technique:</strong> Use a 29–31 gauge insulin syringe. Inject subcutaneously into the abdomen fat or outer thigh — 45-degree angle, slow injection. Rotate sites daily. Reconstitute with bacteriostatic water (1–2mL per vial) and store in refrigerator. Draw 0.1mL for a 20 mcg dose from a 200 mcg/mL solution (reconstitute 2mg in 10mL for this concentration). Always eat before or immediately after injection to prevent hypoglycemia.
+              <strong className="text-cyan-700">Injection technique:</strong> Use a 29–31 gauge insulin syringe. Inject subcutaneously into the abdomen fat or outer thigh — 45-degree angle, slow injection. Rotate sites daily. Reconstitute with bacteriostatic water (1–2mL per vial) and store in refrigerator. Draw 0.1mL for a 20 mcg dose from a 200 mcg/mL solution (reconstitute 2mg in 10mL for this concentration). Always eat before or immediately after injection to prevent hypoglycemia.
             </p>
           </div>
         </div>
@@ -342,7 +342,7 @@ export default function Igf1LooksmaxxingPage() {
           </div>
           <div className="glass-card p-6">
             <p className="text-gray-600 text-sm leading-relaxed">
-              <strong className="text-cyan-300">Recommendation for appearance goals:</strong> For users new to peptides, start with CJC-1295/Ipamorelin (safer, preserves natural axis, suitable for long-term use). For users who have established a peptide baseline and want to accelerate results, add IGF-1 LR3 in 4–6 week cycles alongside or alternating with the secretagogue stack. The combination of both approaches at lower doses provides excellent results with better safety margins than either at high doses alone.
+              <strong className="text-cyan-700">Recommendation for appearance goals:</strong> For users new to peptides, start with CJC-1295/Ipamorelin (safer, preserves natural axis, suitable for long-term use). For users who have established a peptide baseline and want to accelerate results, add IGF-1 LR3 in 4–6 week cycles alongside or alternating with the secretagogue stack. The combination of both approaches at lower doses provides excellent results with better safety margins than either at high doses alone.
             </p>
           </div>
         </div>
@@ -355,13 +355,13 @@ export default function Igf1LooksmaxxingPage() {
           <div className="space-y-4">
             {looksmaxxingStack.map((item, i) => (
               <div key={item.peptide} className="glass-card p-5 flex items-start gap-4">
-                <span className="w-9 h-9 rounded-full bg-cyan-500/20 border border-cyan-500/40 flex items-center justify-center text-cyan-300 font-bold flex-shrink-0">
+                <span className="w-9 h-9 rounded-full bg-cyan-500/20 border border-cyan-500/40 flex items-center justify-center text-cyan-700 font-bold flex-shrink-0">
                   {i + 1}
                 </span>
                 <div className="flex-1 space-y-2">
                   <div className="flex items-center gap-3 flex-wrap">
                     <span className="text-gray-800 font-bold">{item.peptide}</span>
-                    <span className={`text-xs px-2.5 py-0.5 rounded-full font-semibold ${item.priority === 'Core' ? 'bg-cyan-500/20 text-cyan-300 border border-cyan-500/40' : 'bg-purple-500/20 text-purple-300 border border-purple-500/40'}`}>
+                    <span className={`text-xs px-2.5 py-0.5 rounded-full font-semibold ${item.priority === 'Core' ? 'bg-cyan-500/20 text-cyan-700 border border-cyan-500/40' : 'bg-purple-500/20 text-purple-700 border border-purple-500/40'}`}>
                       {item.priority}
                     </span>
                   </div>
@@ -425,7 +425,7 @@ export default function Igf1LooksmaxxingPage() {
           <p className="text-gray-500">
             Start with 20–30 mcg/day appearance dose and combine with GHK-Cu topical for the most comprehensive collagen and skin quality protocol available.
           </p>
-          <div className="p-3 bg-amber-500/10 border border-amber-500/30 rounded-xl text-amber-200 text-sm">
+          <div className="p-3 bg-amber-50 border border-amber-200 rounded-xl text-amber-200 text-sm">
             <AlertTriangle className="w-4 h-4 inline mr-2" />
             For research purposes only. Consult a qualified physician before use.
           </div>

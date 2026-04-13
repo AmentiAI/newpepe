@@ -229,7 +229,7 @@ export default function Bpc157GutHealthPage() {
         <div className="absolute inset-0 grid-bg opacity-40" />
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] bg-emerald-500/8 blur-[120px] rounded-full pointer-events-none" />
         <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="inline-flex items-center gap-2 bg-emerald-500/10 border border-emerald-500/30 rounded-full px-4 py-2 mb-6">
+          <div className="inline-flex items-center gap-2 bg-emerald-50 border border-emerald-200 rounded-full px-4 py-2 mb-6">
             <Shield className="w-4 h-4 text-emerald-400" />
             <span className="text-emerald-400 text-sm font-semibold tracking-wide">BPC-157 GUT HEALING GUIDE</span>
           </div>
@@ -306,7 +306,7 @@ export default function Bpc157GutHealthPage() {
       {/* Conditions table */}
       <section className="py-16 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-2xl font-black text-gray-900 mb-8">BPC-157 by Gut Condition</h2>
-        <div className="overflow-x-auto rounded-2xl border border-white/10">
+        <div className="overflow-x-auto rounded-2xl border border-gray-200">
           <table className="w-full text-sm">
             <thead>
               <tr style={{ background: 'rgba(255,255,255,0.04)' }}>
@@ -344,7 +344,7 @@ export default function Bpc157GutHealthPage() {
           <p className="text-gray-500 mb-10">
             How BPC-157 compares to the most commonly used gut interventions across mechanism, actual barrier repair, side effects, and realistic timelines.
           </p>
-          <div className="overflow-x-auto rounded-2xl border border-white/10">
+          <div className="overflow-x-auto rounded-2xl border border-gray-200">
             <table className="w-full text-xs">
               <thead>
                 <tr style={{ background: 'rgba(255,255,255,0.04)' }}>

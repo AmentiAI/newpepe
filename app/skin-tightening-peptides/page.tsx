@@ -167,7 +167,7 @@ export default function SkinTighteningPeptides() {
         </p>
         <div className="grid sm:grid-cols-2 gap-5">
           {whySkinLosesFirmness.map((item) => (
-            <div key={item.factor} className="glass-card p-6 border border-white/5">
+            <div key={item.factor} className="glass-card p-6 border border-gray-100">
               <div className="flex items-center gap-3 mb-3">
                 <span className="text-2xl">{item.icon}</span>
                 <h3 className="text-gray-900 font-bold text-base">{item.factor}</h3>

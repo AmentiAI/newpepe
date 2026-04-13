@@ -94,7 +94,7 @@ export default function BpcVsTb500Page() {
       <section className="relative pt-20 sm:pt-32 pb-10 sm:pb-16 overflow-hidden">
         <div className="absolute inset-0 grid-bg opacity-40" />
         <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="inline-flex items-center gap-2 bg-emerald-500/10 border border-emerald-500/30 rounded-full px-4 py-2 mb-6">
+          <div className="inline-flex items-center gap-2 bg-emerald-50 border border-emerald-200 rounded-full px-4 py-2 mb-6">
             <span className="text-emerald-400 text-sm font-semibold tracking-wide">HEALING PEPTIDE COMPARISON</span>
           </div>
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-gray-900 leading-tight mb-6">
@@ -105,7 +105,7 @@ export default function BpcVsTb500Page() {
             Both are the world&apos;s most studied healing peptides. But they work completely differently —
             and understanding the difference is the key to getting the fastest possible recovery.
           </p>
-          <div className="inline-block bg-emerald-500/10 border border-emerald-500/20 rounded-2xl px-6 py-3 text-emerald-300 font-semibold">
+          <div className="inline-block bg-emerald-500/10 border border-emerald-500/20 rounded-2xl px-6 py-3 text-emerald-700 font-semibold">
             Short answer: Use both. They&apos;re complementary, not competing.
           </div>
         </div>
@@ -204,22 +204,22 @@ export default function BpcVsTb500Page() {
 
             <div className="space-y-5 text-gray-600 text-sm leading-relaxed">
               <div>
-                <h4 className="text-emerald-300 font-bold mb-2">Origins: Gastric Protein Fragment</h4>
+                <h4 className="text-emerald-700 font-bold mb-2">Origins: Gastric Protein Fragment</h4>
                 <p>BPC-157 stands for Body Protection Compound 157. It is a 15-amino acid peptide sequence (Gly-Glu-Pro-Pro-Pro-Gly-Lys-Pro-Ala-Asp-Asp-Ala-Gly-Leu-Val) first isolated from human gastric juice by Croatian researchers in the early 1990s. The name reflects its origin — it was isolated as fragment 157 from the human gastric juice protein BPC. Its natural source in the stomach explains why it survives oral administration without being degraded by stomach acid, a property that makes it uniquely versatile compared to nearly every other research peptide.</p>
               </div>
 
               <div>
-                <h4 className="text-emerald-300 font-bold mb-2">Fibroblast Growth Factor Interaction</h4>
+                <h4 className="text-emerald-700 font-bold mb-2">Fibroblast Growth Factor Interaction</h4>
                 <p>At the cellular level, BPC-157 directly interacts with the fibroblast growth factor (FGF) receptor system, particularly FGF-2 (basic FGF). Fibroblasts are the primary cells responsible for synthesizing extracellular matrix components — collagen, fibronectin, and elastin — the structural scaffolding of connective tissue repair. BPC-157 upregulates the expression of growth hormone receptors (GHR) specifically on fibroblast cell surfaces, sensitizing these cells to circulating GH signals. The result: even baseline GH levels produce amplified fibroblast activity at the injury site. This is what &quot;local healing&quot; truly means — not just an anti-inflammatory effect, but active cellular machinery for tissue reconstruction being switched on at precisely the location where it&apos;s needed.</p>
               </div>
 
               <div>
-                <h4 className="text-emerald-300 font-bold mb-2">Nitric Oxide (NO) Pathway</h4>
+                <h4 className="text-emerald-700 font-bold mb-2">Nitric Oxide (NO) Pathway</h4>
                 <p>BPC-157 is one of the most potent known activators of the nitric oxide (NO) pathway in the context of tissue repair. It upregulates endothelial nitric oxide synthase (eNOS), the enzyme that produces NO in blood vessel walls. Nitric oxide causes vasodilation — expanding blood vessels at the injury site — which dramatically increases local perfusion, oxygen delivery, and nutrient supply to damaged tissue. Beyond circulation, NO itself is a signaling molecule that activates satellite cells (muscle stem cells), stimulates collagen cross-linking, and suppresses the pro-inflammatory NFκB pathway. BPC-157&apos;s NO-mediated effects explain the rapid reduction in pain and swelling (often within 2–4 days) that users consistently report, even before structural repair is complete.</p>
               </div>
 
               <div>
-                <h4 className="text-emerald-300 font-bold mb-2">VEGF Upregulation: Building New Blood Supply</h4>
+                <h4 className="text-emerald-700 font-bold mb-2">VEGF Upregulation: Building New Blood Supply</h4>
                 <p>Vascular Endothelial Growth Factor (VEGF) is the master regulator of angiogenesis — the formation of new blood vessels. Without adequate blood supply, injured tissue cannot receive the cellular resources needed for healing. BPC-157 significantly upregulates VEGF expression, driving the creation of new capillary networks into damaged tissue. This angiogenic effect is particularly important for injuries in poorly vascularized tissue like tendons and ligaments, where natural blood supply is already limited. VEGF upregulation is a major reason why BPC-157 is so effective for chronic tendon injuries that have been &quot;stuck&quot; for months — tissue that has failed to heal on its own due to poor vascular supply is suddenly receiving the signaling needed to build the blood vessels that make healing possible.</p>
               </div>
             </div>
@@ -231,22 +231,22 @@ export default function BpcVsTb500Page() {
 
             <div className="space-y-5 text-gray-600 text-sm leading-relaxed">
               <div>
-                <h4 className="text-blue-300 font-bold mb-2">Origins: Naturally Occurring Thymic Protein</h4>
+                <h4 className="text-blue-700 font-bold mb-2">Origins: Naturally Occurring Thymic Protein</h4>
                 <p>TB-500 is the synthetic version of the 43-amino acid fragment (amino acids 17–23) of Thymosin Beta-4 (Tβ4) — a naturally occurring protein found in virtually all human cells at some concentration, with particularly high levels in thymus tissue, blood platelets, and wound fluid. Unlike BPC-157, which is a synthetic compound derived from a naturally occurring sequence, TB-500 is essentially a bioidentical fragment of a protein your body already produces. The full Thymosin Beta-4 molecule contains 43 amino acids; TB-500 isolates the most pharmacologically active fragment responsible for tissue repair, which is the LKKTETQ sequence at positions 17–23. This is the segment responsible for actin binding and most of the regenerative activity.</p>
               </div>
 
               <div>
-                <h4 className="text-blue-300 font-bold mb-2">Actin Polymerization: The Mechanic&apos;s Key</h4>
+                <h4 className="text-blue-700 font-bold mb-2">Actin Polymerization: The Mechanic&apos;s Key</h4>
                 <p>The core molecular mechanism of TB-500 involves G-actin (globular actin) sequestration. Actin is not merely a structural muscle protein — it is a fundamental cytoskeletal component of every cell type, essential for cell migration, division, and shape change. TB-500 binds G-actin monomers and promotes their polymerization into F-actin (filamentous actin) networks. For healing, this matters enormously because cell migration — the physical movement of repair cells to the injury site — is dependent on dynamic actin cytoskeleton remodeling. When TB-500 enhances actin polymerization, it accelerates the migration of keratinocytes, endothelial cells, and macrophages to wounded tissue. In practical terms, &quot;systemic healing&quot; is really TB-500 enabling the body&apos;s repair cells to move more efficiently through tissues to reach anywhere that needs them.</p>
               </div>
 
               <div>
-                <h4 className="text-blue-300 font-bold mb-2">Bone Marrow Stem Cell Mobilization</h4>
+                <h4 className="text-blue-700 font-bold mb-2">Bone Marrow Stem Cell Mobilization</h4>
                 <p>One of TB-500&apos;s most clinically significant actions is the mobilization of CD34+ progenitor stem cells from bone marrow into peripheral circulation. These pluripotent cells can differentiate into multiple tissue types — muscle, endothelial, cardiac, and connective tissue — and travel via the bloodstream to sites of injury anywhere in the body. This is what distinguishes TB-500&apos;s &quot;systemic&quot; nature in the most fundamental sense: it does not merely reduce inflammation or improve local circulation — it physically recruits the body&apos;s most primitive repair cells and deploys them body-wide. Animal studies demonstrate measurable increases in circulating stem cell populations within 24–48 hours of TB-500 administration, with preferential homing to injured or inflamed tissue.</p>
               </div>
 
               <div>
-                <h4 className="text-blue-300 font-bold mb-2">Cardiac Repair Research</h4>
+                <h4 className="text-blue-700 font-bold mb-2">Cardiac Repair Research</h4>
                 <p>TB-500 (Thymosin Beta-4) has been studied more extensively in cardiac regeneration research than almost any other peptide. In myocardial infarction (heart attack) animal models, TB-500 administration within hours of the infarct significantly reduces infarct size, improves left ventricular function, and promotes cardiomyocyte survival and proliferation. The mechanism involves both the actin-mediated survival pathways in stressed cardiomyocytes and the mobilization of cardiac progenitor cells. This cardiac research background is part of why TB-500 is considered extremely safe — it has been studied in human cardiac patient populations for potential therapeutic use, with no adverse cardiac effects observed. For athletes, this research backdrop provides confidence that TB-500 is not placing any burden on cardiovascular tissue.</p>
               </div>
             </div>
@@ -290,7 +290,7 @@ export default function BpcVsTb500Page() {
                 </div>
               </div>
               <div className="bg-emerald-500/5 border border-emerald-500/20 rounded-lg p-4">
-                <p className="text-emerald-300 text-sm font-semibold mb-1">What to Expect in Phase 1</p>
+                <p className="text-emerald-700 text-sm font-semibold mb-1">What to Expect in Phase 1</p>
                 <p className="text-gray-500 text-sm">Acute pain and swelling typically begin reducing within 48–72 hours of the first injection. By the end of week 2, most users report 30–50% reduction in pain levels, improved range of motion, and visibly reduced local inflammation. This phase floods the injury site with the signaling molecules needed to transition tissue from the inflammatory phase to the proliferative repair phase.</p>
               </div>
             </div>
@@ -321,7 +321,7 @@ export default function BpcVsTb500Page() {
                 </div>
               </div>
               <div className="bg-blue-500/5 border border-blue-500/20 rounded-lg p-4">
-                <p className="text-blue-300 text-sm font-semibold mb-1">What to Expect in Phase 2</p>
+                <p className="text-blue-700 text-sm font-semibold mb-1">What to Expect in Phase 2</p>
                 <p className="text-gray-500 text-sm">Weeks 3–8 are the structural repair phase — collagen remodeling, angiogenesis, and cellular proliferation are at their peak. Most users see progressive and measurable improvements in strength, function, and pain-free range of motion throughout this phase. Flexibility gains from TB-500 often become most apparent at weeks 4–6. By week 8, structural healing is typically 60–80% complete for most soft tissue injuries.</p>
               </div>
             </div>
@@ -333,7 +333,7 @@ export default function BpcVsTb500Page() {
                   <span className="text-gray-500 text-xs font-bold tracking-widest uppercase">Phase 3</span>
                   <h3 className="text-gray-900 font-black text-xl">Maintenance Phase — Weeks 9–12</h3>
                 </div>
-                <span className="bg-slate-700/50 text-gray-500 text-xs font-bold px-3 py-1 rounded-full border border-slate-600/30">Consolidation</span>
+                <span className="bg-slate-700/50 text-gray-500 text-xs font-bold px-3 py-1 rounded-full border border-gray-300/30">Consolidation</span>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-4">
                 <div className="bg-slate-800/50 rounded-xl p-5">
@@ -351,7 +351,7 @@ export default function BpcVsTb500Page() {
                   <p className="text-gray-600 text-sm">• <strong className="text-gray-900">Notes:</strong> Can discontinue if full recovery confirmed</p>
                 </div>
               </div>
-              <div className="bg-slate-700/20 border border-slate-600/20 rounded-lg p-4">
+              <div className="bg-slate-700/20 border border-gray-300/20 rounded-lg p-4">
                 <p className="text-gray-600 text-sm font-semibold mb-1">What to Expect in Phase 3</p>
                 <p className="text-gray-500 text-sm">The maintenance phase consolidates structural repair and restores tissue tensile strength to pre-injury levels. Many users report that the final 20–30% of functional recovery — the return to full load-bearing activity — occurs in this phase. Maintaining lower-dose BPC-157 and bi-weekly TB-500 during progressive rehab loading helps prevent re-injury during the vulnerable tissue-remodeling period.</p>
               </div>
@@ -385,7 +385,7 @@ export default function BpcVsTb500Page() {
                   <td className="py-3 px-4 text-gray-900 font-semibold text-xs">{row.injury}</td>
                   <td className="py-3 px-3 text-center text-base">{row.bpc}</td>
                   <td className="py-3 px-3 text-center text-base">{row.tb}</td>
-                  <td className="py-3 px-3 text-center text-xs font-bold text-emerald-300">{row.both || (row.bpc === '⭐ Best' && !row.tb ? 'BPC-157 Only' : row.tb === '⭐ Best' ? 'TB-500 Priority' : 'Both')}</td>
+                  <td className="py-3 px-3 text-center text-xs font-bold text-emerald-700">{row.both || (row.bpc === '⭐ Best' && !row.tb ? 'BPC-157 Only' : row.tb === '⭐ Best' ? 'TB-500 Priority' : 'Both')}</td>
                   <td className="py-3 px-4 text-gray-500 text-xs leading-relaxed">{row.reasoning}</td>
                 </tr>
               ))}
@@ -429,7 +429,7 @@ export default function BpcVsTb500Page() {
                   },
                 ].map((study) => (
                   <div key={study.title} className="glass-card p-5">
-                    <p className="text-emerald-300 font-bold text-sm mb-1">{study.title}</p>
+                    <p className="text-emerald-700 font-bold text-sm mb-1">{study.title}</p>
                     <p className="text-gray-500 text-xs italic mb-3">{study.journal}</p>
                     <p className="text-gray-600 text-xs leading-relaxed mb-2"><strong className="text-gray-700">Finding:</strong> {study.finding}</p>
                     <p className="text-gray-500 text-xs leading-relaxed"><strong className="text-emerald-400">Why it matters:</strong> {study.significance}</p>
@@ -463,7 +463,7 @@ export default function BpcVsTb500Page() {
                   },
                 ].map((study) => (
                   <div key={study.title} className="glass-card p-5">
-                    <p className="text-blue-300 font-bold text-sm mb-1">{study.title}</p>
+                    <p className="text-blue-700 font-bold text-sm mb-1">{study.title}</p>
                     <p className="text-gray-500 text-xs italic mb-3">{study.journal}</p>
                     <p className="text-gray-600 text-xs leading-relaxed mb-2"><strong className="text-gray-700">Finding:</strong> {study.finding}</p>
                     <p className="text-gray-500 text-xs leading-relaxed"><strong className="text-blue-400">Why it matters:</strong> {study.significance}</p>

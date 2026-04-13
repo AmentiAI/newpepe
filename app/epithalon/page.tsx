@@ -46,7 +46,7 @@ export default function EpithalonPage() {
     <div className="overflow-hidden">
 
       {/* ── HERO ─────────────────────────────────────────── */}
-      <section className="relative min-h-[90vh] flex items-center pt-20 bg-dark-900 grid-bg">
+      <section className="relative min-h-[90vh] flex items-center pt-20 bg-white grid-bg">
         <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
           <div className="absolute top-1/4 -left-32 w-[600px] h-[600px] bg-purple-400/6 rounded-full blur-[120px]" />
           <div className="absolute bottom-0 right-0 w-[400px] h-[400px] bg-blue-400/5 rounded-full blur-[100px]" />
@@ -150,7 +150,7 @@ export default function EpithalonPage() {
       </section>
 
       {/* ── STATS BAR ────────────────────────────────────── */}
-      <div className="bg-dark-800 border-y border-purple-400/10">
+      <div className="bg-gray-50 border-y border-purple-400/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
             {stats.map(({ value, label, color }) => (
@@ -168,10 +168,10 @@ export default function EpithalonPage() {
       </div>
 
       {/* ── BENEFITS GRID ────────────────────────────────── */}
-      <section className="py-24 bg-dark-900">
+      <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <p className="text-neon-green text-xs font-semibold uppercase tracking-widest mb-3">Evidence-Based Effects</p>
+            <p className="text-emerald-700 text-xs font-semibold uppercase tracking-widest mb-3">Evidence-Based Effects</p>
             <h2 className="text-4xl sm:text-5xl font-black text-gray-900 mb-4">
               What Epithalon <span className="gradient-text">Actually Does</span>
             </h2>
@@ -203,7 +203,7 @@ export default function EpithalonPage() {
       </section>
 
       {/* ── 12-YEAR STUDY CALLOUT ────────────────────────── */}
-      <section className="py-20 bg-dark-800 border-y border-white/5">
+      <section className="py-20 bg-gray-50 border-y border-gray-100">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="glass-card p-10 border-purple-400/20 relative overflow-hidden">
             <div className="absolute inset-0 bg-purple-400/3 rounded-2xl pointer-events-none" />
@@ -233,11 +233,11 @@ export default function EpithalonPage() {
       </section>
 
       {/* ── PROTOCOL ─────────────────────────────────────── */}
-      <section className="py-24 bg-dark-900 grid-bg">
+      <section className="py-24 bg-white grid-bg">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             <div>
-              <p className="text-neon-green text-xs font-semibold uppercase tracking-widest mb-3">Dosing Protocol</p>
+              <p className="text-emerald-700 text-xs font-semibold uppercase tracking-widest mb-3">Dosing Protocol</p>
               <h2 className="text-4xl font-black text-gray-900 mb-6">
                 How to Use <span className="gradient-text">Epithalon</span>
               </h2>
@@ -276,7 +276,7 @@ export default function EpithalonPage() {
                     <Link key={name} href={href} className="flex items-start gap-3 p-3 rounded-xl bg-dark-700/60 hover:bg-dark-700 transition-colors group">
                       <div className="w-2 h-2 rounded-full bg-purple-400 mt-1.5 shrink-0" />
                       <div>
-                        <p className="text-gray-900 font-semibold text-sm group-hover:text-neon-green transition-colors">{name}</p>
+                        <p className="text-gray-900 font-semibold text-sm group-hover:text-emerald-700 transition-colors">{name}</p>
                         <p className="text-gray-500 text-xs">{desc}</p>
                       </div>
                     </Link>
@@ -298,7 +298,7 @@ export default function EpithalonPage() {
       </section>
 
       {/* ── BOTTOM CTA ───────────────────────────────────── */}
-      <section className="py-20 bg-dark-800 border-t border-white/5">
+      <section className="py-20 bg-gray-50 border-t border-gray-100">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 text-center">
           <h2 className="text-4xl font-black text-gray-900 mb-4">
             Start Your <span className="gradient-text">Longevity Protocol</span>

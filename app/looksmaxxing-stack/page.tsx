@@ -36,7 +36,7 @@ const stackTiers = [
     name: 'The Foundation Stack',
     cost: '~$100–150/month',
     color: 'border-emerald-500/40',
-    badge: 'bg-emerald-500/20 text-emerald-300 border border-emerald-500/40',
+    badge: 'bg-emerald-500/20 text-emerald-700 border border-emerald-500/40',
     ideal: 'Beginners. Maximum bang-for-buck. Covers 80% of the biological foundations.',
     peptides: [
       { name: 'GHK-Cu Topical', dose: '1–2 mg/day serum', role: 'Skin collagen I/III/IV, anti-aging, pore tightening, anti-inflammatory, gene expression reset', cost: '$45/mo' },
@@ -49,7 +49,7 @@ const stackTiers = [
     name: 'The Complete Appearance Stack',
     cost: '~$200–300/month',
     color: 'border-blue-500/40',
-    badge: 'bg-blue-500/20 text-blue-300 border border-blue-500/40',
+    badge: 'bg-blue-500/20 text-blue-700 border border-blue-500/40',
     ideal: 'Intermediate users wanting comprehensive appearance optimization. Adds GH axis and neuropeptide anti-wrinkle.',
     peptides: [
       { name: 'GHK-Cu Topical', dose: '1–2 mg/day', role: 'Core collagen stimulator', cost: '$45/mo' },
@@ -64,7 +64,7 @@ const stackTiers = [
     name: 'The Advanced Protocol',
     cost: '~$400–600/month',
     color: 'border-purple-500/40',
-    badge: 'bg-purple-500/20 text-purple-300 border border-purple-500/40',
+    badge: 'bg-purple-500/20 text-purple-700 border border-purple-500/40',
     ideal: 'Serious biohackers. Maximum appearance and longevity optimization. Adds direct IGF-1 and cellular age reversal.',
     peptides: [
       { name: 'GHK-Cu Topical', dose: '1–2 mg/day', role: 'Core collagen stimulator', cost: '$45/mo' },
@@ -283,18 +283,18 @@ const faqs = [
 
 export default function LooksmaxxingStackPage() {
   return (
-    <main className="min-h-screen bg-dark-900 text-gray-700">
+    <main className="min-h-screen bg-white text-gray-700">
       {/* Hero */}
       <section className="relative py-20 px-4 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-purple-900/25 via-dark-900 to-emerald-900/15" />
+        <div className="absolute inset-0 bg-gradient-to-br from-purple-50 to-emerald-50/30" />
         <div className="relative max-w-4xl mx-auto text-center space-y-6">
-          <div className="inline-flex items-center gap-2 bg-purple-500/10 border border-purple-500/30 rounded-full px-4 py-2 text-purple-300 text-sm font-semibold">
+          <div className="inline-flex items-center gap-2 bg-purple-50 border border-purple-200 rounded-full px-4 py-2 text-purple-700 text-sm font-semibold">
             <Sparkles className="w-4 h-4" />
             Complete Appearance Protocol
           </div>
           <h1 className="text-4xl sm:text-5xl font-extrabold text-gray-900 leading-tight">
             The Complete{' '}
-            <span className="text-neon-green">Looksmaxxing Stack</span>
+            <span className="text-emerald-700">Looksmaxxing Stack</span>
           </h1>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
             Three tiers of scientifically-grounded peptide protocols for appearance optimization — from accessible Foundation to comprehensive Advanced. Build your stack, set your timeline, transform your appearance.
@@ -303,7 +303,7 @@ export default function LooksmaxxingStackPage() {
             <Link href={SOURCE_URL} rel="nofollow noopener noreferrer" className="btn-cta flex items-center gap-2">
               View All Peptides <ArrowRight className="w-4 h-4" />
             </Link>
-            <Link href="/guide" className="flex items-center gap-2 px-6 py-3 border border-slate-600 rounded-xl text-gray-600 hover:border-slate-400 transition-colors">
+            <Link href="/guide" className="flex items-center gap-2 px-6 py-3 border border-gray-300 rounded-xl text-gray-600 hover:border-gray-400 transition-colors">
               Full Protocol Guide
             </Link>
           </div>
@@ -343,19 +343,19 @@ export default function LooksmaxxingStackPage() {
                     <span className={`px-2.5 py-1 rounded-full text-xs font-bold ${tier.badge}`}>{tier.tier}</span>
                     <h3 className="text-gray-800 font-bold text-lg">{tier.name}</h3>
                   </div>
-                  <span className="text-amber-300 font-bold">{tier.cost}</span>
+                  <span className="text-amber-700 font-bold">{tier.cost}</span>
                 </div>
                 <p className="text-gray-500 text-sm italic">{tier.ideal}</p>
 
                 <div className="space-y-2">
                   {tier.peptides.map((peptide) => (
                     <div key={peptide.name} className="flex items-start gap-3 p-3 bg-slate-800/60 rounded-xl text-sm">
-                      <CheckCircle className="w-4 h-4 text-neon-green mt-0.5 flex-shrink-0" />
+                      <CheckCircle className="w-4 h-4 text-emerald-700 mt-0.5 flex-shrink-0" />
                       <div className="flex-1">
                         <div className="flex flex-wrap items-center gap-2">
                           <span className="text-gray-800 font-semibold">{peptide.name}</span>
                           <span className="text-gray-500 text-xs">{peptide.dose}</span>
-                          <span className="text-amber-300 text-xs ml-auto">{peptide.cost}</span>
+                          <span className="text-amber-700 text-xs ml-auto">{peptide.cost}</span>
                         </div>
                         <p className="text-gray-500 text-xs mt-1">{peptide.role}</p>
                       </div>
@@ -409,7 +409,7 @@ export default function LooksmaxxingStackPage() {
                 <div className="space-y-3">
                   {block.actions.map((action) => (
                     <div key={action.action} className="flex items-start gap-3 p-3 bg-slate-800/60 rounded-xl">
-                      <CheckCircle className="w-4 h-4 text-neon-green mt-0.5 flex-shrink-0" />
+                      <CheckCircle className="w-4 h-4 text-emerald-700 mt-0.5 flex-shrink-0" />
                       <div>
                         <p className="text-gray-700 font-semibold text-sm">{action.action}</p>
                         <p className="text-gray-500 text-xs mt-0.5">{action.detail}</p>
@@ -442,7 +442,7 @@ export default function LooksmaxxingStackPage() {
                     <ul className="space-y-1">
                       {t.changes.map((c) => (
                         <li key={c} className="flex items-start gap-2 text-gray-600 text-sm">
-                          <CheckCircle className="w-4 h-4 text-neon-green mt-0.5 flex-shrink-0" />
+                          <CheckCircle className="w-4 h-4 text-emerald-700 mt-0.5 flex-shrink-0" />
                           {c}
                         </li>
                       ))}
@@ -474,7 +474,7 @@ export default function LooksmaxxingStackPage() {
                 <ul className="space-y-2">
                   {category.items.map((item) => (
                     <li key={item} className="flex items-start gap-2 text-gray-600 text-xs">
-                      <CheckCircle className="w-3.5 h-3.5 text-neon-green mt-0.5 flex-shrink-0" />
+                      <CheckCircle className="w-3.5 h-3.5 text-emerald-700 mt-0.5 flex-shrink-0" />
                       {item}
                     </li>
                   ))}
@@ -499,11 +499,11 @@ export default function LooksmaxxingStackPage() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
                   <div>
                     <span className="text-gray-500 text-xs uppercase tracking-wide">Recommended Stack</span>
-                    <p className="text-neon-green font-semibold mt-1">{cs.stack}</p>
+                    <p className="text-emerald-700 font-semibold mt-1">{cs.stack}</p>
                   </div>
                   <div>
                     <span className="text-gray-500 text-xs uppercase tracking-wide">Timeline</span>
-                    <p className="text-amber-300 font-medium mt-1">{cs.timeline}</p>
+                    <p className="text-amber-700 font-medium mt-1">{cs.timeline}</p>
                   </div>
                 </div>
                 <p className="text-gray-600 text-sm leading-relaxed">{cs.rationale}</p>
@@ -532,7 +532,7 @@ export default function LooksmaxxingStackPage() {
                 <div className="space-y-1">
                   <p className="text-gray-800 font-semibold text-sm">{item.item}</p>
                   <p className="text-gray-500 text-sm">{item.importance}</p>
-                  <p className="text-amber-300 text-xs">Synergy: {item.synergy}</p>
+                  <p className="text-amber-700 text-xs">Synergy: {item.synergy}</p>
                 </div>
               </div>
             ))}
@@ -565,7 +565,7 @@ export default function LooksmaxxingStackPage() {
           <p className="text-gray-500">
             Start with the Foundation Stack (GHK-Cu + BPC-157) and see measurable results in 8 weeks. Scale up as you see fit.
           </p>
-          <div className="p-3 bg-amber-500/10 border border-amber-500/30 rounded-xl text-amber-200 text-sm">
+          <div className="p-3 bg-amber-50 border border-amber-200 rounded-xl text-amber-200 text-sm">
             <AlertTriangle className="w-4 h-4 inline mr-2" />
             For research purposes only. Consult a qualified physician before use.
           </div>

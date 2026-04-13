@@ -173,9 +173,9 @@ const faqs = [
 
 export default function Bpc157ScarHealingPage() {
   return (
-    <main className="bg-dark-900 min-h-screen text-gray-700">
+    <main className="bg-white min-h-screen text-gray-700">
       {/* Hero */}
-      <section className="py-16 bg-gradient-to-b from-dark-800 to-dark-900 border-b border-white/5">
+      <section className="py-16 bg-gray-50 border-b border-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
             <span className="text-xs font-semibold uppercase tracking-widest text-emerald-400 mb-4 block">
@@ -183,7 +183,7 @@ export default function Bpc157ScarHealingPage() {
             </span>
             <h1 className="text-4xl sm:text-5xl font-extrabold text-gray-900 mb-6 leading-tight">
               BPC-157 for Scar Healing:{' '}
-              <span className="text-neon-green">Mechanisms, Types & Protocols</span>
+              <span className="text-emerald-700">Mechanisms, Types & Protocols</span>
             </h1>
             <p className="text-xl text-gray-600 mb-8 leading-relaxed">
               BPC-157 is the most mechanistically complete peptide for scar tissue remodeling. It drives angiogenesis in avascular scar tissue, activates fibroblasts for type III→type I collagen remodeling, normalizes TGF-β to prevent hypertrophic scarring, and repairs the gut-skin axis that drives inflammatory acne. This guide covers every scar type, the relevant mechanisms, and complete protocols.
@@ -209,11 +209,11 @@ export default function Bpc157ScarHealingPage() {
           </p>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {mechanisms.map((m) => (
-              <div key={m.name} className={`rounded-xl border bg-dark-800/40 p-5 ${m.border}`}>
+              <div key={m.name} className={`rounded-xl border bg-gray-50 p-5 ${m.border}`}>
                 <div className="text-3xl mb-3">{m.icon}</div>
                 <h3 className={`font-bold mb-2 ${m.color}`}>{m.name}</h3>
                 <p className="text-sm text-gray-500 leading-relaxed mb-3">{m.desc}</p>
-                <div className="border-t border-white/5 pt-3">
+                <div className="border-t border-gray-100 pt-3">
                   <p className="text-xs text-gray-500 uppercase tracking-wider mb-1">Clinical Significance</p>
                   <p className="text-xs text-gray-600 leading-relaxed">{m.significance}</p>
                 </div>
@@ -224,7 +224,7 @@ export default function Bpc157ScarHealingPage() {
       </section>
 
       {/* Scar Types */}
-      <section className="py-16 bg-dark-800/30">
+      <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">BPC-157 by Scar Type</h2>
           <p className="text-gray-500 mb-10 max-w-2xl">
@@ -287,7 +287,7 @@ export default function Bpc157ScarHealingPage() {
       </section>
 
       {/* Gut-Skin Axis */}
-      <section className="py-16 bg-dark-800/30">
+      <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">The Gut-Skin Axis: Why BPC-157 Works for Acne Scars Systemically</h2>
           <p className="text-gray-500 mb-10 max-w-2xl">
@@ -295,7 +295,7 @@ export default function Bpc157ScarHealingPage() {
           </p>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
             {gutSkinAxis.map((step) => (
-              <div key={step.title} className="bg-dark-800/60 border border-white/10 rounded-xl p-5">
+              <div key={step.title} className="bg-gray-50 border border-gray-200 rounded-xl p-5">
                 <div className="text-3xl font-black text-emerald-400 mb-3">{step.icon}</div>
                 <h3 className="font-bold text-gray-900 mb-2 text-sm">{step.title}</h3>
                 <p className="text-xs text-gray-500 leading-relaxed">{step.desc}</p>
@@ -310,7 +310,7 @@ export default function Bpc157ScarHealingPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">Local vs Systemic Injection: Decision Guide</h2>
           <div className="grid md:grid-cols-2 gap-6">
-            <div className="bg-dark-800/60 border border-emerald-500/20 rounded-xl p-6">
+            <div className="bg-gray-50 border border-emerald-500/20 rounded-xl p-6">
               <div className="flex items-center gap-2 mb-4">
                 <Zap className="w-5 h-5 text-emerald-400" />
                 <h3 className="font-bold text-gray-900">Systemic SC Injection</h3>
@@ -332,7 +332,7 @@ export default function Bpc157ScarHealingPage() {
               </div>
               <p className="text-xs text-gray-500">Best for: acne scars, gut-skin axis issues, beginners, multiple scar sites</p>
             </div>
-            <div className="bg-dark-800/60 border border-blue-500/20 rounded-xl p-6">
+            <div className="bg-gray-50 border border-blue-500/20 rounded-xl p-6">
               <div className="flex items-center gap-2 mb-4">
                 <Zap className="w-5 h-5 text-blue-400" />
                 <h3 className="font-bold text-gray-900">Local Injection (Adjacent to Scar)</h3>
@@ -359,12 +359,12 @@ export default function Bpc157ScarHealingPage() {
       </section>
 
       {/* FAQ */}
-      <section className="py-16 bg-dark-800/30">
+      <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-10">Frequently Asked Questions</h2>
           <div className="grid md:grid-cols-2 gap-6">
             {faqs.map((faq, i) => (
-              <div key={i} className="bg-dark-800/60 border border-white/10 rounded-xl p-5">
+              <div key={i} className="bg-gray-50 border border-gray-200 rounded-xl p-5">
                 <h3 className="font-semibold text-gray-900 mb-2 flex items-start gap-2">
                   <FlaskConical className="w-4 h-4 text-emerald-400 flex-shrink-0 mt-0.5" />
                   {faq.q}

@@ -249,9 +249,9 @@ const faqs = [
 
 export default function Snap8AntiWrinklePage() {
   return (
-    <main className="bg-dark-900 min-h-screen text-gray-700">
+    <main className="bg-white min-h-screen text-gray-700">
       {/* Hero */}
-      <section className="py-16 bg-gradient-to-b from-dark-800 to-dark-900 border-b border-white/5">
+      <section className="py-16 bg-gray-50 border-b border-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
             <span className="text-xs font-semibold uppercase tracking-widest text-indigo-400 mb-4 block">
@@ -259,7 +259,7 @@ export default function Snap8AntiWrinklePage() {
             </span>
             <h1 className="text-4xl sm:text-5xl font-extrabold text-gray-900 mb-6 leading-tight">
               SNAP-8: The SNARE-Inhibiting{' '}
-              <span className="text-neon-green">Botox Alternative</span>
+              <span className="text-emerald-700">Botox Alternative</span>
             </h1>
             <p className="text-xl text-gray-600 mb-8 leading-relaxed">
               SNAP-8 (acetyl glutamyl heptapeptide-3) is an 8 amino acid neuropeptide that targets the same molecular machinery as Botox — the SNARE complex — without neurotoxin, injection, or paralysis risk. Clinical studies show up to 63% reduction in wrinkle depth at 10% topical concentration. This guide covers the mechanism, application zones, formulation, and how to combine SNAP-8 with GHK-Cu for superior results.
@@ -285,7 +285,7 @@ export default function Snap8AntiWrinklePage() {
           </p>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
             {snareExplanation.map((step) => (
-              <div key={step.step} className="bg-dark-800/60 border border-white/10 rounded-xl p-5">
+              <div key={step.step} className="bg-gray-50 border border-gray-200 rounded-xl p-5">
                 <div className={`text-3xl font-black mb-3 ${step.color}`}>{step.step}</div>
                 <h3 className={`font-bold mb-2 ${step.color}`}>{step.title}</h3>
                 <p className="text-sm text-gray-500 leading-relaxed">{step.desc}</p>
@@ -301,7 +301,7 @@ export default function Snap8AntiWrinklePage() {
       </section>
 
       {/* vs Botox vs Argireline */}
-      <section className="py-16 bg-dark-800/30">
+      <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">SNAP-8 vs Botox vs Argireline</h2>
           <p className="text-gray-500 mb-8 max-w-2xl">
@@ -310,7 +310,7 @@ export default function Snap8AntiWrinklePage() {
           <div className="overflow-x-auto">
             <table className="w-full min-w-[640px]">
               <thead>
-                <tr className="border-b border-white/10">
+                <tr className="border-b border-gray-200">
                   <th className="text-left py-3 px-4 text-xs font-semibold uppercase tracking-wider text-gray-500">Attribute</th>
                   <th className="text-left py-3 px-4 text-xs font-semibold uppercase tracking-wider text-rose-400">Botox</th>
                   <th className="text-left py-3 px-4 text-xs font-semibold uppercase tracking-wider text-amber-400">Argireline</th>
@@ -319,11 +319,11 @@ export default function Snap8AntiWrinklePage() {
               </thead>
               <tbody>
                 {vsComparison.map((row, i) => (
-                  <tr key={row.attribute} className={`border-b border-white/5 ${i % 2 === 0 ? 'bg-dark-800/20' : ''}`}>
+                  <tr key={row.attribute} className={`border-b border-gray-100 ${i % 2 === 0 ? 'bg-white' : ''}`}>
                     <td className="py-3 px-4 text-sm font-medium text-gray-600">{row.attribute}</td>
                     <td className="py-3 px-4 text-sm text-gray-500">{row.botox}</td>
                     <td className="py-3 px-4 text-sm text-gray-500">{row.argireline}</td>
-                    <td className="py-3 px-4 text-sm text-indigo-300">{row.snap8}</td>
+                    <td className="py-3 px-4 text-sm text-indigo-700">{row.snap8}</td>
                   </tr>
                 ))}
               </tbody>
@@ -344,15 +344,15 @@ export default function Snap8AntiWrinklePage() {
       </section>
 
       {/* Application Zones Overview */}
-      <section className="py-16 bg-dark-800/30">
+      <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">Application Zones: Full Reference</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {applicationZones.map((zone) => (
-              <div key={zone.zone} className={`rounded-xl border bg-dark-800/40 p-5 ${zone.color}`}>
+              <div key={zone.zone} className={`rounded-xl border bg-gray-50 p-5 ${zone.color}`}>
                 <div className="flex items-center justify-between mb-3">
                   <h3 className="font-bold text-gray-900">{zone.zone}</h3>
-                  <span className={`text-xs px-2 py-0.5 rounded-full ${zone.priority === 'High' ? 'bg-indigo-500/20 text-indigo-300 border border-indigo-500/30' : 'bg-slate-500/20 text-gray-500 border border-slate-500/30'}`}>
+                  <span className={`text-xs px-2 py-0.5 rounded-full ${zone.priority === 'High' ? 'bg-indigo-500/20 text-indigo-700 border border-indigo-500/30' : 'bg-slate-500/20 text-gray-500 border border-slate-500/30'}`}>
                     {zone.priority} Priority
                   </span>
                 </div>
@@ -374,7 +374,7 @@ export default function Snap8AntiWrinklePage() {
           </p>
           <div className="grid sm:grid-cols-2 gap-5">
             {formulation.map((f) => (
-              <div key={f.component} className="bg-dark-800/60 border border-white/10 rounded-xl p-5">
+              <div key={f.component} className="bg-gray-50 border border-gray-200 rounded-xl p-5">
                 <div className="flex items-center justify-between mb-2">
                   <h3 className="font-semibold text-gray-900">{f.component}</h3>
                   <span className="text-xs text-indigo-400 font-mono">{f.concentration}</span>
@@ -409,12 +409,12 @@ export default function Snap8AntiWrinklePage() {
       </section>
 
       {/* Timeline */}
-      <section className="py-16 bg-dark-800/30">
+      <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-10">SNAP-8 Results Timeline</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
             {timeline.map((t) => (
-              <div key={t.period} className={`rounded-xl border bg-dark-800/40 p-5 ${t.color}`}>
+              <div key={t.period} className={`rounded-xl border bg-gray-50 p-5 ${t.color}`}>
                 <h3 className="font-bold text-gray-900 mb-1">{t.period}</h3>
                 <p className="text-xs text-indigo-400 font-semibold mb-3">{t.title}</p>
                 <ul className="space-y-2">
@@ -444,7 +444,7 @@ export default function Snap8AntiWrinklePage() {
               { group: 'Skin-Care Enthusiasts', desc: 'People already using evidence-based skincare (retinoids, vitamin C, SPF) who want to add the most potent available topical wrinkle intervention to their routine.', color: 'border-amber-500/30' },
               { group: 'Prevention-Oriented', desc: 'Using SNAP-8 at lower concentrations (5%) from early 30s reduces the cumulative mechanical damage from repeated muscle contraction — preventing deep lines from forming.', color: 'border-rose-500/30' },
             ].map((g) => (
-              <div key={g.group} className={`rounded-xl border bg-dark-800/40 p-5 ${g.color}`}>
+              <div key={g.group} className={`rounded-xl border bg-gray-50 p-5 ${g.color}`}>
                 <h3 className="font-bold text-gray-900 mb-2">{g.group}</h3>
                 <p className="text-sm text-gray-500 leading-relaxed">{g.desc}</p>
               </div>
@@ -454,12 +454,12 @@ export default function Snap8AntiWrinklePage() {
       </section>
 
       {/* FAQ */}
-      <section className="py-16 bg-dark-800/30">
+      <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-10">Frequently Asked Questions</h2>
           <div className="grid md:grid-cols-2 gap-6">
             {faqs.map((faq, i) => (
-              <div key={i} className="bg-dark-800/60 border border-white/10 rounded-xl p-5">
+              <div key={i} className="bg-gray-50 border border-gray-200 rounded-xl p-5">
                 <h3 className="font-semibold text-gray-900 mb-2 flex items-start gap-2">
                   <FlaskConical className="w-4 h-4 text-indigo-400 flex-shrink-0 mt-0.5" />
                   {faq.q}

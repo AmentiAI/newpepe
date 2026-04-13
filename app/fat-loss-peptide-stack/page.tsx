@@ -211,7 +211,7 @@ export default function FatLossPeptideStack() {
                   <p className="text-gray-600 text-sm leading-relaxed mb-4">{layer.mechanism}</p>
                   <div className="flex flex-wrap gap-2 mb-3">
                     {layer.peptides.map((p) => (
-                      <span key={p} className="text-xs bg-slate-900/50 border border-white/10 rounded-full px-3 py-1 text-gray-600">{p}</span>
+                      <span key={p} className="text-xs bg-slate-900/50 border border-gray-200 rounded-full px-3 py-1 text-gray-600">{p}</span>
                     ))}
                   </div>
                   <div className={`text-xs font-semibold ${layer.color}`}>Key benefit: {layer.keyBenefit}</div>

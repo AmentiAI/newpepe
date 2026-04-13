@@ -173,7 +173,7 @@ export default function EpithalonCompleteGuidePage() {
         <div className="absolute inset-0 grid-bg opacity-40" />
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] bg-purple-500/8 blur-[120px] rounded-full pointer-events-none" />
         <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="inline-flex items-center gap-2 bg-purple-500/10 border border-purple-500/30 rounded-full px-4 py-2 mb-6">
+          <div className="inline-flex items-center gap-2 bg-purple-50 border border-purple-200 rounded-full px-4 py-2 mb-6">
             <Star className="w-4 h-4 text-purple-400" />
             <span className="text-purple-400 text-sm font-semibold tracking-wide">EPITHALON COMPLETE GUIDE 2026</span>
           </div>
@@ -382,12 +382,12 @@ export default function EpithalonCompleteGuidePage() {
                   }}
                 >
                   <td className="py-3 px-4">
-                    <span className={`font-bold ${row.highlight ? 'text-purple-300' : 'text-gray-900'}`}>{row.compound}</span>
+                    <span className={`font-bold ${row.highlight ? 'text-purple-700' : 'text-gray-900'}`}>{row.compound}</span>
                     {row.highlight && <span className="ml-2 text-xs text-purple-400 font-bold px-2 py-0.5 rounded-full" style={{ background: 'rgba(168,85,247,0.15)' }}>★ Best</span>}
                   </td>
                   <td className="py-3 px-4 text-gray-500 text-xs max-w-[180px]">{row.mechanism}</td>
                   <td className="py-3 px-4 text-xs">
-                    <span className={row.highlight ? 'text-purple-300 font-semibold' : 'text-gray-500'}>{row.telomereEffect}</span>
+                    <span className={row.highlight ? 'text-purple-700 font-semibold' : 'text-gray-500'}>{row.telomereEffect}</span>
                   </td>
                   <td className="py-3 px-4 text-gray-500 text-xs">{row.humanEvidence}</td>
                   <td className="py-3 px-4 text-gray-500 text-xs font-mono">{row.cost}</td>
@@ -512,7 +512,7 @@ export default function EpithalonCompleteGuidePage() {
                 <div key={item.compound} className="rounded-xl p-4" style={{ background: 'rgba(168,85,247,0.07)', border: '1px solid rgba(168,85,247,0.12)' }}>
                   <div className="text-gray-900 font-black text-sm mb-1">{item.compound}</div>
                   <div className="text-gray-500 text-xs mb-1 font-mono">{item.schedule}</div>
-                  <div className="text-purple-300 text-xs">{item.role}</div>
+                  <div className="text-purple-700 text-xs">{item.role}</div>
                 </div>
               ))}
             </div>

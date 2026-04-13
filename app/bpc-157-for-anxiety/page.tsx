@@ -312,7 +312,7 @@ export default function Bpc157AnxietyPage() {
           <p className="text-gray-500 mb-10">
             A direct comparison of BPC-157 against the most commonly prescribed anxiety interventions — across mechanism, dependency risk, gut effects, and cognitive impact.
           </p>
-          <div className="overflow-x-auto rounded-2xl border border-white/10">
+          <div className="overflow-x-auto rounded-2xl border border-gray-200">
             <table className="w-full text-xs">
               <thead>
                 <tr style={{ background: 'rgba(255,255,255,0.04)' }}>
@@ -406,7 +406,7 @@ export default function Bpc157AnxietyPage() {
                     </div>
                     <div>
                       <p className="text-xs font-bold tracking-widest text-gray-500 mb-2">PROTOCOL</p>
-                      <p className="text-indigo-300 text-sm leading-relaxed">{stack.protocol}</p>
+                      <p className="text-indigo-700 text-sm leading-relaxed">{stack.protocol}</p>
                     </div>
                   </div>
                 </div>
@@ -432,7 +432,7 @@ export default function Bpc157AnxietyPage() {
       {/* Important disclaimer box */}
       <section className="py-8 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="bg-amber-500/10 border border-amber-500/20 rounded-xl p-5">
-          <p className="text-amber-300 font-semibold text-sm mb-1">Important Note</p>
+          <p className="text-amber-700 font-semibold text-sm mb-1">Important Note</p>
           <p className="text-gray-500 text-sm">BPC-157 is a research peptide, not an approved treatment for anxiety or depression. This content is educational. Do not discontinue prescribed mental health medications without guidance from a physician.</p>
         </div>
       </section>

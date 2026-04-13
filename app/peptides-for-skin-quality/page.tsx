@@ -87,7 +87,7 @@ const peptideDeepDives = [
     name: 'GHK-Cu',
     subtitle: '31% Gene Reset + 5-Type Collagen Synthesis',
     color: 'text-emerald-400',
-    badge: 'bg-emerald-500/20 text-emerald-300',
+    badge: 'bg-emerald-500/20 text-emerald-700',
     sections: [
       {
         title: 'The 31% Gene Reset',
@@ -111,7 +111,7 @@ const peptideDeepDives = [
     name: 'SNAP-8',
     subtitle: 'SNARE Complex Inhibition → Wrinkle Relaxation',
     color: 'text-purple-400',
-    badge: 'bg-purple-500/20 text-purple-300',
+    badge: 'bg-purple-500/20 text-purple-700',
     sections: [
       {
         title: 'How SNAP-8 Relaxes Wrinkles',
@@ -131,7 +131,7 @@ const peptideDeepDives = [
     name: 'Epithalon',
     subtitle: 'Telomere Extension → Skin Cell Longevity',
     color: 'text-rose-400',
-    badge: 'bg-rose-500/20 text-rose-300',
+    badge: 'bg-rose-500/20 text-rose-700',
     sections: [
       {
         title: 'Telomeres and Skin Aging',
@@ -151,7 +151,7 @@ const peptideDeepDives = [
     name: 'BPC-157',
     subtitle: 'Gut-Skin Axis Repair → Systemic Skin Improvement',
     color: 'text-blue-400',
-    badge: 'bg-blue-500/20 text-blue-300',
+    badge: 'bg-blue-500/20 text-blue-700',
     sections: [
       {
         title: 'The Gut-Skin Axis',
@@ -169,7 +169,7 @@ const skinProtocols = [
   {
     type: 'Dry/Aging Skin',
     color: 'border-amber-500/30',
-    badge: 'bg-amber-500/20 text-amber-300',
+    badge: 'bg-amber-500/20 text-amber-700',
     peptides: ['GHK-Cu 1–2mg topical PM', 'SNAP-8 5–7.5% topical AM', 'Epithalon quarterly cycle'],
     focus: 'Maximum collagen support, wrinkle relaxation, cellular longevity',
     note: 'Use rich carrier base (hyaluronic acid + ceramide) to address barrier compromise alongside peptides.',
@@ -177,7 +177,7 @@ const skinProtocols = [
   {
     type: 'Oily/Acne-Prone',
     color: 'border-blue-500/30',
-    badge: 'bg-blue-500/20 text-blue-300',
+    badge: 'bg-blue-500/20 text-blue-700',
     peptides: ['BPC-157 250–500mcg SC 5x/week', 'GHK-Cu 1mg lightweight water-based serum PM'],
     focus: 'Gut-skin axis repair, systemic inflammation reduction, sebum regulation',
     note: 'Avoid heavy cream carriers. Water, aloe, or hyaluronic acid base only. Address gut root cause first.',
@@ -185,7 +185,7 @@ const skinProtocols = [
   {
     type: 'Dull/Uneven Skin',
     color: 'border-emerald-500/30',
-    badge: 'bg-emerald-500/20 text-emerald-300',
+    badge: 'bg-emerald-500/20 text-emerald-700',
     peptides: ['GHK-Cu 1–2mg topical AM + PM', 'Epithalon quarterly cycle', 'BPC-157 for systemic inflammation'],
     focus: 'Angiogenesis for microcirculation, cellular rejuvenation, PIH reduction',
     note: 'GHK-Cu\'s angiogenesis effect (more blood vessels in dermis) is the primary mechanism for luminosity — results appear at 4–6 weeks.',
@@ -193,7 +193,7 @@ const skinProtocols = [
   {
     type: 'Sensitive/Redness-Prone',
     color: 'border-rose-500/30',
-    badge: 'bg-rose-500/20 text-rose-300',
+    badge: 'bg-rose-500/20 text-rose-700',
     peptides: ['BPC-157 250mcg SC 5x/week (systemic anti-inflammatory)', 'GHK-Cu 0.5mg in aloe base, every other day → daily'],
     focus: 'Systemic inflammation reduction first; gentle topical introduction',
     note: 'GHK-Cu is unusually well-tolerated even by reactive skin due to its anti-inflammatory properties. Introduce slowly.',
@@ -217,7 +217,7 @@ const timeline = [
     period: 'Month 1',
     title: 'First Visible Changes',
     color: 'border-amber-500/40',
-    badge: 'bg-amber-500/20 text-amber-300',
+    badge: 'bg-amber-500/20 text-amber-700',
     changes: [
       'SNAP-8: Subtle softening of expression lines in most users',
       'GHK-Cu: Improved skin hydration and slight luminosity increase',
@@ -229,7 +229,7 @@ const timeline = [
     period: 'Month 3',
     title: 'Significant Improvements',
     color: 'border-emerald-500/40',
-    badge: 'bg-emerald-500/20 text-emerald-300',
+    badge: 'bg-emerald-500/20 text-emerald-700',
     changes: [
       'GHK-Cu: Measurable collagen density increase; visible firmness improvement',
       'SNAP-8: Significant wrinkle depth reduction (up to 63% at full dose/duration)',
@@ -242,7 +242,7 @@ const timeline = [
     period: 'Month 6',
     title: 'Full Protocol Effect',
     color: 'border-purple-500/40',
-    badge: 'bg-purple-500/20 text-purple-300',
+    badge: 'bg-purple-500/20 text-purple-700',
     changes: [
       'Comprehensive collagen matrix remodeling complete — significant age reversal visible',
       'Maximum wrinkle reduction from SNAP-8 reached at this point',
@@ -282,9 +282,9 @@ const faqs = [
 
 export default function PeptidesForSkinQualityPage() {
   return (
-    <main className="bg-dark-900 min-h-screen text-gray-700">
+    <main className="bg-white min-h-screen text-gray-700">
       {/* Hero */}
-      <section className="py-16 bg-gradient-to-b from-dark-800 to-dark-900 border-b border-white/5">
+      <section className="py-16 bg-gray-50 border-b border-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
             <span className="text-xs font-semibold uppercase tracking-widest text-emerald-400 mb-4 block">
@@ -292,7 +292,7 @@ export default function PeptidesForSkinQualityPage() {
             </span>
             <h1 className="text-4xl sm:text-5xl font-extrabold text-gray-900 mb-6 leading-tight">
               Peptides for Skin Quality:{' '}
-              <span className="text-neon-green">The Evidence-Based Guide</span>
+              <span className="text-emerald-700">The Evidence-Based Guide</span>
             </h1>
             <p className="text-xl text-gray-600 mb-8 leading-relaxed">
               Skin quality is the highest-leverage variable in perceived attractiveness and estimated age. Research shows that homogeneous, firm, luminous skin signals health and youth more powerfully than any other facial feature. This guide covers every peptide with evidence for skin quality improvement — from GHK-Cu&apos;s 31% gene reset to Epithalon&apos;s telomere extension — with specific protocols for each skin concern.
@@ -318,13 +318,13 @@ export default function PeptidesForSkinQualityPage() {
           </p>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {skinDimensions.map((dim) => (
-              <div key={dim.dimension} className={`rounded-xl border bg-dark-800/40 p-5 ${dim.border}`}>
+              <div key={dim.dimension} className={`rounded-xl border bg-gray-50 p-5 ${dim.border}`}>
                 <div className={`text-xl mb-2 ${dim.color}`}>{dim.icon}</div>
                 <h3 className={`font-bold text-lg mb-2 ${dim.color}`}>{dim.dimension}</h3>
                 <p className="text-sm text-gray-500 mb-3 leading-relaxed">{dim.desc}</p>
                 <div className="flex flex-wrap gap-1 mb-3">
                   {dim.peptides.map((p) => (
-                    <span key={p} className="text-xs bg-dark-700/80 border border-white/10 text-gray-600 rounded px-2 py-0.5">
+                    <span key={p} className="text-xs bg-gray-100 border border-gray-200 text-gray-600 rounded px-2 py-0.5">
                       {p}
                     </span>
                   ))}
@@ -337,7 +337,7 @@ export default function PeptidesForSkinQualityPage() {
       </section>
 
       {/* Skin Assessment Tool */}
-      <section className="py-16 bg-dark-800/30">
+      <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-start">
             <div>
@@ -373,8 +373,8 @@ export default function PeptidesForSkinQualityPage() {
           </p>
           <div className="space-y-6">
             {peptideDeepDives.map((pep) => (
-              <div key={pep.name} className="bg-dark-800/60 border border-white/10 rounded-xl overflow-hidden">
-                <div className="p-6 border-b border-white/5">
+              <div key={pep.name} className="bg-gray-50 border border-gray-200 rounded-xl overflow-hidden">
+                <div className="p-6 border-b border-gray-100">
                   <div className="flex items-center gap-3">
                     <h3 className={`text-2xl font-bold ${pep.color}`}>{pep.name}</h3>
                     <span className={`text-xs rounded-full px-3 py-1 ${pep.badge}`}>{pep.subtitle}</span>
@@ -395,7 +395,7 @@ export default function PeptidesForSkinQualityPage() {
       </section>
 
       {/* Protocols by Skin Type */}
-      <section className="py-16 bg-dark-800/30">
+      <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">Protocols by Skin Type</h2>
           <p className="text-gray-500 mb-8 max-w-2xl">
@@ -403,7 +403,7 @@ export default function PeptidesForSkinQualityPage() {
           </p>
           <div className="grid sm:grid-cols-2 gap-5">
             {skinProtocols.map((sp) => (
-              <div key={sp.type} className={`rounded-xl border bg-dark-800/40 p-5 ${sp.color}`}>
+              <div key={sp.type} className={`rounded-xl border bg-gray-50 p-5 ${sp.color}`}>
                 <div className="flex items-center gap-2 mb-3">
                   <span className={`text-xs rounded-full px-2 py-0.5 ${sp.badge}`}>{sp.type}</span>
                 </div>
@@ -432,7 +432,7 @@ export default function PeptidesForSkinQualityPage() {
           </p>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
             {timeline.map((t) => (
-              <div key={t.period} className={`rounded-xl border bg-dark-800/40 p-5 ${t.color}`}>
+              <div key={t.period} className={`rounded-xl border bg-gray-50 p-5 ${t.color}`}>
                 <div className="flex items-center gap-2 mb-3">
                   <span className={`text-xs rounded-full px-2 py-1 font-semibold ${t.badge}`}>{t.period}</span>
                 </div>
@@ -452,12 +452,12 @@ export default function PeptidesForSkinQualityPage() {
       </section>
 
       {/* FAQ */}
-      <section className="py-16 bg-dark-800/30">
+      <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-10">Frequently Asked Questions</h2>
           <div className="grid md:grid-cols-2 gap-6">
             {faqs.map((faq, i) => (
-              <div key={i} className="bg-dark-800/60 border border-white/10 rounded-xl p-5">
+              <div key={i} className="bg-gray-50 border border-gray-200 rounded-xl p-5">
                 <h3 className="font-semibold text-gray-900 mb-2 flex items-start gap-2">
                   <FlaskConical className="w-4 h-4 text-emerald-400 flex-shrink-0 mt-0.5" />
                   {faq.q}

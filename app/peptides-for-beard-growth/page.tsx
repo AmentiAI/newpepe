@@ -39,7 +39,7 @@ const beardPeptides = [
     frequency: 'Daily, ideally with derma roller (0.25–0.5mm)',
     timeline: '8–16 weeks for visible density change',
     color: 'border-amber-500/40',
-    badge: 'bg-amber-500/20 text-amber-300',
+    badge: 'bg-amber-500/20 text-amber-700',
   },
   {
     name: 'IGF-1 LR3',
@@ -50,7 +50,7 @@ const beardPeptides = [
     frequency: 'Daily injection, morning or post-workout',
     timeline: '8–16 weeks for measurable follicle improvement',
     color: 'border-blue-500/40',
-    badge: 'bg-blue-500/20 text-blue-300',
+    badge: 'bg-blue-500/20 text-blue-700',
   },
   {
     name: 'TB-500 (Thymosin Beta-4)',
@@ -61,7 +61,7 @@ const beardPeptides = [
     frequency: '2x per week initially, then maintenance dose',
     timeline: '12–20 weeks for follicle cycling improvement',
     color: 'border-purple-500/40',
-    badge: 'bg-purple-500/20 text-purple-300',
+    badge: 'bg-purple-500/20 text-purple-700',
   },
   {
     name: 'CJC-1295 + Ipamorelin',
@@ -72,7 +72,7 @@ const beardPeptides = [
     frequency: 'Daily or 5 days/week',
     timeline: '12–20 weeks for systemic IGF-1-driven follicle improvement',
     color: 'border-teal-500/40',
-    badge: 'bg-teal-500/20 text-teal-300',
+    badge: 'bg-teal-500/20 text-teal-700',
   },
   {
     name: 'BPC-157',
@@ -83,7 +83,7 @@ const beardPeptides = [
     frequency: 'Daily',
     timeline: '8–12 weeks for reduced inflammation and improved follicle environment',
     color: 'border-emerald-500/40',
-    badge: 'bg-emerald-500/20 text-emerald-300',
+    badge: 'bg-emerald-500/20 text-emerald-700',
   },
 ];
 
@@ -177,18 +177,18 @@ const faqs = [
 
 export default function PeptidesForBeardGrowthPage() {
   return (
-    <main className="min-h-screen bg-dark-900 text-gray-700">
+    <main className="min-h-screen bg-white text-gray-700">
       {/* Hero */}
       <section className="relative py-20 px-4 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-emerald-900/20 via-dark-900 to-amber-900/20" />
         <div className="relative max-w-4xl mx-auto text-center space-y-6">
-          <div className="inline-flex items-center gap-2 bg-emerald-500/10 border border-emerald-500/30 rounded-full px-4 py-2 text-emerald-300 text-sm font-semibold">
+          <div className="inline-flex items-center gap-2 bg-emerald-50 border border-emerald-200 rounded-full px-4 py-2 text-emerald-700 text-sm font-semibold">
             <Zap className="w-4 h-4" />
             Beard Growth &amp; Peptides
           </div>
           <h1 className="text-4xl sm:text-5xl font-extrabold text-gray-900 leading-tight">
             Peptides for{' '}
-            <span className="text-neon-green">Beard Growth</span>
+            <span className="text-emerald-700">Beard Growth</span>
           </h1>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
             The biology of beard follicles is fundamentally different from scalp hair. Here is how to use peptides correctly for beard density — with full protocols and realistic timelines.
@@ -197,7 +197,7 @@ export default function PeptidesForBeardGrowthPage() {
             <Link href={SOURCE_URL} rel="nofollow noopener noreferrer" className="btn-cta flex items-center gap-2">
               View Beard Peptides <ArrowRight className="w-4 h-4" />
             </Link>
-            <Link href="/ghk-cu-for-hair-loss" className="flex items-center gap-2 px-6 py-3 border border-slate-600 rounded-xl text-gray-600 hover:border-slate-400 transition-colors">
+            <Link href="/ghk-cu-for-hair-loss" className="flex items-center gap-2 px-6 py-3 border border-gray-300 rounded-xl text-gray-600 hover:border-gray-400 transition-colors">
               GHK-Cu Full Guide
             </Link>
           </div>
@@ -240,9 +240,9 @@ export default function PeptidesForBeardGrowthPage() {
             {hairPhases.map((phase) => (
               <div key={phase.phase} className={`glass-card p-5 border ${phase.color} space-y-2`}>
                 <h3 className="text-gray-800 font-bold">{phase.phase}</h3>
-                <p className="text-gray-500 text-xs font-semibold text-amber-300">{phase.duration}</p>
+                <p className="text-gray-500 text-xs font-semibold text-amber-700">{phase.duration}</p>
                 <p className="text-gray-600 text-sm leading-relaxed">{phase.description}</p>
-                <p className="text-emerald-300 text-sm"><span className="text-gray-500">Peptide action: </span>{phase.peptideAction}</p>
+                <p className="text-emerald-700 text-sm"><span className="text-gray-500">Peptide action: </span>{phase.peptideAction}</p>
               </div>
             ))}
           </div>
@@ -296,7 +296,7 @@ export default function PeptidesForBeardGrowthPage() {
                   </div>
                   <div>
                     <span className="text-gray-500 uppercase tracking-wide">Timeline</span>
-                    <p className="text-emerald-300 mt-1 font-medium">{peptide.timeline}</p>
+                    <p className="text-emerald-700 mt-1 font-medium">{peptide.timeline}</p>
                   </div>
                 </div>
               </div>
@@ -320,7 +320,7 @@ export default function PeptidesForBeardGrowthPage() {
               When GHK-Cu is applied topically to the beard area, it acts through growth factor stimulation (IGF-1, VEGF, FGF) and local anti-inflammatory mechanisms — not through androgen receptor suppression in the facial follicle context. The key finding from research: GHK-Cu's primary mechanism for follicle stimulation is IGF-1 upregulation and angiogenesis, not androgen modulation. These pathways are beard-positive regardless of DHT status.
             </p>
             <div className="border border-emerald-500/30 bg-emerald-500/5 rounded-xl p-4">
-              <p className="text-emerald-300 font-semibold text-sm">Bottom Line</p>
+              <p className="text-emerald-700 font-semibold text-sm">Bottom Line</p>
               <p className="text-gray-600 text-sm mt-1">
                 GHK-Cu applied to beard area stimulates beard follicle growth through IGF-1 and angiogenesis pathways. It does not suppress beard-area DHT signaling. Users on finasteride (which does reduce DHT systemically) can still use GHK-Cu topically on the beard to compensate for the DHT reduction's impact on beard follicles.
               </p>
@@ -336,7 +336,7 @@ export default function PeptidesForBeardGrowthPage() {
           <div className="space-y-4">
             {topicalProtocol.map((step) => (
               <div key={step.step} className="glass-card p-5 flex items-start gap-4">
-                <span className="w-9 h-9 rounded-full bg-emerald-500/20 border border-emerald-500/40 flex items-center justify-center text-emerald-300 font-bold flex-shrink-0">
+                <span className="w-9 h-9 rounded-full bg-emerald-500/20 border border-emerald-500/40 flex items-center justify-center text-emerald-700 font-bold flex-shrink-0">
                   {step.step}
                 </span>
                 <div className="space-y-1">
@@ -406,7 +406,7 @@ export default function PeptidesForBeardGrowthPage() {
           <p className="text-gray-500">
             GHK-Cu topical + derma roller is the highest-evidence, most accessible starting point. Add IGF-1 LR3 for systemic follicle support.
           </p>
-          <div className="p-3 bg-amber-500/10 border border-amber-500/30 rounded-xl text-amber-200 text-sm">
+          <div className="p-3 bg-amber-50 border border-amber-200 rounded-xl text-amber-200 text-sm">
             <AlertTriangle className="w-4 h-4 inline mr-2" />
             For research purposes only. Consult a qualified physician before use.
           </div>

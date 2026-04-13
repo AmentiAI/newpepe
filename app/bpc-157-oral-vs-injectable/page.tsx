@@ -158,7 +158,7 @@ export default function Bpc157OralVsInjectablePage() {
         <div className="absolute inset-0 grid-bg opacity-40" />
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] bg-emerald-500/8 blur-[120px] rounded-full pointer-events-none" />
         <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="inline-flex items-center gap-2 bg-emerald-500/10 border border-emerald-500/30 rounded-full px-4 py-2 mb-6">
+          <div className="inline-flex items-center gap-2 bg-emerald-50 border border-emerald-200 rounded-full px-4 py-2 mb-6">
             <span className="text-emerald-400 text-sm font-semibold tracking-wide">BPC-157 ADMINISTRATION GUIDE</span>
           </div>
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-gray-900 leading-tight mb-6">
@@ -185,7 +185,7 @@ export default function Bpc157OralVsInjectablePage() {
       {/* Route Recommender */}
       <section className="py-12 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-8">
-          <div className="inline-flex items-center gap-2 bg-emerald-500/10 border border-emerald-500/30 rounded-full px-3 py-1 mb-4">
+          <div className="inline-flex items-center gap-2 bg-emerald-50 border border-emerald-200 rounded-full px-3 py-1 mb-4">
             <span className="text-emerald-400 text-xs font-bold tracking-widest uppercase">Interactive Tool</span>
           </div>
           <h2 className="text-3xl font-black text-gray-900 mb-3">Which Route is Right for You?</h2>
@@ -282,7 +282,7 @@ export default function Bpc157OralVsInjectablePage() {
 
             <div className="glass-card p-6">
               <h3 className="text-gray-900 font-bold text-lg mb-3">Plasma Half-Life Comparison</h3>
-              <div className="overflow-x-auto rounded-xl border border-white/10 mb-4">
+              <div className="overflow-x-auto rounded-xl border border-gray-200 mb-4">
                 <table className="w-full text-sm">
                   <thead>
                     <tr style={{ background: 'rgba(255,255,255,0.04)' }}>
@@ -396,7 +396,7 @@ export default function Bpc157OralVsInjectablePage() {
       <section className="py-12" style={{ background: 'rgba(6,6,16,0.8)' }}>
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl font-black text-gray-900 mb-8">Which Route for Your Goal?</h2>
-          <div className="overflow-x-auto rounded-2xl border border-white/10">
+          <div className="overflow-x-auto rounded-2xl border border-gray-200">
             <table className="w-full text-sm">
               <thead>
                 <tr style={{ background: 'rgba(255,255,255,0.04)' }}>
@@ -425,7 +425,7 @@ export default function Bpc157OralVsInjectablePage() {
       <section className="py-12 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-2xl font-black text-gray-900 mb-3">Cost Comparison Over Time</h2>
         <p className="text-gray-500 mb-8 max-w-2xl">Real per-dose and monthly cost breakdowns for each route — so you can make an informed decision based on your budget and goals.</p>
-        <div className="overflow-x-auto rounded-2xl border border-white/10">
+        <div className="overflow-x-auto rounded-2xl border border-gray-200">
           <table className="w-full text-sm min-w-[700px]">
             <thead>
               <tr style={{ background: 'rgba(255,255,255,0.04)' }}>

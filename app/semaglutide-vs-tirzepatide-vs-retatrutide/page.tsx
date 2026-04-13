@@ -125,7 +125,7 @@ export default function GlpComparisonPage() {
         <div className="absolute inset-0 grid-bg opacity-40" />
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] bg-purple-500/8 blur-[120px] rounded-full pointer-events-none" />
         <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="inline-flex items-center gap-2 bg-purple-500/10 border border-purple-500/30 rounded-full px-4 py-2 mb-6">
+          <div className="inline-flex items-center gap-2 bg-purple-50 border border-purple-200 rounded-full px-4 py-2 mb-6">
             <span className="text-purple-400 text-sm font-semibold tracking-wide">GLP PEPTIDE COMPARISON 2026</span>
           </div>
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-gray-900 leading-tight mb-6">
@@ -193,7 +193,7 @@ export default function GlpComparisonPage() {
               <h3 className="text-purple-400 font-black text-lg mb-3">Brain Reward Pathway Effects</h3>
               <p className="text-gray-600 text-sm leading-relaxed mb-3">Perhaps the most interesting emerging research on GLP-1 agonists involves the dopaminergic reward system. GLP-1 receptors exist in the ventral tegmental area (VTA) and nucleus accumbens — core components of the brain&apos;s reward circuitry. Activation of these receptors modulates the dopamine response to food cues, reducing the &quot;reward value&quot; of high-calorie food. Emerging research suggests this mechanism may extend to alcohol and nicotine reward, explaining anecdotal reports of reduced cravings for alcohol and addictive behaviors. This is why GLP-1 agonists feel fundamentally different from all prior weight-loss approaches: they change the brain&apos;s motivation to eat rather than requiring conscious willpower to resist eating.</p>
               <div className="bg-purple-500/8 border border-purple-500/20 rounded-lg p-3">
-                <p className="text-purple-300 text-xs font-bold mb-1">Why This Matters vs Stimulant Suppressants</p>
+                <p className="text-purple-700 text-xs font-bold mb-1">Why This Matters vs Stimulant Suppressants</p>
                 <p className="text-gray-500 text-xs">Stimulants (phentermine, amphetamines) suppress appetite by flooding the brain with norepinephrine — essentially a stress response that happens to reduce hunger. This causes tolerance within weeks, rebound appetite when stopped, cardiovascular strain, and anxiety. GLP-1 agonists work through entirely different biology — no tolerance to the appetitive effects has been observed, no cardiovascular stress, and no anxiety.</p>
               </div>
             </div>
@@ -245,7 +245,7 @@ export default function GlpComparisonPage() {
                   <p className="text-gray-900 text-xs font-semibold">{p.bestFor}</p>
                 </div>
 
-                <Link href={`/products/${p.slug}`} className="block text-center text-xs font-semibold py-2 rounded-lg border border-white/10 text-gray-600 hover:text-gray-900 hover:border-white/30 transition-colors">
+                <Link href={`/products/${p.slug}`} className="block text-center text-xs font-semibold py-2 rounded-lg border border-gray-200 text-gray-600 hover:text-gray-900 hover:border-white/30 transition-colors">
                   View {p.name} →
                 </Link>
               </div>
@@ -267,7 +267,7 @@ export default function GlpComparisonPage() {
       <section className="py-12" style={{ background: 'rgba(6,6,16,0.8)' }}>
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl font-black text-gray-900 mb-8">Quick Comparison Table</h2>
-          <div className="overflow-x-auto rounded-2xl border border-white/10">
+          <div className="overflow-x-auto rounded-2xl border border-gray-200">
             <table className="w-full text-sm">
               <thead>
                 <tr style={{ background: 'rgba(255,255,255,0.04)' }}>
@@ -540,7 +540,7 @@ export default function GlpComparisonPage() {
           </div>
 
           <div className="border border-purple-500/20 bg-purple-500/5 rounded-xl p-5">
-            <p className="text-purple-300 font-bold mb-2">Expected Outcomes vs Either Alone</p>
+            <p className="text-purple-700 font-bold mb-2">Expected Outcomes vs Either Alone</p>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-sm">
               <div>
                 <p className="text-gray-500 text-xs font-semibold mb-1">GLP-1 Only</p>
@@ -551,7 +551,7 @@ export default function GlpComparisonPage() {
                 <p className="text-gray-600 text-xs">Gradual fat loss (5–10% body fat at 6 months) with concurrent muscle gain. Slower total weight loss but superior body composition changes.</p>
               </div>
               <div>
-                <p className="text-purple-300 text-xs font-semibold mb-1">Combined Stack</p>
+                <p className="text-purple-700 text-xs font-semibold mb-1">Combined Stack</p>
                 <p className="text-gray-600 text-xs">Rapid fat loss from GLP-1 with muscle preservation from elevated GH/IGF-1. True recomposition: lose fat, maintain or gain muscle simultaneously. Optimal outcome for most users.</p>
               </div>
             </div>

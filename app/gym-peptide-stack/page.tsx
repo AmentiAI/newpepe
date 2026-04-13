@@ -137,7 +137,7 @@ export default function GymPeptideStackPage() {
       <div className="overflow-hidden">
 
         {/* ── HERO ─────────────────────────────────────────── */}
-        <section className="relative min-h-[85vh] flex items-center pt-20 bg-dark-900 grid-bg">
+        <section className="relative min-h-[85vh] flex items-center pt-20 bg-white grid-bg">
           <div className="absolute inset-0 overflow-hidden pointer-events-none">
             <div className="absolute top-1/3 -left-40 w-[600px] h-[600px] bg-emerald-500/5 rounded-full blur-[120px]" />
             <div className="absolute bottom-0 right-10 w-[400px] h-[400px] bg-blue-500/5 rounded-full blur-[100px]" />
@@ -199,7 +199,7 @@ export default function GymPeptideStackPage() {
         </section>
 
         {/* ── STATS ────────────────────────────────────────── */}
-        <div className="bg-dark-800 border-y border-white/5">
+        <div className="bg-gray-50 border-y border-gray-100">
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
               {stats.map(({ value, label, color }) => (
@@ -213,7 +213,7 @@ export default function GymPeptideStackPage() {
         </div>
 
         {/* ── WHY PEPTIDES FOR GYM ─────────────────────────── */}
-        <section className="py-24 bg-dark-900">
+        <section className="py-24 bg-white">
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
               <div>
@@ -263,7 +263,7 @@ export default function GymPeptideStackPage() {
         </section>
 
         {/* ── CJC/IPA PRE-WORKOUT ──────────────────────────── */}
-        <section className="py-20 bg-dark-800 border-y border-white/5">
+        <section className="py-20 bg-gray-50 border-y border-gray-100">
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div className="flex justify-center order-2 lg:order-1">
@@ -336,7 +336,7 @@ export default function GymPeptideStackPage() {
         </section>
 
         {/* ── BPC-157 + TB-500 RECOVERY ────────────────────── */}
-        <section className="py-20 bg-dark-900">
+        <section className="py-20 bg-white">
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div>
@@ -395,7 +395,7 @@ export default function GymPeptideStackPage() {
         </section>
 
         {/* ── IGF-1 + TIRZEPATIDE ──────────────────────────── */}
-        <section className="py-20 bg-dark-800 border-y border-white/5">
+        <section className="py-20 bg-gray-50 border-y border-gray-100">
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
 
@@ -493,7 +493,7 @@ export default function GymPeptideStackPage() {
         </section>
 
         {/* ── 3 TIERS ──────────────────────────────────────── */}
-        <section className="py-24 bg-dark-900">
+        <section className="py-24 bg-white">
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-14">
               <p className="text-xs font-semibold uppercase tracking-widest mb-3" style={{ color: '#00ff88' }}>Choose Your Level</p>
@@ -551,7 +551,7 @@ export default function GymPeptideStackPage() {
         </section>
 
         {/* ── GOAL MATCHER ─────────────────────────────────── */}
-        <section className="py-20 bg-dark-800 border-y border-white/5">
+        <section className="py-20 bg-gray-50 border-y border-gray-100">
           <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-10">
               <p className="text-xs font-semibold uppercase tracking-widest mb-3" style={{ color: '#00ff88' }}>Find Your Stack</p>
@@ -568,7 +568,7 @@ export default function GymPeptideStackPage() {
         </section>
 
         {/* ── FAQ ──────────────────────────────────────────── */}
-        <section className="py-24 bg-dark-900">
+        <section className="py-24 bg-white">
           <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
               <p className="text-xs font-semibold uppercase tracking-widest mb-3 text-gray-500">Common Questions</p>
@@ -594,7 +594,7 @@ export default function GymPeptideStackPage() {
         </section>
 
         {/* ── BOTTOM CTA ───────────────────────────────────── */}
-        <section className="py-20 bg-dark-800 border-t border-white/5">
+        <section className="py-20 bg-gray-50 border-t border-gray-100">
           <div className="max-w-3xl mx-auto px-4 sm:px-6 text-center">
             <h2 className="text-4xl font-black text-gray-900 mb-4">
               Build Your <span style={{ color: '#00ff88' }}>Gym Stack</span>

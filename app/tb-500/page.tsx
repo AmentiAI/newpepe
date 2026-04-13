@@ -46,7 +46,7 @@ export default function TB500Page() {
     <div className="overflow-hidden">
 
       {/* ── HERO ─────────────────────────────────────────── */}
-      <section className="relative min-h-[90vh] flex items-center pt-20 bg-dark-900 grid-bg">
+      <section className="relative min-h-[90vh] flex items-center pt-20 bg-white grid-bg">
         <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
           <div className="absolute top-1/4 -left-32 w-[600px] h-[600px] bg-blue-400/6 rounded-full blur-[120px]" />
           <div className="absolute bottom-0 right-0 w-[400px] h-[400px] bg-emerald-400/5 rounded-full blur-[100px]" />
@@ -146,7 +146,7 @@ export default function TB500Page() {
       </section>
 
       {/* ── STATS BAR ────────────────────────────────────── */}
-      <div className="bg-dark-800 border-y border-blue-400/10">
+      <div className="bg-gray-50 border-y border-blue-400/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
             {stats.map(({ value, label, color }) => (
@@ -164,10 +164,10 @@ export default function TB500Page() {
       </div>
 
       {/* ── BENEFITS GRID ────────────────────────────────── */}
-      <section className="py-24 bg-dark-900">
+      <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <p className="text-neon-green text-xs font-semibold uppercase tracking-widest mb-3">Evidence-Based Effects</p>
+            <p className="text-emerald-700 text-xs font-semibold uppercase tracking-widest mb-3">Evidence-Based Effects</p>
             <h2 className="text-4xl sm:text-5xl font-black text-gray-900 mb-4">
               What TB-500 <span className="gradient-text">Actually Does</span>
             </h2>
@@ -199,10 +199,10 @@ export default function TB500Page() {
       </section>
 
       {/* ── BPC-157 SYNERGY ──────────────────────────────── */}
-      <section className="py-24 bg-dark-800 border-y border-white/5">
+      <section className="py-24 bg-gray-50 border-y border-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <p className="text-neon-green text-xs font-semibold uppercase tracking-widest mb-3">Gold Standard Stack</p>
+            <p className="text-emerald-700 text-xs font-semibold uppercase tracking-widest mb-3">Gold Standard Stack</p>
             <h2 className="text-4xl font-black text-gray-900 mb-4">
               BPC-157 + TB-500: <span className="gradient-text">The Healing Stack</span>
             </h2>
@@ -246,10 +246,10 @@ export default function TB500Page() {
       </section>
 
       {/* ── PROTOCOL ─────────────────────────────────────── */}
-      <section className="py-24 bg-dark-900 grid-bg">
+      <section className="py-24 bg-white grid-bg">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <p className="text-neon-green text-xs font-semibold uppercase tracking-widest mb-3">Dosing Protocol</p>
+            <p className="text-emerald-700 text-xs font-semibold uppercase tracking-widest mb-3">Dosing Protocol</p>
             <h2 className="text-4xl font-black text-gray-900 mb-4">
               How to Use <span className="gradient-text">TB-500</span>
             </h2>
@@ -272,7 +272,7 @@ export default function TB500Page() {
               </div>
             </div>
             <div className="glass-card p-6 border-neon-green/15">
-              <h3 className="text-neon-green font-bold mb-4">Maintenance Phase (Week 7+)</h3>
+              <h3 className="text-emerald-700 font-bold mb-4">Maintenance Phase (Week 7+)</h3>
               <div className="space-y-3">
                 {[
                   ['Dose', '2mg once per week'],
@@ -289,7 +289,7 @@ export default function TB500Page() {
           </div>
 
           <div className="glass-card p-6 text-center border-neon-green/15">
-            <Award className="w-8 h-8 text-neon-green mx-auto mb-3" />
+            <Award className="w-8 h-8 text-emerald-700 mx-auto mb-3" />
             <h3 className="text-gray-900 font-bold text-lg mb-2">Get COA-Verified TB-500</h3>
             <p className="text-gray-500 text-sm mb-4">98%+ purity · US domestic shipping · cold-chain packaging</p>
             <div className="flex flex-wrap gap-3 justify-center">
@@ -306,7 +306,7 @@ export default function TB500Page() {
       </section>
 
       {/* ── BOTTOM CTA ───────────────────────────────────── */}
-      <section className="py-20 bg-dark-800 border-t border-white/5">
+      <section className="py-20 bg-gray-50 border-t border-gray-100">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 text-center">
           <h2 className="text-4xl font-black text-gray-900 mb-4">
             Start Your <span className="gradient-text">TB-500 Protocol</span>

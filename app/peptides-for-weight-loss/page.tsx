@@ -90,7 +90,7 @@ export default function PeptidesForWeightLossPage() {
         <div className="absolute inset-0 grid-bg opacity-40" />
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[400px] bg-rose-500/8 blur-[120px] rounded-full pointer-events-none" />
         <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="inline-flex items-center gap-2 bg-rose-500/10 border border-rose-500/30 rounded-full px-4 py-2 mb-6">
+          <div className="inline-flex items-center gap-2 bg-rose-50 border border-rose-200 rounded-full px-4 py-2 mb-6">
             <Flame className="w-4 h-4 text-rose-400" />
             <span className="text-rose-400 text-sm font-semibold tracking-wide">WEIGHT LOSS PEPTIDE GUIDE 2026</span>
           </div>

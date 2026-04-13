@@ -115,7 +115,7 @@ export default function WolverineStackPage() {
         <div className="absolute inset-0 grid-bg opacity-40" />
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] bg-emerald-500/10 blur-[120px] rounded-full pointer-events-none" />
         <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="inline-flex items-center gap-2 bg-emerald-500/10 border border-emerald-500/30 rounded-full px-4 py-2 mb-6">
+          <div className="inline-flex items-center gap-2 bg-emerald-50 border border-emerald-200 rounded-full px-4 py-2 mb-6">
             <Shield className="w-4 h-4 text-emerald-400" />
             <span className="text-emerald-400 text-sm font-semibold tracking-wide">THE WOLVERINE STACK</span>
           </div>
@@ -185,7 +185,7 @@ export default function WolverineStackPage() {
       {/* WHY WOLVERINE — Full Science Section */}
       <section className="py-16" style={{ background: 'rgba(6,6,16,0.8)' }}>
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="inline-flex items-center gap-2 bg-emerald-500/10 border border-emerald-500/30 rounded-full px-4 py-2 mb-6">
+          <div className="inline-flex items-center gap-2 bg-emerald-50 border border-emerald-200 rounded-full px-4 py-2 mb-6">
             <BookOpen className="w-4 h-4 text-emerald-400" />
             <span className="text-emerald-400 text-sm font-semibold tracking-wide">THE REGENERATION SCIENCE</span>
           </div>
@@ -238,7 +238,7 @@ export default function WolverineStackPage() {
       {/* Protocol Planner Widget */}
       <section className="py-16 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-10">
-          <div className="inline-flex items-center gap-2 bg-emerald-500/10 border border-emerald-500/30 rounded-full px-4 py-2 mb-4">
+          <div className="inline-flex items-center gap-2 bg-emerald-50 border border-emerald-200 rounded-full px-4 py-2 mb-4">
             <Zap className="w-4 h-4 text-emerald-400" />
             <span className="text-emerald-400 text-sm font-semibold tracking-wide">PROTOCOL PLANNER</span>
           </div>
@@ -303,7 +303,7 @@ export default function WolverineStackPage() {
       {/* WEEK-BY-WEEK HEALING JOURNAL */}
       <section className="py-16" style={{ background: 'rgba(6,6,16,0.8)' }}>
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="inline-flex items-center gap-2 bg-emerald-500/10 border border-emerald-500/30 rounded-full px-4 py-2 mb-6">
+          <div className="inline-flex items-center gap-2 bg-emerald-50 border border-emerald-200 rounded-full px-4 py-2 mb-6">
             <Clock className="w-4 h-4 text-emerald-400" />
             <span className="text-emerald-400 text-sm font-semibold tracking-wide">HEALING JOURNAL</span>
           </div>
@@ -384,7 +384,7 @@ export default function WolverineStackPage() {
 
       {/* THE RESEARCH BEHIND THE STACK */}
       <section className="py-16 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="inline-flex items-center gap-2 bg-emerald-500/10 border border-emerald-500/30 rounded-full px-4 py-2 mb-6">
+        <div className="inline-flex items-center gap-2 bg-emerald-50 border border-emerald-200 rounded-full px-4 py-2 mb-6">
           <Microscope className="w-4 h-4 text-emerald-400" />
           <span className="text-emerald-400 text-sm font-semibold tracking-wide">THE RESEARCH</span>
         </div>
@@ -470,7 +470,7 @@ export default function WolverineStackPage() {
       {/* ATHLETE CASE STUDY PROFILES */}
       <section className="py-16" style={{ background: 'rgba(6,6,16,0.8)' }}>
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="inline-flex items-center gap-2 bg-emerald-500/10 border border-emerald-500/30 rounded-full px-4 py-2 mb-6">
+          <div className="inline-flex items-center gap-2 bg-emerald-50 border border-emerald-200 rounded-full px-4 py-2 mb-6">
             <Users className="w-4 h-4 text-emerald-400" />
             <span className="text-emerald-400 text-sm font-semibold tracking-wide">ATHLETE PROFILES</span>
           </div>

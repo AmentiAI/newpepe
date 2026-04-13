@@ -153,7 +153,7 @@ export default function PeptidesForTestosterone() {
           {hormoneAxis.map((node, i) => (
             <div key={node.gland} className={`glass-card border p-6 ${node.bg}`}>
               <div className="flex items-start gap-4">
-                <div className="shrink-0 w-8 h-8 rounded-full bg-slate-900/50 flex items-center justify-center text-gray-500 font-black text-sm border border-white/10">
+                <div className="shrink-0 w-8 h-8 rounded-full bg-slate-900/50 flex items-center justify-center text-gray-500 font-black text-sm border border-gray-200">
                   {i + 1}
                 </div>
                 <div className="flex-1">

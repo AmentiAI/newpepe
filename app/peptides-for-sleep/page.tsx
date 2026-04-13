@@ -137,7 +137,7 @@ export default function PeptidesForSleepPage() {
       <div className="overflow-hidden">
 
         {/* ── HERO ─────────────────────────────────────────── */}
-        <section className="relative min-h-[85vh] flex items-center pt-20 bg-dark-900 grid-bg">
+        <section className="relative min-h-[85vh] flex items-center pt-20 bg-white grid-bg">
           <div className="absolute inset-0 overflow-hidden pointer-events-none">
             <div className="absolute top-1/4 -left-32 w-[600px] h-[600px] bg-blue-500/5 rounded-full blur-[120px]" />
             <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-purple-500/5 rounded-full blur-[100px]" />
@@ -199,7 +199,7 @@ export default function PeptidesForSleepPage() {
         </section>
 
         {/* ── STATS BAR ────────────────────────────────────── */}
-        <div className="bg-dark-800 border-y border-white/5">
+        <div className="bg-gray-50 border-y border-gray-100">
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
               {stats.map(({ value, label, color }) => (
@@ -213,7 +213,7 @@ export default function PeptidesForSleepPage() {
         </div>
 
         {/* ── WHY SLEEP MATTERS ────────────────────────────── */}
-        <section className="py-24 bg-dark-900">
+        <section className="py-24 bg-white">
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
               <div>
@@ -266,7 +266,7 @@ export default function PeptidesForSleepPage() {
         </section>
 
         {/* ── DSIP SECTION ─────────────────────────────────── */}
-        <section className="py-20 bg-dark-800 border-y border-white/5">
+        <section className="py-20 bg-gray-50 border-y border-gray-100">
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div className="flex justify-center order-2 lg:order-1">
@@ -338,7 +338,7 @@ export default function PeptidesForSleepPage() {
         </section>
 
         {/* ── EPITHALON SECTION ────────────────────────────── */}
-        <section className="py-20 bg-dark-900">
+        <section className="py-20 bg-white">
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div>
@@ -402,7 +402,7 @@ export default function PeptidesForSleepPage() {
         </section>
 
         {/* ── CJC/IPA SECTION ──────────────────────────────── */}
-        <section className="py-20 bg-dark-800 border-y border-white/5">
+        <section className="py-20 bg-gray-50 border-y border-gray-100">
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div className="flex justify-center order-2 lg:order-1">
@@ -474,7 +474,7 @@ export default function PeptidesForSleepPage() {
         </section>
 
         {/* ── GHRP-6 SECTION ───────────────────────────────── */}
-        <section className="py-20 bg-dark-900">
+        <section className="py-20 bg-white">
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
               <p className="text-xs font-semibold uppercase tracking-widest mb-3 text-amber-400">Deep SWS Enhancement</p>
@@ -525,7 +525,7 @@ export default function PeptidesForSleepPage() {
         </section>
 
         {/* ── INTERACTIVE SELECTOR ─────────────────────────── */}
-        <section className="py-20 bg-dark-800 border-y border-white/5">
+        <section className="py-20 bg-gray-50 border-y border-gray-100">
           <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-10">
               <p className="text-xs font-semibold uppercase tracking-widest mb-3" style={{ color: '#00ff88' }}>Find Your Protocol</p>
@@ -541,7 +541,7 @@ export default function PeptidesForSleepPage() {
         </section>
 
         {/* ── PEPTIDE OVERVIEW GRID ────────────────────────── */}
-        <section className="py-20 bg-dark-900">
+        <section className="py-20 bg-white">
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
               <h2 className="text-3xl font-black text-gray-900 mb-4">
@@ -572,7 +572,7 @@ export default function PeptidesForSleepPage() {
         </section>
 
         {/* ── COMPLETE STACK ───────────────────────────────── */}
-        <section className="py-20 bg-dark-800 border-y border-white/5">
+        <section className="py-20 bg-gray-50 border-y border-gray-100">
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-10">
               <p className="text-xs font-semibold uppercase tracking-widest mb-3" style={{ color: '#00ff88' }}>The Full Protocol</p>
@@ -632,7 +632,7 @@ export default function PeptidesForSleepPage() {
         </section>
 
         {/* ── FAQ ──────────────────────────────────────────── */}
-        <section className="py-24 bg-dark-900">
+        <section className="py-24 bg-white">
           <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
               <p className="text-xs font-semibold uppercase tracking-widest mb-3 text-gray-500">Common Questions</p>
@@ -658,7 +658,7 @@ export default function PeptidesForSleepPage() {
         </section>
 
         {/* ── BOTTOM CTA ───────────────────────────────────── */}
-        <section className="py-20 bg-dark-800 border-t border-white/5">
+        <section className="py-20 bg-gray-50 border-t border-gray-100">
           <div className="max-w-3xl mx-auto px-4 sm:px-6 text-center">
             <h2 className="text-4xl font-black text-gray-900 mb-4">
               Start Your <span style={{ color: '#00ff88' }}>Sleep Protocol</span>

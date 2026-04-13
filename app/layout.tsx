@@ -76,7 +76,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           }}
         />
       </head>
-      <body className={`${inter.className} bg-dark-900 text-slate-200 min-h-screen`}>
+      <body className={`${inter.className} bg-white text-slate-200 min-h-screen`}>
         <Navbar />
         <main>{children}</main>
         <Footer />

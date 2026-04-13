@@ -60,7 +60,7 @@ const acneTypes = [
     topicalApproach: 'GHK-Cu for barrier repair and PIH reduction',
     additionalNotes: 'Zinc (30 mg/day) inhibits 5α-reductase, reducing the DHT-driven sebum production that drives hormonal acne.',
     color: 'border-rose-500/40',
-    badge: 'bg-rose-500/20 text-rose-300',
+    badge: 'bg-rose-500/20 text-rose-700',
   },
   {
     type: 'Cystic / Nodular Acne',
@@ -78,7 +78,7 @@ const acneTypes = [
     topicalApproach: 'GHK-Cu at 1–2 mg/mL, applied after niacinamide serum',
     additionalNotes: 'BPC-157 oral supports from the gut side. Type IV collagen improvement from GHK-Cu directly addresses pore appearance.',
     color: 'border-amber-500/40',
-    badge: 'bg-amber-500/20 text-amber-300',
+    badge: 'bg-amber-500/20 text-amber-700',
   },
   {
     type: 'Post-Inflammatory Hyperpigmentation (PIH)',
@@ -87,7 +87,7 @@ const acneTypes = [
     topicalApproach: 'GHK-Cu + Niacinamide 10% (inhibits melanin transfer to keratinocytes) + Vitamin C serum',
     additionalNotes: 'Derma rolling (0.25mm) over PIH marks increases GHK-Cu absorption dramatically, accelerating resolution.',
     color: 'border-purple-500/40',
-    badge: 'bg-purple-500/20 text-purple-300',
+    badge: 'bg-purple-500/20 text-purple-700',
   },
 ];
 
@@ -131,7 +131,7 @@ const timeline = [
       'Gut symptoms (if present) noticeably improving',
     ],
     color: 'border-rose-500/40',
-    badge: 'bg-rose-500/20 text-rose-300',
+    badge: 'bg-rose-500/20 text-rose-700',
   },
   {
     period: '8–12 Weeks',
@@ -143,7 +143,7 @@ const timeline = [
       'New acne occurrence significantly reduced or eliminated',
     ],
     color: 'border-amber-500/40',
-    badge: 'bg-amber-500/20 text-amber-300',
+    badge: 'bg-amber-500/20 text-amber-700',
   },
   {
     period: '3–6 Months',
@@ -155,7 +155,7 @@ const timeline = [
       'Shallow scars beginning to fill in',
     ],
     color: 'border-purple-500/40',
-    badge: 'bg-purple-500/20 text-purple-300',
+    badge: 'bg-purple-500/20 text-purple-700',
   },
   {
     period: '6–12 Months',
@@ -167,7 +167,7 @@ const timeline = [
       'Long-term gut health normalized',
     ],
     color: 'border-emerald-500/40',
-    badge: 'bg-emerald-500/20 text-emerald-300',
+    badge: 'bg-emerald-500/20 text-emerald-700',
   },
 ];
 
@@ -204,18 +204,18 @@ const faqs = [
 
 export default function PeptidesForAcneSkinPage() {
   return (
-    <main className="min-h-screen bg-dark-900 text-gray-700">
+    <main className="min-h-screen bg-white text-gray-700">
       {/* Hero */}
       <section className="relative py-20 px-4 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-rose-900/20 via-dark-900 to-emerald-900/20" />
+        <div className="absolute inset-0 bg-gradient-to-br from-rose-50 to-emerald-50/30" />
         <div className="relative max-w-4xl mx-auto text-center space-y-6">
-          <div className="inline-flex items-center gap-2 bg-rose-500/10 border border-rose-500/30 rounded-full px-4 py-2 text-rose-300 text-sm font-semibold">
+          <div className="inline-flex items-center gap-2 bg-rose-50 border border-rose-200 rounded-full px-4 py-2 text-rose-700 text-sm font-semibold">
             <HeartPulse className="w-4 h-4" />
             Acne &amp; Skin Healing
           </div>
           <h1 className="text-4xl sm:text-5xl font-extrabold text-gray-900 leading-tight">
             Peptides for{' '}
-            <span className="text-neon-green">Acne &amp; Skin</span>
+            <span className="text-emerald-700">Acne &amp; Skin</span>
           </h1>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
             Acne and acne scarring are among the most significant appearance detractors. BPC-157 heals the gut-skin axis that drives inflammation. GHK-Cu rebuilds the skin architecture left damaged by years of acne.
@@ -224,7 +224,7 @@ export default function PeptidesForAcneSkinPage() {
             <Link href={SOURCE_URL} rel="nofollow noopener noreferrer" className="btn-cta flex items-center gap-2">
               View Acne Peptides <ArrowRight className="w-4 h-4" />
             </Link>
-            <Link href="/bpc-157-for-gut-health" className="flex items-center gap-2 px-6 py-3 border border-slate-600 rounded-xl text-gray-600 hover:border-slate-400 transition-colors">
+            <Link href="/bpc-157-for-gut-health" className="flex items-center gap-2 px-6 py-3 border border-gray-300 rounded-xl text-gray-600 hover:border-gray-400 transition-colors">
               BPC-157 Gut Guide
             </Link>
           </div>
@@ -265,14 +265,14 @@ export default function PeptidesForAcneSkinPage() {
                 <p className="text-gray-500 text-sm leading-relaxed">{mechanism.desc}</p>
                 <div className="pt-2 border-t border-slate-700/50 flex items-start gap-2">
                   <Shield className="w-4 h-4 text-rose-400 mt-0.5 flex-shrink-0" />
-                  <p className="text-rose-300 text-sm">{mechanism.peptide}</p>
+                  <p className="text-rose-700 text-sm">{mechanism.peptide}</p>
                 </div>
               </div>
             ))}
           </div>
           <div className="glass-card p-6">
             <p className="text-gray-600 text-sm leading-relaxed">
-              <strong className="text-rose-300">The BPC-157 mechanism for gut healing:</strong> BPC-157 (Body Protection Compound-157) was originally isolated from gastric juice. Its primary documented mechanism is repair of intestinal tight junctions — the molecular seals between gut epithelial cells that prevent pathological permeability. It upregulates tight junction proteins (ZO-1, occludin, claudin) and activates the growth hormone receptor locally in gut tissue. In rat models of induced colitis and leaky gut, BPC-157 dramatically reduces intestinal permeability markers and systemic inflammation within 2–4 weeks. This is the mechanism behind its effectiveness for gut-driven skin inflammation.
+              <strong className="text-rose-700">The BPC-157 mechanism for gut healing:</strong> BPC-157 (Body Protection Compound-157) was originally isolated from gastric juice. Its primary documented mechanism is repair of intestinal tight junctions — the molecular seals between gut epithelial cells that prevent pathological permeability. It upregulates tight junction proteins (ZO-1, occludin, claudin) and activates the growth hormone receptor locally in gut tissue. In rat models of induced colitis and leaky gut, BPC-157 dramatically reduces intestinal permeability markers and systemic inflammation within 2–4 weeks. This is the mechanism behind its effectiveness for gut-driven skin inflammation.
             </p>
           </div>
         </div>
@@ -326,7 +326,7 @@ export default function PeptidesForAcneSkinPage() {
         <div className="max-w-4xl mx-auto space-y-8">
           <h2 className="text-3xl font-bold text-gray-900">The Isotretinoin + BPC-157 Protocol</h2>
           <div className="glass-card p-6 border border-amber-500/30 bg-amber-500/5">
-            <p className="text-amber-300 font-semibold">Important Context</p>
+            <p className="text-amber-700 font-semibold">Important Context</p>
             <p className="text-gray-600 text-sm mt-2 leading-relaxed">
               Isotretinoin (Accutane) is the most effective pharmaceutical acne treatment available — it produces permanent remission in 60–80% of users. However, its gastrointestinal side effects are significant: IBD risk increase (particularly for those with family history), gut dysbiosis, and inflammatory bowel symptoms during treatment affect a meaningful percentage of users. BPC-157 oral is used by practitioners to protect the gut throughout the isotretinoin course. This is not a substitute for medical monitoring — coordinate with the prescribing dermatologist.
             </p>
@@ -335,7 +335,7 @@ export default function PeptidesForAcneSkinPage() {
             {accutaneProtocol.map((phase) => (
               <div key={phase.phase} className="glass-card p-5 space-y-3">
                 <h3 className="text-gray-800 font-bold">{phase.phase}</h3>
-                <p className="text-rose-300 text-sm font-medium">{phase.protocol}</p>
+                <p className="text-rose-700 text-sm font-medium">{phase.protocol}</p>
                 <p className="text-gray-500 text-sm leading-relaxed">{phase.rationale}</p>
                 <p className="text-gray-500 text-xs"><span className="text-gray-500">Timing:</span> {phase.timing}</p>
               </div>
@@ -351,7 +351,7 @@ export default function PeptidesForAcneSkinPage() {
           <div className="space-y-3">
             {dietProtocol.map((item) => (
               <div key={item.item} className="glass-card p-5 flex items-start gap-3">
-                <CheckCircle className="w-5 h-5 text-neon-green mt-0.5 flex-shrink-0" />
+                <CheckCircle className="w-5 h-5 text-emerald-700 mt-0.5 flex-shrink-0" />
                 <div className="space-y-1">
                   <div className="flex items-center gap-3 flex-wrap">
                     <span className="text-gray-800 font-semibold text-sm">{item.item}</span>
@@ -384,7 +384,7 @@ export default function PeptidesForAcneSkinPage() {
                     <ul className="space-y-1">
                       {t.events.map((e) => (
                         <li key={e} className="flex items-start gap-2 text-gray-600 text-sm">
-                          <CheckCircle className="w-4 h-4 text-neon-green mt-0.5 flex-shrink-0" />
+                          <CheckCircle className="w-4 h-4 text-emerald-700 mt-0.5 flex-shrink-0" />
                           {e}
                         </li>
                       ))}
@@ -422,7 +422,7 @@ export default function PeptidesForAcneSkinPage() {
           <p className="text-gray-500">
             BPC-157 oral + GHK-Cu topical is the most comprehensive acne and post-acne skin repair protocol available through research peptides. See active acne reduction in 4–6 weeks.
           </p>
-          <div className="p-3 bg-amber-500/10 border border-amber-500/30 rounded-xl text-amber-200 text-sm">
+          <div className="p-3 bg-amber-50 border border-amber-200 rounded-xl text-amber-200 text-sm">
             <AlertTriangle className="w-4 h-4 inline mr-2" />
             For research purposes only. Consult a qualified physician before use.
           </div>

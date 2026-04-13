@@ -191,7 +191,7 @@ export default function RetatrutideCompleteGuide() {
           {evolution.map((drug, i) => (
             <div key={drug.drug} className={`glass-card border p-6 ${drug.bg}`}>
               <div className="flex items-start gap-4">
-                <div className={`shrink-0 w-8 h-8 rounded-full bg-slate-900/60 flex items-center justify-center font-black text-sm border border-white/10 ${drug.color}`}>
+                <div className={`shrink-0 w-8 h-8 rounded-full bg-slate-900/60 flex items-center justify-center font-black text-sm border border-gray-200 ${drug.color}`}>
                   {i + 1}
                 </div>
                 <div className="flex-1">
@@ -272,7 +272,7 @@ export default function RetatrutideCompleteGuide() {
           <table className="w-full text-sm">
             <tbody>
               {phaseIIData.map((row, i) => (
-                <tr key={row.metric} className={`border-b border-white/5 ${i % 2 === 0 ? 'bg-white/1' : ''}`}>
+                <tr key={row.metric} className={`border-b border-gray-100 ${i % 2 === 0 ? 'bg-white/1' : ''}`}>
                   <td className="py-4 px-6 text-gray-500 font-medium w-1/2">{row.metric}</td>
                   <td className="py-4 px-6 text-gray-900 font-semibold">{row.value}</td>
                 </tr>
@@ -314,7 +314,7 @@ export default function RetatrutideCompleteGuide() {
         <div className="glass-card overflow-x-auto">
           <table className="w-full text-sm">
             <thead>
-              <tr className="border-b border-white/10">
+              <tr className="border-b border-gray-200">
                 <th className="text-left text-gray-500 font-semibold py-3 px-4">Metric</th>
                 <th className="text-left text-blue-400 font-semibold py-3 px-4">Semaglutide</th>
                 <th className="text-left text-purple-400 font-semibold py-3 px-4">Tirzepatide</th>
@@ -323,11 +323,11 @@ export default function RetatrutideCompleteGuide() {
             </thead>
             <tbody>
               {fullComparison.map((row) => (
-                <tr key={row.label} className="border-b border-white/5 hover:bg-white/2">
+                <tr key={row.label} className="border-b border-gray-100 hover:bg-white/2">
                   <td className="py-3 px-4 text-gray-500 font-medium">{row.label}</td>
-                  <td className="py-3 px-4 text-blue-300">{row.sema}</td>
-                  <td className="py-3 px-4 text-purple-300">{row.tirz}</td>
-                  <td className="py-3 px-4 text-amber-300 font-semibold">{row.reta}</td>
+                  <td className="py-3 px-4 text-blue-700">{row.sema}</td>
+                  <td className="py-3 px-4 text-purple-700">{row.tirz}</td>
+                  <td className="py-3 px-4 text-amber-700 font-semibold">{row.reta}</td>
                 </tr>
               ))}
             </tbody>

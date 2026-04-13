@@ -281,7 +281,7 @@ export default function IsBpc157LegalPage() {
       <section className="relative pt-20 sm:pt-32 pb-10 sm:pb-16 overflow-hidden">
         <div className="absolute inset-0 grid-bg opacity-40" />
         <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="inline-flex items-center gap-2 bg-amber-500/10 border border-amber-500/30 rounded-full px-4 py-2 mb-6">
+          <div className="inline-flex items-center gap-2 bg-amber-50 border border-amber-200 rounded-full px-4 py-2 mb-6">
             <AlertTriangle className="w-4 h-4 text-amber-400" />
             <span className="text-amber-400 text-sm font-semibold tracking-wide">LEGAL & REGULATORY GUIDE</span>
           </div>
@@ -328,7 +328,7 @@ export default function IsBpc157LegalPage() {
             <strong className="text-gray-900">What this does NOT mean:</strong> BPC-157 is not a controlled substance (it's not scheduled by the DEA). Individual purchase of BPC-157 as a research chemical remains legal in the United States. The FDA action specifically targets the prescription compounding pathway — not research chemical sales.
           </p>
           <div className="bg-amber-500/10 border border-amber-500/20 rounded-xl p-4 mt-4">
-            <p className="text-amber-300 text-sm">
+            <p className="text-amber-700 text-sm">
               <strong>Note:</strong> FDA regulatory status can change. This reflects the current situation as of early 2026. Always verify current status before purchasing.
             </p>
           </div>
@@ -387,7 +387,7 @@ export default function IsBpc157LegalPage() {
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl font-black text-gray-900 mb-3">Country-by-Country Legal Status</h2>
           <p className="text-gray-500 mb-8 max-w-2xl">BPC-157 legal status across 15+ countries as of 2026. Always verify with current local regulations before purchasing — this table is informational only.</p>
-          <div className="overflow-x-auto rounded-2xl border border-white/10">
+          <div className="overflow-x-auto rounded-2xl border border-gray-200">
             <table className="w-full text-sm min-w-[750px]">
               <thead>
                 <tr style={{ background: 'rgba(255,255,255,0.04)' }}>
@@ -451,16 +451,16 @@ export default function IsBpc157LegalPage() {
                 clinical: 'text-emerald-400',
                 regulatory: 'text-red-400',
                 market: 'text-gray-500',
-                current: 'text-neon-green',
+                current: 'text-emerald-700',
               };
               return (
                 <div key={event.year} className="relative flex gap-5">
                   <div className="shrink-0 flex flex-col items-center">
-                    <div className="w-10 h-10 rounded-full border border-white/20 bg-[#060610] flex items-center justify-center z-10">
+                    <div className="w-10 h-10 rounded-full border border-gray-200 bg-[#060610] flex items-center justify-center z-10">
                       <div className={`w-2 h-2 rounded-full ${event.type === 'current' ? 'bg-emerald-400' : event.type === 'regulatory' ? 'bg-red-400' : 'bg-white/30'}`} />
                     </div>
                   </div>
-                  <div className={`glass-card p-4 flex-1 border-l-2 ${typeStyles[event.type] || 'border-white/10'}`}>
+                  <div className={`glass-card p-4 flex-1 border-l-2 ${typeStyles[event.type] || 'border-gray-200'}`}>
                     <div className="flex items-start justify-between gap-3 mb-2">
                       <h3 className="text-gray-900 font-bold text-sm">{event.title}</h3>
                       <span className={`text-xs font-black shrink-0 ${yearColors[event.type]}`}>{event.year}</span>
@@ -607,7 +607,7 @@ export default function IsBpc157LegalPage() {
                 No formally validated detection window for BPC-157 exists in published anti-doping literature as of 2026. Given its short plasma half-life (estimated 1–4 hours), direct detection in blood or urine within 24–72 hours of use is the likely window. However, WADA methods may also target metabolites with longer detection windows. The safest assumption for a tested athlete: treat BPC-157 as if it could be detected for 5–7 days after last use, pending formal validation data.
               </p>
             </div>
-            <div className="bg-white/3 border border-white/10 rounded-xl p-4">
+            <div className="bg-white/3 border border-gray-200 rounded-xl p-4">
               <div className="text-gray-900 text-xs font-bold uppercase mb-2">TUE (Therapeutic Use Exemption) — Is It Possible?</div>
               <p className="text-gray-600 text-sm leading-relaxed">
                 A Therapeutic Use Exemption (TUE) allows athletes with documented medical conditions to use prohibited substances prescribed by physicians. For BPC-157 specifically: TUE approval is extremely unlikely in the current environment because (1) BPC-157 is not FDA-approved or legally prescribable in the US/most countries, (2) WADA has been explicit about peptide growth factors as performance enhancers, and (3) TUEs typically require an approved drug with no reasonable alternative. Do not plan to rely on a TUE for BPC-157.

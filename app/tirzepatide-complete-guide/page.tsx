@@ -190,7 +190,7 @@ export default function TirzepatideCompleteGuide() {
             </div>
           ))}
         </div>
-        <div className="mt-6 glass-card p-6 border border-white/5">
+        <div className="mt-6 glass-card p-6 border border-gray-100">
           <p className="text-gray-600 leading-relaxed">
             The synergy is the key insight. GLP-1 and GIP don't just add their effects — they amplify each other's action. GIP potentiates insulin secretion through a completely different intracellular pathway than GLP-1, which is why the combined effect exceeds what you'd predict by adding each receptor's contribution separately. This is called receptor cross-talk, and it's why the 22.5% figure isn't just "1.5× semaglutide" — it's qualitatively different weight loss.
           </p>
@@ -298,7 +298,7 @@ export default function TirzepatideCompleteGuide() {
         <div className="glass-card overflow-x-auto">
           <table className="w-full text-sm">
             <thead>
-              <tr className="border-b border-white/10">
+              <tr className="border-b border-gray-200">
                 <th className="text-left text-gray-500 font-semibold py-3 px-4">Metric</th>
                 <th className="text-left text-blue-400 font-semibold py-3 px-4">Semaglutide</th>
                 <th className="text-left text-[#00ff88] font-semibold py-3 px-4">Tirzepatide</th>
@@ -307,11 +307,11 @@ export default function TirzepatideCompleteGuide() {
             </thead>
             <tbody>
               {comparison.map((row) => (
-                <tr key={row.metric} className="border-b border-white/5 hover:bg-white/2">
+                <tr key={row.metric} className="border-b border-gray-100 hover:bg-white/2">
                   <td className="py-3 px-4 text-gray-500 font-medium">{row.metric}</td>
-                  <td className="py-3 px-4 text-blue-300">{row.sema}</td>
-                  <td className="py-3 px-4 text-emerald-300 font-semibold">{row.tirz}</td>
-                  <td className="py-3 px-4 text-purple-300">{row.reta}</td>
+                  <td className="py-3 px-4 text-blue-700">{row.sema}</td>
+                  <td className="py-3 px-4 text-emerald-700 font-semibold">{row.tirz}</td>
+                  <td className="py-3 px-4 text-purple-700">{row.reta}</td>
                 </tr>
               ))}
             </tbody>
