@@ -334,7 +334,7 @@ export default function HomePage() {
 
               <h1
                 aria-label="BPC-157 Peptide Protocols — Heal. Optimize. Dominate."
-                className="text-6xl sm:text-7xl lg:text-8xl font-black leading-[0.95] mb-6 tracking-tight"
+                className="text-4xl sm:text-6xl lg:text-8xl font-black leading-[0.95] mb-6 tracking-tight"
               >
                 <span className="text-gray-900 block">Heal.</span>
                 <span className="block" style={{ WebkitTextStroke: '2px #F59E0B', color: 'transparent' }}>Optimize.</span>
@@ -358,7 +358,7 @@ export default function HomePage() {
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </a>
                 <Link href="/products" className="btn-secondary text-base px-8 py-4 flex items-center gap-2">
-                  Browse All 20 <ArrowRight className="w-4 h-4" />
+                  Browse All {products.length} <ArrowRight className="w-4 h-4" />
                 </Link>
                 <Link href="/stacks" className="btn-secondary text-base px-8 py-4">
                   View Stacks
@@ -395,7 +395,7 @@ export default function HomePage() {
                 <div className="flex items-center justify-between mb-5">
                   <p className="text-amber-600 text-xs font-bold uppercase tracking-widest">Top Peptides</p>
                   <Link href="/products" className="text-xs text-gray-400 hover:text-amber-600 transition-colors flex items-center gap-1">
-                    See All 20+ <ArrowRight className="w-3 h-3" />
+                    See All {products.length}+ <ArrowRight className="w-3 h-3" />
                   </Link>
                 </div>
 
@@ -436,7 +436,7 @@ export default function HomePage() {
                 {/* Bottom action row */}
                 <div className="flex gap-3">
                   <Link href="/products" className="flex-1 btn-secondary text-sm py-3 text-center font-semibold">
-                    All Peptides
+                    All {products.length} Peptides
                   </Link>
                   <a
                     href={SOURCE_URL}
@@ -493,9 +493,9 @@ export default function HomePage() {
       {/* ═══════════════════════════════════════════════
           HOW IT WORKS — 3-step education section
       ═══════════════════════════════════════════════ */}
-      <section className="py-24 bg-white">
+      <section className="py-12 sm:py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
+          <div className="text-center mb-10 sm:mb-16">
             <p className="text-amber-600 text-xs font-bold uppercase tracking-widest mb-3">Simple Process</p>
             <h2 className="text-4xl sm:text-5xl font-black text-gray-900 mb-4">
               How It <span className="gradient-text">Works</span>
@@ -548,9 +548,9 @@ export default function HomePage() {
       {/* ═══════════════════════════════════════════════
           GOAL SELECTOR — 2×2 grid, large cards
       ═══════════════════════════════════════════════ */}
-      <section className="bg-gray-50 py-24 grid-bg border-y border-gray-200">
+      <section className="bg-gray-50 py-12 sm:py-24 grid-bg border-y border-gray-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
+          <div className="text-center mb-10 sm:mb-16">
             <p className="text-amber-600 text-xs font-bold uppercase tracking-widest mb-3">Choose Your Protocol</p>
             <h2 className="text-4xl sm:text-5xl font-black text-gray-900 mb-4">
               What Are You <span className="gradient-text">Optimizing For?</span>
@@ -578,7 +578,7 @@ export default function HomePage() {
                 <Link
                   key={title}
                   href={href}
-                  className={`group relative p-8 rounded-2xl border transition-all duration-300 ${colorMap[color]} hover:shadow-xl block`}
+                  className={`group relative p-5 sm:p-8 rounded-2xl border transition-all duration-300 ${colorMap[color]} hover:shadow-xl block`}
                 >
                   <div className="flex items-start gap-5 mb-6">
                     <div className={`w-12 h-12 rounded-xl flex items-center justify-center shrink-0 ${iconBg[color]}`}>
@@ -616,9 +616,9 @@ export default function HomePage() {
       {/* ═══════════════════════════════════════════════
           RESEARCH & EVIDENCE — 4 study highlight cards
       ═══════════════════════════════════════════════ */}
-      <section className="py-24 bg-white grid-bg">
+      <section className="py-12 sm:py-24 bg-white grid-bg">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
+          <div className="text-center mb-10 sm:mb-16">
             <p className="text-amber-600 text-xs font-bold uppercase tracking-widest mb-3">Peer-Reviewed Science</p>
             <h2 className="text-4xl sm:text-5xl font-black text-gray-900 mb-4">
               Backed by <span className="gradient-text">30+ Years of Research</span>
@@ -673,9 +673,9 @@ export default function HomePage() {
       {/* ═══════════════════════════════════════════════
           WHAT USERS ARE TARGETING — Goal stats grid
       ═══════════════════════════════════════════════ */}
-      <section className="py-24 bg-gray-50 border-y border-gray-200">
+      <section className="py-12 sm:py-24 bg-gray-50 border-y border-gray-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
+          <div className="text-center mb-10 sm:mb-16">
             <p className="text-amber-600 text-xs font-bold uppercase tracking-widest mb-3">Community Goals</p>
             <h2 className="text-4xl sm:text-5xl font-black text-gray-900 mb-4">
               What Our Users Are <span className="gradient-text">Targeting</span>
@@ -738,9 +738,9 @@ export default function HomePage() {
       {/* ═══════════════════════════════════════════════
           FEATURED STACKS — Horizontal scroll feel
       ═══════════════════════════════════════════════ */}
-      <section className="py-24 bg-white grid-bg">
+      <section className="py-12 sm:py-24 bg-white grid-bg">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-end justify-between mb-14">
+          <div className="flex items-end justify-between mb-10 sm:mb-14">
             <div>
               <p className="text-amber-600 text-xs font-bold uppercase tracking-widest mb-3">Proven Combinations</p>
               <h2 className="text-4xl sm:text-5xl font-black text-gray-900">
@@ -801,9 +801,9 @@ export default function HomePage() {
       {/* ═══════════════════════════════════════════════
           PRODUCT SHOWCASE
       ═══════════════════════════════════════════════ */}
-      <section className="py-24 bg-gray-50 border-y border-gray-200">
+      <section className="py-12 sm:py-24 bg-gray-50 border-y border-gray-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-end justify-between mb-14">
+          <div className="flex items-end justify-between mb-10 sm:mb-14">
             <div>
               <p className="text-amber-600 text-xs font-bold uppercase tracking-widest mb-3">COA-Verified · Research Grade</p>
               <h2 className="text-4xl sm:text-5xl font-black text-gray-900">
@@ -837,7 +837,7 @@ export default function HomePage() {
           </div>
 
           <div className="flex flex-wrap gap-4 justify-center">
-            <Link href="/products" className="btn-secondary text-base px-8 py-4">View All 20 Peptides</Link>
+            <Link href="/products" className="btn-secondary text-base px-8 py-4">View All {products.length} Peptides</Link>
             <a href={SOURCE_URL} target="_blank" rel="nofollow noopener noreferrer" className="btn-cta text-base px-8 py-4 flex items-center gap-2">
               Shop Phiogen <ArrowRight className="w-5 h-5" />
             </a>
@@ -848,9 +848,9 @@ export default function HomePage() {
       {/* ═══════════════════════════════════════════════
           RECENT GUIDES — 6 article cards
       ═══════════════════════════════════════════════ */}
-      <section className="py-24 bg-white grid-bg">
+      <section className="py-12 sm:py-24 bg-white grid-bg">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-end justify-between mb-14">
+          <div className="flex items-end justify-between mb-10 sm:mb-14">
             <div>
               <p className="text-amber-600 text-xs font-bold uppercase tracking-widest mb-3">In-Depth Content</p>
               <h2 className="text-4xl sm:text-5xl font-black text-gray-900">
@@ -901,9 +901,9 @@ export default function HomePage() {
       {/* ═══════════════════════════════════════════════
           WHY SOURCE QUALITY MATTERS
       ═══════════════════════════════════════════════ */}
-      <section className="py-24 bg-gray-50 border-y border-gray-200">
+      <section className="py-12 sm:py-24 bg-gray-50 border-y border-gray-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
+          <div className="text-center mb-10 sm:mb-16">
             <p className="text-amber-600 text-xs font-bold uppercase tracking-widest mb-3">Sourcing Integrity</p>
             <h2 className="text-4xl sm:text-5xl font-black text-gray-900 mb-4">
               Why Source Quality <span className="gradient-text">Matters</span>
@@ -954,9 +954,9 @@ export default function HomePage() {
       {/* ═══════════════════════════════════════════════
           SOCIAL PROOF — Testimonials + Stars
       ═══════════════════════════════════════════════ */}
-      <section className="py-24 bg-white">
+      <section className="py-12 sm:py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-14">
+          <div className="text-center mb-10 sm:mb-14">
             <p className="text-amber-600 text-xs font-bold uppercase tracking-widest mb-3">Real Results</p>
             <h2 className="text-4xl sm:text-5xl font-black text-gray-900">
               What Users <span className="gradient-text">Experience</span>
@@ -985,9 +985,9 @@ export default function HomePage() {
       {/* ═══════════════════════════════════════════════
           FAQ
       ═══════════════════════════════════════════════ */}
-      <section className="py-24 bg-gray-50 border-y border-gray-200">
+      <section className="py-12 sm:py-24 bg-gray-50 border-y border-gray-200">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-14">
+          <div className="text-center mb-10 sm:mb-14">
             <p className="text-amber-600 text-xs font-bold uppercase tracking-widest mb-3">Quick Answers</p>
             <h2 className="text-4xl sm:text-5xl font-black text-gray-900">
               Common <span className="gradient-text">Questions</span>
@@ -1012,7 +1012,7 @@ export default function HomePage() {
       {/* ═══════════════════════════════════════════════
           FINAL CTA — Full-width banner
       ═══════════════════════════════════════════════ */}
-      <section className="relative py-28 overflow-hidden bg-amber-50">
+      <section className="relative py-16 sm:py-28 overflow-hidden bg-amber-50">
         <div className="absolute inset-0">
           <div className="absolute top-0 left-1/4 w-96 h-96 bg-amber-400/15 rounded-full blur-[100px]" />
           <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-yellow-300/15 rounded-full blur-[100px]" />
@@ -1021,11 +1021,11 @@ export default function HomePage() {
 
         <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <Award className="w-12 h-12 text-amber-500 mx-auto mb-6" />
-          <h2 className="text-5xl sm:text-6xl font-black text-gray-900 mb-4 leading-tight">
+          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black text-gray-900 mb-4 leading-tight">
             Stop Waiting.<br />
             <span className="gradient-text">Start Healing.</span>
           </h2>
-          <p className="text-gray-700 text-xl leading-relaxed mb-10 max-w-xl mx-auto">
+          <p className="text-gray-700 text-lg sm:text-xl leading-relaxed mb-8 sm:mb-10 max-w-xl mx-auto">
             COA-verified peptides, US domestic shipping, and the most trusted name in peptides.
             Your protocol starts here.
           </p>

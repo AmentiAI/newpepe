@@ -111,7 +111,7 @@ export default function BodyCompositionPage() {
                 <TrendingUp className="w-4 h-4 text-blue-600" />
                 <span className="text-blue-600 text-sm font-semibold tracking-wide">BODY RECOMPOSITION PROTOCOLS</span>
               </div>
-              <h1 className="text-5xl sm:text-6xl font-black text-gray-900 leading-tight mb-6">
+              <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black text-gray-900 leading-tight mb-6">
                 Burn Fat.<br />
                 Build Muscle.<br />
                 <span className="text-blue-600">Simultaneously.</span>

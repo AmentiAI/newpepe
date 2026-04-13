@@ -107,7 +107,7 @@ export default function HealingPage() {
                 <Shield className="w-4 h-4 text-emerald-600" />
                 <span className="text-emerald-600 text-xs font-bold tracking-wide">HEALING PEPTIDE PROTOCOLS</span>
               </div>
-              <h1 className="text-5xl sm:text-6xl font-black text-gray-900 leading-tight mb-6">
+              <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black text-gray-900 leading-tight mb-6">
                 Heal Injuries<br />
                 <span style={{ color: '#00ff88' }}>2–4× Faster</span><br />
                 <span className="text-gray-700 text-3xl font-bold">Than Nature Alone</span>

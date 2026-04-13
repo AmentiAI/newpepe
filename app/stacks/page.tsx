@@ -167,7 +167,7 @@ export default function StacksPage() {
             <Layers className="w-4 h-4 text-amber-600" />
             <span className="text-sm font-semibold tracking-wide text-amber-600">EXPERT-DESIGNED PEPTIDE STACKS</span>
           </div>
-          <h1 className="text-5xl sm:text-7xl font-black text-gray-900 leading-tight mb-6">
+          <h1 className="text-4xl sm:text-5xl lg:text-7xl font-black text-gray-900 leading-tight mb-6">
             Peptide<br />
             <span className="text-amber-600">Stack Protocols</span>
           </h1>

@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
-import Image from 'next/image';
 import Link from 'next/link';
+import ProductImage from '@/components/ProductImage';
 import { ArrowRight, CheckCircle, FlaskConical, Microscope, Shield, Zap, Flame, Star } from 'lucide-react';
 import { products, getProductBySlug, getRelatedProducts } from '@/lib/products';
 import ProductCard from '@/components/ProductCard';
@@ -191,16 +191,16 @@ export default function ProductPage({ params }: Props) {
         </div>
 
         {/* Product Hero */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 mb-12 lg:mb-16">
           {/* Image */}
           <div className="relative h-80 lg:h-[480px] rounded-2xl overflow-hidden"
             style={{ border: `1px solid ${theme.accentColor}40`, boxShadow: `0 0 60px ${theme.glow}` }}>
-            <Image
+            <ProductImage
               src={product.image}
               alt={product.name}
               fill
-              className="object-contain p-8"
               priority
+              className="object-contain p-8"
               sizes="(max-width: 1024px) 100vw, 50vw"
             />
             <div className={`absolute inset-0 bg-gradient-to-t ${theme.heroBg}`} />
@@ -217,8 +217,8 @@ export default function ProductPage({ params }: Props) {
               <FlaskConical className={`w-4 h-4 ${theme.accentLight}`} />
               <span className={`${theme.accentLight} text-sm font-mono font-semibold`}>{product.category.toUpperCase()}</span>
             </div>
-            <h1 className="text-4xl sm:text-5xl font-black text-gray-900 mb-2 leading-tight">Buy {product.name}</h1>
-            <p className={`text-xl ${theme.accentLight} font-bold mb-4`}>{product.tagline}</p>
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black text-gray-900 mb-2 leading-tight">Buy {product.name}</h1>
+            <p className={`text-lg sm:text-xl ${theme.accentLight} font-bold mb-4`}>{product.tagline}</p>
             <p className="text-gray-700 leading-relaxed mb-6 text-base">{product.shortDescription}</p>
 
             {/* Benefits preview */}
@@ -234,7 +234,7 @@ export default function ProductPage({ params }: Props) {
             {/* Price + CTA */}
             <div className="rounded-xl p-5 mb-4 bg-gray-50 border border-gray-200">
               <div className="flex items-center gap-3 mb-4">
-                <span className="text-4xl font-black text-gray-900">${product.price}</span>
+                <span className="text-3xl sm:text-4xl font-black text-gray-900">${product.price}</span>
                 <div>
                   <div className="text-gray-500 text-xs font-medium">COA Verified · Third-Party Tested</div>
                   <div className={`${theme.accentLight} text-xs font-bold`}>US Domestic Shipping</div>

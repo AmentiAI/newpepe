@@ -111,7 +111,7 @@ export default function AntiAgingPage() {
             <Sparkles className="w-4 h-4 text-amber-600" />
             <span className="text-amber-600 text-sm font-bold tracking-wide">LONGEVITY & ANTI-AGING PROTOCOLS</span>
           </div>
-          <h1 className="text-5xl sm:text-7xl font-black text-gray-900 leading-tight mb-6">
+          <h1 className="text-4xl sm:text-5xl lg:text-7xl font-black text-gray-900 leading-tight mb-6">
             Don&apos;t Just Live<br />
             <span style={{ color: '#d97706' }}>Live Younger.</span>
           </h1>

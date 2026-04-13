@@ -1,7 +1,7 @@
 import Link from 'next/link';
-import Image from 'next/image';
 import { ArrowRight, Tag } from 'lucide-react';
 import type { Product } from '@/lib/products';
+import ProductImage from '@/components/ProductImage';
 
 interface Props {
   product: Product;
@@ -21,7 +21,7 @@ export default function ProductCard({ product }: Props) {
     <div className="glass-card overflow-hidden group hover:border-amber-300 transition-all duration-300">
       {/* Image */}
       <div className="relative h-64 overflow-hidden bg-gray-50">
-        <Image
+        <ProductImage
           src={product.image}
           alt={product.name}
           fill

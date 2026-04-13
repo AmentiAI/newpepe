@@ -1,10 +1,10 @@
 'use client';
 import { useState, useEffect, useRef, useMemo } from 'react';
 import { useRouter } from 'next/navigation';
-import Image from 'next/image';
 import Link from 'next/link';
 import { Search, X, ArrowRight, Command } from 'lucide-react';
 import { products } from '@/lib/products';
+import ProductImage from '@/components/ProductImage';
 
 const categoryColor: Record<string, string> = {
   Healing: 'bg-emerald-50 text-emerald-700 border-emerald-200',
@@ -166,7 +166,7 @@ export default function SearchModal() {
                     >
                       {/* Thumbnail */}
                       <div className="w-14 h-14 rounded-xl bg-gray-50 border border-gray-100 flex-shrink-0 overflow-hidden relative">
-                        <Image
+                        <ProductImage
                           src={p.image}
                           alt={p.name}
                           fill

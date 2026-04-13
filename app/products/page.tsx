@@ -1,484 +1,158 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import { ArrowRight, Tag, FlaskConical } from 'lucide-react';
 import { products } from '@/lib/products';
-import ProductCard from '@/components/ProductCard';
-import {
-  ArrowRight, FlaskConical, Shield, Zap, TrendingUp, Scale,
-  Brain, CheckCircle, Package, Layers,
-  HelpCircle, Star, AlertCircle,
-} from 'lucide-react';
+import ProductImage from '@/components/ProductImage';
 
 export const metadata: Metadata = {
-  title: 'All Peptides | BPC-157, TB-500, Ipamorelin & More | BPC-157 Stack',
-  description: 'Complete peptide catalog with protocols and dosing guides. BPC-157, TB-500, GHK-Cu, Ipamorelin, Epithalon, and more.',
+  title: 'All Peptides & Research Compounds | BPC-157 Stack',
+  description: 'Complete catalog of 140+ research peptides — BPC-157, TB-500, GLP-1 agonists, SARMs, nootropics, anti-aging compounds and more. Shop from Phiogen.',
 };
 
-const SOURCE_URL = 'https://phiogen.is/?ref=PEPS';
-
-const goalCards = [
-  {
-    icon: Shield,
-    goal: 'Healing',
-    tagline: 'Recover from injuries faster',
-    topPeptides: [
-      { name: 'BPC-157', slug: 'bpc-157', note: 'Local tissue repair, gut, tendons' },
-      { name: 'TB-500', slug: 'tb-500', note: 'Systemic stem cell mobilization' },
-    ],
-    color: 'emerald',
-  },
-  {
-    icon: Zap,
-    goal: 'Anti-Aging',
-    tagline: 'Reverse biological age markers',
-    topPeptides: [
-      { name: 'Epithalon', slug: 'epithalon', note: 'Telomere extension, longevity' },
-      { name: 'GHK-Cu', slug: 'ghk-cu', note: 'Gene expression reset' },
-    ],
-    color: 'purple',
-  },
-  {
-    icon: TrendingUp,
-    goal: 'Body Comp',
-    tagline: 'Fat loss with muscle retention',
-    topPeptides: [
-      { name: 'Ipamorelin', slug: 'ipamorelin-cjc-1295', note: 'Clean GH pulse, no cortisol spike' },
-      { name: 'CJC-1295', slug: 'ipamorelin-cjc-1295', note: 'GHRH amplifier for synergy' },
-    ],
-    color: 'blue',
-  },
-  {
-    icon: Scale,
-    goal: 'Weight Loss',
-    tagline: 'GLP-1 mediated fat reduction',
-    topPeptides: [
-      { name: 'Semaglutide', slug: 'semaglutide', note: 'GLP-1 agonist, appetite control' },
-      { name: 'Tirzepatide', slug: 'tirzepatide', note: 'Dual GIP/GLP-1, strongest data' },
-    ],
-    color: 'amber',
-  },
-  {
-    icon: Brain,
-    goal: 'Cognitive',
-    tagline: 'Focus, clarity, anxiety relief',
-    topPeptides: [
-      { name: 'Semax', slug: 'semax', note: 'BDNF elevation, neuroplasticity' },
-      { name: 'Selank', slug: 'selank', note: 'Anxiolytic without sedation' },
-    ],
-    color: 'rose',
-  },
-];
-
-const categoryDescriptions: Record<string, { heading: string; body: string }> = {
-  Healing: {
-    heading: 'Accelerate Recovery at the Cellular Level',
-    body: 'Healing peptides work by directly modulating the biological pathways responsible for tissue regeneration — upregulating growth factor receptors, improving local blood flow through nitric oxide synthesis, and mobilizing repair cells to damaged areas. Unlike NSAIDs or corticosteroids that mask pain by suppressing inflammation, these peptides repair underlying structural damage. BPC-157 is the most studied entry point; TB-500 provides systemic reach that complements local action.',
-  },
-  'Anti-Aging': {
-    heading: 'Target the Root Mechanisms of Aging',
-    body: 'Anti-aging peptides intervene at the molecular level — extending telomere length, resetting age-related gene expression patterns, and repairing mitochondrial membrane function. Epithalon\'s effect on telomerase activation is the most clinically documented telomere intervention available outside of gene therapy. GHK-Cu resets transcriptional programs in aging tissue. These are not cosmetic tweaks; they address the hallmarks of cellular aging directly.',
-  },
-  'Body Composition': {
-    heading: 'Growth Hormone Secretagogues Explained',
-    body: 'Body composition peptides in this category are GH secretagogues — compounds that stimulate the pituitary to produce and release growth hormone naturally, rather than introducing exogenous HGH. This preserves the normal pulsatile release pattern that is safer long-term, avoids pituitary suppression, and costs a fraction of pharmaceutical HGH. Ipamorelin combined with CJC-1295 produces synergistic GH pulses 8-10x greater than either peptide alone.',
-  },
-  'Weight Loss': {
-    heading: 'GLP-1 Receptor Agonists: How They Work',
-    body: 'Weight loss peptides in this category are GLP-1 (glucagon-like peptide-1) receptor agonists — they mimic a natural gut hormone that signals satiety, slows gastric emptying, and reduces appetite. Semaglutide was the first to dominate headlines; Tirzepatide adds dual GIP receptor agonism for stronger efficacy; Retatrutide adds a third mechanism (GIP + GLP-1 + glucagon). These are the most clinically validated weight loss compounds in existence.',
-  },
-  Supplies: {
-    heading: 'Proper Reconstitution Is Non-Negotiable',
-    body: 'Peptides arrive in lyophilized (freeze-dried) powder form and must be reconstituted with bacteriostatic water before use. The reconstitution process affects peptide stability, potency, and sterility. Using the wrong diluent, improper mixing technique, or contaminated supplies can degrade your peptide or introduce infection risk. Every protocol on this site assumes correct reconstitution — supplies are not optional.',
-  },
+const categoryColor: Record<string, string> = {
+  Healing: 'bg-emerald-50 text-emerald-700 border-emerald-200',
+  'Anti-Aging': 'bg-amber-50 text-amber-700 border-amber-200',
+  'Body Composition': 'bg-blue-50 text-blue-700 border-blue-200',
+  'Weight Loss': 'bg-rose-50 text-rose-700 border-rose-200',
+  Cognitive: 'bg-cyan-50 text-cyan-700 border-cyan-200',
+  Supplies: 'bg-gray-100 text-gray-600 border-gray-200',
 };
 
-const productFaqs = [
-  {
-    q: 'How are these peptides tested for purity?',
-    a: 'Every peptide from our recommended supplier is tested by an independent, accredited third-party laboratory using High-Performance Liquid Chromatography (HPLC) and mass spectrometry (MS). The Certificate of Analysis (COA) confirms identity, purity percentage (98%+), and a heavy metals panel. COAs are batch-specific and available on request.',
-  },
-  {
-    q: "What's the minimum order to try a peptide?",
-    a: 'Most peptides are available in single vials — there is no minimum order beyond one unit. BPC-157 at 10mg and TB-500 at 10mg are the most common entry quantities. A single 10mg vial of BPC-157 is enough for a 4-6 week beginner protocol at 250-500mcg/day.',
-  },
-  {
-    q: 'How long does shipping take from US domestic?',
-    a: 'Phiogen ships from within the United States. Standard shipping is 3-5 business days; expedited options are available. Lyophilized peptides are stable at room temperature for weeks, so standard shipping is sufficient. Reconstituted peptides should be refrigerated immediately on arrival.',
-  },
-  {
-    q: 'Can I use multiple peptides at once?',
-    a: 'Yes — stacking peptides is common and often produces synergistic results. BPC-157 + TB-500 is the most popular combination. However, beginners should start with a single peptide to establish baseline response before adding a second. See our stacks page for vetted combinations with specific dosing protocols.',
-  },
-  {
-    q: 'What is the shelf life of lyophilized peptides?',
-    a: 'Lyophilized (freeze-dried) peptides stored refrigerated (2-8°C) are typically stable for 18-24 months. Stored in a freezer (-20°C) they can last 2+ years. Once reconstituted with bacteriostatic water, the solution should be refrigerated and used within 4-6 weeks. Never freeze a reconstituted peptide solution.',
-  },
-  {
-    q: 'Do I need a prescription?',
-    a: 'These peptides are sold for research purposes. In the United States, they are not FDA-approved pharmaceutical drugs and do not require a prescription for research use. Legal status varies by country. BPC-157\'s regulatory situation has evolved — see our "Is BPC-157 Legal?" guide for the current 2026 status.',
-  },
-];
+const categoryOrder = ['Healing', 'Anti-Aging', 'Body Composition', 'Weight Loss', 'Cognitive', 'Supplies'];
 
 export default function ProductsPage() {
-  const categorized: Record<string, ReturnType<typeof products.filter>> = {
-    Healing: products.filter((p) => p.category === 'Healing'),
-    'Anti-Aging': products.filter((p) => p.category === 'Anti-Aging'),
-    'Body Composition': products.filter((p) => p.category === 'Body Composition'),
-    'Weight Loss': products.filter((p) => p.category === 'Weight Loss'),
-    Supplies: products.filter((p) => p.category === 'Supplies'),
-  };
+  const categories = categoryOrder.filter(cat =>
+    products.some(p => p.category === cat)
+  );
 
-  const colorMap: Record<string, string> = {
-    emerald: 'text-emerald-600 bg-emerald-50 border-emerald-200 hover:border-emerald-400',
-    purple: 'text-blue-600 bg-blue-50 border-blue-200 hover:border-blue-400',
-    blue: 'text-blue-600 bg-blue-50 border-blue-200 hover:border-blue-400',
-    amber: 'text-amber-600 bg-amber-50 border-amber-200 hover:border-amber-400',
-    rose: 'text-rose-600 bg-rose-50 border-rose-200 hover:border-rose-400',
-  };
-  const iconBg: Record<string, string> = {
-    emerald: 'bg-emerald-50 text-emerald-600',
-    purple: 'bg-blue-50 text-blue-600',
-    blue: 'bg-blue-50 text-blue-600',
-    amber: 'bg-amber-50 text-amber-600',
-    rose: 'bg-rose-50 text-rose-600',
-  };
+  const grouped: Record<string, typeof products> = {};
+  for (const cat of categories) {
+    grouped[cat] = products.filter(p => p.category === cat);
+  }
 
   return (
-    <div className="bg-white min-h-screen pt-24 pb-20">
+    <main className="min-h-screen bg-white pt-24 pb-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-        {/* ═══════════════════════════════════════════════
-            HEADER
-        ═══════════════════════════════════════════════ */}
-        <div className="text-center mb-16">
-          <div className="inline-flex items-center gap-2 bg-amber-50 border border-amber-200 rounded-full px-4 py-2 mb-6">
-            <FlaskConical className="w-4 h-4 text-amber-600" />
-            <span className="text-amber-600 text-sm font-medium">Complete Peptide Catalog</span>
+        {/* Header */}
+        <div className="mb-10">
+          <div className="flex items-center gap-2 mb-3">
+            <FlaskConical className="w-5 h-5 text-amber-500" />
+            <span className="text-amber-600 font-bold text-sm uppercase tracking-widest">Full Catalog</span>
           </div>
-          <h1 className="text-4xl sm:text-5xl font-black text-gray-900 mb-4">
-            Our <span className="gradient-text">Peptides</span>
+          <h1 className="text-4xl sm:text-5xl font-black text-gray-900 mb-3">
+            All {products.length} Peptides
           </h1>
-          <p className="text-gray-700 text-lg max-w-2xl mx-auto">
-            Every peptide with full protocols, dosing guides, and stack recommendations.
-            COA-verified, third-party tested, US domestic.
+          <p className="text-gray-600 text-lg max-w-2xl">
+            Complete research compound catalog — healing peptides, GLP-1 agonists, growth hormone secretagogues, nootropics, anti-aging compounds, and SARMs.
           </p>
-        </div>
 
-        {/* ═══════════════════════════════════════════════
-            NEW TO PEPTIDES? — Beginner featured card
-        ═══════════════════════════════════════════════ */}
-        <div className="mb-14 glass-card p-8 border-amber-200 relative overflow-hidden">
-          {/* Background glow */}
-          <div className="absolute top-0 right-0 w-64 h-64 bg-amber-50 rounded-full blur-3xl pointer-events-none" />
-
-          <div className="relative flex flex-col lg:flex-row gap-8 items-start lg:items-center">
-            <div className="flex-1">
-              <div className="inline-flex items-center gap-2 bg-amber-50 border border-amber-200 rounded-full px-3 py-1 mb-4">
-                <Star className="w-3.5 h-3.5 text-amber-600" />
-                <span className="text-amber-600 text-xs font-semibold uppercase tracking-widest">New to Peptides?</span>
-              </div>
-              <h2 className="text-2xl sm:text-3xl font-black text-gray-900 mb-3">
-                Start Here: <span className="text-amber-600">BPC-157</span>
-              </h2>
-              <p className="text-gray-700 leading-relaxed mb-5 max-w-2xl">
-                If you are new to peptides, BPC-157 is the universally recommended entry point — and for good reason.
-                It has no known lethal dose, zero hormonal activity, works orally (no injections required), covers more
-                conditions than any other single peptide, and has 100+ published studies. Start with BPC-157 alone for
-                4-8 weeks, assess your response, then layer in additional peptides if needed.
-              </p>
-              <div className="flex flex-wrap gap-3">
-                <Link href="/guide" className="btn-secondary text-sm px-5 py-2.5 flex items-center gap-1.5">
-                  Read the Beginner Guide <ArrowRight className="w-4 h-4" />
-                </Link>
-                <Link href="/products/bpc-157" className="btn-secondary text-sm px-5 py-2.5 flex items-center gap-1.5">
-                  BPC-157 Full Protocol <ArrowRight className="w-4 h-4" />
-                </Link>
-                <Link href="/faq" className="btn-secondary text-sm px-5 py-2.5">
-                  FAQ
-                </Link>
-              </div>
-            </div>
-            <div className="shrink-0 flex flex-col gap-3 lg:items-end">
-              <Link href="/stacks" className="btn-cta text-sm px-6 py-3 flex items-center gap-2">
-                Compare All Stacks <ArrowRight className="w-4 h-4" />
-              </Link>
-              <p className="text-gray-500 text-xs lg:text-right max-w-[180px]">
-                Not sure which peptides to combine? Our stacks page has pre-built protocols.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        {/* ═══════════════════════════════════════════════
-            HOW TO CHOOSE — Goal decision guide
-        ═══════════════════════════════════════════════ */}
-        <div className="mb-16">
-          <div className="mb-8">
-            <p className="text-amber-600 text-xs font-semibold uppercase tracking-widest mb-2">Decision Guide</p>
-            <h2 className="text-3xl sm:text-4xl font-black text-gray-900 mb-3">
-              How to Choose a <span className="gradient-text">Peptide</span>
-            </h2>
-            <p className="text-gray-700 max-w-2xl">
-              Not sure where to start? Match your primary goal to the peptides designed for it.
-              Each card shows the top two options for that objective.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4 mb-6">
-            {goalCards.map(({ icon: Icon, goal, tagline, topPeptides, color }) => (
-              <div
-                key={goal}
-                className={`glass-card p-5 flex flex-col gap-4 border transition-all duration-200 ${colorMap[color]}`}
+          {/* Category jump links */}
+          <div className="flex flex-wrap gap-2 mt-6">
+            {categories.map(cat => (
+              <a
+                key={cat}
+                href={`#${cat.toLowerCase().replace(/\s+/g, '-')}`}
+                className={`text-xs font-bold px-3 py-1.5 rounded-full border transition-colors ${categoryColor[cat] ?? 'bg-gray-100 text-gray-600 border-gray-200'}`}
               >
-                <div className={`w-9 h-9 rounded-xl flex items-center justify-center ${iconBg[color]}`}>
-                  <Icon className="w-4.5 h-4.5" />
-                </div>
-                <div>
-                  <h3 className="text-gray-900 font-bold text-lg mb-0.5">{goal}</h3>
-                  <p className="text-gray-600 text-xs">{tagline}</p>
-                </div>
-                <div className="space-y-2">
-                  {topPeptides.map(({ name, slug, note }) => (
-                    <Link
-                      key={slug}
-                      href={`/products/${slug}`}
-                      className="block bg-gray-100 rounded-lg px-3 py-2 hover:bg-gray-200 transition-colors group"
-                    >
-                      <p className="text-gray-900 text-xs font-bold group-hover:text-amber-600 transition-colors">{name}</p>
-                      <p className="text-gray-600 text-xs leading-tight mt-0.5">{note}</p>
-                    </Link>
-                  ))}
-                </div>
-              </div>
+                {cat} <span className="opacity-60">({grouped[cat].length})</span>
+              </a>
             ))}
           </div>
-
-          {/* Stack quiz callout */}
-          <div className="flex items-center gap-4 p-5 rounded-2xl border border-amber-200 bg-amber-50">
-            <AlertCircle className="w-5 h-5 text-amber-600 shrink-0" />
-            <p className="text-gray-800 text-sm">
-              <span className="text-gray-900 font-bold">Not sure which goal fits you?</span>{' '}
-              Our stacks page organizes everything by condition and goal with detailed explanations.
-            </p>
-            <Link href="/stacks" className="btn-cta text-xs px-4 py-2 shrink-0 flex items-center gap-1">
-              Take the Stack Quiz <ArrowRight className="w-3.5 h-3.5" />
-            </Link>
-          </div>
         </div>
 
-        {/* ═══════════════════════════════════════════════
-            PEPTIDE STACKS vs SINGLE PEPTIDES
-        ═══════════════════════════════════════════════ */}
-        <div className="mb-16 glass-card p-8">
-          <div className="mb-8">
-            <p className="text-amber-600 text-xs font-semibold uppercase tracking-widest mb-2">Strategy</p>
-            <h2 className="text-3xl font-black text-gray-900 mb-2">
-              Stacks vs Single Peptides
-            </h2>
-            <p className="text-gray-700 text-base max-w-2xl">
-              Understanding when to use one peptide versus a combination changes your results and your budget.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-            {/* Single peptide column */}
-            <div className="rounded-2xl border border-blue-200 bg-blue-50 p-6">
-              <div className="flex items-center gap-3 mb-5">
-                <div className="w-9 h-9 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center">
-                  <FlaskConical className="w-4.5 h-4.5" />
-                </div>
-                <h3 className="text-gray-900 font-bold text-lg">Single Peptide</h3>
+        {/* Category sections */}
+        {categories.map(cat => (
+          <section
+            key={cat}
+            id={cat.toLowerCase().replace(/\s+/g, '-')}
+            className="mb-16 scroll-mt-24"
+          >
+            <div className="flex items-center justify-between mb-6">
+              <div className="flex items-center gap-3">
+                <span className={`text-xs font-black px-3 py-1 rounded-full border ${categoryColor[cat] ?? 'bg-gray-100 text-gray-600 border-gray-200'}`}>
+                  {cat}
+                </span>
+                <h2 className="text-2xl font-black text-gray-900">{grouped[cat].length} products</h2>
               </div>
-              <ul className="space-y-3 mb-5">
-                {[
-                  'Best for beginners — clear feedback on what is working',
-                  'Lower cost: one vial per cycle',
-                  'Simpler protocol — one injection site, one dosing schedule',
-                  'Easier to identify side effects or sensitivities',
-                  'Recommended entry point: BPC-157 alone for 4-8 weeks',
-                ].map((item) => (
-                  <li key={item} className="flex items-start gap-2 text-gray-700 text-base">
-                    <CheckCircle className="w-4 h-4 text-blue-600 mt-0.5 shrink-0" />
-                    {item}
-                  </li>
-                ))}
-              </ul>
-              <p className="text-blue-600 text-xs font-semibold uppercase tracking-wider">
-                Best for: First-timers, budget-conscious users, specific targeted issues
-              </p>
             </div>
 
-            {/* Stack column */}
-            <div className="rounded-2xl border border-amber-200 bg-amber-50 p-6">
-              <div className="flex items-center gap-3 mb-5">
-                <div className="w-9 h-9 rounded-xl bg-amber-50 text-amber-600 flex items-center justify-center">
-                  <Layers className="w-4.5 h-4.5" />
-                </div>
-                <h3 className="text-gray-900 font-bold text-lg">Peptide Stack</h3>
-              </div>
-              <ul className="space-y-3 mb-5">
-                {[
-                  'Synergistic effects — BPC-157 + TB-500 heal 2x faster than either alone',
-                  'Address multiple pathways simultaneously',
-                  'Better for advanced goals: body comp, full anti-aging protocols',
-                  'More cost effective per outcome for intermediate users',
-                  'Pre-built stacks available with exact dosing — no guesswork',
-                ].map((item) => (
-                  <li key={item} className="flex items-start gap-2 text-gray-700 text-base">
-                    <CheckCircle className="w-4 h-4 text-amber-600 mt-0.5 shrink-0" />
-                    {item}
-                  </li>
-                ))}
-              </ul>
-              <p className="text-amber-600 text-xs font-semibold uppercase tracking-wider">
-                Best for: Intermediate users, serious goals, faster outcomes
-              </p>
-            </div>
-          </div>
-
-          {/* Comparison table */}
-          <div className="overflow-x-auto mb-6">
-            <table className="w-full text-sm">
-              <thead>
-                <tr className="border-b border-gray-200">
-                  <th className="text-left text-gray-600 font-semibold pb-3 pr-4">Factor</th>
-                  <th className="text-center text-blue-600 font-semibold pb-3 px-4">Single Peptide</th>
-                  <th className="text-center text-amber-600 font-semibold pb-3 px-4">Stack</th>
-                </tr>
-              </thead>
-              <tbody className="divide-y divide-gray-100">
-                {[
-                  ['Monthly cost (est.)', '$50-70', '$80-140'],
-                  ['Protocol complexity', 'Low', 'Medium'],
-                  ['Time to results', '2-4 weeks', '1-3 weeks (synergy)'],
-                  ['Recommended for beginners', 'Yes', 'After 1 solo cycle'],
-                  ['Maximum effect ceiling', 'Moderate', 'High'],
-                ].map(([factor, single, stack]) => (
-                  <tr key={factor}>
-                    <td className="text-gray-700 py-3 pr-4">{factor}</td>
-                    <td className="text-center text-gray-800 py-3 px-4">{single}</td>
-                    <td className="text-center text-gray-800 py-3 px-4">{stack}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-
-          <Link href="/stacks" className="btn-cta text-sm px-7 py-3 inline-flex items-center gap-2">
-            Browse All Pre-Built Stacks <ArrowRight className="w-4 h-4" />
-          </Link>
-        </div>
-
-        {/* ═══════════════════════════════════════════════
-            BY CATEGORY — with intro paragraphs
-        ═══════════════════════════════════════════════ */}
-        {Object.entries(categorized).map(([category, prods]) =>
-          prods.length > 0 ? (
-            <div key={category} className="mb-20">
-              {/* Category header */}
-              <div className="mb-8">
-                <h2 className="text-2xl font-bold text-gray-900 mb-1 flex items-center gap-3">
-                  <span className="w-2 h-6 bg-amber-600 rounded-full inline-block" />
-                  {category === 'Supplies' ? 'Reconstitution Supplies' : `${category} Peptides`}
-                </h2>
-                {categoryDescriptions[category] && (
-                  <div className="mt-4 pl-5 border-l border-amber-200">
-                    <p className="text-amber-600 text-sm font-semibold mb-1.5">
-                      {categoryDescriptions[category].heading}
-                    </p>
-                    <p className="text-gray-700 text-base leading-relaxed max-w-3xl">
-                      {categoryDescriptions[category].body}
-                    </p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
+              {grouped[cat].map(product => (
+                <div
+                  key={product.slug}
+                  className="bg-white border border-gray-200 rounded-2xl overflow-hidden hover:border-amber-300 hover:shadow-md transition-all duration-200 group flex flex-col"
+                >
+                  {/* Image */}
+                  <div className="relative h-44 bg-gray-50 overflow-hidden flex-shrink-0">
+                    <ProductImage
+                      src={product.image}
+                      alt={product.name}
+                      fill
+                      className="object-contain p-4 group-hover:scale-105 transition-transform duration-300"
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                    />
                   </div>
-                )}
-              </div>
 
-              {/* Product grid */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                {prods.map((product) => (
-                  <ProductCard key={product.slug} product={product} />
-                ))}
-              </div>
-            </div>
-          ) : null
-        )}
+                  {/* Content */}
+                  <div className="p-4 flex flex-col flex-1">
+                    <h3 className="text-gray-900 font-black text-base leading-tight mb-1 group-hover:text-amber-600 transition-colors">
+                      {product.name}
+                    </h3>
+                    <p className="text-amber-600 text-xs font-bold mb-2 leading-tight">{product.tagline}</p>
+                    <p className="text-gray-600 text-xs leading-relaxed mb-3 line-clamp-2 flex-1">
+                      {product.shortDescription}
+                    </p>
 
-        {/* ═══════════════════════════════════════════════
-            FAQ — Products page specific
-        ═══════════════════════════════════════════════ */}
-        <div className="mb-14">
-          <div className="mb-10">
-            <p className="text-amber-600 text-xs font-semibold uppercase tracking-widest mb-2">Common Questions</p>
-            <h2 className="text-3xl sm:text-4xl font-black text-gray-900 mb-3">
-              Frequently Asked <span className="gradient-text">Questions</span>
-            </h2>
-            <p className="text-gray-700 max-w-xl">
-              Questions specific to ordering, sourcing, and using peptides from this catalog.
-            </p>
-          </div>
+                    {/* Tags */}
+                    <div className="flex flex-wrap gap-1 mb-3">
+                      {product.tags.slice(0, 3).map(tag => (
+                        <span key={tag} className="flex items-center gap-0.5 text-xs text-gray-500 bg-gray-100 px-1.5 py-0.5 rounded">
+                          <Tag className="w-2.5 h-2.5" />{tag}
+                        </span>
+                      ))}
+                    </div>
 
-          <div className="space-y-3">
-            {productFaqs.map(({ q, a }, i) => (
-              <div key={i} className="glass-card p-6 border-l-2 border-amber-400">
-                <div className="flex items-start gap-3">
-                  <HelpCircle className="w-4.5 h-4.5 text-amber-600 mt-0.5 shrink-0" />
-                  <div>
-                    <h3 className="text-gray-900 font-black text-lg mb-2">{q}</h3>
-                    <p className="text-gray-700 text-base leading-relaxed">{a}</p>
+                    {/* Price + CTA */}
+                    <div className="flex items-center justify-between mt-auto pt-3 border-t border-gray-100">
+                      <span className="text-gray-900 font-black text-lg">${product.price}</span>
+                      <div className="flex gap-1.5">
+                        <Link
+                          href={`/products/${product.slug}`}
+                          className="text-xs font-bold px-2.5 py-1.5 rounded-lg border border-gray-200 text-gray-700 hover:bg-gray-50 transition-colors"
+                        >
+                          Info
+                        </Link>
+                        <a
+                          href={product.affiliateUrl}
+                          target="_blank"
+                          rel="nofollow noopener noreferrer"
+                          className="text-xs font-bold px-2.5 py-1.5 rounded-lg bg-amber-500 text-white hover:bg-amber-600 transition-colors flex items-center gap-1"
+                        >
+                          Buy <ArrowRight className="w-3 h-3" />
+                        </a>
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </div>
-            ))}
-          </div>
+              ))}
+            </div>
+          </section>
+        ))}
 
-          <div className="mt-6 text-center">
-            <Link href="/faq" className="btn-secondary text-sm px-8 py-3 inline-flex items-center gap-2">
-              View Full FAQ <ArrowRight className="w-4 h-4" />
-            </Link>
-          </div>
+        {/* Bottom CTA */}
+        <div className="text-center py-12 border-t border-gray-100">
+          <p className="text-gray-500 text-sm mb-4">All products ship from Phiogen — US-based, third-party tested, COA available</p>
+          <a
+            href="https://phiogen.is/?ref=PEPS"
+            target="_blank"
+            rel="nofollow noopener noreferrer"
+            className="inline-flex items-center gap-2 bg-amber-500 text-white font-black px-6 py-3 rounded-xl hover:bg-amber-600 transition-colors"
+          >
+            View Full Phiogen Store <ArrowRight className="w-4 h-4" />
+          </a>
         </div>
-
-        {/* ═══════════════════════════════════════════════
-            BOTTOM CTA
-        ═══════════════════════════════════════════════ */}
-        <div className="text-center mt-4 p-10 glass-card">
-          <div className="inline-flex items-center gap-2 bg-amber-50 border border-amber-200 rounded-full px-4 py-1.5 mb-5">
-            <Package className="w-4 h-4 text-amber-600" />
-            <span className="text-amber-600 text-xs font-semibold uppercase tracking-widest">COA-Verified · US Domestic</span>
-          </div>
-          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">
-            Ready to Order?
-          </h2>
-          <p className="text-gray-700 mb-4 max-w-lg mx-auto">
-            All peptides on this site are available from our recommended supplier — third-party tested,
-            98%+ purity guaranteed, with US domestic shipping and cold-chain packaging.
-          </p>
-          <div className="flex flex-wrap gap-4 justify-center items-center mb-4">
-            <a
-              href={SOURCE_URL}
-              target="_blank"
-              rel="nofollow noopener noreferrer"
-              className="btn-cta text-base px-8 py-4 inline-flex items-center gap-2"
-            >
-              View Phiogen <ArrowRight className="w-5 h-5" />
-            </a>
-            <Link href="/stacks" className="btn-secondary text-base px-8 py-4">
-              Browse Stacks First
-            </Link>
-          </div>
-          <div className="flex flex-wrap justify-center gap-5 mt-4">
-            {['COA Verified', 'US Domestic', '98%+ Purity', 'Cold-Chain Shipping'].map((item) => (
-              <div key={item} className="flex items-center gap-1.5 text-sm text-gray-600">
-                <CheckCircle className="w-4 h-4 text-amber-500" />
-                <span>{item}</span>
-              </div>
-            ))}
-          </div>
-          <p className="text-gray-500 text-xs mt-4">
-            Affiliate link — we earn a commission at no additional cost to you. Not medical advice.
-          </p>
-        </div>
-
       </div>
-    </div>
+    </main>
   );
 }
