@@ -131,11 +131,11 @@ export default function SkinTighteningPeptides() {
             <Sparkles className="w-4 h-4" />
             Collagen Rebuilding Protocol
           </div>
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white mb-6 leading-tight">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-gray-900 mb-6 leading-tight">
             Actual Collagen Fibers,{' '}
             <span className="text-[#00ff88]">Not Just Hope</span>
           </h1>
-          <p className="text-xl text-slate-300 leading-relaxed max-w-3xl mx-auto mb-8">
+          <p className="text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto mb-8">
             The skincare industry sells you hope. Peptides sell you collagen fibers — actual structural proteins that change the architecture of your skin. GHK-Cu triggers your fibroblasts to synthesize collagen I, III, and IV. SNAP-8 prevents the muscle contractions that form expression lines. BPC-157 drives angiogenesis in the dermis, restoring the vascular supply that collagen production depends on.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
@@ -153,7 +153,7 @@ export default function SkinTighteningPeptides() {
           {stats.map((s) => (
             <div key={s.label} className="glass-card p-5 text-center">
               <div className={`text-3xl font-black mb-2 ${s.color}`}>{s.value}</div>
-              <div className="text-slate-400 text-sm leading-tight">{s.label}</div>
+              <div className="text-gray-500 text-sm leading-tight">{s.label}</div>
             </div>
           ))}
         </div>
@@ -161,8 +161,8 @@ export default function SkinTighteningPeptides() {
 
       {/* Why Skin Loses Firmness */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
-        <h2 className="text-3xl font-black text-white mb-4">Why Skin Loses Its Firmness</h2>
-        <p className="text-slate-300 leading-relaxed text-lg mb-10">
+        <h2 className="text-3xl font-black text-gray-900 mb-4">Why Skin Loses Its Firmness</h2>
+        <p className="text-gray-600 leading-relaxed text-lg mb-10">
           Skin aging isn't mysterious — it's a set of specific, addressable biological processes. Understanding the mechanisms tells you exactly which peptides to deploy and why.
         </p>
         <div className="grid sm:grid-cols-2 gap-5">
@@ -170,9 +170,9 @@ export default function SkinTighteningPeptides() {
             <div key={item.factor} className="glass-card p-6 border border-white/5">
               <div className="flex items-center gap-3 mb-3">
                 <span className="text-2xl">{item.icon}</span>
-                <h3 className="text-white font-bold text-base">{item.factor}</h3>
+                <h3 className="text-gray-900 font-bold text-base">{item.factor}</h3>
               </div>
-              <p className="text-slate-300 text-sm leading-relaxed">{item.detail}</p>
+              <p className="text-gray-600 text-sm leading-relaxed">{item.detail}</p>
             </div>
           ))}
         </div>
@@ -180,8 +180,8 @@ export default function SkinTighteningPeptides() {
 
       {/* GHK-Cu Mechanisms */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
-        <h2 className="text-3xl font-black text-white mb-4">What GHK-Cu Actually Synthesizes</h2>
-        <p className="text-slate-300 leading-relaxed text-lg mb-8">
+        <h2 className="text-3xl font-black text-gray-900 mb-4">What GHK-Cu Actually Synthesizes</h2>
+        <p className="text-gray-600 leading-relaxed text-lg mb-8">
           GHK-Cu (copper peptide) is the most extensively researched peptide in skin biology. Its key mechanism is direct upregulation of collagen synthesis enzymes in dermal fibroblasts — across multiple collagen subtypes, not just one. Here's what it actually builds.
         </p>
         <div className="glass-card p-6">
@@ -191,7 +191,7 @@ export default function SkinTighteningPeptides() {
                 <div className="shrink-0 w-24">
                   <span className="text-[#00ff88] font-black text-sm">{m.type}</span>
                 </div>
-                <p className="text-slate-300 text-sm leading-relaxed">{m.description}</p>
+                <p className="text-gray-600 text-sm leading-relaxed">{m.description}</p>
               </div>
             ))}
           </div>
@@ -200,8 +200,8 @@ export default function SkinTighteningPeptides() {
 
       {/* Protocol Selector */}
       <section className="py-10 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
-        <h2 className="text-2xl font-black text-white mb-3">Find Your Personalized Protocol</h2>
-        <p className="text-slate-400 text-base mb-6">Select your primary skin concern for a tailored topical + injectable protocol recommendation.</p>
+        <h2 className="text-2xl font-black text-gray-900 mb-3">Find Your Personalized Protocol</h2>
+        <p className="text-gray-500 text-base mb-6">Select your primary skin concern for a tailored topical + injectable protocol recommendation.</p>
         <SkinFirmnessGoalSelector />
       </section>
 
@@ -219,13 +219,13 @@ export default function SkinTighteningPeptides() {
           </div>
           <div className="flex-1">
             <div className="text-[#00ff88] text-xs font-bold uppercase tracking-widest mb-2">Core Skin Peptide</div>
-            <h3 className="text-white text-2xl font-black mb-3">GHK-Cu 100mg</h3>
-            <p className="text-slate-300 text-base leading-relaxed mb-4">
+            <h3 className="text-gray-900 text-2xl font-black mb-3">GHK-Cu 100mg</h3>
+            <p className="text-gray-600 text-base leading-relaxed mb-4">
               The 100mg vial provides approximately 50 days of supply at 2mg/day — the standard anti-aging skin dose. GHK-Cu modulates over 4,000 genes, resets 31% of aged gene expression patterns, and directly stimulates collagen I, III, and IV synthesis. Injectable delivery achieves systemic distribution that topical formulations cannot match for serious structural skin repair.
             </p>
             <div className="flex flex-wrap gap-3 mb-4">
               {['100mg per vial', '~50 days at 2mg/day', 'Collagen I, III, IV synthesis', '4,000+ genes modulated'].map((f) => (
-                <span key={f} className="flex items-center gap-1.5 text-sm text-slate-300">
+                <span key={f} className="flex items-center gap-1.5 text-sm text-gray-600">
                   <CheckCircle className="w-4 h-4 text-[#00ff88]" /> {f}
                 </span>
               ))}
@@ -251,13 +251,13 @@ export default function SkinTighteningPeptides() {
           </div>
           <div className="flex-1">
             <div className="text-rose-400 text-xs font-bold uppercase tracking-widest mb-2">Expression Line Prevention</div>
-            <h3 className="text-white text-2xl font-black mb-3">SNAP-8 10mg</h3>
-            <p className="text-slate-300 text-base leading-relaxed mb-4">
+            <h3 className="text-gray-900 text-2xl font-black mb-3">SNAP-8 10mg</h3>
+            <p className="text-gray-600 text-base leading-relaxed mb-4">
               SNAP-8 (acetyl octapeptide-3) is the topical peptide equivalent of Botox's mechanism — without the injection and with a subtler, more natural result. It competes with the SNARE protein complex, partially inhibiting the neuromuscular signal that causes expression muscle contractions. Clinical data shows up to 63% reduction in wrinkle depth in the eye/forehead area with twice-daily application.
             </p>
             <div className="flex flex-wrap gap-3 mb-4">
               {['63% wrinkle depth reduction', 'Topical application', 'Expression line prevention', 'SNARE protein competitor'].map((f) => (
-                <span key={f} className="flex items-center gap-1.5 text-sm text-slate-300">
+                <span key={f} className="flex items-center gap-1.5 text-sm text-gray-600">
                   <CheckCircle className="w-4 h-4 text-rose-400" /> {f}
                 </span>
               ))}
@@ -275,8 +275,8 @@ export default function SkinTighteningPeptides() {
           <div className="flex items-start gap-5">
             <FlaskConical className="w-8 h-8 text-[#00ff88] shrink-0 mt-1" />
             <div>
-              <h3 className="text-white text-2xl font-black mb-3">BPC-157: The Skin Repair Peptide</h3>
-              <p className="text-slate-300 leading-relaxed text-base mb-4">
+              <h3 className="text-gray-900 text-2xl font-black mb-3">BPC-157: The Skin Repair Peptide</h3>
+              <p className="text-gray-600 leading-relaxed text-base mb-4">
                 BPC-157 is primarily known for its role in tendon and gut healing — but its skin repair effects are equally impressive. The key mechanism for skin is angiogenesis: BPC-157 drives new blood vessel formation in damaged or aging tissue. This is critical because collagen synthesis is an energy-intensive process that requires constant nutrient delivery. Aging skin is often poorly vascularized — and improving blood flow to the dermis dramatically accelerates every other repair process.
               </p>
               <div className="grid sm:grid-cols-3 gap-4">
@@ -287,7 +287,7 @@ export default function SkinTighteningPeptides() {
                 ].map((item) => (
                   <div key={item.title} className="bg-emerald-500/8 border border-emerald-500/15 rounded-xl p-4">
                     <h4 className="text-[#00ff88] font-bold text-sm mb-2">{item.title}</h4>
-                    <p className="text-slate-400 text-xs leading-relaxed">{item.detail}</p>
+                    <p className="text-gray-500 text-xs leading-relaxed">{item.detail}</p>
                   </div>
                 ))}
               </div>
@@ -298,30 +298,30 @@ export default function SkinTighteningPeptides() {
 
       {/* Topical vs Injectable */}
       <section className="py-10 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
-        <h2 className="text-3xl font-black text-white mb-6">Topical vs Injectable — Which Should You Use?</h2>
+        <h2 className="text-3xl font-black text-gray-900 mb-6">Topical vs Injectable — Which Should You Use?</h2>
         <div className="grid sm:grid-cols-2 gap-5">
           {topicalVsInjectable.map((route) => (
             <div key={route.route} className={`glass-card border p-6 ${route.bg}`}>
               <h3 className={`font-black text-xl mb-4 ${route.color}`}>{route.route}</h3>
               <div className="space-y-4">
                 <div>
-                  <p className="text-slate-400 text-xs font-semibold uppercase tracking-widest mb-2">Advantages</p>
+                  <p className="text-gray-500 text-xs font-semibold uppercase tracking-widest mb-2">Advantages</p>
                   {route.pros.map((p) => (
                     <div key={p} className="flex items-center gap-2 mb-1.5">
                       <CheckCircle className={`w-4 h-4 shrink-0 ${route.color}`} />
-                      <span className="text-slate-300 text-sm">{p}</span>
+                      <span className="text-gray-600 text-sm">{p}</span>
                     </div>
                   ))}
                 </div>
                 <div>
-                  <p className="text-slate-400 text-xs font-semibold uppercase tracking-widest mb-2">Limitations</p>
+                  <p className="text-gray-500 text-xs font-semibold uppercase tracking-widest mb-2">Limitations</p>
                   {route.cons.map((c) => (
-                    <p key={c} className="text-slate-400 text-sm mb-1">• {c}</p>
+                    <p key={c} className="text-gray-500 text-sm mb-1">• {c}</p>
                   ))}
                 </div>
                 <div className="bg-slate-900/40 rounded-lg p-3">
-                  <p className="text-slate-400 text-xs font-bold mb-1">Best for</p>
-                  <p className="text-slate-300 text-sm">{route.bestFor}</p>
+                  <p className="text-gray-500 text-xs font-bold mb-1">Best for</p>
+                  <p className="text-gray-600 text-sm">{route.bestFor}</p>
                 </div>
               </div>
             </div>
@@ -331,15 +331,15 @@ export default function SkinTighteningPeptides() {
 
       {/* FAQ */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
-        <h2 className="text-3xl font-black text-white mb-8">Frequently Asked Questions</h2>
+        <h2 className="text-3xl font-black text-gray-900 mb-8">Frequently Asked Questions</h2>
         <div className="space-y-4">
           {faqs.map((faq) => (
             <details key={faq.q} className="glass-card group">
-              <summary className="p-6 cursor-pointer flex items-center justify-between gap-4 text-white font-semibold text-base list-none">
+              <summary className="p-6 cursor-pointer flex items-center justify-between gap-4 text-gray-900 font-semibold text-base list-none">
                 {faq.q}
                 <span className="text-[#00ff88] text-xl font-black shrink-0 group-open:rotate-45 transition-transform">+</span>
               </summary>
-              <div className="px-6 pb-6 text-slate-300 leading-relaxed text-base">
+              <div className="px-6 pb-6 text-gray-600 leading-relaxed text-base">
                 {faq.a}
               </div>
             </details>
@@ -351,8 +351,8 @@ export default function SkinTighteningPeptides() {
       <section className="py-16 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
         <div className="glass-card p-10 text-center border border-[#00ff88]/15">
           <Sparkles className="w-10 h-10 text-rose-400 mx-auto mb-4" />
-          <h2 className="text-3xl font-black text-white mb-4">Start Rebuilding Your Skin Architecture</h2>
-          <p className="text-slate-300 text-lg mb-8 max-w-2xl mx-auto">
+          <h2 className="text-3xl font-black text-gray-900 mb-4">Start Rebuilding Your Skin Architecture</h2>
+          <p className="text-gray-600 text-lg mb-8 max-w-2xl mx-auto">
             GHK-Cu, SNAP-8, and BPC-157 are available as research peptides. Start with the protocol selector above to find the right approach for your skin goals.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">

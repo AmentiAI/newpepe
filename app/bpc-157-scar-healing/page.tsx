@@ -173,7 +173,7 @@ const faqs = [
 
 export default function Bpc157ScarHealingPage() {
   return (
-    <main className="bg-dark-900 min-h-screen text-slate-200">
+    <main className="bg-dark-900 min-h-screen text-gray-700">
       {/* Hero */}
       <section className="py-16 bg-gradient-to-b from-dark-800 to-dark-900 border-b border-white/5">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -181,11 +181,11 @@ export default function Bpc157ScarHealingPage() {
             <span className="text-xs font-semibold uppercase tracking-widest text-emerald-400 mb-4 block">
               BPC-157 Scar Science
             </span>
-            <h1 className="text-4xl sm:text-5xl font-extrabold text-white mb-6 leading-tight">
+            <h1 className="text-4xl sm:text-5xl font-extrabold text-gray-900 mb-6 leading-tight">
               BPC-157 for Scar Healing:{' '}
               <span className="text-neon-green">Mechanisms, Types & Protocols</span>
             </h1>
-            <p className="text-xl text-slate-300 mb-8 leading-relaxed">
+            <p className="text-xl text-gray-600 mb-8 leading-relaxed">
               BPC-157 is the most mechanistically complete peptide for scar tissue remodeling. It drives angiogenesis in avascular scar tissue, activates fibroblasts for type III→type I collagen remodeling, normalizes TGF-β to prevent hypertrophic scarring, and repairs the gut-skin axis that drives inflammatory acne. This guide covers every scar type, the relevant mechanisms, and complete protocols.
             </p>
             <a
@@ -203,8 +203,8 @@ export default function Bpc157ScarHealingPage() {
       {/* Core Mechanisms */}
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-white mb-4">BPC-157 Scar Mechanisms: 5 Pathways</h2>
-          <p className="text-slate-400 mb-10 max-w-2xl">
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">BPC-157 Scar Mechanisms: 5 Pathways</h2>
+          <p className="text-gray-500 mb-10 max-w-2xl">
             BPC-157 does not work through a single mechanism — it addresses scar tissue via five distinct biological pathways, making it uniquely comprehensive for scar remodeling.
           </p>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
@@ -212,10 +212,10 @@ export default function Bpc157ScarHealingPage() {
               <div key={m.name} className={`rounded-xl border bg-dark-800/40 p-5 ${m.border}`}>
                 <div className="text-3xl mb-3">{m.icon}</div>
                 <h3 className={`font-bold mb-2 ${m.color}`}>{m.name}</h3>
-                <p className="text-sm text-slate-400 leading-relaxed mb-3">{m.desc}</p>
+                <p className="text-sm text-gray-500 leading-relaxed mb-3">{m.desc}</p>
                 <div className="border-t border-white/5 pt-3">
-                  <p className="text-xs text-slate-500 uppercase tracking-wider mb-1">Clinical Significance</p>
-                  <p className="text-xs text-slate-300 leading-relaxed">{m.significance}</p>
+                  <p className="text-xs text-gray-500 uppercase tracking-wider mb-1">Clinical Significance</p>
+                  <p className="text-xs text-gray-600 leading-relaxed">{m.significance}</p>
                 </div>
               </div>
             ))}
@@ -226,8 +226,8 @@ export default function Bpc157ScarHealingPage() {
       {/* Scar Types */}
       <section className="py-16 bg-dark-800/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-white mb-4">BPC-157 by Scar Type</h2>
-          <p className="text-slate-400 mb-10 max-w-2xl">
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">BPC-157 by Scar Type</h2>
+          <p className="text-gray-500 mb-10 max-w-2xl">
             Different scar types have different underlying pathologies. BPC-157 addresses each via different primary mechanisms.
           </p>
           <div className="space-y-5">
@@ -236,20 +236,20 @@ export default function Bpc157ScarHealingPage() {
                 <h3 className={`text-xl font-bold mb-4 ${st.textColor}`}>{st.type}</h3>
                 <div className="grid md:grid-cols-2 gap-5">
                   <div>
-                    <p className="text-xs text-slate-500 uppercase tracking-wider mb-1">Primary Mechanism</p>
-                    <p className="text-sm text-slate-300 leading-relaxed">{st.mechanism}</p>
+                    <p className="text-xs text-gray-500 uppercase tracking-wider mb-1">Primary Mechanism</p>
+                    <p className="text-sm text-gray-600 leading-relaxed">{st.mechanism}</p>
                   </div>
                   <div>
-                    <p className="text-xs text-slate-500 uppercase tracking-wider mb-1">Gut-Skin Axis / Combination</p>
-                    <p className="text-sm text-slate-300 leading-relaxed">{st.gutSkinAxis}</p>
+                    <p className="text-xs text-gray-500 uppercase tracking-wider mb-1">Gut-Skin Axis / Combination</p>
+                    <p className="text-sm text-gray-600 leading-relaxed">{st.gutSkinAxis}</p>
                   </div>
                   <div>
-                    <p className="text-xs text-slate-500 uppercase tracking-wider mb-1">Best Route</p>
-                    <p className="text-sm text-slate-300">{st.bestRoute}</p>
+                    <p className="text-xs text-gray-500 uppercase tracking-wider mb-1">Best Route</p>
+                    <p className="text-sm text-gray-600">{st.bestRoute}</p>
                   </div>
                   <div>
-                    <p className="text-xs text-slate-500 uppercase tracking-wider mb-1">Timeline</p>
-                    <p className="text-sm text-slate-300">{st.timeline}</p>
+                    <p className="text-xs text-gray-500 uppercase tracking-wider mb-1">Timeline</p>
+                    <p className="text-sm text-gray-600">{st.timeline}</p>
                   </div>
                 </div>
               </div>
@@ -263,8 +263,8 @@ export default function Bpc157ScarHealingPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-start">
             <div>
-              <h2 className="text-3xl font-bold text-white mb-4">Get Your Personalized Scar Protocol</h2>
-              <p className="text-slate-400 mb-6 leading-relaxed">
+              <h2 className="text-3xl font-bold text-gray-900 mb-4">Get Your Personalized Scar Protocol</h2>
+              <p className="text-gray-500 mb-6 leading-relaxed">
                 The optimal BPC-157 protocol depends on your scar type and age. Select your scar profile below for injection method, dose, frequency, expected duration, and combination peptides.
               </p>
               <div className="space-y-3 mb-6">
@@ -274,7 +274,7 @@ export default function Bpc157ScarHealingPage() {
                   'Color-coded treatment difficulty rating',
                   'Combination peptide recommendations',
                 ].map((point) => (
-                  <div key={point} className="flex items-start gap-2 text-sm text-slate-300">
+                  <div key={point} className="flex items-start gap-2 text-sm text-gray-600">
                     <CheckCircle className="w-4 h-4 text-emerald-400 flex-shrink-0 mt-0.5" />
                     {point}
                   </div>
@@ -289,16 +289,16 @@ export default function Bpc157ScarHealingPage() {
       {/* Gut-Skin Axis */}
       <section className="py-16 bg-dark-800/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-white mb-4">The Gut-Skin Axis: Why BPC-157 Works for Acne Scars Systemically</h2>
-          <p className="text-slate-400 mb-10 max-w-2xl">
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">The Gut-Skin Axis: Why BPC-157 Works for Acne Scars Systemically</h2>
+          <p className="text-gray-500 mb-10 max-w-2xl">
             For acne scars specifically, BPC-157&apos;s gut-healing mechanism is as important as its direct skin effects. This four-step cascade explains why.
           </p>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
             {gutSkinAxis.map((step) => (
               <div key={step.title} className="bg-dark-800/60 border border-white/10 rounded-xl p-5">
                 <div className="text-3xl font-black text-emerald-400 mb-3">{step.icon}</div>
-                <h3 className="font-bold text-white mb-2 text-sm">{step.title}</h3>
-                <p className="text-xs text-slate-400 leading-relaxed">{step.desc}</p>
+                <h3 className="font-bold text-gray-900 mb-2 text-sm">{step.title}</h3>
+                <p className="text-xs text-gray-500 leading-relaxed">{step.desc}</p>
               </div>
             ))}
           </div>
@@ -308,14 +308,14 @@ export default function Bpc157ScarHealingPage() {
       {/* Local vs Systemic */}
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-white mb-6">Local vs Systemic Injection: Decision Guide</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Local vs Systemic Injection: Decision Guide</h2>
           <div className="grid md:grid-cols-2 gap-6">
             <div className="bg-dark-800/60 border border-emerald-500/20 rounded-xl p-6">
               <div className="flex items-center gap-2 mb-4">
                 <Zap className="w-5 h-5 text-emerald-400" />
-                <h3 className="font-bold text-white">Systemic SC Injection</h3>
+                <h3 className="font-bold text-gray-900">Systemic SC Injection</h3>
               </div>
-              <p className="text-sm text-slate-400 mb-4">Abdominal subcutaneous injection, standard BPC-157 protocol.</p>
+              <p className="text-sm text-gray-500 mb-4">Abdominal subcutaneous injection, standard BPC-157 protocol.</p>
               <div className="space-y-2 mb-4">
                 {[
                   'Best for gut-skin axis repair (acne root cause)',
@@ -324,20 +324,20 @@ export default function Bpc157ScarHealingPage() {
                   'Appropriate starting point for all users',
                   'Can address multiple scar sites simultaneously',
                 ].map((p) => (
-                  <div key={p} className="flex items-start gap-2 text-sm text-slate-300">
+                  <div key={p} className="flex items-start gap-2 text-sm text-gray-600">
                     <CheckCircle className="w-4 h-4 text-emerald-400 flex-shrink-0 mt-0.5" />
                     {p}
                   </div>
                 ))}
               </div>
-              <p className="text-xs text-slate-500">Best for: acne scars, gut-skin axis issues, beginners, multiple scar sites</p>
+              <p className="text-xs text-gray-500">Best for: acne scars, gut-skin axis issues, beginners, multiple scar sites</p>
             </div>
             <div className="bg-dark-800/60 border border-blue-500/20 rounded-xl p-6">
               <div className="flex items-center gap-2 mb-4">
                 <Zap className="w-5 h-5 text-blue-400" />
-                <h3 className="font-bold text-white">Local Injection (Adjacent to Scar)</h3>
+                <h3 className="font-bold text-gray-900">Local Injection (Adjacent to Scar)</h3>
               </div>
-              <p className="text-sm text-slate-400 mb-4">Subcutaneous injection immediately adjacent to (not into) the scar tissue.</p>
+              <p className="text-sm text-gray-500 mb-4">Subcutaneous injection immediately adjacent to (not into) the scar tissue.</p>
               <div className="space-y-2 mb-4">
                 {[
                   'Delivers BPC-157 directly to target scar tissue',
@@ -346,13 +346,13 @@ export default function Bpc157ScarHealingPage() {
                   'Higher technical skill required',
                   'Best combined with systemic for comprehensive effect',
                 ].map((p) => (
-                  <div key={p} className="flex items-start gap-2 text-sm text-slate-300">
+                  <div key={p} className="flex items-start gap-2 text-sm text-gray-600">
                     <CheckCircle className="w-4 h-4 text-blue-400 flex-shrink-0 mt-0.5" />
                     {p}
                   </div>
                 ))}
               </div>
-              <p className="text-xs text-slate-500">Best for: surgical scars, keloids, isolated large scars, old fibrotic scars</p>
+              <p className="text-xs text-gray-500">Best for: surgical scars, keloids, isolated large scars, old fibrotic scars</p>
             </div>
           </div>
         </div>
@@ -361,15 +361,15 @@ export default function Bpc157ScarHealingPage() {
       {/* FAQ */}
       <section className="py-16 bg-dark-800/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-white mb-10">Frequently Asked Questions</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-10">Frequently Asked Questions</h2>
           <div className="grid md:grid-cols-2 gap-6">
             {faqs.map((faq, i) => (
               <div key={i} className="bg-dark-800/60 border border-white/10 rounded-xl p-5">
-                <h3 className="font-semibold text-white mb-2 flex items-start gap-2">
+                <h3 className="font-semibold text-gray-900 mb-2 flex items-start gap-2">
                   <FlaskConical className="w-4 h-4 text-emerald-400 flex-shrink-0 mt-0.5" />
                   {faq.q}
                 </h3>
-                <p className="text-sm text-slate-400 leading-relaxed">{faq.a}</p>
+                <p className="text-sm text-gray-500 leading-relaxed">{faq.a}</p>
               </div>
             ))}
           </div>
@@ -380,8 +380,8 @@ export default function Bpc157ScarHealingPage() {
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-gradient-to-r from-emerald-900/30 to-dark-800 border border-emerald-500/20 rounded-2xl p-8 text-center">
-            <h2 className="text-2xl font-bold text-white mb-3">Start Your BPC-157 Scar Protocol</h2>
-            <p className="text-slate-400 mb-6 max-w-xl mx-auto">
+            <h2 className="text-2xl font-bold text-gray-900 mb-3">Start Your BPC-157 Scar Protocol</h2>
+            <p className="text-gray-500 mb-6 max-w-xl mx-auto">
               Research-grade BPC-157 and GHK-Cu for comprehensive scar tissue remodeling. Begin with systemic SC injection and add topical GHK-Cu to the scar surface.
             </p>
             <a
@@ -392,7 +392,7 @@ export default function Bpc157ScarHealingPage() {
             >
               Source BPC-157 & GHK-Cu <ArrowRight className="w-4 h-4" />
             </a>
-            <p className="text-xs text-slate-600 mt-4">
+            <p className="text-xs text-gray-600 mt-4">
               For research purposes only. Not medical advice. Consult a healthcare professional.
             </p>
           </div>

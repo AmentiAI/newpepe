@@ -205,7 +205,7 @@ const timeline = [
     period: 'Week 1',
     title: 'Initial Adaptation',
     color: 'border-slate-500',
-    badge: 'bg-slate-500/20 text-slate-300',
+    badge: 'bg-slate-500/20 text-gray-600',
     changes: [
       'Skin hydration begins improving (GHK-Cu activates hyaluronic acid production)',
       'Gut changes with BPC-157 may cause temporary digestive adjustment',
@@ -282,7 +282,7 @@ const faqs = [
 
 export default function PeptidesForSkinQualityPage() {
   return (
-    <main className="bg-dark-900 min-h-screen text-slate-200">
+    <main className="bg-dark-900 min-h-screen text-gray-700">
       {/* Hero */}
       <section className="py-16 bg-gradient-to-b from-dark-800 to-dark-900 border-b border-white/5">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -290,11 +290,11 @@ export default function PeptidesForSkinQualityPage() {
             <span className="text-xs font-semibold uppercase tracking-widest text-emerald-400 mb-4 block">
               Skin Science
             </span>
-            <h1 className="text-4xl sm:text-5xl font-extrabold text-white mb-6 leading-tight">
+            <h1 className="text-4xl sm:text-5xl font-extrabold text-gray-900 mb-6 leading-tight">
               Peptides for Skin Quality:{' '}
               <span className="text-neon-green">The Evidence-Based Guide</span>
             </h1>
-            <p className="text-xl text-slate-300 mb-8 leading-relaxed">
+            <p className="text-xl text-gray-600 mb-8 leading-relaxed">
               Skin quality is the highest-leverage variable in perceived attractiveness and estimated age. Research shows that homogeneous, firm, luminous skin signals health and youth more powerfully than any other facial feature. This guide covers every peptide with evidence for skin quality improvement — from GHK-Cu&apos;s 31% gene reset to Epithalon&apos;s telomere extension — with specific protocols for each skin concern.
             </p>
             <a
@@ -312,8 +312,8 @@ export default function PeptidesForSkinQualityPage() {
       {/* 6 Dimensions */}
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-white mb-4">The 6 Dimensions of Skin Quality</h2>
-          <p className="text-slate-400 mb-10 max-w-2xl">
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">The 6 Dimensions of Skin Quality</h2>
+          <p className="text-gray-500 mb-10 max-w-2xl">
             Skin quality is not a single variable — it is the composite of six measurable dimensions. Research peptides address each with distinct mechanisms.
           </p>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
@@ -321,15 +321,15 @@ export default function PeptidesForSkinQualityPage() {
               <div key={dim.dimension} className={`rounded-xl border bg-dark-800/40 p-5 ${dim.border}`}>
                 <div className={`text-xl mb-2 ${dim.color}`}>{dim.icon}</div>
                 <h3 className={`font-bold text-lg mb-2 ${dim.color}`}>{dim.dimension}</h3>
-                <p className="text-sm text-slate-400 mb-3 leading-relaxed">{dim.desc}</p>
+                <p className="text-sm text-gray-500 mb-3 leading-relaxed">{dim.desc}</p>
                 <div className="flex flex-wrap gap-1 mb-3">
                   {dim.peptides.map((p) => (
-                    <span key={p} className="text-xs bg-dark-700/80 border border-white/10 text-slate-300 rounded px-2 py-0.5">
+                    <span key={p} className="text-xs bg-dark-700/80 border border-white/10 text-gray-600 rounded px-2 py-0.5">
                       {p}
                     </span>
                   ))}
                 </div>
-                <p className="text-xs text-slate-600 italic">{dim.measurement}</p>
+                <p className="text-xs text-gray-600 italic">{dim.measurement}</p>
               </div>
             ))}
           </div>
@@ -341,8 +341,8 @@ export default function PeptidesForSkinQualityPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-start">
             <div>
-              <h2 className="text-3xl font-bold text-white mb-4">Find Your Personalized Protocol</h2>
-              <p className="text-slate-400 mb-6 leading-relaxed">
+              <h2 className="text-3xl font-bold text-gray-900 mb-4">Find Your Personalized Protocol</h2>
+              <p className="text-gray-500 mb-6 leading-relaxed">
                 Different skin concerns require different peptide combinations. The assessment tool identifies the optimal peptide protocol for your specific skin type and concern — with exact dosing and expected timeline.
               </p>
               <div className="space-y-3">
@@ -352,7 +352,7 @@ export default function PeptidesForSkinQualityPage() {
                   'Week-by-week timeline for each protocol',
                   'Pro tips for your specific skin concern',
                 ].map((point) => (
-                  <div key={point} className="flex items-start gap-2 text-sm text-slate-300">
+                  <div key={point} className="flex items-start gap-2 text-sm text-gray-600">
                     <CheckCircle className="w-4 h-4 text-emerald-400 flex-shrink-0 mt-0.5" />
                     {point}
                   </div>
@@ -367,8 +367,8 @@ export default function PeptidesForSkinQualityPage() {
       {/* Deep Dives */}
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-white mb-4">Peptide Deep Dives: Mechanisms & Evidence</h2>
-          <p className="text-slate-400 mb-10 max-w-2xl">
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">Peptide Deep Dives: Mechanisms & Evidence</h2>
+          <p className="text-gray-500 mb-10 max-w-2xl">
             Understanding why each peptide works — not just that it works — allows you to select the right interventions for your specific skin biology.
           </p>
           <div className="space-y-6">
@@ -383,8 +383,8 @@ export default function PeptidesForSkinQualityPage() {
                 <div className="grid md:grid-cols-2 divide-y md:divide-y-0 md:divide-x divide-white/5">
                   {pep.sections.map((section) => (
                     <div key={section.title} className="p-5">
-                      <h4 className="font-semibold text-slate-200 mb-2 text-sm">{section.title}</h4>
-                      <p className="text-sm text-slate-400 leading-relaxed">{section.content}</p>
+                      <h4 className="font-semibold text-gray-700 mb-2 text-sm">{section.title}</h4>
+                      <p className="text-sm text-gray-500 leading-relaxed">{section.content}</p>
                     </div>
                   ))}
                 </div>
@@ -397,8 +397,8 @@ export default function PeptidesForSkinQualityPage() {
       {/* Protocols by Skin Type */}
       <section className="py-16 bg-dark-800/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-white mb-4">Protocols by Skin Type</h2>
-          <p className="text-slate-400 mb-8 max-w-2xl">
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">Protocols by Skin Type</h2>
+          <p className="text-gray-500 mb-8 max-w-2xl">
             General principles for matching peptide protocols to specific skin presentations.
           </p>
           <div className="grid sm:grid-cols-2 gap-5">
@@ -407,16 +407,16 @@ export default function PeptidesForSkinQualityPage() {
                 <div className="flex items-center gap-2 mb-3">
                   <span className={`text-xs rounded-full px-2 py-0.5 ${sp.badge}`}>{sp.type}</span>
                 </div>
-                <p className="text-xs text-slate-500 uppercase tracking-wider mb-2">Focus: {sp.focus}</p>
+                <p className="text-xs text-gray-500 uppercase tracking-wider mb-2">Focus: {sp.focus}</p>
                 <div className="space-y-1 mb-3">
                   {sp.peptides.map((p) => (
-                    <div key={p} className="flex items-start gap-2 text-sm text-slate-300">
+                    <div key={p} className="flex items-start gap-2 text-sm text-gray-600">
                       <CheckCircle className="w-4 h-4 text-emerald-400 flex-shrink-0 mt-0.5" />
                       {p}
                     </div>
                   ))}
                 </div>
-                <p className="text-xs text-slate-500 italic">{sp.note}</p>
+                <p className="text-xs text-gray-500 italic">{sp.note}</p>
               </div>
             ))}
           </div>
@@ -426,8 +426,8 @@ export default function PeptidesForSkinQualityPage() {
       {/* Timeline */}
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-white mb-4">What to Expect: Week 1 to Month 6</h2>
-          <p className="text-slate-400 mb-10 max-w-2xl">
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">What to Expect: Week 1 to Month 6</h2>
+          <p className="text-gray-500 mb-10 max-w-2xl">
             Setting accurate expectations is critical. Peptide effects are cumulative — the most significant improvements occur at months 3–6, not week 2.
           </p>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
@@ -436,10 +436,10 @@ export default function PeptidesForSkinQualityPage() {
                 <div className="flex items-center gap-2 mb-3">
                   <span className={`text-xs rounded-full px-2 py-1 font-semibold ${t.badge}`}>{t.period}</span>
                 </div>
-                <h3 className="font-bold text-white mb-3">{t.title}</h3>
+                <h3 className="font-bold text-gray-900 mb-3">{t.title}</h3>
                 <ul className="space-y-2">
                   {t.changes.map((c, i) => (
-                    <li key={i} className="text-xs text-slate-400 flex items-start gap-2">
+                    <li key={i} className="text-xs text-gray-500 flex items-start gap-2">
                       <span className="text-emerald-400 mt-0.5">•</span>
                       {c}
                     </li>
@@ -454,15 +454,15 @@ export default function PeptidesForSkinQualityPage() {
       {/* FAQ */}
       <section className="py-16 bg-dark-800/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-white mb-10">Frequently Asked Questions</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-10">Frequently Asked Questions</h2>
           <div className="grid md:grid-cols-2 gap-6">
             {faqs.map((faq, i) => (
               <div key={i} className="bg-dark-800/60 border border-white/10 rounded-xl p-5">
-                <h3 className="font-semibold text-white mb-2 flex items-start gap-2">
+                <h3 className="font-semibold text-gray-900 mb-2 flex items-start gap-2">
                   <FlaskConical className="w-4 h-4 text-emerald-400 flex-shrink-0 mt-0.5" />
                   {faq.q}
                 </h3>
-                <p className="text-sm text-slate-400 leading-relaxed">{faq.a}</p>
+                <p className="text-sm text-gray-500 leading-relaxed">{faq.a}</p>
               </div>
             ))}
           </div>
@@ -473,8 +473,8 @@ export default function PeptidesForSkinQualityPage() {
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-gradient-to-r from-emerald-900/30 to-dark-800 border border-emerald-500/20 rounded-2xl p-8 text-center">
-            <h2 className="text-2xl font-bold text-white mb-3">Start Your Skin Quality Protocol</h2>
-            <p className="text-slate-400 mb-6 max-w-xl mx-auto">
+            <h2 className="text-2xl font-bold text-gray-900 mb-3">Start Your Skin Quality Protocol</h2>
+            <p className="text-gray-500 mb-6 max-w-xl mx-auto">
               Research-grade GHK-Cu, SNAP-8, BPC-157, and Epithalon from verified peptide suppliers.
             </p>
             <a
@@ -485,7 +485,7 @@ export default function PeptidesForSkinQualityPage() {
             >
               Get Research Peptides <ArrowRight className="w-4 h-4" />
             </a>
-            <p className="text-xs text-slate-600 mt-4">
+            <p className="text-xs text-gray-600 mt-4">
               For research purposes only. Not medical advice.
             </p>
           </div>

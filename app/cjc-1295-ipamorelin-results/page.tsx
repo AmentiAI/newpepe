@@ -143,11 +143,11 @@ export default function CjcIpamoreinResultsPage() {
             <TrendingUp className="w-4 h-4 text-blue-400" />
             <span className="text-blue-400 text-sm font-semibold tracking-wide">CJC-1295 IPAMORELIN RESULTS GUIDE</span>
           </div>
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white leading-tight mb-6">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-gray-900 leading-tight mb-6">
             CJC-1295 Ipamorelin Results:<br />
             <span className="text-blue-400">Complete Timeline</span>
           </h1>
-          <p className="text-slate-300 text-xl leading-relaxed mb-8 max-w-3xl">
+          <p className="text-gray-600 text-xl leading-relaxed mb-8 max-w-3xl">
             What results can you actually expect from CJC-1295 Ipamorelin — and when?
             Here&apos;s the complete week-by-week timeline based on the research and widespread user experience.
           </p>
@@ -160,7 +160,7 @@ export default function CjcIpamoreinResultsPage() {
             ].map((s) => (
               <div key={s.num} className="glass-card p-4 text-center">
                 <div className="text-lg font-black text-blue-400">{s.num}</div>
-                <div className="text-slate-400 text-xs mt-1">{s.label}</div>
+                <div className="text-gray-500 text-xs mt-1">{s.label}</div>
               </div>
             ))}
           </div>
@@ -171,15 +171,15 @@ export default function CjcIpamoreinResultsPage() {
       <section className="py-16 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center gap-3 mb-4">
           <FlaskConical className="w-7 h-7 text-blue-400" />
-          <h2 className="text-3xl font-black text-white">How CJC-1295 and Ipamorelin Work Together</h2>
+          <h2 className="text-3xl font-black text-gray-900">How CJC-1295 and Ipamorelin Work Together</h2>
         </div>
-        <p className="text-slate-400 mb-10 max-w-3xl">These two peptides are so frequently combined because they act on the same axis — growth hormone release — but through entirely different receptors. Understanding the mechanisms explains why the combination produces 8–10x more GH than either alone.</p>
+        <p className="text-gray-500 mb-10 max-w-3xl">These two peptides are so frequently combined because they act on the same axis — growth hormone release — but through entirely different receptors. Understanding the mechanisms explains why the combination produces 8–10x more GH than either alone.</p>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-10">
           {/* CJC-1295 */}
           <div className="glass-card p-8">
             <h3 className="text-xl font-black text-blue-400 mb-6">CJC-1295: The GHRH Analog</h3>
-            <div className="space-y-4 text-slate-300 text-sm leading-relaxed">
+            <div className="space-y-4 text-gray-600 text-sm leading-relaxed">
               <div>
                 <h4 className="text-blue-300 font-bold mb-2">What GHRH Does Naturally</h4>
                 <p>Growth Hormone Releasing Hormone (GHRH) is produced by the hypothalamus and travels to the anterior pituitary gland, where it binds GHRH receptors and triggers the synthesis and release of GH into circulation. The problem with natural GHRH: it has a half-life of approximately 30 minutes in blood due to rapid degradation by the enzyme dipeptidyl peptidase IV (DPP-IV).</p>
@@ -199,7 +199,7 @@ export default function CjcIpamoreinResultsPage() {
           {/* Ipamorelin */}
           <div className="glass-card p-8">
             <h3 className="text-xl font-black text-emerald-400 mb-6">Ipamorelin: The Cleanest GHS</h3>
-            <div className="space-y-4 text-slate-300 text-sm leading-relaxed">
+            <div className="space-y-4 text-gray-600 text-sm leading-relaxed">
               <div>
                 <h4 className="text-emerald-300 font-bold mb-2">Ghrelin Mimetic Mechanism</h4>
                 <p>Ipamorelin belongs to the Growth Hormone Secretagogue (GHS) class — it mimics ghrelin, a gut-derived hormone that acts on GHSR-1a receptors (ghrelin receptors) on pituitary somatotrophs. This is an entirely different receptor pathway from GHRH. Ghrelin normally triggers GH pulses through hunger signaling; Ipamorelin activates this same pathway without causing meaningful hunger stimulation at standard doses.</p>
@@ -218,8 +218,8 @@ export default function CjcIpamoreinResultsPage() {
 
         {/* Synergy Explanation */}
         <div className="glass-card p-8 border-t-4 border-blue-500/50">
-          <h3 className="text-xl font-black text-white mb-4">The Synergy: Why 1 + 1 = 8–10x</h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-slate-300 text-sm leading-relaxed">
+          <h3 className="text-xl font-black text-gray-900 mb-4">The Synergy: Why 1 + 1 = 8–10x</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-gray-600 text-sm leading-relaxed">
             <div>
               <p className="mb-3">When CJC-1295 (GHRH analog) and Ipamorelin (ghrelin mimetic) are injected together, they activate two completely distinct receptor pathways on the same pituitary somatotroph cell simultaneously. These pathways converge at a common intracellular point — cyclic AMP (cAMP) and protein kinase A — to trigger GH vesicle exocytosis.</p>
               <p>The combined signaling produces a GH pulse that is 8–10 times higher than resting GH output — significantly greater than either peptide could achieve alone. CJC-1295 alone produces approximately 2–3x GH amplification. Ipamorelin alone produces 2–3x. Together, the result is not 4–6x but 8–10x, demonstrating genuine synergy beyond simple addition.</p>
@@ -234,8 +234,8 @@ export default function CjcIpamoreinResultsPage() {
                   { label: 'CJC + Ipamorelin together', value: '8–10x', width: '85%', color: 'bg-gradient-to-r from-blue-500 to-emerald-400' },
                 ].map((bar) => (
                   <div key={bar.label} className="mb-3">
-                    <div className="flex justify-between text-xs text-slate-400 mb-1">
-                      <span>{bar.label}</span><span className="font-bold text-white">{bar.value}</span>
+                    <div className="flex justify-between text-xs text-gray-500 mb-1">
+                      <span>{bar.label}</span><span className="font-bold text-gray-900">{bar.value}</span>
                     </div>
                     <div className="h-2.5 bg-slate-700 rounded-full overflow-hidden">
                       <div className={`h-full rounded-full ${bar.color}`} style={{ width: bar.width }} />
@@ -253,14 +253,14 @@ export default function CjcIpamoreinResultsPage() {
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center gap-3 mb-4">
             <Zap className="w-7 h-7 text-blue-400" />
-            <h2 className="text-3xl font-black text-white">Optimizing GH Pulse Timing</h2>
+            <h2 className="text-3xl font-black text-gray-900">Optimizing GH Pulse Timing</h2>
           </div>
-          <p className="text-slate-400 mb-10 max-w-3xl">Growth hormone is not secreted continuously — it is released in discrete pulses, with the largest occurring during deep sleep. The science of GH pulsatility determines everything about when, how often, and under what conditions you inject.</p>
+          <p className="text-gray-500 mb-10 max-w-3xl">Growth hormone is not secreted continuously — it is released in discrete pulses, with the largest occurring during deep sleep. The science of GH pulsatility determines everything about when, how often, and under what conditions you inject.</p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
             <div className="glass-card p-6">
               <h3 className="text-blue-400 font-black text-lg mb-4">Why Inject Before Sleep</h3>
-              <div className="space-y-3 text-slate-300 text-sm leading-relaxed">
+              <div className="space-y-3 text-gray-600 text-sm leading-relaxed">
                 <p>The pituitary gland produces approximately 70–80% of its daily GH output during slow-wave (deep) sleep, specifically in the first 1–2 hours after sleep onset. This pulse is the most physiologically significant GH event of the day — it drives the majority of tissue repair, fat mobilization, and IGF-1 production that occurs overnight.</p>
                 <p>Injecting CJC-1295/Ipamorelin 30–60 minutes before sleep amplifies this already-large nocturnal pulse. Instead of replacing the natural GH signal, the peptides stack on top of it, producing the 8–10x output described above precisely when the body&apos;s natural GH axis is already at its peak activity. This is superior to injecting at other times because you are amplifying the body&apos;s largest natural GH event rather than creating a smaller artificial pulse during an otherwise low-GH window.</p>
               </div>
@@ -268,7 +268,7 @@ export default function CjcIpamoreinResultsPage() {
 
             <div className="glass-card p-6">
               <h3 className="text-blue-400 font-black text-lg mb-4">Fasting Window: Why Carbs Kill GH</h3>
-              <div className="space-y-3 text-slate-300 text-sm leading-relaxed">
+              <div className="space-y-3 text-gray-600 text-sm leading-relaxed">
                 <p>Glucose and insulin are the two most potent suppressors of GH release. When blood glucose rises after eating — particularly after carbohydrate consumption — insulin spikes, and insulin directly suppresses GHRH signaling at the pituitary level. A carbohydrate-rich meal eaten 1–2 hours before a CJC/Ipamorelin injection can blunt the GH pulse by 50–80%.</p>
                 <p>The required fasting window is a minimum of 2 hours before injection, with 3 hours preferred. Protein and fat are less suppressive than carbohydrates but still have some impact. The ideal scenario is no food for 2–3 hours before the injection, with the last meal being protein-dominant. This is why the pre-bed injection protocol requires eating dinner at least 2–3 hours before sleep.</p>
               </div>
@@ -276,9 +276,9 @@ export default function CjcIpamoreinResultsPage() {
 
             <div className="glass-card p-6">
               <h3 className="text-blue-400 font-black text-lg mb-4">Once Daily vs Twice Daily</h3>
-              <div className="space-y-3 text-slate-300 text-sm leading-relaxed">
-                <p><strong className="text-white">Once daily (before bed):</strong> The standard protocol for most users. Maximizes the nocturnal GH pulse, is easiest to maintain consistently, and produces excellent results at 100–200mcg CJC / 200–300mcg Ipamorelin. Recommended for beginners and anyone prioritizing sleep quality and body composition changes.</p>
-                <p><strong className="text-white">Twice daily (morning + night):</strong> An advanced approach that adds a morning fasted dose. The morning dose must be taken on an empty stomach — at least 30–60 minutes before eating breakfast. This creates a second, additional GH pulse during the day without interfering with the nocturnal pulse. Results are faster for body composition but the added complexity makes compliance harder. Typical morning dose is 100mcg CJC / 200mcg Ipamorelin (slightly lower than the bedtime dose).</p>
+              <div className="space-y-3 text-gray-600 text-sm leading-relaxed">
+                <p><strong className="text-gray-900">Once daily (before bed):</strong> The standard protocol for most users. Maximizes the nocturnal GH pulse, is easiest to maintain consistently, and produces excellent results at 100–200mcg CJC / 200–300mcg Ipamorelin. Recommended for beginners and anyone prioritizing sleep quality and body composition changes.</p>
+                <p><strong className="text-gray-900">Twice daily (morning + night):</strong> An advanced approach that adds a morning fasted dose. The morning dose must be taken on an empty stomach — at least 30–60 minutes before eating breakfast. This creates a second, additional GH pulse during the day without interfering with the nocturnal pulse. Results are faster for body composition but the added complexity makes compliance harder. Typical morning dose is 100mcg CJC / 200mcg Ipamorelin (slightly lower than the bedtime dose).</p>
               </div>
             </div>
 
@@ -288,7 +288,7 @@ export default function CjcIpamoreinResultsPage() {
                 <table className="w-full text-xs">
                   <thead>
                     <tr style={{ background: 'rgba(96,165,250,0.08)' }}>
-                      <th className="text-left py-2 px-3 text-slate-400">Factor</th>
+                      <th className="text-left py-2 px-3 text-gray-500">Factor</th>
                       <th className="text-center py-2 px-3 text-blue-400">Night Only</th>
                       <th className="text-center py-2 px-3 text-emerald-400">AM + PM</th>
                     </tr>
@@ -304,9 +304,9 @@ export default function CjcIpamoreinResultsPage() {
                       ['Best for', 'Most users', 'Advanced'],
                     ].map(([f, night, am], i) => (
                       <tr key={f} style={{ borderTop: '1px solid rgba(255,255,255,0.04)', background: i % 2 === 0 ? 'rgba(255,255,255,0.01)' : 'transparent' }}>
-                        <td className="py-2 px-3 text-slate-400 font-medium">{f}</td>
-                        <td className="py-2 px-3 text-center text-slate-300">{night}</td>
-                        <td className="py-2 px-3 text-center text-slate-300">{am}</td>
+                        <td className="py-2 px-3 text-gray-500 font-medium">{f}</td>
+                        <td className="py-2 px-3 text-center text-gray-600">{night}</td>
+                        <td className="py-2 px-3 text-center text-gray-600">{am}</td>
                       </tr>
                     ))}
                   </tbody>
@@ -319,8 +319,8 @@ export default function CjcIpamoreinResultsPage() {
 
       {/* Timeline */}
       <section className="py-16 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-black text-white mb-3">Week-by-Week Results Timeline</h2>
-        <p className="text-slate-400 mb-10">Results vary based on dose, diet, training, and individual GH baseline. This reflects typical outcomes at standard protocol doses.</p>
+        <h2 className="text-3xl font-black text-gray-900 mb-3">Week-by-Week Results Timeline</h2>
+        <p className="text-gray-500 mb-10">Results vary based on dose, diet, training, and individual GH baseline. This reflects typical outcomes at standard protocol doses.</p>
         <div className="space-y-6">
           {timeline.map((t) => (
             <div key={t.period} className="glass-card p-8">
@@ -332,16 +332,16 @@ export default function CjcIpamoreinResultsPage() {
                   <Clock className={`w-5 h-5 ${t.color === 'blue' ? 'text-blue-400' : t.color === 'purple' ? 'text-purple-400' : 'text-emerald-400'}`} />
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-white font-black text-xl mb-4">{t.headline}</h3>
+                  <h3 className="text-gray-900 font-black text-xl mb-4">{t.headline}</h3>
                   <ul className="space-y-2 mb-4">
                     {t.results.map((r) => (
-                      <li key={r} className="flex items-start gap-2 text-slate-300 text-sm">
+                      <li key={r} className="flex items-start gap-2 text-gray-600 text-sm">
                         <CheckCircle className={`w-4 h-4 shrink-0 mt-0.5 ${t.color === 'blue' ? 'text-blue-400' : t.color === 'purple' ? 'text-purple-400' : 'text-emerald-400'}`} /> {r}
                       </li>
                     ))}
                   </ul>
                   <div className="bg-slate-800/50 border border-white/5 rounded-lg px-4 py-2.5">
-                    <p className="text-slate-500 text-xs italic">{t.note}</p>
+                    <p className="text-gray-500 text-xs italic">{t.note}</p>
                   </div>
                 </div>
               </div>
@@ -354,8 +354,8 @@ export default function CjcIpamoreinResultsPage() {
       <section className="py-16" style={{ background: 'rgba(6,6,16,0.8)' }}>
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-8">
-            <h2 className="text-3xl font-black text-white mb-3">Your Personal Results Tracker</h2>
-            <p className="text-slate-400 max-w-2xl">Select your current week in the cycle to see exactly what changes you should be experiencing — and what the next phase looks like.</p>
+            <h2 className="text-3xl font-black text-gray-900 mb-3">Your Personal Results Tracker</h2>
+            <p className="text-gray-500 max-w-2xl">Select your current week in the cycle to see exactly what changes you should be experiencing — and what the next phase looks like.</p>
           </div>
           <GhResultsTracker />
         </div>
@@ -363,14 +363,14 @@ export default function CjcIpamoreinResultsPage() {
 
       {/* === NEW: CJC vs HGH COMPARISON === */}
       <section className="py-16 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-black text-white mb-4">CJC-1295/Ipamorelin vs HGH: Real-World Comparison</h2>
-        <p className="text-slate-400 mb-8 max-w-3xl">Direct-inject HGH and GH-releasing peptides are frequently compared. Here is how they genuinely differ across every relevant dimension.</p>
+        <h2 className="text-3xl font-black text-gray-900 mb-4">CJC-1295/Ipamorelin vs HGH: Real-World Comparison</h2>
+        <p className="text-gray-500 mb-8 max-w-3xl">Direct-inject HGH and GH-releasing peptides are frequently compared. Here is how they genuinely differ across every relevant dimension.</p>
 
         <div className="overflow-x-auto rounded-2xl border border-white/10 mb-8">
           <table className="w-full text-sm">
             <thead>
               <tr style={{ background: 'rgba(96,165,250,0.05)' }}>
-                <th className="text-left py-4 px-5 text-slate-400 font-semibold">Factor</th>
+                <th className="text-left py-4 px-5 text-gray-500 font-semibold">Factor</th>
                 <th className="text-center py-4 px-5 text-blue-400 font-bold">CJC-1295/Ipamorelin</th>
                 <th className="text-center py-4 px-5 text-emerald-400 font-bold">Direct HGH</th>
               </tr>
@@ -391,9 +391,9 @@ export default function CjcIpamoreinResultsPage() {
                 ['Best for', 'Optimization, body comp, anti-aging', 'Clinical GH deficiency, bodybuilding'],
               ].map(([factor, cjc, hgh], i) => (
                 <tr key={factor} style={{ background: i % 2 === 0 ? 'rgba(255,255,255,0.01)' : 'transparent', borderTop: '1px solid rgba(255,255,255,0.04)' }}>
-                  <td className="py-3 px-5 text-slate-300 font-medium">{factor}</td>
-                  <td className="py-3 px-5 text-center text-slate-400">{cjc}</td>
-                  <td className="py-3 px-5 text-center text-slate-400">{hgh}</td>
+                  <td className="py-3 px-5 text-gray-600 font-medium">{factor}</td>
+                  <td className="py-3 px-5 text-center text-gray-500">{cjc}</td>
+                  <td className="py-3 px-5 text-center text-gray-500">{hgh}</td>
                 </tr>
               ))}
             </tbody>
@@ -401,11 +401,11 @@ export default function CjcIpamoreinResultsPage() {
         </div>
 
         <div className="glass-card p-6">
-          <h3 className="text-white font-black text-lg mb-3">The Bottom Line on CJC vs HGH</h3>
-          <p className="text-slate-300 text-sm leading-relaxed mb-3">
+          <h3 className="text-gray-900 font-black text-lg mb-3">The Bottom Line on CJC vs HGH</h3>
+          <p className="text-gray-600 text-sm leading-relaxed mb-3">
             For the vast majority of users — those optimizing body composition, recovery, and anti-aging without clinical GH deficiency — CJC-1295/Ipamorelin is the superior choice on nearly every metric except raw GH output magnitude. It works with the body&apos;s own pituitary regulation, maintains natural feedback loops, carries substantially lower side-effect risk, costs 5–10x less, and produces results that are comparable to low-to-moderate dose HGH for body composition purposes.
           </p>
-          <p className="text-slate-400 text-sm leading-relaxed">
+          <p className="text-gray-500 text-sm leading-relaxed">
             Direct HGH becomes the rational choice only in cases of clinically diagnosed GH deficiency (where the pituitary cannot respond adequately to GHRH/ghrelin signals), for users who have already optimized GH secretagogue response and need greater GH output, or for competitive bodybuilders targeting the highest possible GH levels regardless of side-effect trade-offs.
           </p>
         </div>
@@ -416,9 +416,9 @@ export default function CjcIpamoreinResultsPage() {
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center gap-3 mb-4">
             <Layers className="w-7 h-7 text-blue-400" />
-            <h2 className="text-3xl font-black text-white">Stacking CJC/Ipamorelin with Other Peptides</h2>
+            <h2 className="text-3xl font-black text-gray-900">Stacking CJC/Ipamorelin with Other Peptides</h2>
           </div>
-          <p className="text-slate-400 mb-10 max-w-3xl">CJC-1295/Ipamorelin is one of the most versatile base peptides — it pairs effectively with healing peptides, anti-aging compounds, and fat-loss agents. Here are the four most evidence-supported stacking protocols.</p>
+          <p className="text-gray-500 mb-10 max-w-3xl">CJC-1295/Ipamorelin is one of the most versatile base peptides — it pairs effectively with healing peptides, anti-aging compounds, and fat-loss agents. Here are the four most evidence-supported stacking protocols.</p>
 
           <div className="space-y-5">
             {[
@@ -450,19 +450,19 @@ export default function CjcIpamoreinResultsPage() {
               <div key={stack.stack} className={`glass-card p-7 border-l-4 ${stack.color === 'emerald' ? 'border-emerald-500' : stack.color === 'purple' ? 'border-purple-500' : 'border-blue-500'}`}>
                 <div className="flex flex-wrap items-start justify-between gap-3 mb-4">
                   <div>
-                    <h3 className="text-white font-black text-xl">{stack.stack}</h3>
+                    <h3 className="text-gray-900 font-black text-xl">{stack.stack}</h3>
                     <span className={`text-xs font-bold ${stack.color === 'emerald' ? 'text-emerald-400' : stack.color === 'purple' ? 'text-purple-400' : 'text-blue-400'}`}>{stack.goal}</span>
                   </div>
                 </div>
-                <p className="text-slate-300 text-sm leading-relaxed mb-4">{stack.description}</p>
+                <p className="text-gray-600 text-sm leading-relaxed mb-4">{stack.description}</p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div className="bg-slate-800/40 rounded-xl p-4">
-                    <p className="text-slate-400 text-xs font-bold uppercase tracking-wide mb-2">Protocol</p>
-                    <p className="text-slate-300 text-xs leading-relaxed">{stack.protocol}</p>
+                    <p className="text-gray-500 text-xs font-bold uppercase tracking-wide mb-2">Protocol</p>
+                    <p className="text-gray-600 text-xs leading-relaxed">{stack.protocol}</p>
                   </div>
                   <div className="bg-slate-800/40 rounded-xl p-4">
-                    <p className="text-slate-400 text-xs font-bold uppercase tracking-wide mb-2">Expected Outcomes</p>
-                    <p className="text-slate-300 text-xs leading-relaxed">{stack.expectedOutcomes}</p>
+                    <p className="text-gray-500 text-xs font-bold uppercase tracking-wide mb-2">Expected Outcomes</p>
+                    <p className="text-gray-600 text-xs leading-relaxed">{stack.expectedOutcomes}</p>
                   </div>
                 </div>
               </div>
@@ -474,22 +474,22 @@ export default function CjcIpamoreinResultsPage() {
       {/* Protocol reminder */}
       <section className="py-12" style={{ background: 'rgba(6,6,16,0.8)' }}>
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl font-black text-white mb-8 text-center">Protocol That Produces These Results</h2>
+          <h2 className="text-2xl font-black text-gray-900 mb-8 text-center">Protocol That Produces These Results</h2>
           <div className="glass-card p-8 font-mono text-sm">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div>
                 <p className="text-blue-400 font-bold mb-3">Before Bed (5 nights/week)</p>
-                <p className="text-slate-300">• CJC-1295 (no DAC): 100–200mcg SC</p>
-                <p className="text-slate-300">• Ipamorelin: 200–300mcg SC</p>
-                <p className="text-slate-300">• Both in same syringe</p>
-                <p className="text-slate-300">• 30–60 min before sleep</p>
+                <p className="text-gray-600">• CJC-1295 (no DAC): 100–200mcg SC</p>
+                <p className="text-gray-600">• Ipamorelin: 200–300mcg SC</p>
+                <p className="text-gray-600">• Both in same syringe</p>
+                <p className="text-gray-600">• 30–60 min before sleep</p>
               </div>
               <div>
                 <p className="text-emerald-400 font-bold mb-3">Requirements for Results</p>
-                <p className="text-slate-300">• Fast 2–3 hours before injection</p>
-                <p className="text-slate-300">• Consistent 5 days/week minimum</p>
-                <p className="text-slate-300">• 3–6 month minimum cycle for full benefit</p>
-                <p className="text-slate-300">• Protein intake ≥ 0.8g/lb bodyweight</p>
+                <p className="text-gray-600">• Fast 2–3 hours before injection</p>
+                <p className="text-gray-600">• Consistent 5 days/week minimum</p>
+                <p className="text-gray-600">• 3–6 month minimum cycle for full benefit</p>
+                <p className="text-gray-600">• Protein intake ≥ 0.8g/lb bodyweight</p>
               </div>
             </div>
           </div>
@@ -498,16 +498,16 @@ export default function CjcIpamoreinResultsPage() {
 
       {/* FAQ */}
       <section className="py-16 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-black text-white mb-10 text-center">CJC-1295 Ipamorelin FAQ</h2>
+        <h2 className="text-3xl font-black text-gray-900 mb-10 text-center">CJC-1295 Ipamorelin FAQ</h2>
         <div className="space-y-3">
           {faqs.map(({ q, a }) => (
             <details key={q} className="glass-card group">
               <summary className="p-5 cursor-pointer list-none flex items-center justify-between">
-                <span className="text-white font-semibold text-sm">{q}</span>
+                <span className="text-gray-900 font-semibold text-sm">{q}</span>
                 <span className="text-blue-400 text-lg group-open:rotate-45 transition-transform shrink-0 ml-4">+</span>
               </summary>
               <div className="px-5 pb-5">
-                <p className="text-slate-400 text-sm leading-relaxed">{a}</p>
+                <p className="text-gray-500 text-sm leading-relaxed">{a}</p>
               </div>
             </details>
           ))}
@@ -517,8 +517,8 @@ export default function CjcIpamoreinResultsPage() {
       {/* CTA */}
       <section className="py-16 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="glass-card p-10">
-          <h2 className="text-2xl font-black text-white mb-3">Get CJC-1295 / Ipamorelin</h2>
-          <p className="text-slate-400 mb-6">COA-verified, US domestic. The cleanest GH-releasing peptide combination available.</p>
+          <h2 className="text-2xl font-black text-gray-900 mb-3">Get CJC-1295 / Ipamorelin</h2>
+          <p className="text-gray-500 mb-6">COA-verified, US domestic. The cleanest GH-releasing peptide combination available.</p>
           <div className="flex flex-wrap gap-4 justify-center">
             <a href={SOURCE_URL} target="_blank" rel="nofollow noopener noreferrer"
               className="btn-cta px-8 py-4 flex items-center gap-2">

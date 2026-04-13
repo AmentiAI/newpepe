@@ -147,11 +147,11 @@ export default function PeptidesForWomenPage() {
           <div className="inline-flex items-center gap-2 bg-purple-500/10 border border-purple-500/30 rounded-full px-4 py-2 mb-6">
             <span className="text-purple-400 text-sm font-semibold tracking-wide">PEPTIDES FOR WOMEN GUIDE 2026</span>
           </div>
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white leading-tight mb-6">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-gray-900 leading-tight mb-6">
             Best Peptides<br />
             <span className="text-purple-400">for Women</span>
           </h1>
-          <p className="text-slate-300 text-xl leading-relaxed mb-8 max-w-3xl">
+          <p className="text-gray-600 text-xl leading-relaxed mb-8 max-w-3xl">
             Fat loss. Anti-aging. Healing. Skin quality. Here are the peptides that actually work for women&apos;s goals —
             with full dosing protocols and safety information.
           </p>
@@ -163,7 +163,7 @@ export default function PeptidesForWomenPage() {
             ].map((s) => (
               <div key={s.label} className="glass-card p-4 text-center">
                 <div className="text-sm font-black text-purple-400">{s.stat}</div>
-                <div className="text-slate-400 text-xs mt-1">{s.label}</div>
+                <div className="text-gray-500 text-xs mt-1">{s.label}</div>
               </div>
             ))}
           </div>
@@ -176,14 +176,14 @@ export default function PeptidesForWomenPage() {
           <div className="inline-flex items-center gap-2 bg-purple-500/10 border border-purple-500/20 rounded-full px-3 py-1.5 mb-6">
             <span className="text-purple-400 text-sm font-semibold">WOMEN-SPECIFIC SCIENCE</span>
           </div>
-          <h2 className="text-3xl font-black text-white mb-8">Women&apos;s Unique Peptide Response</h2>
+          <h2 className="text-3xl font-black text-gray-900 mb-8">Women&apos;s Unique Peptide Response</h2>
 
-          <div className="space-y-5 text-slate-300 leading-relaxed">
+          <div className="space-y-5 text-gray-600 leading-relaxed">
             <p>
               Women respond to peptides in ways that are meaningfully different from men — not in terms of safety or efficacy, but in the physiological context that shapes optimal dosing, timing, and protocol design. Understanding these differences allows for protocols that work with the female hormonal environment rather than against it.
             </p>
 
-            <h3 className="text-white font-bold text-xl mt-6 mb-3">Hormonal Cycle Effects on Peptide Response</h3>
+            <h3 className="text-gray-900 font-bold text-xl mt-6 mb-3">Hormonal Cycle Effects on Peptide Response</h3>
             <p>
               Estrogen significantly modulates growth hormone secretion. During the follicular phase (days 1–14, estrogen rising), GH pulse amplitude and frequency are at their peak — women naturally produce more GH than men in their reproductive years, and this is driven by estrogen&apos;s stimulatory effect on the GH axis. This means GH secretagogues (CJC-1295/Ipamorelin) will produce slightly stronger effects during the follicular phase compared to the luteal phase (days 15–28, progesterone dominant), when GH responsiveness slightly decreases.
             </p>
@@ -191,12 +191,12 @@ export default function PeptidesForWomenPage() {
               The practical implication: starting a new GH peptide protocol during the follicular phase (first two weeks of the cycle) tends to produce stronger initial results and faster adaptation. This is not critical — GH peptides work throughout the cycle — but it provides an optimal entry point for women who want to establish the protocol efficiently.
             </p>
 
-            <h3 className="text-white font-bold text-xl mt-6 mb-3">Women and GHK-Cu: Faster and Stronger Results</h3>
+            <h3 className="text-gray-900 font-bold text-xl mt-6 mb-3">Women and GHK-Cu: Faster and Stronger Results</h3>
             <p>
               GHK-Cu consistently shows faster and more pronounced effects in women compared to men in the cosmetic and skin anti-aging context. The reason is biological: women have higher baseline collagen turnover rates and more GHK-Cu receptor expression in skin fibroblasts. When GHK-Cu stimulates collagen synthesis, it is amplifying an already more active pathway — producing visible results in as little as 4–6 weeks of consistent topical + injection use, compared to 8–12 weeks for the same observable changes in men.
             </p>
 
-            <h3 className="text-white font-bold text-xl mt-6 mb-3">Dosing Adjustments for Women</h3>
+            <h3 className="text-gray-900 font-bold text-xl mt-6 mb-3">Dosing Adjustments for Women</h3>
             <p>
               The standard research peptide dose ranges published are based largely on male study populations. Women generally do well at the lower end of these ranges — approximately 20–30% lower doses than the upper male ranges. This is partly bodyweight-based, but also reflects women&apos;s greater baseline GH axis sensitivity. A woman weighing 140 lbs does not need the same absolute CJC-1295/Ipamorelin dose as a man weighing 190 lbs — and may find that even 100mcg each of CJC/Ipa produces all the benefits without any side effects.
             </p>
@@ -204,7 +204,7 @@ export default function PeptidesForWomenPage() {
               GLP-1 peptide dosing follows the same titration protocol for women and men. However, women may experience GI side effects (nausea, constipation) slightly more frequently at higher doses, and conservative titration is advisable — spending 6 weeks at each dose step rather than 4.
             </p>
 
-            <h3 className="text-white font-bold text-xl mt-6 mb-3">Hormonal Safety Considerations by Peptide</h3>
+            <h3 className="text-gray-900 font-bold text-xl mt-6 mb-3">Hormonal Safety Considerations by Peptide</h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-4">
               {[
                 { peptide: 'BPC-157', safety: 'Completely safe — zero hormonal activity. Identical effects in women and men.' },
@@ -216,7 +216,7 @@ export default function PeptidesForWomenPage() {
               ].map((item) => (
                 <div key={item.peptide} className="rounded-xl p-4" style={{ background: 'rgba(168,85,247,0.05)', border: '1px solid rgba(168,85,247,0.15)' }}>
                   <div className="text-purple-400 font-bold text-sm mb-1">{item.peptide}</div>
-                  <p className="text-slate-400 text-xs leading-relaxed">{item.safety}</p>
+                  <p className="text-gray-500 text-xs leading-relaxed">{item.safety}</p>
                 </div>
               ))}
             </div>
@@ -229,8 +229,8 @@ export default function PeptidesForWomenPage() {
         <div className="inline-flex items-center gap-2 bg-amber-500/10 border border-amber-500/20 rounded-full px-3 py-1.5 mb-6">
           <span className="text-amber-400 text-sm font-semibold">LIFE-STAGE PROTOCOLS</span>
         </div>
-        <h2 className="text-3xl font-black text-white mb-3">Hormone-Specific Protocols for Women</h2>
-        <p className="text-slate-400 mb-10">Three distinct protocols tailored to the hormonal realities of each life stage.</p>
+        <h2 className="text-3xl font-black text-gray-900 mb-3">Hormone-Specific Protocols for Women</h2>
+        <p className="text-gray-500 mb-10">Three distinct protocols tailored to the hormonal realities of each life stage.</p>
 
         <div className="space-y-6">
           {[
@@ -276,7 +276,7 @@ export default function PeptidesForWomenPage() {
                 <span className="text-3xl">{protocol.emoji}</span>
                 <div>
                   <div className={`text-xs font-bold tracking-widest mb-1 ${protocol.color === 'emerald' ? 'text-emerald-400' : protocol.color === 'purple' ? 'text-purple-400' : 'text-blue-400'}`}>PROTOCOL</div>
-                  <h3 className="text-white font-black text-xl">{protocol.stage}</h3>
+                  <h3 className="text-gray-900 font-black text-xl">{protocol.stage}</h3>
                   <p className={`text-sm mt-1 ${protocol.color === 'emerald' ? 'text-emerald-400' : protocol.color === 'purple' ? 'text-purple-400' : 'text-blue-400'}`}>{protocol.focus}</p>
                 </div>
               </div>
@@ -284,15 +284,15 @@ export default function PeptidesForWomenPage() {
                 {protocol.peptides.map((p) => (
                   <div key={p.name} className="rounded-xl p-4" style={{ background: 'rgba(255,255,255,0.02)', border: '1px solid rgba(255,255,255,0.06)' }}>
                     <div className="flex items-center gap-2 mb-1.5">
-                      <span className="text-white font-bold text-sm">{p.name}</span>
+                      <span className="text-gray-900 font-bold text-sm">{p.name}</span>
                       <span className={`text-xs px-2 py-0.5 rounded-full font-semibold ${protocol.color === 'emerald' ? 'bg-emerald-500/10 text-emerald-400' : protocol.color === 'purple' ? 'bg-purple-500/10 text-purple-400' : 'bg-blue-500/10 text-blue-400'}`}>{p.role}</span>
                     </div>
-                    <p className="text-slate-400 text-xs leading-relaxed">{p.use}</p>
+                    <p className="text-gray-500 text-xs leading-relaxed">{p.use}</p>
                   </div>
                 ))}
               </div>
               <div className="rounded-lg p-3 bg-slate-800/30">
-                <p className="text-slate-500 text-xs leading-relaxed italic">{protocol.notes}</p>
+                <p className="text-gray-500 text-xs leading-relaxed italic">{protocol.notes}</p>
               </div>
             </div>
           ))}
@@ -303,8 +303,8 @@ export default function PeptidesForWomenPage() {
       <section className="py-16" style={{ background: 'rgba(168,85,247,0.03)', borderTop: '1px solid rgba(168,85,247,0.08)' }}>
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-10">
-            <h2 className="text-3xl font-black text-white mb-3">Women&apos;s Peptide Safety Guide</h2>
-            <p className="text-slate-400 max-w-xl mx-auto">
+            <h2 className="text-3xl font-black text-gray-900 mb-3">Women&apos;s Peptide Safety Guide</h2>
+            <p className="text-gray-500 max-w-xl mx-auto">
               Select your primary goal and age range for personalized recommendations with women-specific dosing and safety notes.
             </p>
           </div>
@@ -317,40 +317,40 @@ export default function PeptidesForWomenPage() {
         <div className="inline-flex items-center gap-2 bg-rose-500/10 border border-rose-500/20 rounded-full px-3 py-1.5 mb-6">
           <span className="text-rose-400 text-sm font-semibold">CYCLE & FERTILITY</span>
         </div>
-        <h2 className="text-3xl font-black text-white mb-8">Peptides and the Menstrual Cycle</h2>
+        <h2 className="text-3xl font-black text-gray-900 mb-8">Peptides and the Menstrual Cycle</h2>
 
         <div className="space-y-5">
           <div className="glass-card p-6">
-            <h3 className="text-white font-bold text-lg mb-3">Do Peptides Affect the Menstrual Cycle?</h3>
-            <p className="text-slate-300 text-sm leading-relaxed">
+            <h3 className="text-gray-900 font-bold text-lg mb-3">Do Peptides Affect the Menstrual Cycle?</h3>
+            <p className="text-gray-600 text-sm leading-relaxed">
               None of the commonly used research peptides (BPC-157, GHK-Cu, CJC-1295/Ipamorelin, Epithalon) have been shown to disrupt the menstrual cycle. These peptides do not contain or mimic estrogen, progesterone, LH, FSH, or hCG — the hormones that regulate ovulation and cycle timing. Women report no changes to cycle regularity, duration, or symptoms when using these peptides. The one exception worth noting: GH secretagogues increase GH, and very high GH levels theoretically could affect the hormonal axis, but at the doses used in peptide protocols, this concern has not been observed in practice.
             </p>
           </div>
 
           <div className="glass-card p-6">
-            <h3 className="text-white font-bold text-lg mb-3">GLP-1 Peptides and Fertility</h3>
-            <p className="text-slate-300 text-sm leading-relaxed">
+            <h3 className="text-gray-900 font-bold text-lg mb-3">GLP-1 Peptides and Fertility</h3>
+            <p className="text-gray-600 text-sm leading-relaxed">
               GLP-1 peptides (semaglutide, tirzepatide) do not directly affect ovulation, ovarian function, or fertility. However, they carry important reproductive considerations. First, dramatic weight loss itself can temporarily affect menstrual cycle regularity — a common occurrence when body fat drops rapidly. Second, GLP-1 drugs carry FDA warnings advising against use during pregnancy due to animal reproduction studies showing fetal harm. Women of reproductive age should use reliable contraception during GLP-1 peptide protocols. Note that GLP-1 peptides may reduce oral contraceptive absorption during the nausea phase (weeks 1–4 of use) — using a backup method or switching to non-oral contraception during this period is advisable.
             </p>
           </div>
 
           <div className="glass-card p-6">
-            <h3 className="text-white font-bold text-lg mb-3">Safety of Peptides During Menstruation</h3>
-            <p className="text-slate-300 text-sm leading-relaxed">
+            <h3 className="text-gray-900 font-bold text-lg mb-3">Safety of Peptides During Menstruation</h3>
+            <p className="text-gray-600 text-sm leading-relaxed">
               There is no established reason to pause BPC-157, GHK-Cu, CJC-1295/Ipamorelin, or Epithalon protocols during menstruation. These peptides are non-hormonal and do not interact with the prostaglandin or hormonal pathways involved in menstruation. Some women report subjective improvement in dysmenorrhea (painful periods) with BPC-157 use, likely due to its systemic anti-inflammatory effect on prostaglandins. Continue your protocol without interruption unless you experience any unexpected changes.
             </p>
           </div>
 
           <div className="glass-card p-6">
-            <h3 className="text-white font-bold text-lg mb-3">Pregnancy: Do Not Use</h3>
-            <p className="text-slate-300 text-sm leading-relaxed">
+            <h3 className="text-gray-900 font-bold text-lg mb-3">Pregnancy: Do Not Use</h3>
+            <p className="text-gray-600 text-sm leading-relaxed">
               All peptide protocols should be discontinued upon confirmed or suspected pregnancy. None of the commonly used research peptides have been tested for fetal safety, and the precautionary principle applies absolutely here. GLP-1 peptides have documented reproductive toxicity in animal studies. GH secretagogues affect the GH/IGF-1 axis, which plays critical roles in fetal development. BPC-157, while appearing very safe in adult models, has no pregnancy safety data. The recommendation is unambiguous: stop all peptides immediately if pregnancy is confirmed or being planned.
             </p>
           </div>
 
           <div className="glass-card p-6">
-            <h3 className="text-white font-bold text-lg mb-3">Postpartum Healing with BPC-157</h3>
-            <p className="text-slate-300 text-sm leading-relaxed">
+            <h3 className="text-gray-900 font-bold text-lg mb-3">Postpartum Healing with BPC-157</h3>
+            <p className="text-gray-600 text-sm leading-relaxed">
               After completing breastfeeding, BPC-157 is an excellent postpartum recovery tool. It accelerates healing of perineal tissue, pelvic floor musculature, abdominal separation (diastasis recti recovery), and C-section scars — all tissue types that respond well to BPC-157&apos;s healing mechanisms. The optimal timing is after wounds and incisions are fully closed and after breastfeeding has ended. Many postpartum women also benefit from GHK-Cu for skin elasticity restoration after the significant changes pregnancy produces in abdominal skin tissue.
             </p>
           </div>
@@ -359,37 +359,37 @@ export default function PeptidesForWomenPage() {
 
       {/* Peptide cards */}
       <section className="py-16 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-black text-white mb-3">The 6 Best Peptides for Women</h2>
-        <p className="text-slate-400 mb-10">Ranked by goal — all have no androgenic effects and are safe for female use.</p>
+        <h2 className="text-3xl font-black text-gray-900 mb-3">The 6 Best Peptides for Women</h2>
+        <p className="text-gray-500 mb-10">Ranked by goal — all have no androgenic effects and are safe for female use.</p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {peptides.map((p) => (
             <div key={p.name} className="glass-card p-6">
               <div className="flex items-start justify-between mb-3">
                 <div>
                   <div className={`text-xs font-bold tracking-widest mb-1 ${p.color === 'blue' ? 'text-blue-400' : p.color === 'emerald' ? 'text-emerald-400' : p.color === 'purple' ? 'text-purple-400' : 'text-amber-400'}`}>{p.goal}</div>
-                  <h3 className="text-white font-black text-xl">{p.name}</h3>
+                  <h3 className="text-gray-900 font-black text-xl">{p.name}</h3>
                 </div>
                 <span className={`text-xs px-3 py-1 rounded-full font-semibold ${p.color === 'blue' ? 'bg-blue-500/10 text-blue-400' : p.color === 'emerald' ? 'bg-emerald-500/10 text-emerald-400' : p.color === 'purple' ? 'bg-purple-500/10 text-purple-400' : 'bg-amber-500/10 text-amber-400'}`}>{p.rank}</span>
               </div>
-              <p className="text-slate-300 text-sm leading-relaxed mb-4">{p.whyWomen}</p>
+              <p className="text-gray-600 text-sm leading-relaxed mb-4">{p.whyWomen}</p>
               <div className="grid grid-cols-2 gap-3 mb-4">
                 <div className="bg-slate-800/50 rounded-lg p-3">
-                  <p className="text-slate-500 text-xs mb-1">Dose</p>
-                  <p className="text-white text-xs font-semibold">{p.dose}</p>
+                  <p className="text-gray-500 text-xs mb-1">Dose</p>
+                  <p className="text-gray-900 text-xs font-semibold">{p.dose}</p>
                 </div>
                 <div className="bg-slate-800/50 rounded-lg p-3">
-                  <p className="text-slate-500 text-xs mb-1">Route</p>
-                  <p className="text-white text-xs font-semibold">{p.route}</p>
+                  <p className="text-gray-500 text-xs mb-1">Route</p>
+                  <p className="text-gray-900 text-xs font-semibold">{p.route}</p>
                 </div>
               </div>
               <ul className="space-y-1 mb-4">
                 {p.benefits.map((b) => (
-                  <li key={b} className="flex items-center gap-2 text-slate-400 text-xs">
+                  <li key={b} className="flex items-center gap-2 text-gray-500 text-xs">
                     <CheckCircle className="w-3 h-3 shrink-0 text-emerald-400" /> {b}
                   </li>
                 ))}
               </ul>
-              <Link href={`/products/${p.slug}`} className="block text-center text-xs font-semibold py-2 rounded-lg border border-white/10 text-slate-300 hover:text-white hover:border-white/30 transition-colors">
+              <Link href={`/products/${p.slug}`} className="block text-center text-xs font-semibold py-2 rounded-lg border border-white/10 text-gray-600 hover:text-gray-900 hover:border-white/30 transition-colors">
                 View {p.name} details →
               </Link>
             </div>
@@ -399,16 +399,16 @@ export default function PeptidesForWomenPage() {
 
       {/* FAQ */}
       <section className="py-16 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-black text-white mb-10 text-center">Peptides for Women FAQ</h2>
+        <h2 className="text-3xl font-black text-gray-900 mb-10 text-center">Peptides for Women FAQ</h2>
         <div className="space-y-3">
           {allFaqs.map(({ q, a }) => (
             <details key={q} className="glass-card group">
               <summary className="p-5 cursor-pointer list-none flex items-center justify-between">
-                <span className="text-white font-semibold text-sm">{q}</span>
+                <span className="text-gray-900 font-semibold text-sm">{q}</span>
                 <span className="text-purple-400 text-lg group-open:rotate-45 transition-transform shrink-0 ml-4">+</span>
               </summary>
               <div className="px-5 pb-5">
-                <p className="text-slate-400 text-sm leading-relaxed">{a}</p>
+                <p className="text-gray-500 text-sm leading-relaxed">{a}</p>
               </div>
             </details>
           ))}
@@ -418,8 +418,8 @@ export default function PeptidesForWomenPage() {
       {/* CTA */}
       <section className="py-16 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="glass-card p-10">
-          <h2 className="text-2xl font-black text-white mb-3">Shop Peptides</h2>
-          <p className="text-slate-400 mb-6">COA-verified. US domestic. All peptides listed above available now.</p>
+          <h2 className="text-2xl font-black text-gray-900 mb-3">Shop Peptides</h2>
+          <p className="text-gray-500 mb-6">COA-verified. US domestic. All peptides listed above available now.</p>
           <div className="flex flex-wrap gap-4 justify-center">
             <a href={SOURCE_URL} target="_blank" rel="nofollow noopener noreferrer"
               className="btn-cta px-8 py-4 flex items-center gap-2">

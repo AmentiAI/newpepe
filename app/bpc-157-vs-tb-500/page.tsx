@@ -97,11 +97,11 @@ export default function BpcVsTb500Page() {
           <div className="inline-flex items-center gap-2 bg-emerald-500/10 border border-emerald-500/30 rounded-full px-4 py-2 mb-6">
             <span className="text-emerald-400 text-sm font-semibold tracking-wide">HEALING PEPTIDE COMPARISON</span>
           </div>
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white leading-tight mb-6">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-gray-900 leading-tight mb-6">
             BPC-157 vs TB-500:<br />
             <span style={{ color: '#00ff88' }}>Which Is Better for Healing?</span>
           </h1>
-          <p className="text-slate-300 text-xl leading-relaxed mb-8 max-w-3xl mx-auto">
+          <p className="text-gray-600 text-xl leading-relaxed mb-8 max-w-3xl mx-auto">
             Both are the world&apos;s most studied healing peptides. But they work completely differently —
             and understanding the difference is the key to getting the fastest possible recovery.
           </p>
@@ -116,10 +116,10 @@ export default function BpcVsTb500Page() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="glass-card p-8">
             <h2 className="text-2xl font-black text-emerald-400 mb-2">BPC-157</h2>
-            <p className="text-slate-400 text-sm mb-6">Local healer — targets the specific injury site</p>
+            <p className="text-gray-500 text-sm mb-6">Local healer — targets the specific injury site</p>
             <ul className="space-y-3">
               {['Works orally (gastric acid stable)', 'Best for gut, nerve, tendon, and ligament injuries', 'Fastest for localized pain relief (2–4 days)', '100+ peer-reviewed studies — most researched peptide', 'Activates healing pathways directly at injury site', 'No hormonal activity — no PCT needed'].map((p) => (
-                <li key={p} className="flex items-start gap-2 text-slate-300 text-sm">
+                <li key={p} className="flex items-start gap-2 text-gray-600 text-sm">
                   <CheckCircle className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" /> {p}
                 </li>
               ))}
@@ -127,10 +127,10 @@ export default function BpcVsTb500Page() {
           </div>
           <div className="glass-card p-8">
             <h2 className="text-2xl font-black text-blue-400 mb-2">TB-500</h2>
-            <p className="text-slate-400 text-sm mb-6">Systemic healer — mobilizes repair body-wide</p>
+            <p className="text-gray-500 text-sm mb-6">Systemic healer — mobilizes repair body-wide</p>
             <ul className="space-y-3">
               {['Mobilizes stem cells from bone marrow to injury', 'Best for systemic inflammation and flexibility', 'Dramatically improves range of motion (1–2 weeks)', 'Crosses blood-brain barrier — neurological healing', 'Naturally occurring peptide fragment (Thymosin Beta-4)', 'Dosed 1–2× per week vs. daily BPC-157'].map((p) => (
-                <li key={p} className="flex items-start gap-2 text-slate-300 text-sm">
+                <li key={p} className="flex items-start gap-2 text-gray-600 text-sm">
                   <CheckCircle className="w-4 h-4 text-blue-400 shrink-0 mt-0.5" /> {p}
                 </li>
               ))}
@@ -141,12 +141,12 @@ export default function BpcVsTb500Page() {
 
       {/* Full comparison table */}
       <section className="py-12 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-black text-white mb-8 text-center">Full Comparison Table</h2>
+        <h2 className="text-3xl font-black text-gray-900 mb-8 text-center">Full Comparison Table</h2>
         <div className="overflow-x-auto rounded-2xl" style={{ border: '1px solid rgba(0,255,136,0.15)' }}>
           <table className="w-full text-sm">
             <thead>
               <tr style={{ background: 'rgba(0,255,136,0.05)' }}>
-                <th className="text-left py-4 px-5 text-slate-400 font-semibold">Feature</th>
+                <th className="text-left py-4 px-5 text-gray-500 font-semibold">Feature</th>
                 <th className="text-left py-4 px-5 text-emerald-400 font-bold">BPC-157</th>
                 <th className="text-left py-4 px-5 text-blue-400 font-bold">TB-500</th>
               </tr>
@@ -154,9 +154,9 @@ export default function BpcVsTb500Page() {
             <tbody>
               {comparison.map((row, i) => (
                 <tr key={row.feature} style={{ background: i % 2 === 0 ? 'rgba(255,255,255,0.01)' : 'transparent', borderTop: '1px solid rgba(255,255,255,0.04)' }}>
-                  <td className="py-3 px-5 text-slate-300 font-medium">{row.feature}</td>
-                  <td className="py-3 px-5 text-slate-400">{row.bpc}</td>
-                  <td className="py-3 px-5 text-slate-400">{row.tb}</td>
+                  <td className="py-3 px-5 text-gray-600 font-medium">{row.feature}</td>
+                  <td className="py-3 px-5 text-gray-500">{row.bpc}</td>
+                  <td className="py-3 px-5 text-gray-500">{row.tb}</td>
                 </tr>
               ))}
             </tbody>
@@ -167,7 +167,7 @@ export default function BpcVsTb500Page() {
       {/* Use case guide */}
       <section className="py-12" style={{ background: 'rgba(6,6,16,0.8)' }}>
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-black text-white mb-8 text-center">Which Should You Use for Your Injury?</h2>
+          <h2 className="text-3xl font-black text-gray-900 mb-8 text-center">Which Should You Use for Your Injury?</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
             {[
               { title: 'Use BPC-157 Only', cases: ['Gut healing (IBD, leaky gut, Crohn\'s)', 'Budget is the primary constraint', 'Minor tendon or ligament strain', 'Nerve repair focus'], color: 'emerald' },
@@ -175,10 +175,10 @@ export default function BpcVsTb500Page() {
               { title: 'Add TB-500 Priority', cases: ['Systemic inflammation throughout body', 'Multiple injury sites', 'Flexibility and range of motion focus', 'Large muscle tear recovery'], color: 'blue' },
             ].map((card) => (
               <div key={card.title} className={`glass-card p-6 ${card.glow ? 'border-emerald-500/40' : ''}`}>
-                <h3 className={`font-black text-lg mb-4 ${card.color === 'neon' ? 'text-white' : card.color === 'emerald' ? 'text-emerald-400' : 'text-blue-400'}`}>{card.title}</h3>
+                <h3 className={`font-black text-lg mb-4 ${card.color === 'neon' ? 'text-gray-900' : card.color === 'emerald' ? 'text-emerald-400' : 'text-blue-400'}`}>{card.title}</h3>
                 <ul className="space-y-2">
                   {card.cases.map((c) => (
-                    <li key={c} className="text-slate-400 text-sm flex items-start gap-2">
+                    <li key={c} className="text-gray-500 text-sm flex items-start gap-2">
                       <span className={card.color === 'blue' ? 'text-blue-400' : 'text-emerald-400'}>•</span> {c}
                     </li>
                   ))}
@@ -193,16 +193,16 @@ export default function BpcVsTb500Page() {
       <section className="py-16 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center gap-3 mb-4">
           <FlaskConical className="w-7 h-7 text-emerald-400" />
-          <h2 className="text-3xl font-black text-white">The Science Behind Each Peptide</h2>
+          <h2 className="text-3xl font-black text-gray-900">The Science Behind Each Peptide</h2>
         </div>
-        <p className="text-slate-400 mb-10 max-w-3xl">Understanding the cellular mechanisms explains why these two peptides work so differently — and why combining them outperforms either alone.</p>
+        <p className="text-gray-500 mb-10 max-w-3xl">Understanding the cellular mechanisms explains why these two peptides work so differently — and why combining them outperforms either alone.</p>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {/* BPC-157 Science */}
           <div className="glass-card p-8">
             <h3 className="text-2xl font-black text-emerald-400 mb-6">BPC-157: The Local Healer Decoded</h3>
 
-            <div className="space-y-5 text-slate-300 text-sm leading-relaxed">
+            <div className="space-y-5 text-gray-600 text-sm leading-relaxed">
               <div>
                 <h4 className="text-emerald-300 font-bold mb-2">Origins: Gastric Protein Fragment</h4>
                 <p>BPC-157 stands for Body Protection Compound 157. It is a 15-amino acid peptide sequence (Gly-Glu-Pro-Pro-Pro-Gly-Lys-Pro-Ala-Asp-Asp-Ala-Gly-Leu-Val) first isolated from human gastric juice by Croatian researchers in the early 1990s. The name reflects its origin — it was isolated as fragment 157 from the human gastric juice protein BPC. Its natural source in the stomach explains why it survives oral administration without being degraded by stomach acid, a property that makes it uniquely versatile compared to nearly every other research peptide.</p>
@@ -229,7 +229,7 @@ export default function BpcVsTb500Page() {
           <div className="glass-card p-8">
             <h3 className="text-2xl font-black text-blue-400 mb-6">TB-500: The Systemic Healer Decoded</h3>
 
-            <div className="space-y-5 text-slate-300 text-sm leading-relaxed">
+            <div className="space-y-5 text-gray-600 text-sm leading-relaxed">
               <div>
                 <h4 className="text-blue-300 font-bold mb-2">Origins: Naturally Occurring Thymic Protein</h4>
                 <p>TB-500 is the synthetic version of the 43-amino acid fragment (amino acids 17–23) of Thymosin Beta-4 (Tβ4) — a naturally occurring protein found in virtually all human cells at some concentration, with particularly high levels in thymus tissue, blood platelets, and wound fluid. Unlike BPC-157, which is a synthetic compound derived from a naturally occurring sequence, TB-500 is essentially a bioidentical fragment of a protein your body already produces. The full Thymosin Beta-4 molecule contains 43 amino acids; TB-500 isolates the most pharmacologically active fragment responsible for tissue repair, which is the LKKTETQ sequence at positions 17–23. This is the segment responsible for actin binding and most of the regenerative activity.</p>
@@ -259,9 +259,9 @@ export default function BpcVsTb500Page() {
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center gap-3 mb-4">
             <Calendar className="w-7 h-7 text-emerald-400" />
-            <h2 className="text-3xl font-black text-white">Stack Protocol: Exact Dosing Guide</h2>
+            <h2 className="text-3xl font-black text-gray-900">Stack Protocol: Exact Dosing Guide</h2>
           </div>
-          <p className="text-slate-400 mb-10 max-w-3xl">When injury severity justifies both peptides, this 12-week protocol is the most widely used structure — loading phase to flood the tissue with healing signals, active repair phase for structural rebuilding, then maintenance to consolidate gains.</p>
+          <p className="text-gray-500 mb-10 max-w-3xl">When injury severity justifies both peptides, this 12-week protocol is the most widely used structure — loading phase to flood the tissue with healing signals, active repair phase for structural rebuilding, then maintenance to consolidate gains.</p>
 
           <div className="space-y-6">
             {/* Phase 1 */}
@@ -269,29 +269,29 @@ export default function BpcVsTb500Page() {
               <div className="flex items-start justify-between mb-4">
                 <div>
                   <span className="text-emerald-400 text-xs font-bold tracking-widest uppercase">Phase 1</span>
-                  <h3 className="text-white font-black text-xl">Loading Phase — Weeks 1–2</h3>
+                  <h3 className="text-gray-900 font-black text-xl">Loading Phase — Weeks 1–2</h3>
                 </div>
                 <span className="bg-emerald-500/10 text-emerald-400 text-xs font-bold px-3 py-1 rounded-full border border-emerald-500/30">High Intensity</span>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-4">
                 <div className="bg-slate-800/50 rounded-xl p-5">
                   <p className="text-emerald-400 font-bold text-sm mb-3">BPC-157 Protocol</p>
-                  <p className="text-slate-300 text-sm">• <strong className="text-white">Dose:</strong> 500mcg/day</p>
-                  <p className="text-slate-300 text-sm">• <strong className="text-white">Timing:</strong> Subcutaneous injection, split AM/PM (250mcg × 2) or once daily</p>
-                  <p className="text-slate-300 text-sm">• <strong className="text-white">Site:</strong> Inject as close to injury as practical, or abdomen</p>
-                  <p className="text-slate-300 text-sm">• <strong className="text-white">Days:</strong> Every day</p>
+                  <p className="text-gray-600 text-sm">• <strong className="text-gray-900">Dose:</strong> 500mcg/day</p>
+                  <p className="text-gray-600 text-sm">• <strong className="text-gray-900">Timing:</strong> Subcutaneous injection, split AM/PM (250mcg × 2) or once daily</p>
+                  <p className="text-gray-600 text-sm">• <strong className="text-gray-900">Site:</strong> Inject as close to injury as practical, or abdomen</p>
+                  <p className="text-gray-600 text-sm">• <strong className="text-gray-900">Days:</strong> Every day</p>
                 </div>
                 <div className="bg-slate-800/50 rounded-xl p-5">
                   <p className="text-blue-400 font-bold text-sm mb-3">TB-500 Protocol</p>
-                  <p className="text-slate-300 text-sm">• <strong className="text-white">Dose:</strong> 2.5mg, twice per week</p>
-                  <p className="text-slate-300 text-sm">• <strong className="text-white">Timing:</strong> Monday and Thursday (or any 3–4 days apart)</p>
-                  <p className="text-slate-300 text-sm">• <strong className="text-white">Site:</strong> Subcutaneous, abdomen or near injury</p>
-                  <p className="text-slate-300 text-sm">• <strong className="text-white">Total weekly:</strong> 5mg/week</p>
+                  <p className="text-gray-600 text-sm">• <strong className="text-gray-900">Dose:</strong> 2.5mg, twice per week</p>
+                  <p className="text-gray-600 text-sm">• <strong className="text-gray-900">Timing:</strong> Monday and Thursday (or any 3–4 days apart)</p>
+                  <p className="text-gray-600 text-sm">• <strong className="text-gray-900">Site:</strong> Subcutaneous, abdomen or near injury</p>
+                  <p className="text-gray-600 text-sm">• <strong className="text-gray-900">Total weekly:</strong> 5mg/week</p>
                 </div>
               </div>
               <div className="bg-emerald-500/5 border border-emerald-500/20 rounded-lg p-4">
                 <p className="text-emerald-300 text-sm font-semibold mb-1">What to Expect in Phase 1</p>
-                <p className="text-slate-400 text-sm">Acute pain and swelling typically begin reducing within 48–72 hours of the first injection. By the end of week 2, most users report 30–50% reduction in pain levels, improved range of motion, and visibly reduced local inflammation. This phase floods the injury site with the signaling molecules needed to transition tissue from the inflammatory phase to the proliferative repair phase.</p>
+                <p className="text-gray-500 text-sm">Acute pain and swelling typically begin reducing within 48–72 hours of the first injection. By the end of week 2, most users report 30–50% reduction in pain levels, improved range of motion, and visibly reduced local inflammation. This phase floods the injury site with the signaling molecules needed to transition tissue from the inflammatory phase to the proliferative repair phase.</p>
               </div>
             </div>
 
@@ -300,29 +300,29 @@ export default function BpcVsTb500Page() {
               <div className="flex items-start justify-between mb-4">
                 <div>
                   <span className="text-blue-400 text-xs font-bold tracking-widest uppercase">Phase 2</span>
-                  <h3 className="text-white font-black text-xl">Active Healing Phase — Weeks 3–8</h3>
+                  <h3 className="text-gray-900 font-black text-xl">Active Healing Phase — Weeks 3–8</h3>
                 </div>
                 <span className="bg-blue-500/10 text-blue-400 text-xs font-bold px-3 py-1 rounded-full border border-blue-500/30">Structural Repair</span>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-4">
                 <div className="bg-slate-800/50 rounded-xl p-5">
                   <p className="text-emerald-400 font-bold text-sm mb-3">BPC-157 Protocol</p>
-                  <p className="text-slate-300 text-sm">• <strong className="text-white">Dose:</strong> 500mcg/day (maintained from Phase 1)</p>
-                  <p className="text-slate-300 text-sm">• <strong className="text-white">Timing:</strong> Once daily before sleep or split AM/PM</p>
-                  <p className="text-slate-300 text-sm">• <strong className="text-white">Site:</strong> Rotate injection sites; near injury preferred</p>
-                  <p className="text-slate-300 text-sm">• <strong className="text-white">Notes:</strong> Can switch to oral capsules for gut-healing benefit</p>
+                  <p className="text-gray-600 text-sm">• <strong className="text-gray-900">Dose:</strong> 500mcg/day (maintained from Phase 1)</p>
+                  <p className="text-gray-600 text-sm">• <strong className="text-gray-900">Timing:</strong> Once daily before sleep or split AM/PM</p>
+                  <p className="text-gray-600 text-sm">• <strong className="text-gray-900">Site:</strong> Rotate injection sites; near injury preferred</p>
+                  <p className="text-gray-600 text-sm">• <strong className="text-gray-900">Notes:</strong> Can switch to oral capsules for gut-healing benefit</p>
                 </div>
                 <div className="bg-slate-800/50 rounded-xl p-5">
                   <p className="text-blue-400 font-bold text-sm mb-3">TB-500 Protocol</p>
-                  <p className="text-slate-300 text-sm">• <strong className="text-white">Dose:</strong> 2.5mg, once per week (reduced from Phase 1)</p>
-                  <p className="text-slate-300 text-sm">• <strong className="text-white">Timing:</strong> Same day each week for consistency</p>
-                  <p className="text-slate-300 text-sm">• <strong className="text-white">Site:</strong> Subcutaneous abdomen</p>
-                  <p className="text-slate-300 text-sm">• <strong className="text-white">Total weekly:</strong> 2.5mg/week</p>
+                  <p className="text-gray-600 text-sm">• <strong className="text-gray-900">Dose:</strong> 2.5mg, once per week (reduced from Phase 1)</p>
+                  <p className="text-gray-600 text-sm">• <strong className="text-gray-900">Timing:</strong> Same day each week for consistency</p>
+                  <p className="text-gray-600 text-sm">• <strong className="text-gray-900">Site:</strong> Subcutaneous abdomen</p>
+                  <p className="text-gray-600 text-sm">• <strong className="text-gray-900">Total weekly:</strong> 2.5mg/week</p>
                 </div>
               </div>
               <div className="bg-blue-500/5 border border-blue-500/20 rounded-lg p-4">
                 <p className="text-blue-300 text-sm font-semibold mb-1">What to Expect in Phase 2</p>
-                <p className="text-slate-400 text-sm">Weeks 3–8 are the structural repair phase — collagen remodeling, angiogenesis, and cellular proliferation are at their peak. Most users see progressive and measurable improvements in strength, function, and pain-free range of motion throughout this phase. Flexibility gains from TB-500 often become most apparent at weeks 4–6. By week 8, structural healing is typically 60–80% complete for most soft tissue injuries.</p>
+                <p className="text-gray-500 text-sm">Weeks 3–8 are the structural repair phase — collagen remodeling, angiogenesis, and cellular proliferation are at their peak. Most users see progressive and measurable improvements in strength, function, and pain-free range of motion throughout this phase. Flexibility gains from TB-500 often become most apparent at weeks 4–6. By week 8, structural healing is typically 60–80% complete for most soft tissue injuries.</p>
               </div>
             </div>
 
@@ -330,30 +330,30 @@ export default function BpcVsTb500Page() {
             <div className="glass-card p-8 border-l-4" style={{ borderColor: 'rgba(148,163,184,0.4)' }}>
               <div className="flex items-start justify-between mb-4">
                 <div>
-                  <span className="text-slate-400 text-xs font-bold tracking-widest uppercase">Phase 3</span>
-                  <h3 className="text-white font-black text-xl">Maintenance Phase — Weeks 9–12</h3>
+                  <span className="text-gray-500 text-xs font-bold tracking-widest uppercase">Phase 3</span>
+                  <h3 className="text-gray-900 font-black text-xl">Maintenance Phase — Weeks 9–12</h3>
                 </div>
-                <span className="bg-slate-700/50 text-slate-400 text-xs font-bold px-3 py-1 rounded-full border border-slate-600/30">Consolidation</span>
+                <span className="bg-slate-700/50 text-gray-500 text-xs font-bold px-3 py-1 rounded-full border border-slate-600/30">Consolidation</span>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-4">
                 <div className="bg-slate-800/50 rounded-xl p-5">
                   <p className="text-emerald-400 font-bold text-sm mb-3">BPC-157 Protocol</p>
-                  <p className="text-slate-300 text-sm">• <strong className="text-white">Dose:</strong> 250mcg/day (half the earlier dose)</p>
-                  <p className="text-slate-300 text-sm">• <strong className="text-white">Timing:</strong> Once daily, evening preferred</p>
-                  <p className="text-slate-300 text-sm">• <strong className="text-white">Notes:</strong> Oral administration acceptable at this phase</p>
-                  <p className="text-slate-300 text-sm">• <strong className="text-white">Days:</strong> 5 days on, 2 days off acceptable</p>
+                  <p className="text-gray-600 text-sm">• <strong className="text-gray-900">Dose:</strong> 250mcg/day (half the earlier dose)</p>
+                  <p className="text-gray-600 text-sm">• <strong className="text-gray-900">Timing:</strong> Once daily, evening preferred</p>
+                  <p className="text-gray-600 text-sm">• <strong className="text-gray-900">Notes:</strong> Oral administration acceptable at this phase</p>
+                  <p className="text-gray-600 text-sm">• <strong className="text-gray-900">Days:</strong> 5 days on, 2 days off acceptable</p>
                 </div>
                 <div className="bg-slate-800/50 rounded-xl p-5">
                   <p className="text-blue-400 font-bold text-sm mb-3">TB-500 Protocol</p>
-                  <p className="text-slate-300 text-sm">• <strong className="text-white">Dose:</strong> 2.5mg, every 2 weeks</p>
-                  <p className="text-slate-300 text-sm">• <strong className="text-white">Purpose:</strong> Maintain stem cell mobilization, prevent re-injury vulnerability</p>
-                  <p className="text-slate-300 text-sm">• <strong className="text-white">Total monthly:</strong> 5mg/month</p>
-                  <p className="text-slate-300 text-sm">• <strong className="text-white">Notes:</strong> Can discontinue if full recovery confirmed</p>
+                  <p className="text-gray-600 text-sm">• <strong className="text-gray-900">Dose:</strong> 2.5mg, every 2 weeks</p>
+                  <p className="text-gray-600 text-sm">• <strong className="text-gray-900">Purpose:</strong> Maintain stem cell mobilization, prevent re-injury vulnerability</p>
+                  <p className="text-gray-600 text-sm">• <strong className="text-gray-900">Total monthly:</strong> 5mg/month</p>
+                  <p className="text-gray-600 text-sm">• <strong className="text-gray-900">Notes:</strong> Can discontinue if full recovery confirmed</p>
                 </div>
               </div>
               <div className="bg-slate-700/20 border border-slate-600/20 rounded-lg p-4">
-                <p className="text-slate-300 text-sm font-semibold mb-1">What to Expect in Phase 3</p>
-                <p className="text-slate-400 text-sm">The maintenance phase consolidates structural repair and restores tissue tensile strength to pre-injury levels. Many users report that the final 20–30% of functional recovery — the return to full load-bearing activity — occurs in this phase. Maintaining lower-dose BPC-157 and bi-weekly TB-500 during progressive rehab loading helps prevent re-injury during the vulnerable tissue-remodeling period.</p>
+                <p className="text-gray-600 text-sm font-semibold mb-1">What to Expect in Phase 3</p>
+                <p className="text-gray-500 text-sm">The maintenance phase consolidates structural repair and restores tissue tensile strength to pre-injury levels. Many users report that the final 20–30% of functional recovery — the return to full load-bearing activity — occurs in this phase. Maintaining lower-dose BPC-157 and bi-weekly TB-500 during progressive rehab loading helps prevent re-injury during the vulnerable tissue-remodeling period.</p>
               </div>
             </div>
           </div>
@@ -364,29 +364,29 @@ export default function BpcVsTb500Page() {
       <section className="py-16 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center gap-3 mb-4">
           <Target className="w-7 h-7 text-emerald-400" />
-          <h2 className="text-3xl font-black text-white">Which Injuries Need Both vs Just One</h2>
+          <h2 className="text-3xl font-black text-gray-900">Which Injuries Need Both vs Just One</h2>
         </div>
-        <p className="text-slate-400 mb-10 max-w-3xl">For 10 common injuries: whether BPC-157 alone, TB-500 alone, or the combination is the optimal protocol — with the mechanistic reasoning behind each recommendation.</p>
+        <p className="text-gray-500 mb-10 max-w-3xl">For 10 common injuries: whether BPC-157 alone, TB-500 alone, or the combination is the optimal protocol — with the mechanistic reasoning behind each recommendation.</p>
 
         <div className="overflow-x-auto rounded-2xl" style={{ border: '1px solid rgba(0,255,136,0.15)' }}>
           <table className="w-full text-sm">
             <thead>
               <tr style={{ background: 'rgba(0,255,136,0.05)' }}>
-                <th className="text-left py-4 px-4 text-slate-400 font-semibold">Injury</th>
+                <th className="text-left py-4 px-4 text-gray-500 font-semibold">Injury</th>
                 <th className="text-center py-4 px-3 text-emerald-400 font-bold">BPC-157</th>
                 <th className="text-center py-4 px-3 text-blue-400 font-bold">TB-500</th>
-                <th className="text-center py-4 px-3 text-white font-bold">Recommendation</th>
-                <th className="text-left py-4 px-4 text-slate-400 font-semibold">Reasoning</th>
+                <th className="text-center py-4 px-3 text-gray-900 font-bold">Recommendation</th>
+                <th className="text-left py-4 px-4 text-gray-500 font-semibold">Reasoning</th>
               </tr>
             </thead>
             <tbody>
               {injuryMatrix.map((row, i) => (
                 <tr key={row.injury} style={{ background: i % 2 === 0 ? 'rgba(255,255,255,0.01)' : 'transparent', borderTop: '1px solid rgba(255,255,255,0.04)' }}>
-                  <td className="py-3 px-4 text-white font-semibold text-xs">{row.injury}</td>
+                  <td className="py-3 px-4 text-gray-900 font-semibold text-xs">{row.injury}</td>
                   <td className="py-3 px-3 text-center text-base">{row.bpc}</td>
                   <td className="py-3 px-3 text-center text-base">{row.tb}</td>
                   <td className="py-3 px-3 text-center text-xs font-bold text-emerald-300">{row.both || (row.bpc === '⭐ Best' && !row.tb ? 'BPC-157 Only' : row.tb === '⭐ Best' ? 'TB-500 Priority' : 'Both')}</td>
-                  <td className="py-3 px-4 text-slate-400 text-xs leading-relaxed">{row.reasoning}</td>
+                  <td className="py-3 px-4 text-gray-500 text-xs leading-relaxed">{row.reasoning}</td>
                 </tr>
               ))}
             </tbody>
@@ -399,9 +399,9 @@ export default function BpcVsTb500Page() {
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center gap-3 mb-4">
             <BookOpen className="w-7 h-7 text-emerald-400" />
-            <h2 className="text-3xl font-black text-white">Research Evidence Breakdown</h2>
+            <h2 className="text-3xl font-black text-gray-900">Research Evidence Breakdown</h2>
           </div>
-          <p className="text-slate-400 mb-10 max-w-3xl">The strongest published studies for each peptide — what they found, who conducted them, and why they matter for understanding real-world use.</p>
+          <p className="text-gray-500 mb-10 max-w-3xl">The strongest published studies for each peptide — what they found, who conducted them, and why they matter for understanding real-world use.</p>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
             {/* BPC-157 Studies */}
@@ -430,9 +430,9 @@ export default function BpcVsTb500Page() {
                 ].map((study) => (
                   <div key={study.title} className="glass-card p-5">
                     <p className="text-emerald-300 font-bold text-sm mb-1">{study.title}</p>
-                    <p className="text-slate-500 text-xs italic mb-3">{study.journal}</p>
-                    <p className="text-slate-300 text-xs leading-relaxed mb-2"><strong className="text-slate-200">Finding:</strong> {study.finding}</p>
-                    <p className="text-slate-400 text-xs leading-relaxed"><strong className="text-emerald-400">Why it matters:</strong> {study.significance}</p>
+                    <p className="text-gray-500 text-xs italic mb-3">{study.journal}</p>
+                    <p className="text-gray-600 text-xs leading-relaxed mb-2"><strong className="text-gray-700">Finding:</strong> {study.finding}</p>
+                    <p className="text-gray-500 text-xs leading-relaxed"><strong className="text-emerald-400">Why it matters:</strong> {study.significance}</p>
                   </div>
                 ))}
               </div>
@@ -464,9 +464,9 @@ export default function BpcVsTb500Page() {
                 ].map((study) => (
                   <div key={study.title} className="glass-card p-5">
                     <p className="text-blue-300 font-bold text-sm mb-1">{study.title}</p>
-                    <p className="text-slate-500 text-xs italic mb-3">{study.journal}</p>
-                    <p className="text-slate-300 text-xs leading-relaxed mb-2"><strong className="text-slate-200">Finding:</strong> {study.finding}</p>
-                    <p className="text-slate-400 text-xs leading-relaxed"><strong className="text-blue-400">Why it matters:</strong> {study.significance}</p>
+                    <p className="text-gray-500 text-xs italic mb-3">{study.journal}</p>
+                    <p className="text-gray-600 text-xs leading-relaxed mb-2"><strong className="text-gray-700">Finding:</strong> {study.finding}</p>
+                    <p className="text-gray-500 text-xs leading-relaxed"><strong className="text-blue-400">Why it matters:</strong> {study.significance}</p>
                   </div>
                 ))}
               </div>
@@ -475,7 +475,7 @@ export default function BpcVsTb500Page() {
 
           {/* Combo Studies */}
           <div>
-            <h3 className="text-xl font-black text-white mb-5">Combination Studies</h3>
+            <h3 className="text-xl font-black text-gray-900 mb-5">Combination Studies</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {[
                 {
@@ -490,9 +490,9 @@ export default function BpcVsTb500Page() {
                 },
               ].map((study) => (
                 <div key={study.title} className="glass-card p-5 border-t-2 border-emerald-500/30">
-                  <p className="text-white font-bold text-sm mb-2">{study.title}</p>
-                  <p className="text-slate-300 text-xs leading-relaxed mb-2"><strong className="text-slate-200">Finding:</strong> {study.finding}</p>
-                  <p className="text-slate-400 text-xs leading-relaxed"><strong className="text-emerald-400">Implication:</strong> {study.implication}</p>
+                  <p className="text-gray-900 font-bold text-sm mb-2">{study.title}</p>
+                  <p className="text-gray-600 text-xs leading-relaxed mb-2"><strong className="text-gray-700">Finding:</strong> {study.finding}</p>
+                  <p className="text-gray-500 text-xs leading-relaxed"><strong className="text-emerald-400">Implication:</strong> {study.implication}</p>
                 </div>
               ))}
             </div>
@@ -502,16 +502,16 @@ export default function BpcVsTb500Page() {
 
       {/* FAQ */}
       <section className="py-16 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-black text-white mb-10 text-center">BPC-157 vs TB-500 FAQ</h2>
+        <h2 className="text-3xl font-black text-gray-900 mb-10 text-center">BPC-157 vs TB-500 FAQ</h2>
         <div className="space-y-3">
           {faqs.map(({ q, a }) => (
             <details key={q} className="glass-card group">
               <summary className="p-5 cursor-pointer list-none flex items-center justify-between">
-                <span className="text-white font-semibold text-sm">{q}</span>
+                <span className="text-gray-900 font-semibold text-sm">{q}</span>
                 <span className="text-emerald-400 text-lg group-open:rotate-45 transition-transform shrink-0 ml-4">+</span>
               </summary>
               <div className="px-5 pb-5">
-                <p className="text-slate-400 text-sm leading-relaxed">{a}</p>
+                <p className="text-gray-500 text-sm leading-relaxed">{a}</p>
               </div>
             </details>
           ))}
@@ -521,8 +521,8 @@ export default function BpcVsTb500Page() {
       {/* CTA */}
       <section className="py-16 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="glass-card p-10">
-          <h2 className="text-2xl font-black text-white mb-3">Get BPC-157 + TB-500</h2>
-          <p className="text-slate-400 mb-6">COA-verified, US domestic. The gold standard healing stack.</p>
+          <h2 className="text-2xl font-black text-gray-900 mb-3">Get BPC-157 + TB-500</h2>
+          <p className="text-gray-500 mb-6">COA-verified, US domestic. The gold standard healing stack.</p>
           <div className="flex flex-wrap gap-4 justify-center">
             <a href={SOURCE_URL} target="_blank" rel="nofollow noopener noreferrer"
               className="btn-cta px-8 py-4 flex items-center gap-2">

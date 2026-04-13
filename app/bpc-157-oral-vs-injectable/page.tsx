@@ -161,22 +161,22 @@ export default function Bpc157OralVsInjectablePage() {
           <div className="inline-flex items-center gap-2 bg-emerald-500/10 border border-emerald-500/30 rounded-full px-4 py-2 mb-6">
             <span className="text-emerald-400 text-sm font-semibold tracking-wide">BPC-157 ADMINISTRATION GUIDE</span>
           </div>
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white leading-tight mb-6">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-gray-900 leading-tight mb-6">
             BPC-157: Oral<br />
             <span className="text-emerald-400">vs Injectable</span>
           </h1>
-          <p className="text-slate-300 text-xl leading-relaxed mb-8 max-w-3xl">
+          <p className="text-gray-600 text-xl leading-relaxed mb-8 max-w-3xl">
             The route you choose matters — but not in the way most people think.
             Here's when oral wins, when injectable wins, and when to use both.
           </p>
           <div className="grid grid-cols-2 gap-4 max-w-md">
             <div className="glass-card p-4 text-center border-t-2 border-blue-500">
               <div className="text-sm font-black text-blue-400">Oral</div>
-              <div className="text-slate-400 text-xs mt-1">Best for gut</div>
+              <div className="text-gray-500 text-xs mt-1">Best for gut</div>
             </div>
             <div className="glass-card p-4 text-center border-t-2 border-emerald-500">
               <div className="text-sm font-black text-emerald-400">Injectable</div>
-              <div className="text-slate-400 text-xs mt-1">Best for systemic</div>
+              <div className="text-gray-500 text-xs mt-1">Best for systemic</div>
             </div>
           </div>
         </div>
@@ -188,44 +188,44 @@ export default function Bpc157OralVsInjectablePage() {
           <div className="inline-flex items-center gap-2 bg-emerald-500/10 border border-emerald-500/30 rounded-full px-3 py-1 mb-4">
             <span className="text-emerald-400 text-xs font-bold tracking-widest uppercase">Interactive Tool</span>
           </div>
-          <h2 className="text-3xl font-black text-white mb-3">Which Route is Right for You?</h2>
-          <p className="text-slate-400 max-w-2xl">Not sure whether to go oral or injectable? Answer 4 questions to get a personalized recommendation with a sample protocol.</p>
+          <h2 className="text-3xl font-black text-gray-900 mb-3">Which Route is Right for You?</h2>
+          <p className="text-gray-500 max-w-2xl">Not sure whether to go oral or injectable? Answer 4 questions to get a personalized recommendation with a sample protocol.</p>
         </div>
         <BpcRouteRecommender />
       </section>
 
       {/* Side by side */}
       <section className="py-16 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-black text-white mb-10">Oral vs Injectable: Complete Breakdown</h2>
+        <h2 className="text-3xl font-black text-gray-900 mb-10">Oral vs Injectable: Complete Breakdown</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {[comparison.oral, comparison.injectable].map((route, i) => (
             <div key={route.label} className={`glass-card p-6 border-t-2 ${i === 0 ? 'border-blue-500' : 'border-emerald-500'}`}>
               <h3 className={`font-black text-xl mb-5 ${i === 0 ? 'text-blue-400' : 'text-emerald-400'}`}>{route.label}</h3>
               <div className="mb-5">
-                <p className="text-xs font-semibold text-slate-500 uppercase tracking-wider mb-2">Advantages</p>
+                <p className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-2">Advantages</p>
                 <ul className="space-y-1.5">
                   {route.pros.map((p) => (
-                    <li key={p} className="flex items-start gap-2 text-slate-300 text-sm">
+                    <li key={p} className="flex items-start gap-2 text-gray-600 text-sm">
                       <CheckCircle className="w-4 h-4 shrink-0 mt-0.5 text-emerald-400" /> {p}
                     </li>
                   ))}
                 </ul>
               </div>
               <div className="mb-5">
-                <p className="text-xs font-semibold text-slate-500 uppercase tracking-wider mb-2">Limitations</p>
+                <p className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-2">Limitations</p>
                 <ul className="space-y-1.5">
                   {route.cons.map((c) => (
-                    <li key={c} className="flex items-start gap-2 text-slate-400 text-sm">
+                    <li key={c} className="flex items-start gap-2 text-gray-500 text-sm">
                       <XCircle className="w-4 h-4 shrink-0 mt-0.5 text-red-400/60" /> {c}
                     </li>
                   ))}
                 </ul>
               </div>
               <div>
-                <p className="text-xs font-semibold text-slate-500 uppercase tracking-wider mb-2">Best for</p>
+                <p className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-2">Best for</p>
                 <ul className="space-y-1">
                   {route.bestFor.map((b) => (
-                    <li key={b} className="text-slate-400 text-xs">• {b}</li>
+                    <li key={b} className="text-gray-500 text-xs">• {b}</li>
                   ))}
                 </ul>
               </div>
@@ -237,12 +237,12 @@ export default function Bpc157OralVsInjectablePage() {
       {/* Bioavailability Deep Dive */}
       <section className="py-12" style={{ background: 'rgba(6,6,16,0.8)' }}>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl font-black text-white mb-3">Bioavailability Deep Dive</h2>
-          <p className="text-slate-400 mb-8 max-w-2xl">Why most peptides can't be taken orally — and what makes BPC-157 uniquely different.</p>
+          <h2 className="text-2xl font-black text-gray-900 mb-3">Bioavailability Deep Dive</h2>
+          <p className="text-gray-500 mb-8 max-w-2xl">Why most peptides can't be taken orally — and what makes BPC-157 uniquely different.</p>
 
-          <div className="space-y-6 text-slate-300 leading-relaxed">
+          <div className="space-y-6 text-gray-600 leading-relaxed">
             <div className="glass-card p-6">
-              <h3 className="text-white font-bold text-lg mb-3">What Bioavailability Means for Peptides</h3>
+              <h3 className="text-gray-900 font-bold text-lg mb-3">What Bioavailability Means for Peptides</h3>
               <p className="text-sm mb-3">
                 Bioavailability refers to the fraction of an administered substance that reaches systemic circulation and is available to exert biological effects. For a drug administered intravenously, bioavailability is 100% by definition — it enters the bloodstream directly. For oral administration, bioavailability can range from near 0% (most peptides) to 90%+ (small molecules like aspirin).
               </p>
@@ -255,7 +255,7 @@ export default function Bpc157OralVsInjectablePage() {
             </div>
 
             <div className="glass-card p-6">
-              <h3 className="text-white font-bold text-lg mb-3">What Makes BPC-157 Unique</h3>
+              <h3 className="text-gray-900 font-bold text-lg mb-3">What Makes BPC-157 Unique</h3>
               <p className="text-sm mb-3">
                 BPC-157 (Body Protection Compound 157) is named for the fact that it was originally isolated from gastric juice — the very environment that destroys most peptides. This is the fundamental reason BPC-157 is orally viable: it was designed by evolution to survive the stomach.
               </p>
@@ -268,7 +268,7 @@ export default function Bpc157OralVsInjectablePage() {
             </div>
 
             <div className="glass-card p-6">
-              <h3 className="text-white font-bold text-lg mb-3">Research on Oral BPC-157 Absorption</h3>
+              <h3 className="text-gray-900 font-bold text-lg mb-3">Research on Oral BPC-157 Absorption</h3>
               <p className="text-sm mb-3">
                 Several animal studies have demonstrated BPC-157's efficacy when administered orally, including in drinking water (where concentrations are extremely low), suggesting that the peptide retains activity through the full GI transit. Studies on gastric ulcer healing, inflammatory bowel disease models, and intestinal anastomosis healing all show positive outcomes with oral administration.
               </p>
@@ -281,15 +281,15 @@ export default function Bpc157OralVsInjectablePage() {
             </div>
 
             <div className="glass-card p-6">
-              <h3 className="text-white font-bold text-lg mb-3">Plasma Half-Life Comparison</h3>
+              <h3 className="text-gray-900 font-bold text-lg mb-3">Plasma Half-Life Comparison</h3>
               <div className="overflow-x-auto rounded-xl border border-white/10 mb-4">
                 <table className="w-full text-sm">
                   <thead>
                     <tr style={{ background: 'rgba(255,255,255,0.04)' }}>
-                      <th className="text-left py-2 px-4 text-slate-400 font-semibold">Route</th>
-                      <th className="text-left py-2 px-4 text-slate-400 font-semibold">Tmax (peak)</th>
-                      <th className="text-left py-2 px-4 text-slate-400 font-semibold">Plasma half-life</th>
-                      <th className="text-left py-2 px-4 text-slate-400 font-semibold">Duration of action</th>
+                      <th className="text-left py-2 px-4 text-gray-500 font-semibold">Route</th>
+                      <th className="text-left py-2 px-4 text-gray-500 font-semibold">Tmax (peak)</th>
+                      <th className="text-left py-2 px-4 text-gray-500 font-semibold">Plasma half-life</th>
+                      <th className="text-left py-2 px-4 text-gray-500 font-semibold">Duration of action</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -300,16 +300,16 @@ export default function Bpc157OralVsInjectablePage() {
                       ['Intranasal', '15–30 min', 'Similar to SC, CNS distribution faster', 'Once or twice daily'],
                     ].map(([route, tmax, half, dur], i) => (
                       <tr key={route} style={{ borderTop: '1px solid rgba(255,255,255,0.04)', background: i % 2 === 0 ? 'rgba(255,255,255,0.01)' : 'transparent' }}>
-                        <td className="py-2 px-4 text-white font-medium text-xs">{route}</td>
+                        <td className="py-2 px-4 text-gray-900 font-medium text-xs">{route}</td>
                         <td className="py-2 px-4 text-emerald-400 text-xs font-semibold">{tmax}</td>
-                        <td className="py-2 px-4 text-slate-300 text-xs">{half}</td>
-                        <td className="py-2 px-4 text-slate-400 text-xs">{dur}</td>
+                        <td className="py-2 px-4 text-gray-600 text-xs">{half}</td>
+                        <td className="py-2 px-4 text-gray-500 text-xs">{dur}</td>
                       </tr>
                     ))}
                   </tbody>
                 </table>
               </div>
-              <p className="text-slate-400 text-xs">Note: Human pharmacokinetic data for BPC-157 is limited. Estimates based on animal studies and clinical extrapolation. The short plasma half-life is why consistent daily dosing is important — BPC-157's healing effects are mediated through receptor activation that initiates cascades lasting beyond the peptide's own presence in plasma.</p>
+              <p className="text-gray-500 text-xs">Note: Human pharmacokinetic data for BPC-157 is limited. Estimates based on animal studies and clinical extrapolation. The short plasma half-life is why consistent daily dosing is important — BPC-157's healing effects are mediated through receptor activation that initiates cascades lasting beyond the peptide's own presence in plasma.</p>
             </div>
           </div>
         </div>
@@ -317,19 +317,19 @@ export default function Bpc157OralVsInjectablePage() {
 
       {/* Sublingual and Intranasal */}
       <section className="py-12 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-2xl font-black text-white mb-3">Sublingual and Intranasal Routes</h2>
-        <p className="text-slate-400 mb-8 max-w-2xl">Two lesser-known but legitimate BPC-157 administration methods — each with specific advantages for different goals.</p>
+        <h2 className="text-2xl font-black text-gray-900 mb-3">Sublingual and Intranasal Routes</h2>
+        <p className="text-gray-500 mb-8 max-w-2xl">Two lesser-known but legitimate BPC-157 administration methods — each with specific advantages for different goals.</p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="glass-card p-6 border-t-2 border-purple-500">
             <h3 className="text-purple-400 font-black text-lg mb-4">Sublingual (Under the Tongue)</h3>
-            <p className="text-slate-300 text-sm mb-4 leading-relaxed">
+            <p className="text-gray-600 text-sm mb-4 leading-relaxed">
               Sublingual administration involves holding reconstituted BPC-157 solution under the tongue for 60–90 seconds before swallowing. The sublingual mucosa has rich vascularity and thin epithelium, allowing some peptide absorption directly into the bloodstream — bypassing first-pass metabolism in the gut.
             </p>
             <div className="space-y-3">
               <div className="bg-purple-500/10 border border-purple-500/20 rounded-xl p-3">
                 <div className="text-purple-400 text-xs font-bold uppercase mb-1">Advantages over oral swallowing</div>
-                <ul className="space-y-1 text-slate-400 text-xs">
+                <ul className="space-y-1 text-gray-500 text-xs">
                   <li>• Faster onset than standard oral (direct vascular absorption)</li>
                   <li>• Bypasses some gastric acid exposure</li>
                   <li>• Potentially higher systemic fraction than swallowing alone</li>
@@ -337,8 +337,8 @@ export default function Bpc157OralVsInjectablePage() {
                 </ul>
               </div>
               <div>
-                <div className="text-slate-500 text-xs uppercase tracking-wide mb-1">Protocol</div>
-                <p className="text-slate-400 text-xs leading-relaxed">
+                <div className="text-gray-500 text-xs uppercase tracking-wide mb-1">Protocol</div>
+                <p className="text-gray-500 text-xs leading-relaxed">
                   250–500mcg dissolved in 0.5–1mL sterile water. Hold under tongue for 60–90 seconds, then swallow the remainder. Take fasted for best absorption. Anecdotally rated as providing faster effects than swallowed capsules.
                 </p>
               </div>
@@ -347,13 +347,13 @@ export default function Bpc157OralVsInjectablePage() {
 
           <div className="glass-card p-6 border-t-2 border-pink-500">
             <h3 className="text-pink-400 font-black text-lg mb-4">Intranasal (For CNS / Brain Benefits)</h3>
-            <p className="text-slate-300 text-sm mb-4 leading-relaxed">
+            <p className="text-gray-600 text-sm mb-4 leading-relaxed">
               Intranasal BPC-157 is an emerging route specifically targeting CNS delivery. The olfactory epithelium in the nasal cavity provides a direct anatomical pathway to the brain via the olfactory nerve — bypassing the blood-brain barrier. This is why intranasal delivery is used for CNS drugs (naloxone, ketamine, desmopressin).
             </p>
             <div className="space-y-3">
               <div className="bg-pink-500/10 border border-pink-500/20 rounded-xl p-3">
                 <div className="text-pink-400 text-xs font-bold uppercase mb-1">Best use cases</div>
-                <ul className="space-y-1 text-slate-400 text-xs">
+                <ul className="space-y-1 text-gray-500 text-xs">
                   <li>• Anxiety, depression, and mood regulation</li>
                   <li>• Traumatic brain injury recovery</li>
                   <li>• CNS inflammation and neuroinflammation</li>
@@ -361,8 +361,8 @@ export default function Bpc157OralVsInjectablePage() {
                 </ul>
               </div>
               <div>
-                <div className="text-slate-500 text-xs uppercase tracking-wide mb-1">Protocol</div>
-                <p className="text-slate-400 text-xs leading-relaxed">
+                <div className="text-gray-500 text-xs uppercase tracking-wide mb-1">Protocol</div>
+                <p className="text-gray-500 text-xs leading-relaxed">
                   100–250mcg per nostril in 0.1–0.2mL sterile water, using a nasal atomizer. Tilt head back slightly. 1–2 doses per day. Dose is lower than oral because nasal-to-brain delivery is more direct. Use pharmaceutical-grade atomizer (not a repurposed spray bottle) for proper droplet size.
                 </p>
               </div>
@@ -379,13 +379,13 @@ export default function Bpc157OralVsInjectablePage() {
               { label: 'Subcutaneous', bio: 'High systemic', onset: '30–60 min', best: 'Tissue repair' },
             ].map((r) => (
               <div key={r.label} className="bg-white/3 rounded-xl p-3">
-                <div className="text-white font-bold text-sm mb-2">{r.label}</div>
-                <div className="text-slate-500 text-[10px] uppercase">Bioavailability</div>
+                <div className="text-gray-900 font-bold text-sm mb-2">{r.label}</div>
+                <div className="text-gray-500 text-[10px] uppercase">Bioavailability</div>
                 <div className="text-emerald-400 text-xs font-semibold mb-1">{r.bio}</div>
-                <div className="text-slate-500 text-[10px] uppercase">Onset</div>
-                <div className="text-slate-300 text-xs font-semibold mb-1">{r.onset}</div>
-                <div className="text-slate-500 text-[10px] uppercase">Best for</div>
-                <div className="text-slate-400 text-xs">{r.best}</div>
+                <div className="text-gray-500 text-[10px] uppercase">Onset</div>
+                <div className="text-gray-600 text-xs font-semibold mb-1">{r.onset}</div>
+                <div className="text-gray-500 text-[10px] uppercase">Best for</div>
+                <div className="text-gray-500 text-xs">{r.best}</div>
               </div>
             ))}
           </div>
@@ -395,24 +395,24 @@ export default function Bpc157OralVsInjectablePage() {
       {/* Decision table */}
       <section className="py-12" style={{ background: 'rgba(6,6,16,0.8)' }}>
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl font-black text-white mb-8">Which Route for Your Goal?</h2>
+          <h2 className="text-2xl font-black text-gray-900 mb-8">Which Route for Your Goal?</h2>
           <div className="overflow-x-auto rounded-2xl border border-white/10">
             <table className="w-full text-sm">
               <thead>
                 <tr style={{ background: 'rgba(255,255,255,0.04)' }}>
-                  <th className="text-left py-3 px-4 text-slate-400 font-semibold">Goal</th>
+                  <th className="text-left py-3 px-4 text-gray-500 font-semibold">Goal</th>
                   <th className="text-left py-3 px-4 text-emerald-400 font-bold">Recommended Route</th>
-                  <th className="text-left py-3 px-4 text-slate-400 font-semibold">Why</th>
+                  <th className="text-left py-3 px-4 text-gray-500 font-semibold">Why</th>
                 </tr>
               </thead>
               <tbody>
                 {scenarios.map(({ goal, winner, reason }, i) => (
                   <tr key={goal} style={{ borderTop: '1px solid rgba(255,255,255,0.04)', background: i % 2 === 0 ? 'rgba(255,255,255,0.01)' : 'transparent' }}>
-                    <td className="py-3 px-4 text-white font-semibold">{goal}</td>
+                    <td className="py-3 px-4 text-gray-900 font-semibold">{goal}</td>
                     <td className="py-3 px-4">
                       <span className={`text-xs font-bold px-2 py-1 rounded-full ${winner === 'Oral' ? 'bg-blue-500/10 text-blue-400' : winner.includes('local') ? 'bg-emerald-500/10 text-emerald-400' : 'bg-purple-500/10 text-purple-400'}`}>{winner}</span>
                     </td>
-                    <td className="py-3 px-4 text-slate-400">{reason}</td>
+                    <td className="py-3 px-4 text-gray-500">{reason}</td>
                   </tr>
                 ))}
               </tbody>
@@ -423,49 +423,49 @@ export default function Bpc157OralVsInjectablePage() {
 
       {/* Cost Comparison */}
       <section className="py-12 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-2xl font-black text-white mb-3">Cost Comparison Over Time</h2>
-        <p className="text-slate-400 mb-8 max-w-2xl">Real per-dose and monthly cost breakdowns for each route — so you can make an informed decision based on your budget and goals.</p>
+        <h2 className="text-2xl font-black text-gray-900 mb-3">Cost Comparison Over Time</h2>
+        <p className="text-gray-500 mb-8 max-w-2xl">Real per-dose and monthly cost breakdowns for each route — so you can make an informed decision based on your budget and goals.</p>
         <div className="overflow-x-auto rounded-2xl border border-white/10">
           <table className="w-full text-sm min-w-[700px]">
             <thead>
               <tr style={{ background: 'rgba(255,255,255,0.04)' }}>
-                <th className="text-left py-3 px-4 text-slate-400 font-semibold">Route / Format</th>
-                <th className="text-left py-3 px-4 text-slate-400 font-semibold">Per Dose</th>
-                <th className="text-left py-3 px-4 text-slate-400 font-semibold">Monthly Cost</th>
-                <th className="text-left py-3 px-4 text-slate-400 font-semibold">Cost per mcg</th>
-                <th className="text-left py-3 px-4 text-slate-400 font-semibold">Best ROI For</th>
-                <th className="text-left py-3 px-4 text-slate-400 font-semibold">Notes</th>
+                <th className="text-left py-3 px-4 text-gray-500 font-semibold">Route / Format</th>
+                <th className="text-left py-3 px-4 text-gray-500 font-semibold">Per Dose</th>
+                <th className="text-left py-3 px-4 text-gray-500 font-semibold">Monthly Cost</th>
+                <th className="text-left py-3 px-4 text-gray-500 font-semibold">Cost per mcg</th>
+                <th className="text-left py-3 px-4 text-gray-500 font-semibold">Best ROI For</th>
+                <th className="text-left py-3 px-4 text-gray-500 font-semibold">Notes</th>
               </tr>
             </thead>
             <tbody>
               {costData.map((row, i) => (
                 <tr key={row.route} style={{ borderTop: '1px solid rgba(255,255,255,0.04)', background: i % 2 === 0 ? 'rgba(255,255,255,0.01)' : 'transparent' }}>
-                  <td className="py-3 px-4 text-white font-semibold text-sm">{row.route}</td>
+                  <td className="py-3 px-4 text-gray-900 font-semibold text-sm">{row.route}</td>
                   <td className="py-3 px-4 text-emerald-400 font-bold text-sm">{row.perDose}</td>
-                  <td className="py-3 px-4 text-slate-300 font-semibold text-sm">{row.monthly}</td>
-                  <td className="py-3 px-4 text-slate-400 text-xs">{row.perMcg}</td>
-                  <td className="py-3 px-4 text-slate-300 text-xs">{row.bestROI}</td>
-                  <td className="py-3 px-4 text-slate-500 text-xs max-w-[200px]">{row.notes}</td>
+                  <td className="py-3 px-4 text-gray-600 font-semibold text-sm">{row.monthly}</td>
+                  <td className="py-3 px-4 text-gray-500 text-xs">{row.perMcg}</td>
+                  <td className="py-3 px-4 text-gray-600 text-xs">{row.bestROI}</td>
+                  <td className="py-3 px-4 text-gray-500 text-xs max-w-[200px]">{row.notes}</td>
                 </tr>
               ))}
             </tbody>
           </table>
         </div>
-        <p className="text-slate-500 text-xs mt-4">Prices based on research-grade BPC-157 pricing ranges as of 2026. Injectable costs include bacteriostatic water and syringe overhead (~$0.10–0.20/injection). Oral capsule pricing varies widely by supplier — always verify COA before purchasing.</p>
+        <p className="text-gray-500 text-xs mt-4">Prices based on research-grade BPC-157 pricing ranges as of 2026. Injectable costs include bacteriostatic water and syringe overhead (~$0.10–0.20/injection). Oral capsule pricing varies widely by supplier — always verify COA before purchasing.</p>
       </section>
 
       {/* FAQ */}
       <section className="py-16 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-black text-white mb-10 text-center">BPC-157 Oral vs Injectable FAQ</h2>
+        <h2 className="text-3xl font-black text-gray-900 mb-10 text-center">BPC-157 Oral vs Injectable FAQ</h2>
         <div className="space-y-3">
           {faqs.map(({ q, a }) => (
             <details key={q} className="glass-card group">
               <summary className="p-5 cursor-pointer list-none flex items-center justify-between">
-                <span className="text-white font-semibold text-sm">{q}</span>
+                <span className="text-gray-900 font-semibold text-sm">{q}</span>
                 <span className="text-emerald-400 text-lg group-open:rotate-45 transition-transform shrink-0 ml-4">+</span>
               </summary>
               <div className="px-5 pb-5">
-                <p className="text-slate-400 text-sm leading-relaxed">{a}</p>
+                <p className="text-gray-500 text-sm leading-relaxed">{a}</p>
               </div>
             </details>
           ))}
@@ -475,8 +475,8 @@ export default function Bpc157OralVsInjectablePage() {
       {/* CTA */}
       <section className="py-16 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="glass-card p-10">
-          <h2 className="text-2xl font-black text-white mb-3">Get BPC-157</h2>
-          <p className="text-slate-400 mb-6">Injectable (lyophilized) and oral BPC-157 — COA-verified, US domestic.</p>
+          <h2 className="text-2xl font-black text-gray-900 mb-3">Get BPC-157</h2>
+          <p className="text-gray-500 mb-6">Injectable (lyophilized) and oral BPC-157 — COA-verified, US domestic.</p>
           <div className="flex flex-wrap gap-4 justify-center">
             <a href={SOURCE_URL} target="_blank" rel="nofollow noopener noreferrer"
               className="btn-cta px-8 py-4 flex items-center gap-2">

@@ -76,7 +76,7 @@ const budgetTiers = [
   {
     tier: 'Starter',
     monthly: '$100/mo',
-    color: 'text-slate-300',
+    color: 'text-gray-600',
     bg: 'bg-slate-800/50 border-slate-700/30',
     stack: [
       { peptide: 'Semaglutide', dose: '0.5mg/week SC', note: 'Core GLP-1 appetite suppression' },
@@ -166,11 +166,11 @@ export default function FatLossPeptideStack() {
             <Layers className="w-4 h-4" />
             The Layered Fat Loss Protocol
           </div>
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white mb-6 leading-tight">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-gray-900 mb-6 leading-tight">
             Your Hormonal Environment{' '}
             <span className="text-[#00ff88]">24 Hours a Day</span>
           </h1>
-          <p className="text-xl text-slate-300 leading-relaxed max-w-3xl mx-auto mb-8">
+          <p className="text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto mb-8">
             Fat loss peptides don't work the way you think. It's not about burning fat during your workout — it's about changing the hormonal environment your body operates in 24 hours a day. GLP-1 agonists reshape your appetite hormones. GH peptides shift your overnight metabolism. Together, they produce fat loss that isolated caloric restriction never could.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
@@ -188,7 +188,7 @@ export default function FatLossPeptideStack() {
           {stats.map((s) => (
             <div key={s.label} className="glass-card p-5 text-center">
               <div className={`text-3xl font-black mb-2 ${s.color}`}>{s.value}</div>
-              <div className="text-slate-400 text-sm leading-tight">{s.label}</div>
+              <div className="text-gray-500 text-sm leading-tight">{s.label}</div>
             </div>
           ))}
         </div>
@@ -196,8 +196,8 @@ export default function FatLossPeptideStack() {
 
       {/* The 4 Layers */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
-        <h2 className="text-3xl font-black text-white mb-4">The Four-Layer Fat Loss System</h2>
-        <p className="text-slate-300 leading-relaxed text-lg mb-10">
+        <h2 className="text-3xl font-black text-gray-900 mb-4">The Four-Layer Fat Loss System</h2>
+        <p className="text-gray-600 leading-relaxed text-lg mb-10">
           Each layer targets a different part of the fat loss equation. Layer 1 creates the caloric deficit. Layer 2 optimizes what you lose. Layer 3 attacks the fat cells directly. Layer 4 keeps the entire metabolic system running efficiently. You can run just Layer 1 and get excellent results — or stack all four for the most comprehensive fat loss protocol available.
         </p>
         <div className="space-y-6">
@@ -207,11 +207,11 @@ export default function FatLossPeptideStack() {
                 <div className={`text-4xl font-black shrink-0 ${layer.color} opacity-30`}>{layer.number}</div>
                 <div className="flex-1">
                   <h3 className={`font-black text-xl mb-1 ${layer.color}`}>{layer.title}</h3>
-                  <p className="text-slate-400 text-sm font-semibold mb-3">{layer.subtitle}</p>
-                  <p className="text-slate-300 text-sm leading-relaxed mb-4">{layer.mechanism}</p>
+                  <p className="text-gray-500 text-sm font-semibold mb-3">{layer.subtitle}</p>
+                  <p className="text-gray-600 text-sm leading-relaxed mb-4">{layer.mechanism}</p>
                   <div className="flex flex-wrap gap-2 mb-3">
                     {layer.peptides.map((p) => (
-                      <span key={p} className="text-xs bg-slate-900/50 border border-white/10 rounded-full px-3 py-1 text-slate-300">{p}</span>
+                      <span key={p} className="text-xs bg-slate-900/50 border border-white/10 rounded-full px-3 py-1 text-gray-600">{p}</span>
                     ))}
                   </div>
                   <div className={`text-xs font-semibold ${layer.color}`}>Key benefit: {layer.keyBenefit}</div>
@@ -224,8 +224,8 @@ export default function FatLossPeptideStack() {
 
       {/* Calculator */}
       <section className="py-10 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
-        <h2 className="text-2xl font-black text-white mb-3">Estimate Your Expected Results</h2>
-        <p className="text-slate-400 text-base mb-6">Calculate projected weight loss based on your GLP-1 choice, weight, and timeline.</p>
+        <h2 className="text-2xl font-black text-gray-900 mb-3">Estimate Your Expected Results</h2>
+        <p className="text-gray-500 text-base mb-6">Calculate projected weight loss based on your GLP-1 choice, weight, and timeline.</p>
         <GlpWeightLossCalculator />
       </section>
 
@@ -243,8 +243,8 @@ export default function FatLossPeptideStack() {
           </div>
           <div className="flex-1">
             <div className="text-blue-400 text-xs font-bold uppercase tracking-widest mb-2">Layer 1 — Entry Point</div>
-            <h3 className="text-white text-2xl font-black mb-3">Semaglutide 6mg</h3>
-            <p className="text-slate-300 text-base leading-relaxed mb-4">The most established GLP-1 agonist. 15% average weight loss, 5+ years of safety data, and the easiest side-effect profile of the three GLP compounds. The ideal starting point for the fat loss stack — establish the GLP-1 foundation before considering tirzepatide or retatrutide.</p>
+            <h3 className="text-gray-900 text-2xl font-black mb-3">Semaglutide 6mg</h3>
+            <p className="text-gray-600 text-base leading-relaxed mb-4">The most established GLP-1 agonist. 15% average weight loss, 5+ years of safety data, and the easiest side-effect profile of the three GLP compounds. The ideal starting point for the fat loss stack — establish the GLP-1 foundation before considering tirzepatide or retatrutide.</p>
             <Link href={SOURCE_URL} className="btn-secondary inline-flex">View Semaglutide 6mg <ArrowRight className="w-4 h-4" /></Link>
           </div>
         </div>
@@ -264,8 +264,8 @@ export default function FatLossPeptideStack() {
           </div>
           <div className="flex-1">
             <div className="text-[#00ff88] text-xs font-bold uppercase tracking-widest mb-2">Layer 1 — Advanced</div>
-            <h3 className="text-white text-2xl font-black mb-3">Tirzepatide 15mg</h3>
-            <p className="text-slate-300 text-base leading-relaxed mb-4">The dual GIP+GLP-1 powerhouse. 22.5% average weight loss in SURMOUNT-1, superior visceral fat reduction, and better body composition than semaglutide. The workhorse of the intermediate and advanced stacks.</p>
+            <h3 className="text-gray-900 text-2xl font-black mb-3">Tirzepatide 15mg</h3>
+            <p className="text-gray-600 text-base leading-relaxed mb-4">The dual GIP+GLP-1 powerhouse. 22.5% average weight loss in SURMOUNT-1, superior visceral fat reduction, and better body composition than semaglutide. The workhorse of the intermediate and advanced stacks.</p>
             <Link href={SOURCE_URL} className="btn-cta inline-flex">View Tirzepatide 15mg <ArrowRight className="w-4 h-4" /></Link>
           </div>
         </div>
@@ -285,8 +285,8 @@ export default function FatLossPeptideStack() {
           </div>
           <div className="flex-1">
             <div className="text-purple-400 text-xs font-bold uppercase tracking-widest mb-2">Layer 2 — GH Secretagogue</div>
-            <h3 className="text-white text-2xl font-black mb-3">Ipamorelin 10mg</h3>
-            <p className="text-slate-300 text-base leading-relaxed mb-4">The cleanest GH secretagogue for the fat loss stack. Stimulates GH release without cortisol or prolactin elevation — purely selective GH pulsing for overnight fat oxidation and lean mass preservation. Often stacked with CJC-1295 for synergistic GH amplification.</p>
+            <h3 className="text-gray-900 text-2xl font-black mb-3">Ipamorelin 10mg</h3>
+            <p className="text-gray-600 text-base leading-relaxed mb-4">The cleanest GH secretagogue for the fat loss stack. Stimulates GH release without cortisol or prolactin elevation — purely selective GH pulsing for overnight fat oxidation and lean mass preservation. Often stacked with CJC-1295 for synergistic GH amplification.</p>
             <Link href={SOURCE_URL} className="btn-secondary inline-flex">View Ipamorelin <ArrowRight className="w-4 h-4" /></Link>
           </div>
         </div>
@@ -294,8 +294,8 @@ export default function FatLossPeptideStack() {
 
       {/* Budget Tiers */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
-        <h2 className="text-3xl font-black text-white mb-4">Budget Tiers</h2>
-        <p className="text-slate-300 leading-relaxed text-lg mb-8">
+        <h2 className="text-3xl font-black text-gray-900 mb-4">Budget Tiers</h2>
+        <p className="text-gray-600 leading-relaxed text-lg mb-8">
           You don't need the full advanced stack to see dramatic results. The starter tier is highly effective for most users. The key is consistency — a simple stack run for 6 months will outperform a complex stack abandoned after 6 weeks.
         </p>
         <div className="grid sm:grid-cols-3 gap-5">
@@ -308,14 +308,14 @@ export default function FatLossPeptideStack() {
               <div className="space-y-2 mb-4">
                 {tier.stack.map((s) => (
                   <div key={s.peptide} className="bg-slate-900/40 rounded-lg p-3">
-                    <div className="text-white font-semibold text-sm">{s.peptide}</div>
-                    <div className="text-slate-400 text-xs">{s.dose} — {s.note}</div>
+                    <div className="text-gray-900 font-semibold text-sm">{s.peptide}</div>
+                    <div className="text-gray-500 text-xs">{s.dose} — {s.note}</div>
                   </div>
                 ))}
               </div>
               <div className={`text-xs font-bold mb-1 ${tier.color}`}>Expected outcome</div>
-              <div className="text-slate-300 text-sm mb-3">{tier.expectedLoss}</div>
-              <div className="text-slate-500 text-xs leading-relaxed">{tier.notes}</div>
+              <div className="text-gray-600 text-sm mb-3">{tier.expectedLoss}</div>
+              <div className="text-gray-500 text-xs leading-relaxed">{tier.notes}</div>
             </div>
           ))}
         </div>
@@ -323,15 +323,15 @@ export default function FatLossPeptideStack() {
 
       {/* FAQ */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
-        <h2 className="text-3xl font-black text-white mb-8">Frequently Asked Questions</h2>
+        <h2 className="text-3xl font-black text-gray-900 mb-8">Frequently Asked Questions</h2>
         <div className="space-y-4">
           {faqs.map((faq) => (
             <details key={faq.q} className="glass-card group">
-              <summary className="p-6 cursor-pointer flex items-center justify-between gap-4 text-white font-semibold text-base list-none">
+              <summary className="p-6 cursor-pointer flex items-center justify-between gap-4 text-gray-900 font-semibold text-base list-none">
                 {faq.q}
                 <span className="text-[#00ff88] text-xl font-black shrink-0 group-open:rotate-45 transition-transform">+</span>
               </summary>
-              <div className="px-6 pb-6 text-slate-300 leading-relaxed text-base">
+              <div className="px-6 pb-6 text-gray-600 leading-relaxed text-base">
                 {faq.a}
               </div>
             </details>
@@ -343,8 +343,8 @@ export default function FatLossPeptideStack() {
       <section className="py-16 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
         <div className="glass-card p-10 text-center border border-[#00ff88]/15">
           <TrendingDown className="w-10 h-10 text-[#00ff88] mx-auto mb-4" />
-          <h2 className="text-3xl font-black text-white mb-4">Build Your Fat Loss Stack</h2>
-          <p className="text-slate-300 text-lg mb-8 max-w-2xl mx-auto">
+          <h2 className="text-3xl font-black text-gray-900 mb-4">Build Your Fat Loss Stack</h2>
+          <p className="text-gray-600 text-lg mb-8 max-w-2xl mx-auto">
             Start with Layer 1. Add GH peptides when you're ready. The full four-layer stack is the most powerful fat loss protocol available outside a clinical trial.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">

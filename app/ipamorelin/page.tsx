@@ -67,15 +67,15 @@ export default function IpamorelinPage() {
               </div>
 
               <h1 className="text-5xl sm:text-6xl lg:text-7xl font-black leading-[0.9] mb-6 tracking-tight">
-                <span className="text-white block">Buy Ipamorelin +</span>
-                <span className="text-white block">CJC-1295</span>
-                <span className="text-2xl sm:text-3xl font-bold text-slate-400 block mt-2 leading-tight">
+                <span className="text-gray-900 block">Buy Ipamorelin +</span>
+                <span className="text-gray-900 block">CJC-1295</span>
+                <span className="text-2xl sm:text-3xl font-bold text-gray-500 block mt-2 leading-tight">
                   <span className="text-blue-400">8-10× GH Amplification</span><br />
                   Zero Cortisol. Pure Results.
                 </span>
               </h1>
 
-              <p className="text-lg text-slate-400 leading-relaxed mb-8 max-w-lg">
+              <p className="text-lg text-gray-500 leading-relaxed mb-8 max-w-lg">
                 The most widely prescribed peptide combination in anti-aging clinics.
                 Synergistic GH release for fat loss, muscle, sleep, and recovery — without spiking cortisol.
               </p>
@@ -110,7 +110,7 @@ export default function IpamorelinPage() {
 
               <div className="flex flex-wrap gap-5">
                 {['COA Verified', '8-10× GH Boost', 'Zero Cortisol', 'Clinic Standard'].map((item) => (
-                  <div key={item} className="flex items-center gap-1.5 text-sm text-slate-500">
+                  <div key={item} className="flex items-center gap-1.5 text-sm text-gray-500">
                     <CheckCircle className="w-4 h-4 text-blue-400" />
                     <span>{item}</span>
                   </div>
@@ -160,7 +160,7 @@ export default function IpamorelinPage() {
                   color === 'emerald' ? 'text-emerald-400' :
                   color === 'purple' ? 'text-purple-400' : 'text-amber-400'
                 }`}>{value}</div>
-                <div className="text-slate-500 text-sm">{label}</div>
+                <div className="text-gray-500 text-sm">{label}</div>
               </div>
             ))}
           </div>
@@ -172,7 +172,7 @@ export default function IpamorelinPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <p className="text-neon-green text-xs font-semibold uppercase tracking-widest mb-3">Synergy Explained</p>
-            <h2 className="text-4xl sm:text-5xl font-black text-white mb-4">
+            <h2 className="text-4xl sm:text-5xl font-black text-gray-900 mb-4">
               Why This Stack <span className="gradient-text">Works So Well</span>
             </h2>
           </div>
@@ -180,20 +180,20 @@ export default function IpamorelinPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
             <div className="glass-card p-7 border-blue-400/20">
               <h3 className="text-blue-400 font-bold text-lg mb-2">CJC-1295</h3>
-              <p className="text-slate-500 text-xs mb-4">Growth Hormone Releasing Hormone (GHRH) Analog</p>
-              <p className="text-slate-400 text-sm leading-relaxed">Acts on the GHRH receptor, priming the pituitary gland to release growth hormone. It creates the biological readiness for a large GH pulse — but needs the triggering signal.</p>
+              <p className="text-gray-500 text-xs mb-4">Growth Hormone Releasing Hormone (GHRH) Analog</p>
+              <p className="text-gray-500 text-sm leading-relaxed">Acts on the GHRH receptor, priming the pituitary gland to release growth hormone. It creates the biological readiness for a large GH pulse — but needs the triggering signal.</p>
             </div>
             <div className="glass-card p-7 border-emerald-400/20">
               <h3 className="text-emerald-400 font-bold text-lg mb-2">Ipamorelin</h3>
-              <p className="text-slate-500 text-xs mb-4">Growth Hormone Releasing Peptide (GHRP)</p>
-              <p className="text-slate-400 text-sm leading-relaxed">Acts on the ghrelin receptor (GHS-R1a), providing the triggering signal that fires the GH pulse. It&apos;s the cleanest GHRP — zero cortisol, zero prolactin, zero ACTH elevation.</p>
+              <p className="text-gray-500 text-xs mb-4">Growth Hormone Releasing Peptide (GHRP)</p>
+              <p className="text-gray-500 text-sm leading-relaxed">Acts on the ghrelin receptor (GHS-R1a), providing the triggering signal that fires the GH pulse. It&apos;s the cleanest GHRP — zero cortisol, zero prolactin, zero ACTH elevation.</p>
             </div>
           </div>
 
           <div className="glass-card p-8 border-neon-green/15 text-center mb-12">
             <Zap className="w-10 h-10 text-neon-green mx-auto mb-4" />
-            <h3 className="text-white font-bold text-2xl mb-3">Together: 8-10× More GH</h3>
-            <p className="text-slate-400 max-w-2xl mx-auto">
+            <h3 className="text-gray-900 font-bold text-2xl mb-3">Together: 8-10× More GH</h3>
+            <p className="text-gray-500 max-w-2xl mx-auto">
               CJC-1295 primes the pituitary. Ipamorelin pulls the trigger. The result is a synergistic GH release 8-10× greater than either peptide alone — without any of the side effects of synthetic HGH.
             </p>
           </div>
@@ -205,8 +205,8 @@ export default function IpamorelinPage() {
                   <Icon className="w-5 h-5" />
                 </div>
                 <div>
-                  <h3 className="text-white font-bold mb-2">{title}</h3>
-                  <p className="text-slate-400 text-sm leading-relaxed">{body}</p>
+                  <h3 className="text-gray-900 font-bold mb-2">{title}</h3>
+                  <p className="text-gray-500 text-sm leading-relaxed">{body}</p>
                 </div>
               </div>
             ))}
@@ -219,7 +219,7 @@ export default function IpamorelinPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <p className="text-neon-green text-xs font-semibold uppercase tracking-widest mb-3">Week-by-Week</p>
-            <h2 className="text-4xl font-black text-white mb-4">
+            <h2 className="text-4xl font-black text-gray-900 mb-4">
               What to <span className="gradient-text">Expect</span>
             </h2>
           </div>
@@ -233,17 +233,17 @@ export default function IpamorelinPage() {
             ].map(({ phase, result, color }) => (
               <div key={phase} className="glass-card p-5 flex gap-4 items-start">
                 <div className={`text-xs font-black px-3 py-1.5 rounded-full border shrink-0 mt-0.5 ${colorMap[color]}`}>{phase}</div>
-                <p className="text-slate-400 text-sm leading-relaxed">{result}</p>
+                <p className="text-gray-500 text-sm leading-relaxed">{result}</p>
               </div>
             ))}
           </div>
 
           <div className="glass-card p-6 border-neon-green/15 text-center">
-            <h3 className="text-white font-bold text-lg mb-2">
+            <h3 className="text-gray-900 font-bold text-lg mb-2">
               <Award className="w-5 h-5 text-neon-green inline mr-2" />
               Get COA-Verified CJC-1295 / Ipamorelin
             </h3>
-            <p className="text-slate-400 text-sm mb-4">Combo vial available · US domestic shipping · third-party tested</p>
+            <p className="text-gray-500 text-sm mb-4">Combo vial available · US domestic shipping · third-party tested</p>
             <div className="flex flex-wrap gap-3 justify-center">
               <a href={SOURCE_URL} target="_blank" rel="nofollow noopener noreferrer" className="btn-cta px-8 py-3 inline-flex items-center gap-2">
                 Buy Ipamorelin/CJC — $50 <ExternalLink className="w-4 h-4" />
@@ -252,7 +252,7 @@ export default function IpamorelinPage() {
                 See Week-by-Week Results
               </Link>
             </div>
-            <p className="text-slate-600 text-xs mt-3">Affiliate link — at no extra cost to you.</p>
+            <p className="text-gray-600 text-xs mt-3">Affiliate link — at no extra cost to you.</p>
           </div>
         </div>
       </section>
@@ -260,7 +260,7 @@ export default function IpamorelinPage() {
       {/* ── RELATED GUIDES ───────────────────────────────── */}
       <section className="py-20 bg-dark-900 grid-bg">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-black text-white mb-8">
+          <h2 className="text-3xl font-black text-gray-900 mb-8">
             Related <span className="gradient-text">Guides</span>
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-10">
@@ -274,8 +274,8 @@ export default function IpamorelinPage() {
             ].map(({ title, desc, href, tag }) => (
               <Link key={href} href={href} className="group glass-card p-5 flex flex-col gap-3 hover:border-blue-400/30 transition-all duration-200">
                 <span className="text-xs font-semibold text-blue-400 bg-blue-400/10 border border-blue-400/20 px-2.5 py-0.5 rounded-full w-fit">{tag}</span>
-                <h3 className="text-white font-bold group-hover:text-blue-400 transition-colors">{title}</h3>
-                <p className="text-slate-400 text-sm">{desc}</p>
+                <h3 className="text-gray-900 font-bold group-hover:text-blue-400 transition-colors">{title}</h3>
+                <p className="text-gray-500 text-sm">{desc}</p>
               </Link>
             ))}
           </div>
@@ -285,10 +285,10 @@ export default function IpamorelinPage() {
       {/* ── BOTTOM CTA ───────────────────────────────────── */}
       <section className="py-20 bg-dark-800 border-t border-white/5">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 text-center">
-          <h2 className="text-4xl font-black text-white mb-4">
+          <h2 className="text-4xl font-black text-gray-900 mb-4">
             Start Your <span className="gradient-text">GH Protocol</span>
           </h2>
-          <p className="text-slate-400 text-lg mb-8">
+          <p className="text-gray-500 text-lg mb-8">
             The clinic-standard GH peptide stack. US domestic shipping. COA-verified. Start seeing results in 1-2 weeks.
           </p>
           <div className="flex flex-wrap gap-4 justify-center mb-4">
@@ -299,7 +299,7 @@ export default function IpamorelinPage() {
               Body Comp Guide
             </Link>
           </div>
-          <p className="text-slate-600 text-xs mt-2">Affiliate link — commission earned at no additional cost. Not medical advice.</p>
+          <p className="text-gray-600 text-xs mt-2">Affiliate link — commission earned at no additional cost. Not medical advice.</p>
         </div>
       </section>
 

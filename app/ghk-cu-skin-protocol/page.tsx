@@ -173,7 +173,7 @@ const faqs = [
 
 export default function GhkCuSkinProtocolPage() {
   return (
-    <main className="bg-dark-900 min-h-screen text-slate-200">
+    <main className="bg-dark-900 min-h-screen text-gray-700">
       {/* Hero */}
       <section className="py-16 bg-gradient-to-b from-dark-800 to-dark-900 border-b border-white/5">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -181,11 +181,11 @@ export default function GhkCuSkinProtocolPage() {
             <span className="text-xs font-semibold uppercase tracking-widest text-purple-400 mb-4 block">
               GHK-Cu Deep Dive
             </span>
-            <h1 className="text-4xl sm:text-5xl font-extrabold text-white mb-6 leading-tight">
+            <h1 className="text-4xl sm:text-5xl font-extrabold text-gray-900 mb-6 leading-tight">
               GHK-Cu Skin Protocol:{' '}
               <span className="text-neon-green">31% Gene Reset, 5 Collagen Types</span>
             </h1>
-            <p className="text-xl text-slate-300 mb-8 leading-relaxed">
+            <p className="text-xl text-gray-600 mb-8 leading-relaxed">
               GHK-Cu (glycyl-l-histidyl-l-lysine copper) is the most comprehensively researched peptide for skin. It resets 31% of aged genes, stimulates five distinct collagen types, drives angiogenesis, activates proteasome function, and suppresses inflammation — producing skin quality changes no cosmetic ingredient can replicate. This guide covers the complete skin protocol: topical concentrations, injectable dosing, combination stacks, and week-by-week timelines.
             </p>
             <a
@@ -203,8 +203,8 @@ export default function GhkCuSkinProtocolPage() {
       {/* Protocol Guide Component */}
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-white mb-4">Choose Your GHK-Cu Protocol</h2>
-          <p className="text-slate-400 mb-8 max-w-2xl">
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">Choose Your GHK-Cu Protocol</h2>
+          <p className="text-gray-500 mb-8 max-w-2xl">
             Select between topical, injectable, and combination approaches. The concentration slider adjusts the topical protocol details. Each tab shows week-by-week timelines.
           </p>
           <GhkCuProtocolGuide />
@@ -214,9 +214,9 @@ export default function GhkCuSkinProtocolPage() {
       {/* 31% Gene Reset */}
       <section className="py-16 bg-dark-800/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-white mb-4">The 31% Gene Reset: What It Actually Means</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">The 31% Gene Reset: What It Actually Means</h2>
           <div className="grid lg:grid-cols-2 gap-10 items-start mb-10">
-            <div className="space-y-4 text-slate-300 leading-relaxed">
+            <div className="space-y-4 text-gray-600 leading-relaxed">
               <p>
                 In 2012, Dr. Loren Pickart and Amanda Margolina published a comprehensive analysis of GHK-Cu&apos;s effects on human gene expression using genome-wide microarray data. The analysis examined which genes change expression as tissue ages, then assessed how GHK-Cu exposure altered those expression patterns.
               </p>
@@ -242,7 +242,7 @@ export default function GhkCuSkinProtocolPage() {
                         <span className={`font-mono text-xs px-2 py-0.5 rounded ${group.badge} flex-shrink-0 mt-0.5`}>
                           {g.gene}
                         </span>
-                        <span className="text-slate-400">{g.effect}</span>
+                        <span className="text-gray-500">{g.effect}</span>
                       </div>
                     ))}
                   </div>
@@ -256,18 +256,18 @@ export default function GhkCuSkinProtocolPage() {
       {/* 5 Collagen Types */}
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-white mb-4">5 Collagen Types GHK-Cu Stimulates</h2>
-          <p className="text-slate-400 mb-10 max-w-2xl">
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">5 Collagen Types GHK-Cu Stimulates</h2>
+          <p className="text-gray-500 mb-10 max-w-2xl">
             Unlike most &ldquo;collagen-boosting&rdquo; products that non-specifically reference &ldquo;collagen,&rdquo; GHK-Cu has demonstrated upregulation of five distinct collagen types — each with a different structural role in skin.
           </p>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {collagenTypes.map((ct) => (
               <div key={ct.type} className={`rounded-xl border bg-dark-800/40 p-5 ${ct.color}`}>
-                <h3 className="font-bold text-white mb-2">{ct.type}</h3>
-                <p className="text-sm text-slate-400 mb-3 leading-relaxed">{ct.role}</p>
+                <h3 className="font-bold text-gray-900 mb-2">{ct.type}</h3>
+                <p className="text-sm text-gray-500 mb-3 leading-relaxed">{ct.role}</p>
                 <div className="border-t border-white/5 pt-3">
-                  <p className="text-xs text-slate-500 uppercase tracking-wider mb-1">GHK-Cu Effect</p>
-                  <p className="text-xs text-slate-300 leading-relaxed">{ct.ghkEffect}</p>
+                  <p className="text-xs text-gray-500 uppercase tracking-wider mb-1">GHK-Cu Effect</p>
+                  <p className="text-xs text-gray-600 leading-relaxed">{ct.ghkEffect}</p>
                 </div>
               </div>
             ))}
@@ -278,18 +278,18 @@ export default function GhkCuSkinProtocolPage() {
       {/* Aging Mechanisms */}
       <section className="py-16 bg-dark-800/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-white mb-4">Skin Aging Mechanisms GHK-Cu Addresses</h2>
-          <p className="text-slate-400 mb-10 max-w-2xl">
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">Skin Aging Mechanisms GHK-Cu Addresses</h2>
+          <p className="text-gray-500 mb-10 max-w-2xl">
             Skin ages through multiple simultaneous mechanisms. GHK-Cu&apos;s multi-target gene expression modulation addresses each of these pathways.
           </p>
           <div className="grid sm:grid-cols-2 gap-5">
             {agingMechanisms.map((m) => (
               <div key={m.mechanism} className="bg-dark-800/60 border border-white/10 rounded-xl p-5">
                 <h3 className={`font-bold text-lg mb-2 ${m.color}`}>{m.mechanism}</h3>
-                <p className="text-sm text-slate-400 mb-3">{m.what}</p>
+                <p className="text-sm text-gray-500 mb-3">{m.what}</p>
                 <div className="border-t border-white/5 pt-3">
-                  <p className="text-xs text-slate-500 uppercase tracking-wider mb-1">GHK-Cu Response</p>
-                  <p className="text-sm text-slate-300 leading-relaxed">{m.ghkAction}</p>
+                  <p className="text-xs text-gray-500 uppercase tracking-wider mb-1">GHK-Cu Response</p>
+                  <p className="text-sm text-gray-600 leading-relaxed">{m.ghkAction}</p>
                 </div>
               </div>
             ))}
@@ -300,19 +300,19 @@ export default function GhkCuSkinProtocolPage() {
       {/* Combination Stacks */}
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-white mb-4">Combination Stacks: GHK-Cu with Other Peptides</h2>
-          <p className="text-slate-400 mb-10 max-w-2xl">
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">Combination Stacks: GHK-Cu with Other Peptides</h2>
+          <p className="text-gray-500 mb-10 max-w-2xl">
             GHK-Cu&apos;s multiple mechanisms make it an excellent base for multi-peptide stacks. Each combination targets a different primary goal.
           </p>
           <div className="grid lg:grid-cols-3 gap-5">
             {combinations.map((combo) => (
               <div key={combo.stack} className={`rounded-xl border bg-dark-800/40 p-6 ${combo.color}`}>
-                <h3 className="font-bold text-white mb-1">{combo.stack}</h3>
-                <p className="text-xs text-slate-500 uppercase tracking-wider mb-3">{combo.purpose}</p>
-                <p className="text-sm text-slate-300 leading-relaxed mb-4">{combo.synergy}</p>
+                <h3 className="font-bold text-gray-900 mb-1">{combo.stack}</h3>
+                <p className="text-xs text-gray-500 uppercase tracking-wider mb-3">{combo.purpose}</p>
+                <p className="text-sm text-gray-600 leading-relaxed mb-4">{combo.synergy}</p>
                 <div className="border-t border-white/5 pt-3">
-                  <p className="text-xs text-slate-500 uppercase tracking-wider mb-1">Protocol</p>
-                  <p className="text-xs text-slate-400 leading-relaxed">{combo.protocol}</p>
+                  <p className="text-xs text-gray-500 uppercase tracking-wider mb-1">Protocol</p>
+                  <p className="text-xs text-gray-500 leading-relaxed">{combo.protocol}</p>
                 </div>
               </div>
             ))}
@@ -323,15 +323,15 @@ export default function GhkCuSkinProtocolPage() {
       {/* FAQ */}
       <section className="py-16 bg-dark-800/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-white mb-10">Frequently Asked Questions</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-10">Frequently Asked Questions</h2>
           <div className="grid md:grid-cols-2 gap-6">
             {faqs.map((faq, i) => (
               <div key={i} className="bg-dark-800/60 border border-white/10 rounded-xl p-5">
-                <h3 className="font-semibold text-white mb-2 flex items-start gap-2">
+                <h3 className="font-semibold text-gray-900 mb-2 flex items-start gap-2">
                   <FlaskConical className="w-4 h-4 text-purple-400 flex-shrink-0 mt-0.5" />
                   {faq.q}
                 </h3>
-                <p className="text-sm text-slate-400 leading-relaxed">{faq.a}</p>
+                <p className="text-sm text-gray-500 leading-relaxed">{faq.a}</p>
               </div>
             ))}
           </div>
@@ -342,8 +342,8 @@ export default function GhkCuSkinProtocolPage() {
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-gradient-to-r from-purple-900/30 to-dark-800 border border-purple-500/20 rounded-2xl p-8 text-center">
-            <h2 className="text-2xl font-bold text-white mb-3">Start Your GHK-Cu Skin Protocol</h2>
-            <p className="text-slate-400 mb-6 max-w-xl mx-auto">
+            <h2 className="text-2xl font-bold text-gray-900 mb-3">Start Your GHK-Cu Skin Protocol</h2>
+            <p className="text-gray-500 mb-6 max-w-xl mx-auto">
               Research-grade GHK-Cu for topical and injectable use. Begin with the foundational topical protocol and scale to injectable for maximum systemic effects.
             </p>
             <a
@@ -354,7 +354,7 @@ export default function GhkCuSkinProtocolPage() {
             >
               Source Research-Grade GHK-Cu <ArrowRight className="w-4 h-4" />
             </a>
-            <p className="text-xs text-slate-600 mt-4">
+            <p className="text-xs text-gray-600 mt-4">
               For research purposes only. Not medical advice. Consult a healthcare professional.
             </p>
           </div>

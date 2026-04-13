@@ -106,12 +106,12 @@ const categoryTheme: Record<string, {
   },
   Supplies: {
     accentColor: '#475569',
-    accentLight: 'text-slate-600',
+    accentLight: 'text-gray-600',
     accentBg: 'bg-slate-50',
     accentBorder: 'border-slate-200',
     glow: 'rgba(100, 116, 139, 0.06)',
     heroBg: 'from-slate-100/40 to-transparent',
-    icon: <FlaskConical className="w-5 h-5 text-slate-600" />,
+    icon: <FlaskConical className="w-5 h-5 text-gray-600" />,
     categoryLabel: 'Lab Supplies',
   },
 };
@@ -238,7 +238,7 @@ export default function ProductPage({ params }: Props) {
                   <span className="text-3xl sm:text-4xl font-black text-gray-900">${sale(product.price)}</span>
                   <span className="text-gray-400 text-sm line-through">${product.price}</span>
                 </div>
-                <span className="text-xs font-black bg-amber-500 text-white px-2 py-1 rounded-full">10% OFF</span>
+                <span className="text-xs font-black bg-amber-500 text-gray-900 px-2 py-1 rounded-full">10% OFF</span>
                 <div>
                   <div className="text-gray-500 text-xs font-medium">COA Verified · Third-Party Tested</div>
                   <div className={`${theme.accentLight} text-xs font-bold`}>US Domestic Shipping</div>

@@ -77,14 +77,14 @@ export default function BPC157Page() {
               </div>
 
               <h1 className="text-5xl sm:text-6xl lg:text-8xl font-black leading-[0.9] mb-6 tracking-tight">
-                <span className="text-white block">Buy BPC-157</span>
-                <span className="text-3xl sm:text-4xl font-bold text-slate-400 block mt-2 leading-tight">
+                <span className="text-gray-900 block">Buy BPC-157</span>
+                <span className="text-3xl sm:text-4xl font-bold text-gray-500 block mt-2 leading-tight">
                   The World&apos;s Most Studied<br />
                   <span className="text-emerald-400">Healing Peptide</span>
                 </span>
               </h1>
 
-              <p className="text-lg text-slate-400 leading-relaxed mb-8 max-w-lg">
+              <p className="text-lg text-gray-500 leading-relaxed mb-8 max-w-lg">
                 BPC-157 accelerates tendon, ligament, muscle, and gut repair with zero systemic side effects.
                 Works orally or by injection. 100+ published studies. No known lethal dose.
               </p>
@@ -119,7 +119,7 @@ export default function BPC157Page() {
 
               <div className="flex flex-wrap gap-5">
                 {['COA Verified', 'US Domestic Shipping', 'No Known LD50', 'Oral or Injectable'].map((item) => (
-                  <div key={item} className="flex items-center gap-1.5 text-sm text-slate-500">
+                  <div key={item} className="flex items-center gap-1.5 text-sm text-gray-500">
                     <CheckCircle className="w-4 h-4 text-emerald-400" />
                     <span>{item}</span>
                   </div>
@@ -169,7 +169,7 @@ export default function BPC157Page() {
                   color === 'blue' ? 'text-blue-400' :
                   color === 'purple' ? 'text-purple-400' : 'text-amber-400'
                 }`}>{value}</div>
-                <div className="text-slate-500 text-sm">{label}</div>
+                <div className="text-gray-500 text-sm">{label}</div>
               </div>
             ))}
           </div>
@@ -181,10 +181,10 @@ export default function BPC157Page() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <p className="text-neon-green text-xs font-semibold uppercase tracking-widest mb-3">Evidence-Based Effects</p>
-            <h2 className="text-4xl sm:text-5xl font-black text-white mb-4">
+            <h2 className="text-4xl sm:text-5xl font-black text-gray-900 mb-4">
               What BPC-157 <span className="gradient-text">Actually Does</span>
             </h2>
-            <p className="text-slate-400 max-w-2xl mx-auto">
+            <p className="text-gray-500 max-w-2xl mx-auto">
               BPC-157 doesn&apos;t just mask symptoms — it repairs the underlying structural damage through multiple simultaneous mechanisms.
             </p>
           </div>
@@ -196,8 +196,8 @@ export default function BPC157Page() {
                   <Icon className="w-5 h-5" />
                 </div>
                 <div>
-                  <h3 className="text-white font-bold mb-2">{title}</h3>
-                  <p className="text-slate-400 text-sm leading-relaxed">{body}</p>
+                  <h3 className="text-gray-900 font-bold mb-2">{title}</h3>
+                  <p className="text-gray-500 text-sm leading-relaxed">{body}</p>
                 </div>
               </div>
             ))}
@@ -217,7 +217,7 @@ export default function BPC157Page() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
             <div>
               <p className="text-neon-green text-xs font-semibold uppercase tracking-widest mb-3">Dosing Protocol</p>
-              <h2 className="text-4xl font-black text-white mb-6">
+              <h2 className="text-4xl font-black text-gray-900 mb-6">
                 How to Use <span className="gradient-text">BPC-157</span>
               </h2>
               <div className="space-y-4">
@@ -231,9 +231,9 @@ export default function BPC157Page() {
                   <div key={phase} className="glass-card p-4 flex gap-4 items-start">
                     <div className="w-2 h-2 bg-emerald-400 rounded-full mt-2 shrink-0" />
                     <div>
-                      <p className="text-slate-500 text-xs font-semibold uppercase tracking-wider mb-0.5">{phase}</p>
-                      <p className="text-white font-bold">{detail}</p>
-                      <p className="text-slate-500 text-xs">{note}</p>
+                      <p className="text-gray-500 text-xs font-semibold uppercase tracking-wider mb-0.5">{phase}</p>
+                      <p className="text-gray-900 font-bold">{detail}</p>
+                      <p className="text-gray-500 text-xs">{note}</p>
                     </div>
                   </div>
                 ))}
@@ -242,7 +242,7 @@ export default function BPC157Page() {
 
             <div className="space-y-5">
               <div className="glass-card p-6 border-emerald-400/20">
-                <h3 className="text-white font-bold text-lg mb-3 flex items-center gap-2">
+                <h3 className="text-gray-900 font-bold text-lg mb-3 flex items-center gap-2">
                   <Award className="w-5 h-5 text-emerald-400" />
                   Best Stacks with BPC-157
                 </h3>
@@ -255,8 +255,8 @@ export default function BPC157Page() {
                     <Link key={name} href={href} className="flex items-start gap-3 p-3 rounded-xl bg-dark-700/60 hover:bg-dark-700 transition-colors group">
                       <div className={`w-2 h-2 rounded-full mt-1.5 shrink-0 ${color === 'emerald' ? 'bg-emerald-400' : color === 'purple' ? 'bg-purple-400' : 'bg-blue-400'}`} />
                       <div>
-                        <p className="text-white font-semibold text-sm group-hover:text-neon-green transition-colors">{name}</p>
-                        <p className="text-slate-500 text-xs">{desc}</p>
+                        <p className="text-gray-900 font-semibold text-sm group-hover:text-neon-green transition-colors">{name}</p>
+                        <p className="text-gray-500 text-xs">{desc}</p>
                       </div>
                     </Link>
                   ))}
@@ -268,12 +268,12 @@ export default function BPC157Page() {
 
               <div className="glass-card p-6 border-neon-green/15 text-center">
                 <FlaskConical className="w-8 h-8 text-neon-green mx-auto mb-3" />
-                <h3 className="text-white font-bold mb-2">Ready to Order?</h3>
-                <p className="text-slate-400 text-sm mb-4">COA-verified, 98%+ purity, US domestic shipping.</p>
+                <h3 className="text-gray-900 font-bold mb-2">Ready to Order?</h3>
+                <p className="text-gray-500 text-sm mb-4">COA-verified, 98%+ purity, US domestic shipping.</p>
                 <a href={SOURCE_URL} target="_blank" rel="nofollow noopener noreferrer" className="btn-cta px-8 py-3 inline-flex items-center gap-2">
                   Buy BPC-157 <ExternalLink className="w-4 h-4" />
                 </a>
-                <p className="text-slate-600 text-xs mt-2">Affiliate link — at no extra cost to you.</p>
+                <p className="text-gray-600 text-xs mt-2">Affiliate link — at no extra cost to you.</p>
               </div>
             </div>
           </div>
@@ -285,7 +285,7 @@ export default function BPC157Page() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <p className="text-neon-green text-xs font-semibold uppercase tracking-widest mb-3">Peer-Reviewed Science</p>
-            <h2 className="text-4xl font-black text-white mb-4">
+            <h2 className="text-4xl font-black text-gray-900 mb-4">
               The Research Behind <span className="gradient-text">BPC-157</span>
             </h2>
           </div>
@@ -294,8 +294,8 @@ export default function BPC157Page() {
             {studies.map(({ title, citation, finding }) => (
               <div key={title} className="glass-card p-6 flex flex-col gap-3">
                 <span className="text-xs font-mono text-emerald-400 bg-emerald-400/10 px-2.5 py-1 rounded-full w-fit border border-emerald-400/20">{citation}</span>
-                <h3 className="text-white font-bold text-lg">{title}</h3>
-                <p className="text-slate-400 text-sm leading-relaxed">{finding}</p>
+                <h3 className="text-gray-900 font-bold text-lg">{title}</h3>
+                <p className="text-gray-500 text-sm leading-relaxed">{finding}</p>
               </div>
             ))}
           </div>
@@ -314,7 +314,7 @@ export default function BPC157Page() {
       {/* ── RELATED GUIDES ───────────────────────────────── */}
       <section className="py-20 bg-dark-800 border-t border-white/5">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-black text-white mb-8">
+          <h2 className="text-3xl font-black text-gray-900 mb-8">
             BPC-157 <span className="gradient-text">Deep-Dive Guides</span>
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -328,8 +328,8 @@ export default function BPC157Page() {
             ].map(({ title, desc, href, tag }) => (
               <Link key={href} href={href} className="group glass-card p-5 flex flex-col gap-3 hover:border-emerald-400/30 transition-all duration-200">
                 <span className="text-xs font-semibold text-emerald-400 bg-emerald-400/10 border border-emerald-400/20 px-2.5 py-0.5 rounded-full w-fit">{tag}</span>
-                <h3 className="text-white font-bold group-hover:text-emerald-400 transition-colors">{title}</h3>
-                <p className="text-slate-400 text-sm">{desc}</p>
+                <h3 className="text-gray-900 font-bold group-hover:text-emerald-400 transition-colors">{title}</h3>
+                <p className="text-gray-500 text-sm">{desc}</p>
                 <div className="mt-auto flex items-center gap-1 text-emerald-400 text-sm font-semibold opacity-0 group-hover:opacity-100 transition-opacity">
                   Read Guide <ArrowRight className="w-4 h-4" />
                 </div>
@@ -346,10 +346,10 @@ export default function BPC157Page() {
             <CheckCircle className="w-4 h-4 text-emerald-400" />
             <span className="text-emerald-400 text-xs font-semibold uppercase tracking-widest">COA-Verified · 98%+ Purity</span>
           </div>
-          <h2 className="text-4xl sm:text-5xl font-black text-white mb-4">
+          <h2 className="text-4xl sm:text-5xl font-black text-gray-900 mb-4">
             Start Your <span className="gradient-text">BPC-157 Protocol</span>
           </h2>
-          <p className="text-slate-400 text-lg mb-8">
+          <p className="text-gray-500 text-lg mb-8">
             US domestic shipping. Third-party tested. Cold-chain packaging. Every batch comes with a Certificate of Analysis.
           </p>
           <div className="flex flex-wrap gap-4 justify-center mb-6">
@@ -362,12 +362,12 @@ export default function BPC157Page() {
           </div>
           <div className="flex flex-wrap justify-center gap-5">
             {['100+ Studies', 'Oral or Injectable', 'No LD50', 'US Domestic'].map((item) => (
-              <div key={item} className="flex items-center gap-1.5 text-sm text-slate-500">
+              <div key={item} className="flex items-center gap-1.5 text-sm text-gray-500">
                 <CheckCircle className="w-4 h-4 text-emerald-400" /> {item}
               </div>
             ))}
           </div>
-          <p className="text-slate-600 text-xs mt-4">Affiliate link — commission earned at no additional cost. Not medical advice.</p>
+          <p className="text-gray-600 text-xs mt-4">Affiliate link — commission earned at no additional cost. Not medical advice.</p>
         </div>
       </section>
 

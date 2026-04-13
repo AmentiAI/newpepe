@@ -155,18 +155,18 @@ export default function PeptidesForSleepPage() {
             </div>
 
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-black leading-[0.9] mb-6 tracking-tight">
-              <span className="text-white block">Peptides for</span>
-              <span className="text-white block">Deep Sleep</span>
+              <span className="text-gray-900 block">Peptides for</span>
+              <span className="text-gray-900 block">Deep Sleep</span>
               <span className="block mt-2" style={{ color: '#00ff88' }}>Optimization</span>
             </h1>
 
-            <p className="text-xl text-slate-400 leading-relaxed mb-4 max-w-2xl">
+            <p className="text-xl text-gray-500 leading-relaxed mb-4 max-w-2xl">
               Most people are trying to fix their sleep with supplements that cost $30.
               The answer might be $60 away. DSIP, Epithalon, and CJC/Ipamorelin address
               the actual biology of sleep — not just the symptoms.
             </p>
 
-            <p className="text-slate-500 leading-relaxed mb-8 max-w-2xl">
+            <p className="text-gray-500 leading-relaxed mb-8 max-w-2xl">
               Sleep is not passive recovery. It is the single most anabolic, neuroprotective,
               and anti-aging window in every 24-hour cycle. 70% of your daily growth hormone
               fires during deep sleep. Peptides let you maximize every second of it.
@@ -189,7 +189,7 @@ export default function PeptidesForSleepPage() {
 
             <div className="flex flex-wrap gap-4">
               {['DSIP — Named For Sleep', 'Epithalon — Pineal Restoration', 'CJC/Ipa — Nocturnal GH', 'GHRP-6 — Deep SWS'].map((item) => (
-                <div key={item} className="flex items-center gap-1.5 text-sm text-slate-500">
+                <div key={item} className="flex items-center gap-1.5 text-sm text-gray-500">
                   <CheckCircle className="w-4 h-4 text-purple-400" />
                   <span>{item}</span>
                 </div>
@@ -205,7 +205,7 @@ export default function PeptidesForSleepPage() {
               {stats.map(({ value, label, color }) => (
                 <div key={label} className="text-center">
                   <div className={`text-4xl font-black mb-1 ${color}`}>{value}</div>
-                  <div className="text-slate-500 text-sm">{label}</div>
+                  <div className="text-gray-500 text-sm">{label}</div>
                 </div>
               ))}
             </div>
@@ -218,24 +218,24 @@ export default function PeptidesForSleepPage() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
               <div>
                 <p className="text-xs font-semibold uppercase tracking-widest mb-3" style={{ color: '#00ff88' }}>The Foundation</p>
-                <h2 className="text-4xl font-black text-white mb-6">
+                <h2 className="text-4xl font-black text-gray-900 mb-6">
                   Sleep Is the{' '}
                   <span className="text-purple-400">#1 Recovery</span>{' '}
                   and Anti-Aging Factor
                 </h2>
-                <p className="text-slate-400 leading-relaxed mb-4">
+                <p className="text-gray-500 leading-relaxed mb-4">
                   Every optimization protocol you run — whether it&apos;s peptides, training, nutrition, or
                   supplementation — lives or dies based on the quality of your sleep. Poor sleep doesn&apos;t
                   just make you feel bad. It accelerates biological aging by up to 50%, blunts growth
                   hormone release, elevates cortisol, degrades cognitive function, and dismantles the
                   anabolic environment that every other intervention requires.
                 </p>
-                <p className="text-slate-400 leading-relaxed mb-4">
+                <p className="text-gray-500 leading-relaxed mb-4">
                   The mainstream answer to poor sleep is melatonin and magnesium. Those aren&apos;t wrong —
                   they&apos;re just operating at the wrong level. Melatonin supplements your deficiency.
                   Sleep peptides restore the systems that create that deficiency in the first place.
                 </p>
-                <p className="text-slate-400 leading-relaxed">
+                <p className="text-gray-500 leading-relaxed">
                   DSIP, Epithalon, CJC-1295/Ipamorelin, and GHRP-6 each target a different bottleneck
                   in sleep quality. Used correctly, they transform not just how you sleep — but how you
                   recover, age, and perform.
@@ -251,13 +251,13 @@ export default function PeptidesForSleepPage() {
                 ].map(({ label, value, color, bar, pct }) => (
                   <div key={label} className="glass-card p-4">
                     <div className="flex justify-between items-center mb-2">
-                      <span className="text-slate-300 text-sm font-semibold">{label}</span>
+                      <span className="text-gray-600 text-sm font-semibold">{label}</span>
                       <span className={`text-xs font-bold ${color}`}>{pct}</span>
                     </div>
                     <div className="w-full bg-slate-800 rounded-full h-1.5 mb-2">
                       <div className={`${bar} h-1.5 rounded-full`} style={{ width: pct }} />
                     </div>
-                    <p className="text-slate-500 text-xs">{value}</p>
+                    <p className="text-gray-500 text-xs">{value}</p>
                   </div>
                 ))}
               </div>
@@ -288,23 +288,23 @@ export default function PeptidesForSleepPage() {
                   <span className="text-purple-400 text-xs font-semibold uppercase tracking-widest">The Sleep Peptide</span>
                 </div>
 
-                <h2 className="text-3xl font-black text-white mb-4">
+                <h2 className="text-3xl font-black text-gray-900 mb-4">
                   DSIP — The Peptide{' '}
                   <span className="text-purple-400">Literally Named For Sleep</span>
                 </h2>
 
-                <p className="text-slate-400 leading-relaxed mb-4">
+                <p className="text-gray-500 leading-relaxed mb-4">
                   In 1974, Swiss researchers isolated a nonapeptide from rabbit brain tissue during
                   induced sleep and named it Delta Sleep Inducing Peptide. The name is not marketing —
                   it describes the exact mechanism of action. DSIP is the brain&apos;s own sleep signal.
                 </p>
-                <p className="text-slate-400 leading-relaxed mb-4">
+                <p className="text-gray-500 leading-relaxed mb-4">
                   It works primarily on the HPA axis — reducing CRH and cortisol secretion while
                   facilitating the neurological transition from wakefulness to slow-wave sleep. The
                   result is dramatically reduced sleep latency (you fall asleep faster) and meaningfully
                   increased proportion of restorative SWS.
                 </p>
-                <p className="text-slate-400 leading-relaxed mb-6">
+                <p className="text-gray-500 leading-relaxed mb-6">
                   Unlike sedative drugs or melatonin, DSIP doesn&apos;t force sleep. It creates the
                   neurological conditions for sleep — the same conditions your own brain produces
                   naturally in youth, before stress, age, and lifestyle degraded the system.
@@ -318,8 +318,8 @@ export default function PeptidesForSleepPage() {
                     { label: 'Onset', value: '1–3 nights' },
                   ].map(({ label, value }) => (
                     <div key={label} className="glass-card p-3">
-                      <div className="text-slate-500 text-xs font-semibold uppercase tracking-wider mb-1">{label}</div>
-                      <div className="text-white font-bold text-sm">{value}</div>
+                      <div className="text-gray-500 text-xs font-semibold uppercase tracking-wider mb-1">{label}</div>
+                      <div className="text-gray-900 font-bold text-sm">{value}</div>
                     </div>
                   ))}
                 </div>
@@ -347,24 +347,24 @@ export default function PeptidesForSleepPage() {
                   <span className="text-blue-400 text-xs font-semibold uppercase tracking-widest">Pineal Restoration</span>
                 </div>
 
-                <h2 className="text-3xl font-black text-white mb-4">
+                <h2 className="text-3xl font-black text-gray-900 mb-4">
                   Epithalon:{' '}
                   <span className="text-blue-400">Restoring Your Pineal Gland</span>
                 </h2>
 
-                <p className="text-slate-400 leading-relaxed mb-4">
+                <p className="text-gray-500 leading-relaxed mb-4">
                   Your pineal gland is the master clock of your circadian rhythm. It produces melatonin
                   in response to darkness, orchestrating the cascade of hormonal events that govern sleep
                   architecture. By your 40s, pineal function has degraded significantly — melatonin output
                   is a fraction of what it was at 20. This is why sleep quality deteriorates with age.
                 </p>
-                <p className="text-slate-400 leading-relaxed mb-4">
+                <p className="text-gray-500 leading-relaxed mb-4">
                   Epithalon doesn&apos;t just add melatonin to the system. It repairs and restores the
                   pineal gland&apos;s capacity to produce melatonin endogenously. After a 10–20 day Epithalon
                   cycle, the pineal gland&apos;s sensitivity normalizes — your body starts making the melatonin
                   it was supposed to make all along.
                 </p>
-                <p className="text-slate-400 leading-relaxed mb-6">
+                <p className="text-gray-500 leading-relaxed mb-6">
                   The clinical results are striking: improved sleep onset, sustained deep sleep, better
                   morning cortisol rhythm, and the general sense that your body has returned to a younger
                   circadian state. Two cycles per year — spring and fall — is the standard longevity protocol.
@@ -424,23 +424,23 @@ export default function PeptidesForSleepPage() {
                   <span className="text-emerald-400 text-xs font-semibold uppercase tracking-widest">Nocturnal GH Pulse</span>
                 </div>
 
-                <h2 className="text-3xl font-black text-white mb-4">
+                <h2 className="text-3xl font-black text-gray-900 mb-4">
                   CJC-1295/Ipamorelin:{' '}
                   <span className="text-emerald-400">Amplifying Your Nightly GH Pulse</span>
                 </h2>
 
-                <p className="text-slate-400 leading-relaxed mb-4">
+                <p className="text-gray-500 leading-relaxed mb-4">
                   The largest growth hormone pulse of your entire day occurs during the first deep sleep
                   cycle — approximately 60–90 minutes after falling asleep. This isn&apos;t a side effect
                   of sleep. It&apos;s the entire point of sleep, from an anabolic and anti-aging perspective.
                 </p>
-                <p className="text-slate-400 leading-relaxed mb-4">
+                <p className="text-gray-500 leading-relaxed mb-4">
                   CJC-1295 is a GHRH analog that amplifies the magnitude of this pulse. Ipamorelin is
                   a selective GH secretagogue that deepens the slow-wave sleep during which this pulse
                   occurs. Together, they create a compounding effect: deeper sleep that produces more
                   GH, which then further improves sleep quality in the cycles that follow.
                 </p>
-                <p className="text-slate-400 leading-relaxed mb-6">
+                <p className="text-gray-500 leading-relaxed mb-6">
                   The protocol is precise: inject on an empty stomach immediately before sleep. Food —
                   particularly carbohydrates and insulin — blunts GH release. Fasting state plus
                   CJC/Ipamorelin is the maximum GH pulse state possible without pharmaceutical GH.
@@ -454,8 +454,8 @@ export default function PeptidesForSleepPage() {
                     { label: 'Cycle', value: '5 days on, 2 off' },
                   ].map(({ label, value }) => (
                     <div key={label} className="glass-card p-3">
-                      <div className="text-slate-500 text-xs font-semibold uppercase tracking-wider mb-1">{label}</div>
-                      <div className="text-white font-bold text-sm">{value}</div>
+                      <div className="text-gray-500 text-xs font-semibold uppercase tracking-wider mb-1">{label}</div>
+                      <div className="text-gray-900 font-bold text-sm">{value}</div>
                     </div>
                   ))}
                 </div>
@@ -478,12 +478,12 @@ export default function PeptidesForSleepPage() {
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
               <p className="text-xs font-semibold uppercase tracking-widest mb-3 text-amber-400">Deep SWS Enhancement</p>
-              <h2 className="text-3xl font-black text-white mb-4">
+              <h2 className="text-3xl font-black text-gray-900 mb-4">
                 GHRP-6: The{' '}
                 <span className="text-amber-400">Deep Sleep Depth</span>{' '}
                 Peptide
               </h2>
-              <p className="text-slate-400 max-w-2xl mx-auto leading-relaxed">
+              <p className="text-gray-500 max-w-2xl mx-auto leading-relaxed">
                 GHRP-6 acts on ghrelin receptors in the hypothalamus — the same system that governs
                 hunger, metabolic rate, and deep sleep architecture. While Ipamorelin is the refined
                 modern choice, GHRP-6 is the OG sleep-depth peptide with decades of research supporting
@@ -517,7 +517,7 @@ export default function PeptidesForSleepPage() {
               ].map(({ title, body, color, border, bg }) => (
                 <div key={title} className={`glass-card p-6 ${bg} border ${border}`}>
                   <h3 className={`font-black text-base mb-3 ${color}`}>{title}</h3>
-                  <p className="text-slate-400 text-sm leading-relaxed">{body}</p>
+                  <p className="text-gray-500 text-sm leading-relaxed">{body}</p>
                 </div>
               ))}
             </div>
@@ -529,10 +529,10 @@ export default function PeptidesForSleepPage() {
           <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-10">
               <p className="text-xs font-semibold uppercase tracking-widest mb-3" style={{ color: '#00ff88' }}>Find Your Protocol</p>
-              <h2 className="text-3xl font-black text-white mb-3">
+              <h2 className="text-3xl font-black text-gray-900 mb-3">
                 What&apos;s Your <span className="text-purple-400">Sleep Problem?</span>
               </h2>
-              <p className="text-slate-400">
+              <p className="text-gray-500">
                 Select your primary sleep issue and get a targeted peptide recommendation.
               </p>
             </div>
@@ -544,7 +544,7 @@ export default function PeptidesForSleepPage() {
         <section className="py-20 bg-dark-900">
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-black text-white mb-4">
+              <h2 className="text-3xl font-black text-gray-900 mb-4">
                 The Sleep Peptide <span className="text-emerald-400">Comparison</span>
               </h2>
             </div>
@@ -557,13 +557,13 @@ export default function PeptidesForSleepPage() {
                     </div>
                     <div>
                       <div className={`font-black text-lg ${colorClass}`}>{name}</div>
-                      <div className="text-slate-500 text-xs">{full}</div>
+                      <div className="text-gray-500 text-xs">{full}</div>
                     </div>
                   </div>
                   <div className="space-y-2 text-sm">
-                    <div><span className="text-slate-500 font-semibold">Dose: </span><span className="text-slate-300">{dose}</span></div>
-                    <div><span className="text-slate-500 font-semibold">Mechanism: </span><span className="text-slate-300">{mechanism}</span></div>
-                    <div><span className="text-slate-500 font-semibold">Best for: </span><span className="text-slate-300">{bestFor}</span></div>
+                    <div><span className="text-gray-500 font-semibold">Dose: </span><span className="text-gray-600">{dose}</span></div>
+                    <div><span className="text-gray-500 font-semibold">Mechanism: </span><span className="text-gray-600">{mechanism}</span></div>
+                    <div><span className="text-gray-500 font-semibold">Best for: </span><span className="text-gray-600">{bestFor}</span></div>
                   </div>
                 </div>
               ))}
@@ -576,7 +576,7 @@ export default function PeptidesForSleepPage() {
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-10">
               <p className="text-xs font-semibold uppercase tracking-widest mb-3" style={{ color: '#00ff88' }}>The Full Protocol</p>
-              <h2 className="text-3xl font-black text-white mb-4">
+              <h2 className="text-3xl font-black text-gray-900 mb-4">
                 The Complete Sleep Peptide <span className="text-emerald-400">Stack</span>
               </h2>
             </div>
@@ -585,8 +585,8 @@ export default function PeptidesForSleepPage() {
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <div className="rounded-xl p-5" style={{ background: 'rgba(139,92,246,0.07)', border: '1px solid rgba(139,92,246,0.2)' }}>
                   <div className="text-purple-400 text-xs font-bold tracking-widest mb-2">STARTER — SLEEP ONSET</div>
-                  <div className="text-white font-black mb-3">DSIP Solo</div>
-                  <ul className="space-y-1 text-sm text-slate-400">
+                  <div className="text-gray-900 font-black mb-3">DSIP Solo</div>
+                  <ul className="space-y-1 text-sm text-gray-500">
                     <li>• DSIP 200–300 mcg SC</li>
                     <li>• 30 min before bed</li>
                     <li>• 5 nights on, 2 off</li>
@@ -596,8 +596,8 @@ export default function PeptidesForSleepPage() {
 
                 <div className="rounded-xl p-5" style={{ background: 'rgba(16,185,129,0.07)', border: '1px solid rgba(16,185,129,0.2)' }}>
                   <div className="text-emerald-400 text-xs font-bold tracking-widest mb-2">INTERMEDIATE — RECOVERY</div>
-                  <div className="text-white font-black mb-3">CJC/Ipa + Epithalon</div>
-                  <ul className="space-y-1 text-sm text-slate-400">
+                  <div className="text-gray-900 font-black mb-3">CJC/Ipa + Epithalon</div>
+                  <ul className="space-y-1 text-sm text-gray-500">
                     <li>• CJC 100 mcg + Ipa 100 mcg SC</li>
                     <li>• Epithalon 5 mg SC (cycle phase)</li>
                     <li>• Both 45 min before bed</li>
@@ -607,8 +607,8 @@ export default function PeptidesForSleepPage() {
 
                 <div className="rounded-xl p-5" style={{ background: 'rgba(0,255,136,0.07)', border: '1px solid rgba(0,255,136,0.2)' }}>
                   <div className="text-xs font-bold tracking-widest mb-2" style={{ color: '#00ff88' }}>ADVANCED — FULL PROTOCOL</div>
-                  <div className="text-white font-black mb-3">Full Sleep Stack</div>
-                  <ul className="space-y-1 text-sm text-slate-400">
+                  <div className="text-gray-900 font-black mb-3">Full Sleep Stack</div>
+                  <ul className="space-y-1 text-sm text-gray-500">
                     <li>• DSIP 200 mcg + Epithalon 5 mg</li>
                     <li>• CJC/Ipa 100/100 mcg</li>
                     <li>• All 45–60 min pre-sleep</li>
@@ -635,8 +635,8 @@ export default function PeptidesForSleepPage() {
         <section className="py-24 bg-dark-900">
           <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
-              <p className="text-xs font-semibold uppercase tracking-widest mb-3 text-slate-500">Common Questions</p>
-              <h2 className="text-3xl font-black text-white">
+              <p className="text-xs font-semibold uppercase tracking-widest mb-3 text-gray-500">Common Questions</p>
+              <h2 className="text-3xl font-black text-gray-900">
                 Sleep Peptide <span className="text-purple-400">FAQ</span>
               </h2>
             </div>
@@ -645,11 +645,11 @@ export default function PeptidesForSleepPage() {
               {faqs.map(({ q, a }) => (
                 <details key={q} className="glass-card group">
                   <summary className="flex items-center justify-between p-5 cursor-pointer list-none">
-                    <span className="text-white font-semibold text-sm pr-4">{q}</span>
-                    <span className="text-slate-500 text-xl shrink-0 group-open:rotate-45 transition-transform duration-200">+</span>
+                    <span className="text-gray-900 font-semibold text-sm pr-4">{q}</span>
+                    <span className="text-gray-500 text-xl shrink-0 group-open:rotate-45 transition-transform duration-200">+</span>
                   </summary>
                   <div className="px-5 pb-5">
-                    <p className="text-slate-400 text-sm leading-relaxed">{a}</p>
+                    <p className="text-gray-500 text-sm leading-relaxed">{a}</p>
                   </div>
                 </details>
               ))}
@@ -660,10 +660,10 @@ export default function PeptidesForSleepPage() {
         {/* ── BOTTOM CTA ───────────────────────────────────── */}
         <section className="py-20 bg-dark-800 border-t border-white/5">
           <div className="max-w-3xl mx-auto px-4 sm:px-6 text-center">
-            <h2 className="text-4xl font-black text-white mb-4">
+            <h2 className="text-4xl font-black text-gray-900 mb-4">
               Start Your <span style={{ color: '#00ff88' }}>Sleep Protocol</span>
             </h2>
-            <p className="text-slate-400 text-lg mb-8">
+            <p className="text-gray-500 text-lg mb-8">
               DSIP, Epithalon, CJC/Ipamorelin — the complete sleep peptide toolkit.
               The most anabolic window of your day deserves the best tools.
             </p>
@@ -680,7 +680,7 @@ export default function PeptidesForSleepPage() {
                 Epithalon Deep Dive
               </Link>
             </div>
-            <p className="text-slate-600 text-xs mt-2">Affiliate link — commission earned at no additional cost. Not medical advice.</p>
+            <p className="text-gray-600 text-xs mt-2">Affiliate link — commission earned at no additional cost. Not medical advice.</p>
           </div>
         </section>
 

@@ -100,18 +100,18 @@ export default function JawlinePeptideGuidePage() {
             </div>
 
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-black leading-[0.9] mb-6 tracking-tight">
-              <span className="text-white block">Jawline Peptide</span>
-              <span className="text-white block">Guide</span>
+              <span className="text-gray-900 block">Jawline Peptide</span>
+              <span className="text-gray-900 block">Guide</span>
               <span className="text-blue-400 block mt-2">The Looksmaxxing</span>
               <span style={{ color: '#00ff88' }} className="block">Protocol</span>
             </h1>
 
-            <p className="text-xl text-slate-400 leading-relaxed mb-4 max-w-2xl">
+            <p className="text-xl text-gray-500 leading-relaxed mb-4 max-w-2xl">
               The jaw isn&apos;t just about aesthetics — it&apos;s the structural foundation of your entire face.
               And it&apos;s one of the few adult bones that continues to respond to growth signals.
             </p>
 
-            <p className="text-slate-500 leading-relaxed mb-8 max-w-2xl">
+            <p className="text-gray-500 leading-relaxed mb-8 max-w-2xl">
               IGF-1 LR3, GHK-Cu, BPC-157, and CJC-1295/Ipamorelin each target a different layer of
               facial structure. Together they form the most comprehensive non-surgical jawline
               optimization protocol currently available.
@@ -134,7 +134,7 @@ export default function JawlinePeptideGuidePage() {
 
             <div className="flex flex-wrap gap-4">
               {['IGF-1 LR3 — Bone Remodeling', 'GHK-Cu — Collagen Architecture', 'BPC-157 — Ligament Integrity', 'CJC/Ipa — GH Axis'].map((item) => (
-                <div key={item} className="flex items-center gap-1.5 text-sm text-slate-500">
+                <div key={item} className="flex items-center gap-1.5 text-sm text-gray-500">
                   <CheckCircle className="w-4 h-4 text-blue-400" />
                   <span>{item}</span>
                 </div>
@@ -150,7 +150,7 @@ export default function JawlinePeptideGuidePage() {
               {stats.map(({ value, label, color }) => (
                 <div key={label} className="text-center">
                   <div className={`text-4xl font-black mb-1 ${color}`}>{value}</div>
-                  <div className="text-slate-500 text-sm">{label}</div>
+                  <div className="text-gray-500 text-sm">{label}</div>
                 </div>
               ))}
             </div>
@@ -163,25 +163,25 @@ export default function JawlinePeptideGuidePage() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
               <div>
                 <p className="text-xs font-semibold uppercase tracking-widest mb-3 text-blue-400">The Foundation</p>
-                <h2 className="text-4xl font-black text-white mb-6">
+                <h2 className="text-4xl font-black text-gray-900 mb-6">
                   Why Jawline Is the{' '}
                   <span className="text-blue-400">#1 Looksmaxxing Target</span>
                 </h2>
-                <p className="text-slate-400 leading-relaxed mb-4">
+                <p className="text-gray-500 leading-relaxed mb-4">
                   The looksmaxxing community has converged on a simple truth: facial attractiveness
                   is primarily determined by facial structure — and the jawline is the dominant
                   structural feature. Strong mandibular definition, clear gonial angle, and a sharp
                   jawline are consistently rated as the highest-leverage physical traits by attraction
                   researchers across cultures.
                 </p>
-                <p className="text-slate-400 leading-relaxed mb-4">
+                <p className="text-gray-500 leading-relaxed mb-4">
                   What makes the jaw particularly interesting from a peptide standpoint is that it
                   remains responsive to growth factor signaling in adults. Unlike most skeletal
                   structures that become largely static, the mandible maintains active remodeling
                   activity. This is why mewing works — mechanical load changes bone architecture
                   over time. Peptides amplify the same remodeling machinery at the molecular level.
                 </p>
-                <p className="text-slate-400 leading-relaxed">
+                <p className="text-gray-500 leading-relaxed">
                   The protocol isn&apos;t about growing new bone from nothing. It&apos;s about optimizing the
                   growth factor environment to maximize the density, angularity, and definition of the
                   structure you already have — while simultaneously improving the collagen and ligament
@@ -198,7 +198,7 @@ export default function JawlinePeptideGuidePage() {
                 ].map(({ title, desc, color, bg, border }) => (
                   <div key={title} className={`glass-card p-4 ${bg} border ${border}`}>
                     <div className={`font-black mb-1 ${color}`}>{title}</div>
-                    <p className="text-slate-400 text-sm">{desc}</p>
+                    <p className="text-gray-500 text-sm">{desc}</p>
                   </div>
                 ))}
               </div>
@@ -216,25 +216,25 @@ export default function JawlinePeptideGuidePage() {
                   <span className="text-blue-400 text-xs font-semibold uppercase tracking-widest">Bone Remodeling</span>
                 </div>
 
-                <h2 className="text-3xl font-black text-white mb-4">
+                <h2 className="text-3xl font-black text-gray-900 mb-4">
                   IGF-1 LR3:{' '}
                   <span className="text-blue-400">Bone Density & Remodeling</span>
                 </h2>
 
-                <p className="text-slate-400 leading-relaxed mb-4">
+                <p className="text-gray-500 leading-relaxed mb-4">
                   IGF-1 LR3 is the most potent growth factor signal available in a research peptide.
                   It binds the IGF-1 receptor on osteoblasts — the bone-building cells — and drives a
                   cascade of anabolic signaling that increases bone matrix synthesis, mineral deposition,
                   and ultimately, bone density. In the mandible specifically, sustained IGF-1 signaling
                   over months drives measurable changes in cortical bone thickness and angular definition.
                 </p>
-                <p className="text-slate-400 leading-relaxed mb-4">
+                <p className="text-gray-500 leading-relaxed mb-4">
                   The mechanism isn&apos;t mysterious. Adolescent facial bone development is driven by IGF-1.
                   The reason jaw development accelerates during puberty is the same reason peptide-driven
                   bone remodeling works in adults: IGF-1 receptor activation triggers the same
                   osteoblast/osteoclast remodeling cycle that sculpts facial structure in growth years.
                 </p>
-                <p className="text-slate-400 leading-relaxed mb-6">
+                <p className="text-gray-500 leading-relaxed mb-6">
                   For jawline use specifically: IGF-1 LR3&apos;s extended half-life (20–30 hours vs. 20 minutes
                   for native IGF-1) means sustained receptor signaling throughout the day. A 4-week cycle
                   at 50–80 mcg daily, cycled with 2-week breaks, provides the growth factor environment
@@ -249,8 +249,8 @@ export default function JawlinePeptideGuidePage() {
                     { label: 'Stack With', value: 'GHK-Cu + CJC/Ipa' },
                   ].map(({ label, value }) => (
                     <div key={label} className="glass-card p-3">
-                      <div className="text-slate-500 text-xs font-semibold uppercase tracking-wider mb-1">{label}</div>
-                      <div className="text-white font-bold text-sm">{value}</div>
+                      <div className="text-gray-500 text-xs font-semibold uppercase tracking-wider mb-1">{label}</div>
+                      <div className="text-gray-900 font-bold text-sm">{value}</div>
                     </div>
                   ))}
                 </div>
@@ -304,24 +304,24 @@ export default function JawlinePeptideGuidePage() {
                   <span className="text-emerald-400 text-xs font-semibold uppercase tracking-widest">Collagen Architecture</span>
                 </div>
 
-                <h2 className="text-3xl font-black text-white mb-4">
+                <h2 className="text-3xl font-black text-gray-900 mb-4">
                   GHK-Cu:{' '}
                   <span className="text-emerald-400">Facial Collagen Architecture</span>
                 </h2>
 
-                <p className="text-slate-400 leading-relaxed mb-4">
+                <p className="text-gray-500 leading-relaxed mb-4">
                   GHK-Cu (copper tripeptide) activates over 4,000 genes in human fibroblasts — more
                   gene expression activity than any other known peptide. Its core action in facial tissue
                   is collagen and elastin synthesis: it upregulates collagen I, III, and V production
                   while simultaneously inhibiting the metalloproteinases that degrade existing collagen.
                 </p>
-                <p className="text-slate-400 leading-relaxed mb-4">
+                <p className="text-gray-500 leading-relaxed mb-4">
                   The architectural result in the face is significant. Denser collagen under the jawline
                   skin creates a tighter, more defined appearance. The collagen matrix in the dermis and
                   subcutaneous layer is what gives facial features their sharp, angular appearance — soft,
                   degraded collagen means soft, undefined facial features.
                 </p>
-                <p className="text-slate-400 leading-relaxed mb-6">
+                <p className="text-gray-500 leading-relaxed mb-6">
                   GHK-Cu is the fastest-acting peptide in the jawline protocol. Most users report visible
                   skin tightening and improved facial structure definition within 6–10 weeks. It works
                   continuously alongside the slower bone and ligament changes driven by IGF-1 and BPC-157.
@@ -355,15 +355,15 @@ export default function JawlinePeptideGuidePage() {
                   <Shield className="w-3.5 h-3.5 text-purple-400" />
                   <span className="text-purple-400 text-xs font-semibold uppercase tracking-widest">Ligament Integrity</span>
                 </div>
-                <h3 className="text-2xl font-black text-white mb-3">
+                <h3 className="text-2xl font-black text-gray-900 mb-3">
                   BPC-157: Facial Ligament Integrity
                 </h3>
-                <p className="text-slate-400 text-sm leading-relaxed mb-4">
+                <p className="text-gray-500 text-sm leading-relaxed mb-4">
                   The masseteric ligaments, mandibular retaining ligaments, and fascial layers create
                   the sharp, defined surface appearance of a strong jawline. These are fundamentally
                   connective tissue structures — and BPC-157 is the connective tissue peptide.
                 </p>
-                <p className="text-slate-400 text-sm leading-relaxed mb-4">
+                <p className="text-gray-500 text-sm leading-relaxed mb-4">
                   BPC-157 upregulates growth hormone receptor expression in ligament fibroblasts and
                   accelerates collagen type I synthesis in ligamentous tissue. The result is tighter,
                   more tonically active facial ligaments that improve surface definition — particularly
@@ -375,12 +375,12 @@ export default function JawlinePeptideGuidePage() {
                     { label: 'Timing', value: 'Daily or 5x/week' },
                   ].map(({ label, value }) => (
                     <div key={label} className="rounded-lg p-3" style={{ background: 'rgba(167,139,250,0.06)', border: '1px solid rgba(167,139,250,0.15)' }}>
-                      <div className="text-slate-500 text-xs font-semibold mb-1">{label}</div>
-                      <div className="text-white font-bold text-sm">{value}</div>
+                      <div className="text-gray-500 text-xs font-semibold mb-1">{label}</div>
+                      <div className="text-gray-900 font-bold text-sm">{value}</div>
                     </div>
                   ))}
                 </div>
-                <a href={SOURCE_URL} target="_blank" rel="nofollow noopener noreferrer" className="text-purple-400 text-sm font-bold hover:text-white transition-colors flex items-center gap-1">
+                <a href={SOURCE_URL} target="_blank" rel="nofollow noopener noreferrer" className="text-purple-400 text-sm font-bold hover:text-gray-900 transition-colors flex items-center gap-1">
                   Shop BPC-157 <ArrowRight className="w-3.5 h-3.5" />
                 </a>
               </div>
@@ -390,15 +390,15 @@ export default function JawlinePeptideGuidePage() {
                   <Zap className="w-3.5 h-3.5" style={{ color: '#00ff88' }} />
                   <span className="text-xs font-semibold uppercase tracking-widest" style={{ color: '#00ff88' }}>GH Axis Optimization</span>
                 </div>
-                <h3 className="text-2xl font-black text-white mb-3">
+                <h3 className="text-2xl font-black text-gray-900 mb-3">
                   CJC/Ipa: Facial Fat Distribution
                 </h3>
-                <p className="text-slate-400 text-sm leading-relaxed mb-4">
+                <p className="text-gray-500 text-sm leading-relaxed mb-4">
                   Growth hormone is the master regulator of facial fat distribution. Low GH — common
                   after the mid-20s — leads to buccal fat accumulation and the soft, rounded facial
                   phenotype that obscures jawline definition. CJC-1295/Ipamorelin restores the GH axis.
                 </p>
-                <p className="text-slate-400 text-sm leading-relaxed mb-4">
+                <p className="text-gray-500 text-sm leading-relaxed mb-4">
                   Elevated nocturnal GH (from pre-sleep CJC/Ipa administration) drives facial lipolysis
                   and redistributes facial fat toward a leaner, more defined appearance over months.
                   This is often the fastest visible change users notice — reduced buccal fat, sharper
@@ -410,12 +410,12 @@ export default function JawlinePeptideGuidePage() {
                     { label: 'Timing', value: 'Pre-sleep, fasted' },
                   ].map(({ label, value }) => (
                     <div key={label} className="rounded-lg p-3" style={{ background: 'rgba(0,255,136,0.05)', border: '1px solid rgba(0,255,136,0.12)' }}>
-                      <div className="text-slate-500 text-xs font-semibold mb-1">{label}</div>
-                      <div className="text-white font-bold text-sm">{value}</div>
+                      <div className="text-gray-500 text-xs font-semibold mb-1">{label}</div>
+                      <div className="text-gray-900 font-bold text-sm">{value}</div>
                     </div>
                   ))}
                 </div>
-                <a href={SOURCE_URL} target="_blank" rel="nofollow noopener noreferrer" className="text-sm font-bold hover:text-white transition-colors flex items-center gap-1" style={{ color: '#00ff88' }}>
+                <a href={SOURCE_URL} target="_blank" rel="nofollow noopener noreferrer" className="text-sm font-bold hover:text-gray-900 transition-colors flex items-center gap-1" style={{ color: '#00ff88' }}>
                   Shop CJC/Ipamorelin <ArrowRight className="w-3.5 h-3.5" />
                 </a>
               </div>
@@ -427,12 +427,12 @@ export default function JawlinePeptideGuidePage() {
         <section className="py-20 bg-dark-900">
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
-              <p className="text-xs font-semibold uppercase tracking-widest mb-3 text-slate-500">The Science</p>
-              <h2 className="text-3xl font-black text-white mb-4">
+              <p className="text-xs font-semibold uppercase tracking-widest mb-3 text-gray-500">The Science</p>
+              <h2 className="text-3xl font-black text-gray-900 mb-4">
                 How Bones Respond to{' '}
                 <span className="text-blue-400">Peptide-Driven Growth Factor Signaling</span>
               </h2>
-              <p className="text-slate-400 max-w-2xl mx-auto leading-relaxed">
+              <p className="text-gray-500 max-w-2xl mx-auto leading-relaxed">
                 Adult bone remodeling is driven by a continuous cycle of osteoclast resorption and osteoblast
                 synthesis. Peptides shift this balance toward net bone formation by activating the same
                 growth factor receptor pathways that drive skeletal development.
@@ -469,7 +469,7 @@ export default function JawlinePeptideGuidePage() {
                 <div key={step} className={`glass-card p-6 ${bg} border ${border}`}>
                   <div className={`text-4xl font-black mb-3 opacity-30 ${color}`}>{step}</div>
                   <h3 className={`font-black text-base mb-3 ${color}`}>{title}</h3>
-                  <p className="text-slate-400 text-sm leading-relaxed">{body}</p>
+                  <p className="text-gray-500 text-sm leading-relaxed">{body}</p>
                 </div>
               ))}
             </div>
@@ -481,10 +481,10 @@ export default function JawlinePeptideGuidePage() {
           <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-10">
               <p className="text-xs font-semibold uppercase tracking-widest mb-3" style={{ color: '#00ff88' }}>Build Your Stack</p>
-              <h2 className="text-3xl font-black text-white mb-3">
+              <h2 className="text-3xl font-black text-gray-900 mb-3">
                 Find Your <span className="text-blue-400">Jawline Protocol</span>
               </h2>
-              <p className="text-slate-400">
+              <p className="text-gray-500">
                 3 questions. Personalized peptide recommendations based on your starting point and goals.
               </p>
             </div>
@@ -496,8 +496,8 @@ export default function JawlinePeptideGuidePage() {
         <section className="py-24 bg-dark-900">
           <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
-              <p className="text-xs font-semibold uppercase tracking-widest mb-3 text-slate-500">Common Questions</p>
-              <h2 className="text-3xl font-black text-white">
+              <p className="text-xs font-semibold uppercase tracking-widest mb-3 text-gray-500">Common Questions</p>
+              <h2 className="text-3xl font-black text-gray-900">
                 Jawline Peptide <span className="text-blue-400">FAQ</span>
               </h2>
             </div>
@@ -506,11 +506,11 @@ export default function JawlinePeptideGuidePage() {
               {faqs.map(({ q, a }) => (
                 <details key={q} className="glass-card group">
                   <summary className="flex items-center justify-between p-5 cursor-pointer list-none">
-                    <span className="text-white font-semibold text-sm pr-4">{q}</span>
-                    <span className="text-slate-500 text-xl shrink-0 group-open:rotate-45 transition-transform duration-200">+</span>
+                    <span className="text-gray-900 font-semibold text-sm pr-4">{q}</span>
+                    <span className="text-gray-500 text-xl shrink-0 group-open:rotate-45 transition-transform duration-200">+</span>
                   </summary>
                   <div className="px-5 pb-5">
-                    <p className="text-slate-400 text-sm leading-relaxed">{a}</p>
+                    <p className="text-gray-500 text-sm leading-relaxed">{a}</p>
                   </div>
                 </details>
               ))}
@@ -521,10 +521,10 @@ export default function JawlinePeptideGuidePage() {
         {/* ── BOTTOM CTA ───────────────────────────────────── */}
         <section className="py-20 bg-dark-800 border-t border-white/5">
           <div className="max-w-3xl mx-auto px-4 sm:px-6 text-center">
-            <h2 className="text-4xl font-black text-white mb-4">
+            <h2 className="text-4xl font-black text-gray-900 mb-4">
               Start Your <span style={{ color: '#00ff88' }}>Jawline Protocol</span>
             </h2>
-            <p className="text-slate-400 text-lg mb-8">
+            <p className="text-gray-500 text-lg mb-8">
               IGF-1, GHK-Cu, BPC-157, CJC/Ipa — the complete non-surgical facial structure stack.
               The jaw responds to growth signals at any age.
             </p>
@@ -541,7 +541,7 @@ export default function JawlinePeptideGuidePage() {
                 Full Looksmaxxing Guide
               </Link>
             </div>
-            <p className="text-slate-600 text-xs mt-2">Affiliate link — commission earned at no additional cost. Not medical advice.</p>
+            <p className="text-gray-600 text-xs mt-2">Affiliate link — commission earned at no additional cost. Not medical advice.</p>
           </div>
         </section>
 

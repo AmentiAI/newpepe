@@ -285,17 +285,17 @@ export default function IsBpc157LegalPage() {
             <AlertTriangle className="w-4 h-4 text-amber-400" />
             <span className="text-amber-400 text-sm font-semibold tracking-wide">LEGAL & REGULATORY GUIDE</span>
           </div>
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white leading-tight mb-6">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-gray-900 leading-tight mb-6">
             Is BPC-157 Legal?<br />
             <span style={{ color: '#00ff88' }}>The Complete 2026 Answer</span>
           </h1>
-          <p className="text-slate-300 text-xl leading-relaxed mb-8">
+          <p className="text-gray-600 text-xl leading-relaxed mb-8">
             BPC-157's legal status is nuanced — and the answer depends on who you are and how you're using it.
             Here's a clear breakdown of FDA status, WADA rules, and research chemical law.
           </p>
           {/* Quick answer box */}
           <div className="glass-card p-6 border-emerald-500/30 mb-8">
-            <h2 className="text-white font-bold text-lg mb-4">Quick Answer Summary</h2>
+            <h2 className="text-gray-900 font-bold text-lg mb-4">Quick Answer Summary</h2>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
               {[
                 { label: 'Legal to buy in the US?', answer: '✅ Yes', sub: 'As a research chemical' },
@@ -303,9 +303,9 @@ export default function IsBpc157LegalPage() {
                 { label: 'WADA banned for athletes?', answer: '⚠️ Yes', sub: 'In-competition & out-of-competition' },
               ].map((item) => (
                 <div key={item.label} className="text-center">
-                  <div className="text-slate-500 text-xs uppercase tracking-wide mb-1">{item.label}</div>
-                  <div className="text-xl font-bold text-white">{item.answer}</div>
-                  <div className="text-slate-400 text-xs mt-1">{item.sub}</div>
+                  <div className="text-gray-500 text-xs uppercase tracking-wide mb-1">{item.label}</div>
+                  <div className="text-xl font-bold text-gray-900">{item.answer}</div>
+                  <div className="text-gray-500 text-xs mt-1">{item.sub}</div>
                 </div>
               ))}
             </div>
@@ -317,15 +317,15 @@ export default function IsBpc157LegalPage() {
       <section className="py-12 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
 
         <div className="glass-card p-8">
-          <h2 className="text-2xl font-black text-white mb-4">FDA Status: What Actually Happened</h2>
-          <p className="text-slate-300 leading-relaxed mb-4">
+          <h2 className="text-2xl font-black text-gray-900 mb-4">FDA Status: What Actually Happened</h2>
+          <p className="text-gray-600 leading-relaxed mb-4">
             In 2022, the FDA added BPC-157 to its list of bulk drug substances under 503A compounding regulations — specifically the list of substances that "may present significant safety risks" when used in compounded drugs.
           </p>
-          <p className="text-slate-300 leading-relaxed mb-4">
-            <strong className="text-white">What this means:</strong> Licensed compounding pharmacies that fill prescriptions cannot legally make BPC-157 for patients. This is a restriction on pharmaceutical compounding, not on the substance itself.
+          <p className="text-gray-600 leading-relaxed mb-4">
+            <strong className="text-gray-900">What this means:</strong> Licensed compounding pharmacies that fill prescriptions cannot legally make BPC-157 for patients. This is a restriction on pharmaceutical compounding, not on the substance itself.
           </p>
-          <p className="text-slate-300 leading-relaxed mb-4">
-            <strong className="text-white">What this does NOT mean:</strong> BPC-157 is not a controlled substance (it's not scheduled by the DEA). Individual purchase of BPC-157 as a research chemical remains legal in the United States. The FDA action specifically targets the prescription compounding pathway — not research chemical sales.
+          <p className="text-gray-600 leading-relaxed mb-4">
+            <strong className="text-gray-900">What this does NOT mean:</strong> BPC-157 is not a controlled substance (it's not scheduled by the DEA). Individual purchase of BPC-157 as a research chemical remains legal in the United States. The FDA action specifically targets the prescription compounding pathway — not research chemical sales.
           </p>
           <div className="bg-amber-500/10 border border-amber-500/20 rounded-xl p-4 mt-4">
             <p className="text-amber-300 text-sm">
@@ -335,14 +335,14 @@ export default function IsBpc157LegalPage() {
         </div>
 
         <div className="glass-card p-8">
-          <h2 className="text-2xl font-black text-white mb-4">WADA Status: Athletes Must Know This</h2>
-          <p className="text-slate-300 leading-relaxed mb-4">
+          <h2 className="text-2xl font-black text-gray-900 mb-4">WADA Status: Athletes Must Know This</h2>
+          <p className="text-gray-600 leading-relaxed mb-4">
             BPC-157 is listed on the WADA (World Anti-Doping Agency) Prohibited List under Section S2 — Peptide Hormones, Growth Factors, Related Substances, and Mimetics.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
             <div className="bg-red-500/10 border border-red-500/20 rounded-xl p-4">
               <div className="text-red-400 font-bold mb-2">Prohibited for WADA Athletes</div>
-              <ul className="space-y-1 text-slate-400 text-sm">
+              <ul className="space-y-1 text-gray-500 text-sm">
                 <li>• Prohibited in-competition</li>
                 <li>• Prohibited out-of-competition</li>
                 <li>• Applies to all WADA-governed sports</li>
@@ -351,7 +351,7 @@ export default function IsBpc157LegalPage() {
             </div>
             <div className="bg-emerald-500/10 border border-emerald-500/20 rounded-xl p-4">
               <div className="text-emerald-400 font-bold mb-2">Not Affected by WADA Rules</div>
-              <ul className="space-y-1 text-slate-400 text-sm">
+              <ul className="space-y-1 text-gray-500 text-sm">
                 <li>• Recreational athletes (untested)</li>
                 <li>• Non-professional users</li>
                 <li>• Sports without anti-doping programs</li>
@@ -359,17 +359,17 @@ export default function IsBpc157LegalPage() {
               </ul>
             </div>
           </div>
-          <p className="text-slate-400 text-sm">
+          <p className="text-gray-500 text-sm">
             If you compete in any sport with anti-doping testing, assume BPC-157 is prohibited and act accordingly.
           </p>
         </div>
 
         <div className="glass-card p-8">
-          <h2 className="text-2xl font-black text-white mb-4">Research Chemical Status: How People Legally Buy BPC-157</h2>
-          <p className="text-slate-300 leading-relaxed mb-4">
+          <h2 className="text-2xl font-black text-gray-900 mb-4">Research Chemical Status: How People Legally Buy BPC-157</h2>
+          <p className="text-gray-600 leading-relaxed mb-4">
             BPC-157 is sold legally throughout the US as a research chemical — a designation for chemical compounds sold for laboratory and research purposes. Reputable suppliers operate under this framework, providing certificates of analysis (COA) confirming purity and identity.
           </p>
-          <p className="text-slate-300 leading-relaxed mb-4">
+          <p className="text-gray-600 leading-relaxed mb-4">
             Research chemicals are not subject to the same regulatory framework as pharmaceutical drugs. They are legal to purchase and possess, though they are marketed for research purposes rather than human consumption.
           </p>
           <div className="flex gap-3 mt-4">
@@ -385,17 +385,17 @@ export default function IsBpc157LegalPage() {
       {/* Country-by-Country Table */}
       <section className="py-12" style={{ background: 'rgba(6,6,16,0.8)' }}>
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl font-black text-white mb-3">Country-by-Country Legal Status</h2>
-          <p className="text-slate-400 mb-8 max-w-2xl">BPC-157 legal status across 15+ countries as of 2026. Always verify with current local regulations before purchasing — this table is informational only.</p>
+          <h2 className="text-2xl font-black text-gray-900 mb-3">Country-by-Country Legal Status</h2>
+          <p className="text-gray-500 mb-8 max-w-2xl">BPC-157 legal status across 15+ countries as of 2026. Always verify with current local regulations before purchasing — this table is informational only.</p>
           <div className="overflow-x-auto rounded-2xl border border-white/10">
             <table className="w-full text-sm min-w-[750px]">
               <thead>
                 <tr style={{ background: 'rgba(255,255,255,0.04)' }}>
-                  <th className="text-left py-3 px-4 text-slate-400 font-semibold">Country</th>
-                  <th className="text-left py-3 px-4 text-slate-400 font-semibold">Legal Status</th>
-                  <th className="text-left py-3 px-4 text-slate-400 font-semibold">Purchase Legal</th>
-                  <th className="text-left py-3 px-4 text-slate-400 font-semibold">Import Legal</th>
-                  <th className="text-left py-3 px-4 text-slate-400 font-semibold">Notes</th>
+                  <th className="text-left py-3 px-4 text-gray-500 font-semibold">Country</th>
+                  <th className="text-left py-3 px-4 text-gray-500 font-semibold">Legal Status</th>
+                  <th className="text-left py-3 px-4 text-gray-500 font-semibold">Purchase Legal</th>
+                  <th className="text-left py-3 px-4 text-gray-500 font-semibold">Import Legal</th>
+                  <th className="text-left py-3 px-4 text-gray-500 font-semibold">Notes</th>
                 </tr>
               </thead>
               <tbody>
@@ -404,33 +404,33 @@ export default function IsBpc157LegalPage() {
                     <td className="py-3 px-4">
                       <div className="flex items-center gap-2">
                         <span className="text-lg">{row.flag}</span>
-                        <span className="text-white font-semibold">{row.country}</span>
+                        <span className="text-gray-900 font-semibold">{row.country}</span>
                       </div>
                     </td>
                     <td className="py-3 px-4">
                       <span className={`text-xs font-bold ${row.statusColor}`}>{row.legalStatus}</span>
                     </td>
-                    <td className="py-3 px-4 text-slate-300 text-xs">{row.purchaseLegal}</td>
-                    <td className="py-3 px-4 text-slate-300 text-xs">{row.importLegal}</td>
-                    <td className="py-3 px-4 text-slate-400 text-xs max-w-[280px] leading-relaxed">{row.notes}</td>
+                    <td className="py-3 px-4 text-gray-600 text-xs">{row.purchaseLegal}</td>
+                    <td className="py-3 px-4 text-gray-600 text-xs">{row.importLegal}</td>
+                    <td className="py-3 px-4 text-gray-500 text-xs max-w-[280px] leading-relaxed">{row.notes}</td>
                   </tr>
                 ))}
               </tbody>
             </table>
           </div>
-          <div className="flex flex-wrap gap-4 mt-4 text-xs text-slate-500">
+          <div className="flex flex-wrap gap-4 mt-4 text-xs text-gray-500">
             <div className="flex items-center gap-2"><span className="w-2 h-2 rounded-full bg-emerald-400 inline-block" /> Legal / Research Chemical</div>
             <div className="flex items-center gap-2"><span className="w-2 h-2 rounded-full bg-yellow-400 inline-block" /> Grey Area — verify locally</div>
             <div className="flex items-center gap-2"><span className="w-2 h-2 rounded-full bg-red-400 inline-block" /> Restricted / Prescription required</div>
           </div>
-          <p className="text-slate-500 text-xs mt-3">Information current as of early 2026. Regulatory status can change without notice. This is not legal advice — consult a local attorney or regulatory specialist for binding guidance.</p>
+          <p className="text-gray-500 text-xs mt-3">Information current as of early 2026. Regulatory status can change without notice. This is not legal advice — consult a local attorney or regulatory specialist for binding guidance.</p>
         </div>
       </section>
 
       {/* Regulatory Timeline */}
       <section className="py-12 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-2xl font-black text-white mb-3">Timeline of BPC-157 Regulatory History</h2>
-        <p className="text-slate-400 mb-10 max-w-2xl">From its 1991 discovery to the current 2026 regulatory landscape — the complete history of how BPC-157 went from academic curiosity to research chemical.</p>
+        <h2 className="text-2xl font-black text-gray-900 mb-3">Timeline of BPC-157 Regulatory History</h2>
+        <p className="text-gray-500 mb-10 max-w-2xl">From its 1991 discovery to the current 2026 regulatory landscape — the complete history of how BPC-157 went from academic curiosity to research chemical.</p>
         <div className="relative">
           <div className="absolute left-[19px] top-6 bottom-6 w-px bg-white/10 hidden sm:block" />
           <div className="space-y-5">
@@ -450,7 +450,7 @@ export default function IsBpc157LegalPage() {
                 community: 'text-amber-400',
                 clinical: 'text-emerald-400',
                 regulatory: 'text-red-400',
-                market: 'text-slate-400',
+                market: 'text-gray-500',
                 current: 'text-neon-green',
               };
               return (
@@ -462,10 +462,10 @@ export default function IsBpc157LegalPage() {
                   </div>
                   <div className={`glass-card p-4 flex-1 border-l-2 ${typeStyles[event.type] || 'border-white/10'}`}>
                     <div className="flex items-start justify-between gap-3 mb-2">
-                      <h3 className="text-white font-bold text-sm">{event.title}</h3>
+                      <h3 className="text-gray-900 font-bold text-sm">{event.title}</h3>
                       <span className={`text-xs font-black shrink-0 ${yearColors[event.type]}`}>{event.year}</span>
                     </div>
-                    <p className="text-slate-400 text-xs leading-relaxed">{event.detail}</p>
+                    <p className="text-gray-500 text-xs leading-relaxed">{event.detail}</p>
                   </div>
                 </div>
               );
@@ -477,36 +477,36 @@ export default function IsBpc157LegalPage() {
       {/* What 'Research Chemical' Actually Means */}
       <section className="py-12" style={{ background: 'rgba(6,6,16,0.8)' }}>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl font-black text-white mb-3">What "Research Chemical" Actually Means</h2>
-          <p className="text-slate-400 mb-8 max-w-2xl">The legal framework under which BPC-157 is sold — explained clearly, without jargon.</p>
+          <h2 className="text-2xl font-black text-gray-900 mb-3">What "Research Chemical" Actually Means</h2>
+          <p className="text-gray-500 mb-8 max-w-2xl">The legal framework under which BPC-157 is sold — explained clearly, without jargon.</p>
 
           <div className="space-y-5">
             <div className="glass-card p-6">
-              <h3 className="text-white font-bold mb-3">The Origin of the Research Chemical Framework</h3>
-              <p className="text-slate-300 text-sm leading-relaxed mb-3">
+              <h3 className="text-gray-900 font-bold mb-3">The Origin of the Research Chemical Framework</h3>
+              <p className="text-gray-600 text-sm leading-relaxed mb-3">
                 The "research chemical" designation emerged in the 1980s and 1990s from the scientific supply industry. Chemical suppliers that sold reagents, solvents, and compounds to academic laboratories and pharmaceutical companies operated under a framework where compounds were sold for laboratory research purposes — not for consumer use.
               </p>
-              <p className="text-slate-300 text-sm leading-relaxed">
+              <p className="text-gray-600 text-sm leading-relaxed">
                 This framework was entirely legitimate in its origin: universities, biotech companies, and research institutions need access to a wide range of chemical compounds that are not regulated as consumer products. The Controlled Substances Act covers specific scheduled compounds; everything else is in a legal space that is regulated differently — as research supply rather than consumer product.
               </p>
             </div>
 
             <div className="glass-card p-6">
-              <h3 className="text-white font-bold mb-3">How Suppliers Legally Operate</h3>
-              <p className="text-slate-300 text-sm leading-relaxed mb-3">
+              <h3 className="text-gray-900 font-bold mb-3">How Suppliers Legally Operate</h3>
+              <p className="text-gray-600 text-sm leading-relaxed mb-3">
                 Peptide research chemical suppliers operate by labeling products clearly as "for research use only — not for human consumption." This designation is legally significant: it places the product outside the FDA's consumer drug regulation framework and into the research supply framework. Suppliers are not making drug claims, not providing medical advice, and not marketing to patients.
               </p>
-              <p className="text-slate-300 text-sm leading-relaxed">
+              <p className="text-gray-600 text-sm leading-relaxed">
                 Reputable suppliers provide Certificates of Analysis (COA) from third-party laboratories confirming the identity, purity, and concentration of their compounds. This is standard practice in legitimate research supply — academic purchasers require COA documentation to verify they are working with what they believe they are working with.
               </p>
             </div>
 
             <div className="glass-card p-6">
-              <h3 className="text-white font-bold mb-3">What COAs Prove and What They Don't</h3>
+              <h3 className="text-gray-900 font-bold mb-3">What COAs Prove and What They Don't</h3>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div className="bg-emerald-500/5 border border-emerald-500/20 rounded-xl p-4">
                   <div className="text-emerald-400 text-xs font-bold uppercase mb-2">What a COA confirms</div>
-                  <ul className="space-y-1.5 text-slate-400 text-xs">
+                  <ul className="space-y-1.5 text-gray-500 text-xs">
                     <li className="flex gap-2"><CheckCircle className="w-3.5 h-3.5 shrink-0 mt-0.5 text-emerald-400" /> The compound is what it claims to be (identity)</li>
                     <li className="flex gap-2"><CheckCircle className="w-3.5 h-3.5 shrink-0 mt-0.5 text-emerald-400" /> Purity percentage (HPLC or mass spec analysis)</li>
                     <li className="flex gap-2"><CheckCircle className="w-3.5 h-3.5 shrink-0 mt-0.5 text-emerald-400" /> Absence of specific contaminants tested for</li>
@@ -515,7 +515,7 @@ export default function IsBpc157LegalPage() {
                 </div>
                 <div className="bg-red-500/5 border border-red-500/20 rounded-xl p-4">
                   <div className="text-red-400 text-xs font-bold uppercase mb-2">What a COA doesn't confirm</div>
-                  <ul className="space-y-1.5 text-slate-400 text-xs">
+                  <ul className="space-y-1.5 text-gray-500 text-xs">
                     <li>• Human safety in clinical use</li>
                     <li>• Sterility (separate testing required for injectables)</li>
                     <li>• Long-term storage stability</li>
@@ -526,14 +526,14 @@ export default function IsBpc157LegalPage() {
             </div>
 
             <div className="glass-card p-6">
-              <h3 className="text-white font-bold mb-3">Grey Market vs. Black Market: The Critical Distinction</h3>
-              <p className="text-slate-300 text-sm leading-relaxed mb-3">
+              <h3 className="text-gray-900 font-bold mb-3">Grey Market vs. Black Market: The Critical Distinction</h3>
+              <p className="text-gray-600 text-sm leading-relaxed mb-3">
                 The research chemical peptide market operates in a legal grey area — not a black market. This distinction matters significantly. A black market involves substances that are explicitly illegal to possess or sell (like DEA-scheduled controlled substances). Buying or selling those compounds creates genuine criminal liability.
               </p>
-              <p className="text-slate-300 text-sm leading-relaxed mb-3">
+              <p className="text-gray-600 text-sm leading-relaxed mb-3">
                 A grey market operates in the space between clearly legal and clearly illegal — where the law does not explicitly prohibit the activity but does not fully sanction it either. Research chemicals occupy this space: they are not controlled substances (legal to possess), but they are technically sold with a "not for human consumption" designation that is often at odds with how buyers use them.
               </p>
-              <p className="text-slate-300 text-sm leading-relaxed">
+              <p className="text-gray-600 text-sm leading-relaxed">
                 The practical legal risk of purchasing BPC-157 as a research chemical in the US is very low compared to purchasing actual controlled substances. No individual in the United States has been prosecuted for purchasing BPC-157 as a research chemical for personal research use as of 2026. The regulatory risk is primarily on the supplier side, not the purchaser side.
               </p>
             </div>
@@ -547,16 +547,16 @@ export default function IsBpc157LegalPage() {
           <AlertTriangle className="w-3.5 h-3.5 text-red-400" />
           <span className="text-red-400 text-xs font-bold tracking-widest uppercase">Athletes: Critical Information</span>
         </div>
-        <h2 className="text-2xl font-black text-white mb-3">If You're an Athlete: What You Need to Know</h2>
-        <p className="text-slate-400 mb-8 max-w-2xl">WADA rules apply to a much wider range of athletes than most people realize — and the consequences are severe.</p>
+        <h2 className="text-2xl font-black text-gray-900 mb-3">If You're an Athlete: What You Need to Know</h2>
+        <p className="text-gray-500 mb-8 max-w-2xl">WADA rules apply to a much wider range of athletes than most people realize — and the consequences are severe.</p>
 
         <div className="space-y-5">
           <div className="glass-card p-6">
-            <h3 className="text-white font-bold mb-4">Which Governing Bodies Follow WADA?</h3>
+            <h3 className="text-gray-900 font-bold mb-4">Which Governing Bodies Follow WADA?</h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
               <div>
                 <div className="text-red-400 text-xs font-bold uppercase mb-3">WADA Rules Apply — BPC-157 Prohibited</div>
-                <ul className="space-y-2 text-slate-400 text-sm">
+                <ul className="space-y-2 text-gray-500 text-sm">
                   {[
                     'International Olympic Committee (IOC) — all Olympic sports',
                     'World Athletics (track & field)',
@@ -577,7 +577,7 @@ export default function IsBpc157LegalPage() {
               </div>
               <div>
                 <div className="text-emerald-400 text-xs font-bold uppercase mb-3">WADA Rules Generally Do NOT Apply</div>
-                <ul className="space-y-2 text-slate-400 text-sm">
+                <ul className="space-y-2 text-gray-500 text-sm">
                   {[
                     'Recreational athletes with no testing program',
                     'Masters/veterans amateur competition (most)',
@@ -597,52 +597,52 @@ export default function IsBpc157LegalPage() {
           </div>
 
           <div className="glass-card p-6">
-            <h3 className="text-white font-bold mb-4">How WADA Testing Works</h3>
-            <p className="text-slate-300 text-sm leading-relaxed mb-4">
+            <h3 className="text-gray-900 font-bold mb-4">How WADA Testing Works</h3>
+            <p className="text-gray-600 text-sm leading-relaxed mb-4">
               WADA testing uses targeted analytical methods — for peptides under S2, this means immunoassay screening followed by liquid chromatography-mass spectrometry (LC-MS/MS) confirmation. These are highly sensitive techniques capable of detecting nanogram-per-milliliter concentrations.
             </p>
             <div className="bg-amber-500/10 border border-amber-500/20 rounded-xl p-4 mb-4">
               <div className="text-amber-400 text-xs font-bold uppercase mb-2">BPC-157 Detection Window (Estimated)</div>
-              <p className="text-slate-300 text-sm">
+              <p className="text-gray-600 text-sm">
                 No formally validated detection window for BPC-157 exists in published anti-doping literature as of 2026. Given its short plasma half-life (estimated 1–4 hours), direct detection in blood or urine within 24–72 hours of use is the likely window. However, WADA methods may also target metabolites with longer detection windows. The safest assumption for a tested athlete: treat BPC-157 as if it could be detected for 5–7 days after last use, pending formal validation data.
               </p>
             </div>
             <div className="bg-white/3 border border-white/10 rounded-xl p-4">
-              <div className="text-white text-xs font-bold uppercase mb-2">TUE (Therapeutic Use Exemption) — Is It Possible?</div>
-              <p className="text-slate-300 text-sm leading-relaxed">
+              <div className="text-gray-900 text-xs font-bold uppercase mb-2">TUE (Therapeutic Use Exemption) — Is It Possible?</div>
+              <p className="text-gray-600 text-sm leading-relaxed">
                 A Therapeutic Use Exemption (TUE) allows athletes with documented medical conditions to use prohibited substances prescribed by physicians. For BPC-157 specifically: TUE approval is extremely unlikely in the current environment because (1) BPC-157 is not FDA-approved or legally prescribable in the US/most countries, (2) WADA has been explicit about peptide growth factors as performance enhancers, and (3) TUEs typically require an approved drug with no reasonable alternative. Do not plan to rely on a TUE for BPC-157.
               </p>
             </div>
           </div>
 
           <div className="glass-card p-6 border border-red-500/20">
-            <h3 className="text-white font-bold mb-3">What to Do If You Test Positive</h3>
-            <p className="text-slate-300 text-sm leading-relaxed mb-3">
+            <h3 className="text-gray-900 font-bold mb-3">What to Do If You Test Positive</h3>
+            <p className="text-gray-600 text-sm leading-relaxed mb-3">
               A WADA anti-doping violation for BPC-157 would be classified as a violation of Section S2 — Peptide Hormones, Growth Factors, Related Substances and Mimetics. Standard consequences include a 4-year ban (first violation) in most sports, though panels can reduce penalties based on no-significant-fault arguments.
             </p>
-            <ol className="space-y-2 text-slate-400 text-sm">
+            <ol className="space-y-2 text-gray-500 text-sm">
               <li className="flex gap-3"><span className="text-red-400 font-bold shrink-0">1.</span>Request the B-sample analysis immediately — do not waive this right.</li>
               <li className="flex gap-3"><span className="text-red-400 font-bold shrink-0">2.</span>Retain a sports law attorney who specializes in anti-doping cases before making any statement.</li>
               <li className="flex gap-3"><span className="text-red-400 font-bold shrink-0">3.</span>Document everything: what you used, when, the source, and any medical justification.</li>
               <li className="flex gap-3"><span className="text-red-400 font-bold shrink-0">4.</span>No-fault or reduced sanction arguments require establishing contamination or unknowing use — consult your attorney on applicable grounds.</li>
             </ol>
-            <p className="text-slate-500 text-xs mt-4">The best strategy for tested athletes is simple: do not use BPC-157. The healing benefits — while real — do not justify the career consequences of an anti-doping violation.</p>
+            <p className="text-gray-500 text-xs mt-4">The best strategy for tested athletes is simple: do not use BPC-157. The healing benefits — while real — do not justify the career consequences of an anti-doping violation.</p>
           </div>
         </div>
       </section>
 
       {/* FAQ */}
       <section className="py-12 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-black text-white mb-10 text-center">Legal FAQ</h2>
+        <h2 className="text-3xl font-black text-gray-900 mb-10 text-center">Legal FAQ</h2>
         <div className="space-y-3">
           {faqs.map(({ q, a }) => (
             <details key={q} className="glass-card group">
               <summary className="p-5 cursor-pointer list-none flex items-center justify-between">
-                <span className="text-white font-semibold text-sm">{q}</span>
+                <span className="text-gray-900 font-semibold text-sm">{q}</span>
                 <span className="text-emerald-400 text-lg group-open:rotate-45 transition-transform shrink-0 ml-4">+</span>
               </summary>
               <div className="px-5 pb-5">
-                <p className="text-slate-400 text-sm leading-relaxed">{a}</p>
+                <p className="text-gray-500 text-sm leading-relaxed">{a}</p>
               </div>
             </details>
           ))}
@@ -651,7 +651,7 @@ export default function IsBpc157LegalPage() {
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pb-8">
         <div className="glass-card p-6 text-center">
-          <p className="text-slate-500 text-xs leading-relaxed">
+          <p className="text-gray-500 text-xs leading-relaxed">
             This page is for informational purposes only and does not constitute legal advice. Regulatory status can change. Verify current regulations in your jurisdiction before purchasing or using any research chemical.
           </p>
         </div>

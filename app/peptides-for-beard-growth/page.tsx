@@ -177,7 +177,7 @@ const faqs = [
 
 export default function PeptidesForBeardGrowthPage() {
   return (
-    <main className="min-h-screen bg-dark-900 text-slate-200">
+    <main className="min-h-screen bg-dark-900 text-gray-700">
       {/* Hero */}
       <section className="relative py-20 px-4 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-emerald-900/20 via-dark-900 to-amber-900/20" />
@@ -186,18 +186,18 @@ export default function PeptidesForBeardGrowthPage() {
             <Zap className="w-4 h-4" />
             Beard Growth &amp; Peptides
           </div>
-          <h1 className="text-4xl sm:text-5xl font-extrabold text-white leading-tight">
+          <h1 className="text-4xl sm:text-5xl font-extrabold text-gray-900 leading-tight">
             Peptides for{' '}
             <span className="text-neon-green">Beard Growth</span>
           </h1>
-          <p className="text-xl text-slate-300 max-w-2xl mx-auto">
+          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
             The biology of beard follicles is fundamentally different from scalp hair. Here is how to use peptides correctly for beard density — with full protocols and realistic timelines.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <Link href={SOURCE_URL} rel="nofollow noopener noreferrer" className="btn-cta flex items-center gap-2">
               View Beard Peptides <ArrowRight className="w-4 h-4" />
             </Link>
-            <Link href="/ghk-cu-for-hair-loss" className="flex items-center gap-2 px-6 py-3 border border-slate-600 rounded-xl text-slate-300 hover:border-slate-400 transition-colors">
+            <Link href="/ghk-cu-for-hair-loss" className="flex items-center gap-2 px-6 py-3 border border-slate-600 rounded-xl text-gray-600 hover:border-slate-400 transition-colors">
               GHK-Cu Full Guide
             </Link>
           </div>
@@ -207,12 +207,12 @@ export default function PeptidesForBeardGrowthPage() {
       {/* Why Beard Density Matters for Looksmaxxing */}
       <section className="py-16 px-4">
         <div className="max-w-4xl mx-auto space-y-8">
-          <h2 className="text-3xl font-bold text-white">Why Beard Density Matters for Appearance</h2>
+          <h2 className="text-3xl font-bold text-gray-900">Why Beard Density Matters for Appearance</h2>
           <div className="glass-card p-8 space-y-5">
-            <p className="text-slate-300 leading-relaxed">
+            <p className="text-gray-600 leading-relaxed">
               Facial hair is one of the most significant masculinity signals in human appearance research. Studies on facial attractiveness consistently show that full, well-groomed beard coverage correlates with higher perceived dominance, maturity, and social status. More practically for looksmaxxing: a dense beard provides jawline definition, masks jawline asymmetry, and creates the visual illusion of a stronger, more angular facial structure.
             </p>
-            <p className="text-slate-300 leading-relaxed">
+            <p className="text-gray-600 leading-relaxed">
               For men with patchy or sparse beards, the gap between their genetic ceiling and their current beard density is the opportunity that peptide protocols target. A patchy beard is often not a reflection of absolute follicle absence — it frequently reflects follicles that are in a vellus state (fine, unpigmented, essentially invisible) that have not yet converted to terminal (thick, pigmented, visible) hair. This vellus-to-terminal conversion is driven by androgens (primarily DHT) and growth factors — precisely the pathways that targeted peptides influence.
             </p>
           </div>
@@ -222,15 +222,15 @@ export default function PeptidesForBeardGrowthPage() {
       {/* Hair Growth Biology */}
       <section className="py-16 px-4 bg-slate-900/30">
         <div className="max-w-4xl mx-auto space-y-8">
-          <h2 className="text-3xl font-bold text-white">The Biology of Beard Growth</h2>
+          <h2 className="text-3xl font-bold text-gray-900">The Biology of Beard Growth</h2>
           <div className="glass-card p-8 space-y-5">
-            <p className="text-slate-300 leading-relaxed">
+            <p className="text-gray-600 leading-relaxed">
               Understanding beard hair biology is essential before designing a peptide protocol — because beard follicles operate differently from scalp follicles in a critical way that affects which peptides to use and how.
             </p>
-            <p className="text-slate-300 leading-relaxed">
+            <p className="text-gray-600 leading-relaxed">
               Beard follicles begin as vellus follicles — small, minimally pigmented, producing barely visible "peach fuzz" hairs. Terminal conversion is driven primarily by dihydrotestosterone (DHT), which binds to androgen receptors in facial follicle dermal papilla cells and triggers the signaling cascade that enlarges the follicle and switches on pigmented, thick hair production. This is the <em>opposite</em> of scalp hair — scalp follicles in genetically sensitive individuals are miniaturized by DHT (androgenetic alopecia), while the same DHT drives beard terminal conversion.
             </p>
-            <p className="text-slate-300 leading-relaxed">
+            <p className="text-gray-600 leading-relaxed">
               The three-phase hair cycle (anagen, catagen, telogen) applies to beard hair as it does to all hair. Beard anagen phase is much shorter than scalp hair anagen — beard hair grows for 2–6 months before entering catagen and telogen, which is why beard hair has a natural length limit even without cutting. Peptides that prolong the anagen phase directly extend how long each follicle is actively producing hair — resulting in denser coverage from more follicles being in active growth simultaneously.
             </p>
           </div>
@@ -239,10 +239,10 @@ export default function PeptidesForBeardGrowthPage() {
           <div className="space-y-4">
             {hairPhases.map((phase) => (
               <div key={phase.phase} className={`glass-card p-5 border ${phase.color} space-y-2`}>
-                <h3 className="text-slate-100 font-bold">{phase.phase}</h3>
-                <p className="text-slate-400 text-xs font-semibold text-amber-300">{phase.duration}</p>
-                <p className="text-slate-300 text-sm leading-relaxed">{phase.description}</p>
-                <p className="text-emerald-300 text-sm"><span className="text-slate-500">Peptide action: </span>{phase.peptideAction}</p>
+                <h3 className="text-gray-800 font-bold">{phase.phase}</h3>
+                <p className="text-gray-500 text-xs font-semibold text-amber-300">{phase.duration}</p>
+                <p className="text-gray-600 text-sm leading-relaxed">{phase.description}</p>
+                <p className="text-emerald-300 text-sm"><span className="text-gray-500">Peptide action: </span>{phase.peptideAction}</p>
               </div>
             ))}
           </div>
@@ -253,8 +253,8 @@ export default function PeptidesForBeardGrowthPage() {
       <section className="py-16 px-4">
         <div className="max-w-4xl mx-auto space-y-8">
           <div className="text-center space-y-3">
-            <h2 className="text-3xl font-bold text-white">Beard Growth Cycle Visualizer</h2>
-            <p className="text-slate-400 max-w-2xl mx-auto">
+            <h2 className="text-3xl font-bold text-gray-900">Beard Growth Cycle Visualizer</h2>
+            <p className="text-gray-500 max-w-2xl mx-auto">
               Track your beard peptide protocol week by week — see what is happening biologically and what to expect visually.
             </p>
           </div>
@@ -265,7 +265,7 @@ export default function PeptidesForBeardGrowthPage() {
       {/* Peptides for Beard */}
       <section className="py-16 px-4 bg-slate-900/30">
         <div className="max-w-4xl mx-auto space-y-8">
-          <h2 className="text-3xl font-bold text-white">Beard Peptides: Ranked &amp; Explained</h2>
+          <h2 className="text-3xl font-bold text-gray-900">Beard Peptides: Ranked &amp; Explained</h2>
           <div className="space-y-5">
             {beardPeptides.map((peptide) => (
               <div key={peptide.name} className={`glass-card p-6 border ${peptide.color} space-y-4`}>
@@ -274,28 +274,28 @@ export default function PeptidesForBeardGrowthPage() {
                     <span className={`w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm ${peptide.badge}`}>
                       #{peptide.rank}
                     </span>
-                    <h3 className="text-slate-100 font-bold text-lg">{peptide.name}</h3>
+                    <h3 className="text-gray-800 font-bold text-lg">{peptide.name}</h3>
                   </div>
                   <span className={`text-xs px-2.5 py-1 rounded-full font-semibold ${peptide.badge}`}>
                     Beard Peptide
                   </span>
                 </div>
-                <p className="text-slate-300 text-sm leading-relaxed">{peptide.mechanism}</p>
+                <p className="text-gray-600 text-sm leading-relaxed">{peptide.mechanism}</p>
                 <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 text-xs">
                   <div>
-                    <span className="text-slate-500 uppercase tracking-wide">Application</span>
-                    <p className="text-slate-300 mt-1">{peptide.application}</p>
+                    <span className="text-gray-500 uppercase tracking-wide">Application</span>
+                    <p className="text-gray-600 mt-1">{peptide.application}</p>
                   </div>
                   <div>
-                    <span className="text-slate-500 uppercase tracking-wide">Dose</span>
-                    <p className="text-slate-300 mt-1">{peptide.dose}</p>
+                    <span className="text-gray-500 uppercase tracking-wide">Dose</span>
+                    <p className="text-gray-600 mt-1">{peptide.dose}</p>
                   </div>
                   <div>
-                    <span className="text-slate-500 uppercase tracking-wide">Frequency</span>
-                    <p className="text-slate-300 mt-1">{peptide.frequency}</p>
+                    <span className="text-gray-500 uppercase tracking-wide">Frequency</span>
+                    <p className="text-gray-600 mt-1">{peptide.frequency}</p>
                   </div>
                   <div>
-                    <span className="text-slate-500 uppercase tracking-wide">Timeline</span>
+                    <span className="text-gray-500 uppercase tracking-wide">Timeline</span>
                     <p className="text-emerald-300 mt-1 font-medium">{peptide.timeline}</p>
                   </div>
                 </div>
@@ -308,20 +308,20 @@ export default function PeptidesForBeardGrowthPage() {
       {/* GHK-Cu and DHT Deep Dive */}
       <section className="py-16 px-4">
         <div className="max-w-4xl mx-auto space-y-8">
-          <h2 className="text-3xl font-bold text-white">GHK-Cu and DHT: Why It Helps Beard Without Hurting It</h2>
+          <h2 className="text-3xl font-bold text-gray-900">GHK-Cu and DHT: Why It Helps Beard Without Hurting It</h2>
           <div className="glass-card p-8 space-y-5">
-            <p className="text-slate-300 leading-relaxed">
+            <p className="text-gray-600 leading-relaxed">
               The most frequently asked question about GHK-Cu for beard growth is whether its anti-androgenic effects on scalp follicles will suppress the DHT-driven beard terminal conversion. The answer requires understanding the fundamentally different androgen receptor expression profiles between scalp and facial follicles.
             </p>
-            <p className="text-slate-300 leading-relaxed">
+            <p className="text-gray-600 leading-relaxed">
               Scalp follicles in androgenetic alopecia are highly sensitive to DHT due to overexpression of androgen receptors and 5α-reductase type II. GHK-Cu modulates androgen receptor sensitivity in scalp dermal papilla cells — a beneficial effect for scalp hair loss. Facial follicles, however, have a completely different receptor configuration: they are activated, not suppressed, by DHT, and their androgen receptor expression is regulated by different genetic factors than scalp follicles.
             </p>
-            <p className="text-slate-300 leading-relaxed">
+            <p className="text-gray-600 leading-relaxed">
               When GHK-Cu is applied topically to the beard area, it acts through growth factor stimulation (IGF-1, VEGF, FGF) and local anti-inflammatory mechanisms — not through androgen receptor suppression in the facial follicle context. The key finding from research: GHK-Cu's primary mechanism for follicle stimulation is IGF-1 upregulation and angiogenesis, not androgen modulation. These pathways are beard-positive regardless of DHT status.
             </p>
             <div className="border border-emerald-500/30 bg-emerald-500/5 rounded-xl p-4">
               <p className="text-emerald-300 font-semibold text-sm">Bottom Line</p>
-              <p className="text-slate-300 text-sm mt-1">
+              <p className="text-gray-600 text-sm mt-1">
                 GHK-Cu applied to beard area stimulates beard follicle growth through IGF-1 and angiogenesis pathways. It does not suppress beard-area DHT signaling. Users on finasteride (which does reduce DHT systemically) can still use GHK-Cu topically on the beard to compensate for the DHT reduction's impact on beard follicles.
               </p>
             </div>
@@ -332,7 +332,7 @@ export default function PeptidesForBeardGrowthPage() {
       {/* Topical Protocol */}
       <section className="py-16 px-4 bg-slate-900/30">
         <div className="max-w-4xl mx-auto space-y-8">
-          <h2 className="text-3xl font-bold text-white">The Topical Beard Protocol: Step by Step</h2>
+          <h2 className="text-3xl font-bold text-gray-900">The Topical Beard Protocol: Step by Step</h2>
           <div className="space-y-4">
             {topicalProtocol.map((step) => (
               <div key={step.step} className="glass-card p-5 flex items-start gap-4">
@@ -340,15 +340,15 @@ export default function PeptidesForBeardGrowthPage() {
                   {step.step}
                 </span>
                 <div className="space-y-1">
-                  <h3 className="text-slate-100 font-bold">{step.title}</h3>
-                  <p className="text-slate-400 text-sm leading-relaxed">{step.detail}</p>
+                  <h3 className="text-gray-800 font-bold">{step.title}</h3>
+                  <p className="text-gray-500 text-sm leading-relaxed">{step.detail}</p>
                 </div>
               </div>
             ))}
           </div>
           <div className="glass-card p-6">
-            <h3 className="text-slate-100 font-bold mb-3">The Dermaroller Synergy</h3>
-            <p className="text-slate-300 text-sm leading-relaxed">
+            <h3 className="text-gray-800 font-bold mb-3">The Dermaroller Synergy</h3>
+            <p className="text-gray-600 text-sm leading-relaxed">
               Micro-needling (derma rolling) is one of the most powerful adjuncts to GHK-Cu application. The mechanism is dual: first, the microchannels created by the needles increase topical absorption of GHK-Cu by an estimated 400–1000x compared to skin without microchannels. Second, the micro-injury itself triggers a wound healing response that independently activates follicle stem cells — the same cells that GHK-Cu targets. Research on micro-needling alone (without any peptide) shows significant hair density improvement, suggesting the mechanical activation is a potent independent signal. Combined with GHK-Cu, the effect is amplified significantly.
             </p>
           </div>
@@ -358,7 +358,7 @@ export default function PeptidesForBeardGrowthPage() {
       {/* Realistic Expectations */}
       <section className="py-16 px-4">
         <div className="max-w-4xl mx-auto space-y-8">
-          <h2 className="text-3xl font-bold text-white">Realistic Expectations: What Peptides Can and Cannot Do</h2>
+          <h2 className="text-3xl font-bold text-gray-900">Realistic Expectations: What Peptides Can and Cannot Do</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             {realisticExpectations.map((section) => (
               <div key={section.expectation} className={`glass-card p-6 space-y-3 border ${section.expectation === 'Can improve' ? 'border-emerald-500/30' : 'border-rose-500/30'}`}>
@@ -367,7 +367,7 @@ export default function PeptidesForBeardGrowthPage() {
                 </h3>
                 <ul className="space-y-2">
                   {section.items.map((item) => (
-                    <li key={item} className={`flex items-start gap-2 text-sm text-slate-300 ${section.expectation === 'Can improve' ? '' : 'opacity-70'}`}>
+                    <li key={item} className={`flex items-start gap-2 text-sm text-gray-600 ${section.expectation === 'Can improve' ? '' : 'opacity-70'}`}>
                       <span className={`mt-0.5 flex-shrink-0 ${section.expectation === 'Can improve' ? 'text-emerald-400' : 'text-rose-400'}`}>
                         {section.expectation === 'Can improve' ? <CheckCircle className="w-4 h-4" /> : <span className="text-lg leading-none">×</span>}
                       </span>
@@ -385,13 +385,13 @@ export default function PeptidesForBeardGrowthPage() {
       <section className="py-16 px-4 bg-slate-900/30">
         <div className="max-w-4xl mx-auto space-y-8">
           <div className="text-center">
-            <h2 className="text-3xl font-bold text-white">Beard Growth FAQ</h2>
+            <h2 className="text-3xl font-bold text-gray-900">Beard Growth FAQ</h2>
           </div>
           <div className="space-y-4">
             {faqs.map((faq) => (
               <div key={faq.q} className="glass-card p-6 space-y-3">
-                <h3 className="text-slate-100 font-bold">{faq.q}</h3>
-                <p className="text-slate-400 leading-relaxed text-sm">{faq.a}</p>
+                <h3 className="text-gray-800 font-bold">{faq.q}</h3>
+                <p className="text-gray-500 leading-relaxed text-sm">{faq.a}</p>
               </div>
             ))}
           </div>
@@ -402,8 +402,8 @@ export default function PeptidesForBeardGrowthPage() {
       <section className="py-16 px-4">
         <div className="max-w-2xl mx-auto text-center space-y-6">
           <FlaskConical className="w-12 h-12 text-emerald-400 mx-auto" />
-          <h2 className="text-3xl font-bold text-white">Start Your Beard Protocol</h2>
-          <p className="text-slate-400">
+          <h2 className="text-3xl font-bold text-gray-900">Start Your Beard Protocol</h2>
+          <p className="text-gray-500">
             GHK-Cu topical + derma roller is the highest-evidence, most accessible starting point. Add IGF-1 LR3 for systemic follicle support.
           </p>
           <div className="p-3 bg-amber-500/10 border border-amber-500/30 rounded-xl text-amber-200 text-sm">

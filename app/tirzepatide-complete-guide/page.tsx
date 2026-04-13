@@ -120,11 +120,11 @@ export default function TirzepatideCompleteGuide() {
             <FlaskConical className="w-4 h-4" />
             The Mounjaro Revolution
           </div>
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white mb-6 leading-tight">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-gray-900 mb-6 leading-tight">
             The Drug That Changed{' '}
             <span className="text-[#00ff88]">Weight Loss Medicine</span>
           </h1>
-          <p className="text-xl text-slate-300 leading-relaxed max-w-3xl mx-auto mb-8">
+          <p className="text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto mb-8">
             For decades, the medical community told overweight people to "eat less and move more." Then tirzepatide showed up and produced results that 30 years of willpower hadn't. A 150-pound person loses 33 pounds. A 220-pound person loses nearly 50. Not in some theoretical model — in controlled trials, in real patients, with no surgery.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
@@ -142,7 +142,7 @@ export default function TirzepatideCompleteGuide() {
           {stats.map((s) => (
             <div key={s.label} className="glass-card p-5 text-center">
               <div className={`text-3xl font-black mb-2 ${s.color}`}>{s.value}</div>
-              <div className="text-slate-400 text-sm leading-tight">{s.label}</div>
+              <div className="text-gray-500 text-sm leading-tight">{s.label}</div>
             </div>
           ))}
         </div>
@@ -152,7 +152,7 @@ export default function TirzepatideCompleteGuide() {
       <section className="py-10 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
         <div className="glass-card p-8 border border-[#00ff88]/10">
           <Scale className="w-8 h-8 text-[#00ff88] mb-4" />
-          <h2 className="text-2xl font-black text-white mb-4">22.5% — What That Actually Looks Like</h2>
+          <h2 className="text-2xl font-black text-gray-900 mb-4">22.5% — What That Actually Looks Like</h2>
           <div className="grid sm:grid-cols-3 gap-6 text-center">
             {[
               { start: '150 lbs', lost: '33 lbs', finish: '117 lbs' },
@@ -160,16 +160,16 @@ export default function TirzepatideCompleteGuide() {
               { start: '250 lbs', lost: '56 lbs', finish: '194 lbs' },
             ].map((ex) => (
               <div key={ex.start} className="bg-slate-900/50 rounded-xl p-5">
-                <div className="text-slate-400 text-sm mb-1">Starting weight</div>
-                <div className="text-white font-black text-xl mb-3">{ex.start}</div>
+                <div className="text-gray-500 text-sm mb-1">Starting weight</div>
+                <div className="text-gray-900 font-black text-xl mb-3">{ex.start}</div>
                 <div className="text-red-400 font-bold text-base mb-1">− {ex.lost}</div>
                 <div className="h-px bg-white/10 my-3" />
                 <div className="text-[#00ff88] font-black text-2xl">{ex.finish}</div>
-                <div className="text-slate-400 text-xs mt-1">Final weight (avg)</div>
+                <div className="text-gray-500 text-xs mt-1">Final weight (avg)</div>
               </div>
             ))}
           </div>
-          <p className="text-slate-400 text-sm mt-6 leading-relaxed">
+          <p className="text-gray-500 text-sm mt-6 leading-relaxed">
             These numbers come from the SURMOUNT-1 trial at the 15mg dose. Individual results vary based on adherence, diet quality, baseline metabolic health, and whether resistance training is included. The trial population was adults with obesity (BMI ≥30) or overweight with at least one weight-related condition.
           </p>
         </div>
@@ -177,21 +177,21 @@ export default function TirzepatideCompleteGuide() {
 
       {/* Dual Mechanism */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
-        <h2 className="text-3xl font-black text-white mb-4">Why Two Receptors Beat One</h2>
-        <p className="text-slate-300 leading-relaxed text-lg mb-8">
+        <h2 className="text-3xl font-black text-gray-900 mb-4">Why Two Receptors Beat One</h2>
+        <p className="text-gray-600 leading-relaxed text-lg mb-8">
           The story of tirzepatide is really the story of GIP — the overlooked receptor that changes everything. Pharmaceutical research had focused almost entirely on GLP-1 for decades. GIP was considered a "lesser" incretin with unclear benefits. Then Eli Lilly's researchers combined both and got results nobody expected.
         </p>
         <div className="space-y-4">
           {mechanismSteps.map((m) => (
             <div key={m.receptor} className={`glass-card border p-6 ${m.bg}`}>
               <h3 className={`font-black text-lg mb-2 ${m.color}`}>{m.receptor}</h3>
-              <p className="text-white font-semibold text-sm mb-2">{m.what}</p>
-              <p className="text-slate-300 text-sm leading-relaxed">{m.why}</p>
+              <p className="text-gray-900 font-semibold text-sm mb-2">{m.what}</p>
+              <p className="text-gray-600 text-sm leading-relaxed">{m.why}</p>
             </div>
           ))}
         </div>
         <div className="mt-6 glass-card p-6 border border-white/5">
-          <p className="text-slate-300 leading-relaxed">
+          <p className="text-gray-600 leading-relaxed">
             The synergy is the key insight. GLP-1 and GIP don't just add their effects — they amplify each other's action. GIP potentiates insulin secretion through a completely different intracellular pathway than GLP-1, which is why the combined effect exceeds what you'd predict by adding each receptor's contribution separately. This is called receptor cross-talk, and it's why the 22.5% figure isn't just "1.5× semaglutide" — it's qualitatively different weight loss.
           </p>
         </div>
@@ -211,13 +211,13 @@ export default function TirzepatideCompleteGuide() {
           </div>
           <div className="flex-1">
             <div className="text-[#00ff88] text-xs font-bold uppercase tracking-widest mb-2">Research Peptide</div>
-            <h3 className="text-white text-2xl font-black mb-3">Tirzepatide 15mg</h3>
-            <p className="text-slate-300 text-base leading-relaxed mb-4">
+            <h3 className="text-gray-900 text-2xl font-black mb-3">Tirzepatide 15mg</h3>
+            <p className="text-gray-600 text-base leading-relaxed mb-4">
               The 15mg vial corresponds to the highest dose studied in SURMOUNT-1. At this concentration, most users following a proper escalation protocol reach their therapeutic maintenance dose within 4–5 months. One vial typically covers 1–2 weeks at maintenance doses, depending on where in the escalation protocol you are.
             </p>
             <div className="flex flex-wrap gap-3 mb-4">
               {['15mg per vial', 'SURMOUNT-1 max dose', 'Weekly injection', 'Research use'].map((f) => (
-                <span key={f} className="flex items-center gap-1.5 text-sm text-slate-300">
+                <span key={f} className="flex items-center gap-1.5 text-sm text-gray-600">
                   <CheckCircle className="w-4 h-4 text-[#00ff88]" /> {f}
                 </span>
               ))}
@@ -231,8 +231,8 @@ export default function TirzepatideCompleteGuide() {
 
       {/* Escalation Protocol */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
-        <h2 className="text-3xl font-black text-white mb-4">The Escalation Protocol</h2>
-        <p className="text-slate-300 leading-relaxed text-lg mb-8">
+        <h2 className="text-3xl font-black text-gray-900 mb-4">The Escalation Protocol</h2>
+        <p className="text-gray-600 leading-relaxed text-lg mb-8">
           Tirzepatide's side effects are real but manageable — and almost entirely dose-dependent. The escalation protocol exists to give your GI tract time to adapt before increasing to the next dose. Skipping steps is the most common mistake, and it leads to unnecessary nausea and early discontinuation. Patience at the lower doses pays off.
         </p>
         <div className="space-y-3">
@@ -243,10 +243,10 @@ export default function TirzepatideCompleteGuide() {
               </div>
               <div className="flex-1">
                 <div className="flex items-center gap-3 flex-wrap mb-1">
-                  <span className="text-white font-bold">{step.week}</span>
+                  <span className="text-gray-900 font-bold">{step.week}</span>
                   <span className="text-[#00ff88] font-black bg-[#00ff88]/10 px-3 py-0.5 rounded-full text-sm">{step.dose}</span>
                 </div>
-                <p className="text-slate-300 text-sm leading-relaxed">{step.notes}</p>
+                <p className="text-gray-600 text-sm leading-relaxed">{step.notes}</p>
               </div>
             </div>
           ))}
@@ -255,8 +255,8 @@ export default function TirzepatideCompleteGuide() {
 
       {/* Interactive Comparison */}
       <section className="py-10 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
-        <h2 className="text-2xl font-black text-white mb-3">Tirzepatide vs Semaglutide — Data Comparison</h2>
-        <p className="text-slate-400 text-base mb-6">Select a clinical metric to see how the two drugs compare from published head-to-head trial data.</p>
+        <h2 className="text-2xl font-black text-gray-900 mb-3">Tirzepatide vs Semaglutide — Data Comparison</h2>
+        <p className="text-gray-500 text-base mb-6">Select a clinical metric to see how the two drugs compare from published head-to-head trial data.</p>
         <TirzepatideVsSema />
       </section>
 
@@ -274,13 +274,13 @@ export default function TirzepatideCompleteGuide() {
           </div>
           <div className="flex-1">
             <div className="text-amber-400 text-xs font-bold uppercase tracking-widest mb-2">Extended Supply</div>
-            <h3 className="text-white text-2xl font-black mb-3">Tirzepatide 30mg — Bulk Supply</h3>
-            <p className="text-slate-300 text-base leading-relaxed mb-4">
+            <h3 className="text-gray-900 text-2xl font-black mb-3">Tirzepatide 30mg — Bulk Supply</h3>
+            <p className="text-gray-600 text-base leading-relaxed mb-4">
               The 30mg vial offers extended supply for those in maintenance phase. At a maintenance dose of 10–12.5mg per week, a 30mg vial covers 2.5–3 weeks of therapy. For longer-term protocols where you've found your stable dose, bulk vials reduce per-mg cost significantly.
             </p>
             <div className="flex flex-wrap gap-3 mb-4">
               {['30mg per vial', 'Maintenance phase', 'Lower per-mg cost', '2–3 weeks supply'].map((f) => (
-                <span key={f} className="flex items-center gap-1.5 text-sm text-slate-300">
+                <span key={f} className="flex items-center gap-1.5 text-sm text-gray-600">
                   <CheckCircle className="w-4 h-4 text-amber-400" /> {f}
                 </span>
               ))}
@@ -294,12 +294,12 @@ export default function TirzepatideCompleteGuide() {
 
       {/* Full Comparison Table */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
-        <h2 className="text-3xl font-black text-white mb-6">Tirzepatide vs Semaglutide vs Retatrutide</h2>
+        <h2 className="text-3xl font-black text-gray-900 mb-6">Tirzepatide vs Semaglutide vs Retatrutide</h2>
         <div className="glass-card overflow-x-auto">
           <table className="w-full text-sm">
             <thead>
               <tr className="border-b border-white/10">
-                <th className="text-left text-slate-400 font-semibold py-3 px-4">Metric</th>
+                <th className="text-left text-gray-500 font-semibold py-3 px-4">Metric</th>
                 <th className="text-left text-blue-400 font-semibold py-3 px-4">Semaglutide</th>
                 <th className="text-left text-[#00ff88] font-semibold py-3 px-4">Tirzepatide</th>
                 <th className="text-left text-purple-400 font-semibold py-3 px-4">Retatrutide</th>
@@ -308,7 +308,7 @@ export default function TirzepatideCompleteGuide() {
             <tbody>
               {comparison.map((row) => (
                 <tr key={row.metric} className="border-b border-white/5 hover:bg-white/2">
-                  <td className="py-3 px-4 text-slate-400 font-medium">{row.metric}</td>
+                  <td className="py-3 px-4 text-gray-500 font-medium">{row.metric}</td>
                   <td className="py-3 px-4 text-blue-300">{row.sema}</td>
                   <td className="py-3 px-4 text-emerald-300 font-semibold">{row.tirz}</td>
                   <td className="py-3 px-4 text-purple-300">{row.reta}</td>
@@ -321,15 +321,15 @@ export default function TirzepatideCompleteGuide() {
 
       {/* FAQ */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
-        <h2 className="text-3xl font-black text-white mb-8">Frequently Asked Questions</h2>
+        <h2 className="text-3xl font-black text-gray-900 mb-8">Frequently Asked Questions</h2>
         <div className="space-y-4">
           {faqs.map((faq) => (
             <details key={faq.q} className="glass-card group">
-              <summary className="p-6 cursor-pointer flex items-center justify-between gap-4 text-white font-semibold text-base list-none">
+              <summary className="p-6 cursor-pointer flex items-center justify-between gap-4 text-gray-900 font-semibold text-base list-none">
                 {faq.q}
                 <span className="text-[#00ff88] text-xl font-black shrink-0 group-open:rotate-45 transition-transform">+</span>
               </summary>
-              <div className="px-6 pb-6 text-slate-300 leading-relaxed text-base">
+              <div className="px-6 pb-6 text-gray-600 leading-relaxed text-base">
                 {faq.a}
               </div>
             </details>
@@ -341,8 +341,8 @@ export default function TirzepatideCompleteGuide() {
       <section className="py-16 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
         <div className="glass-card p-10 text-center border border-[#00ff88]/15">
           <TrendingDown className="w-10 h-10 text-[#00ff88] mx-auto mb-4" />
-          <h2 className="text-3xl font-black text-white mb-4">Ready to Start the Protocol?</h2>
-          <p className="text-slate-300 text-lg mb-8 max-w-2xl mx-auto">
+          <h2 className="text-3xl font-black text-gray-900 mb-4">Ready to Start the Protocol?</h2>
+          <p className="text-gray-600 text-lg mb-8 max-w-2xl mx-auto">
             Tirzepatide is available as a research peptide. Start with the 15mg vial and follow the escalation protocol. Most users see measurable weight loss within 4–6 weeks.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">

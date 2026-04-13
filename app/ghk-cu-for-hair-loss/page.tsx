@@ -73,7 +73,7 @@ const timelineMonths = [
     month: 'Week 1–4',
     title: 'Scalp Environment Improvement',
     color: 'border-slate-500',
-    badge: 'bg-slate-500/20 text-slate-300',
+    badge: 'bg-slate-500/20 text-gray-600',
     changes: [
       'Reduced scalp inflammation and irritation',
       'Improved scalp hydration and moisture retention',
@@ -252,11 +252,11 @@ export default function GhkCuHairLossPage() {
           <div className="inline-flex items-center gap-2 bg-amber-500/10 border border-amber-500/30 rounded-full px-4 py-2 mb-6">
             <span className="text-amber-400 text-sm font-semibold tracking-wide">GHK-CU HAIR LOSS GUIDE 2026</span>
           </div>
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white leading-tight mb-6">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-gray-900 leading-tight mb-6">
             GHK-Cu for<br />
             <span className="text-amber-400">Hair Loss</span>
           </h1>
-          <p className="text-slate-300 text-xl leading-relaxed mb-8 max-w-3xl">
+          <p className="text-gray-600 text-xl leading-relaxed mb-8 max-w-3xl">
             GHK-Cu (copper peptide) has multiple proven mechanisms for hair regrowth.
             Here's what the research shows, the complete protocol, and what results to realistically expect.
           </p>
@@ -269,7 +269,7 @@ export default function GhkCuHairLossPage() {
             ].map((s) => (
               <div key={s.stat} className="glass-card p-4 text-center">
                 <div className="text-lg font-black text-amber-400">{s.stat}</div>
-                <div className="text-slate-400 text-xs mt-1">{s.label}</div>
+                <div className="text-gray-500 text-xs mt-1">{s.label}</div>
               </div>
             ))}
           </div>
@@ -282,22 +282,22 @@ export default function GhkCuHairLossPage() {
           <div className="inline-flex items-center gap-2 bg-amber-500/10 border border-amber-500/30 rounded-full px-3 py-1 mb-4">
             <span className="text-amber-400 text-xs font-bold tracking-widest uppercase">Interactive Tool</span>
           </div>
-          <h2 className="text-3xl font-black text-white mb-3">What Type of Hair Loss Do You Have?</h2>
-          <p className="text-slate-400 max-w-2xl">The right GHK-Cu protocol depends on your specific hair loss type. Answer 5 questions to get a personalized assessment and protocol recommendation.</p>
+          <h2 className="text-3xl font-black text-gray-900 mb-3">What Type of Hair Loss Do You Have?</h2>
+          <p className="text-gray-500 max-w-2xl">The right GHK-Cu protocol depends on your specific hair loss type. Answer 5 questions to get a personalized assessment and protocol recommendation.</p>
         </div>
         <HairLossTypeQuiz />
       </section>
 
       {/* Mechanisms */}
       <section className="py-16 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-black text-white mb-3">Why GHK-Cu Works for Hair</h2>
-        <p className="text-slate-400 mb-10">GHK-Cu doesn't work through a single pathway — it hits hair follicle biology at 6 different levels simultaneously.</p>
+        <h2 className="text-3xl font-black text-gray-900 mb-3">Why GHK-Cu Works for Hair</h2>
+        <p className="text-gray-500 mb-10">GHK-Cu doesn't work through a single pathway — it hits hair follicle biology at 6 different levels simultaneously.</p>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {mechanisms.map((m) => (
             <div key={m.title} className="glass-card p-6">
               <CheckCircle className="w-5 h-5 text-amber-400 mb-3" />
-              <h3 className="text-white font-bold mb-2">{m.title}</h3>
-              <p className="text-slate-400 text-sm leading-relaxed">{m.desc}</p>
+              <h3 className="text-gray-900 font-bold mb-2">{m.title}</h3>
+              <p className="text-gray-500 text-sm leading-relaxed">{m.desc}</p>
             </div>
           ))}
         </div>
@@ -306,19 +306,19 @@ export default function GhkCuHairLossPage() {
       {/* Treatment Comparison Table */}
       <section className="py-12" style={{ background: 'rgba(6,6,16,0.8)' }}>
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl font-black text-white mb-3">GHK-Cu vs. Other Hair Loss Treatments</h2>
-          <p className="text-slate-400 mb-8">How GHK-Cu stacks up against the most common hair loss interventions — and why combining them outperforms any single treatment.</p>
+          <h2 className="text-2xl font-black text-gray-900 mb-3">GHK-Cu vs. Other Hair Loss Treatments</h2>
+          <p className="text-gray-500 mb-8">How GHK-Cu stacks up against the most common hair loss interventions — and why combining them outperforms any single treatment.</p>
           <div className="overflow-x-auto rounded-2xl border border-white/10">
             <table className="w-full text-sm min-w-[900px]">
               <thead>
                 <tr style={{ background: 'rgba(255,255,255,0.04)' }}>
-                  <th className="text-left py-3 px-4 text-slate-400 font-semibold">Treatment</th>
-                  <th className="text-left py-3 px-4 text-slate-400 font-semibold">Mechanism</th>
-                  <th className="text-left py-3 px-4 text-slate-400 font-semibold">Efficacy for AGA</th>
-                  <th className="text-left py-3 px-4 text-slate-400 font-semibold">Side Effects</th>
-                  <th className="text-left py-3 px-4 text-slate-400 font-semibold">Cost/Month</th>
-                  <th className="text-left py-3 px-4 text-slate-400 font-semibold">Time to Results</th>
-                  <th className="text-left py-3 px-4 text-slate-400 font-semibold">Can Combine</th>
+                  <th className="text-left py-3 px-4 text-gray-500 font-semibold">Treatment</th>
+                  <th className="text-left py-3 px-4 text-gray-500 font-semibold">Mechanism</th>
+                  <th className="text-left py-3 px-4 text-gray-500 font-semibold">Efficacy for AGA</th>
+                  <th className="text-left py-3 px-4 text-gray-500 font-semibold">Side Effects</th>
+                  <th className="text-left py-3 px-4 text-gray-500 font-semibold">Cost/Month</th>
+                  <th className="text-left py-3 px-4 text-gray-500 font-semibold">Time to Results</th>
+                  <th className="text-left py-3 px-4 text-gray-500 font-semibold">Can Combine</th>
                 </tr>
               </thead>
               <tbody>
@@ -335,18 +335,18 @@ export default function GhkCuHairLossPage() {
                     }}
                   >
                     <td className="py-3 px-4">
-                      <span className={`font-black ${row.highlight ? 'text-amber-400' : 'text-white'}`}>
+                      <span className={`font-black ${row.highlight ? 'text-amber-400' : 'text-gray-900'}`}>
                         {row.treatment}
                         {row.highlight && (
                           <span className="ml-2 text-[10px] bg-amber-400/20 text-amber-300 px-1.5 py-0.5 rounded-full font-bold">THIS GUIDE</span>
                         )}
                       </span>
                     </td>
-                    <td className="py-3 px-4 text-slate-400 text-xs leading-relaxed max-w-[220px]">{row.mechanism}</td>
-                    <td className="py-3 px-4 text-slate-300 text-xs">{row.efficacyAGA}</td>
-                    <td className="py-3 px-4 text-slate-400 text-xs">{row.sideEffects}</td>
-                    <td className="py-3 px-4 text-slate-300 text-xs font-semibold">{row.costMonth}</td>
-                    <td className="py-3 px-4 text-slate-300 text-xs">{row.timeToResults}</td>
+                    <td className="py-3 px-4 text-gray-500 text-xs leading-relaxed max-w-[220px]">{row.mechanism}</td>
+                    <td className="py-3 px-4 text-gray-600 text-xs">{row.efficacyAGA}</td>
+                    <td className="py-3 px-4 text-gray-500 text-xs">{row.sideEffects}</td>
+                    <td className="py-3 px-4 text-gray-600 text-xs font-semibold">{row.costMonth}</td>
+                    <td className="py-3 px-4 text-gray-600 text-xs">{row.timeToResults}</td>
                     <td className="py-3 px-4">
                       <span className="text-xs font-bold px-2 py-1 rounded-full bg-emerald-500/10 text-emerald-400">{row.canCombine}</span>
                     </td>
@@ -355,25 +355,25 @@ export default function GhkCuHairLossPage() {
               </tbody>
             </table>
           </div>
-          <p className="text-slate-500 text-xs mt-4">Cost estimates based on research-grade sourcing for GHK-Cu, generic pricing for minoxidil/finasteride. PRP clinic pricing varies significantly by location.</p>
+          <p className="text-gray-500 text-xs mt-4">Cost estimates based on research-grade sourcing for GHK-Cu, generic pricing for minoxidil/finasteride. PRP clinic pricing varies significantly by location.</p>
         </div>
       </section>
 
       {/* Protocols */}
       <section className="py-12">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl font-black text-white mb-8">Application Protocols</h2>
+          <h2 className="text-2xl font-black text-gray-900 mb-8">Application Protocols</h2>
           <div className="space-y-5">
             {protocols.map((p, i) => (
               <div key={p.type} className="glass-card p-6">
                 <div className="text-xs font-bold text-amber-400 tracking-widest mb-1">PROTOCOL {i + 1}</div>
-                <h3 className="text-white font-black text-lg mb-4">{p.type}</h3>
+                <h3 className="text-gray-900 font-black text-lg mb-4">{p.type}</h3>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
-                  <div><p className="text-slate-500 text-xs mb-1">Dose</p><p className="text-white text-sm font-semibold">{p.dose}</p></div>
-                  <div><p className="text-slate-500 text-xs mb-1">Frequency</p><p className="text-white text-sm font-semibold">{p.frequency}</p></div>
-                  <div><p className="text-slate-500 text-xs mb-1">Expected Results</p><p className="text-amber-400 text-xs font-semibold">{p.result}</p></div>
+                  <div><p className="text-gray-500 text-xs mb-1">Dose</p><p className="text-gray-900 text-sm font-semibold">{p.dose}</p></div>
+                  <div><p className="text-gray-500 text-xs mb-1">Frequency</p><p className="text-gray-900 text-sm font-semibold">{p.frequency}</p></div>
+                  <div><p className="text-gray-500 text-xs mb-1">Expected Results</p><p className="text-amber-400 text-xs font-semibold">{p.result}</p></div>
                 </div>
-                <p className="text-slate-400 text-sm leading-relaxed">{p.best}</p>
+                <p className="text-gray-500 text-sm leading-relaxed">{p.best}</p>
               </div>
             ))}
           </div>
@@ -383,8 +383,8 @@ export default function GhkCuHairLossPage() {
       {/* DIY Serum Guide */}
       <section className="py-12" style={{ background: 'rgba(6,6,16,0.8)' }}>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl font-black text-white mb-3">How to Make a GHK-Cu Serum at Home</h2>
-          <p className="text-slate-400 mb-8 max-w-2xl">Making your own GHK-Cu scalp serum is straightforward, significantly cheaper than pre-made serums, and lets you control the exact concentration. Here is a complete step-by-step guide.</p>
+          <h2 className="text-2xl font-black text-gray-900 mb-3">How to Make a GHK-Cu Serum at Home</h2>
+          <p className="text-gray-500 mb-8 max-w-2xl">Making your own GHK-Cu scalp serum is straightforward, significantly cheaper than pre-made serums, and lets you control the exact concentration. Here is a complete step-by-step guide.</p>
 
           <div className="space-y-5">
             {/* Equipment */}
@@ -392,8 +392,8 @@ export default function GhkCuHairLossPage() {
               <div className="text-amber-400 text-xs font-bold tracking-widest uppercase mb-3">Step 1 — Equipment</div>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
-                  <p className="text-white font-semibold text-sm mb-2">You will need:</p>
-                  <ul className="space-y-1.5 text-slate-400 text-sm">
+                  <p className="text-gray-900 font-semibold text-sm mb-2">You will need:</p>
+                  <ul className="space-y-1.5 text-gray-500 text-sm">
                     <li>• 30mL amber glass dropper bottle (UV-protective)</li>
                     <li>• Small digital scale (0.001g precision)</li>
                     <li>• Sterile or distilled water</li>
@@ -403,8 +403,8 @@ export default function GhkCuHairLossPage() {
                   </ul>
                 </div>
                 <div>
-                  <p className="text-white font-semibold text-sm mb-2">Optional enhancers:</p>
-                  <ul className="space-y-1.5 text-slate-400 text-sm">
+                  <p className="text-gray-900 font-semibold text-sm mb-2">Optional enhancers:</p>
+                  <ul className="space-y-1.5 text-gray-500 text-sm">
                     <li>• Pure aloe vera gel (no additives) — 20–30% of solution</li>
                     <li>• Food-grade vegetable glycerin — 5% of solution</li>
                     <li>• Propylene glycol (USP grade) — 5–10% for penetration</li>
@@ -418,14 +418,14 @@ export default function GhkCuHairLossPage() {
             {/* Carrier recipe */}
             <div className="glass-card p-6">
               <div className="text-amber-400 text-xs font-bold tracking-widest uppercase mb-3">Step 2 — Carrier Solution Recipe (30mL batch)</div>
-              <p className="text-slate-300 text-sm mb-4">For a 1mg/mL GHK-Cu serum (30mg total per bottle — approximately 30 daily doses at 1mg each):</p>
+              <p className="text-gray-600 text-sm mb-4">For a 1mg/mL GHK-Cu serum (30mg total per bottle — approximately 30 daily doses at 1mg each):</p>
               <div className="overflow-x-auto rounded-xl border border-white/10">
                 <table className="w-full text-sm">
                   <thead>
                     <tr style={{ background: 'rgba(255,255,255,0.04)' }}>
-                      <th className="text-left py-2 px-4 text-slate-400 font-semibold">Ingredient</th>
-                      <th className="text-left py-2 px-4 text-slate-400 font-semibold">Amount</th>
-                      <th className="text-left py-2 px-4 text-slate-400 font-semibold">Purpose</th>
+                      <th className="text-left py-2 px-4 text-gray-500 font-semibold">Ingredient</th>
+                      <th className="text-left py-2 px-4 text-gray-500 font-semibold">Amount</th>
+                      <th className="text-left py-2 px-4 text-gray-500 font-semibold">Purpose</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -437,9 +437,9 @@ export default function GhkCuHairLossPage() {
                       ['Propylene glycol (optional)', '1.5mL', 'Penetration enhancer'],
                     ].map(([ing, amt, pur], i) => (
                       <tr key={ing} style={{ borderTop: '1px solid rgba(255,255,255,0.04)', background: i % 2 === 0 ? 'rgba(255,255,255,0.01)' : 'transparent' }}>
-                        <td className="py-2 px-4 text-white font-medium">{ing}</td>
+                        <td className="py-2 px-4 text-gray-900 font-medium">{ing}</td>
                         <td className="py-2 px-4 text-amber-400 font-semibold text-xs">{amt}</td>
-                        <td className="py-2 px-4 text-slate-400 text-xs">{pur}</td>
+                        <td className="py-2 px-4 text-gray-500 text-xs">{pur}</td>
                       </tr>
                     ))}
                   </tbody>
@@ -450,7 +450,7 @@ export default function GhkCuHairLossPage() {
             {/* Dissolving process */}
             <div className="glass-card p-6">
               <div className="text-amber-400 text-xs font-bold tracking-widest uppercase mb-3">Step 3 — Dissolving GHK-Cu</div>
-              <ol className="space-y-3 text-slate-300 text-sm">
+              <ol className="space-y-3 text-gray-600 text-sm">
                 <li className="flex gap-3"><span className="text-amber-400 font-bold shrink-0">1.</span>Weigh 30mg of GHK-Cu powder on your precision scale. GHK-Cu is hygroscopic — work quickly and reseal the container.</li>
                 <li className="flex gap-3"><span className="text-amber-400 font-bold shrink-0">2.</span>Add 2–3mL of distilled water first. GHK-Cu is highly water-soluble and dissolves easily — do not add heat. Stir gently for 30–60 seconds until completely dissolved. The solution will appear faintly blue-green due to the copper.</li>
                 <li className="flex gap-3"><span className="text-amber-400 font-bold shrink-0">3.</span>Add aloe vera gel and glycerin. Stir gently — avoid vigorous shaking which can introduce air bubbles and degrade the peptide.</li>
@@ -470,30 +470,30 @@ export default function GhkCuHairLossPage() {
                 ].map((s) => (
                   <div key={s.label} className="bg-white/3 border border-white/8 rounded-xl p-4 text-center">
                     <div className="text-2xl mb-2">{s.icon}</div>
-                    <div className="text-white font-semibold text-sm">{s.label}</div>
-                    <div className="text-slate-400 text-xs mt-1">{s.detail}</div>
+                    <div className="text-gray-900 font-semibold text-sm">{s.label}</div>
+                    <div className="text-gray-500 text-xs mt-1">{s.detail}</div>
                   </div>
                 ))}
               </div>
-              <p className="text-slate-500 text-xs mt-4">GHK-Cu is sensitive to prolonged heat and light exposure. Store away from direct sunlight. The amber bottle provides UV protection. Do not freeze repeatedly — freeze in portions if planning long-term storage.</p>
+              <p className="text-gray-500 text-xs mt-4">GHK-Cu is sensitive to prolonged heat and light exposure. Store away from direct sunlight. The amber bottle provides UV protection. Do not freeze repeatedly — freeze in portions if planning long-term storage.</p>
             </div>
 
             {/* Application + Titration */}
             <div className="glass-card p-6">
               <div className="text-amber-400 text-xs font-bold tracking-widest uppercase mb-3">Step 5 — Application Technique & Titration</div>
-              <p className="text-slate-300 text-sm mb-4">Apply to a clean, dry scalp. Wet hair significantly reduces absorption by diluting the serum and preventing scalp contact.</p>
+              <p className="text-gray-600 text-sm mb-4">Apply to a clean, dry scalp. Wet hair significantly reduces absorption by diluting the serum and preventing scalp contact.</p>
               <div className="space-y-3 mb-5">
                 <div className="flex gap-3 items-start">
                   <span className="text-amber-400 font-bold shrink-0 text-sm">1.</span>
-                  <p className="text-slate-300 text-sm">Part hair in affected areas to expose the scalp. Apply serum with the dropper directly to the scalp (not the hair shafts).</p>
+                  <p className="text-gray-600 text-sm">Part hair in affected areas to expose the scalp. Apply serum with the dropper directly to the scalp (not the hair shafts).</p>
                 </div>
                 <div className="flex gap-3 items-start">
                   <span className="text-amber-400 font-bold shrink-0 text-sm">2.</span>
-                  <p className="text-slate-300 text-sm">Massage gently with fingertips for 60 seconds in circular motions — this improves scalp blood flow and aids absorption.</p>
+                  <p className="text-gray-600 text-sm">Massage gently with fingertips for 60 seconds in circular motions — this improves scalp blood flow and aids absorption.</p>
                 </div>
                 <div className="flex gap-3 items-start">
                   <span className="text-amber-400 font-bold shrink-0 text-sm">3.</span>
-                  <p className="text-slate-300 text-sm">Allow to dry for 5–10 minutes before styling. Do not rinse out. Apply once daily in the morning or before bed — consistency matters more than timing.</p>
+                  <p className="text-gray-600 text-sm">Allow to dry for 5–10 minutes before styling. Do not rinse out. Apply once daily in the morning or before bed — consistency matters more than timing.</p>
                 </div>
               </div>
               <div className="bg-amber-400/5 border border-amber-400/20 rounded-xl p-4">
@@ -506,8 +506,8 @@ export default function GhkCuHairLossPage() {
                   ].map(([period, dose, note]) => (
                     <div key={period} className="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-4 text-sm">
                       <span className="text-amber-400 font-semibold w-28 shrink-0">{period}</span>
-                      <span className="text-white font-medium">{dose}</span>
-                      <span className="text-slate-400 text-xs">{note}</span>
+                      <span className="text-gray-900 font-medium">{dose}</span>
+                      <span className="text-gray-500 text-xs">{note}</span>
                     </div>
                   ))}
                 </div>
@@ -519,8 +519,8 @@ export default function GhkCuHairLossPage() {
 
       {/* Month-by-Month Timeline */}
       <section className="py-16 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-black text-white mb-3">Month-by-Month Results Timeline</h2>
-        <p className="text-slate-400 mb-10 max-w-2xl">What actually happens during 6 months of consistent GHK-Cu use — with realistic expectations and what to measure at each stage.</p>
+        <h2 className="text-3xl font-black text-gray-900 mb-3">Month-by-Month Results Timeline</h2>
+        <p className="text-gray-500 mb-10 max-w-2xl">What actually happens during 6 months of consistent GHK-Cu use — with realistic expectations and what to measure at each stage.</p>
         <div className="relative">
           {/* Vertical line */}
           <div className="absolute left-[19px] top-6 bottom-6 w-px bg-white/10 hidden sm:block" />
@@ -528,7 +528,7 @@ export default function GhkCuHairLossPage() {
             {timelineMonths.map((month, i) => (
               <div key={month.month} className="relative flex gap-5">
                 <div className="shrink-0 flex flex-col items-center">
-                  <div className={`w-10 h-10 rounded-full border-2 ${month.color} bg-[#060610] flex items-center justify-center text-white font-black text-xs z-10`}>
+                  <div className={`w-10 h-10 rounded-full border-2 ${month.color} bg-[#060610] flex items-center justify-center text-gray-900 font-black text-xs z-10`}>
                     {i + 1}
                   </div>
                 </div>
@@ -536,24 +536,24 @@ export default function GhkCuHairLossPage() {
                   <div className="flex items-center justify-between flex-wrap gap-2 mb-3">
                     <div>
                       <span className={`text-xs font-bold px-2 py-0.5 rounded-full ${month.badge} mr-2`}>{month.month}</span>
-                      <span className="text-white font-black">{month.title}</span>
+                      <span className="text-gray-900 font-black">{month.title}</span>
                     </div>
                   </div>
                   <ul className="space-y-1.5 mb-4">
                     {month.changes.map((c) => (
-                      <li key={c} className="flex items-start gap-2 text-slate-300 text-sm">
+                      <li key={c} className="flex items-start gap-2 text-gray-600 text-sm">
                         <CheckCircle className="w-3.5 h-3.5 shrink-0 mt-0.5 text-amber-400" /> {c}
                       </li>
                     ))}
                   </ul>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                     <div className="bg-white/3 rounded-lg p-3">
-                      <div className="text-slate-500 text-[10px] uppercase tracking-wide mb-1">What to measure</div>
-                      <p className="text-slate-400 text-xs leading-relaxed">{month.measure}</p>
+                      <div className="text-gray-500 text-[10px] uppercase tracking-wide mb-1">What to measure</div>
+                      <p className="text-gray-500 text-xs leading-relaxed">{month.measure}</p>
                     </div>
                     <div className="bg-amber-400/5 rounded-lg p-3">
                       <div className="text-amber-400 text-[10px] uppercase tracking-wide mb-1">Expectation</div>
-                      <p className="text-slate-400 text-xs leading-relaxed">{month.expectation}</p>
+                      <p className="text-gray-500 text-xs leading-relaxed">{month.expectation}</p>
                     </div>
                   </div>
                 </div>
@@ -569,8 +569,8 @@ export default function GhkCuHairLossPage() {
           <div className="inline-flex items-center gap-2 bg-emerald-500/10 border border-emerald-500/30 rounded-full px-3 py-1 mb-6">
             <span className="text-emerald-400 text-xs font-bold tracking-widest uppercase">Bonus: Skin Benefits</span>
           </div>
-          <h2 className="text-2xl font-black text-white mb-3">GHK-Cu for Skin: Anti-Aging Powerhouse</h2>
-          <p className="text-slate-300 leading-relaxed mb-8 max-w-2xl">
+          <h2 className="text-2xl font-black text-gray-900 mb-3">GHK-Cu for Skin: Anti-Aging Powerhouse</h2>
+          <p className="text-gray-600 leading-relaxed mb-8 max-w-2xl">
             The same bottle of GHK-Cu you use for your scalp can transform your skin. GHK-Cu is one of the most comprehensively researched anti-aging peptides in dermatology — with a different dilution, the same compound provides remarkable facial benefits simultaneously.
           </p>
 
@@ -594,32 +594,32 @@ export default function GhkCuHairLossPage() {
               },
             ].map((item) => (
               <div key={item.title} className="glass-card p-5">
-                <h3 className="text-white font-bold mb-2">{item.title}</h3>
-                <p className="text-slate-400 text-sm leading-relaxed">{item.desc}</p>
+                <h3 className="text-gray-900 font-bold mb-2">{item.title}</h3>
+                <p className="text-gray-500 text-sm leading-relaxed">{item.desc}</p>
               </div>
             ))}
           </div>
 
           <div className="glass-card p-6 border border-emerald-500/20">
-            <h3 className="text-white font-bold mb-4">How to Apply GHK-Cu to Face (Dual Use Protocol)</h3>
+            <h3 className="text-gray-900 font-bold mb-4">How to Apply GHK-Cu to Face (Dual Use Protocol)</h3>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-4">
               <div className="bg-white/3 rounded-xl p-4">
                 <div className="text-emerald-400 text-xs font-bold tracking-widest uppercase mb-2">Face Concentration</div>
-                <p className="text-slate-300 text-sm font-semibold">0.1–0.5mg/mL</p>
-                <p className="text-slate-400 text-xs mt-1">Much lower than scalp dose — facial skin is more permeable and sensitive</p>
+                <p className="text-gray-600 text-sm font-semibold">0.1–0.5mg/mL</p>
+                <p className="text-gray-500 text-xs mt-1">Much lower than scalp dose — facial skin is more permeable and sensitive</p>
               </div>
               <div className="bg-white/3 rounded-xl p-4">
                 <div className="text-emerald-400 text-xs font-bold tracking-widest uppercase mb-2">Timing</div>
-                <p className="text-slate-300 text-sm font-semibold">PM routine, after cleansing</p>
-                <p className="text-slate-400 text-xs mt-1">Apply after toner, before moisturizer. Can be used AM with SPF over top</p>
+                <p className="text-gray-600 text-sm font-semibold">PM routine, after cleansing</p>
+                <p className="text-gray-500 text-xs mt-1">Apply after toner, before moisturizer. Can be used AM with SPF over top</p>
               </div>
               <div className="bg-white/3 rounded-xl p-4">
                 <div className="text-emerald-400 text-xs font-bold tracking-widest uppercase mb-2">Synergistic with</div>
-                <p className="text-slate-300 text-sm font-semibold">Retinol (separate AM/PM)</p>
-                <p className="text-slate-400 text-xs mt-1">Do not layer simultaneously with high-dose Vitamin C (copper oxidation)</p>
+                <p className="text-gray-600 text-sm font-semibold">Retinol (separate AM/PM)</p>
+                <p className="text-gray-500 text-xs mt-1">Do not layer simultaneously with high-dose Vitamin C (copper oxidation)</p>
               </div>
             </div>
-            <p className="text-slate-400 text-sm leading-relaxed">
+            <p className="text-gray-500 text-sm leading-relaxed">
               Separate your scalp serum (1–2mg/mL) from your facial serum (0.1–0.5mg/mL) by dilution — just add more carrier solution to a portion of your batch. The same GHK-Cu powder sources both. Apply scalp serum AM to thinning areas, facial serum PM after cleansing. Both applications use the same copper peptide — no separate products needed.
             </p>
           </div>
@@ -628,16 +628,16 @@ export default function GhkCuHairLossPage() {
 
       {/* FAQ */}
       <section className="py-16 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-black text-white mb-10 text-center">GHK-Cu Hair Loss FAQ</h2>
+        <h2 className="text-3xl font-black text-gray-900 mb-10 text-center">GHK-Cu Hair Loss FAQ</h2>
         <div className="space-y-3">
           {faqs.map(({ q, a }) => (
             <details key={q} className="glass-card group">
               <summary className="p-5 cursor-pointer list-none flex items-center justify-between">
-                <span className="text-white font-semibold text-sm">{q}</span>
+                <span className="text-gray-900 font-semibold text-sm">{q}</span>
                 <span className="text-amber-400 text-lg group-open:rotate-45 transition-transform shrink-0 ml-4">+</span>
               </summary>
               <div className="px-5 pb-5">
-                <p className="text-slate-400 text-sm leading-relaxed">{a}</p>
+                <p className="text-gray-500 text-sm leading-relaxed">{a}</p>
               </div>
             </details>
           ))}
@@ -647,8 +647,8 @@ export default function GhkCuHairLossPage() {
       {/* CTA */}
       <section className="py-16 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="glass-card p-10">
-          <h2 className="text-2xl font-black text-white mb-3">Get GHK-Cu Copper Peptide</h2>
-          <p className="text-slate-400 mb-6">COA-verified GHK-Cu — for topical hair application and systemic anti-aging.</p>
+          <h2 className="text-2xl font-black text-gray-900 mb-3">Get GHK-Cu Copper Peptide</h2>
+          <p className="text-gray-500 mb-6">COA-verified GHK-Cu — for topical hair application and systemic anti-aging.</p>
           <div className="flex flex-wrap gap-4 justify-center">
             <a href={SOURCE_URL} target="_blank" rel="nofollow noopener noreferrer"
               className="btn-cta px-8 py-4 flex items-center gap-2">

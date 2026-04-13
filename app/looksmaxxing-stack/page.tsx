@@ -135,7 +135,7 @@ const monthlyTimeline = [
       'Baseline photos should show improved skin glow and texture',
     ],
     color: 'border-slate-500/40',
-    badge: 'bg-slate-500/20 text-slate-400',
+    badge: 'bg-slate-500/20 text-gray-500',
   },
   {
     month: 'Months 2–3',
@@ -283,7 +283,7 @@ const faqs = [
 
 export default function LooksmaxxingStackPage() {
   return (
-    <main className="min-h-screen bg-dark-900 text-slate-200">
+    <main className="min-h-screen bg-dark-900 text-gray-700">
       {/* Hero */}
       <section className="relative py-20 px-4 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-purple-900/25 via-dark-900 to-emerald-900/15" />
@@ -292,18 +292,18 @@ export default function LooksmaxxingStackPage() {
             <Sparkles className="w-4 h-4" />
             Complete Appearance Protocol
           </div>
-          <h1 className="text-4xl sm:text-5xl font-extrabold text-white leading-tight">
+          <h1 className="text-4xl sm:text-5xl font-extrabold text-gray-900 leading-tight">
             The Complete{' '}
             <span className="text-neon-green">Looksmaxxing Stack</span>
           </h1>
-          <p className="text-xl text-slate-300 max-w-2xl mx-auto">
+          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
             Three tiers of scientifically-grounded peptide protocols for appearance optimization — from accessible Foundation to comprehensive Advanced. Build your stack, set your timeline, transform your appearance.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <Link href={SOURCE_URL} rel="nofollow noopener noreferrer" className="btn-cta flex items-center gap-2">
               View All Peptides <ArrowRight className="w-4 h-4" />
             </Link>
-            <Link href="/guide" className="flex items-center gap-2 px-6 py-3 border border-slate-600 rounded-xl text-slate-300 hover:border-slate-400 transition-colors">
+            <Link href="/guide" className="flex items-center gap-2 px-6 py-3 border border-slate-600 rounded-xl text-gray-600 hover:border-slate-400 transition-colors">
               Full Protocol Guide
             </Link>
           </div>
@@ -313,15 +313,15 @@ export default function LooksmaxxingStackPage() {
       {/* Philosophy */}
       <section className="py-16 px-4">
         <div className="max-w-4xl mx-auto space-y-8">
-          <h2 className="text-3xl font-bold text-white">The Philosophy: Biology-First Appearance Optimization</h2>
+          <h2 className="text-3xl font-bold text-gray-900">The Philosophy: Biology-First Appearance Optimization</h2>
           <div className="glass-card p-8 space-y-5">
-            <p className="text-slate-300 leading-relaxed">
+            <p className="text-gray-600 leading-relaxed">
               Looksmaxxing through peptides is categorically different from cosmetic procedures or topical cover-up products. It operates on the biological foundations of appearance — the collagen matrix that provides skin structure, the gut-skin axis that drives inflammation and acne, the GH/IGF-1 axis that governs whole-body anabolic and reparative signaling, and the cellular aging processes that determine how quickly these foundations degrade.
             </p>
-            <p className="text-slate-300 leading-relaxed">
+            <p className="text-gray-600 leading-relaxed">
               The results from this approach are structural and lasting — not temporary. When you rebuild collagen density, the new collagen fibers have a half-life of approximately two years. When you heal the gut-skin axis, the skin barrier improvements persist as long as the gut remains healthy. When you optimize the GH/IGF-1 axis, you are maintaining the hormonal environment that keeps all of these reparative processes running.
             </p>
-            <p className="text-slate-300 leading-relaxed">
+            <p className="text-gray-600 leading-relaxed">
               The key peptides that constitute the looksmaxxing arsenal each address a specific biological foundation: GHK-Cu for collagen and cellular aging, BPC-157 for gut-skin axis and systemic inflammation, SNAP-8 for expression line prevention, CJC-1295/Ipamorelin for GH axis optimization, IGF-1 LR3 for direct growth factor signaling, and Epithalon for cellular longevity. Understanding why each one belongs in the protocol — and what happens when you combine them — is the difference between a random supplement stack and a precision appearance optimization system.
             </p>
           </div>
@@ -332,8 +332,8 @@ export default function LooksmaxxingStackPage() {
       <section className="py-16 px-4 bg-slate-900/30">
         <div className="max-w-4xl mx-auto space-y-8">
           <div className="text-center space-y-3">
-            <h2 className="text-3xl font-bold text-white">Stack Tiers</h2>
-            <p className="text-slate-400 max-w-2xl mx-auto">Three tiers from foundation to advanced — each with a specific cost, complexity, and results profile.</p>
+            <h2 className="text-3xl font-bold text-gray-900">Stack Tiers</h2>
+            <p className="text-gray-500 max-w-2xl mx-auto">Three tiers from foundation to advanced — each with a specific cost, complexity, and results profile.</p>
           </div>
           <div className="space-y-6">
             {stackTiers.map((tier) => (
@@ -341,11 +341,11 @@ export default function LooksmaxxingStackPage() {
                 <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
                   <div className="flex items-center gap-3">
                     <span className={`px-2.5 py-1 rounded-full text-xs font-bold ${tier.badge}`}>{tier.tier}</span>
-                    <h3 className="text-slate-100 font-bold text-lg">{tier.name}</h3>
+                    <h3 className="text-gray-800 font-bold text-lg">{tier.name}</h3>
                   </div>
                   <span className="text-amber-300 font-bold">{tier.cost}</span>
                 </div>
-                <p className="text-slate-400 text-sm italic">{tier.ideal}</p>
+                <p className="text-gray-500 text-sm italic">{tier.ideal}</p>
 
                 <div className="space-y-2">
                   {tier.peptides.map((peptide) => (
@@ -353,18 +353,18 @@ export default function LooksmaxxingStackPage() {
                       <CheckCircle className="w-4 h-4 text-neon-green mt-0.5 flex-shrink-0" />
                       <div className="flex-1">
                         <div className="flex flex-wrap items-center gap-2">
-                          <span className="text-slate-100 font-semibold">{peptide.name}</span>
-                          <span className="text-slate-500 text-xs">{peptide.dose}</span>
+                          <span className="text-gray-800 font-semibold">{peptide.name}</span>
+                          <span className="text-gray-500 text-xs">{peptide.dose}</span>
                           <span className="text-amber-300 text-xs ml-auto">{peptide.cost}</span>
                         </div>
-                        <p className="text-slate-400 text-xs mt-1">{peptide.role}</p>
+                        <p className="text-gray-500 text-xs mt-1">{peptide.role}</p>
                       </div>
                     </div>
                   ))}
                 </div>
 
                 <div>
-                  <span className="text-slate-500 text-xs uppercase tracking-wide">Targets</span>
+                  <span className="text-gray-500 text-xs uppercase tracking-wide">Targets</span>
                   <div className="flex flex-wrap gap-2 mt-2">
                     {tier.targets.map((t) => (
                       <span key={t} className={`text-xs px-2 py-0.5 rounded-full border ${tier.badge}`}>{t}</span>
@@ -381,8 +381,8 @@ export default function LooksmaxxingStackPage() {
       <section className="py-16 px-4">
         <div className="max-w-4xl mx-auto space-y-8">
           <div className="text-center space-y-3">
-            <h2 className="text-3xl font-bold text-white">Build Your Personal Stack</h2>
-            <p className="text-slate-400 max-w-2xl mx-auto">
+            <h2 className="text-3xl font-bold text-gray-900">Build Your Personal Stack</h2>
+            <p className="text-gray-500 max-w-2xl mx-auto">
               Select your goals and budget to get a personalized peptide stack recommendation.
             </p>
           </div>
@@ -394,8 +394,8 @@ export default function LooksmaxxingStackPage() {
       <section className="py-16 px-4 bg-slate-900/30">
         <div className="max-w-4xl mx-auto space-y-8">
           <div className="text-center space-y-3">
-            <h2 className="text-3xl font-bold text-white">The Daily Looksmaxxing Routine</h2>
-            <p className="text-slate-400 max-w-2xl mx-auto">
+            <h2 className="text-3xl font-bold text-gray-900">The Daily Looksmaxxing Routine</h2>
+            <p className="text-gray-500 max-w-2xl mx-auto">
               Timing and sequencing matter. Here is the full daily and weekly protocol for the Complete Appearance Stack.
             </p>
           </div>
@@ -411,8 +411,8 @@ export default function LooksmaxxingStackPage() {
                     <div key={action.action} className="flex items-start gap-3 p-3 bg-slate-800/60 rounded-xl">
                       <CheckCircle className="w-4 h-4 text-neon-green mt-0.5 flex-shrink-0" />
                       <div>
-                        <p className="text-slate-200 font-semibold text-sm">{action.action}</p>
-                        <p className="text-slate-400 text-xs mt-0.5">{action.detail}</p>
+                        <p className="text-gray-700 font-semibold text-sm">{action.action}</p>
+                        <p className="text-gray-500 text-xs mt-0.5">{action.detail}</p>
                       </div>
                     </div>
                   ))}
@@ -427,8 +427,8 @@ export default function LooksmaxxingStackPage() {
       <section className="py-16 px-4">
         <div className="max-w-4xl mx-auto space-y-8">
           <div className="text-center space-y-3">
-            <h2 className="text-3xl font-bold text-white">Expected Results by Month</h2>
-            <p className="text-slate-400 max-w-2xl mx-auto">
+            <h2 className="text-3xl font-bold text-gray-900">Expected Results by Month</h2>
+            <p className="text-gray-500 max-w-2xl mx-auto">
               What to realistically expect and when — for the Complete Appearance Stack (Tier 2).
             </p>
           </div>
@@ -438,10 +438,10 @@ export default function LooksmaxxingStackPage() {
                 <div className="flex items-start gap-4">
                   <span className={`px-3 py-1 rounded-full text-sm font-bold flex-shrink-0 ${t.badge}`}>{t.month}</span>
                   <div className="space-y-3">
-                    <h3 className="text-slate-100 font-bold">{t.title}</h3>
+                    <h3 className="text-gray-800 font-bold">{t.title}</h3>
                     <ul className="space-y-1">
                       {t.changes.map((c) => (
-                        <li key={c} className="flex items-start gap-2 text-slate-300 text-sm">
+                        <li key={c} className="flex items-start gap-2 text-gray-600 text-sm">
                           <CheckCircle className="w-4 h-4 text-neon-green mt-0.5 flex-shrink-0" />
                           {c}
                         </li>
@@ -459,8 +459,8 @@ export default function LooksmaxxingStackPage() {
       <section className="py-16 px-4 bg-slate-900/30">
         <div className="max-w-4xl mx-auto space-y-8">
           <div className="text-center space-y-3">
-            <h2 className="text-3xl font-bold text-white">What to Track &amp; How</h2>
-            <p className="text-slate-400 max-w-2xl mx-auto">
+            <h2 className="text-3xl font-bold text-gray-900">What to Track &amp; How</h2>
+            <p className="text-gray-500 max-w-2xl mx-auto">
               Accurate baseline tracking is essential — appearance changes are gradual enough to be invisible day-to-day.
             </p>
           </div>
@@ -473,7 +473,7 @@ export default function LooksmaxxingStackPage() {
                 </div>
                 <ul className="space-y-2">
                   {category.items.map((item) => (
-                    <li key={item} className="flex items-start gap-2 text-slate-300 text-xs">
+                    <li key={item} className="flex items-start gap-2 text-gray-600 text-xs">
                       <CheckCircle className="w-3.5 h-3.5 text-neon-green mt-0.5 flex-shrink-0" />
                       {item}
                     </li>
@@ -489,29 +489,29 @@ export default function LooksmaxxingStackPage() {
       <section className="py-16 px-4">
         <div className="max-w-4xl mx-auto space-y-8">
           <div className="text-center space-y-3">
-            <h2 className="text-3xl font-bold text-white">Case Studies: 3 Archetypes</h2>
+            <h2 className="text-3xl font-bold text-gray-900">Case Studies: 3 Archetypes</h2>
           </div>
           <div className="space-y-6">
             {caseStudies.map((cs) => (
               <div key={cs.archetype} className={`glass-card p-6 border ${cs.color} space-y-4`}>
-                <h3 className="text-slate-100 font-bold text-lg">{cs.archetype}</h3>
-                <p className="text-slate-400 text-sm italic">{cs.profile}</p>
+                <h3 className="text-gray-800 font-bold text-lg">{cs.archetype}</h3>
+                <p className="text-gray-500 text-sm italic">{cs.profile}</p>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
                   <div>
-                    <span className="text-slate-500 text-xs uppercase tracking-wide">Recommended Stack</span>
+                    <span className="text-gray-500 text-xs uppercase tracking-wide">Recommended Stack</span>
                     <p className="text-neon-green font-semibold mt-1">{cs.stack}</p>
                   </div>
                   <div>
-                    <span className="text-slate-500 text-xs uppercase tracking-wide">Timeline</span>
+                    <span className="text-gray-500 text-xs uppercase tracking-wide">Timeline</span>
                     <p className="text-amber-300 font-medium mt-1">{cs.timeline}</p>
                   </div>
                 </div>
-                <p className="text-slate-300 text-sm leading-relaxed">{cs.rationale}</p>
+                <p className="text-gray-600 text-sm leading-relaxed">{cs.rationale}</p>
                 <div>
-                  <span className="text-slate-500 text-xs uppercase tracking-wide">Primary Goals</span>
+                  <span className="text-gray-500 text-xs uppercase tracking-wide">Primary Goals</span>
                   <div className="flex flex-wrap gap-2 mt-2">
                     {cs.primaryGoals.map((g) => (
-                      <span key={g} className="text-xs bg-slate-800 border border-slate-700 text-slate-300 px-2 py-0.5 rounded-full">{g}</span>
+                      <span key={g} className="text-xs bg-slate-800 border border-slate-700 text-gray-600 px-2 py-0.5 rounded-full">{g}</span>
                     ))}
                   </div>
                 </div>
@@ -524,14 +524,14 @@ export default function LooksmaxxingStackPage() {
       {/* Non-Peptide Synergy */}
       <section className="py-16 px-4 bg-slate-900/30">
         <div className="max-w-4xl mx-auto space-y-8">
-          <h2 className="text-3xl font-bold text-white">Stacking with Non-Peptide Interventions</h2>
+          <h2 className="text-3xl font-bold text-gray-900">Stacking with Non-Peptide Interventions</h2>
           <div className="space-y-3">
             {nonPeptideStack.map((item) => (
               <div key={item.item} className="glass-card p-5 flex items-start gap-3">
                 <Star className="w-5 h-5 text-amber-400 mt-0.5 flex-shrink-0" />
                 <div className="space-y-1">
-                  <p className="text-slate-100 font-semibold text-sm">{item.item}</p>
-                  <p className="text-slate-400 text-sm">{item.importance}</p>
+                  <p className="text-gray-800 font-semibold text-sm">{item.item}</p>
+                  <p className="text-gray-500 text-sm">{item.importance}</p>
                   <p className="text-amber-300 text-xs">Synergy: {item.synergy}</p>
                 </div>
               </div>
@@ -544,13 +544,13 @@ export default function LooksmaxxingStackPage() {
       <section className="py-16 px-4">
         <div className="max-w-4xl mx-auto space-y-8">
           <div className="text-center">
-            <h2 className="text-3xl font-bold text-white">Looksmaxxing Stack FAQ</h2>
+            <h2 className="text-3xl font-bold text-gray-900">Looksmaxxing Stack FAQ</h2>
           </div>
           <div className="space-y-4">
             {faqs.map((faq) => (
               <div key={faq.q} className="glass-card p-6 space-y-3">
-                <h3 className="text-slate-100 font-bold">{faq.q}</h3>
-                <p className="text-slate-400 leading-relaxed text-sm">{faq.a}</p>
+                <h3 className="text-gray-800 font-bold">{faq.q}</h3>
+                <p className="text-gray-500 leading-relaxed text-sm">{faq.a}</p>
               </div>
             ))}
           </div>
@@ -561,8 +561,8 @@ export default function LooksmaxxingStackPage() {
       <section className="py-16 px-4 bg-slate-900/30">
         <div className="max-w-2xl mx-auto text-center space-y-6">
           <Sparkles className="w-12 h-12 text-purple-400 mx-auto" />
-          <h2 className="text-3xl font-bold text-white">Begin Your Looksmaxxing Protocol</h2>
-          <p className="text-slate-400">
+          <h2 className="text-3xl font-bold text-gray-900">Begin Your Looksmaxxing Protocol</h2>
+          <p className="text-gray-500">
             Start with the Foundation Stack (GHK-Cu + BPC-157) and see measurable results in 8 weeks. Scale up as you see fit.
           </p>
           <div className="p-3 bg-amber-500/10 border border-amber-500/30 rounded-xl text-amber-200 text-sm">

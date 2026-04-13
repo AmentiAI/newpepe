@@ -153,11 +153,11 @@ export default function RetatrutideCompleteGuide() {
             <Flame className="w-4 h-4" />
             The Triple Agonist
           </div>
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white mb-6 leading-tight">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-gray-900 mb-6 leading-tight">
             What If We Didn't{' '}
             <span className="text-[#00ff88]">Stop at Two Receptors?</span>
           </h1>
-          <p className="text-xl text-slate-300 leading-relaxed max-w-3xl mx-auto mb-8">
+          <p className="text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto mb-8">
             Retatrutide is what happens when scientists ask: what if we didn't stop at two receptors? Semaglutide hit one. Tirzepatide hit two. Retatrutide hits three — GLP-1, GIP, and glucagon — and the results are something the weight loss field had never seen before: 24.2% weight loss with no plateau at 48 weeks.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
@@ -175,7 +175,7 @@ export default function RetatrutideCompleteGuide() {
           {stats.map((s) => (
             <div key={s.label} className="glass-card p-5 text-center">
               <div className={`text-3xl font-black mb-2 ${s.color}`}>{s.value}</div>
-              <div className="text-slate-400 text-sm leading-tight">{s.label}</div>
+              <div className="text-gray-500 text-sm leading-tight">{s.label}</div>
             </div>
           ))}
         </div>
@@ -183,8 +183,8 @@ export default function RetatrutideCompleteGuide() {
 
       {/* Evolution Section */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
-        <h2 className="text-3xl font-black text-white mb-4">The GLP Evolution: One Receptor at a Time</h2>
-        <p className="text-slate-300 leading-relaxed text-lg mb-10">
+        <h2 className="text-3xl font-black text-gray-900 mb-4">The GLP Evolution: One Receptor at a Time</h2>
+        <p className="text-gray-600 leading-relaxed text-lg mb-10">
           Each generation of GLP-based therapy added a receptor and dramatically expanded results. Retatrutide is the logical third step — and each addition has delivered non-linear gains.
         </p>
         <div className="space-y-5">
@@ -197,11 +197,11 @@ export default function RetatrutideCompleteGuide() {
                 <div className="flex-1">
                   <div className="flex items-center gap-3 flex-wrap mb-1">
                     <h3 className={`font-black text-xl ${drug.color}`}>{drug.drug}</h3>
-                    <span className="text-slate-400 text-sm">({drug.year})</span>
+                    <span className="text-gray-500 text-sm">({drug.year})</span>
                     <span className={`text-xs px-3 py-1 rounded-full font-bold border ${drug.bg}`}>{drug.receptors}</span>
                     <span className={`text-sm font-black ${drug.color}`}>{drug.loss} loss</span>
                   </div>
-                  <p className="text-slate-300 text-sm leading-relaxed">{drug.breakthrough}</p>
+                  <p className="text-gray-600 text-sm leading-relaxed">{drug.breakthrough}</p>
                 </div>
               </div>
             </div>
@@ -211,15 +211,15 @@ export default function RetatrutideCompleteGuide() {
 
       {/* Triple Mechanism Interactive */}
       <section className="py-10 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
-        <h2 className="text-2xl font-black text-white mb-3">Explore the Triple Receptor Mechanism</h2>
-        <p className="text-slate-400 text-base mb-6">Click each receptor to understand what it contributes to the 24% weight loss result.</p>
+        <h2 className="text-2xl font-black text-gray-900 mb-3">Explore the Triple Receptor Mechanism</h2>
+        <p className="text-gray-500 text-base mb-6">Click each receptor to understand what it contributes to the 24% weight loss result.</p>
         <RetatrutideTripleMechanism />
       </section>
 
       {/* The Glucagon Receptor */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
-        <h2 className="text-3xl font-black text-white mb-4">Why the Glucagon Receptor Changes Everything</h2>
-        <p className="text-slate-300 leading-relaxed text-lg mb-8">
+        <h2 className="text-3xl font-black text-gray-900 mb-4">Why the Glucagon Receptor Changes Everything</h2>
+        <p className="text-gray-600 leading-relaxed text-lg mb-8">
           Adding GIP to GLP-1 pushed weight loss from 15% to 22.5%. Adding glucagon pushed it to 24.2% — but the more important finding was no plateau. Here's what the glucagon receptor actually does in the retatrutide context.
         </p>
         <div className="grid sm:grid-cols-3 gap-5">
@@ -227,7 +227,7 @@ export default function RetatrutideCompleteGuide() {
             <div key={item.effect} className="glass-card p-6 border border-amber-500/15">
               <div className="text-3xl mb-3">{item.icon}</div>
               <h3 className="text-amber-400 font-bold text-base mb-3">{item.effect}</h3>
-              <p className="text-slate-300 text-sm leading-relaxed">{item.detail}</p>
+              <p className="text-gray-600 text-sm leading-relaxed">{item.detail}</p>
             </div>
           ))}
         </div>
@@ -247,13 +247,13 @@ export default function RetatrutideCompleteGuide() {
           </div>
           <div className="flex-1">
             <div className="text-[#00ff88] text-xs font-bold uppercase tracking-widest mb-2">Triple Agonist Research Peptide</div>
-            <h3 className="text-white text-2xl font-black mb-3">Retatrutide 10mg</h3>
-            <p className="text-slate-300 text-base leading-relaxed mb-4">
+            <h3 className="text-gray-900 text-2xl font-black mb-3">Retatrutide 10mg</h3>
+            <p className="text-gray-600 text-base leading-relaxed mb-4">
               Retatrutide is available as a research peptide at 10mg per vial. At typical weekly doses of 6–10mg, a 10mg vial provides 1–2 weeks of supply depending on your protocol stage. The slow escalation protocol is critical — beginning at 1–2mg/week and increasing gradually to minimize GI side effects.
             </p>
             <div className="flex flex-wrap gap-3 mb-4">
               {['10mg per vial', 'Triple receptor agonist', 'Weekly SC injection', 'Phase II validated dose range'].map((f) => (
-                <span key={f} className="flex items-center gap-1.5 text-sm text-slate-300">
+                <span key={f} className="flex items-center gap-1.5 text-sm text-gray-600">
                   <CheckCircle className="w-4 h-4 text-[#00ff88]" /> {f}
                 </span>
               ))}
@@ -267,20 +267,20 @@ export default function RetatrutideCompleteGuide() {
 
       {/* Phase II Data Table */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
-        <h2 className="text-3xl font-black text-white mb-6">Phase II Trial Data at a Glance</h2>
+        <h2 className="text-3xl font-black text-gray-900 mb-6">Phase II Trial Data at a Glance</h2>
         <div className="glass-card overflow-x-auto">
           <table className="w-full text-sm">
             <tbody>
               {phaseIIData.map((row, i) => (
                 <tr key={row.metric} className={`border-b border-white/5 ${i % 2 === 0 ? 'bg-white/1' : ''}`}>
-                  <td className="py-4 px-6 text-slate-400 font-medium w-1/2">{row.metric}</td>
-                  <td className="py-4 px-6 text-white font-semibold">{row.value}</td>
+                  <td className="py-4 px-6 text-gray-500 font-medium w-1/2">{row.metric}</td>
+                  <td className="py-4 px-6 text-gray-900 font-semibold">{row.value}</td>
                 </tr>
               ))}
             </tbody>
           </table>
         </div>
-        <p className="text-slate-500 text-sm mt-4">Source: Jastreboff et al., NEJM 2023. Phase II dose-ranging trial of retatrutide in adults with obesity.</p>
+        <p className="text-gray-500 text-sm mt-4">Source: Jastreboff et al., NEJM 2023. Phase II dose-ranging trial of retatrutide in adults with obesity.</p>
       </section>
 
       {/* Semaglutide Comparison Product */}
@@ -297,8 +297,8 @@ export default function RetatrutideCompleteGuide() {
           </div>
           <div className="flex-1">
             <div className="text-blue-400 text-xs font-bold uppercase tracking-widest mb-2">GLP-1 Single Agonist</div>
-            <h3 className="text-white text-2xl font-black mb-3">Semaglutide 6mg</h3>
-            <p className="text-slate-300 text-base leading-relaxed mb-4">
+            <h3 className="text-gray-900 text-2xl font-black mb-3">Semaglutide 6mg</h3>
+            <p className="text-gray-600 text-base leading-relaxed mb-4">
               The original GLP-1 agonist and still the most studied. For those starting a GLP-1 protocol, semaglutide provides proven results with the most established safety record. Once you've experienced the GLP-1 mechanism, upgrading to tirzepatide or retatrutide for greater efficacy is a logical next step.
             </p>
             <Link href={SOURCE_URL} className="btn-secondary inline-flex">
@@ -310,12 +310,12 @@ export default function RetatrutideCompleteGuide() {
 
       {/* Full Comparison */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
-        <h2 className="text-3xl font-black text-white mb-6">Semaglutide vs Tirzepatide vs Retatrutide</h2>
+        <h2 className="text-3xl font-black text-gray-900 mb-6">Semaglutide vs Tirzepatide vs Retatrutide</h2>
         <div className="glass-card overflow-x-auto">
           <table className="w-full text-sm">
             <thead>
               <tr className="border-b border-white/10">
-                <th className="text-left text-slate-400 font-semibold py-3 px-4">Metric</th>
+                <th className="text-left text-gray-500 font-semibold py-3 px-4">Metric</th>
                 <th className="text-left text-blue-400 font-semibold py-3 px-4">Semaglutide</th>
                 <th className="text-left text-purple-400 font-semibold py-3 px-4">Tirzepatide</th>
                 <th className="text-left text-amber-400 font-semibold py-3 px-4">Retatrutide</th>
@@ -324,7 +324,7 @@ export default function RetatrutideCompleteGuide() {
             <tbody>
               {fullComparison.map((row) => (
                 <tr key={row.label} className="border-b border-white/5 hover:bg-white/2">
-                  <td className="py-3 px-4 text-slate-400 font-medium">{row.label}</td>
+                  <td className="py-3 px-4 text-gray-500 font-medium">{row.label}</td>
                   <td className="py-3 px-4 text-blue-300">{row.sema}</td>
                   <td className="py-3 px-4 text-purple-300">{row.tirz}</td>
                   <td className="py-3 px-4 text-amber-300 font-semibold">{row.reta}</td>
@@ -337,15 +337,15 @@ export default function RetatrutideCompleteGuide() {
 
       {/* FAQ */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
-        <h2 className="text-3xl font-black text-white mb-8">Frequently Asked Questions</h2>
+        <h2 className="text-3xl font-black text-gray-900 mb-8">Frequently Asked Questions</h2>
         <div className="space-y-4">
           {faqs.map((faq) => (
             <details key={faq.q} className="glass-card group">
-              <summary className="p-6 cursor-pointer flex items-center justify-between gap-4 text-white font-semibold text-base list-none">
+              <summary className="p-6 cursor-pointer flex items-center justify-between gap-4 text-gray-900 font-semibold text-base list-none">
                 {faq.q}
                 <span className="text-[#00ff88] text-xl font-black shrink-0 group-open:rotate-45 transition-transform">+</span>
               </summary>
-              <div className="px-6 pb-6 text-slate-300 leading-relaxed text-base">
+              <div className="px-6 pb-6 text-gray-600 leading-relaxed text-base">
                 {faq.a}
               </div>
             </details>
@@ -357,8 +357,8 @@ export default function RetatrutideCompleteGuide() {
       <section className="py-16 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
         <div className="glass-card p-10 text-center border border-[#00ff88]/15">
           <Flame className="w-10 h-10 text-amber-400 mx-auto mb-4" />
-          <h2 className="text-3xl font-black text-white mb-4">The Most Powerful Weight Loss Peptide Available</h2>
-          <p className="text-slate-300 text-lg mb-8 max-w-2xl mx-auto">
+          <h2 className="text-3xl font-black text-gray-900 mb-4">The Most Powerful Weight Loss Peptide Available</h2>
+          <p className="text-gray-600 text-lg mb-8 max-w-2xl mx-auto">
             Retatrutide is the frontier of GLP-based fat loss research. Available now as a research peptide for those who want results that even tirzepatide can't fully deliver.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">

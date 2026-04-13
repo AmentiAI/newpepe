@@ -251,10 +251,10 @@ export default function HowToReconstitutePage() {
           <div className="inline-flex items-center gap-2 bg-neon-green/10 border border-neon-green/20 rounded-full px-4 py-2 mb-6">
             <span className="text-neon-green text-sm font-medium">Step-by-Step Reconstitution Guide</span>
           </div>
-          <h1 className="text-4xl sm:text-5xl font-black text-white mb-4">
+          <h1 className="text-4xl sm:text-5xl font-black text-gray-900 mb-4">
             How to Reconstitute <span className="gradient-text">Peptides</span>
           </h1>
-          <p className="text-slate-400 text-lg max-w-2xl mx-auto">
+          <p className="text-gray-500 text-lg max-w-2xl mx-auto">
             A complete guide to mixing BPC-157, TB-500, and other peptides with bacteriostatic water — including exact amounts, dose calculations, and storage.
           </p>
         </div>
@@ -264,7 +264,7 @@ export default function HowToReconstitutePage() {
           <AlertTriangle className="w-5 h-5 text-amber-400 shrink-0 mt-0.5" />
           <div>
             <p className="text-amber-300 font-semibold text-sm mb-1">Before You Begin</p>
-            <p className="text-slate-400 text-sm">Only use bacteriostatic water — not tap water, saline, or regular sterile water for multi-dose vials. Work in a clean environment. Never reuse syringes.</p>
+            <p className="text-gray-500 text-sm">Only use bacteriostatic water — not tap water, saline, or regular sterile water for multi-dose vials. Work in a clean environment. Never reuse syringes.</p>
           </div>
         </div>
 
@@ -272,7 +272,7 @@ export default function HowToReconstitutePage() {
         <div className="mb-16">
           <div className="flex items-center gap-3 mb-6">
             <ClipboardList className="w-6 h-6 text-neon-green" />
-            <h2 className="text-2xl font-black text-white">Equipment Checklist</h2>
+            <h2 className="text-2xl font-black text-gray-900">Equipment Checklist</h2>
           </div>
           <EquipmentChecklist />
         </div>
@@ -281,15 +281,15 @@ export default function HowToReconstitutePage() {
         <div className="mb-16">
           <div className="flex items-center gap-3 mb-6">
             <FlaskConical className="w-6 h-6 text-neon-green" />
-            <h2 className="text-2xl font-black text-white">Reconstitution Calculator</h2>
+            <h2 className="text-2xl font-black text-gray-900">Reconstitution Calculator</h2>
           </div>
-          <p className="text-slate-400 text-sm mb-6">Enter your vial size, how much bacteriostatic water you plan to add, and your desired dose — the calculator gives you exact syringe markings instantly.</p>
+          <p className="text-gray-500 text-sm mb-6">Enter your vial size, how much bacteriostatic water you plan to add, and your desired dose — the calculator gives you exact syringe markings instantly.</p>
           <ReconstitutionCalculator />
         </div>
 
         {/* Original 6 steps */}
         <div className="mb-16">
-          <h2 className="text-2xl font-black text-white mb-6">Quick-Reference Steps</h2>
+          <h2 className="text-2xl font-black text-gray-900 mb-6">Quick-Reference Steps</h2>
           <div className="space-y-6">
             {steps.map((step) => (
               <div key={step.num} className="glass-card p-6">
@@ -298,8 +298,8 @@ export default function HowToReconstitutePage() {
                     {step.num}
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-white font-bold text-lg mb-2">{step.title}</h3>
-                    <p className="text-slate-300 text-sm leading-relaxed mb-3">{step.desc}</p>
+                    <h3 className="text-gray-900 font-bold text-lg mb-2">{step.title}</h3>
+                    <p className="text-gray-600 text-sm leading-relaxed mb-3">{step.desc}</p>
                     <div className="bg-emerald-500/10 border border-emerald-500/20 rounded-lg px-4 py-2.5">
                       <p className="text-emerald-300 text-xs"><strong>Tip:</strong> {step.tip}</p>
                     </div>
@@ -313,9 +313,9 @@ export default function HowToReconstitutePage() {
         {/* ── DETAILED 10-STEP VIDEO-STYLE GUIDE ── */}
         <div className="mb-16">
           <div className="flex items-center gap-3 mb-3">
-            <h2 className="text-2xl font-black text-white">Complete 10-Step Reconstitution Protocol</h2>
+            <h2 className="text-2xl font-black text-gray-900">Complete 10-Step Reconstitution Protocol</h2>
           </div>
-          <p className="text-slate-400 text-sm mb-8">The full detail behind every step — including the <em>why</em> and common pitfalls at each stage.</p>
+          <p className="text-gray-500 text-sm mb-8">The full detail behind every step — including the <em>why</em> and common pitfalls at each stage.</p>
           <div className="space-y-5">
             {detailedSteps.map((step) => (
               <div key={step.num} className="glass-card p-6 border-l-2" style={{ borderLeftColor: 'rgba(0,255,136,0.4)' }}>
@@ -324,12 +324,12 @@ export default function HowToReconstitutePage() {
                     {step.num}
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-white font-bold text-base mb-1">{step.title}</h3>
+                    <h3 className="text-gray-900 font-bold text-base mb-1">{step.title}</h3>
                     <div className="flex items-start gap-1.5 mb-2">
-                      <Info className="w-3.5 h-3.5 text-slate-500 shrink-0 mt-0.5" />
-                      <p className="text-slate-500 text-xs italic">{step.why}</p>
+                      <Info className="w-3.5 h-3.5 text-gray-500 shrink-0 mt-0.5" />
+                      <p className="text-gray-500 text-xs italic">{step.why}</p>
                     </div>
-                    <p className="text-slate-300 text-sm leading-relaxed">{step.detail}</p>
+                    <p className="text-gray-600 text-sm leading-relaxed">{step.detail}</p>
                   </div>
                 </div>
               </div>
@@ -339,60 +339,60 @@ export default function HowToReconstitutePage() {
 
         {/* Dose reference table */}
         <div className="mb-16">
-          <h2 className="text-2xl font-black text-white mb-6">Peptide Dose Reference Table</h2>
-          <p className="text-slate-400 text-sm mb-6">How much to draw from a 1mL insulin syringe for 250mcg or 500mcg doses at different concentrations.</p>
+          <h2 className="text-2xl font-black text-gray-900 mb-6">Peptide Dose Reference Table</h2>
+          <p className="text-gray-500 text-sm mb-6">How much to draw from a 1mL insulin syringe for 250mcg or 500mcg doses at different concentrations.</p>
           <div className="overflow-x-auto rounded-2xl" style={{ border: '1px solid rgba(0,255,136,0.15)' }}>
             <table className="w-full text-sm">
               <thead>
                 <tr style={{ background: 'rgba(0,255,136,0.05)' }}>
-                  <th className="text-left py-3 px-4 text-slate-400 font-semibold">BAC Water</th>
-                  <th className="text-left py-3 px-4 text-slate-400 font-semibold">Vial Size</th>
+                  <th className="text-left py-3 px-4 text-gray-500 font-semibold">BAC Water</th>
+                  <th className="text-left py-3 px-4 text-gray-500 font-semibold">Vial Size</th>
                   <th className="text-left py-3 px-4 text-emerald-400 font-bold">Concentration</th>
-                  <th className="text-left py-3 px-4 text-slate-400 font-semibold">250mcg dose</th>
-                  <th className="text-left py-3 px-4 text-slate-400 font-semibold">500mcg dose</th>
+                  <th className="text-left py-3 px-4 text-gray-500 font-semibold">250mcg dose</th>
+                  <th className="text-left py-3 px-4 text-gray-500 font-semibold">500mcg dose</th>
                 </tr>
               </thead>
               <tbody>
                 {doseTable.map((row, i) => (
                   <tr key={i} style={{ borderTop: '1px solid rgba(255,255,255,0.04)', background: i % 2 === 0 ? 'rgba(255,255,255,0.01)' : 'transparent' }}>
-                    <td className="py-3 px-4 text-slate-300">{row.water}</td>
-                    <td className="py-3 px-4 text-slate-300">{row.vialSize}</td>
+                    <td className="py-3 px-4 text-gray-600">{row.water}</td>
+                    <td className="py-3 px-4 text-gray-600">{row.vialSize}</td>
                     <td className="py-3 px-4 text-emerald-400 font-mono font-semibold">{row.conc}</td>
-                    <td className="py-3 px-4 text-slate-400 font-mono">{row.dose250}</td>
-                    <td className="py-3 px-4 text-slate-400 font-mono">{row.dose500}</td>
+                    <td className="py-3 px-4 text-gray-500 font-mono">{row.dose250}</td>
+                    <td className="py-3 px-4 text-gray-500 font-mono">{row.dose500}</td>
                   </tr>
                 ))}
               </tbody>
             </table>
           </div>
-          <p className="text-slate-600 text-xs mt-3">IU = units on a 1mL insulin syringe (100 IU = 1mL). μL = microliters.</p>
+          <p className="text-gray-600 text-xs mt-3">IU = units on a 1mL insulin syringe (100 IU = 1mL). μL = microliters.</p>
         </div>
 
         {/* ── PEPTIDE-SPECIFIC NOTES TABLE ── */}
         <div className="mb-16">
           <div className="flex items-center gap-3 mb-3">
             <FlaskConical className="w-6 h-6 text-neon-green" />
-            <h2 className="text-2xl font-black text-white">Peptide-Specific Reconstitution Notes</h2>
+            <h2 className="text-2xl font-black text-gray-900">Peptide-Specific Reconstitution Notes</h2>
           </div>
-          <p className="text-slate-400 text-sm mb-6">Each peptide has quirks. Here is what to expect when reconstituting the most common peptides.</p>
+          <p className="text-gray-500 text-sm mb-6">Each peptide has quirks. Here is what to expect when reconstituting the most common peptides.</p>
           <div className="overflow-x-auto rounded-2xl" style={{ border: '1px solid rgba(0,255,136,0.12)' }}>
             <table className="w-full text-sm">
               <thead>
                 <tr style={{ background: 'rgba(0,255,136,0.04)' }}>
-                  <th className="text-left py-3 px-4 text-slate-400 font-semibold whitespace-nowrap">Peptide</th>
-                  <th className="text-left py-3 px-4 text-slate-400 font-semibold whitespace-nowrap">Dissolves</th>
-                  <th className="text-left py-3 px-4 text-slate-400 font-semibold whitespace-nowrap">Normal Color</th>
-                  <th className="text-left py-3 px-4 text-slate-400 font-semibold whitespace-nowrap">Time</th>
+                  <th className="text-left py-3 px-4 text-gray-500 font-semibold whitespace-nowrap">Peptide</th>
+                  <th className="text-left py-3 px-4 text-gray-500 font-semibold whitespace-nowrap">Dissolves</th>
+                  <th className="text-left py-3 px-4 text-gray-500 font-semibold whitespace-nowrap">Normal Color</th>
+                  <th className="text-left py-3 px-4 text-gray-500 font-semibold whitespace-nowrap">Time</th>
                   <th className="text-left py-3 px-4 text-emerald-400 font-bold whitespace-nowrap">Special Notes</th>
                 </tr>
               </thead>
               <tbody>
                 {peptideNotes.map((row, i) => (
                   <tr key={row.peptide} style={{ borderTop: '1px solid rgba(255,255,255,0.04)', background: i % 2 === 0 ? 'rgba(255,255,255,0.01)' : 'transparent' }}>
-                    <td className="py-3 px-4 text-white font-semibold whitespace-nowrap">{row.peptide}</td>
-                    <td className="py-3 px-4 text-slate-300 whitespace-nowrap">{row.dissolve}</td>
-                    <td className="py-3 px-4 text-slate-300 whitespace-nowrap">{row.color}</td>
-                    <td className="py-3 px-4 text-slate-400 font-mono whitespace-nowrap text-xs">{row.timing}</td>
+                    <td className="py-3 px-4 text-gray-900 font-semibold whitespace-nowrap">{row.peptide}</td>
+                    <td className="py-3 px-4 text-gray-600 whitespace-nowrap">{row.dissolve}</td>
+                    <td className="py-3 px-4 text-gray-600 whitespace-nowrap">{row.color}</td>
+                    <td className="py-3 px-4 text-gray-500 font-mono whitespace-nowrap text-xs">{row.timing}</td>
                     <td className="py-3 px-4 text-emerald-300 text-xs leading-relaxed">{row.special}</td>
                   </tr>
                 ))}
@@ -405,9 +405,9 @@ export default function HowToReconstitutePage() {
         <div className="mb-16">
           <div className="flex items-center gap-3 mb-3">
             <Thermometer className="w-6 h-6 text-neon-green" />
-            <h2 className="text-2xl font-black text-white">Storage Troubleshooting</h2>
+            <h2 className="text-2xl font-black text-gray-900">Storage Troubleshooting</h2>
           </div>
-          <p className="text-slate-400 text-sm mb-8">What to do when something looks wrong with your reconstituted peptide — and how to tell normal from problematic.</p>
+          <p className="text-gray-500 text-sm mb-8">What to do when something looks wrong with your reconstituted peptide — and how to tell normal from problematic.</p>
           <div className="space-y-4">
             {[
               {
@@ -445,7 +445,7 @@ export default function HowToReconstitutePage() {
               {
                 title: 'Temperature Fluctuation Tolerance',
                 status: 'Know the Limits',
-                statusColor: 'text-slate-400',
+                statusColor: 'text-gray-500',
                 statusBg: 'rgba(255,255,255,0.03)',
                 statusBorder: 'rgba(255,255,255,0.08)',
                 detail: 'Reconstituted peptides are relatively stable between 2–8°C but sensitive to extremes. Brief excursions to room temperature (20–22°C) during dose drawing are fine. Avoid: leaving vials out for more than 30 minutes, refrigerator door shelves where temperature fluctuates with door opening, areas near heating vents or direct sunlight. Maximum tolerable temperature for short periods: approximately 25°C. Above this, degradation accelerates significantly.',
@@ -453,13 +453,13 @@ export default function HowToReconstitutePage() {
             ].map((item) => (
               <div key={item.title} className="glass-card p-6">
                 <div className="flex items-start justify-between gap-4 mb-3">
-                  <h3 className="text-white font-bold">{item.title}</h3>
+                  <h3 className="text-gray-900 font-bold">{item.title}</h3>
                   <span className={`text-xs font-bold px-3 py-1 rounded-full shrink-0 ${item.statusColor}`}
                     style={{ background: item.statusBg, border: `1px solid ${item.statusBorder}` }}>
                     {item.status}
                   </span>
                 </div>
-                <p className="text-slate-400 text-sm leading-relaxed">{item.detail}</p>
+                <p className="text-gray-500 text-sm leading-relaxed">{item.detail}</p>
               </div>
             ))}
           </div>
@@ -467,16 +467,16 @@ export default function HowToReconstitutePage() {
 
         {/* FAQ */}
         <div className="mb-16">
-          <h2 className="text-2xl font-black text-white mb-6">Reconstitution FAQ</h2>
+          <h2 className="text-2xl font-black text-gray-900 mb-6">Reconstitution FAQ</h2>
           <div className="space-y-3">
             {faqs.map(({ q, a }) => (
               <details key={q} className="glass-card group">
                 <summary className="p-5 cursor-pointer list-none flex items-center justify-between">
-                  <span className="text-white font-semibold text-sm">{q}</span>
+                  <span className="text-gray-900 font-semibold text-sm">{q}</span>
                   <span className="text-neon-green text-lg group-open:rotate-45 transition-transform shrink-0 ml-4">+</span>
                 </summary>
                 <div className="px-5 pb-5">
-                  <p className="text-slate-400 text-sm leading-relaxed">{a}</p>
+                  <p className="text-gray-500 text-sm leading-relaxed">{a}</p>
                 </div>
               </details>
             ))}
@@ -485,8 +485,8 @@ export default function HowToReconstitutePage() {
 
         {/* CTA */}
         <div className="text-center p-10 glass-card">
-          <h2 className="text-2xl font-bold text-white mb-3">Get COA-Verified Peptides & Supplies</h2>
-          <p className="text-slate-400 mb-6">BPC-157, TB-500, bacteriostatic water, and insulin syringes — everything you need.</p>
+          <h2 className="text-2xl font-bold text-gray-900 mb-3">Get COA-Verified Peptides & Supplies</h2>
+          <p className="text-gray-500 mb-6">BPC-157, TB-500, bacteriostatic water, and insulin syringes — everything you need.</p>
           <div className="flex flex-wrap gap-4 justify-center">
             <a href={SOURCE_URL} target="_blank" rel="nofollow noopener noreferrer"
               className="btn-cta text-base px-8 py-4 flex items-center gap-2">

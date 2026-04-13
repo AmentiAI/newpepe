@@ -94,10 +94,10 @@ export default function PeptidesForWeightLossPage() {
             <Flame className="w-4 h-4 text-rose-400" />
             <span className="text-rose-400 text-sm font-semibold tracking-wide">WEIGHT LOSS PEPTIDE GUIDE 2026</span>
           </div>
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white leading-tight mb-6">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-gray-900 leading-tight mb-6">
             Best Peptides for<br /><span className="text-rose-400">Weight Loss</span>
           </h1>
-          <p className="text-slate-300 text-xl leading-relaxed mb-8 max-w-3xl">
+          <p className="text-gray-600 text-xl leading-relaxed mb-8 max-w-3xl">
             From GLP-1 drugs losing 25% body weight in clinical trials to GH peptides that burn fat while building muscle —
             the peptide landscape for weight loss in 2026 is more powerful than ever. Here&apos;s the complete comparison.
           </p>
@@ -105,7 +105,7 @@ export default function PeptidesForWeightLossPage() {
             {[{ num: '29%', label: 'Max body weight lost (retatrutide trial)' }, { num: '4', label: 'GLP-1 products in catalog' }, { num: '22%', label: 'Tirzepatide average (SURMOUNT-5)' }, { num: '15%', label: 'Semaglutide average (STEP trial)' }].map(s => (
               <div key={s.num} className="glass-card p-4 text-center">
                 <div className="text-2xl font-black text-rose-400">{s.num}</div>
-                <div className="text-slate-500 text-xs mt-1">{s.label}</div>
+                <div className="text-gray-500 text-xs mt-1">{s.label}</div>
               </div>
             ))}
           </div>
@@ -115,8 +115,8 @@ export default function PeptidesForWeightLossPage() {
       {/* Weight Loss Selector */}
       <section className="py-16 max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-10">
-          <h2 className="text-3xl font-black text-white mb-3">Find Your Peptide Protocol</h2>
-          <p className="text-slate-400 max-w-xl mx-auto">
+          <h2 className="text-3xl font-black text-gray-900 mb-3">Find Your Peptide Protocol</h2>
+          <p className="text-gray-500 max-w-xl mx-auto">
             Answer 4 quick questions to get a personalized recommendation based on your goal, experience, and preferences.
           </p>
         </div>
@@ -125,8 +125,8 @@ export default function PeptidesForWeightLossPage() {
 
       {/* Mechanism overview */}
       <section className="py-16 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-black text-white mb-3">Three Ways Peptides Drive Fat Loss</h2>
-        <p className="text-slate-400 mb-10">Not all weight loss peptides work the same way. Understanding the mechanism helps you choose the right one.</p>
+        <h2 className="text-3xl font-black text-gray-900 mb-3">Three Ways Peptides Drive Fat Loss</h2>
+        <p className="text-gray-500 mb-10">Not all weight loss peptides work the same way. Understanding the mechanism helps you choose the right one.</p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
           {[
             { num: '01', title: 'Appetite Suppression', color: 'rose', desc: 'GLP-1 receptor agonists (semaglutide, tirzepatide, retatrutide) suppress hunger hormones and slow gastric emptying — dramatically reducing caloric intake without willpower.' },
@@ -135,8 +135,8 @@ export default function PeptidesForWeightLossPage() {
           ].map(c => (
             <div key={c.num} className="glass-card p-6">
               <div className={`text-xs font-bold tracking-widest mb-2 ${c.color === 'rose' ? 'text-rose-400' : c.color === 'blue' ? 'text-blue-400' : 'text-emerald-400'}`}>{c.num}</div>
-              <h3 className="text-white font-bold text-lg mb-3">{c.title}</h3>
-              <p className="text-slate-400 text-sm leading-relaxed">{c.desc}</p>
+              <h3 className="text-gray-900 font-bold text-lg mb-3">{c.title}</h3>
+              <p className="text-gray-500 text-sm leading-relaxed">{c.desc}</p>
             </div>
           ))}
         </div>
@@ -149,14 +149,14 @@ export default function PeptidesForWeightLossPage() {
             <TrendingDown className="w-4 h-4 text-rose-400" />
             <span className="text-rose-400 text-sm font-semibold">DEEP COMPARISON</span>
           </div>
-          <h2 className="text-3xl font-black text-white mb-8">GLP-1 Peptides vs. GH Peptides: The Full Comparison</h2>
+          <h2 className="text-3xl font-black text-gray-900 mb-8">GLP-1 Peptides vs. GH Peptides: The Full Comparison</h2>
 
-          <div className="space-y-6 text-slate-300 leading-relaxed">
+          <div className="space-y-6 text-gray-600 leading-relaxed">
             <p>
               The two major categories of weight loss peptides work through fundamentally different mechanisms, produce different kinds of fat loss, and suit different types of people. Understanding this distinction is the most important decision in building a peptide fat loss protocol.
             </p>
 
-            <h3 className="text-white font-bold text-xl mt-8 mb-3">How GLP-1 Peptides Work</h3>
+            <h3 className="text-gray-900 font-bold text-xl mt-8 mb-3">How GLP-1 Peptides Work</h3>
             <p>
               GLP-1 (glucagon-like peptide-1) is a hormone naturally secreted by L-cells in the small intestine in response to food consumption. It signals the pancreas to release insulin, tells the stomach to slow gastric emptying, and — most critically for weight loss — activates satiety receptors in the hypothalamus to suppress appetite. GLP-1 receptor agonists (semaglutide, tirzepatide, retatrutide) mimic this hormone at supraphysiological levels, creating a persistent state of reduced appetite and improved insulin signaling.
             </p>
@@ -164,7 +164,7 @@ export default function PeptidesForWeightLossPage() {
               The mechanism of action for tirzepatide expands this further: it also agonizes GIP (glucose-dependent insulinotropic polypeptide) receptors, which independently improve insulin secretion, reduce glucagon (the fat-storing signal), and appear to enhance the GLP-1 effect synergistically. Retatrutide adds glucagon receptor agonism to further increase metabolic rate, explaining its superior weight loss outcomes in Phase II trials.
             </p>
 
-            <h3 className="text-white font-bold text-xl mt-8 mb-3">How GH Peptides Work</h3>
+            <h3 className="text-gray-900 font-bold text-xl mt-8 mb-3">How GH Peptides Work</h3>
             <p>
               Growth hormone secretagogues (CJC-1295, Ipamorelin, GHRP-6) work by stimulating the pituitary gland to produce more of your own growth hormone during natural secretion pulses — primarily during deep sleep. GH is directly lipolytic: it binds GH receptors on adipocytes and activates hormone-sensitive lipase, which hydrolyzes stored triglycerides into free fatty acids available for oxidation. Simultaneously, GH signals the liver to produce IGF-1, which drives muscle protein synthesis and satellite cell activation.
             </p>
@@ -172,7 +172,7 @@ export default function PeptidesForWeightLossPage() {
               The fat loss from GH peptides is qualitatively different from GLP-1 fat loss. GLP-1s produce fat loss through reduced caloric intake (appetite suppression). GH peptides produce fat loss through increased fat oxidation — your body burns more fat even at the same caloric intake. This distinction matters enormously for body composition: GH-driven fat loss preferentially removes visceral and subcutaneous fat while adding lean muscle, producing a very different aesthetic result than GLP-1 monotherapy.
             </p>
 
-            <h3 className="text-white font-bold text-xl mt-8 mb-3">Who Needs Which</h3>
+            <h3 className="text-gray-900 font-bold text-xl mt-8 mb-3">Who Needs Which</h3>
             <div className="space-y-3">
               {[
                 { type: 'Obese / High Body Fat (30%+ men, 38%+ women)', rec: 'Start with GLP-1 class', reason: 'The volume of fat to lose exceeds what GH peptides can realistically achieve in a reasonable timeline. GLP-1s produce dramatic caloric restriction that accelerates fat loss significantly. Add CJC/Ipa after reaching 25–28% BF to protect lean mass and improve sleep.' },
@@ -180,14 +180,14 @@ export default function PeptidesForWeightLossPage() {
                 { type: 'Metabolic Syndrome / Pre-Diabetes', rec: 'GLP-1 first, then add GH peptides', reason: 'Metabolic syndrome and insulin resistance respond immediately and powerfully to GLP-1 agonists — improving glucose metabolism, reducing visceral fat, and dramatically improving cardiovascular risk markers. After metabolic normalization (3–6 months), adding GH secretagogues enhances body composition further.' },
               ].map((item) => (
                 <div key={item.type} className="rounded-xl p-5" style={{ background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.08)' }}>
-                  <div className="text-white font-bold text-sm mb-1">{item.type}</div>
+                  <div className="text-gray-900 font-bold text-sm mb-1">{item.type}</div>
                   <div className="text-rose-400 text-xs font-semibold mb-2">→ {item.rec}</div>
-                  <p className="text-slate-400 text-xs leading-relaxed">{item.reason}</p>
+                  <p className="text-gray-500 text-xs leading-relaxed">{item.reason}</p>
                 </div>
               ))}
             </div>
 
-            <h3 className="text-white font-bold text-xl mt-8 mb-3">The Ultimate Cut: Stacking GLP-1 + GH Peptides</h3>
+            <h3 className="text-gray-900 font-bold text-xl mt-8 mb-3">The Ultimate Cut: Stacking GLP-1 + GH Peptides</h3>
             <p>
               The most sophisticated fat loss protocol combines both categories. Semaglutide or tirzepatide drives the caloric deficit through appetite suppression. CJC-1295/Ipamorelin protects lean mass and improves sleep quality. IGF-1 LR3 added in 4-week cycles provides direct anti-catabolic signaling. MOTS-c rounds out the stack with metabolic optimization via AMPK activation.
             </p>
@@ -195,12 +195,12 @@ export default function PeptidesForWeightLossPage() {
               This combination addresses every pathway of fat loss simultaneously — caloric reduction, fat mobilization, muscle preservation, sleep quality, and metabolic rate — and produces significantly superior results to either category alone. The main limitation is complexity and cost: running 3–4 peptides simultaneously requires more knowledge and higher monthly spend (~$200–350/month combined).
             </p>
 
-            <h3 className="text-white font-bold text-xl mt-8 mb-3">Cost and Side Effect Comparison</h3>
+            <h3 className="text-gray-900 font-bold text-xl mt-8 mb-3">Cost and Side Effect Comparison</h3>
             <div className="overflow-x-auto rounded-xl" style={{ border: '1px solid rgba(255,255,255,0.08)' }}>
               <table className="w-full text-xs">
                 <thead>
                   <tr style={{ background: 'rgba(255,255,255,0.03)' }}>
-                    <th className="text-left py-3 px-4 text-slate-400 font-semibold">Category</th>
+                    <th className="text-left py-3 px-4 text-gray-500 font-semibold">Category</th>
                     <th className="text-left py-3 px-4 text-rose-400 font-semibold">GLP-1 Peptides</th>
                     <th className="text-left py-3 px-4 text-blue-400 font-semibold">GH Peptides</th>
                   </tr>
@@ -215,9 +215,9 @@ export default function PeptidesForWeightLossPage() {
                     { label: 'Sleep effects', glp: 'Neutral to slightly positive', gh: 'Dramatically positive (deep sleep improvement)' },
                   ].map((row, i) => (
                     <tr key={row.label} style={{ borderTop: '1px solid rgba(255,255,255,0.04)', background: i % 2 === 0 ? 'rgba(255,255,255,0.01)' : 'transparent' }}>
-                      <td className="py-2.5 px-4 text-slate-400 font-medium">{row.label}</td>
-                      <td className="py-2.5 px-4 text-slate-300">{row.glp}</td>
-                      <td className="py-2.5 px-4 text-slate-300">{row.gh}</td>
+                      <td className="py-2.5 px-4 text-gray-500 font-medium">{row.label}</td>
+                      <td className="py-2.5 px-4 text-gray-600">{row.glp}</td>
+                      <td className="py-2.5 px-4 text-gray-600">{row.gh}</td>
                     </tr>
                   ))}
                 </tbody>
@@ -233,16 +233,16 @@ export default function PeptidesForWeightLossPage() {
           <Zap className="w-4 h-4 text-emerald-400" />
           <span className="text-emerald-400 text-sm font-semibold">MUSCLE PROTECTION</span>
         </div>
-        <h2 className="text-3xl font-black text-white mb-8">Fat Loss Without Muscle Loss: The Protein Protocol</h2>
+        <h2 className="text-3xl font-black text-gray-900 mb-8">Fat Loss Without Muscle Loss: The Protein Protocol</h2>
 
         <div className="space-y-5">
-          <p className="text-slate-300 leading-relaxed">
+          <p className="text-gray-600 leading-relaxed">
             The single biggest mistake in peptide-assisted weight loss is neglecting protein intake. Research consistently shows that 25–40% of total weight loss on GLP-1 monotherapy is lean mass, not fat. At high deficit levels, this means losing significant muscle alongside fat — producing a &quot;smaller but softer&quot; result rather than the lean, defined physique most people want.
           </p>
 
           <div className="glass-card p-6">
-            <h3 className="text-white font-bold text-lg mb-4">Minimum Protein Requirements During Fat Loss</h3>
-            <p className="text-slate-300 text-sm leading-relaxed mb-4">
+            <h3 className="text-gray-900 font-bold text-lg mb-4">Minimum Protein Requirements During Fat Loss</h3>
+            <p className="text-gray-600 text-sm leading-relaxed mb-4">
               The research consensus for muscle preservation during caloric deficit is 1.6–2.2g of protein per kg of bodyweight (0.73–1.0g per lb). This range represents what muscle tissue requires to prevent breakdown when calories are restricted. At the higher end of this range (2.0–2.2g/kg), studies show near-complete muscle preservation even during aggressive deficits of 500–750 kcal/day.
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
@@ -253,25 +253,25 @@ export default function PeptidesForWeightLossPage() {
               ].map((p) => (
                 <div key={p.weight} className="rounded-lg p-3" style={{ background: 'rgba(16,185,129,0.05)', border: '1px solid rgba(16,185,129,0.15)' }}>
                   <div className="text-emerald-400 font-bold text-sm">{p.weight}</div>
-                  <div className="text-white font-black text-lg">{p.protein}</div>
-                  <div className="text-slate-500 text-xs">{p.note}</div>
+                  <div className="text-gray-900 font-black text-lg">{p.protein}</div>
+                  <div className="text-gray-500 text-xs">{p.note}</div>
                 </div>
               ))}
             </div>
           </div>
 
           <div className="glass-card p-6">
-            <h3 className="text-white font-bold text-lg mb-3">Why Peptides Reduce the Muscle-Sparing Protein Requirement</h3>
-            <p className="text-slate-300 text-sm leading-relaxed">
+            <h3 className="text-gray-900 font-bold text-lg mb-3">Why Peptides Reduce the Muscle-Sparing Protein Requirement</h3>
+            <p className="text-gray-600 text-sm leading-relaxed">
               GH peptides (CJC-1295/Ipamorelin) directly reduce the protein intake needed to preserve muscle during a cut. Growth hormone is anti-catabolic — it suppresses muscle protein breakdown at the signaling level by reducing the catabolic cytokines (myostatin, atrogin-1, MuRF1) that break down muscle tissue during caloric restriction. Users combining GH peptides with GLP-1s can maintain muscle at the lower end of the protein range (1.6g/kg) rather than requiring the higher end (2.2g/kg), making adherence significantly easier.
             </p>
           </div>
 
           <div className="glass-card p-6">
-            <h3 className="text-white font-bold text-lg mb-3">Protein Sources and Timing</h3>
+            <h3 className="text-gray-900 font-bold text-lg mb-3">Protein Sources and Timing</h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
-                <div className="text-white font-semibold text-sm mb-2">Best Protein Sources on GLP-1</div>
+                <div className="text-gray-900 font-semibold text-sm mb-2">Best Protein Sources on GLP-1</div>
                 <ul className="space-y-1.5">
                   {[
                     'Eggs and egg whites (easy to eat when nauseous)',
@@ -280,7 +280,7 @@ export default function PeptidesForWeightLossPage() {
                     'Chicken breast, fish (lean, high protein density)',
                     'Cottage cheese (slow-digesting, filling)',
                   ].map((s) => (
-                    <li key={s} className="flex items-start gap-2 text-xs text-slate-300">
+                    <li key={s} className="flex items-start gap-2 text-xs text-gray-600">
                       <CheckCircle className="w-3 h-3 text-emerald-400 shrink-0 mt-0.5" />
                       {s}
                     </li>
@@ -288,7 +288,7 @@ export default function PeptidesForWeightLossPage() {
                 </ul>
               </div>
               <div>
-                <div className="text-white font-semibold text-sm mb-2">Timing Priorities</div>
+                <div className="text-gray-900 font-semibold text-sm mb-2">Timing Priorities</div>
                 <ul className="space-y-1.5">
                   {[
                     'Morning (post-injection GH window): 40–60g protein',
@@ -297,7 +297,7 @@ export default function PeptidesForWeightLossPage() {
                     'Distribute remaining protein across 2–3 other meals',
                     'Total: 4–5 protein feedings per day',
                   ].map((s) => (
-                    <li key={s} className="flex items-start gap-2 text-xs text-slate-300">
+                    <li key={s} className="flex items-start gap-2 text-xs text-gray-600">
                       <CheckCircle className="w-3 h-3 text-blue-400 shrink-0 mt-0.5" />
                       {s}
                     </li>
@@ -308,8 +308,8 @@ export default function PeptidesForWeightLossPage() {
           </div>
 
           <div className="glass-card p-6">
-            <h3 className="text-white font-bold text-lg mb-3">Training During a Peptide Cut</h3>
-            <p className="text-slate-300 text-sm leading-relaxed">
+            <h3 className="text-gray-900 font-bold text-lg mb-3">Training During a Peptide Cut</h3>
+            <p className="text-gray-600 text-sm leading-relaxed">
               Resistance training is non-negotiable for muscle preservation during fat loss — particularly on GLP-1 protocols. Mechanical load signals to muscle tissue that it is needed, which activates anti-catabolic pathways that override the muscle-breakdown signals from caloric restriction. Even 2–3 days per week of compound resistance training (squats, deadlifts, rows, presses) is sufficient to preserve the vast majority of lean mass during aggressive weight loss. Combining this with adequate protein and the anti-catabolic signaling of GH peptides produces the best possible body composition outcome during fat loss.
             </p>
           </div>
@@ -323,22 +323,22 @@ export default function PeptidesForWeightLossPage() {
             <Flame className="w-4 h-4 text-amber-400" />
             <span className="text-amber-400 text-sm font-semibold">TROUBLESHOOTING</span>
           </div>
-          <h2 className="text-3xl font-black text-white mb-8">The Weight Loss Plateau Problem</h2>
+          <h2 className="text-3xl font-black text-gray-900 mb-8">The Weight Loss Plateau Problem</h2>
 
-          <div className="space-y-6 text-slate-300 leading-relaxed">
+          <div className="space-y-6 text-gray-600 leading-relaxed">
             <p>
               Weight loss plateaus are almost universal in long-term fat loss protocols — including peptide-assisted ones. Understanding what a plateau actually represents versus a temporary fluctuation is critical before making any protocol changes.
             </p>
 
             <div className="glass-card p-6">
-              <h3 className="text-white font-bold text-lg mb-3">True Plateau vs. Temporary Fluctuation</h3>
-              <p className="text-slate-300 text-sm leading-relaxed mb-4">
+              <h3 className="text-gray-900 font-bold text-lg mb-3">True Plateau vs. Temporary Fluctuation</h3>
+              <p className="text-gray-600 text-sm leading-relaxed mb-4">
                 A true plateau is 3–4 weeks of no progress in body weight AND no change in body composition measurements (waist, hip, limb circumference). A temporary fluctuation is 1–2 weeks of scale stagnation that often accompanies muscle gain (which is denser than fat), water retention from higher carbohydrate intake, or hormonal fluctuations. The mistake is treating a 2-week scale stall as a plateau and making unnecessary protocol changes.
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 <div className="rounded-lg p-3" style={{ background: 'rgba(16,185,129,0.05)', border: '1px solid rgba(16,185,129,0.15)' }}>
                   <div className="text-emerald-400 font-bold text-sm mb-2">Temporary Fluctuation</div>
-                  <ul className="space-y-1 text-xs text-slate-400">
+                  <ul className="space-y-1 text-xs text-gray-500">
                     <li>• Scale weight stagnant 1–2 weeks</li>
                     <li>• Measurements still improving</li>
                     <li>• Clothes fitting better</li>
@@ -348,7 +348,7 @@ export default function PeptidesForWeightLossPage() {
                 </div>
                 <div className="rounded-lg p-3" style={{ background: 'rgba(245,158,11,0.05)', border: '1px solid rgba(245,158,11,0.15)' }}>
                   <div className="text-amber-400 font-bold text-sm mb-2">True Plateau</div>
-                  <ul className="space-y-1 text-xs text-slate-400">
+                  <ul className="space-y-1 text-xs text-gray-500">
                     <li>• No weight change 3–4+ weeks</li>
                     <li>• Measurements also stagnant</li>
                     <li>• Diet and training consistent</li>
@@ -360,7 +360,7 @@ export default function PeptidesForWeightLossPage() {
             </div>
 
             <div className="glass-card p-6">
-              <h3 className="text-white font-bold text-lg mb-3">Plateau-Breaking Strategies</h3>
+              <h3 className="text-gray-900 font-bold text-lg mb-3">Plateau-Breaking Strategies</h3>
               <div className="space-y-3">
                 {[
                   { strategy: 'GLP-1 Dose Escalation', detail: 'If on semaglutide or tirzepatide, titrate up by one dose level. GLP-1 appetite suppression effect partially wanes at a given dose over time as receptor sensitivity adapts — moving to the next dose tier restores the caloric deficit.', priority: 'First attempt' },
@@ -371,10 +371,10 @@ export default function PeptidesForWeightLossPage() {
                 ].map((item) => (
                   <div key={item.strategy} className="rounded-xl p-4" style={{ background: 'rgba(255,255,255,0.02)', border: '1px solid rgba(255,255,255,0.06)' }}>
                     <div className="flex items-center justify-between mb-1">
-                      <div className="text-white font-bold text-sm">{item.strategy}</div>
+                      <div className="text-gray-900 font-bold text-sm">{item.strategy}</div>
                       <span className="text-xs px-2 py-0.5 rounded-full bg-amber-500/10 text-amber-400 border border-amber-500/20">{item.priority}</span>
                     </div>
-                    <p className="text-slate-400 text-xs leading-relaxed">{item.detail}</p>
+                    <p className="text-gray-500 text-xs leading-relaxed">{item.detail}</p>
                   </div>
                 ))}
               </div>
@@ -390,21 +390,21 @@ export default function PeptidesForWeightLossPage() {
             <div className={`inline-flex items-center gap-2 rounded-full px-3 py-1.5 mb-4 ${cat.color === 'rose' ? 'bg-rose-500/10 border border-rose-500/20' : 'bg-blue-500/10 border border-blue-500/20'}`}>
               <span className={`text-sm font-bold ${cat.color === 'rose' ? 'text-rose-400' : 'text-blue-400'}`}>{cat.name.toUpperCase()}</span>
             </div>
-            <h2 className="text-2xl font-black text-white mb-2">{cat.name}</h2>
+            <h2 className="text-2xl font-black text-gray-900 mb-2">{cat.name}</h2>
             <p className={`font-semibold mb-4 ${cat.color === 'rose' ? 'text-rose-400' : 'text-blue-400'}`}>{cat.tagline}</p>
-            <p className="text-slate-400 mb-8 max-w-3xl text-sm leading-relaxed">{cat.mechanism}</p>
+            <p className="text-gray-500 mb-8 max-w-3xl text-sm leading-relaxed">{cat.mechanism}</p>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
               {cat.peptides.map(p => (
                 <Link key={p.name} href={p.href} className="glass-card p-5 hover:border-white/20 transition-colors group">
-                  <div className="text-white font-bold mb-2 group-hover:text-emerald-400 transition-colors">{p.name}</div>
+                  <div className="text-gray-900 font-bold mb-2 group-hover:text-emerald-400 transition-colors">{p.name}</div>
                   <div className={`text-2xl font-black mb-1 ${cat.color === 'rose' ? 'text-rose-400' : 'text-blue-400'}`}>{p.result}</div>
-                  <div className="text-slate-500 text-xs">{p.time}</div>
+                  <div className="text-gray-500 text-xs">{p.time}</div>
                 </Link>
               ))}
             </div>
             <div className="flex flex-wrap gap-6 text-sm">
-              <div><span className="text-emerald-400 font-semibold">Best for: </span><span className="text-slate-400">{cat.bestFor}</span></div>
-              <div><span className="text-amber-400 font-semibold">Downsides: </span><span className="text-slate-400">{cat.downsides}</span></div>
+              <div><span className="text-emerald-400 font-semibold">Best for: </span><span className="text-gray-500">{cat.bestFor}</span></div>
+              <div><span className="text-amber-400 font-semibold">Downsides: </span><span className="text-gray-500">{cat.downsides}</span></div>
             </div>
           </div>
         </section>
@@ -412,12 +412,12 @@ export default function PeptidesForWeightLossPage() {
 
       {/* Comparison table */}
       <section className="py-16 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-black text-white mb-8 text-center">GLP-1 vs GH Peptides vs Stack</h2>
+        <h2 className="text-3xl font-black text-gray-900 mb-8 text-center">GLP-1 vs GH Peptides vs Stack</h2>
         <div className="overflow-x-auto rounded-2xl" style={{ border: '1px solid rgba(255,255,255,0.08)' }}>
           <table className="w-full text-sm">
             <thead>
               <tr style={{ background: 'rgba(255,255,255,0.03)' }}>
-                <th className="text-left py-4 px-5 text-slate-400 font-semibold">Feature</th>
+                <th className="text-left py-4 px-5 text-gray-500 font-semibold">Feature</th>
                 <th className="text-left py-4 px-5 text-rose-400 font-bold">GLP-1 Peptides</th>
                 <th className="text-left py-4 px-5 text-blue-400 font-bold">GH Secretagogues</th>
                 <th className="text-left py-4 px-5 text-emerald-400 font-bold">Combined Stack</th>
@@ -426,10 +426,10 @@ export default function PeptidesForWeightLossPage() {
             <tbody>
               {comparisonRows.map((row, i) => (
                 <tr key={row.feature} style={{ borderTop: '1px solid rgba(255,255,255,0.04)', background: i % 2 === 0 ? 'rgba(255,255,255,0.01)' : 'transparent' }}>
-                  <td className="py-3 px-5 text-slate-300 font-medium">{row.feature}</td>
-                  <td className="py-3 px-5 text-slate-400">{row.glp}</td>
-                  <td className="py-3 px-5 text-slate-400">{row.gh}</td>
-                  <td className="py-3 px-5 text-slate-400">{row.stack}</td>
+                  <td className="py-3 px-5 text-gray-600 font-medium">{row.feature}</td>
+                  <td className="py-3 px-5 text-gray-500">{row.glp}</td>
+                  <td className="py-3 px-5 text-gray-500">{row.gh}</td>
+                  <td className="py-3 px-5 text-gray-500">{row.stack}</td>
                 </tr>
               ))}
             </tbody>
@@ -439,15 +439,15 @@ export default function PeptidesForWeightLossPage() {
 
       {/* FAQ */}
       <section className="py-12 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-black text-white mb-8 text-center">Weight Loss Peptide FAQ</h2>
+        <h2 className="text-3xl font-black text-gray-900 mb-8 text-center">Weight Loss Peptide FAQ</h2>
         <div className="space-y-3">
           {allFaqs.map(({ q, a }) => (
             <details key={q} className="glass-card group">
               <summary className="p-5 cursor-pointer list-none flex items-center justify-between">
-                <span className="text-white font-semibold text-sm">{q}</span>
+                <span className="text-gray-900 font-semibold text-sm">{q}</span>
                 <span className="text-rose-400 text-lg group-open:rotate-45 transition-transform shrink-0 ml-4">+</span>
               </summary>
-              <div className="px-5 pb-5"><p className="text-slate-400 text-sm leading-relaxed">{a}</p></div>
+              <div className="px-5 pb-5"><p className="text-gray-500 text-sm leading-relaxed">{a}</p></div>
             </details>
           ))}
         </div>
@@ -456,8 +456,8 @@ export default function PeptidesForWeightLossPage() {
       {/* CTA */}
       <section className="py-16 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="glass-card p-10">
-          <h2 className="text-2xl font-black text-white mb-3">Shop Weight Loss Peptides</h2>
-          <p className="text-slate-400 mb-6">Semaglutide, tirzepatide, retatrutide, CJC-1295 Ipamorelin — COA verified, US domestic.</p>
+          <h2 className="text-2xl font-black text-gray-900 mb-3">Shop Weight Loss Peptides</h2>
+          <p className="text-gray-500 mb-6">Semaglutide, tirzepatide, retatrutide, CJC-1295 Ipamorelin — COA verified, US domestic.</p>
           <div className="flex flex-wrap gap-4 justify-center">
             <a href={SOURCE_URL} target="_blank" rel="nofollow noopener noreferrer" className="btn-cta px-8 py-4 flex items-center gap-2">View <ArrowRight className="w-5 h-5" /></a>
             <Link href="/semaglutide-vs-tirzepatide-vs-retatrutide" className="btn-secondary px-8 py-4">Compare GLP-1s</Link>

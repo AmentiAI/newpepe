@@ -249,7 +249,7 @@ const faqs = [
 
 export default function Snap8AntiWrinklePage() {
   return (
-    <main className="bg-dark-900 min-h-screen text-slate-200">
+    <main className="bg-dark-900 min-h-screen text-gray-700">
       {/* Hero */}
       <section className="py-16 bg-gradient-to-b from-dark-800 to-dark-900 border-b border-white/5">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -257,11 +257,11 @@ export default function Snap8AntiWrinklePage() {
             <span className="text-xs font-semibold uppercase tracking-widest text-indigo-400 mb-4 block">
               Anti-Wrinkle Neuropeptide
             </span>
-            <h1 className="text-4xl sm:text-5xl font-extrabold text-white mb-6 leading-tight">
+            <h1 className="text-4xl sm:text-5xl font-extrabold text-gray-900 mb-6 leading-tight">
               SNAP-8: The SNARE-Inhibiting{' '}
               <span className="text-neon-green">Botox Alternative</span>
             </h1>
-            <p className="text-xl text-slate-300 mb-8 leading-relaxed">
+            <p className="text-xl text-gray-600 mb-8 leading-relaxed">
               SNAP-8 (acetyl glutamyl heptapeptide-3) is an 8 amino acid neuropeptide that targets the same molecular machinery as Botox — the SNARE complex — without neurotoxin, injection, or paralysis risk. Clinical studies show up to 63% reduction in wrinkle depth at 10% topical concentration. This guide covers the mechanism, application zones, formulation, and how to combine SNAP-8 with GHK-Cu for superior results.
             </p>
             <a
@@ -279,8 +279,8 @@ export default function Snap8AntiWrinklePage() {
       {/* SNARE Mechanism */}
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-white mb-4">How SNAP-8 Relaxes Wrinkles: The SNARE Mechanism</h2>
-          <p className="text-slate-400 mb-10 max-w-2xl">
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">How SNAP-8 Relaxes Wrinkles: The SNARE Mechanism</h2>
+          <p className="text-gray-500 mb-10 max-w-2xl">
             Understanding the SNARE complex explains why SNAP-8 works — and why it is both effective and safe compared to neurotoxin approaches.
           </p>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
@@ -288,7 +288,7 @@ export default function Snap8AntiWrinklePage() {
               <div key={step.step} className="bg-dark-800/60 border border-white/10 rounded-xl p-5">
                 <div className={`text-3xl font-black mb-3 ${step.color}`}>{step.step}</div>
                 <h3 className={`font-bold mb-2 ${step.color}`}>{step.title}</h3>
-                <p className="text-sm text-slate-400 leading-relaxed">{step.desc}</p>
+                <p className="text-sm text-gray-500 leading-relaxed">{step.desc}</p>
                 {step.step === 4 && (
                   <div className={`mt-3 text-xs px-2 py-1 rounded border ${step.badge}`}>
                     SNAP-8 point of action
@@ -303,15 +303,15 @@ export default function Snap8AntiWrinklePage() {
       {/* vs Botox vs Argireline */}
       <section className="py-16 bg-dark-800/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-white mb-4">SNAP-8 vs Botox vs Argireline</h2>
-          <p className="text-slate-400 mb-8 max-w-2xl">
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">SNAP-8 vs Botox vs Argireline</h2>
+          <p className="text-gray-500 mb-8 max-w-2xl">
             A direct comparison of the three SNARE-targeting approaches across eight critical attributes.
           </p>
           <div className="overflow-x-auto">
             <table className="w-full min-w-[640px]">
               <thead>
                 <tr className="border-b border-white/10">
-                  <th className="text-left py-3 px-4 text-xs font-semibold uppercase tracking-wider text-slate-500">Attribute</th>
+                  <th className="text-left py-3 px-4 text-xs font-semibold uppercase tracking-wider text-gray-500">Attribute</th>
                   <th className="text-left py-3 px-4 text-xs font-semibold uppercase tracking-wider text-rose-400">Botox</th>
                   <th className="text-left py-3 px-4 text-xs font-semibold uppercase tracking-wider text-amber-400">Argireline</th>
                   <th className="text-left py-3 px-4 text-xs font-semibold uppercase tracking-wider text-indigo-400">SNAP-8</th>
@@ -320,9 +320,9 @@ export default function Snap8AntiWrinklePage() {
               <tbody>
                 {vsComparison.map((row, i) => (
                   <tr key={row.attribute} className={`border-b border-white/5 ${i % 2 === 0 ? 'bg-dark-800/20' : ''}`}>
-                    <td className="py-3 px-4 text-sm font-medium text-slate-300">{row.attribute}</td>
-                    <td className="py-3 px-4 text-sm text-slate-400">{row.botox}</td>
-                    <td className="py-3 px-4 text-sm text-slate-400">{row.argireline}</td>
+                    <td className="py-3 px-4 text-sm font-medium text-gray-600">{row.attribute}</td>
+                    <td className="py-3 px-4 text-sm text-gray-500">{row.botox}</td>
+                    <td className="py-3 px-4 text-sm text-gray-500">{row.argireline}</td>
                     <td className="py-3 px-4 text-sm text-indigo-300">{row.snap8}</td>
                   </tr>
                 ))}
@@ -335,8 +335,8 @@ export default function Snap8AntiWrinklePage() {
       {/* Wrinkle Zone Selector */}
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-white mb-4">Zone-Specific Protocols</h2>
-          <p className="text-slate-400 mb-8 max-w-2xl">
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">Zone-Specific Protocols</h2>
+          <p className="text-gray-500 mb-8 max-w-2xl">
             Different facial zones have different muscle structures, skin thickness, and wrinkle types. The selector below generates targeted protocols for each zone based on your wrinkle severity.
           </p>
           <WrinkleTargetSelector />
@@ -346,19 +346,19 @@ export default function Snap8AntiWrinklePage() {
       {/* Application Zones Overview */}
       <section className="py-16 bg-dark-800/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-white mb-4">Application Zones: Full Reference</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">Application Zones: Full Reference</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {applicationZones.map((zone) => (
               <div key={zone.zone} className={`rounded-xl border bg-dark-800/40 p-5 ${zone.color}`}>
                 <div className="flex items-center justify-between mb-3">
-                  <h3 className="font-bold text-white">{zone.zone}</h3>
-                  <span className={`text-xs px-2 py-0.5 rounded-full ${zone.priority === 'High' ? 'bg-indigo-500/20 text-indigo-300 border border-indigo-500/30' : 'bg-slate-500/20 text-slate-400 border border-slate-500/30'}`}>
+                  <h3 className="font-bold text-gray-900">{zone.zone}</h3>
+                  <span className={`text-xs px-2 py-0.5 rounded-full ${zone.priority === 'High' ? 'bg-indigo-500/20 text-indigo-300 border border-indigo-500/30' : 'bg-slate-500/20 text-gray-500 border border-slate-500/30'}`}>
                     {zone.priority} Priority
                   </span>
                 </div>
-                <p className="text-xs text-slate-500 mb-1">Wrinkle Type: {zone.lines}</p>
-                <p className="text-xs text-slate-500 mb-3">Muscle: {zone.muscle}</p>
-                <p className="text-sm text-slate-300 leading-relaxed">{zone.technique}</p>
+                <p className="text-xs text-gray-500 mb-1">Wrinkle Type: {zone.lines}</p>
+                <p className="text-xs text-gray-500 mb-3">Muscle: {zone.muscle}</p>
+                <p className="text-sm text-gray-600 leading-relaxed">{zone.technique}</p>
               </div>
             ))}
           </div>
@@ -368,25 +368,25 @@ export default function Snap8AntiWrinklePage() {
       {/* Formulation Guide */}
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-white mb-4">Formulation Guide: Building Your SNAP-8 Serum</h2>
-          <p className="text-slate-400 mb-8 max-w-2xl">
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">Formulation Guide: Building Your SNAP-8 Serum</h2>
+          <p className="text-gray-500 mb-8 max-w-2xl">
             SNAP-8 can be formulated into an effective serum with minimal components. The carrier choice significantly affects penetration and cosmetic feel.
           </p>
           <div className="grid sm:grid-cols-2 gap-5">
             {formulation.map((f) => (
               <div key={f.component} className="bg-dark-800/60 border border-white/10 rounded-xl p-5">
                 <div className="flex items-center justify-between mb-2">
-                  <h3 className="font-semibold text-white">{f.component}</h3>
+                  <h3 className="font-semibold text-gray-900">{f.component}</h3>
                   <span className="text-xs text-indigo-400 font-mono">{f.concentration}</span>
                 </div>
-                <p className="text-sm text-slate-400 leading-relaxed">{f.note}</p>
+                <p className="text-sm text-gray-500 leading-relaxed">{f.note}</p>
               </div>
             ))}
           </div>
 
           <div className="mt-8 bg-indigo-900/20 border border-indigo-500/20 rounded-xl p-6">
-            <h3 className="font-bold text-white mb-3">GHK-Cu + SNAP-8 Combination: The Synergistic Anti-Wrinkle Stack</h3>
-            <p className="text-slate-300 leading-relaxed mb-4">
+            <h3 className="font-bold text-gray-900 mb-3">GHK-Cu + SNAP-8 Combination: The Synergistic Anti-Wrinkle Stack</h3>
+            <p className="text-gray-600 leading-relaxed mb-4">
               SNAP-8 addresses wrinkle formation (muscle contraction driving expression lines); GHK-Cu addresses the collagen deficit beneath the wrinkle. These mechanisms are not just additive — they are synergistic. SNAP-8 reduces the mechanical stress on the collagen matrix; GHK-Cu rebuilds it. GHK-Cu&apos;s collagen synthesis produces gains that persist after peptide cessation; SNAP-8&apos;s muscle relaxation effect makes those structural gains more visible.
             </p>
             <div className="grid sm:grid-cols-2 gap-3 text-sm">
@@ -398,7 +398,7 @@ export default function Snap8AntiWrinklePage() {
                 'AM: both peptides; PM: GHK-Cu focus',
                 'Timeline: expect 8–10 weeks for synergistic full effect',
               ].map((step) => (
-                <div key={step} className="flex items-start gap-2 text-slate-300">
+                <div key={step} className="flex items-start gap-2 text-gray-600">
                   <CheckCircle className="w-4 h-4 text-indigo-400 flex-shrink-0 mt-0.5" />
                   {step}
                 </div>
@@ -411,15 +411,15 @@ export default function Snap8AntiWrinklePage() {
       {/* Timeline */}
       <section className="py-16 bg-dark-800/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-white mb-10">SNAP-8 Results Timeline</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-10">SNAP-8 Results Timeline</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
             {timeline.map((t) => (
               <div key={t.period} className={`rounded-xl border bg-dark-800/40 p-5 ${t.color}`}>
-                <h3 className="font-bold text-white mb-1">{t.period}</h3>
+                <h3 className="font-bold text-gray-900 mb-1">{t.period}</h3>
                 <p className="text-xs text-indigo-400 font-semibold mb-3">{t.title}</p>
                 <ul className="space-y-2">
                   {t.changes.map((c, i) => (
-                    <li key={i} className="text-xs text-slate-400 flex items-start gap-2">
+                    <li key={i} className="text-xs text-gray-500 flex items-start gap-2">
                       <span className="text-indigo-400 mt-0.5">•</span>
                       {c}
                     </li>
@@ -434,7 +434,7 @@ export default function Snap8AntiWrinklePage() {
       {/* Who Benefits Most */}
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-white mb-6">Who Benefits Most from SNAP-8</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Who Benefits Most from SNAP-8</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {[
               { group: 'Expression Line Priority', desc: 'Dynamic wrinkles (those that appear with facial movement) respond most directly to SNAP-8\'s muscle relaxation mechanism. Forehead lines, crow\'s feet, and frown lines in people who are expressively active are the prime candidates.', color: 'border-indigo-500/30' },
@@ -445,8 +445,8 @@ export default function Snap8AntiWrinklePage() {
               { group: 'Prevention-Oriented', desc: 'Using SNAP-8 at lower concentrations (5%) from early 30s reduces the cumulative mechanical damage from repeated muscle contraction — preventing deep lines from forming.', color: 'border-rose-500/30' },
             ].map((g) => (
               <div key={g.group} className={`rounded-xl border bg-dark-800/40 p-5 ${g.color}`}>
-                <h3 className="font-bold text-white mb-2">{g.group}</h3>
-                <p className="text-sm text-slate-400 leading-relaxed">{g.desc}</p>
+                <h3 className="font-bold text-gray-900 mb-2">{g.group}</h3>
+                <p className="text-sm text-gray-500 leading-relaxed">{g.desc}</p>
               </div>
             ))}
           </div>
@@ -456,15 +456,15 @@ export default function Snap8AntiWrinklePage() {
       {/* FAQ */}
       <section className="py-16 bg-dark-800/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-white mb-10">Frequently Asked Questions</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-10">Frequently Asked Questions</h2>
           <div className="grid md:grid-cols-2 gap-6">
             {faqs.map((faq, i) => (
               <div key={i} className="bg-dark-800/60 border border-white/10 rounded-xl p-5">
-                <h3 className="font-semibold text-white mb-2 flex items-start gap-2">
+                <h3 className="font-semibold text-gray-900 mb-2 flex items-start gap-2">
                   <FlaskConical className="w-4 h-4 text-indigo-400 flex-shrink-0 mt-0.5" />
                   {faq.q}
                 </h3>
-                <p className="text-sm text-slate-400 leading-relaxed">{faq.a}</p>
+                <p className="text-sm text-gray-500 leading-relaxed">{faq.a}</p>
               </div>
             ))}
           </div>
@@ -475,8 +475,8 @@ export default function Snap8AntiWrinklePage() {
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-gradient-to-r from-indigo-900/30 to-dark-800 border border-indigo-500/20 rounded-2xl p-8 text-center">
-            <h2 className="text-2xl font-bold text-white mb-3">Start Your SNAP-8 Protocol</h2>
-            <p className="text-slate-400 mb-6 max-w-xl mx-auto">
+            <h2 className="text-2xl font-bold text-gray-900 mb-3">Start Your SNAP-8 Protocol</h2>
+            <p className="text-gray-500 mb-6 max-w-xl mx-auto">
               Source research-grade SNAP-8 for topical formulation. Combine with GHK-Cu for the comprehensive anti-wrinkle stack.
             </p>
             <a
@@ -487,7 +487,7 @@ export default function Snap8AntiWrinklePage() {
             >
               Get Research Peptides <ArrowRight className="w-4 h-4" />
             </a>
-            <p className="text-xs text-slate-600 mt-4">
+            <p className="text-xs text-gray-600 mt-4">
               For research purposes only. Not medical advice.
             </p>
           </div>

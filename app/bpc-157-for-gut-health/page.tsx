@@ -233,11 +233,11 @@ export default function Bpc157GutHealthPage() {
             <Shield className="w-4 h-4 text-emerald-400" />
             <span className="text-emerald-400 text-sm font-semibold tracking-wide">BPC-157 GUT HEALING GUIDE</span>
           </div>
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white leading-tight mb-6">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-gray-900 leading-tight mb-6">
             BPC-157 for<br />
             <span className="text-emerald-400">Gut Health</span>
           </h1>
-          <p className="text-slate-300 text-xl leading-relaxed mb-8 max-w-3xl">
+          <p className="text-gray-600 text-xl leading-relaxed mb-8 max-w-3xl">
             BPC-157 is the most powerful gut-healing peptide available. Here's the complete protocol
             for leaky gut, IBD, IBS, gastric ulcers, and Crohn's — including oral vs injectable routes.
           </p>
@@ -250,7 +250,7 @@ export default function Bpc157GutHealthPage() {
             ].map((s) => (
               <div key={s.stat} className="glass-card p-4 text-center">
                 <div className="text-lg font-black text-emerald-400">{s.stat}</div>
-                <div className="text-slate-400 text-xs mt-1">{s.label}</div>
+                <div className="text-gray-500 text-xs mt-1">{s.label}</div>
               </div>
             ))}
           </div>
@@ -259,14 +259,14 @@ export default function Bpc157GutHealthPage() {
 
       {/* How it works */}
       <section className="py-16 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-black text-white mb-3">How BPC-157 Heals the Gut</h2>
-        <p className="text-slate-400 mb-10">BPC-157 is a 15-amino acid peptide isolated from gastric juice protein. The "BPC" stands for Body Protection Compound — originally discovered for its protective role in the GI tract.</p>
+        <h2 className="text-3xl font-black text-gray-900 mb-3">How BPC-157 Heals the Gut</h2>
+        <p className="text-gray-500 mb-10">BPC-157 is a 15-amino acid peptide isolated from gastric juice protein. The "BPC" stands for Body Protection Compound — originally discovered for its protective role in the GI tract.</p>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {benefits.map((b) => (
             <div key={b.title} className="glass-card p-6">
               <CheckCircle className="w-5 h-5 text-emerald-400 mb-3" />
-              <h3 className="text-white font-bold mb-2">{b.title}</h3>
-              <p className="text-slate-400 text-sm leading-relaxed">{b.desc}</p>
+              <h3 className="text-gray-900 font-bold mb-2">{b.title}</h3>
+              <p className="text-gray-500 text-sm leading-relaxed">{b.desc}</p>
             </div>
           ))}
         </div>
@@ -275,8 +275,8 @@ export default function Bpc157GutHealthPage() {
       {/* Gut Symptom Checker */}
       <section className="py-16" style={{ background: 'rgba(6,6,16,0.8)' }}>
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-black text-white mb-3">Gut Symptom Protocol Finder</h2>
-          <p className="text-slate-400 mb-8">
+          <h2 className="text-3xl font-black text-gray-900 mb-3">Gut Symptom Protocol Finder</h2>
+          <p className="text-gray-500 mb-8">
             Not sure whether you need oral BPC-157, injectable, or a combination? Check your symptoms below and get a personalized protocol recommendation with estimated timeline.
           </p>
           <GutSymptomChecker />
@@ -286,17 +286,17 @@ export default function Bpc157GutHealthPage() {
       {/* Protocol */}
       <section className="py-12">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl font-black text-white mb-8">Gut Healing Protocol Options</h2>
+          <h2 className="text-2xl font-black text-gray-900 mb-8">Gut Healing Protocol Options</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
             {protocol.map((p, i) => (
               <div key={p.title} className="glass-card p-6">
                 <div className="text-xs font-bold text-emerald-400 tracking-widest mb-1">OPTION {i + 1}</div>
-                <h3 className="text-white font-black text-lg mb-3">{p.title}</h3>
+                <h3 className="text-gray-900 font-black text-lg mb-3">{p.title}</h3>
                 <div className="space-y-2 mb-4 text-sm">
-                  <div className="flex gap-2"><span className="text-slate-500 shrink-0">Dose:</span><span className="text-white">{p.dose}</span></div>
-                  <div className="flex gap-2"><span className="text-slate-500 shrink-0">Timing:</span><span className="text-white">{p.timing}</span></div>
+                  <div className="flex gap-2"><span className="text-gray-500 shrink-0">Dose:</span><span className="text-gray-900">{p.dose}</span></div>
+                  <div className="flex gap-2"><span className="text-gray-500 shrink-0">Timing:</span><span className="text-gray-900">{p.timing}</span></div>
                 </div>
-                <p className="text-slate-400 text-xs leading-relaxed">{p.notes}</p>
+                <p className="text-gray-500 text-xs leading-relaxed">{p.notes}</p>
               </div>
             ))}
           </div>
@@ -305,15 +305,15 @@ export default function Bpc157GutHealthPage() {
 
       {/* Conditions table */}
       <section className="py-16 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-2xl font-black text-white mb-8">BPC-157 by Gut Condition</h2>
+        <h2 className="text-2xl font-black text-gray-900 mb-8">BPC-157 by Gut Condition</h2>
         <div className="overflow-x-auto rounded-2xl border border-white/10">
           <table className="w-full text-sm">
             <thead>
               <tr style={{ background: 'rgba(255,255,255,0.04)' }}>
-                <th className="text-left py-3 px-4 text-slate-400 font-semibold">Condition</th>
+                <th className="text-left py-3 px-4 text-gray-500 font-semibold">Condition</th>
                 <th className="text-left py-3 px-4 text-emerald-400 font-bold">Best Route</th>
-                <th className="text-left py-3 px-4 text-slate-400 font-semibold">Dose</th>
-                <th className="text-left py-3 px-4 text-slate-400 font-semibold">Timeline</th>
+                <th className="text-left py-3 px-4 text-gray-500 font-semibold">Dose</th>
+                <th className="text-left py-3 px-4 text-gray-500 font-semibold">Timeline</th>
               </tr>
             </thead>
             <tbody>
@@ -326,10 +326,10 @@ export default function Bpc157GutHealthPage() {
                 ['GERD/Reflux', 'Oral', '250mcg/day', '2–4 weeks'],
               ].map(([cond, route, dose, time], i) => (
                 <tr key={cond} style={{ borderTop: '1px solid rgba(255,255,255,0.04)', background: i % 2 === 0 ? 'rgba(255,255,255,0.01)' : 'transparent' }}>
-                  <td className="py-3 px-4 text-white font-semibold">{cond}</td>
+                  <td className="py-3 px-4 text-gray-900 font-semibold">{cond}</td>
                   <td className="py-3 px-4 text-emerald-400">{route}</td>
-                  <td className="py-3 px-4 text-slate-300 font-mono">{dose}</td>
-                  <td className="py-3 px-4 text-slate-400">{time}</td>
+                  <td className="py-3 px-4 text-gray-600 font-mono">{dose}</td>
+                  <td className="py-3 px-4 text-gray-500">{time}</td>
                 </tr>
               ))}
             </tbody>
@@ -340,33 +340,33 @@ export default function Bpc157GutHealthPage() {
       {/* BPC-157 vs Other Gut Treatments */}
       <section className="py-16" style={{ background: 'rgba(6,6,16,0.8)' }}>
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-black text-white mb-3">BPC-157 vs. Other Gut Treatments</h2>
-          <p className="text-slate-400 mb-10">
+          <h2 className="text-3xl font-black text-gray-900 mb-3">BPC-157 vs. Other Gut Treatments</h2>
+          <p className="text-gray-500 mb-10">
             How BPC-157 compares to the most commonly used gut interventions across mechanism, actual barrier repair, side effects, and realistic timelines.
           </p>
           <div className="overflow-x-auto rounded-2xl border border-white/10">
             <table className="w-full text-xs">
               <thead>
                 <tr style={{ background: 'rgba(255,255,255,0.04)' }}>
-                  <th className="text-left py-3 px-3 text-slate-400 font-semibold">Treatment</th>
-                  <th className="text-left py-3 px-3 text-slate-400 font-semibold">Mechanism</th>
-                  <th className="text-left py-3 px-3 text-slate-400 font-semibold">Gut Barrier Repair</th>
-                  <th className="text-left py-3 px-3 text-slate-400 font-semibold">Side Effects</th>
-                  <th className="text-left py-3 px-3 text-slate-400 font-semibold">Dependency</th>
-                  <th className="text-left py-3 px-3 text-slate-400 font-semibold">Cost/Mo</th>
-                  <th className="text-left py-3 px-3 text-slate-400 font-semibold">Timeline</th>
+                  <th className="text-left py-3 px-3 text-gray-500 font-semibold">Treatment</th>
+                  <th className="text-left py-3 px-3 text-gray-500 font-semibold">Mechanism</th>
+                  <th className="text-left py-3 px-3 text-gray-500 font-semibold">Gut Barrier Repair</th>
+                  <th className="text-left py-3 px-3 text-gray-500 font-semibold">Side Effects</th>
+                  <th className="text-left py-3 px-3 text-gray-500 font-semibold">Dependency</th>
+                  <th className="text-left py-3 px-3 text-gray-500 font-semibold">Cost/Mo</th>
+                  <th className="text-left py-3 px-3 text-gray-500 font-semibold">Timeline</th>
                 </tr>
               </thead>
               <tbody>
                 {comparisonData.map((row, i) => (
                   <tr key={row.treatment} style={{ borderTop: '1px solid rgba(255,255,255,0.04)', background: i % 2 === 0 ? 'rgba(255,255,255,0.01)' : 'transparent' }}>
                     <td className={`py-3 px-3 font-bold ${row.color}`}>{row.treatment}</td>
-                    <td className="py-3 px-3 text-slate-300">{row.mechanism}</td>
-                    <td className="py-3 px-3 text-slate-300">{row.gutBarrier}</td>
-                    <td className="py-3 px-3 text-slate-400">{row.sideEffects}</td>
-                    <td className="py-3 px-3 text-slate-400">{row.dependency}</td>
-                    <td className="py-3 px-3 text-slate-300">{row.cost}</td>
-                    <td className="py-3 px-3 text-slate-400">{row.timeline}</td>
+                    <td className="py-3 px-3 text-gray-600">{row.mechanism}</td>
+                    <td className="py-3 px-3 text-gray-600">{row.gutBarrier}</td>
+                    <td className="py-3 px-3 text-gray-500">{row.sideEffects}</td>
+                    <td className="py-3 px-3 text-gray-500">{row.dependency}</td>
+                    <td className="py-3 px-3 text-gray-600">{row.cost}</td>
+                    <td className="py-3 px-3 text-gray-500">{row.timeline}</td>
                   </tr>
                 ))}
               </tbody>
@@ -377,13 +377,13 @@ export default function Bpc157GutHealthPage() {
 
       {/* Gut Microbiome & BPC-157 */}
       <section className="py-16 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-black text-white mb-3">Gut Microbiome &amp; BPC-157</h2>
-        <p className="text-slate-400 mb-10 text-lg">How BPC-157's anti-inflammatory effects create the environment for microbiome recovery — and the foods that amplify results.</p>
+        <h2 className="text-3xl font-black text-gray-900 mb-3">Gut Microbiome &amp; BPC-157</h2>
+        <p className="text-gray-500 mb-10 text-lg">How BPC-157's anti-inflammatory effects create the environment for microbiome recovery — and the foods that amplify results.</p>
 
         <div className="space-y-6">
           <div className="glass-card p-8">
             <h3 className="text-xl font-black text-emerald-400 mb-4">The Microbiome-Inflammation Cycle</h3>
-            <div className="space-y-4 text-slate-300 text-sm leading-relaxed">
+            <div className="space-y-4 text-gray-600 text-sm leading-relaxed">
               <p>{microbiomeSection.intro}</p>
               <p>{microbiomeSection.microbiomedisease}</p>
               <p>{microbiomeSection.bpcMicrobiome}</p>
@@ -395,19 +395,19 @@ export default function Bpc157GutHealthPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
               {microbiomeSection.synergisticFoods.map((food) => (
                 <div key={food.category} className="bg-white/3 rounded-xl p-5 border border-white/8">
-                  <h4 className="text-white font-bold mb-1">{food.category}</h4>
+                  <h4 className="text-gray-900 font-bold mb-1">{food.category}</h4>
                   <p className="text-emerald-400 text-xs mb-2">{food.examples}</p>
-                  <p className="text-slate-400 text-xs leading-relaxed">{food.mechanism}</p>
+                  <p className="text-gray-500 text-xs leading-relaxed">{food.mechanism}</p>
                 </div>
               ))}
             </div>
           </div>
 
           <div className="glass-card p-6">
-            <h3 className="text-lg font-black text-white mb-4">Foods &amp; Habits to Avoid During Protocol</h3>
+            <h3 className="text-lg font-black text-gray-900 mb-4">Foods &amp; Habits to Avoid During Protocol</h3>
             <ul className="space-y-2">
               {microbiomeSection.avoidDuring.map((item) => (
-                <li key={item} className="flex items-start gap-2 text-slate-400 text-sm">
+                <li key={item} className="flex items-start gap-2 text-gray-500 text-sm">
                   <span className="text-red-400 shrink-0 mt-0.5">✕</span> {item}
                 </li>
               ))}
@@ -419,8 +419,8 @@ export default function Bpc157GutHealthPage() {
       {/* Diet Protocol */}
       <section className="py-16" style={{ background: 'rgba(6,6,16,0.8)' }}>
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-black text-white mb-3">Diet Protocol During BPC-157 Gut Healing</h2>
-          <p className="text-slate-400 mb-10">
+          <h2 className="text-3xl font-black text-gray-900 mb-3">Diet Protocol During BPC-157 Gut Healing</h2>
+          <p className="text-gray-500 mb-10">
             What you eat during a BPC-157 gut healing protocol significantly amplifies or undermines results. This phase-by-phase diet framework is calibrated to the biological stages of gut repair.
           </p>
 
@@ -428,13 +428,13 @@ export default function Bpc157GutHealthPage() {
             {/* Week 1-2 */}
             <div className="glass-card p-8">
               <h3 className="text-xl font-black text-emerald-400 mb-2">{dietProtocol.firstTwoWeeks.title}</h3>
-              <p className="text-slate-400 text-sm mb-6">{dietProtocol.firstTwoWeeks.description}</p>
+              <p className="text-gray-500 text-sm mb-6">{dietProtocol.firstTwoWeeks.description}</p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
                   <p className="text-xs font-bold tracking-widest text-emerald-400 mb-3">EAT FREELY</p>
                   <ul className="space-y-2">
                     {dietProtocol.firstTwoWeeks.eat.map((item) => (
-                      <li key={item} className="flex items-start gap-2 text-slate-300 text-sm">
+                      <li key={item} className="flex items-start gap-2 text-gray-600 text-sm">
                         <CheckCircle className="w-3.5 h-3.5 text-emerald-400 shrink-0 mt-0.5" /> {item}
                       </li>
                     ))}
@@ -444,7 +444,7 @@ export default function Bpc157GutHealthPage() {
                   <p className="text-xs font-bold tracking-widest text-red-400 mb-3">AVOID</p>
                   <ul className="space-y-2">
                     {dietProtocol.firstTwoWeeks.avoid.map((item) => (
-                      <li key={item} className="flex items-start gap-2 text-slate-400 text-sm">
+                      <li key={item} className="flex items-start gap-2 text-gray-500 text-sm">
                         <span className="text-red-400 shrink-0 mt-0.5">✕</span> {item}
                       </li>
                     ))}
@@ -456,10 +456,10 @@ export default function Bpc157GutHealthPage() {
             {/* Reintroduction */}
             <div className="glass-card p-8">
               <h3 className="text-xl font-black text-emerald-400 mb-2">{dietProtocol.reintroductionPhase.title}</h3>
-              <p className="text-slate-400 text-sm mb-5">{dietProtocol.reintroductionPhase.description}</p>
+              <p className="text-gray-500 text-sm mb-5">{dietProtocol.reintroductionPhase.description}</p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 {dietProtocol.reintroductionPhase.introduce.map((item) => (
-                  <div key={item} className="flex items-start gap-2 text-slate-300 text-sm">
+                  <div key={item} className="flex items-start gap-2 text-gray-600 text-sm">
                     <CheckCircle className="w-3.5 h-3.5 text-emerald-400 shrink-0 mt-0.5" /> {item}
                   </div>
                 ))}
@@ -468,10 +468,10 @@ export default function Bpc157GutHealthPage() {
 
             {/* Permanent avoid */}
             <div className="glass-card p-6">
-              <h3 className="text-lg font-black text-white mb-4">Foods to Permanently Minimize</h3>
+              <h3 className="text-lg font-black text-gray-900 mb-4">Foods to Permanently Minimize</h3>
               <ul className="space-y-2">
                 {dietProtocol.permanentAvoid.map((item) => (
-                  <li key={item} className="flex items-start gap-2 text-slate-400 text-sm">
+                  <li key={item} className="flex items-start gap-2 text-gray-500 text-sm">
                     <span className="text-red-400 shrink-0 mt-0.5">✕</span> {item}
                   </li>
                 ))}
@@ -480,13 +480,13 @@ export default function Bpc157GutHealthPage() {
 
             {/* Supplement stack */}
             <div className="glass-card p-6">
-              <h3 className="text-lg font-black text-white mb-5">Supplements That Stack Well With BPC-157</h3>
+              <h3 className="text-lg font-black text-gray-900 mb-5">Supplements That Stack Well With BPC-157</h3>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
                 {dietProtocol.supplements.map((s) => (
                   <div key={s.name} className="bg-white/3 rounded-xl p-4 border border-white/8">
                     <p className="text-emerald-400 font-bold text-sm mb-1">{s.name}</p>
-                    <p className="text-white text-xs font-mono mb-2">{s.dose}</p>
-                    <p className="text-slate-400 text-xs leading-relaxed">{s.notes}</p>
+                    <p className="text-gray-900 text-xs font-mono mb-2">{s.dose}</p>
+                    <p className="text-gray-500 text-xs leading-relaxed">{s.notes}</p>
                   </div>
                 ))}
               </div>
@@ -497,16 +497,16 @@ export default function Bpc157GutHealthPage() {
 
       {/* FAQ */}
       <section className="py-16 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-black text-white mb-10 text-center">BPC-157 Gut Health FAQ</h2>
+        <h2 className="text-3xl font-black text-gray-900 mb-10 text-center">BPC-157 Gut Health FAQ</h2>
         <div className="space-y-3">
           {faqs.map(({ q, a }) => (
             <details key={q} className="glass-card group">
               <summary className="p-5 cursor-pointer list-none flex items-center justify-between">
-                <span className="text-white font-semibold text-sm">{q}</span>
+                <span className="text-gray-900 font-semibold text-sm">{q}</span>
                 <span className="text-emerald-400 text-lg group-open:rotate-45 transition-transform shrink-0 ml-4">+</span>
               </summary>
               <div className="px-5 pb-5">
-                <p className="text-slate-400 text-sm leading-relaxed">{a}</p>
+                <p className="text-gray-500 text-sm leading-relaxed">{a}</p>
               </div>
             </details>
           ))}
@@ -516,8 +516,8 @@ export default function Bpc157GutHealthPage() {
       {/* CTA */}
       <section className="py-16 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="glass-card p-10">
-          <h2 className="text-2xl font-black text-white mb-3">Get BPC-157 for Gut Healing</h2>
-          <p className="text-slate-400 mb-6">COA-verified BPC-157 — available in injectable and oral/capsule form. US domestic.</p>
+          <h2 className="text-2xl font-black text-gray-900 mb-3">Get BPC-157 for Gut Healing</h2>
+          <p className="text-gray-500 mb-6">COA-verified BPC-157 — available in injectable and oral/capsule form. US domestic.</p>
           <div className="flex flex-wrap gap-4 justify-center">
             <a href={SOURCE_URL} target="_blank" rel="nofollow noopener noreferrer"
               className="btn-cta px-8 py-4 flex items-center gap-2">

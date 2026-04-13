@@ -171,7 +171,7 @@ const faqs = [
 
 export default function Igf1LooksmaxxingPage() {
   return (
-    <main className="min-h-screen bg-dark-900 text-slate-200">
+    <main className="min-h-screen bg-dark-900 text-gray-700">
       {/* Hero */}
       <section className="relative py-20 px-4 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-cyan-900/20 via-dark-900 to-blue-900/20" />
@@ -180,18 +180,18 @@ export default function Igf1LooksmaxxingPage() {
             <Activity className="w-4 h-4" />
             IGF-1 LR3 &amp; Appearance
           </div>
-          <h1 className="text-4xl sm:text-5xl font-extrabold text-white leading-tight">
+          <h1 className="text-4xl sm:text-5xl font-extrabold text-gray-900 leading-tight">
             IGF-1 LR3 for{' '}
             <span className="text-neon-green">Looksmaxxing</span>
           </h1>
-          <p className="text-xl text-slate-300 max-w-2xl mx-auto">
+          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
             IGF-1 LR3 affects seven distinct appearance mechanisms. Here is exactly how it works, what doses to use, and how to stack it for maximum appearance optimization.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <Link href={SOURCE_URL} rel="nofollow noopener noreferrer" className="btn-cta flex items-center gap-2">
               View IGF-1 LR3 Sources <ArrowRight className="w-4 h-4" />
             </Link>
-            <Link href="/anti-aging" className="flex items-center gap-2 px-6 py-3 border border-slate-600 rounded-xl text-slate-300 hover:border-slate-400 transition-colors">
+            <Link href="/anti-aging" className="flex items-center gap-2 px-6 py-3 border border-slate-600 rounded-xl text-gray-600 hover:border-slate-400 transition-colors">
               Anti-Aging Stack
             </Link>
           </div>
@@ -201,15 +201,15 @@ export default function Igf1LooksmaxxingPage() {
       {/* What is IGF-1 LR3 */}
       <section className="py-16 px-4">
         <div className="max-w-4xl mx-auto space-y-8">
-          <h2 className="text-3xl font-bold text-white">What is IGF-1 LR3?</h2>
+          <h2 className="text-3xl font-bold text-gray-900">What is IGF-1 LR3?</h2>
           <div className="glass-card p-8 space-y-5">
-            <p className="text-slate-300 leading-relaxed">
+            <p className="text-gray-600 leading-relaxed">
               IGF-1 LR3 (Insulin-like Growth Factor-1, Long-Arg3) is a modified variant of the naturally occurring IGF-1 hormone. Natural IGF-1 is produced primarily by the liver in response to growth hormone (GH) signaling and has a half-life of just 15 minutes before it is bound by IGF-binding proteins (IGFBPs) that render it inactive.
             </p>
-            <p className="text-slate-300 leading-relaxed">
+            <p className="text-gray-600 leading-relaxed">
               IGF-1 LR3 has two specific amino acid modifications that transform this limitation: an arginine substitution at position 3 and an N-terminal extension that together reduce IGFBP binding affinity by approximately <strong className="text-cyan-300">90%</strong>. The result is a peptide that circulates in its fully active form for 20–30 hours after a single injection — providing continuous receptor activation that natural IGF-1 cannot achieve.
             </p>
-            <p className="text-slate-300 leading-relaxed">
+            <p className="text-gray-600 leading-relaxed">
               IGF-1 is the central mediator of growth hormone's anabolic and reparative effects on the body. While GH acts on bone and fat directly, the majority of GH's tissue-building effects — including collagen synthesis, muscle protein synthesis, skin thickness, and hair follicle support — are mediated through IGF-1. By providing sustained IGF-1 receptor stimulation, IGF-1 LR3 unlocks these appearance-relevant effects at doses far below those required with natural IGF-1.
             </p>
           </div>
@@ -220,8 +220,8 @@ export default function Igf1LooksmaxxingPage() {
       <section className="py-16 px-4 bg-slate-900/30">
         <div className="max-w-4xl mx-auto space-y-8">
           <div className="text-center space-y-3">
-            <h2 className="text-3xl font-bold text-white">The 7 Appearance Mechanisms of IGF-1 LR3</h2>
-            <p className="text-slate-400 max-w-2xl mx-auto">
+            <h2 className="text-3xl font-bold text-gray-900">The 7 Appearance Mechanisms of IGF-1 LR3</h2>
+            <p className="text-gray-500 max-w-2xl mx-auto">
               IGF-1 LR3 is uniquely comprehensive — it affects more aspects of appearance than virtually any other single research peptide.
             </p>
           </div>
@@ -233,13 +233,13 @@ export default function Igf1LooksmaxxingPage() {
                     {mech.number}
                   </span>
                   <div className="space-y-1">
-                    <h3 className="text-slate-100 font-bold text-sm" dangerouslySetInnerHTML={{ __html: mech.title }} />
+                    <h3 className="text-gray-800 font-bold text-sm" dangerouslySetInnerHTML={{ __html: mech.title }} />
                     <span className={`text-xs px-2 py-0.5 rounded-full ${mech.badge}`}>
                       Timeline: {mech.timeline}
                     </span>
                   </div>
                 </div>
-                <p className="text-slate-400 text-sm leading-relaxed">{mech.desc}</p>
+                <p className="text-gray-500 text-sm leading-relaxed">{mech.desc}</p>
               </div>
             ))}
           </div>
@@ -250,8 +250,8 @@ export default function Igf1LooksmaxxingPage() {
       <section className="py-16 px-4">
         <div className="max-w-4xl mx-auto space-y-8">
           <div className="text-center space-y-3">
-            <h2 className="text-3xl font-bold text-white">IGF-1 LR3 Appearance Effects: Interactive Map</h2>
-            <p className="text-slate-400 max-w-2xl mx-auto">
+            <h2 className="text-3xl font-bold text-gray-900">IGF-1 LR3 Appearance Effects: Interactive Map</h2>
+            <p className="text-gray-500 max-w-2xl mx-auto">
               Click any area to see the specific mechanism, timeline, dose, and synergistic peptides.
             </p>
           </div>
@@ -262,40 +262,40 @@ export default function Igf1LooksmaxxingPage() {
       {/* Dosing */}
       <section className="py-16 px-4 bg-slate-900/30">
         <div className="max-w-4xl mx-auto space-y-8">
-          <h2 className="text-3xl font-bold text-white">Dosing Protocols</h2>
+          <h2 className="text-3xl font-bold text-gray-900">Dosing Protocols</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             {dosingProtocols.map((protocol) => (
               <div key={protocol.name} className={`glass-card p-6 border ${protocol.color} space-y-4`}>
                 <div className="flex items-center justify-between">
-                  <h3 className="text-slate-100 font-bold">{protocol.name}</h3>
+                  <h3 className="text-gray-800 font-bold">{protocol.name}</h3>
                   <span className={`text-xs px-2.5 py-1 rounded-full font-semibold ${protocol.badge}`}>{protocol.level}</span>
                 </div>
                 <div className="space-y-2 text-sm">
                   <div className="flex justify-between">
-                    <span className="text-slate-500">Dose</span>
-                    <span className="text-slate-200 font-medium">{protocol.dose}</span>
+                    <span className="text-gray-500">Dose</span>
+                    <span className="text-gray-700 font-medium">{protocol.dose}</span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="text-slate-500">Timing</span>
-                    <span className="text-slate-200">{protocol.timing}</span>
+                    <span className="text-gray-500">Timing</span>
+                    <span className="text-gray-700">{protocol.timing}</span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="text-slate-500">Duration</span>
-                    <span className="text-slate-200">{protocol.duration}</span>
+                    <span className="text-gray-500">Duration</span>
+                    <span className="text-gray-700">{protocol.duration}</span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="text-slate-500">Est. Cost</span>
+                    <span className="text-gray-500">Est. Cost</span>
                     <span className="text-amber-300 font-semibold">{protocol.cost}</span>
                   </div>
                 </div>
                 <div className="pt-2 border-t border-slate-700/50">
-                  <p className="text-slate-400 text-xs">{protocol.goals}</p>
+                  <p className="text-gray-500 text-xs">{protocol.goals}</p>
                 </div>
               </div>
             ))}
           </div>
           <div className="glass-card p-6">
-            <p className="text-slate-300 leading-relaxed text-sm">
+            <p className="text-gray-600 leading-relaxed text-sm">
               <strong className="text-cyan-300">Injection technique:</strong> Use a 29–31 gauge insulin syringe. Inject subcutaneously into the abdomen fat or outer thigh — 45-degree angle, slow injection. Rotate sites daily. Reconstitute with bacteriostatic water (1–2mL per vial) and store in refrigerator. Draw 0.1mL for a 20 mcg dose from a 200 mcg/mL solution (reconstitute 2mg in 10mL for this concentration). Always eat before or immediately after injection to prevent hypoglycemia.
             </p>
           </div>
@@ -305,20 +305,20 @@ export default function Igf1LooksmaxxingPage() {
       {/* IGF-1 LR3 vs GH Secretagogues */}
       <section className="py-16 px-4">
         <div className="max-w-4xl mx-auto space-y-8">
-          <h2 className="text-3xl font-bold text-white">IGF-1 LR3 vs GH Secretagogues</h2>
-          <p className="text-slate-400">
+          <h2 className="text-3xl font-bold text-gray-900">IGF-1 LR3 vs GH Secretagogues</h2>
+          <p className="text-gray-500">
             Both approaches activate the GH/IGF-1 axis, but through different mechanisms with different risk/reward profiles.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             {igfVsSecretagogues.map((option) => (
               <div key={option.label} className={`glass-card p-6 border ${option.color} space-y-4`}>
-                <h3 className="text-slate-100 font-bold text-lg">{option.label}</h3>
+                <h3 className="text-gray-800 font-bold text-lg">{option.label}</h3>
                 <div className="space-y-3">
                   <div>
                     <span className="text-emerald-400 text-xs font-semibold uppercase">Advantages</span>
                     <ul className="mt-2 space-y-1">
                       {option.pros.map((p) => (
-                        <li key={p} className="flex items-start gap-2 text-slate-300 text-xs">
+                        <li key={p} className="flex items-start gap-2 text-gray-600 text-xs">
                           <CheckCircle className="w-3.5 h-3.5 text-emerald-400 mt-0.5 flex-shrink-0" />
                           {p}
                         </li>
@@ -329,7 +329,7 @@ export default function Igf1LooksmaxxingPage() {
                     <span className="text-amber-400 text-xs font-semibold uppercase">Considerations</span>
                     <ul className="mt-2 space-y-1">
                       {option.cons.map((c) => (
-                        <li key={c} className="flex items-start gap-2 text-slate-400 text-xs">
+                        <li key={c} className="flex items-start gap-2 text-gray-500 text-xs">
                           <span className="text-amber-400 mt-0.5 flex-shrink-0">—</span>
                           {c}
                         </li>
@@ -341,7 +341,7 @@ export default function Igf1LooksmaxxingPage() {
             ))}
           </div>
           <div className="glass-card p-6">
-            <p className="text-slate-300 text-sm leading-relaxed">
+            <p className="text-gray-600 text-sm leading-relaxed">
               <strong className="text-cyan-300">Recommendation for appearance goals:</strong> For users new to peptides, start with CJC-1295/Ipamorelin (safer, preserves natural axis, suitable for long-term use). For users who have established a peptide baseline and want to accelerate results, add IGF-1 LR3 in 4–6 week cycles alongside or alternating with the secretagogue stack. The combination of both approaches at lower doses provides excellent results with better safety margins than either at high doses alone.
             </p>
           </div>
@@ -351,7 +351,7 @@ export default function Igf1LooksmaxxingPage() {
       {/* The IGF-1 Looksmaxxing Stack */}
       <section className="py-16 px-4 bg-slate-900/30">
         <div className="max-w-4xl mx-auto space-y-8">
-          <h2 className="text-3xl font-bold text-white">The IGF-1 Looksmaxxing Stack</h2>
+          <h2 className="text-3xl font-bold text-gray-900">The IGF-1 Looksmaxxing Stack</h2>
           <div className="space-y-4">
             {looksmaxxingStack.map((item, i) => (
               <div key={item.peptide} className="glass-card p-5 flex items-start gap-4">
@@ -360,15 +360,15 @@ export default function Igf1LooksmaxxingPage() {
                 </span>
                 <div className="flex-1 space-y-2">
                   <div className="flex items-center gap-3 flex-wrap">
-                    <span className="text-slate-100 font-bold">{item.peptide}</span>
+                    <span className="text-gray-800 font-bold">{item.peptide}</span>
                     <span className={`text-xs px-2.5 py-0.5 rounded-full font-semibold ${item.priority === 'Core' ? 'bg-cyan-500/20 text-cyan-300 border border-cyan-500/40' : 'bg-purple-500/20 text-purple-300 border border-purple-500/40'}`}>
                       {item.priority}
                     </span>
                   </div>
-                  <p className="text-slate-400 text-sm">{item.role}</p>
+                  <p className="text-gray-500 text-sm">{item.role}</p>
                   <div className="flex gap-4 text-xs">
-                    <span className="text-slate-500">Dose: <span className="text-slate-300">{item.dose}</span></span>
-                    <span className="text-slate-500">Timing: <span className="text-slate-300">{item.timing}</span></span>
+                    <span className="text-gray-500">Dose: <span className="text-gray-600">{item.dose}</span></span>
+                    <span className="text-gray-500">Timing: <span className="text-gray-600">{item.timing}</span></span>
                   </div>
                 </div>
               </div>
@@ -380,19 +380,19 @@ export default function Igf1LooksmaxxingPage() {
       {/* Side Effects */}
       <section className="py-16 px-4">
         <div className="max-w-4xl mx-auto space-y-8">
-          <h2 className="text-3xl font-bold text-white">Side Effects &amp; Safety</h2>
+          <h2 className="text-3xl font-bold text-gray-900">Side Effects &amp; Safety</h2>
           <div className="space-y-3">
             {sideEffects.map((se) => (
               <div key={se.effect} className="glass-card p-5 flex items-start gap-4">
                 <AlertTriangle className={`w-5 h-5 mt-0.5 flex-shrink-0 ${se.color}`} />
                 <div className="space-y-1">
                   <div className="flex items-center gap-3 flex-wrap">
-                    <span className="text-slate-100 font-semibold text-sm">{se.effect}</span>
+                    <span className="text-gray-800 font-semibold text-sm">{se.effect}</span>
                     <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${se.color === 'text-emerald-400' ? 'bg-emerald-500/10 text-emerald-400 border border-emerald-500/30' : 'bg-amber-500/10 text-amber-400 border border-amber-500/30'}`}>
                       {se.risk}
                     </span>
                   </div>
-                  <p className="text-slate-400 text-sm">{se.mitigation}</p>
+                  <p className="text-gray-500 text-sm">{se.mitigation}</p>
                 </div>
               </div>
             ))}
@@ -404,13 +404,13 @@ export default function Igf1LooksmaxxingPage() {
       <section className="py-16 px-4 bg-slate-900/30">
         <div className="max-w-4xl mx-auto space-y-8">
           <div className="text-center">
-            <h2 className="text-3xl font-bold text-white">IGF-1 LR3 FAQ</h2>
+            <h2 className="text-3xl font-bold text-gray-900">IGF-1 LR3 FAQ</h2>
           </div>
           <div className="space-y-4">
             {faqs.map((faq) => (
               <div key={faq.q} className="glass-card p-6 space-y-3">
-                <h3 className="text-slate-100 font-bold">{faq.q}</h3>
-                <p className="text-slate-400 leading-relaxed text-sm">{faq.a}</p>
+                <h3 className="text-gray-800 font-bold">{faq.q}</h3>
+                <p className="text-gray-500 leading-relaxed text-sm">{faq.a}</p>
               </div>
             ))}
           </div>
@@ -421,8 +421,8 @@ export default function Igf1LooksmaxxingPage() {
       <section className="py-16 px-4">
         <div className="max-w-2xl mx-auto text-center space-y-6">
           <Activity className="w-12 h-12 text-cyan-400 mx-auto" />
-          <h2 className="text-3xl font-bold text-white">Begin Your IGF-1 LR3 Protocol</h2>
-          <p className="text-slate-400">
+          <h2 className="text-3xl font-bold text-gray-900">Begin Your IGF-1 LR3 Protocol</h2>
+          <p className="text-gray-500">
             Start with 20–30 mcg/day appearance dose and combine with GHK-Cu topical for the most comprehensive collagen and skin quality protocol available.
           </p>
           <div className="p-3 bg-amber-500/10 border border-amber-500/30 rounded-xl text-amber-200 text-sm">

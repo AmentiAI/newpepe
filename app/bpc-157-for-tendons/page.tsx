@@ -161,11 +161,11 @@ export default function Bpc157TendonsPage() {
             <Zap className="w-4 h-4 text-blue-400" />
             <span className="text-blue-400 text-sm font-semibold tracking-wide">BPC-157 TENDON HEALING GUIDE</span>
           </div>
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white leading-tight mb-6">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-gray-900 leading-tight mb-6">
             BPC-157 for<br />
             <span className="text-blue-400">Tendons & Ligaments</span>
           </h1>
-          <p className="text-slate-300 text-xl leading-relaxed mb-8 max-w-3xl">
+          <p className="text-gray-600 text-xl leading-relaxed mb-8 max-w-3xl">
             BPC-157 is the most powerful peptide for tendon and ligament repair.
             Complete protocol for every major tendon injury — injection site, dosing, and recovery timeline.
           </p>
@@ -178,7 +178,7 @@ export default function Bpc157TendonsPage() {
             ].map((s) => (
               <div key={s.stat} className="glass-card p-4 text-center">
                 <div className="text-lg font-black text-blue-400">{s.stat}</div>
-                <div className="text-slate-400 text-xs mt-1">{s.label}</div>
+                <div className="text-gray-500 text-xs mt-1">{s.label}</div>
               </div>
             ))}
           </div>
@@ -187,8 +187,8 @@ export default function Bpc157TendonsPage() {
 
       {/* Injury Severity Selector */}
       <section className="py-16 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-black text-white mb-3">What Is Your Injury Severity?</h2>
-        <p className="text-slate-400 mb-8">
+        <h2 className="text-3xl font-black text-gray-900 mb-3">What Is Your Injury Severity?</h2>
+        <p className="text-gray-500 mb-8">
           Select your injury grade to get a customized BPC-157 protocol — dose, frequency, and expected healing timeline tailored to your severity level.
         </p>
         <InjurySeveritySelector />
@@ -196,25 +196,25 @@ export default function Bpc157TendonsPage() {
 
       {/* Injury table */}
       <section className="py-16 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-black text-white mb-3">Protocol by Injury Type</h2>
-        <p className="text-slate-400 mb-8">Dosing, injection site, and expected timeline for the most common tendon and ligament injuries.</p>
+        <h2 className="text-3xl font-black text-gray-900 mb-3">Protocol by Injury Type</h2>
+        <p className="text-gray-500 mb-8">Dosing, injection site, and expected timeline for the most common tendon and ligament injuries.</p>
         <div className="overflow-x-auto rounded-2xl border border-white/10">
           <table className="w-full text-sm">
             <thead>
               <tr style={{ background: 'rgba(255,255,255,0.04)' }}>
-                <th className="text-left py-3 px-4 text-slate-400 font-semibold">Injury</th>
+                <th className="text-left py-3 px-4 text-gray-500 font-semibold">Injury</th>
                 <th className="text-left py-3 px-4 text-blue-400 font-bold">Dose</th>
-                <th className="text-left py-3 px-4 text-slate-400 font-semibold">Injection Site</th>
-                <th className="text-left py-3 px-4 text-slate-400 font-semibold">Timeline</th>
+                <th className="text-left py-3 px-4 text-gray-500 font-semibold">Injection Site</th>
+                <th className="text-left py-3 px-4 text-gray-500 font-semibold">Timeline</th>
               </tr>
             </thead>
             <tbody>
               {injuries.map(({ injury, dose, site, timeline: t }, i) => (
                 <tr key={injury} style={{ borderTop: '1px solid rgba(255,255,255,0.04)', background: i % 2 === 0 ? 'rgba(255,255,255,0.01)' : 'transparent' }}>
-                  <td className="py-3 px-4 text-white font-semibold">{injury}</td>
+                  <td className="py-3 px-4 text-gray-900 font-semibold">{injury}</td>
                   <td className="py-3 px-4 text-blue-400 font-mono">{dose}</td>
-                  <td className="py-3 px-4 text-slate-300">{site}</td>
-                  <td className="py-3 px-4 text-slate-400">{t}</td>
+                  <td className="py-3 px-4 text-gray-600">{site}</td>
+                  <td className="py-3 px-4 text-gray-500">{t}</td>
                 </tr>
               ))}
             </tbody>
@@ -227,8 +227,8 @@ export default function Bpc157TendonsPage() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {injuries.map((inj) => (
             <div key={inj.injury} className="glass-card p-5">
-              <h3 className="text-white font-bold mb-2">{inj.injury}</h3>
-              <p className="text-slate-400 text-sm">{inj.notes}</p>
+              <h3 className="text-gray-900 font-bold mb-2">{inj.injury}</h3>
+              <p className="text-gray-500 text-sm">{inj.notes}</p>
             </div>
           ))}
         </div>
@@ -237,57 +237,57 @@ export default function Bpc157TendonsPage() {
       {/* The Science of Tendon Repair */}
       <section className="py-16" style={{ background: 'rgba(6,6,16,0.8)' }}>
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-black text-white mb-3">The Science of Tendon Repair</h2>
-          <p className="text-slate-400 mb-10 text-lg">Why tendons heal slowly — and how BPC-157 overcomes every major barrier to recovery.</p>
+          <h2 className="text-3xl font-black text-gray-900 mb-3">The Science of Tendon Repair</h2>
+          <p className="text-gray-500 mb-10 text-lg">Why tendons heal slowly — and how BPC-157 overcomes every major barrier to recovery.</p>
 
           <div className="space-y-8">
             <div className="glass-card p-8">
               <h3 className="text-xl font-black text-blue-400 mb-4">What Tendons Are Made Of</h3>
-              <div className="prose-content space-y-4 text-slate-300 text-sm leading-relaxed">
+              <div className="prose-content space-y-4 text-gray-600 text-sm leading-relaxed">
                 <p>
-                  Tendons are dense connective tissue structures composed primarily of collagen — the structural protein that gives them their remarkable tensile strength. The dominant collagen in healthy tendons is <strong className="text-white">Type I collagen</strong>, accounting for roughly 65–80% of dry tendon mass. Type I collagen forms long, parallel fiber bundles called fascicles, organized hierarchically: individual tropocollagen molecules assemble into microfibrils, microfibrils into fibrils, fibrils into fiber bundles, and fiber bundles into fascicles. This hierarchical organization is what gives a healthy tendon the ability to transmit forces of 6–10 times bodyweight without failure.
+                  Tendons are dense connective tissue structures composed primarily of collagen — the structural protein that gives them their remarkable tensile strength. The dominant collagen in healthy tendons is <strong className="text-gray-900">Type I collagen</strong>, accounting for roughly 65–80% of dry tendon mass. Type I collagen forms long, parallel fiber bundles called fascicles, organized hierarchically: individual tropocollagen molecules assemble into microfibrils, microfibrils into fibrils, fibrils into fiber bundles, and fiber bundles into fascicles. This hierarchical organization is what gives a healthy tendon the ability to transmit forces of 6–10 times bodyweight without failure.
                 </p>
                 <p>
-                  <strong className="text-white">Type III collagen</strong> plays a critical but often misunderstood role in tendon biology. In healthy, mature tendons, Type III collagen is present in small amounts (10–15%) primarily at the epitenon (outer sheath) and in the endotenon between fascicles. However, during acute injury and early healing, Type III collagen synthesis dramatically increases. Type III fibers are thinner, less organized, and significantly weaker than Type I — they are the body's "rapid response" collagen. The scar tissue that forms during healing is largely Type III collagen, which is why healed tendons are frequently weaker and more prone to re-injury than native tissue.
+                  <strong className="text-gray-900">Type III collagen</strong> plays a critical but often misunderstood role in tendon biology. In healthy, mature tendons, Type III collagen is present in small amounts (10–15%) primarily at the epitenon (outer sheath) and in the endotenon between fascicles. However, during acute injury and early healing, Type III collagen synthesis dramatically increases. Type III fibers are thinner, less organized, and significantly weaker than Type I — they are the body's "rapid response" collagen. The scar tissue that forms during healing is largely Type III collagen, which is why healed tendons are frequently weaker and more prone to re-injury than native tissue.
                 </p>
                 <p>
-                  Beyond collagen, tendons contain specialized cells called <strong className="text-white">tenocytes</strong> (tendon fibroblasts) embedded in an extracellular matrix of proteoglycans (decorin, biglycan, aggrecan) that regulate collagen fiber spacing and water binding, elastic fibers that contribute to tendon resilience, and a network of glycoproteins that mediate cell-matrix communication. The entire structure is wrapped in a vascularized outer sheath (peritenon/epitenon) that provides the tendon's primary blood supply.
+                  Beyond collagen, tendons contain specialized cells called <strong className="text-gray-900">tenocytes</strong> (tendon fibroblasts) embedded in an extracellular matrix of proteoglycans (decorin, biglycan, aggrecan) that regulate collagen fiber spacing and water binding, elastic fibers that contribute to tendon resilience, and a network of glycoproteins that mediate cell-matrix communication. The entire structure is wrapped in a vascularized outer sheath (peritenon/epitenon) that provides the tendon's primary blood supply.
                 </p>
               </div>
             </div>
 
             <div className="glass-card p-8">
               <h3 className="text-xl font-black text-blue-400 mb-4">Why Tendons Heal So Slowly: The Vascularization Problem</h3>
-              <div className="space-y-4 text-slate-300 text-sm leading-relaxed">
+              <div className="space-y-4 text-gray-600 text-sm leading-relaxed">
                 <p>
-                  The central challenge in tendon healing is blood supply — or the profound lack of it. Tendons are among the least vascularized tissues in the human body. While muscle tissue has a capillary density of approximately 300–400 capillaries per mm², tendon midsubstance has a capillary density of roughly <strong className="text-white">20–30 capillaries per mm²</strong> — a 10–15x difference. Certain regions, like the "critical zone" of the Achilles tendon 2–6cm above its calcaneal insertion, are essentially avascular — relying on diffusion from synovial fluid rather than direct blood supply.
+                  The central challenge in tendon healing is blood supply — or the profound lack of it. Tendons are among the least vascularized tissues in the human body. While muscle tissue has a capillary density of approximately 300–400 capillaries per mm², tendon midsubstance has a capillary density of roughly <strong className="text-gray-900">20–30 capillaries per mm²</strong> — a 10–15x difference. Certain regions, like the "critical zone" of the Achilles tendon 2–6cm above its calcaneal insertion, are essentially avascular — relying on diffusion from synovial fluid rather than direct blood supply.
                 </p>
                 <p>
                   This matters because blood supply is the delivery mechanism for everything healing requires: oxygen, glucose, amino acids (the building blocks of new collagen), growth factors, immune cells that clear debris, and the fibroblasts that synthesize new matrix. In a poorly vascularized tendon, all of these processes are rate-limited. The collagen synthesis machinery simply cannot run at full speed when it is oxygen and nutrient deprived.
                 </p>
                 <p>
-                  The healing process itself unfolds in three phases: <strong className="text-white">inflammatory phase</strong> (days 1–7), <strong className="text-white">proliferative phase</strong> (weeks 1–8), and <strong className="text-white">remodeling phase</strong> (weeks 6 through 12+ months). In muscles, this entire cycle completes in 3–6 weeks. In tendons, the remodeling phase — during which disorganized Type III scar collagen is gradually replaced with organized Type I collagen — takes 6–12 months in conventional healing. This is why tendon injuries sideline athletes for entire seasons while muscle injuries resolve in weeks.
+                  The healing process itself unfolds in three phases: <strong className="text-gray-900">inflammatory phase</strong> (days 1–7), <strong className="text-gray-900">proliferative phase</strong> (weeks 1–8), and <strong className="text-gray-900">remodeling phase</strong> (weeks 6 through 12+ months). In muscles, this entire cycle completes in 3–6 weeks. In tendons, the remodeling phase — during which disorganized Type III scar collagen is gradually replaced with organized Type I collagen — takes 6–12 months in conventional healing. This is why tendon injuries sideline athletes for entire seasons while muscle injuries resolve in weeks.
                 </p>
               </div>
             </div>
 
             <div className="glass-card p-8">
               <h3 className="text-xl font-black text-blue-400 mb-4">How BPC-157 Overcomes These Barriers</h3>
-              <div className="space-y-4 text-slate-300 text-sm leading-relaxed">
+              <div className="space-y-4 text-gray-600 text-sm leading-relaxed">
                 <p>
                   BPC-157's extraordinary effectiveness for tendon repair comes from its ability to directly address every major barrier to tendon healing simultaneously. It does not act through a single pathway — it is a multi-mechanism intervention that acts at the cellular, vascular, and molecular levels concurrently.
                 </p>
                 <p>
-                  <strong className="text-white">VEGF Upregulation and Angiogenesis:</strong> BPC-157 is one of the most potent stimulators of VEGF (Vascular Endothelial Growth Factor) known in peptide pharmacology. VEGF is the primary signal that triggers new blood vessel formation (angiogenesis). In multiple animal models — including the Achilles tendon transection model that most closely replicates human tendon rupture — BPC-157 treatment produced significantly greater vascular density in the healing tendon compared to untreated controls. Essentially, BPC-157 forces the body to build new blood vessels into the very avascular zones that normally prevent rapid healing. This directly addresses the fundamental vascularization problem.
+                  <strong className="text-gray-900">VEGF Upregulation and Angiogenesis:</strong> BPC-157 is one of the most potent stimulators of VEGF (Vascular Endothelial Growth Factor) known in peptide pharmacology. VEGF is the primary signal that triggers new blood vessel formation (angiogenesis). In multiple animal models — including the Achilles tendon transection model that most closely replicates human tendon rupture — BPC-157 treatment produced significantly greater vascular density in the healing tendon compared to untreated controls. Essentially, BPC-157 forces the body to build new blood vessels into the very avascular zones that normally prevent rapid healing. This directly addresses the fundamental vascularization problem.
                 </p>
                 <p>
-                  <strong className="text-white">Fibroblast Proliferation and Migration:</strong> BPC-157 dramatically upregulates tendon fibroblast (tenocyte) activity. Fibroblasts are the cells that synthesize new collagen. BPC-157 treatment increases both fibroblast proliferation (more cells) and migration (cells moving to the injury site faster), and — critically — promotes fibroblast production of <strong className="text-white">Type I collagen</strong> rather than Type III. This means the healing tissue has a better collagen composition from the start, reducing the amount of slow remodeling work required.
+                  <strong className="text-gray-900">Fibroblast Proliferation and Migration:</strong> BPC-157 dramatically upregulates tendon fibroblast (tenocyte) activity. Fibroblasts are the cells that synthesize new collagen. BPC-157 treatment increases both fibroblast proliferation (more cells) and migration (cells moving to the injury site faster), and — critically — promotes fibroblast production of <strong className="text-gray-900">Type I collagen</strong> rather than Type III. This means the healing tissue has a better collagen composition from the start, reducing the amount of slow remodeling work required.
                 </p>
                 <p>
-                  <strong className="text-white">The FAK-Paxillin Pathway:</strong> One of BPC-157's most mechanistically unique effects is activation of the focal adhesion kinase (FAK) — paxillin signaling pathway. This pathway governs how cells orient and migrate in response to mechanical and chemical gradients. In the context of tendon healing, FAK-paxillin activation promotes proper spatial organization of newly synthesized collagen fibers — they align along the tendon's long axis (parallel), rather than forming the disorganized, cross-linked scar matrix that characterizes conventional healing. The result is a healed tendon with biomechanical properties far closer to native tissue than without BPC-157 treatment. This is not merely faster healing — it is structurally superior healing.
+                  <strong className="text-gray-900">The FAK-Paxillin Pathway:</strong> One of BPC-157's most mechanistically unique effects is activation of the focal adhesion kinase (FAK) — paxillin signaling pathway. This pathway governs how cells orient and migrate in response to mechanical and chemical gradients. In the context of tendon healing, FAK-paxillin activation promotes proper spatial organization of newly synthesized collagen fibers — they align along the tendon's long axis (parallel), rather than forming the disorganized, cross-linked scar matrix that characterizes conventional healing. The result is a healed tendon with biomechanical properties far closer to native tissue than without BPC-157 treatment. This is not merely faster healing — it is structurally superior healing.
                 </p>
                 <p>
-                  <strong className="text-white">Healing Rate Comparison:</strong> Integrating across published animal studies, BPC-157 treated tendons consistently demonstrate: collagen synthesis beginning 30–50% earlier than untreated controls, tensile strength at 4 weeks that equals or exceeds untreated tendons at 8–12 weeks, significantly better histological fiber organization scores at all time points, and near-complete functional recovery at 4–6 weeks in models where untreated controls take 10–14 weeks. In the most compelling studies, BPC-157 treated tendons show histological features of mature, organized repair tissue at timepoints where control tendons are still in the predominantly Type III / inflammatory phase of repair.
+                  <strong className="text-gray-900">Healing Rate Comparison:</strong> Integrating across published animal studies, BPC-157 treated tendons consistently demonstrate: collagen synthesis beginning 30–50% earlier than untreated controls, tensile strength at 4 weeks that equals or exceeds untreated tendons at 8–12 weeks, significantly better histological fiber organization scores at all time points, and near-complete functional recovery at 4–6 weeks in models where untreated controls take 10–14 weeks. In the most compelling studies, BPC-157 treated tendons show histological features of mature, organized repair tissue at timepoints where control tendons are still in the predominantly Type III / inflammatory phase of repair.
                 </p>
               </div>
             </div>
@@ -298,14 +298,14 @@ export default function Bpc157TendonsPage() {
       {/* Timeline */}
       <section className="py-16" style={{ background: 'rgba(6,6,16,0.8)' }}>
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl font-black text-white mb-8">Recovery Timeline</h2>
+          <h2 className="text-2xl font-black text-gray-900 mb-8">Recovery Timeline</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
             {timeline.map((t) => (
               <div key={t.week} className="glass-card p-5">
                 <div className="text-blue-400 font-black text-sm mb-3">{t.week}</div>
                 <ul className="space-y-2">
                   {t.events.map((e) => (
-                    <li key={e} className="flex items-start gap-2 text-slate-300 text-xs">
+                    <li key={e} className="flex items-start gap-2 text-gray-600 text-xs">
                       <CheckCircle className="w-3 h-3 shrink-0 mt-0.5 text-blue-400" /> {e}
                     </li>
                   ))}
@@ -318,8 +318,8 @@ export default function Bpc157TendonsPage() {
 
       {/* Return to Training Protocol */}
       <section className="py-16 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-black text-white mb-3">Return to Training Protocol</h2>
-        <p className="text-slate-400 mb-10">
+        <h2 className="text-3xl font-black text-gray-900 mb-3">Return to Training Protocol</h2>
+        <p className="text-gray-500 mb-10">
           A phase-by-phase framework for returning to full activity while using BPC-157. Each phase is calibrated to the biological remodeling stage — pushing too fast risks re-injury; the goal is progressive loading that signals organized collagen deposition.
         </p>
         <div className="space-y-5">
@@ -327,7 +327,7 @@ export default function Bpc157TendonsPage() {
             <div key={phase.phase} className="glass-card p-6">
               <div className="flex flex-wrap items-center gap-3 mb-4">
                 <span className="text-blue-400 font-black text-lg">{phase.phase}</span>
-                <span className="text-slate-500 text-sm">{phase.weeks}</span>
+                <span className="text-gray-500 text-sm">{phase.weeks}</span>
                 <span className="ml-auto text-xs font-semibold bg-blue-500/15 text-blue-300 border border-blue-500/30 rounded-full px-3 py-1">{phase.goal}</span>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mb-4">
@@ -335,7 +335,7 @@ export default function Bpc157TendonsPage() {
                   <p className="text-emerald-400 text-xs font-bold tracking-widest mb-2">ACTIVITIES ALLOWED</p>
                   <ul className="space-y-1.5">
                     {phase.allowed.map((a) => (
-                      <li key={a} className="flex items-start gap-2 text-slate-300 text-xs">
+                      <li key={a} className="flex items-start gap-2 text-gray-600 text-xs">
                         <CheckCircle className="w-3 h-3 text-emerald-400 shrink-0 mt-0.5" /> {a}
                       </li>
                     ))}
@@ -345,7 +345,7 @@ export default function Bpc157TendonsPage() {
                   <p className="text-red-400 text-xs font-bold tracking-widest mb-2">AVOID</p>
                   <ul className="space-y-1.5">
                     {phase.avoid.map((a) => (
-                      <li key={a} className="flex items-start gap-2 text-slate-400 text-xs">
+                      <li key={a} className="flex items-start gap-2 text-gray-500 text-xs">
                         <span className="text-red-400 shrink-0 mt-0.5">✕</span> {a}
                       </li>
                     ))}
@@ -353,7 +353,7 @@ export default function Bpc157TendonsPage() {
                 </div>
               </div>
               <div className="border-t border-white/10 pt-3">
-                <p className="text-slate-500 text-xs"><span className="text-blue-400 font-semibold">BPC-157 during this phase:</span> {phase.bpc}</p>
+                <p className="text-gray-500 text-xs"><span className="text-blue-400 font-semibold">BPC-157 during this phase:</span> {phase.bpc}</p>
               </div>
             </div>
           ))}
@@ -363,8 +363,8 @@ export default function Bpc157TendonsPage() {
       {/* Deep Dive Injuries */}
       <section className="py-16" style={{ background: 'rgba(6,6,16,0.8)' }}>
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-black text-white mb-3">Common Tendon Injuries: Deep Dive</h2>
-          <p className="text-slate-400 mb-10">
+          <h2 className="text-3xl font-black text-gray-900 mb-3">Common Tendon Injuries: Deep Dive</h2>
+          <p className="text-gray-500 mb-10">
             Injury mechanism, why BPC-157 is specifically effective, injection technique details, and realistic timelines — for each major injury type.
           </p>
           <div className="space-y-8">
@@ -373,20 +373,20 @@ export default function Bpc157TendonsPage() {
                 <h3 className="text-xl font-black text-blue-400 mb-6">{inj.name}</h3>
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
                   <div>
-                    <p className="text-xs font-bold tracking-widest text-slate-500 mb-2">INJURY MECHANISM</p>
-                    <p className="text-slate-300 text-sm leading-relaxed">{inj.mechanism}</p>
+                    <p className="text-xs font-bold tracking-widest text-gray-500 mb-2">INJURY MECHANISM</p>
+                    <p className="text-gray-600 text-sm leading-relaxed">{inj.mechanism}</p>
                   </div>
                   <div>
-                    <p className="text-xs font-bold tracking-widest text-slate-500 mb-2">WHY BPC-157 WORKS HERE</p>
-                    <p className="text-slate-300 text-sm leading-relaxed">{inj.whyBpc}</p>
+                    <p className="text-xs font-bold tracking-widest text-gray-500 mb-2">WHY BPC-157 WORKS HERE</p>
+                    <p className="text-gray-600 text-sm leading-relaxed">{inj.whyBpc}</p>
                   </div>
                   <div>
-                    <p className="text-xs font-bold tracking-widest text-slate-500 mb-2">INJECTION TECHNIQUE</p>
-                    <p className="text-slate-300 text-sm leading-relaxed">{inj.injectionNotes}</p>
+                    <p className="text-xs font-bold tracking-widest text-gray-500 mb-2">INJECTION TECHNIQUE</p>
+                    <p className="text-gray-600 text-sm leading-relaxed">{inj.injectionNotes}</p>
                   </div>
                   <div>
-                    <p className="text-xs font-bold tracking-widest text-slate-500 mb-2">REAL-WORLD TIMELINE</p>
-                    <p className="text-slate-300 text-sm leading-relaxed">{inj.timeline}</p>
+                    <p className="text-xs font-bold tracking-widest text-gray-500 mb-2">REAL-WORLD TIMELINE</p>
+                    <p className="text-gray-600 text-sm leading-relaxed">{inj.timeline}</p>
                   </div>
                 </div>
               </div>
@@ -398,8 +398,8 @@ export default function Bpc157TendonsPage() {
       {/* Wolverine stack callout */}
       <section className="py-12 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="glass-card p-8">
-          <h2 className="text-xl font-black text-white mb-3">For Severe Injuries: Add TB-500</h2>
-          <p className="text-slate-300 text-sm leading-relaxed mb-4">
+          <h2 className="text-xl font-black text-gray-900 mb-3">For Severe Injuries: Add TB-500</h2>
+          <p className="text-gray-600 text-sm leading-relaxed mb-4">
             The BPC-157 + TB-500 "Wolverine Stack" is the gold standard for serious tendon and ligament injuries.
             TB-500 adds systemic stem cell mobilization and actin polymerization that accelerates structural repair —
             covering what BPC-157 alone cannot reach.
@@ -413,16 +413,16 @@ export default function Bpc157TendonsPage() {
 
       {/* FAQ */}
       <section className="py-16 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-black text-white mb-10 text-center">BPC-157 Tendon Healing FAQ</h2>
+        <h2 className="text-3xl font-black text-gray-900 mb-10 text-center">BPC-157 Tendon Healing FAQ</h2>
         <div className="space-y-3">
           {faqs.map(({ q, a }) => (
             <details key={q} className="glass-card group">
               <summary className="p-5 cursor-pointer list-none flex items-center justify-between">
-                <span className="text-white font-semibold text-sm">{q}</span>
+                <span className="text-gray-900 font-semibold text-sm">{q}</span>
                 <span className="text-blue-400 text-lg group-open:rotate-45 transition-transform shrink-0 ml-4">+</span>
               </summary>
               <div className="px-5 pb-5">
-                <p className="text-slate-400 text-sm leading-relaxed">{a}</p>
+                <p className="text-gray-500 text-sm leading-relaxed">{a}</p>
               </div>
             </details>
           ))}
@@ -432,8 +432,8 @@ export default function Bpc157TendonsPage() {
       {/* CTA */}
       <section className="py-16 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="glass-card p-10">
-          <h2 className="text-2xl font-black text-white mb-3">Get BPC-157 for Tendon Healing</h2>
-          <p className="text-slate-400 mb-6">COA-verified BPC-157 — the most potent tendon repair peptide available.</p>
+          <h2 className="text-2xl font-black text-gray-900 mb-3">Get BPC-157 for Tendon Healing</h2>
+          <p className="text-gray-500 mb-6">COA-verified BPC-157 — the most potent tendon repair peptide available.</p>
           <div className="flex flex-wrap gap-4 justify-center">
             <a href={SOURCE_URL} target="_blank" rel="nofollow noopener noreferrer"
               className="btn-cta px-8 py-4 flex items-center gap-2">

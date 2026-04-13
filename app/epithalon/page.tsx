@@ -68,14 +68,14 @@ export default function EpithalonPage() {
               </div>
 
               <h1 className="text-5xl sm:text-6xl lg:text-8xl font-black leading-[0.9] mb-6 tracking-tight">
-                <span className="text-white block">Buy Epithalon</span>
-                <span className="text-3xl sm:text-4xl font-bold text-slate-400 block mt-2 leading-tight">
+                <span className="text-gray-900 block">Buy Epithalon</span>
+                <span className="text-3xl sm:text-4xl font-bold text-gray-500 block mt-2 leading-tight">
                   28% Lower Mortality.<br />
                   <span className="text-purple-400">Telomeres Extended.</span>
                 </span>
               </h1>
 
-              <p className="text-lg text-slate-400 leading-relaxed mb-8 max-w-lg">
+              <p className="text-lg text-gray-500 leading-relaxed mb-8 max-w-lg">
                 Epithalon is the only compound proven to stimulate telomerase and lengthen telomeres in humans.
                 A 12-year human clinical trial showed 28% lower all-cause mortality. 60+ published studies.
               </p>
@@ -110,7 +110,7 @@ export default function EpithalonPage() {
 
               <div className="flex flex-wrap gap-5">
                 {['COA Verified', '28% Mortality Drop', 'Telomere Extension', '60+ Studies'].map((item) => (
-                  <div key={item} className="flex items-center gap-1.5 text-sm text-slate-500">
+                  <div key={item} className="flex items-center gap-1.5 text-sm text-gray-500">
                     <CheckCircle className="w-4 h-4 text-purple-400" />
                     <span>{item}</span>
                   </div>
@@ -160,7 +160,7 @@ export default function EpithalonPage() {
                   color === 'amber' ? 'text-amber-400' :
                   color === 'blue' ? 'text-blue-400' : 'text-emerald-400'
                 }`}>{value}</div>
-                <div className="text-slate-500 text-sm">{label}</div>
+                <div className="text-gray-500 text-sm">{label}</div>
               </div>
             ))}
           </div>
@@ -172,10 +172,10 @@ export default function EpithalonPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <p className="text-neon-green text-xs font-semibold uppercase tracking-widest mb-3">Evidence-Based Effects</p>
-            <h2 className="text-4xl sm:text-5xl font-black text-white mb-4">
+            <h2 className="text-4xl sm:text-5xl font-black text-gray-900 mb-4">
               What Epithalon <span className="gradient-text">Actually Does</span>
             </h2>
-            <p className="text-slate-400 max-w-2xl mx-auto">
+            <p className="text-gray-500 max-w-2xl mx-auto">
               Over 40 years of research by Dr. Vladimir Khavinson has produced the most comprehensive longevity dataset for any single peptide.
             </p>
           </div>
@@ -187,8 +187,8 @@ export default function EpithalonPage() {
                   <Icon className="w-5 h-5" />
                 </div>
                 <div>
-                  <h3 className="text-white font-bold mb-2">{title}</h3>
-                  <p className="text-slate-400 text-sm leading-relaxed">{body}</p>
+                  <h3 className="text-gray-900 font-bold mb-2">{title}</h3>
+                  <p className="text-gray-500 text-sm leading-relaxed">{body}</p>
                 </div>
               </div>
             ))}
@@ -210,11 +210,11 @@ export default function EpithalonPage() {
             <div className="relative">
               <Dna className="w-12 h-12 text-purple-400 mx-auto mb-6" />
               <p className="text-purple-400 text-xs font-semibold uppercase tracking-widest mb-3">Landmark Clinical Trial</p>
-              <h2 className="text-3xl sm:text-4xl font-black text-white mb-4">
+              <h2 className="text-3xl sm:text-4xl font-black text-gray-900 mb-4">
                 28% Lower All-Cause Mortality<br />
                 <span className="text-purple-400">In a 12-Year Human Trial</span>
               </h2>
-              <p className="text-slate-400 text-lg leading-relaxed mb-6 max-w-2xl mx-auto">
+              <p className="text-gray-500 text-lg leading-relaxed mb-6 max-w-2xl mx-auto">
                 Khavinson et al. (2012) followed elderly patients for 12 years. Those who received Epithalon
                 showed 28% lower all-cause mortality compared to the control group — an extraordinary effect
                 size that no supplement has ever matched.
@@ -238,7 +238,7 @@ export default function EpithalonPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             <div>
               <p className="text-neon-green text-xs font-semibold uppercase tracking-widest mb-3">Dosing Protocol</p>
-              <h2 className="text-4xl font-black text-white mb-6">
+              <h2 className="text-4xl font-black text-gray-900 mb-6">
                 How to Use <span className="gradient-text">Epithalon</span>
               </h2>
 
@@ -253,8 +253,8 @@ export default function EpithalonPage() {
                   <div key={label} className="flex gap-4 p-4 glass-card">
                     <div className="w-2 h-2 bg-purple-400 rounded-full mt-2 shrink-0" />
                     <div>
-                      <p className="text-slate-500 text-xs font-semibold uppercase tracking-wider mb-0.5">{label}</p>
-                      <p className="text-white font-bold text-sm">{value}</p>
+                      <p className="text-gray-500 text-xs font-semibold uppercase tracking-wider mb-0.5">{label}</p>
+                      <p className="text-gray-900 font-bold text-sm">{value}</p>
                     </div>
                   </div>
                 ))}
@@ -263,7 +263,7 @@ export default function EpithalonPage() {
 
             <div className="space-y-5">
               <div className="glass-card p-6 border-purple-400/20">
-                <h3 className="text-white font-bold text-lg mb-4 flex items-center gap-2">
+                <h3 className="text-gray-900 font-bold text-lg mb-4 flex items-center gap-2">
                   <Award className="w-5 h-5 text-purple-400" />
                   Best Stacks with Epithalon
                 </h3>
@@ -276,8 +276,8 @@ export default function EpithalonPage() {
                     <Link key={name} href={href} className="flex items-start gap-3 p-3 rounded-xl bg-dark-700/60 hover:bg-dark-700 transition-colors group">
                       <div className="w-2 h-2 rounded-full bg-purple-400 mt-1.5 shrink-0" />
                       <div>
-                        <p className="text-white font-semibold text-sm group-hover:text-neon-green transition-colors">{name}</p>
-                        <p className="text-slate-500 text-xs">{desc}</p>
+                        <p className="text-gray-900 font-semibold text-sm group-hover:text-neon-green transition-colors">{name}</p>
+                        <p className="text-gray-500 text-xs">{desc}</p>
                       </div>
                     </Link>
                   ))}
@@ -285,12 +285,12 @@ export default function EpithalonPage() {
               </div>
 
               <div className="glass-card p-6 border-neon-green/15 text-center">
-                <h3 className="text-white font-bold mb-2">Get COA-Verified Epithalon</h3>
-                <p className="text-slate-400 text-sm mb-4">50mg vial · US domestic · third-party tested</p>
+                <h3 className="text-gray-900 font-bold mb-2">Get COA-Verified Epithalon</h3>
+                <p className="text-gray-500 text-sm mb-4">50mg vial · US domestic · third-party tested</p>
                 <a href={SOURCE_URL} target="_blank" rel="nofollow noopener noreferrer" className="btn-cta px-8 py-3 inline-flex items-center gap-2">
                   Buy Epithalon — $139.99 <ExternalLink className="w-4 h-4" />
                 </a>
-                <p className="text-slate-600 text-xs mt-2">Affiliate link — at no extra cost to you.</p>
+                <p className="text-gray-600 text-xs mt-2">Affiliate link — at no extra cost to you.</p>
               </div>
             </div>
           </div>
@@ -300,10 +300,10 @@ export default function EpithalonPage() {
       {/* ── BOTTOM CTA ───────────────────────────────────── */}
       <section className="py-20 bg-dark-800 border-t border-white/5">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 text-center">
-          <h2 className="text-4xl font-black text-white mb-4">
+          <h2 className="text-4xl font-black text-gray-900 mb-4">
             Start Your <span className="gradient-text">Longevity Protocol</span>
           </h2>
-          <p className="text-slate-400 text-lg mb-8">
+          <p className="text-gray-500 text-lg mb-8">
             The only compound proven to extend telomeres. 28% lower mortality. Stack with GHK-Cu for the complete anti-aging protocol.
           </p>
           <div className="flex flex-wrap gap-4 justify-center mb-4">
@@ -314,7 +314,7 @@ export default function EpithalonPage() {
               Full Anti-Aging Guide
             </Link>
           </div>
-          <p className="text-slate-600 text-xs mt-2">Affiliate link — commission earned at no additional cost. Not medical advice.</p>
+          <p className="text-gray-600 text-xs mt-2">Affiliate link — commission earned at no additional cost. Not medical advice.</p>
         </div>
       </section>
 

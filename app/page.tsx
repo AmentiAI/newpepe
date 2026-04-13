@@ -466,6 +466,53 @@ export default function HomePage() {
       </section>
 
       {/* ═══════════════════════════════════════════════
+          PRODUCT SHOWCASE — Section 2
+      ═══════════════════════════════════════════════ */}
+      <section className="py-12 sm:py-24 bg-gray-50 border-y border-gray-200">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex items-end justify-between mb-10 sm:mb-14">
+            <div>
+              <p className="text-amber-600 text-xs font-bold uppercase tracking-widest mb-3">COA-Verified · Research Grade</p>
+              <h2 className="text-4xl sm:text-5xl font-black text-gray-900">
+                Featured <span className="gradient-text">Peptides</span>
+              </h2>
+            </div>
+            <Link href="/products" className="btn-secondary text-sm hidden sm:flex items-center gap-1">
+              All Peptides <ArrowRight className="w-4 h-4" />
+            </Link>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-10">
+            {featuredProducts.map((product) => (
+              <ProductCard key={product.slug} product={product} />
+            ))}
+          </div>
+
+          {/* Product quick-access links */}
+          <div className="flex flex-wrap gap-2 justify-center mb-8">
+            {[
+              { label: 'BPC-157 Deep Dive', href: '/bpc-157' },
+              { label: 'TB-500 Guide', href: '/tb-500' },
+              { label: 'GHK-Cu Protocol', href: '/ghk-cu' },
+              { label: 'Epithalon Complete Guide', href: '/epithalon' },
+              { label: 'Ipamorelin + CJC-1295', href: '/ipamorelin' },
+            ].map(({ label, href }) => (
+              <Link key={href} href={href} className="text-sm font-semibold text-gray-700 hover:text-amber-700 border border-gray-200 hover:border-amber-300 bg-white px-4 py-1.5 rounded-full transition-all duration-200">
+                {label}
+              </Link>
+            ))}
+          </div>
+
+          <div className="flex flex-wrap gap-4 justify-center">
+            <Link href="/products" className="btn-secondary text-base px-8 py-4">View All {products.length} Peptides</Link>
+            <a href={SOURCE_URL} target="_blank" rel="nofollow noopener noreferrer" className="btn-cta text-base px-8 py-4 flex items-center gap-2">
+              Shop Now <ArrowRight className="w-5 h-5" />
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* ═══════════════════════════════════════════════
           STATS BAR
       ═══════════════════════════════════════════════ */}
       <div className="bg-gray-50 border-y border-gray-200">
@@ -806,53 +853,6 @@ export default function HomePage() {
           <div className="text-center">
             <a href={SOURCE_URL} target="_blank" rel="nofollow noopener noreferrer" className="btn-cta text-base px-10 py-4 inline-flex items-center gap-2">
               View <ArrowRight className="w-5 h-5" />
-            </a>
-          </div>
-        </div>
-      </section>
-
-      {/* ═══════════════════════════════════════════════
-          PRODUCT SHOWCASE
-      ═══════════════════════════════════════════════ */}
-      <section className="py-12 sm:py-24 bg-gray-50 border-y border-gray-200">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-end justify-between mb-10 sm:mb-14">
-            <div>
-              <p className="text-amber-600 text-xs font-bold uppercase tracking-widest mb-3">COA-Verified · Research Grade</p>
-              <h2 className="text-4xl sm:text-5xl font-black text-gray-900">
-                Featured <span className="gradient-text">Peptides</span>
-              </h2>
-            </div>
-            <Link href="/products" className="btn-secondary text-sm hidden sm:flex items-center gap-1">
-              All Peptides <ArrowRight className="w-4 h-4" />
-            </Link>
-          </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-10">
-            {featuredProducts.map((product) => (
-              <ProductCard key={product.slug} product={product} />
-            ))}
-          </div>
-
-          {/* Product quick-access links */}
-          <div className="flex flex-wrap gap-2 justify-center mb-8">
-            {[
-              { label: 'BPC-157 Deep Dive', href: '/bpc-157' },
-              { label: 'TB-500 Guide', href: '/tb-500' },
-              { label: 'GHK-Cu Protocol', href: '/ghk-cu' },
-              { label: 'Epithalon Complete Guide', href: '/epithalon' },
-              { label: 'Ipamorelin + CJC-1295', href: '/ipamorelin' },
-            ].map(({ label, href }) => (
-              <Link key={href} href={href} className="text-sm font-semibold text-gray-700 hover:text-amber-700 border border-gray-200 hover:border-amber-300 bg-white px-4 py-1.5 rounded-full transition-all duration-200">
-                {label}
-              </Link>
-            ))}
-          </div>
-
-          <div className="flex flex-wrap gap-4 justify-center">
-            <Link href="/products" className="btn-secondary text-base px-8 py-4">View All {products.length} Peptides</Link>
-            <a href={SOURCE_URL} target="_blank" rel="nofollow noopener noreferrer" className="btn-cta text-base px-8 py-4 flex items-center gap-2">
-              Shop Now <ArrowRight className="w-5 h-5" />
             </a>
           </div>
         </div>

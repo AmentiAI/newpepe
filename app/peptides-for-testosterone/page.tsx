@@ -115,11 +115,11 @@ export default function PeptidesForTestosterone() {
             <Activity className="w-4 h-4" />
             Male Hormonal Axis Support
           </div>
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white mb-6 leading-tight">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-gray-900 mb-6 leading-tight">
             Peptides That Work{' '}
             <span className="text-[#00ff88]">With Your Axis</span>
           </h1>
-          <p className="text-xl text-slate-300 leading-relaxed max-w-3xl mx-auto mb-8">
+          <p className="text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto mb-8">
             Testosterone replacement shuts down your natural production. These peptides work the other way — they remind your body how to make testosterone itself. Kisspeptin triggers the hypothalamic signal. Gonadorelin stimulates LH release from the pituitary. BPC-157 supports the Leydig cells that do the actual synthesis. This is hormonal optimization without hormonal dependency.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
@@ -137,7 +137,7 @@ export default function PeptidesForTestosterone() {
           {stats.map((s) => (
             <div key={s.label} className="glass-card p-5 text-center">
               <div className={`text-3xl font-black mb-2 ${s.color}`}>{s.value}</div>
-              <div className="text-slate-400 text-sm leading-tight">{s.label}</div>
+              <div className="text-gray-500 text-sm leading-tight">{s.label}</div>
             </div>
           ))}
         </div>
@@ -145,24 +145,24 @@ export default function PeptidesForTestosterone() {
 
       {/* The Hormonal Axis Explained */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
-        <h2 className="text-3xl font-black text-white mb-4">The Testosterone Production Chain</h2>
-        <p className="text-slate-300 leading-relaxed text-lg mb-10">
+        <h2 className="text-3xl font-black text-gray-900 mb-4">The Testosterone Production Chain</h2>
+        <p className="text-gray-600 leading-relaxed text-lg mb-10">
           Testosterone doesn't just come from the testes in isolation. It's the end product of a cascade that starts in the brain — and there are peptide-based interventions at every step. Understanding the chain explains why these peptides are so much more nuanced than just injecting T.
         </p>
         <div className="space-y-5">
           {hormoneAxis.map((node, i) => (
             <div key={node.gland} className={`glass-card border p-6 ${node.bg}`}>
               <div className="flex items-start gap-4">
-                <div className="shrink-0 w-8 h-8 rounded-full bg-slate-900/50 flex items-center justify-center text-slate-400 font-black text-sm border border-white/10">
+                <div className="shrink-0 w-8 h-8 rounded-full bg-slate-900/50 flex items-center justify-center text-gray-500 font-black text-sm border border-white/10">
                   {i + 1}
                 </div>
                 <div className="flex-1">
                   <div className="flex items-center gap-3 flex-wrap mb-2">
                     <h3 className={`font-black text-lg ${node.color}`}>{node.gland}</h3>
-                    <span className="text-slate-400 text-sm">→ {node.signal}</span>
+                    <span className="text-gray-500 text-sm">→ {node.signal}</span>
                     <span className={`text-xs font-bold px-3 py-1 rounded-full border ${node.bg}`}>{node.peptide}</span>
                   </div>
-                  <p className="text-slate-300 text-sm leading-relaxed">{node.role}</p>
+                  <p className="text-gray-600 text-sm leading-relaxed">{node.role}</p>
                 </div>
               </div>
             </div>
@@ -172,8 +172,8 @@ export default function PeptidesForTestosterone() {
 
       {/* Protocol Selector Component */}
       <section className="py-10 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
-        <h2 className="text-2xl font-black text-white mb-3">Which Protocol Fits Your Situation?</h2>
-        <p className="text-slate-400 text-base mb-6">Select your situation for a personalized peptide recommendation with dosing and timeline.</p>
+        <h2 className="text-2xl font-black text-gray-900 mb-3">Which Protocol Fits Your Situation?</h2>
+        <p className="text-gray-500 text-base mb-6">Select your situation for a personalized peptide recommendation with dosing and timeline.</p>
         <TestosteroneSupportSelector />
       </section>
 
@@ -191,13 +191,13 @@ export default function PeptidesForTestosterone() {
           </div>
           <div className="flex-1">
             <div className="text-amber-400 text-xs font-bold uppercase tracking-widest mb-2">Hypothalamic Trigger</div>
-            <h3 className="text-white text-2xl font-black mb-3">Kisspeptin-10</h3>
-            <p className="text-slate-300 text-base leading-relaxed mb-4">
+            <h3 className="text-gray-900 text-2xl font-black mb-3">Kisspeptin-10</h3>
+            <p className="text-gray-600 text-base leading-relaxed mb-4">
               Kisspeptin-10 is a 10-amino-acid fragment of the kisspeptin peptide family. It activates GPR54 receptors on hypothalamic neurons, triggering GnRH pulses — the very first step in testosterone production. Research shows it can acutely raise LH and testosterone when administered subcutaneously in pulsed fashion.
             </p>
             <div className="flex flex-wrap gap-3 mb-4">
               {['10mg per vial', 'SC injectable', '25–50mcg per dose', 'HPTA upstream trigger'].map((f) => (
-                <span key={f} className="flex items-center gap-1.5 text-sm text-slate-300">
+                <span key={f} className="flex items-center gap-1.5 text-sm text-gray-600">
                   <CheckCircle className="w-4 h-4 text-amber-400" /> {f}
                 </span>
               ))}
@@ -223,13 +223,13 @@ export default function PeptidesForTestosterone() {
           </div>
           <div className="flex-1">
             <div className="text-blue-400 text-xs font-bold uppercase tracking-widest mb-2">LH Pulse Regulator</div>
-            <h3 className="text-white text-2xl font-black mb-3">Gonadorelin</h3>
-            <p className="text-slate-300 text-base leading-relaxed mb-4">
+            <h3 className="text-gray-900 text-2xl font-black mb-3">Gonadorelin</h3>
+            <p className="text-gray-600 text-base leading-relaxed mb-4">
               Gonadorelin is synthetic GnRH — identical to the hormone your hypothalamus secretes. It acts directly on the pituitary to trigger LH and FSH release. Used in PCT protocols and as a TRT companion to maintain testicular function, gonadorelin pulsed 2–3 times weekly prevents the testicular atrophy that typically accompanies TRT.
             </p>
             <div className="flex flex-wrap gap-3 mb-4">
               {['Synthetic GnRH', '100–200mcg per dose', 'Pituitary stimulation', 'PCT & TRT companion'].map((f) => (
-                <span key={f} className="flex items-center gap-1.5 text-sm text-slate-300">
+                <span key={f} className="flex items-center gap-1.5 text-sm text-gray-600">
                   <CheckCircle className="w-4 h-4 text-blue-400" /> {f}
                 </span>
               ))}
@@ -243,8 +243,8 @@ export default function PeptidesForTestosterone() {
 
       {/* Sermorelin & GH-T Relationship */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
-        <h2 className="text-3xl font-black text-white mb-4">The GH–Testosterone Connection</h2>
-        <p className="text-slate-300 leading-relaxed text-lg mb-8">
+        <h2 className="text-3xl font-black text-gray-900 mb-4">The GH–Testosterone Connection</h2>
+        <p className="text-gray-600 leading-relaxed text-lg mb-8">
           Most men think of growth hormone as something separate from testosterone — a muscle-building tool for another conversation. But the GH-IGF-1 axis and the HPT axis are deeply interconnected. Optimizing GH through peptides like Sermorelin has real downstream effects on testosterone biology.
         </p>
         <div className="glass-card p-6 space-y-4">
@@ -252,8 +252,8 @@ export default function PeptidesForTestosterone() {
             <div key={item.point} className="flex items-start gap-4 p-4 bg-slate-900/40 rounded-xl">
               <CheckCircle className="w-5 h-5 text-[#00ff88] shrink-0 mt-0.5" />
               <div>
-                <p className="text-white font-semibold text-sm">{item.point}</p>
-                <p className="text-slate-400 text-sm mt-1">{item.detail}</p>
+                <p className="text-gray-900 font-semibold text-sm">{item.point}</p>
+                <p className="text-gray-500 text-sm mt-1">{item.detail}</p>
               </div>
             </div>
           ))}
@@ -274,13 +274,13 @@ export default function PeptidesForTestosterone() {
           </div>
           <div className="flex-1">
             <div className="text-[#00ff88] text-xs font-bold uppercase tracking-widest mb-2">GH Axis Support</div>
-            <h3 className="text-white text-2xl font-black mb-3">Sermorelin 10mg</h3>
-            <p className="text-slate-300 text-base leading-relaxed mb-4">
+            <h3 className="text-gray-900 text-2xl font-black mb-3">Sermorelin 10mg</h3>
+            <p className="text-gray-600 text-base leading-relaxed mb-4">
               Sermorelin is a GHRH analogue — it stimulates the pituitary to release GH in a physiological pulse pattern, rather than the supraphysiological blast of direct GH injection. Administered nightly (the GH-rich sleep window), it enhances the body's natural GH architecture. Over 8–12 weeks, this translates to better body composition, improved recovery, and meaningful downstream support for the testosterone axis.
             </p>
             <div className="flex flex-wrap gap-3 mb-4">
               {['200mcg nightly dose', 'Pre-sleep SC injection', 'GH pulse enhancement', 'Non-suppressive'].map((f) => (
-                <span key={f} className="flex items-center gap-1.5 text-sm text-slate-300">
+                <span key={f} className="flex items-center gap-1.5 text-sm text-gray-600">
                   <CheckCircle className="w-4 h-4 text-[#00ff88]" /> {f}
                 </span>
               ))}
@@ -294,7 +294,7 @@ export default function PeptidesForTestosterone() {
 
       {/* Who This Is For */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
-        <h2 className="text-3xl font-black text-white mb-6">Who These Peptides Are For</h2>
+        <h2 className="text-3xl font-black text-gray-900 mb-6">Who These Peptides Are For</h2>
         <div className="grid sm:grid-cols-3 gap-5">
           {[
             {
@@ -318,8 +318,8 @@ export default function PeptidesForTestosterone() {
           ].map((card) => (
             <div key={card.title} className={`glass-card border p-6 ${card.color}`}>
               <div className="text-3xl mb-4">{card.icon}</div>
-              <h3 className="text-white font-bold text-base mb-3">{card.title}</h3>
-              <p className="text-slate-300 text-sm leading-relaxed">{card.description}</p>
+              <h3 className="text-gray-900 font-bold text-base mb-3">{card.title}</h3>
+              <p className="text-gray-600 text-sm leading-relaxed">{card.description}</p>
             </div>
           ))}
         </div>
@@ -327,15 +327,15 @@ export default function PeptidesForTestosterone() {
 
       {/* FAQ */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
-        <h2 className="text-3xl font-black text-white mb-8">Frequently Asked Questions</h2>
+        <h2 className="text-3xl font-black text-gray-900 mb-8">Frequently Asked Questions</h2>
         <div className="space-y-4">
           {faqs.map((faq) => (
             <details key={faq.q} className="glass-card group">
-              <summary className="p-6 cursor-pointer flex items-center justify-between gap-4 text-white font-semibold text-base list-none">
+              <summary className="p-6 cursor-pointer flex items-center justify-between gap-4 text-gray-900 font-semibold text-base list-none">
                 {faq.q}
                 <span className="text-[#00ff88] text-xl font-black shrink-0 group-open:rotate-45 transition-transform">+</span>
               </summary>
-              <div className="px-6 pb-6 text-slate-300 leading-relaxed text-base">
+              <div className="px-6 pb-6 text-gray-600 leading-relaxed text-base">
                 {faq.a}
               </div>
             </details>
@@ -346,8 +346,8 @@ export default function PeptidesForTestosterone() {
       {/* CTA */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
         <div className="glass-card p-10 text-center border border-[#00ff88]/15">
-          <h2 className="text-3xl font-black text-white mb-4">Support Your Natural Testosterone Production</h2>
-          <p className="text-slate-300 text-lg mb-8 max-w-2xl mx-auto">
+          <h2 className="text-3xl font-black text-gray-900 mb-4">Support Your Natural Testosterone Production</h2>
+          <p className="text-gray-600 text-lg mb-8 max-w-2xl mx-auto">
             Kisspeptin, Gonadorelin, and Sermorelin are available as research peptides. Start with the protocol selector above to find the right approach for your situation.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">

@@ -155,18 +155,18 @@ export default function GymPeptideStackPage() {
             </div>
 
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-black leading-[0.9] mb-6 tracking-tight">
-              <span className="text-white block">The Complete</span>
-              <span className="text-white block">Gym Peptide</span>
+              <span className="text-gray-900 block">The Complete</span>
+              <span className="text-gray-900 block">Gym Peptide</span>
               <span style={{ color: '#00ff88' }} className="block mt-2">Stack</span>
             </h1>
 
-            <p className="text-xl text-slate-400 leading-relaxed mb-4 max-w-2xl">
+            <p className="text-xl text-gray-500 leading-relaxed mb-4 max-w-2xl">
               Every serious gym-goer already takes creatine, protein powder, and pre-workout.
               Peptides are simply the next layer — the one that actually changes your physiology
               instead of just giving you a pump.
             </p>
 
-            <p className="text-slate-500 leading-relaxed mb-8 max-w-2xl">
+            <p className="text-gray-500 leading-relaxed mb-8 max-w-2xl">
               CJC-1295/Ipamorelin for the GH axis. BPC-157 and TB-500 for recovery that never falls
               behind your training. IGF-1 for real muscle signaling. Tirzepatide for the fat loss layer.
               Three tiers — pick yours.
@@ -189,7 +189,7 @@ export default function GymPeptideStackPage() {
 
             <div className="flex flex-wrap gap-4">
               {['Pre-Workout GH Timing', 'BPC-157 Recovery', 'IGF-1 Muscle Signal', 'Tirzepatide Fat Loss'].map((item) => (
-                <div key={item} className="flex items-center gap-1.5 text-sm text-slate-500">
+                <div key={item} className="flex items-center gap-1.5 text-sm text-gray-500">
                   <CheckCircle className="w-4 h-4 text-emerald-400" />
                   <span>{item}</span>
                 </div>
@@ -205,7 +205,7 @@ export default function GymPeptideStackPage() {
               {stats.map(({ value, label, color }) => (
                 <div key={label} className="text-center">
                   <div className={`text-4xl font-black mb-1 ${color}`}>{value}</div>
-                  <div className="text-slate-500 text-sm">{label}</div>
+                  <div className="text-gray-500 text-sm">{label}</div>
                 </div>
               ))}
             </div>
@@ -218,25 +218,25 @@ export default function GymPeptideStackPage() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
               <div>
                 <p className="text-xs font-semibold uppercase tracking-widest mb-3" style={{ color: '#00ff88' }}>The Case</p>
-                <h2 className="text-4xl font-black text-white mb-6">
+                <h2 className="text-4xl font-black text-gray-900 mb-6">
                   The Next Layer{' '}
                   <span className="text-emerald-400">After Creatine</span>
                 </h2>
-                <p className="text-slate-400 leading-relaxed mb-4">
+                <p className="text-gray-500 leading-relaxed mb-4">
                   Creatine works by increasing phosphocreatine in muscle. Protein powder provides
                   amino acid substrate. Pre-workout gives you caffeine and pump. These are tools —
                   and they&apos;re good tools. But none of them change the underlying physiology that
                   determines how much muscle you can build, how fast you recover, and how your body
                   partitions nutrients.
                 </p>
-                <p className="text-slate-400 leading-relaxed mb-4">
+                <p className="text-gray-500 leading-relaxed mb-4">
                   Peptides operate at a different level. CJC-1295/Ipamorelin restores the GH axis
                   to youthful output — affecting body composition, recovery rate, sleep quality,
                   and training capacity simultaneously. BPC-157 accelerates the repair of the
                   micro-damage that training creates, allowing you to train harder more frequently.
                   IGF-1 LR3 directly signals muscle satellite cells to proliferate.
                 </p>
-                <p className="text-slate-400 leading-relaxed">
+                <p className="text-gray-500 leading-relaxed">
                   These aren&apos;t stimulants or ergogenic aids. They are signals — biological
                   instructions that tell your body to build more, repair faster, and maintain
                   a more favorable metabolic environment. The foundation doesn&apos;t change.
@@ -254,7 +254,7 @@ export default function GymPeptideStackPage() {
                   <div key={title} className={`glass-card p-5 ${bg} border ${border}`}>
                     <Icon className={`w-5 h-5 mb-3 ${color}`} />
                     <div className={`font-black text-sm mb-2 ${color}`}>{title}</div>
-                    <p className="text-slate-400 text-xs leading-relaxed">{body}</p>
+                    <p className="text-gray-500 text-xs leading-relaxed">{body}</p>
                   </div>
                 ))}
               </div>
@@ -285,24 +285,24 @@ export default function GymPeptideStackPage() {
                   <span className="text-emerald-400 text-xs font-semibold uppercase tracking-widest">Pre-Workout Peptide</span>
                 </div>
 
-                <h2 className="text-3xl font-black text-white mb-4">
+                <h2 className="text-3xl font-black text-gray-900 mb-4">
                   CJC-1295/Ipamorelin:{' '}
                   <span className="text-emerald-400">GH Pulse Timing</span>
                 </h2>
 
-                <p className="text-slate-400 leading-relaxed mb-4">
+                <p className="text-gray-500 leading-relaxed mb-4">
                   The GH axis is the master anabolic and lipolytic system. Training is a GH releaser —
                   but modern life (stress, poor sleep, metabolic dysfunction) means most gym-goers
                   are getting a fraction of the GH pulse they should. CJC-1295/Ipamorelin restores
                   this output to youthful levels.
                 </p>
-                <p className="text-slate-400 leading-relaxed mb-4">
+                <p className="text-gray-500 leading-relaxed mb-4">
                   Pre-workout use is simple: inject 45–60 minutes before training, fasted.
                   The GH pulse will be active during your training session, improving energy
                   substrate utilization (more fat burning), reducing fatigue, and priming
                   the anabolic response to the workout stimulus.
                 </p>
-                <p className="text-slate-400 leading-relaxed mb-6">
+                <p className="text-gray-500 leading-relaxed mb-6">
                   Pre-sleep use is equally important: your largest natural GH pulse fires during
                   the first deep sleep cycle. CJC/Ipa pre-sleep amplifies this 3–5x, driving
                   overnight protein synthesis and body recomposition while you sleep.
@@ -316,8 +316,8 @@ export default function GymPeptideStackPage() {
                     { label: 'Best Result', value: 'Run both windows on training days' },
                   ].map(({ label, value }) => (
                     <div key={label} className="glass-card p-3">
-                      <div className="text-slate-500 text-xs font-semibold uppercase tracking-wider mb-1">{label}</div>
-                      <div className="text-white font-bold text-sm">{value}</div>
+                      <div className="text-gray-500 text-xs font-semibold uppercase tracking-wider mb-1">{label}</div>
+                      <div className="text-gray-900 font-bold text-sm">{value}</div>
                     </div>
                   ))}
                 </div>
@@ -345,24 +345,24 @@ export default function GymPeptideStackPage() {
                   <span className="text-blue-400 text-xs font-semibold uppercase tracking-widest">Recovery Stack</span>
                 </div>
 
-                <h2 className="text-3xl font-black text-white mb-4">
+                <h2 className="text-3xl font-black text-gray-900 mb-4">
                   BPC-157 + TB-500:{' '}
                   <span className="text-blue-400">The Wolverine Stack</span>
                 </h2>
 
-                <p className="text-slate-400 leading-relaxed mb-4">
+                <p className="text-gray-500 leading-relaxed mb-4">
                   The real ceiling for elite gym performance isn&apos;t motivation, training volume, or
                   even nutrition. It&apos;s recovery. Every serious athlete eventually hits the wall where
                   the training they need to do exceeds their body&apos;s ability to repair between sessions.
                   This is where BPC-157 and TB-500 change the equation entirely.
                 </p>
-                <p className="text-slate-400 leading-relaxed mb-4">
+                <p className="text-gray-500 leading-relaxed mb-4">
                   BPC-157 accelerates healing of tendons, ligaments, muscles, and joints by 2–3x via
                   GH receptor upregulation and VEGF-driven angiogenesis. It&apos;s the reactive tool —
                   inject near wherever is sore, stiff, or injured. TB-500 works systemically,
                   mobilizing stem cells throughout the body simultaneously.
                 </p>
-                <p className="text-slate-400 leading-relaxed mb-6">
+                <p className="text-gray-500 leading-relaxed mb-6">
                   Together they allow training frequencies and volumes that would accumulate
                   injury in a non-peptide user. The recovery bottleneck simply stops being
                   a bottleneck.
@@ -407,7 +407,7 @@ export default function GymPeptideStackPage() {
                       <TrendingUp className="w-3.5 h-3.5 text-purple-400" />
                       <span className="text-purple-400 text-xs font-semibold uppercase tracking-widest">Muscle Building</span>
                     </div>
-                    <h3 className="text-2xl font-black text-white">IGF-1 LR3</h3>
+                    <h3 className="text-2xl font-black text-gray-900">IGF-1 LR3</h3>
                   </div>
                   <div className="relative shrink-0">
                     <Image
@@ -420,7 +420,7 @@ export default function GymPeptideStackPage() {
                   </div>
                 </div>
 
-                <p className="text-slate-400 text-sm leading-relaxed mb-4">
+                <p className="text-gray-500 text-sm leading-relaxed mb-4">
                   IGF-1 LR3 directly activates satellite cells — the precursor cells that become new
                   muscle fibers. It&apos;s the closest legal analog to the pubescent IGF-1 environment
                   that drives rapid adolescent muscle development. Four-week cycles at 50–80 mcg daily
@@ -433,13 +433,13 @@ export default function GymPeptideStackPage() {
                     { label: 'Cycle', value: '4 weeks on, 2 off' },
                   ].map(({ label, value }) => (
                     <div key={label} className="rounded-lg p-3" style={{ background: 'rgba(168,85,247,0.06)', border: '1px solid rgba(168,85,247,0.15)' }}>
-                      <div className="text-slate-500 text-xs font-semibold mb-1">{label}</div>
-                      <div className="text-white font-bold text-sm">{value}</div>
+                      <div className="text-gray-500 text-xs font-semibold mb-1">{label}</div>
+                      <div className="text-gray-900 font-bold text-sm">{value}</div>
                     </div>
                   ))}
                 </div>
 
-                <a href={SOURCE_URL} target="_blank" rel="nofollow noopener noreferrer" className="text-purple-400 text-sm font-bold hover:text-white transition-colors flex items-center gap-1">
+                <a href={SOURCE_URL} target="_blank" rel="nofollow noopener noreferrer" className="text-purple-400 text-sm font-bold hover:text-gray-900 transition-colors flex items-center gap-1">
                   Shop IGF-1 LR3 <ArrowRight className="w-3.5 h-3.5" />
                 </a>
               </div>
@@ -452,7 +452,7 @@ export default function GymPeptideStackPage() {
                       <Dumbbell className="w-3.5 h-3.5 text-amber-400" />
                       <span className="text-amber-400 text-xs font-semibold uppercase tracking-widest">Fat Loss Layer</span>
                     </div>
-                    <h3 className="text-2xl font-black text-white">Tirzepatide</h3>
+                    <h3 className="text-2xl font-black text-gray-900">Tirzepatide</h3>
                   </div>
                   <div className="relative shrink-0">
                     <Image
@@ -465,7 +465,7 @@ export default function GymPeptideStackPage() {
                   </div>
                 </div>
 
-                <p className="text-slate-400 text-sm leading-relaxed mb-4">
+                <p className="text-gray-500 text-sm leading-relaxed mb-4">
                   Tirzepatide is the clinical gold standard for fat loss — dual GIP/GLP-1 agonism
                   that produces 20%+ body weight reduction in trials. For gym-goers, it&apos;s the fat
                   loss layer that no amount of cardio can fully replicate. Stack with CJC/Ipa for
@@ -478,13 +478,13 @@ export default function GymPeptideStackPage() {
                     { label: 'Titrate Up', value: '2.5 mg increments monthly' },
                   ].map(({ label, value }) => (
                     <div key={label} className="rounded-lg p-3" style={{ background: 'rgba(245,158,11,0.06)', border: '1px solid rgba(245,158,11,0.15)' }}>
-                      <div className="text-slate-500 text-xs font-semibold mb-1">{label}</div>
-                      <div className="text-white font-bold text-sm">{value}</div>
+                      <div className="text-gray-500 text-xs font-semibold mb-1">{label}</div>
+                      <div className="text-gray-900 font-bold text-sm">{value}</div>
                     </div>
                   ))}
                 </div>
 
-                <a href={SOURCE_URL} target="_blank" rel="nofollow noopener noreferrer" className="text-amber-400 text-sm font-bold hover:text-white transition-colors flex items-center gap-1">
+                <a href={SOURCE_URL} target="_blank" rel="nofollow noopener noreferrer" className="text-amber-400 text-sm font-bold hover:text-gray-900 transition-colors flex items-center gap-1">
                   Shop Tirzepatide <ArrowRight className="w-3.5 h-3.5" />
                 </a>
               </div>
@@ -497,11 +497,11 @@ export default function GymPeptideStackPage() {
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-14">
               <p className="text-xs font-semibold uppercase tracking-widest mb-3" style={{ color: '#00ff88' }}>Choose Your Level</p>
-              <h2 className="text-4xl font-black text-white mb-4">
+              <h2 className="text-4xl font-black text-gray-900 mb-4">
                 3 Tiers of the{' '}
                 <span style={{ color: '#00ff88' }}>Gym Peptide Stack</span>
               </h2>
-              <p className="text-slate-400 max-w-xl mx-auto">
+              <p className="text-gray-500 max-w-xl mx-auto">
                 Start where you are. Every tier builds on the previous. Most users see the biggest
                 return starting with Tier 1 before adding complexity.
               </p>
@@ -517,23 +517,23 @@ export default function GymPeptideStackPage() {
                   <div className="mb-4">
                     <div className={`text-5xl font-black opacity-20 mb-1 ${color}`}>{level}</div>
                     <div className={`font-black text-xl ${color}`}>{tier} Stack</div>
-                    <div className="text-slate-500 text-sm">{subtitle}</div>
+                    <div className="text-gray-500 text-sm">{subtitle}</div>
                   </div>
 
-                  <p className="text-slate-400 text-xs italic mb-4 leading-relaxed">&quot;{tagline}&quot;</p>
+                  <p className="text-gray-500 text-xs italic mb-4 leading-relaxed">&quot;{tagline}&quot;</p>
 
                   <div className="space-y-3 flex-1 mb-5">
                     {peptides.map((p) => (
                       <div key={p.name} className="rounded-lg p-3" style={{ background: `${bg}`, border: `1px solid ${border}` }}>
-                        <div className="font-bold text-sm text-white">{p.name}</div>
-                        <div className="text-slate-500 text-xs">{p.role}</div>
-                        <div className="text-slate-400 text-xs mt-1 font-mono">{p.dose}</div>
+                        <div className="font-bold text-sm text-gray-900">{p.name}</div>
+                        <div className="text-gray-500 text-xs">{p.role}</div>
+                        <div className="text-gray-500 text-xs mt-1 font-mono">{p.dose}</div>
                       </div>
                     ))}
                   </div>
 
                   <div className="flex items-center justify-between">
-                    <span className="text-slate-500 text-xs font-bold">{cost}</span>
+                    <span className="text-gray-500 text-xs font-bold">{cost}</span>
                     <a
                       href={SOURCE_URL}
                       target="_blank"
@@ -555,11 +555,11 @@ export default function GymPeptideStackPage() {
           <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-10">
               <p className="text-xs font-semibold uppercase tracking-widest mb-3" style={{ color: '#00ff88' }}>Find Your Stack</p>
-              <h2 className="text-3xl font-black text-white mb-3">
+              <h2 className="text-3xl font-black text-gray-900 mb-3">
                 Match Peptides to{' '}
                 <span className="text-emerald-400">Your Gym Goal</span>
               </h2>
-              <p className="text-slate-400">
+              <p className="text-gray-500">
                 Select your primary goal to see the optimal peptide combination with dosing, timeline, and cost.
               </p>
             </div>
@@ -571,8 +571,8 @@ export default function GymPeptideStackPage() {
         <section className="py-24 bg-dark-900">
           <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
-              <p className="text-xs font-semibold uppercase tracking-widest mb-3 text-slate-500">Common Questions</p>
-              <h2 className="text-3xl font-black text-white">
+              <p className="text-xs font-semibold uppercase tracking-widest mb-3 text-gray-500">Common Questions</p>
+              <h2 className="text-3xl font-black text-gray-900">
                 Gym Peptide <span className="text-emerald-400">FAQ</span>
               </h2>
             </div>
@@ -581,11 +581,11 @@ export default function GymPeptideStackPage() {
               {faqs.map(({ q, a }) => (
                 <details key={q} className="glass-card group">
                   <summary className="flex items-center justify-between p-5 cursor-pointer list-none">
-                    <span className="text-white font-semibold text-sm pr-4">{q}</span>
-                    <span className="text-slate-500 text-xl shrink-0 group-open:rotate-45 transition-transform duration-200">+</span>
+                    <span className="text-gray-900 font-semibold text-sm pr-4">{q}</span>
+                    <span className="text-gray-500 text-xl shrink-0 group-open:rotate-45 transition-transform duration-200">+</span>
                   </summary>
                   <div className="px-5 pb-5">
-                    <p className="text-slate-400 text-sm leading-relaxed">{a}</p>
+                    <p className="text-gray-500 text-sm leading-relaxed">{a}</p>
                   </div>
                 </details>
               ))}
@@ -596,10 +596,10 @@ export default function GymPeptideStackPage() {
         {/* ── BOTTOM CTA ───────────────────────────────────── */}
         <section className="py-20 bg-dark-800 border-t border-white/5">
           <div className="max-w-3xl mx-auto px-4 sm:px-6 text-center">
-            <h2 className="text-4xl font-black text-white mb-4">
+            <h2 className="text-4xl font-black text-gray-900 mb-4">
               Build Your <span style={{ color: '#00ff88' }}>Gym Stack</span>
             </h2>
-            <p className="text-slate-400 text-lg mb-8">
+            <p className="text-gray-500 text-lg mb-8">
               Start with CJC/Ipa and BPC-157. Add IGF-1. Layer in Tirzepatide. The physiology
               changes — and so do the results.
             </p>
@@ -616,7 +616,7 @@ export default function GymPeptideStackPage() {
                 Body Comp Guide
               </Link>
             </div>
-            <p className="text-slate-600 text-xs mt-2">Affiliate link — commission earned at no additional cost. Not medical advice.</p>
+            <p className="text-gray-600 text-xs mt-2">Affiliate link — commission earned at no additional cost. Not medical advice.</p>
           </div>
         </section>
 

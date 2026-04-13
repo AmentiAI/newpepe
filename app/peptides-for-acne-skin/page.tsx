@@ -204,7 +204,7 @@ const faqs = [
 
 export default function PeptidesForAcneSkinPage() {
   return (
-    <main className="min-h-screen bg-dark-900 text-slate-200">
+    <main className="min-h-screen bg-dark-900 text-gray-700">
       {/* Hero */}
       <section className="relative py-20 px-4 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-rose-900/20 via-dark-900 to-emerald-900/20" />
@@ -213,18 +213,18 @@ export default function PeptidesForAcneSkinPage() {
             <HeartPulse className="w-4 h-4" />
             Acne &amp; Skin Healing
           </div>
-          <h1 className="text-4xl sm:text-5xl font-extrabold text-white leading-tight">
+          <h1 className="text-4xl sm:text-5xl font-extrabold text-gray-900 leading-tight">
             Peptides for{' '}
             <span className="text-neon-green">Acne &amp; Skin</span>
           </h1>
-          <p className="text-xl text-slate-300 max-w-2xl mx-auto">
+          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
             Acne and acne scarring are among the most significant appearance detractors. BPC-157 heals the gut-skin axis that drives inflammation. GHK-Cu rebuilds the skin architecture left damaged by years of acne.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <Link href={SOURCE_URL} rel="nofollow noopener noreferrer" className="btn-cta flex items-center gap-2">
               View Acne Peptides <ArrowRight className="w-4 h-4" />
             </Link>
-            <Link href="/bpc-157-for-gut-health" className="flex items-center gap-2 px-6 py-3 border border-slate-600 rounded-xl text-slate-300 hover:border-slate-400 transition-colors">
+            <Link href="/bpc-157-for-gut-health" className="flex items-center gap-2 px-6 py-3 border border-slate-600 rounded-xl text-gray-600 hover:border-slate-400 transition-colors">
               BPC-157 Gut Guide
             </Link>
           </div>
@@ -234,15 +234,15 @@ export default function PeptidesForAcneSkinPage() {
       {/* Why Acne is a Looksmaxxing Priority */}
       <section className="py-16 px-4">
         <div className="max-w-4xl mx-auto space-y-8">
-          <h2 className="text-3xl font-bold text-white">Why Acne is a Looksmaxxing Priority</h2>
+          <h2 className="text-3xl font-bold text-gray-900">Why Acne is a Looksmaxxing Priority</h2>
           <div className="glass-card p-8 space-y-5">
-            <p className="text-slate-300 leading-relaxed">
+            <p className="text-gray-600 leading-relaxed">
               Research on facial attractiveness consistently identifies skin quality as one of the highest-weighted variables in appearance assessment — ahead of facial symmetry, proportions, and even bone structure in some studies. Active acne, and particularly the scarring it leaves, are among the most significant negative signals in skin quality assessment.
             </p>
-            <p className="text-slate-300 leading-relaxed">
+            <p className="text-gray-600 leading-relaxed">
               Unlike aging-related appearance changes (which are gradual and expected), acne presents a visible inflammatory disease that signals health and hormonal dysregulation. Post-inflammatory hyperpigmentation (PIH) and acne scarring can persist for years — sometimes decades — after the active acne resolves, creating a permanent appearance burden from a condition that was hopefully temporary.
             </p>
-            <p className="text-slate-300 leading-relaxed">
+            <p className="text-gray-600 leading-relaxed">
               The peptide approach to acne is fundamentally different from conventional dermatology: instead of killing bacteria on the skin surface (benzoyl peroxide, antibiotics) or suppressing sebum gland activity (isotretinoin), it addresses the systemic inflammatory root causes — particularly the gut-skin axis — while simultaneously rebuilding the skin architecture damaged by years of inflammation.
             </p>
           </div>
@@ -253,16 +253,16 @@ export default function PeptidesForAcneSkinPage() {
       <section className="py-16 px-4 bg-slate-900/30">
         <div className="max-w-4xl mx-auto space-y-8">
           <div className="text-center space-y-3">
-            <h2 className="text-3xl font-bold text-white">The Gut-Skin Axis: Why BPC-157 Works for Acne</h2>
-            <p className="text-slate-400 max-w-2xl mx-auto">
+            <h2 className="text-3xl font-bold text-gray-900">The Gut-Skin Axis: Why BPC-157 Works for Acne</h2>
+            <p className="text-gray-500 max-w-2xl mx-auto">
               70% of the immune system is gut-associated. Gut dysfunction drives skin inflammation through four distinct mechanisms.
             </p>
           </div>
           <div className="space-y-4">
             {gutSkinMechanisms.map((mechanism) => (
               <div key={mechanism.title} className="glass-card p-5 space-y-3">
-                <h3 className="text-slate-100 font-bold">{mechanism.title}</h3>
-                <p className="text-slate-400 text-sm leading-relaxed">{mechanism.desc}</p>
+                <h3 className="text-gray-800 font-bold">{mechanism.title}</h3>
+                <p className="text-gray-500 text-sm leading-relaxed">{mechanism.desc}</p>
                 <div className="pt-2 border-t border-slate-700/50 flex items-start gap-2">
                   <Shield className="w-4 h-4 text-rose-400 mt-0.5 flex-shrink-0" />
                   <p className="text-rose-300 text-sm">{mechanism.peptide}</p>
@@ -271,7 +271,7 @@ export default function PeptidesForAcneSkinPage() {
             ))}
           </div>
           <div className="glass-card p-6">
-            <p className="text-slate-300 text-sm leading-relaxed">
+            <p className="text-gray-600 text-sm leading-relaxed">
               <strong className="text-rose-300">The BPC-157 mechanism for gut healing:</strong> BPC-157 (Body Protection Compound-157) was originally isolated from gastric juice. Its primary documented mechanism is repair of intestinal tight junctions — the molecular seals between gut epithelial cells that prevent pathological permeability. It upregulates tight junction proteins (ZO-1, occludin, claudin) and activates the growth hormone receptor locally in gut tissue. In rat models of induced colitis and leaky gut, BPC-157 dramatically reduces intestinal permeability markers and systemic inflammation within 2–4 weeks. This is the mechanism behind its effectiveness for gut-driven skin inflammation.
             </p>
           </div>
@@ -281,26 +281,26 @@ export default function PeptidesForAcneSkinPage() {
       {/* Acne Types */}
       <section className="py-16 px-4">
         <div className="max-w-4xl mx-auto space-y-8">
-          <h2 className="text-3xl font-bold text-white">Acne Types &amp; Peptide Approach</h2>
+          <h2 className="text-3xl font-bold text-gray-900">Acne Types &amp; Peptide Approach</h2>
           <div className="space-y-5">
             {acneTypes.map((type) => (
               <div key={type.type} className={`glass-card p-6 border ${type.color} space-y-4`}>
                 <div className="flex items-center gap-3">
                   <span className={`px-3 py-1 rounded-full text-sm font-bold ${type.badge}`}>{type.type}</span>
                 </div>
-                <p className="text-slate-500 text-sm italic">{type.pattern}</p>
+                <p className="text-gray-500 text-sm italic">{type.pattern}</p>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
                   <div>
-                    <span className="text-slate-500 text-xs uppercase tracking-wide">Primary Approach</span>
-                    <p className="text-slate-300 mt-1">{type.primaryApproach}</p>
+                    <span className="text-gray-500 text-xs uppercase tracking-wide">Primary Approach</span>
+                    <p className="text-gray-600 mt-1">{type.primaryApproach}</p>
                   </div>
                   <div>
-                    <span className="text-slate-500 text-xs uppercase tracking-wide">Topical Approach</span>
-                    <p className="text-slate-300 mt-1">{type.topicalApproach}</p>
+                    <span className="text-gray-500 text-xs uppercase tracking-wide">Topical Approach</span>
+                    <p className="text-gray-600 mt-1">{type.topicalApproach}</p>
                   </div>
                 </div>
                 <div className="pt-2 border-t border-slate-700/50">
-                  <p className="text-slate-400 text-xs">{type.additionalNotes}</p>
+                  <p className="text-gray-500 text-xs">{type.additionalNotes}</p>
                 </div>
               </div>
             ))}
@@ -312,8 +312,8 @@ export default function PeptidesForAcneSkinPage() {
       <section className="py-16 px-4 bg-slate-900/30">
         <div className="max-w-4xl mx-auto space-y-8">
           <div className="text-center space-y-3">
-            <h2 className="text-3xl font-bold text-white">Find Your Personalized Protocol</h2>
-            <p className="text-slate-400 max-w-2xl mx-auto">
+            <h2 className="text-3xl font-bold text-gray-900">Find Your Personalized Protocol</h2>
+            <p className="text-gray-500 max-w-2xl mx-auto">
               Answer 3 questions to get your tailored peptide acne protocol based on your specific acne type and gut status.
             </p>
           </div>
@@ -324,20 +324,20 @@ export default function PeptidesForAcneSkinPage() {
       {/* Accutane + BPC-157 */}
       <section className="py-16 px-4">
         <div className="max-w-4xl mx-auto space-y-8">
-          <h2 className="text-3xl font-bold text-white">The Isotretinoin + BPC-157 Protocol</h2>
+          <h2 className="text-3xl font-bold text-gray-900">The Isotretinoin + BPC-157 Protocol</h2>
           <div className="glass-card p-6 border border-amber-500/30 bg-amber-500/5">
             <p className="text-amber-300 font-semibold">Important Context</p>
-            <p className="text-slate-300 text-sm mt-2 leading-relaxed">
+            <p className="text-gray-600 text-sm mt-2 leading-relaxed">
               Isotretinoin (Accutane) is the most effective pharmaceutical acne treatment available — it produces permanent remission in 60–80% of users. However, its gastrointestinal side effects are significant: IBD risk increase (particularly for those with family history), gut dysbiosis, and inflammatory bowel symptoms during treatment affect a meaningful percentage of users. BPC-157 oral is used by practitioners to protect the gut throughout the isotretinoin course. This is not a substitute for medical monitoring — coordinate with the prescribing dermatologist.
             </p>
           </div>
           <div className="space-y-4">
             {accutaneProtocol.map((phase) => (
               <div key={phase.phase} className="glass-card p-5 space-y-3">
-                <h3 className="text-slate-100 font-bold">{phase.phase}</h3>
+                <h3 className="text-gray-800 font-bold">{phase.phase}</h3>
                 <p className="text-rose-300 text-sm font-medium">{phase.protocol}</p>
-                <p className="text-slate-400 text-sm leading-relaxed">{phase.rationale}</p>
-                <p className="text-slate-500 text-xs"><span className="text-slate-400">Timing:</span> {phase.timing}</p>
+                <p className="text-gray-500 text-sm leading-relaxed">{phase.rationale}</p>
+                <p className="text-gray-500 text-xs"><span className="text-gray-500">Timing:</span> {phase.timing}</p>
               </div>
             ))}
           </div>
@@ -347,19 +347,19 @@ export default function PeptidesForAcneSkinPage() {
       {/* Diet Protocol */}
       <section className="py-16 px-4 bg-slate-900/30">
         <div className="max-w-4xl mx-auto space-y-8">
-          <h2 className="text-3xl font-bold text-white">Diet Interventions That Amplify Peptide Effects</h2>
+          <h2 className="text-3xl font-bold text-gray-900">Diet Interventions That Amplify Peptide Effects</h2>
           <div className="space-y-3">
             {dietProtocol.map((item) => (
               <div key={item.item} className="glass-card p-5 flex items-start gap-3">
                 <CheckCircle className="w-5 h-5 text-neon-green mt-0.5 flex-shrink-0" />
                 <div className="space-y-1">
                   <div className="flex items-center gap-3 flex-wrap">
-                    <span className="text-slate-100 font-semibold text-sm">{item.item}</span>
+                    <span className="text-gray-800 font-semibold text-sm">{item.item}</span>
                     <span className={`text-xs px-2 py-0.5 rounded-full border ${item.impact.startsWith('High') ? 'bg-emerald-500/10 text-emerald-400 border-emerald-500/30' : 'bg-amber-500/10 text-amber-400 border-amber-500/30'}`}>
                       {item.impact}
                     </span>
                   </div>
-                  <p className="text-slate-400 text-sm">{item.mechanism}</p>
+                  <p className="text-gray-500 text-sm">{item.mechanism}</p>
                 </div>
               </div>
             ))}
@@ -371,8 +371,8 @@ export default function PeptidesForAcneSkinPage() {
       <section className="py-16 px-4">
         <div className="max-w-4xl mx-auto space-y-8">
           <div className="text-center space-y-3">
-            <h2 className="text-3xl font-bold text-white">Expected Timeline</h2>
-            <p className="text-slate-400 max-w-2xl mx-auto">Active acne responds faster than scarring — the two phases require different timelines and different interventions.</p>
+            <h2 className="text-3xl font-bold text-gray-900">Expected Timeline</h2>
+            <p className="text-gray-500 max-w-2xl mx-auto">Active acne responds faster than scarring — the two phases require different timelines and different interventions.</p>
           </div>
           <div className="space-y-4">
             {timeline.map((t) => (
@@ -380,10 +380,10 @@ export default function PeptidesForAcneSkinPage() {
                 <div className="flex items-start gap-4">
                   <span className={`px-3 py-1 rounded-full text-sm font-bold flex-shrink-0 ${t.badge}`}>{t.period}</span>
                   <div className="space-y-3">
-                    <h3 className="text-slate-100 font-bold">{t.title}</h3>
+                    <h3 className="text-gray-800 font-bold">{t.title}</h3>
                     <ul className="space-y-1">
                       {t.events.map((e) => (
-                        <li key={e} className="flex items-start gap-2 text-slate-300 text-sm">
+                        <li key={e} className="flex items-start gap-2 text-gray-600 text-sm">
                           <CheckCircle className="w-4 h-4 text-neon-green mt-0.5 flex-shrink-0" />
                           {e}
                         </li>
@@ -401,13 +401,13 @@ export default function PeptidesForAcneSkinPage() {
       <section className="py-16 px-4 bg-slate-900/30">
         <div className="max-w-4xl mx-auto space-y-8">
           <div className="text-center">
-            <h2 className="text-3xl font-bold text-white">Acne &amp; Peptides FAQ</h2>
+            <h2 className="text-3xl font-bold text-gray-900">Acne &amp; Peptides FAQ</h2>
           </div>
           <div className="space-y-4">
             {faqs.map((faq) => (
               <div key={faq.q} className="glass-card p-6 space-y-3">
-                <h3 className="text-slate-100 font-bold">{faq.q}</h3>
-                <p className="text-slate-400 leading-relaxed text-sm">{faq.a}</p>
+                <h3 className="text-gray-800 font-bold">{faq.q}</h3>
+                <p className="text-gray-500 leading-relaxed text-sm">{faq.a}</p>
               </div>
             ))}
           </div>
@@ -418,8 +418,8 @@ export default function PeptidesForAcneSkinPage() {
       <section className="py-16 px-4">
         <div className="max-w-2xl mx-auto text-center space-y-6">
           <FlaskConical className="w-12 h-12 text-rose-400 mx-auto" />
-          <h2 className="text-3xl font-bold text-white">Start Your Acne Protocol</h2>
-          <p className="text-slate-400">
+          <h2 className="text-3xl font-bold text-gray-900">Start Your Acne Protocol</h2>
+          <p className="text-gray-500">
             BPC-157 oral + GHK-Cu topical is the most comprehensive acne and post-acne skin repair protocol available through research peptides. See active acne reduction in 4–6 weeks.
           </p>
           <div className="p-3 bg-amber-500/10 border border-amber-500/30 rounded-xl text-amber-200 text-sm">

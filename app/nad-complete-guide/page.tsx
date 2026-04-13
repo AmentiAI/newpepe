@@ -163,11 +163,11 @@ export default function NadCompleteGuide() {
             <Zap className="w-4 h-4" />
             Complete NAD+ Research Guide
           </div>
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white mb-6 leading-tight">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-gray-900 mb-6 leading-tight">
             Your NAD+ Is Half What It{' '}
             <span className="text-[#00ff88]">Used to Be</span>
           </h1>
-          <p className="text-xl text-slate-300 leading-relaxed max-w-3xl mx-auto mb-8">
+          <p className="text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto mb-8">
             By age 50, your NAD+ levels are roughly half what they were at 20. That single fact explains a staggering amount of what we call "getting old" — the fatigue, the slower recovery, the cognitive fog, the cellular decay. David Sinclair called NAD+ "the closest thing to a fountain of youth we've discovered." That's a big claim from a Harvard scientist who's usually very careful with his words.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
@@ -185,7 +185,7 @@ export default function NadCompleteGuide() {
           {stats.map((s) => (
             <div key={s.label} className="glass-card p-5 text-center">
               <div className={`text-3xl font-black mb-2 ${s.color}`}>{s.value}</div>
-              <div className="text-slate-400 text-sm leading-tight">{s.label}</div>
+              <div className="text-gray-500 text-sm leading-tight">{s.label}</div>
             </div>
           ))}
         </div>
@@ -193,8 +193,8 @@ export default function NadCompleteGuide() {
 
       {/* What NAD+ Actually Does */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
-        <h2 className="text-3xl font-black text-white mb-4">What NAD+ Actually Does at the Cellular Level</h2>
-        <p className="text-slate-300 leading-relaxed text-lg mb-10">
+        <h2 className="text-3xl font-black text-gray-900 mb-4">What NAD+ Actually Does at the Cellular Level</h2>
+        <p className="text-gray-600 leading-relaxed text-lg mb-10">
           Before we talk about dosing or delivery routes, it's worth understanding why NAD+ occupies such a central position in aging biology. This isn't a vitamin that plugs a minor gap. NAD+ is a fundamental currency of cellular energy and information — involved in over 500 enzymatic reactions in the human body.
         </p>
         <div className="grid sm:grid-cols-2 gap-5">
@@ -204,7 +204,7 @@ export default function NadCompleteGuide() {
                 {m.icon}
                 <h3 className="font-bold text-base">{m.title}</h3>
               </div>
-              <p className="text-slate-300 text-sm leading-relaxed">{m.detail}</p>
+              <p className="text-gray-600 text-sm leading-relaxed">{m.detail}</p>
             </div>
           ))}
         </div>
@@ -212,8 +212,8 @@ export default function NadCompleteGuide() {
 
       {/* NAD+ Age Calculator */}
       <section className="py-10 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
-        <h2 className="text-2xl font-black text-white mb-3">How Much NAD+ Have You Lost?</h2>
-        <p className="text-slate-400 text-base mb-6">Use the calculator below to see your estimated NAD+ level at your current age and the downstream biological impact.</p>
+        <h2 className="text-2xl font-black text-gray-900 mb-3">How Much NAD+ Have You Lost?</h2>
+        <p className="text-gray-500 text-base mb-6">Use the calculator below to see your estimated NAD+ level at your current age and the downstream biological impact.</p>
         <NadAgeCalculator />
       </section>
 
@@ -231,13 +231,13 @@ export default function NadCompleteGuide() {
           </div>
           <div className="flex-1">
             <div className="text-[#00ff88] text-xs font-bold uppercase tracking-widest mb-2">Research Peptide</div>
-            <h3 className="text-white text-2xl font-black mb-3">NAD+ 500mg — The Starting Point</h3>
-            <p className="text-slate-300 text-base leading-relaxed mb-4">
+            <h3 className="text-gray-900 text-2xl font-black mb-3">NAD+ 500mg — The Starting Point</h3>
+            <p className="text-gray-600 text-base leading-relaxed mb-4">
               The 500mg vial is the standard entry dose for injectable NAD+ research. Reconstituted and administered subcutaneously, it provides a direct systemic boost that bypasses the absorption limitations of oral precursors like NMN. Most protocols run 500mg daily for 4–8 weeks before dialing back to a maintenance frequency.
             </p>
             <div className="flex flex-wrap gap-3 mb-4">
               {['500mg per vial', 'SC injectable', 'No gut conversion', 'Ships as research peptide'].map((f) => (
-                <span key={f} className="flex items-center gap-1.5 text-sm text-slate-300">
+                <span key={f} className="flex items-center gap-1.5 text-sm text-gray-600">
                   <CheckCircle className="w-4 h-4 text-[#00ff88]" /> {f}
                 </span>
               ))}
@@ -251,8 +251,8 @@ export default function NadCompleteGuide() {
 
       {/* IV vs Injectable vs Oral */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
-        <h2 className="text-3xl font-black text-white mb-4">IV vs Injectable vs Oral NAD+</h2>
-        <p className="text-slate-300 leading-relaxed text-lg mb-8">
+        <h2 className="text-3xl font-black text-gray-900 mb-4">IV vs Injectable vs Oral NAD+</h2>
+        <p className="text-gray-600 leading-relaxed text-lg mb-8">
           Not all NAD+ delivery is equal. The route of administration dramatically affects how much NAD+ actually reaches your tissues, how quickly levels rise, and how long the elevation lasts. The body's NAD+ repletion isn't just about giving it more — it's about getting it past the absorption bottleneck.
         </p>
         <div className="space-y-4">
@@ -260,7 +260,7 @@ export default function NadCompleteGuide() {
             <div key={r.route} className={`glass-card p-6 border ${r.recommended ? 'border-[#00ff88]/20' : 'border-white/5'}`}>
               <div className="flex items-start justify-between gap-4 flex-wrap mb-3">
                 <div>
-                  <h3 className="text-white font-bold text-lg">{r.route}</h3>
+                  <h3 className="text-gray-900 font-bold text-lg">{r.route}</h3>
                   {r.recommended && (
                     <span className="text-[#00ff88] text-xs font-semibold">Recommended for research use</span>
                   )}
@@ -268,20 +268,20 @@ export default function NadCompleteGuide() {
                 <div className="flex gap-4 text-sm">
                   <div className="text-center">
                     <div className="text-[#00ff88] font-black">{r.bioavailability}</div>
-                    <div className="text-slate-500 text-xs">Bioavailability</div>
+                    <div className="text-gray-500 text-xs">Bioavailability</div>
                   </div>
                   <div className="text-center">
                     <div className="text-amber-400 font-black">{r.onset}</div>
-                    <div className="text-slate-500 text-xs">Onset</div>
+                    <div className="text-gray-500 text-xs">Onset</div>
                   </div>
                   <div className="text-center">
                     <div className="text-blue-400 font-black">{r.cost}</div>
-                    <div className="text-slate-500 text-xs">Cost</div>
+                    <div className="text-gray-500 text-xs">Cost</div>
                   </div>
                 </div>
               </div>
-              <p className="text-slate-300 text-sm leading-relaxed">{r.notes}</p>
-              <div className="mt-2 text-xs text-slate-500">Duration of NAD+ elevation: {r.duration}</div>
+              <p className="text-gray-600 text-sm leading-relaxed">{r.notes}</p>
+              <div className="mt-2 text-xs text-gray-500">Duration of NAD+ elevation: {r.duration}</div>
             </div>
           ))}
         </div>
@@ -301,13 +301,13 @@ export default function NadCompleteGuide() {
           </div>
           <div className="flex-1">
             <div className="text-amber-400 text-xs font-bold uppercase tracking-widest mb-2">High-Dose Protocol</div>
-            <h3 className="text-white text-2xl font-black mb-3">NAD+ 1000mg — For Aggressive Repletion</h3>
-            <p className="text-slate-300 text-base leading-relaxed mb-4">
+            <h3 className="text-gray-900 text-2xl font-black mb-3">NAD+ 1000mg — For Aggressive Repletion</h3>
+            <p className="text-gray-600 text-base leading-relaxed mb-4">
               The 1000mg vial is used in loading protocols and by those with advanced anti-aging goals. A single 1000mg injection or slow IV drip can elevate whole-blood NAD+ levels for 7–10 days — making weekly dosing a viable schedule for maintenance after an initial loading phase. Popular in longevity clinic protocols where comprehensive bloodwork guides frequency.
             </p>
             <div className="flex flex-wrap gap-3 mb-4">
               {['1000mg per vial', 'Loading phase use', 'Weekly maintenance viable', 'Longevity clinic standard'].map((f) => (
-                <span key={f} className="flex items-center gap-1.5 text-sm text-slate-300">
+                <span key={f} className="flex items-center gap-1.5 text-sm text-gray-600">
                   <CheckCircle className="w-4 h-4 text-amber-400" /> {f}
                 </span>
               ))}
@@ -321,33 +321,33 @@ export default function NadCompleteGuide() {
 
       {/* Stacking NAD+ with Other Peptides */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
-        <h2 className="text-3xl font-black text-white mb-4">The NAD+ Anti-Aging Stack</h2>
-        <p className="text-slate-300 leading-relaxed text-lg mb-8">
+        <h2 className="text-3xl font-black text-gray-900 mb-4">The NAD+ Anti-Aging Stack</h2>
+        <p className="text-gray-600 leading-relaxed text-lg mb-8">
           NAD+ is powerful on its own, but it reaches its full potential when combined with peptides that address the other hallmarks of aging simultaneously. Think of it as restoring the electrical grid (NAD+/mitochondria), rewriting the damaged code (Epithalon/telomeres), retraining the maintenance crews (GHK-Cu/gene expression), and repairing the infrastructure (BPC-157).
         </p>
         <div className="glass-card p-6 overflow-x-auto">
           <table className="w-full text-sm">
             <thead>
               <tr className="border-b border-white/10">
-                <th className="text-left text-slate-400 font-semibold py-3 pr-4">Peptide</th>
-                <th className="text-left text-slate-400 font-semibold py-3 pr-4">Dose</th>
-                <th className="text-left text-slate-400 font-semibold py-3 pr-4">Timing</th>
-                <th className="text-left text-slate-400 font-semibold py-3">Role</th>
+                <th className="text-left text-gray-500 font-semibold py-3 pr-4">Peptide</th>
+                <th className="text-left text-gray-500 font-semibold py-3 pr-4">Dose</th>
+                <th className="text-left text-gray-500 font-semibold py-3 pr-4">Timing</th>
+                <th className="text-left text-gray-500 font-semibold py-3">Role</th>
               </tr>
             </thead>
             <tbody>
               {stackProtocol.map((s) => (
                 <tr key={s.peptide} className="border-b border-white/5 hover:bg-white/2 transition-colors">
                   <td className={`py-4 pr-4 font-bold ${s.color}`}>{s.peptide}</td>
-                  <td className="py-4 pr-4 text-slate-300">{s.dose}</td>
-                  <td className="py-4 pr-4 text-slate-400">{s.timing}</td>
-                  <td className="py-4 text-slate-400 leading-snug">{s.role}</td>
+                  <td className="py-4 pr-4 text-gray-600">{s.dose}</td>
+                  <td className="py-4 pr-4 text-gray-500">{s.timing}</td>
+                  <td className="py-4 text-gray-500 leading-snug">{s.role}</td>
                 </tr>
               ))}
             </tbody>
           </table>
         </div>
-        <p className="text-slate-500 text-sm mt-4">
+        <p className="text-gray-500 text-sm mt-4">
           This is an aggressive longevity protocol. Most beginners start with NAD+ alone for 4–6 weeks before layering additional compounds. All research peptide use is for informational purposes.
         </p>
       </section>
@@ -358,8 +358,8 @@ export default function NadCompleteGuide() {
           <div className="flex items-start gap-4">
             <FlaskConical className="w-8 h-8 text-[#00ff88] shrink-0 mt-1" />
             <div>
-              <h3 className="text-white text-xl font-black mb-3">The Oral Supplement Problem</h3>
-              <p className="text-slate-300 leading-relaxed text-base">
+              <h3 className="text-gray-900 text-xl font-black mb-3">The Oral Supplement Problem</h3>
+              <p className="text-gray-600 leading-relaxed text-base">
                 The NMN and NR supplement market is worth billions. And while oral NAD+ precursors do work — they do raise blood NAD+ levels — the ceiling is much lower than injectable. Here's why: NAD+ itself is too large to survive gut transit intact. So you're supplementing with precursors (NMN, NR) that must be enzymatically converted, first in the gut, then in various tissues. Each conversion step means losses. Injectable NAD+ skips all of that. You're delivering the actual molecule. For people who are already NAD+-depleted (basically everyone over 35), the injectable route provides faster, more complete, and more verifiable repletion.
               </p>
             </div>
@@ -369,15 +369,15 @@ export default function NadCompleteGuide() {
 
       {/* FAQ */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
-        <h2 className="text-3xl font-black text-white mb-8">Frequently Asked Questions</h2>
+        <h2 className="text-3xl font-black text-gray-900 mb-8">Frequently Asked Questions</h2>
         <div className="space-y-4">
           {faqs.map((faq) => (
             <details key={faq.q} className="glass-card group">
-              <summary className="p-6 cursor-pointer flex items-center justify-between gap-4 text-white font-semibold text-base list-none">
+              <summary className="p-6 cursor-pointer flex items-center justify-between gap-4 text-gray-900 font-semibold text-base list-none">
                 {faq.q}
                 <span className="text-[#00ff88] text-xl font-black shrink-0 group-open:rotate-45 transition-transform">+</span>
               </summary>
-              <div className="px-6 pb-6 text-slate-300 leading-relaxed text-base">
+              <div className="px-6 pb-6 text-gray-600 leading-relaxed text-base">
                 {faq.a}
               </div>
             </details>
@@ -388,8 +388,8 @@ export default function NadCompleteGuide() {
       {/* CTA */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
         <div className="glass-card p-10 text-center border border-[#00ff88]/15">
-          <h2 className="text-3xl font-black text-white mb-4">Start Restoring Your NAD+ Levels</h2>
-          <p className="text-slate-300 text-lg mb-8 max-w-2xl mx-auto">
+          <h2 className="text-3xl font-black text-gray-900 mb-4">Start Restoring Your NAD+ Levels</h2>
+          <p className="text-gray-600 text-lg mb-8 max-w-2xl mx-auto">
             Injectable NAD+ is available as a research peptide. Whether you start with 500mg daily or go straight to the 1000mg high-dose protocol depends on your goals and baseline.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">

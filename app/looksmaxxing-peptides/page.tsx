@@ -144,7 +144,7 @@ const stackPhilosophy = [
     level: 'Budget Foundation',
     cost: '~$80–120/month',
     color: 'border-slate-400/30',
-    text: 'text-slate-300',
+    text: 'text-gray-600',
     peptides: ['GHK-Cu topical (1mg/day)', 'BPC-157 (250mcg SC, 5x/week)'],
     rationale: 'Maximum benefit for minimal cost. GHK-Cu addresses skin quality — the highest-leverage appearance variable. BPC-157 addresses gut-skin axis, scar healing, and systemic inflammation. These two peptides address 3 of 4 looksmaxxing pillars at a fraction of advanced protocol costs.',
   },
@@ -195,7 +195,7 @@ const faqs = [
 
 export default function LooksmaxxingPeptidesPage() {
   return (
-    <main className="bg-dark-900 min-h-screen text-slate-200">
+    <main className="bg-dark-900 min-h-screen text-gray-700">
       {/* Hero */}
       <section className="py-16 bg-gradient-to-b from-dark-800 to-dark-900 border-b border-white/5">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -203,11 +203,11 @@ export default function LooksmaxxingPeptidesPage() {
             <span className="text-xs font-semibold uppercase tracking-widest text-emerald-400 mb-4 block">
               Appearance Optimization
             </span>
-            <h1 className="text-4xl sm:text-5xl font-extrabold text-white mb-6 leading-tight">
+            <h1 className="text-4xl sm:text-5xl font-extrabold text-gray-900 mb-6 leading-tight">
               Looksmaxxing with Peptides:{' '}
               <span className="text-neon-green">The Complete Science-Backed Protocol</span>
             </h1>
-            <p className="text-xl text-slate-300 mb-8 leading-relaxed">
+            <p className="text-xl text-gray-600 mb-8 leading-relaxed">
               Looksmaxxing has moved beyond gym routines and skincare serums. Research peptides — GHK-Cu, SNAP-8, BPC-157, IGF-1 LR3, and others — operate at the gene expression and cellular signaling level, producing appearance improvements that topical cosmetics cannot replicate. This guide covers every appearance-relevant peptide, how they work, and how to stack them strategically.
             </p>
             <div className="flex flex-wrap gap-3">
@@ -227,9 +227,9 @@ export default function LooksmaxxingPeptidesPage() {
       {/* What is looksmaxxing */}
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-white mb-6">What Is Looksmaxxing — And Why Peptides Change the Game</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">What Is Looksmaxxing — And Why Peptides Change the Game</h2>
           <div className="grid lg:grid-cols-2 gap-10 items-start">
-            <div className="space-y-5 text-slate-300 leading-relaxed">
+            <div className="space-y-5 text-gray-600 leading-relaxed">
               <p>
                 Looksmaxxing is the systematic optimization of physical appearance through deliberate intervention — diet, training, grooming, skincare, and increasingly, biomedical tools including research peptides. The concept, once discussed only in niche online communities, has gone mainstream as the evidence base for interventional approaches to appearance has grown.
               </p>
@@ -244,7 +244,7 @@ export default function LooksmaxxingPeptidesPage() {
               </p>
             </div>
             <div className="bg-dark-800/60 border border-white/10 rounded-xl p-6">
-              <h3 className="text-lg font-bold text-white mb-4 flex items-center gap-2">
+              <h3 className="text-lg font-bold text-gray-900 mb-4 flex items-center gap-2">
                 <Zap className="w-5 h-5 text-emerald-400" />
                 Why Peptides vs. Conventional Cosmetics
               </h3>
@@ -258,9 +258,9 @@ export default function LooksmaxxingPeptidesPage() {
                   { label: 'Body Composition', peptide: 'GH axis activation (CJC/Ipamorelin)', topical: 'Not applicable' },
                 ].map((row, i) => (
                   <div key={i} className="grid grid-cols-3 gap-2 text-xs border-b border-white/5 pb-2">
-                    <span className="text-slate-400 font-medium">{row.label}</span>
+                    <span className="text-gray-500 font-medium">{row.label}</span>
                     <span className="text-emerald-400">{row.peptide}</span>
-                    <span className="text-slate-500">{row.topical}</span>
+                    <span className="text-gray-500">{row.topical}</span>
                   </div>
                 ))}
               </div>
@@ -272,8 +272,8 @@ export default function LooksmaxxingPeptidesPage() {
       {/* 4 Pillars */}
       <section className="py-16 bg-dark-800/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-white mb-4">The 4 Pillars of Appearance Optimization</h2>
-          <p className="text-slate-400 mb-10 max-w-2xl">
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">The 4 Pillars of Appearance Optimization</h2>
+          <p className="text-gray-500 mb-10 max-w-2xl">
             A comprehensive looksmaxxing protocol addresses all four variables simultaneously — because they interact. Better body composition affects facial definition; better gut health affects skin quality; better GH levels affect all four pillars at once.
           </p>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
@@ -281,10 +281,10 @@ export default function LooksmaxxingPeptidesPage() {
               <div key={p.title} className={`rounded-xl border p-5 ${p.bg} ${p.border}`}>
                 <div className={`text-2xl mb-3 ${p.color}`}>{p.icon}</div>
                 <h3 className={`font-bold text-lg mb-2 ${p.color}`}>{p.title}</h3>
-                <p className="text-sm text-slate-400 mb-3 leading-relaxed">{p.desc}</p>
+                <p className="text-sm text-gray-500 mb-3 leading-relaxed">{p.desc}</p>
                 <div className="flex flex-wrap gap-1">
                   {p.peptides.map((pep) => (
-                    <span key={pep} className="text-xs bg-dark-700/80 text-slate-300 border border-white/10 rounded px-2 py-0.5">
+                    <span key={pep} className="text-xs bg-dark-700/80 text-gray-600 border border-white/10 rounded px-2 py-0.5">
                       {pep}
                     </span>
                   ))}
@@ -298,8 +298,8 @@ export default function LooksmaxxingPeptidesPage() {
       {/* Peptide Profiles */}
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-white mb-4">Every Appearance-Relevant Peptide: Mechanisms & Protocols</h2>
-          <p className="text-slate-400 mb-10 max-w-2xl">
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">Every Appearance-Relevant Peptide: Mechanisms & Protocols</h2>
+          <p className="text-gray-500 mb-10 max-w-2xl">
             Each peptide below has specific, well-characterized mechanisms for appearance improvement. Understanding the mechanism lets you choose which peptides match your specific goals.
           </p>
           <div className="space-y-5">
@@ -311,21 +311,21 @@ export default function LooksmaxxingPeptidesPage() {
                       <h3 className={`text-xl font-bold ${pep.color}`}>{pep.name}</h3>
                       <span className={`text-xs border rounded-full px-2 py-0.5 ${pep.badge}`}>{pep.priority}</span>
                     </div>
-                    <p className="text-slate-500 text-sm">{pep.fullName} — {pep.category}</p>
+                    <p className="text-gray-500 text-sm">{pep.fullName} — {pep.category}</p>
                   </div>
-                  <div className="text-right text-xs text-slate-500">
+                  <div className="text-right text-xs text-gray-500">
                     <div>{pep.dose}</div>
-                    <div className="text-slate-600 mt-1">{pep.timeline}</div>
+                    <div className="text-gray-600 mt-1">{pep.timeline}</div>
                   </div>
                 </div>
                 <div className="grid md:grid-cols-2 gap-5">
                   <div>
-                    <p className="text-xs font-semibold uppercase tracking-wider text-slate-500 mb-2">Mechanism</p>
-                    <p className="text-sm text-slate-300 leading-relaxed">{pep.mechanism}</p>
+                    <p className="text-xs font-semibold uppercase tracking-wider text-gray-500 mb-2">Mechanism</p>
+                    <p className="text-sm text-gray-600 leading-relaxed">{pep.mechanism}</p>
                   </div>
                   <div>
-                    <p className="text-xs font-semibold uppercase tracking-wider text-slate-500 mb-2">Appearance Effects</p>
-                    <p className="text-sm text-slate-300 leading-relaxed">{pep.appearance}</p>
+                    <p className="text-xs font-semibold uppercase tracking-wider text-gray-500 mb-2">Appearance Effects</p>
+                    <p className="text-sm text-gray-600 leading-relaxed">{pep.appearance}</p>
                   </div>
                 </div>
               </div>
@@ -337,8 +337,8 @@ export default function LooksmaxxingPeptidesPage() {
       {/* Roadmap Component */}
       <section className="py-16 bg-dark-800/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-white mb-4">Your Phase-by-Phase Looksmaxxing Roadmap</h2>
-          <p className="text-slate-400 mb-8 max-w-2xl">
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">Your Phase-by-Phase Looksmaxxing Roadmap</h2>
+          <p className="text-gray-500 mb-8 max-w-2xl">
             A structured 4-phase approach builds the protocol systematically, allowing you to assess what is working before adding complexity.
           </p>
           <LooksmaxxingRoadmap />
@@ -348,8 +348,8 @@ export default function LooksmaxxingPeptidesPage() {
       {/* Stack Philosophy */}
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-white mb-4">Stack Philosophy: Budget vs. Premium Protocols</h2>
-          <p className="text-slate-400 mb-10 max-w-2xl">
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">Stack Philosophy: Budget vs. Premium Protocols</h2>
+          <p className="text-gray-500 mb-10 max-w-2xl">
             The protocol you run should match your experience level, budget, and specific goals. More expensive is not always better — the foundational peptides produce the most visible improvements for most people.
           </p>
           <div className="grid lg:grid-cols-3 gap-6">
@@ -357,17 +357,17 @@ export default function LooksmaxxingPeptidesPage() {
               <div key={s.level} className={`rounded-xl border p-6 bg-dark-800/40 ${s.color}`}>
                 <div className="flex items-center justify-between mb-4">
                   <h3 className={`font-bold text-lg ${s.text}`}>{s.level}</h3>
-                  <span className="text-sm text-slate-400">{s.cost}</span>
+                  <span className="text-sm text-gray-500">{s.cost}</span>
                 </div>
                 <div className="space-y-2 mb-4">
                   {s.peptides.map((p) => (
-                    <div key={p} className="flex items-start gap-2 text-sm text-slate-300">
+                    <div key={p} className="flex items-start gap-2 text-sm text-gray-600">
                       <CheckCircle className="w-4 h-4 text-emerald-400 flex-shrink-0 mt-0.5" />
                       {p}
                     </div>
                   ))}
                 </div>
-                <p className="text-xs text-slate-400 leading-relaxed">{s.rationale}</p>
+                <p className="text-xs text-gray-500 leading-relaxed">{s.rationale}</p>
               </div>
             ))}
           </div>
@@ -377,15 +377,15 @@ export default function LooksmaxxingPeptidesPage() {
       {/* FAQ */}
       <section className="py-16 bg-dark-800/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-white mb-10">Frequently Asked Questions</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-10">Frequently Asked Questions</h2>
           <div className="grid md:grid-cols-2 gap-6">
             {faqs.map((faq, i) => (
               <div key={i} className="bg-dark-800/60 border border-white/10 rounded-xl p-5">
-                <h3 className="font-semibold text-white mb-2 flex items-start gap-2">
+                <h3 className="font-semibold text-gray-900 mb-2 flex items-start gap-2">
                   <FlaskConical className="w-4 h-4 text-emerald-400 flex-shrink-0 mt-0.5" />
                   {faq.q}
                 </h3>
-                <p className="text-sm text-slate-400 leading-relaxed">{faq.a}</p>
+                <p className="text-sm text-gray-500 leading-relaxed">{faq.a}</p>
               </div>
             ))}
           </div>
@@ -396,8 +396,8 @@ export default function LooksmaxxingPeptidesPage() {
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-gradient-to-r from-emerald-900/30 to-dark-800 border border-emerald-500/20 rounded-2xl p-8 text-center">
-            <h2 className="text-2xl font-bold text-white mb-3">Ready to Start Your Looksmaxxing Protocol?</h2>
-            <p className="text-slate-400 mb-6 max-w-xl mx-auto">
+            <h2 className="text-2xl font-bold text-gray-900 mb-3">Ready to Start Your Looksmaxxing Protocol?</h2>
+            <p className="text-gray-500 mb-6 max-w-xl mx-auto">
               Source pharmaceutical-grade research peptides from a verified supplier. Start with the foundational stack and build from there.
             </p>
             <a
@@ -408,7 +408,7 @@ export default function LooksmaxxingPeptidesPage() {
             >
               Get Research Peptides <ArrowRight className="w-4 h-4" />
             </a>
-            <p className="text-xs text-slate-600 mt-4">
+            <p className="text-xs text-gray-600 mt-4">
               For research purposes only. Not medical advice. Consult a healthcare professional before use.
             </p>
           </div>
@@ -418,7 +418,7 @@ export default function LooksmaxxingPeptidesPage() {
       {/* Explore More */}
       <section className="py-16 bg-dark-800/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl font-bold text-white mb-6">Explore the Full Looksmaxxing Library</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-6">Explore the Full Looksmaxxing Library</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-10">
             {[
               { href: '/peptides-for-skin-quality', label: 'Peptides for Skin Quality: Complete Guide' },
@@ -434,7 +434,7 @@ export default function LooksmaxxingPeptidesPage() {
               <a
                 key={link.href}
                 href={link.href}
-                className="flex items-center gap-2 bg-dark-800/60 border border-white/10 rounded-lg px-4 py-3 text-sm text-slate-300 hover:text-white hover:border-emerald-500/40 transition-all"
+                className="flex items-center gap-2 bg-dark-800/60 border border-white/10 rounded-lg px-4 py-3 text-sm text-gray-600 hover:text-gray-900 hover:border-emerald-500/40 transition-all"
               >
                 <ArrowRight className="w-4 h-4 text-emerald-400 flex-shrink-0" />
                 {link.label}

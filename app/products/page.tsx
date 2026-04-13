@@ -130,7 +130,7 @@ export default function ProductsPage() {
                         href={product.affiliateUrl}
                         target="_blank"
                         rel="nofollow noopener noreferrer"
-                        className="relative z-10 text-xs font-bold px-3 py-2 rounded-lg bg-amber-500 text-white hover:bg-amber-600 transition-colors flex items-center gap-1"
+                        className="relative z-10 text-xs font-bold px-3 py-2 rounded-lg bg-amber-500 text-gray-900 hover:bg-amber-600 transition-colors flex items-center gap-1"
                       >
                         Check Price <ArrowRight className="w-3 h-3" />
                       </a>
@@ -149,7 +149,7 @@ export default function ProductsPage() {
             href="https://phiogen.is/?ref=PEPS"
             target="_blank"
             rel="nofollow noopener noreferrer"
-            className="inline-flex items-center gap-2 bg-amber-500 text-white font-black px-6 py-3 rounded-xl hover:bg-amber-600 transition-colors"
+            className="inline-flex items-center gap-2 bg-amber-500 text-gray-900 font-black px-6 py-3 rounded-xl hover:bg-amber-600 transition-colors"
           >
             View Full Store <ArrowRight className="w-4 h-4" />
           </a>

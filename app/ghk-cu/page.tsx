@@ -65,14 +65,14 @@ export default function GHKCuPage() {
               </div>
 
               <h1 className="text-5xl sm:text-6xl lg:text-8xl font-black leading-[0.9] mb-6 tracking-tight">
-                <span className="text-white block">Buy GHK-Cu</span>
-                <span className="text-3xl sm:text-4xl font-bold text-slate-400 block mt-2 leading-tight">
+                <span className="text-gray-900 block">Buy GHK-Cu</span>
+                <span className="text-3xl sm:text-4xl font-bold text-gray-500 block mt-2 leading-tight">
                   Copper Peptide That<br />
                   <span className="text-purple-400">Resets Your Genes</span>
                 </span>
               </h1>
 
-              <p className="text-lg text-slate-400 leading-relaxed mb-8 max-w-lg">
+              <p className="text-lg text-gray-500 leading-relaxed mb-8 max-w-lg">
                 GHK-Cu reverses the gene expression of 31% of aged genes, rebuilds collagen, restores
                 hair follicles, and activates cellular cleanup — the most powerful anti-aging signal known.
               </p>
@@ -107,7 +107,7 @@ export default function GHKCuPage() {
 
               <div className="flex flex-wrap gap-5">
                 {['COA Verified', 'Topical + Injectable', '31% Gene Reset', 'Hair & Skin'].map((item) => (
-                  <div key={item} className="flex items-center gap-1.5 text-sm text-slate-500">
+                  <div key={item} className="flex items-center gap-1.5 text-sm text-gray-500">
                     <CheckCircle className="w-4 h-4 text-purple-400" />
                     <span>{item}</span>
                   </div>
@@ -157,7 +157,7 @@ export default function GHKCuPage() {
                   color === 'amber' ? 'text-amber-400' :
                   color === 'emerald' ? 'text-emerald-400' : 'text-blue-400'
                 }`}>{value}</div>
-                <div className="text-slate-500 text-sm">{label}</div>
+                <div className="text-gray-500 text-sm">{label}</div>
               </div>
             ))}
           </div>
@@ -169,10 +169,10 @@ export default function GHKCuPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <p className="text-neon-green text-xs font-semibold uppercase tracking-widest mb-3">Evidence-Based Effects</p>
-            <h2 className="text-4xl sm:text-5xl font-black text-white mb-4">
+            <h2 className="text-4xl sm:text-5xl font-black text-gray-900 mb-4">
               What GHK-Cu <span className="gradient-text">Actually Does</span>
             </h2>
-            <p className="text-slate-400 max-w-2xl mx-auto">
+            <p className="text-gray-500 max-w-2xl mx-auto">
               GHK-Cu acts through at least five distinct anti-aging mechanisms — it&apos;s not a cosmetic tweak, it changes how cells function.
             </p>
           </div>
@@ -184,8 +184,8 @@ export default function GHKCuPage() {
                   <Icon className="w-5 h-5" />
                 </div>
                 <div>
-                  <h3 className="text-white font-bold mb-2">{title}</h3>
-                  <p className="text-slate-400 text-sm leading-relaxed">{body}</p>
+                  <h3 className="text-gray-900 font-bold mb-2">{title}</h3>
+                  <p className="text-gray-500 text-sm leading-relaxed">{body}</p>
                 </div>
               </div>
             ))}
@@ -205,25 +205,25 @@ export default function GHKCuPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             <div>
               <p className="text-neon-green text-xs font-semibold uppercase tracking-widest mb-3">Dosing Protocol</p>
-              <h2 className="text-4xl font-black text-white mb-6">
+              <h2 className="text-4xl font-black text-gray-900 mb-6">
                 How to Use <span className="gradient-text">GHK-Cu</span>
               </h2>
 
               <div className="space-y-4 mb-8">
                 <div className="glass-card p-5 border-purple-400/20">
                   <h3 className="text-purple-400 font-bold mb-3">Injectable (Systemic Anti-Aging)</h3>
-                  <ul className="space-y-2 text-sm text-slate-400">
-                    <li className="flex gap-2"><span className="text-slate-500 shrink-0">Dose:</span> 1–2mg subcutaneous daily</li>
-                    <li className="flex gap-2"><span className="text-slate-500 shrink-0">Cycle:</span> 8–12 weeks on, 4 weeks off</li>
-                    <li className="flex gap-2"><span className="text-slate-500 shrink-0">Timing:</span> Evening (aligns with overnight repair)</li>
+                  <ul className="space-y-2 text-sm text-gray-500">
+                    <li className="flex gap-2"><span className="text-gray-500 shrink-0">Dose:</span> 1–2mg subcutaneous daily</li>
+                    <li className="flex gap-2"><span className="text-gray-500 shrink-0">Cycle:</span> 8–12 weeks on, 4 weeks off</li>
+                    <li className="flex gap-2"><span className="text-gray-500 shrink-0">Timing:</span> Evening (aligns with overnight repair)</li>
                   </ul>
                 </div>
                 <div className="glass-card p-5 border-amber-400/20">
                   <h3 className="text-amber-400 font-bold mb-3">Topical (Skin & Hair)</h3>
-                  <ul className="space-y-2 text-sm text-slate-400">
-                    <li className="flex gap-2"><span className="text-slate-500 shrink-0">Apply:</span> 1–2% GHK-Cu serum to face or scalp daily</li>
-                    <li className="flex gap-2"><span className="text-slate-500 shrink-0">Results:</span> Visible skin changes in 8+ weeks</li>
-                    <li className="flex gap-2"><span className="text-slate-500 shrink-0">Hair:</span> Minimum 12 weeks for density changes</li>
+                  <ul className="space-y-2 text-sm text-gray-500">
+                    <li className="flex gap-2"><span className="text-gray-500 shrink-0">Apply:</span> 1–2% GHK-Cu serum to face or scalp daily</li>
+                    <li className="flex gap-2"><span className="text-gray-500 shrink-0">Results:</span> Visible skin changes in 8+ weeks</li>
+                    <li className="flex gap-2"><span className="text-gray-500 shrink-0">Hair:</span> Minimum 12 weeks for density changes</li>
                   </ul>
                 </div>
               </div>
@@ -231,7 +231,7 @@ export default function GHKCuPage() {
 
             <div className="space-y-5">
               <div className="glass-card p-6 border-purple-400/20">
-                <h3 className="text-white font-bold text-lg mb-3 flex items-center gap-2">
+                <h3 className="text-gray-900 font-bold text-lg mb-3 flex items-center gap-2">
                   <Award className="w-5 h-5 text-purple-400" />
                   Best Stacks with GHK-Cu
                 </h3>
@@ -244,8 +244,8 @@ export default function GHKCuPage() {
                     <Link key={name} href={href} className="flex items-start gap-3 p-3 rounded-xl bg-dark-700/60 hover:bg-dark-700 transition-colors group">
                       <div className="w-2 h-2 rounded-full bg-purple-400 mt-1.5 shrink-0" />
                       <div>
-                        <p className="text-white font-semibold text-sm group-hover:text-neon-green transition-colors">{name}</p>
-                        <p className="text-slate-500 text-xs">{desc}</p>
+                        <p className="text-gray-900 font-semibold text-sm group-hover:text-neon-green transition-colors">{name}</p>
+                        <p className="text-gray-500 text-xs">{desc}</p>
                       </div>
                     </Link>
                   ))}
@@ -253,12 +253,12 @@ export default function GHKCuPage() {
               </div>
 
               <div className="glass-card p-6 border-neon-green/15 text-center">
-                <h3 className="text-white font-bold mb-2">Get COA-Verified GHK-Cu</h3>
-                <p className="text-slate-400 text-sm mb-4">Injectable + topical options · US domestic shipping</p>
+                <h3 className="text-gray-900 font-bold mb-2">Get COA-Verified GHK-Cu</h3>
+                <p className="text-gray-500 text-sm mb-4">Injectable + topical options · US domestic shipping</p>
                 <a href={SOURCE_URL} target="_blank" rel="nofollow noopener noreferrer" className="btn-cta px-8 py-3 inline-flex items-center gap-2">
                   Buy GHK-Cu — $50 <ExternalLink className="w-4 h-4" />
                 </a>
-                <p className="text-slate-600 text-xs mt-2">Affiliate link — at no extra cost to you.</p>
+                <p className="text-gray-600 text-xs mt-2">Affiliate link — at no extra cost to you.</p>
               </div>
             </div>
           </div>
@@ -268,7 +268,7 @@ export default function GHKCuPage() {
       {/* ── RELATED GUIDES ───────────────────────────────── */}
       <section className="py-20 bg-dark-900 grid-bg">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-black text-white mb-8">
+          <h2 className="text-3xl font-black text-gray-900 mb-8">
             GHK-Cu <span className="gradient-text">Deep-Dive Guides</span>
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-10">
@@ -282,8 +282,8 @@ export default function GHKCuPage() {
             ].map(({ title, desc, href, tag }) => (
               <Link key={href} href={href} className="group glass-card p-5 flex flex-col gap-3 hover:border-purple-400/30 transition-all duration-200">
                 <span className="text-xs font-semibold text-purple-400 bg-purple-400/10 border border-purple-400/20 px-2.5 py-0.5 rounded-full w-fit">{tag}</span>
-                <h3 className="text-white font-bold group-hover:text-purple-400 transition-colors">{title}</h3>
-                <p className="text-slate-400 text-sm">{desc}</p>
+                <h3 className="text-gray-900 font-bold group-hover:text-purple-400 transition-colors">{title}</h3>
+                <p className="text-gray-500 text-sm">{desc}</p>
               </Link>
             ))}
           </div>

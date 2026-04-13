@@ -119,11 +119,11 @@ export default function WolverineStackPage() {
             <Shield className="w-4 h-4 text-emerald-400" />
             <span className="text-emerald-400 text-sm font-semibold tracking-wide">THE WOLVERINE STACK</span>
           </div>
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white leading-tight mb-6">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-gray-900 leading-tight mb-6">
             BPC-157 + TB-500:<br />
             <span style={{ color: '#00ff88' }}>Heal Like Wolverine</span>
           </h1>
-          <p className="text-slate-300 text-xl leading-relaxed mb-8 max-w-3xl">
+          <p className="text-gray-600 text-xl leading-relaxed mb-8 max-w-3xl">
             The Wolverine Stack — BPC-157 and TB-500 combined — is the most researched healing peptide protocol in the world.
             Backed by 100+ peer-reviewed studies and decades of animal research showing 50–70% reduction in recovery time.
           </p>
@@ -145,7 +145,7 @@ export default function WolverineStackPage() {
             ].map((s) => (
               <div key={s.num} className="glass-card p-4 text-center">
                 <div className="text-2xl font-black" style={{ color: '#00ff88' }}>{s.num}</div>
-                <div className="text-slate-400 text-xs mt-1">{s.label}</div>
+                <div className="text-gray-500 text-xs mt-1">{s.label}</div>
               </div>
             ))}
           </div>
@@ -154,8 +154,8 @@ export default function WolverineStackPage() {
 
       {/* How it works */}
       <section className="py-16 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-black text-white mb-3">Why BPC-157 + TB-500 Work Together</h2>
-        <p className="text-slate-400 mb-10 max-w-2xl">
+        <h2 className="text-3xl font-black text-gray-900 mb-3">Why BPC-157 + TB-500 Work Together</h2>
+        <p className="text-gray-500 mb-10 max-w-2xl">
           They target completely different healing mechanisms — and together cover every pathway of injury repair.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -163,7 +163,7 @@ export default function WolverineStackPage() {
             <h3 className="text-emerald-400 font-black text-xl mb-4">BPC-157 — Local Healer</h3>
             <ul className="space-y-2">
               {['Upregulates growth hormone receptors in fibroblasts', 'Activates VEGF — increases blood flow to injury', 'Accelerates collagen type I synthesis 300–400%', 'Gastric acid stable — works orally for gut healing', 'Heals nerve, bone, muscle, tendon, gut, and eye tissue'].map((m) => (
-                <li key={m} className="flex items-start gap-2 text-slate-300 text-sm">
+                <li key={m} className="flex items-start gap-2 text-gray-600 text-sm">
                   <CheckCircle className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" /> {m}
                 </li>
               ))}
@@ -173,7 +173,7 @@ export default function WolverineStackPage() {
             <h3 className="text-blue-400 font-black text-xl mb-4">TB-500 — Systemic Healer</h3>
             <ul className="space-y-2">
               {['Mobilizes CD34+ stem cells from bone marrow to injury sites', 'Binds G-actin to regulate cell migration body-wide', 'Reduces inflammation systemically via NF-κB inhibition', 'Dramatically improves flexibility and range of motion', 'Crosses the blood-brain barrier — heals neural tissue'].map((m) => (
-                <li key={m} className="flex items-start gap-2 text-slate-300 text-sm">
+                <li key={m} className="flex items-start gap-2 text-gray-600 text-sm">
                   <CheckCircle className="w-4 h-4 text-blue-400 shrink-0 mt-0.5" /> {m}
                 </li>
               ))}
@@ -189,12 +189,12 @@ export default function WolverineStackPage() {
             <BookOpen className="w-4 h-4 text-emerald-400" />
             <span className="text-emerald-400 text-sm font-semibold tracking-wide">THE REGENERATION SCIENCE</span>
           </div>
-          <h2 className="text-4xl font-black text-white mb-6">
+          <h2 className="text-4xl font-black text-gray-900 mb-6">
             Why Wolverine? The Science of<br />
             <span style={{ color: '#00ff88' }}>Accelerated Regeneration</span>
           </h2>
 
-          <div className="prose prose-invert max-w-none space-y-6 text-slate-300 leading-relaxed">
+          <div className="prose prose-invert max-w-none space-y-6 text-gray-600 leading-relaxed">
             <p>
               In the Marvel universe, James Howlett — the mutant known as Wolverine — possesses a superpower that most people would choose above flight, strength, or telepathy: the ability to heal from virtually any wound in minutes. Slashed by blades, riddled with bullets, burned to bone — within seconds, Wolverine&apos;s tissue knits back together, scarless and functional. The name &quot;Wolverine Stack&quot; was not coined by a marketing department. It emerged organically from the biohacking and research peptide community in the early 2010s as anecdotal reports began accumulating of athletes, post-surgical patients, and researchers using BPC-157 and TB-500 together and experiencing healing timelines that seemed to defy conventional medicine&apos;s expectations.
             </p>
@@ -202,7 +202,7 @@ export default function WolverineStackPage() {
               The name resonates because it captures something real. When a 45-year-old CrossFit athlete tears his rotator cuff and is told by an orthopedic surgeon that he faces 9–12 months of recovery with physical therapy and possible surgical intervention — and then returns to full overhead pressing in 10 weeks — the Wolverine comparison feels apt. When a marathon runner with a grade II Achilles tear goes from non-weight-bearing to easy jogging in three weeks, the mythology becomes a useful shorthand. The stack does not give you adamantium claws or regenerate lost limbs. But in the domain of soft tissue injury — tendons, ligaments, muscles, joint cartilage — it produces healing velocities that consistently surprise both users and the clinicians who follow their progress.
             </p>
 
-            <h3 className="text-white font-black text-xl mt-8">What &quot;2–4x Faster Healing&quot; Actually Means in Tissue Terms</h3>
+            <h3 className="text-gray-900 font-black text-xl mt-8">What &quot;2–4x Faster Healing&quot; Actually Means in Tissue Terms</h3>
             <p>
               When researchers report that BPC-157 and TB-500 accelerate healing by 50–70% compared to untreated controls, it is worth understanding what is actually being measured. The body&apos;s standard healing response has three discrete phases, each with identifiable biochemical and structural hallmarks. The inflammatory phase (days 1–5 naturally) involves vasodilation, immune cell recruitment, and the clearing of cellular debris — a necessary but destructive process. The proliferative phase (weeks 1–6) involves fibroblast infiltration, collagen deposition, and neovascularization — the building of replacement tissue. The remodeling phase (months 2–12+) involves the slow reorganization of disorganized type III collagen into load-bearing type I collagen, and the maturation of the vascular network.
             </p>
@@ -210,7 +210,7 @@ export default function WolverineStackPage() {
               The &quot;2–4x faster&quot; claim refers primarily to the acceleration of the proliferative phase and the compression of the remodeling phase. In controlled tendon repair studies, BPC-157-treated tendons show histological characteristics at week 4 that untreated tendons don&apos;t achieve until week 12–16. This isn&apos;t pain masking or symptom suppression — it is measurable structural change: higher collagen density, better fiber alignment, greater mechanical tensile strength, and superior vascularization. TB-500&apos;s contribution is to flood the injury site with CD34+ progenitor cells from bone marrow that would not naturally arrive in such numbers, providing the cellular raw material for accelerated repair.
             </p>
 
-            <h3 className="text-white font-black text-xl mt-8">The 1991 Discovery: BPC-157 from Gastric Juice</h3>
+            <h3 className="text-gray-900 font-black text-xl mt-8">The 1991 Discovery: BPC-157 from Gastric Juice</h3>
             <p>
               The story of BPC-157 begins in the gastric mucosa. In 1991, Dr. Predrag Sikiric and his team at the University of Zagreb School of Medicine were investigating the extraordinary self-healing capacity of the gastrointestinal tract. The gut lining is one of the most hostile environments in the body — bathed in hydrochloric acid, pepsin, bile acids, and proteolytic enzymes that would destroy most tissues. Yet the gastric mucosa repairs itself from injury within hours. Something in the stomach&apos;s own chemistry was providing rapid cytoprotection and regeneration that the rest of the body lacked.
             </p>
@@ -221,7 +221,7 @@ export default function WolverineStackPage() {
               Early animal experiments produced remarkable results. BPC-157 healed gastric ulcers, repaired intestinal fistulas, and reversed NSAID-induced gut damage at doses that were physiologically plausible. Then researchers tried something unexpected: they gave BPC-157 to rats with surgically created tendon transections. The tendons healed measurably faster. Then muscle tears. Then ligament injuries. Then bone fractures. Then nerve injuries. Then corneal damage. The pattern was consistent: across tissue types, across injury mechanisms, and across species, BPC-157 accelerated healing in ways that no existing drug category could explain.
             </p>
 
-            <h3 className="text-white font-black text-xl mt-8">TB-500: From Thymus Glands to Global Athletics</h3>
+            <h3 className="text-gray-900 font-black text-xl mt-8">TB-500: From Thymus Glands to Global Athletics</h3>
             <p>
               TB-500 has a parallel but entirely independent origin story. Thymosin Beta-4 (TB4) is a 43-amino acid peptide first isolated from thymus gland tissue in the 1960s by Allan Goldstein at the National Cancer Institute. The thymus — the small organ behind the sternum responsible for T-cell maturation — produces thymosin peptides as part of immune regulation. But Thymosin Beta-4 turned out to do something far more interesting than immune modulation: it is the primary intracellular G-actin sequestering protein in virtually every mammalian cell.
             </p>
@@ -242,8 +242,8 @@ export default function WolverineStackPage() {
             <Zap className="w-4 h-4 text-emerald-400" />
             <span className="text-emerald-400 text-sm font-semibold tracking-wide">PROTOCOL PLANNER</span>
           </div>
-          <h2 className="text-3xl font-black text-white mb-3">Build Your Custom Protocol</h2>
-          <p className="text-slate-400 max-w-xl mx-auto">
+          <h2 className="text-3xl font-black text-gray-900 mb-3">Build Your Custom Protocol</h2>
+          <p className="text-gray-500 max-w-xl mx-auto">
             Select your injury type and severity to get a custom Wolverine Stack protocol with specific doses, cycle length, and expert notes.
           </p>
         </div>
@@ -253,18 +253,18 @@ export default function WolverineStackPage() {
       {/* Standard Protocol */}
       <section className="py-16" style={{ background: 'rgba(6,6,16,0.8)' }}>
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-black text-white mb-3 text-center">Wolverine Stack Protocol</h2>
-          <p className="text-slate-400 text-center mb-10 max-w-xl mx-auto">
+          <h2 className="text-3xl font-black text-gray-900 mb-3 text-center">Wolverine Stack Protocol</h2>
+          <p className="text-gray-500 text-center mb-10 max-w-xl mx-auto">
             Three phases depending on your injury stage. Use the loading phase for any new or acute injury.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {protocol.map((p, i) => (
               <div key={p.phase} className="glass-card p-6">
                 <div className="text-emerald-400 text-xs font-bold tracking-widest mb-2">PHASE {i + 1}</div>
-                <h3 className="text-white font-bold mb-4">{p.phase}</h3>
+                <h3 className="text-gray-900 font-bold mb-4">{p.phase}</h3>
                 <ul className="space-y-2">
                   {p.steps.map((s) => (
-                    <li key={s} className="text-slate-400 text-sm flex items-start gap-2">
+                    <li key={s} className="text-gray-500 text-sm flex items-start gap-2">
                       <span className="text-emerald-400 mt-0.5">•</span> {s}
                     </li>
                   ))}
@@ -272,13 +272,13 @@ export default function WolverineStackPage() {
               </div>
             ))}
           </div>
-          <p className="text-slate-600 text-xs text-center mt-6">Consult a healthcare provider before use.</p>
+          <p className="text-gray-600 text-xs text-center mt-6">Consult a healthcare provider before use.</p>
         </div>
       </section>
 
       {/* Healing timeline */}
       <section className="py-16 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-black text-white mb-10 text-center">Healing Timeline</h2>
+        <h2 className="text-3xl font-black text-gray-900 mb-10 text-center">Healing Timeline</h2>
         <div className="space-y-4">
           {[
             { time: 'Days 1–4', title: 'Pain Reduction Begins', desc: "BPC-157's anti-inflammatory and growth factor upregulation starts immediately. Most users report reduced pain and swelling within the first 2–4 days." },
@@ -292,8 +292,8 @@ export default function WolverineStackPage() {
                 <div className="text-emerald-400 font-black text-sm">{t.time}</div>
               </div>
               <div>
-                <h3 className="text-white font-bold mb-1">{t.title}</h3>
-                <p className="text-slate-400 text-sm leading-relaxed">{t.desc}</p>
+                <h3 className="text-gray-900 font-bold mb-1">{t.title}</h3>
+                <p className="text-gray-500 text-sm leading-relaxed">{t.desc}</p>
               </div>
             </div>
           ))}
@@ -307,11 +307,11 @@ export default function WolverineStackPage() {
             <Clock className="w-4 h-4 text-emerald-400" />
             <span className="text-emerald-400 text-sm font-semibold tracking-wide">HEALING JOURNAL</span>
           </div>
-          <h2 className="text-4xl font-black text-white mb-3">
+          <h2 className="text-4xl font-black text-gray-900 mb-3">
             Week-by-Week:<br />
             <span style={{ color: '#00ff88' }}>What to Expect</span>
           </h2>
-          <p className="text-slate-400 mb-10 max-w-2xl">
+          <p className="text-gray-500 mb-10 max-w-2xl">
             A realistic, honest log of the Wolverine Stack experience — framed as a healing journal. Based on the most common patterns reported by athletes and researchers across injury types.
           </p>
 
@@ -372,8 +372,8 @@ export default function WolverineStackPage() {
                     <div className="text-xs font-bold tracking-widest mb-1" style={{ color: entry.color }}>{entry.period}</div>
                   </div>
                   <div>
-                    <h3 className="text-white font-bold mb-2">{entry.title}</h3>
-                    <p className="text-slate-400 text-sm leading-relaxed">{entry.content}</p>
+                    <h3 className="text-gray-900 font-bold mb-2">{entry.title}</h3>
+                    <p className="text-gray-500 text-sm leading-relaxed">{entry.content}</p>
                   </div>
                 </div>
               </div>
@@ -388,7 +388,7 @@ export default function WolverineStackPage() {
           <Microscope className="w-4 h-4 text-emerald-400" />
           <span className="text-emerald-400 text-sm font-semibold tracking-wide">THE RESEARCH</span>
         </div>
-        <h2 className="text-4xl font-black text-white mb-10">
+        <h2 className="text-4xl font-black text-gray-900 mb-10">
           The Research Behind<br />
           <span style={{ color: '#00ff88' }}>The Stack</span>
         </h2>
@@ -413,8 +413,8 @@ export default function WolverineStackPage() {
                 },
               ].map((study) => (
                 <div key={study.title} className="glass-card p-5">
-                  <h4 className="text-white font-bold text-sm mb-2">{study.title}</h4>
-                  <p className="text-slate-400 text-sm leading-relaxed">{study.content}</p>
+                  <h4 className="text-gray-900 font-bold text-sm mb-2">{study.title}</h4>
+                  <p className="text-gray-500 text-sm leading-relaxed">{study.content}</p>
                 </div>
               ))}
             </div>
@@ -439,8 +439,8 @@ export default function WolverineStackPage() {
                 },
               ].map((study) => (
                 <div key={study.title} className="glass-card p-5">
-                  <h4 className="text-white font-bold text-sm mb-2">{study.title}</h4>
-                  <p className="text-slate-400 text-sm leading-relaxed">{study.content}</p>
+                  <h4 className="text-gray-900 font-bold text-sm mb-2">{study.title}</h4>
+                  <p className="text-gray-500 text-sm leading-relaxed">{study.content}</p>
                 </div>
               ))}
             </div>
@@ -448,19 +448,19 @@ export default function WolverineStackPage() {
 
           {/* Synergy explanation */}
           <div className="rounded-2xl p-8" style={{ background: 'rgba(0,255,136,0.03)', border: '1px solid rgba(0,255,136,0.15)' }}>
-            <h3 className="text-white font-black text-xl mb-4" style={{ color: '#00ff88' }}>Why 1 + 1 = 3: The Synergistic Healing Principle</h3>
-            <div className="space-y-3 text-slate-300 text-sm leading-relaxed">
+            <h3 className="text-gray-900 font-black text-xl mb-4" style={{ color: '#00ff88' }}>Why 1 + 1 = 3: The Synergistic Healing Principle</h3>
+            <div className="space-y-3 text-gray-600 text-sm leading-relaxed">
               <p>
                 The combination of BPC-157 and TB-500 produces healing outcomes that consistently exceed what either peptide achieves independently. This is not additive — it is synergistic. Understanding why requires understanding the bottlenecks in healing.
               </p>
               <p>
-                <strong className="text-white">BPC-157 alone</strong> is a powerful local healer but requires adequate blood supply and cellular raw material to build new tissue. In avascular tissues like tendons and cartilage, or in areas of severe damage where the vascular network is destroyed, BPC-157&apos;s local fibroblast activation is limited by what the surrounding tissue can supply.
+                <strong className="text-gray-900">BPC-157 alone</strong> is a powerful local healer but requires adequate blood supply and cellular raw material to build new tissue. In avascular tissues like tendons and cartilage, or in areas of severe damage where the vascular network is destroyed, BPC-157&apos;s local fibroblast activation is limited by what the surrounding tissue can supply.
               </p>
               <p>
-                <strong className="text-white">TB-500 alone</strong> is an excellent systemic mobilizer — it brings stem cells to the injury and reduces inflammation body-wide — but it has relatively weaker direct collagen synthesis activation compared to BPC-157. The stem cells it recruits need a pro-healing local environment and growth factor signals to optimally differentiate.
+                <strong className="text-gray-900">TB-500 alone</strong> is an excellent systemic mobilizer — it brings stem cells to the injury and reduces inflammation body-wide — but it has relatively weaker direct collagen synthesis activation compared to BPC-157. The stem cells it recruits need a pro-healing local environment and growth factor signals to optimally differentiate.
               </p>
               <p>
-                <strong className="text-white">Together:</strong> BPC-157&apos;s VEGF upregulation creates the vascular network that TB-500&apos;s stem cells need to travel to and survive in. TB-500&apos;s stem cell mobilization provides the cellular raw material that BPC-157&apos;s growth factor signaling needs to build maximum tissue volume. BPC-157&apos;s Egr-1 upregulation provides the differentiation signal that the arriving CD34+ cells need to become tendon fibroblasts rather than generic scar tissue. The result is a healing environment where every biological process required for rapid tissue regeneration is optimized simultaneously — which is why the combination consistently produces 50–70% faster healing in animal models, versus 30–40% for either peptide alone.
+                <strong className="text-gray-900">Together:</strong> BPC-157&apos;s VEGF upregulation creates the vascular network that TB-500&apos;s stem cells need to travel to and survive in. TB-500&apos;s stem cell mobilization provides the cellular raw material that BPC-157&apos;s growth factor signaling needs to build maximum tissue volume. BPC-157&apos;s Egr-1 upregulation provides the differentiation signal that the arriving CD34+ cells need to become tendon fibroblasts rather than generic scar tissue. The result is a healing environment where every biological process required for rapid tissue regeneration is optimized simultaneously — which is why the combination consistently produces 50–70% faster healing in animal models, versus 30–40% for either peptide alone.
               </p>
             </div>
           </div>
@@ -474,11 +474,11 @@ export default function WolverineStackPage() {
             <Users className="w-4 h-4 text-emerald-400" />
             <span className="text-emerald-400 text-sm font-semibold tracking-wide">ATHLETE PROFILES</span>
           </div>
-          <h2 className="text-4xl font-black text-white mb-3">
+          <h2 className="text-4xl font-black text-gray-900 mb-3">
             Case Study Profiles:<br />
             <span style={{ color: '#00ff88' }}>Real Injuries, Real Protocols</span>
           </h2>
-          <p className="text-slate-400 mb-10 max-w-2xl">
+          <p className="text-gray-500 mb-10 max-w-2xl">
             The following profiles are composite illustrations based on the most common athlete injury presentations and their responses to the Wolverine Stack protocol.
           </p>
 
@@ -553,27 +553,27 @@ export default function WolverineStackPage() {
                   <div className="inline-flex items-center gap-2 rounded-full px-3 py-1.5 text-xs font-bold tracking-widest" style={{ background: `${cs.color}15`, color: cs.color }}>
                     {cs.profile}
                   </div>
-                  <div className="text-slate-400 text-sm">{cs.injury}</div>
+                  <div className="text-gray-500 text-sm">{cs.injury}</div>
                 </div>
-                <p className="text-slate-400 text-sm leading-relaxed mb-4">{cs.background}</p>
+                <p className="text-gray-500 text-sm leading-relaxed mb-4">{cs.background}</p>
                 <div className="rounded-xl p-4 mb-4" style={{ background: 'rgba(0,255,136,0.04)', border: '1px solid rgba(0,255,136,0.1)' }}>
                   <div className="text-xs font-bold tracking-widest mb-1" style={{ color: '#00ff88' }}>PROTOCOL USED</div>
-                  <p className="text-slate-300 text-sm">{cs.protocol}</p>
+                  <p className="text-gray-600 text-sm">{cs.protocol}</p>
                 </div>
                 <div className="mb-4">
-                  <div className="text-xs font-bold tracking-widest text-slate-400 mb-3">WEEK-BY-WEEK RESULTS</div>
+                  <div className="text-xs font-bold tracking-widest text-gray-500 mb-3">WEEK-BY-WEEK RESULTS</div>
                   <div className="space-y-2">
                     {cs.timeline.map((t) => (
                       <div key={t.week} className="flex items-start gap-3 text-sm">
                         <span className="font-bold shrink-0 w-16" style={{ color: cs.color }}>Week {t.week}:</span>
-                        <span className="text-slate-400">{t.result}</span>
+                        <span className="text-gray-500">{t.result}</span>
                       </div>
                     ))}
                   </div>
                 </div>
                 <div className="rounded-xl p-4" style={{ background: `${cs.color}08`, border: `1px solid ${cs.color}20` }}>
                   <div className="text-xs font-bold tracking-widest mb-1" style={{ color: cs.color }}>OUTCOME</div>
-                  <p className="text-slate-300 text-sm leading-relaxed">{cs.outcome}</p>
+                  <p className="text-gray-600 text-sm leading-relaxed">{cs.outcome}</p>
                 </div>
               </div>
             ))}
@@ -584,16 +584,16 @@ export default function WolverineStackPage() {
       {/* FAQ */}
       <section className="py-16" style={{ background: 'rgba(0,255,136,0.02)', borderTop: '1px solid rgba(0,255,136,0.08)' }}>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-black text-white mb-10 text-center">Wolverine Stack FAQ</h2>
+          <h2 className="text-3xl font-black text-gray-900 mb-10 text-center">Wolverine Stack FAQ</h2>
           <div className="space-y-3">
             {faqs.map(({ q, a }) => (
               <details key={q} className="glass-card group">
                 <summary className="p-5 cursor-pointer list-none flex items-center justify-between">
-                  <span className="text-white font-semibold text-sm">{q}</span>
+                  <span className="text-gray-900 font-semibold text-sm">{q}</span>
                   <span className="text-emerald-400 text-lg group-open:rotate-45 transition-transform shrink-0 ml-4">+</span>
                 </summary>
                 <div className="px-5 pb-5">
-                  <p className="text-slate-400 text-sm leading-relaxed">{a}</p>
+                  <p className="text-gray-500 text-sm leading-relaxed">{a}</p>
                 </div>
               </details>
             ))}
@@ -607,8 +607,8 @@ export default function WolverineStackPage() {
           <div className="glass-card p-12 relative overflow-hidden">
             <div className="absolute inset-0 bg-gradient-to-br from-emerald-500/5 to-transparent" />
             <div className="relative">
-              <h2 className="text-3xl font-black text-white mb-4">Get the Wolverine Stack</h2>
-              <p className="text-slate-300 text-lg mb-8 max-w-xl mx-auto">
+              <h2 className="text-3xl font-black text-gray-900 mb-4">Get the Wolverine Stack</h2>
+              <p className="text-gray-600 text-lg mb-8 max-w-xl mx-auto">
                 BPC-157 and TB-500 from our recommended supplier — COA verified, US domestic, ships in 24–48 hours.
               </p>
               <div className="flex flex-wrap gap-4 justify-center">

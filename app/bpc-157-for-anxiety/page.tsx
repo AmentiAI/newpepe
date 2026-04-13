@@ -224,11 +224,11 @@ export default function Bpc157AnxietyPage() {
             <Brain className="w-4 h-4 text-indigo-400" />
             <span className="text-indigo-400 text-sm font-semibold tracking-wide">BPC-157 ANXIETY & MOOD GUIDE</span>
           </div>
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white leading-tight mb-6">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-gray-900 leading-tight mb-6">
             BPC-157 for<br />
             <span className="text-indigo-400">Anxiety & Depression</span>
           </h1>
-          <p className="text-slate-300 text-xl leading-relaxed mb-8 max-w-3xl">
+          <p className="text-gray-600 text-xl leading-relaxed mb-8 max-w-3xl">
             BPC-157 has six distinct mechanisms that reduce anxiety and improve mood — from gut-brain axis repair
             to GABA modulation and dopamine normalization.
           </p>
@@ -241,7 +241,7 @@ export default function Bpc157AnxietyPage() {
             ].map((s) => (
               <div key={s.stat} className="glass-card p-4 text-center">
                 <div className="text-lg font-black text-indigo-400">{s.stat}</div>
-                <div className="text-slate-400 text-xs mt-1">{s.label}</div>
+                <div className="text-gray-500 text-xs mt-1">{s.label}</div>
               </div>
             ))}
           </div>
@@ -250,14 +250,14 @@ export default function Bpc157AnxietyPage() {
 
       {/* Mechanisms */}
       <section className="py-16 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-black text-white mb-3">How BPC-157 Reduces Anxiety</h2>
-        <p className="text-slate-400 mb-10">BPC-157 acts on anxiety through multiple independent pathways — not a single mechanism drug.</p>
+        <h2 className="text-3xl font-black text-gray-900 mb-3">How BPC-157 Reduces Anxiety</h2>
+        <p className="text-gray-500 mb-10">BPC-157 acts on anxiety through multiple independent pathways — not a single mechanism drug.</p>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {mechanisms.map((m) => (
             <div key={m.title} className="glass-card p-6">
               <CheckCircle className="w-5 h-5 text-indigo-400 mb-3" />
-              <h3 className="text-white font-bold mb-2">{m.title}</h3>
-              <p className="text-slate-400 text-sm leading-relaxed">{m.desc}</p>
+              <h3 className="text-gray-900 font-bold mb-2">{m.title}</h3>
+              <p className="text-gray-500 text-sm leading-relaxed">{m.desc}</p>
             </div>
           ))}
         </div>
@@ -266,8 +266,8 @@ export default function Bpc157AnxietyPage() {
       {/* Anxiety Profile Widget */}
       <section className="py-16" style={{ background: 'rgba(6,6,16,0.8)' }}>
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-black text-white mb-3">Your Anxiety Profile</h2>
-          <p className="text-slate-400 mb-8">
+          <h2 className="text-3xl font-black text-gray-900 mb-3">Your Anxiety Profile</h2>
+          <p className="text-gray-500 mb-8">
             Not all anxiety is the same. Identify which of BPC-157's six mechanisms are most relevant to your symptom pattern — and whether oral or injectable is the better match for you.
           </p>
           <AnxietyProfileWidget />
@@ -277,26 +277,26 @@ export default function Bpc157AnxietyPage() {
       {/* Protocol */}
       <section className="py-12">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl font-black text-white mb-8">Protocol for Anxiety & Mood</h2>
+          <h2 className="text-2xl font-black text-gray-900 mb-8">Protocol for Anxiety & Mood</h2>
           <div className="glass-card p-8">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-6">
               <div>
                 <p className="text-indigo-400 font-bold mb-3">Daily Dose</p>
-                <p className="text-white font-mono text-lg">{protocol.dose}</p>
-                <p className="text-slate-400 text-sm mt-2">Split into 1–2 doses depending on route</p>
+                <p className="text-gray-900 font-mono text-lg">{protocol.dose}</p>
+                <p className="text-gray-500 text-sm mt-2">Split into 1–2 doses depending on route</p>
               </div>
               <div>
                 <p className="text-indigo-400 font-bold mb-3">Timing</p>
-                <p className="text-white text-sm">{protocol.timing}</p>
+                <p className="text-gray-900 text-sm">{protocol.timing}</p>
               </div>
             </div>
             <div>
-              <p className="text-slate-400 font-semibold text-sm mb-3">Administration Routes</p>
+              <p className="text-gray-500 font-semibold text-sm mb-3">Administration Routes</p>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                 {protocol.routes.map((r) => (
                   <div key={r.name} className="bg-slate-800/50 rounded-lg p-4">
-                    <p className="text-white font-semibold text-sm mb-2">{r.name}</p>
-                    <p className="text-slate-400 text-xs leading-relaxed">{r.notes}</p>
+                    <p className="text-gray-900 font-semibold text-sm mb-2">{r.name}</p>
+                    <p className="text-gray-500 text-xs leading-relaxed">{r.notes}</p>
                   </div>
                 ))}
               </div>
@@ -308,33 +308,33 @@ export default function Bpc157AnxietyPage() {
       {/* Comparison Table */}
       <section className="py-16" style={{ background: 'rgba(6,6,16,0.8)' }}>
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-black text-white mb-3">BPC-157 vs. Conventional Anxiety Treatments</h2>
-          <p className="text-slate-400 mb-10">
+          <h2 className="text-3xl font-black text-gray-900 mb-3">BPC-157 vs. Conventional Anxiety Treatments</h2>
+          <p className="text-gray-500 mb-10">
             A direct comparison of BPC-157 against the most commonly prescribed anxiety interventions — across mechanism, dependency risk, gut effects, and cognitive impact.
           </p>
           <div className="overflow-x-auto rounded-2xl border border-white/10">
             <table className="w-full text-xs">
               <thead>
                 <tr style={{ background: 'rgba(255,255,255,0.04)' }}>
-                  <th className="text-left py-3 px-3 text-slate-400 font-semibold">Treatment</th>
-                  <th className="text-left py-3 px-3 text-slate-400 font-semibold">Mechanism</th>
-                  <th className="text-left py-3 px-3 text-slate-400 font-semibold">Onset</th>
-                  <th className="text-left py-3 px-3 text-slate-400 font-semibold">Dependency</th>
-                  <th className="text-left py-3 px-3 text-slate-400 font-semibold">Side Effects</th>
-                  <th className="text-left py-3 px-3 text-slate-400 font-semibold">Gut Effects</th>
-                  <th className="text-left py-3 px-3 text-slate-400 font-semibold">Cognitive Effects</th>
+                  <th className="text-left py-3 px-3 text-gray-500 font-semibold">Treatment</th>
+                  <th className="text-left py-3 px-3 text-gray-500 font-semibold">Mechanism</th>
+                  <th className="text-left py-3 px-3 text-gray-500 font-semibold">Onset</th>
+                  <th className="text-left py-3 px-3 text-gray-500 font-semibold">Dependency</th>
+                  <th className="text-left py-3 px-3 text-gray-500 font-semibold">Side Effects</th>
+                  <th className="text-left py-3 px-3 text-gray-500 font-semibold">Gut Effects</th>
+                  <th className="text-left py-3 px-3 text-gray-500 font-semibold">Cognitive Effects</th>
                 </tr>
               </thead>
               <tbody>
                 {anxietyComparisonData.map((row, i) => (
                   <tr key={row.treatment} style={{ borderTop: '1px solid rgba(255,255,255,0.04)', background: i % 2 === 0 ? 'rgba(255,255,255,0.01)' : 'transparent' }}>
                     <td className={`py-3 px-3 font-bold ${row.color}`}>{row.treatment}</td>
-                    <td className="py-3 px-3 text-slate-300">{row.mechanism}</td>
-                    <td className="py-3 px-3 text-slate-300">{row.onset}</td>
-                    <td className="py-3 px-3 text-slate-400">{row.dependency}</td>
-                    <td className="py-3 px-3 text-slate-400">{row.sideEffects}</td>
-                    <td className="py-3 px-3 text-slate-400">{row.gutEffects}</td>
-                    <td className="py-3 px-3 text-slate-400">{row.cognitiveEffects}</td>
+                    <td className="py-3 px-3 text-gray-600">{row.mechanism}</td>
+                    <td className="py-3 px-3 text-gray-600">{row.onset}</td>
+                    <td className="py-3 px-3 text-gray-500">{row.dependency}</td>
+                    <td className="py-3 px-3 text-gray-500">{row.sideEffects}</td>
+                    <td className="py-3 px-3 text-gray-500">{row.gutEffects}</td>
+                    <td className="py-3 px-3 text-gray-500">{row.cognitiveEffects}</td>
                   </tr>
                 ))}
               </tbody>
@@ -345,15 +345,15 @@ export default function Bpc157AnxietyPage() {
 
       {/* Gut-Brain Axis Deep Dive */}
       <section className="py-16 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-black text-white mb-3">The Gut-Brain Axis: A Deep Dive</h2>
-        <p className="text-slate-400 mb-10 text-lg">
+        <h2 className="text-3xl font-black text-gray-900 mb-3">The Gut-Brain Axis: A Deep Dive</h2>
+        <p className="text-gray-500 mb-10 text-lg">
           Why fixing the gut is the most upstream anxiety intervention available — and how BPC-157 leverages this pathway.
         </p>
 
         <div className="space-y-6">
           <div className="glass-card p-8">
             <h3 className="text-xl font-black text-indigo-400 mb-4">What the Gut-Brain Axis Actually Is</h3>
-            <div className="space-y-4 text-slate-300 text-sm leading-relaxed">
+            <div className="space-y-4 text-gray-600 text-sm leading-relaxed">
               <p>{gutBrainAxisContent.intro}</p>
               <p>{gutBrainAxisContent.whatIsIt}</p>
             </div>
@@ -361,22 +361,22 @@ export default function Bpc157AnxietyPage() {
 
           <div className="glass-card p-8">
             <h3 className="text-xl font-black text-indigo-400 mb-4">The Vagus Nerve: Your Anxiety Control Line</h3>
-            <p className="text-slate-300 text-sm leading-relaxed whitespace-pre-line">{gutBrainAxisContent.vagusNerve}</p>
+            <p className="text-gray-600 text-sm leading-relaxed whitespace-pre-line">{gutBrainAxisContent.vagusNerve}</p>
           </div>
 
           <div className="glass-card p-8">
             <h3 className="text-xl font-black text-indigo-400 mb-4">How Gut Inflammation Creates Neuroinflammation</h3>
-            <p className="text-slate-300 text-sm leading-relaxed whitespace-pre-line">{gutBrainAxisContent.gutInflammationBrain}</p>
+            <p className="text-gray-600 text-sm leading-relaxed whitespace-pre-line">{gutBrainAxisContent.gutInflammationBrain}</p>
           </div>
 
           <div className="glass-card p-8">
             <h3 className="text-xl font-black text-indigo-400 mb-4">The Serotonin Production Story</h3>
-            <p className="text-slate-300 text-sm leading-relaxed">{gutBrainAxisContent.serotoninStory}</p>
+            <p className="text-gray-600 text-sm leading-relaxed">{gutBrainAxisContent.serotoninStory}</p>
           </div>
 
           <div className="glass-card p-8">
             <h3 className="text-xl font-black text-indigo-400 mb-4">BPC-157 Research in Gut-Brain Signaling</h3>
-            <p className="text-slate-300 text-sm leading-relaxed">{gutBrainAxisContent.bpcResearch}</p>
+            <p className="text-gray-600 text-sm leading-relaxed">{gutBrainAxisContent.bpcResearch}</p>
           </div>
         </div>
       </section>
@@ -384,8 +384,8 @@ export default function Bpc157AnxietyPage() {
       {/* Stacking for Anxiety */}
       <section className="py-16" style={{ background: 'rgba(6,6,16,0.8)' }}>
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-black text-white mb-3">Stacking BPC-157 for Anxiety</h2>
-          <p className="text-slate-400 mb-10">
+          <h2 className="text-3xl font-black text-gray-900 mb-3">Stacking BPC-157 for Anxiety</h2>
+          <p className="text-gray-500 mb-10">
             {stackingSection.intro}
           </p>
 
@@ -397,15 +397,15 @@ export default function Bpc157AnxietyPage() {
                   <h3 className="text-xl font-black text-indigo-400 mb-4">{stack.name}</h3>
                   <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
                     <div>
-                      <p className="text-xs font-bold tracking-widest text-slate-500 mb-2">WHAT IT IS</p>
-                      <p className="text-slate-300 text-sm leading-relaxed">{stack.description}</p>
+                      <p className="text-xs font-bold tracking-widest text-gray-500 mb-2">WHAT IT IS</p>
+                      <p className="text-gray-600 text-sm leading-relaxed">{stack.description}</p>
                     </div>
                     <div>
-                      <p className="text-xs font-bold tracking-widest text-slate-500 mb-2">SYNERGY</p>
-                      <p className="text-slate-300 text-sm leading-relaxed">{stack.synergy}</p>
+                      <p className="text-xs font-bold tracking-widest text-gray-500 mb-2">SYNERGY</p>
+                      <p className="text-gray-600 text-sm leading-relaxed">{stack.synergy}</p>
                     </div>
                     <div>
-                      <p className="text-xs font-bold tracking-widest text-slate-500 mb-2">PROTOCOL</p>
+                      <p className="text-xs font-bold tracking-widest text-gray-500 mb-2">PROTOCOL</p>
                       <p className="text-indigo-300 text-sm leading-relaxed">{stack.protocol}</p>
                     </div>
                   </div>
@@ -415,12 +415,12 @@ export default function Bpc157AnxietyPage() {
 
             {/* Lifestyle synergies */}
             <div className="glass-card p-8">
-              <h3 className="text-xl font-black text-white mb-6">Lifestyle Synergies</h3>
+              <h3 className="text-xl font-black text-gray-900 mb-6">Lifestyle Synergies</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                 {stackingSection.lifestyleSynergies.map((ls) => (
                   <div key={ls.name} className="bg-white/3 rounded-xl p-5 border border-white/8">
                     <h4 className="text-indigo-400 font-bold mb-3">{ls.name}</h4>
-                    <p className="text-slate-400 text-sm leading-relaxed">{ls.mechanism}</p>
+                    <p className="text-gray-500 text-sm leading-relaxed">{ls.mechanism}</p>
                   </div>
                 ))}
               </div>
@@ -433,22 +433,22 @@ export default function Bpc157AnxietyPage() {
       <section className="py-8 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="bg-amber-500/10 border border-amber-500/20 rounded-xl p-5">
           <p className="text-amber-300 font-semibold text-sm mb-1">Important Note</p>
-          <p className="text-slate-400 text-sm">BPC-157 is a research peptide, not an approved treatment for anxiety or depression. This content is educational. Do not discontinue prescribed mental health medications without guidance from a physician.</p>
+          <p className="text-gray-500 text-sm">BPC-157 is a research peptide, not an approved treatment for anxiety or depression. This content is educational. Do not discontinue prescribed mental health medications without guidance from a physician.</p>
         </div>
       </section>
 
       {/* FAQ */}
       <section className="py-16 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-black text-white mb-10 text-center">BPC-157 Anxiety FAQ</h2>
+        <h2 className="text-3xl font-black text-gray-900 mb-10 text-center">BPC-157 Anxiety FAQ</h2>
         <div className="space-y-3">
           {faqs.map(({ q, a }) => (
             <details key={q} className="glass-card group">
               <summary className="p-5 cursor-pointer list-none flex items-center justify-between">
-                <span className="text-white font-semibold text-sm">{q}</span>
+                <span className="text-gray-900 font-semibold text-sm">{q}</span>
                 <span className="text-indigo-400 text-lg group-open:rotate-45 transition-transform shrink-0 ml-4">+</span>
               </summary>
               <div className="px-5 pb-5">
-                <p className="text-slate-400 text-sm leading-relaxed">{a}</p>
+                <p className="text-gray-500 text-sm leading-relaxed">{a}</p>
               </div>
             </details>
           ))}
@@ -458,8 +458,8 @@ export default function Bpc157AnxietyPage() {
       {/* CTA */}
       <section className="py-16 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="glass-card p-10">
-          <h2 className="text-2xl font-black text-white mb-3">Get BPC-157</h2>
-          <p className="text-slate-400 mb-6">COA-verified BPC-157 — oral and injectable. US domestic.</p>
+          <h2 className="text-2xl font-black text-gray-900 mb-3">Get BPC-157</h2>
+          <p className="text-gray-500 mb-6">COA-verified BPC-157 — oral and injectable. US domestic.</p>
           <div className="flex flex-wrap gap-4 justify-center">
             <a href={SOURCE_URL} target="_blank" rel="nofollow noopener noreferrer"
               className="btn-cta px-8 py-4 flex items-center gap-2">

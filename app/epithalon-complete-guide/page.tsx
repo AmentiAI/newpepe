@@ -177,11 +177,11 @@ export default function EpithalonCompleteGuidePage() {
             <Star className="w-4 h-4 text-purple-400" />
             <span className="text-purple-400 text-sm font-semibold tracking-wide">EPITHALON COMPLETE GUIDE 2026</span>
           </div>
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white leading-tight mb-6">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-gray-900 leading-tight mb-6">
             Epithalon:<br />
             <span className="text-purple-400">Complete Guide</span>
           </h1>
-          <p className="text-slate-300 text-xl leading-relaxed mb-8 max-w-3xl">
+          <p className="text-gray-600 text-xl leading-relaxed mb-8 max-w-3xl">
             The only peptide with clinical evidence of telomere lengthening. Complete guide to
             Epithalon — what it does, how to use it, and what to expect.
           </p>
@@ -194,7 +194,7 @@ export default function EpithalonCompleteGuidePage() {
             ].map((s) => (
               <div key={s.stat} className="glass-card p-4 text-center">
                 <div className="text-lg font-black text-purple-400">{s.stat}</div>
-                <div className="text-slate-400 text-xs mt-1">{s.label}</div>
+                <div className="text-gray-500 text-xs mt-1">{s.label}</div>
               </div>
             ))}
           </div>
@@ -203,8 +203,8 @@ export default function EpithalonCompleteGuidePage() {
 
       {/* Benefits */}
       <section className="py-16 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-black text-white mb-3">Epithalon Benefits: What the Research Shows</h2>
-        <p className="text-slate-400 mb-10">Epithalon has one of the longest research histories of any peptide — developed in Russia starting in the 1980s with extensive clinical data.</p>
+        <h2 className="text-3xl font-black text-gray-900 mb-3">Epithalon Benefits: What the Research Shows</h2>
+        <p className="text-gray-500 mb-10">Epithalon has one of the longest research histories of any peptide — developed in Russia starting in the 1980s with extensive clinical data.</p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
           {benefits.map((b) => (
             <div key={b.title} className="glass-card p-6">
@@ -212,10 +212,10 @@ export default function EpithalonCompleteGuidePage() {
                 <CheckCircle className="w-5 h-5 text-purple-400 shrink-0 mt-0.5" />
                 <div>
                   <div className="text-xs text-purple-400 font-semibold mb-1">{b.rank}</div>
-                  <h3 className="text-white font-bold">{b.title}</h3>
+                  <h3 className="text-gray-900 font-bold">{b.title}</h3>
                 </div>
               </div>
-              <p className="text-slate-400 text-sm leading-relaxed">{b.desc}</p>
+              <p className="text-gray-500 text-sm leading-relaxed">{b.desc}</p>
             </div>
           ))}
         </div>
@@ -226,35 +226,35 @@ export default function EpithalonCompleteGuidePage() {
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center gap-3 mb-3">
             <Dna className="w-6 h-6 text-purple-400" />
-            <h2 className="text-3xl font-black text-white">The Khavinson Research: 30 Years of Epithalon Data</h2>
+            <h2 className="text-3xl font-black text-gray-900">The Khavinson Research: 30 Years of Epithalon Data</h2>
           </div>
-          <p className="text-slate-400 mb-10 max-w-3xl">Vladimir Khavinson's institute produced the foundational science behind Epithalon. Here is the trajectory of that research and why it matters.</p>
+          <p className="text-gray-500 mb-10 max-w-3xl">Vladimir Khavinson's institute produced the foundational science behind Epithalon. Here is the trajectory of that research and why it matters.</p>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
             <div className="space-y-5">
               <div className="glass-card p-6">
                 <div className="text-xs font-bold text-purple-400 uppercase tracking-wide mb-3">The Origin: Epithalamin</div>
-                <p className="text-slate-300 text-sm leading-relaxed">In the late 1970s, Vladimir Khavinson at the St. Petersburg Institute of Bioregulation and Gerontology began studying bovine pineal gland extract — a complex mixture called Epithalamin. Early animal studies showed remarkable anti-aging effects: extended lifespan, reduced tumor incidence, improved hormonal regulation. Khavinson's team identified that the active fraction was a tetrapeptide — Ala-Glu-Asp-Gly — which they synthesized and named Epithalon.</p>
+                <p className="text-gray-600 text-sm leading-relaxed">In the late 1970s, Vladimir Khavinson at the St. Petersburg Institute of Bioregulation and Gerontology began studying bovine pineal gland extract — a complex mixture called Epithalamin. Early animal studies showed remarkable anti-aging effects: extended lifespan, reduced tumor incidence, improved hormonal regulation. Khavinson's team identified that the active fraction was a tetrapeptide — Ala-Glu-Asp-Gly — which they synthesized and named Epithalon.</p>
               </div>
 
               <div className="glass-card p-6">
                 <div className="text-xs font-bold text-purple-400 uppercase tracking-wide mb-3">Animal to Human: The Progression</div>
-                <p className="text-slate-300 text-sm leading-relaxed">Initial studies in rats and mice demonstrated statistically significant lifespan extensions of 20–30% in treated groups. Tumor incidence fell by 40–50% in carcinogen-exposed animals. Immune parameters (NK cells, T-cell counts) showed restoration toward younger-animal baselines. These results, replicated across multiple mammalian species, justified the transition to human clinical trials in the 1990s.</p>
+                <p className="text-gray-600 text-sm leading-relaxed">Initial studies in rats and mice demonstrated statistically significant lifespan extensions of 20–30% in treated groups. Tumor incidence fell by 40–50% in carcinogen-exposed animals. Immune parameters (NK cells, T-cell counts) showed restoration toward younger-animal baselines. These results, replicated across multiple mammalian species, justified the transition to human clinical trials in the 1990s.</p>
               </div>
 
               <div className="glass-card p-6">
                 <div className="text-xs font-bold text-purple-400 uppercase tracking-wide mb-3">The Telomerase Discovery</div>
-                <p className="text-slate-300 text-sm leading-relaxed">The mechanistic breakthrough came in 2003 when Khavinson et al. published evidence that Epithalon activates telomerase — the enzyme responsible for rebuilding telomere sequences. Human somatic cells (which normally do not express telomerase) showed detectable telomerase activity after Epithalon treatment. Telomere length was measurably increased. This was the first peptide demonstrated to achieve this effect in human cells.</p>
+                <p className="text-gray-600 text-sm leading-relaxed">The mechanistic breakthrough came in 2003 when Khavinson et al. published evidence that Epithalon activates telomerase — the enzyme responsible for rebuilding telomere sequences. Human somatic cells (which normally do not express telomerase) showed detectable telomerase activity after Epithalon treatment. Telomere length was measurably increased. This was the first peptide demonstrated to achieve this effect in human cells.</p>
               </div>
             </div>
 
             <div className="space-y-5">
               <div className="glass-card p-6" style={{ border: '1px solid rgba(168,85,247,0.3)' }}>
                 <div className="text-xs font-bold text-purple-400 uppercase tracking-wide mb-3">Landmark Study: 28% Mortality Reduction</div>
-                <p className="text-slate-300 text-sm leading-relaxed mb-4">The most cited piece of Epithalon evidence comes from a 10-year longitudinal study in elderly patients (aged 60–74 at enrollment). The Epithalon group showed a 28% reduction in mortality versus the control group over the follow-up period. Biological aging markers — telomere length, immune panel, hormonal profiles — were all more favorable in the Epithalon group. This is extraordinary data for any anti-aging intervention.</p>
+                <p className="text-gray-600 text-sm leading-relaxed mb-4">The most cited piece of Epithalon evidence comes from a 10-year longitudinal study in elderly patients (aged 60–74 at enrollment). The Epithalon group showed a 28% reduction in mortality versus the control group over the follow-up period. Biological aging markers — telomere length, immune panel, hormonal profiles — were all more favorable in the Epithalon group. This is extraordinary data for any anti-aging intervention.</p>
                 <div className="rounded-xl p-4 text-center" style={{ background: 'rgba(168,85,247,0.08)', border: '1px solid rgba(168,85,247,0.2)' }}>
                   <div className="text-3xl font-black text-purple-400 mb-1">28%</div>
-                  <div className="text-slate-400 text-xs">Mortality reduction over 10 years<br />vs. control group (Khavinson et al.)</div>
+                  <div className="text-gray-500 text-xs">Mortality reduction over 10 years<br />vs. control group (Khavinson et al.)</div>
                 </div>
               </div>
 
@@ -268,7 +268,7 @@ export default function EpithalonCompleteGuidePage() {
                     'Research was conducted in actual elderly populations, not cell cultures or model organisms alone',
                     'No serious adverse effects have been reported in any published study across 35 years',
                   ].map((point) => (
-                    <li key={point} className="flex items-start gap-2 text-sm text-slate-300">
+                    <li key={point} className="flex items-start gap-2 text-sm text-gray-600">
                       <span className="text-purple-400 shrink-0 mt-0.5">→</span>
                       {point}
                     </li>
@@ -284,9 +284,9 @@ export default function EpithalonCompleteGuidePage() {
       <section className="py-16 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center gap-3 mb-3">
           <Activity className="w-6 h-6 text-purple-400" />
-          <h2 className="text-3xl font-black text-white">Epithalon Cycle Planner</h2>
+          <h2 className="text-3xl font-black text-gray-900">Epithalon Cycle Planner</h2>
         </div>
-        <p className="text-slate-400 mb-8">Input your age and primary goal to receive a personalized Epithalon protocol — including dose, cycle frequency, optimal injection timing, biomarkers to track, and realistic expectations.</p>
+        <p className="text-gray-500 mb-8">Input your age and primary goal to receive a personalized Epithalon protocol — including dose, cycle frequency, optimal injection timing, biomarkers to track, and realistic expectations.</p>
         <EpithalonCyclePlanner />
       </section>
 
@@ -295,40 +295,40 @@ export default function EpithalonCompleteGuidePage() {
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center gap-3 mb-3">
             <Moon className="w-6 h-6 text-purple-400" />
-            <h2 className="text-3xl font-black text-white">What Epithalon Does to Your Circadian Rhythm</h2>
+            <h2 className="text-3xl font-black text-gray-900">What Epithalon Does to Your Circadian Rhythm</h2>
           </div>
-          <p className="text-slate-400 mb-10 max-w-3xl">The pineal-circadian connection is deeper than most people realize. Epithalon's effects on sleep are not a side benefit — they are a window into the anti-aging mechanism itself.</p>
+          <p className="text-gray-500 mb-10 max-w-3xl">The pineal-circadian connection is deeper than most people realize. Epithalon's effects on sleep are not a side benefit — they are a window into the anti-aging mechanism itself.</p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
             <div className="space-y-4">
               <div className="glass-card p-5">
-                <h3 className="text-white font-bold mb-2 flex items-center gap-2">
+                <h3 className="text-gray-900 font-bold mb-2 flex items-center gap-2">
                   <Moon className="w-4 h-4 text-purple-400" />
                   Melatonin Beyond Sleep
                 </h3>
-                <p className="text-slate-400 text-sm leading-relaxed">Melatonin is widely understood as a sleep hormone but is actually one of the most potent endogenous antioxidants. It crosses the blood-brain barrier, penetrates mitochondria directly, and neutralizes reactive oxygen species in locations that other antioxidants cannot reach. It also modulates immune function, regulates tumor suppressor genes, and coordinates hormonal rhythms throughout the body. The pineal gland's melatonin output is not just about sleep timing — it is an anti-aging signal broadcast system-wide every night.</p>
+                <p className="text-gray-500 text-sm leading-relaxed">Melatonin is widely understood as a sleep hormone but is actually one of the most potent endogenous antioxidants. It crosses the blood-brain barrier, penetrates mitochondria directly, and neutralizes reactive oxygen species in locations that other antioxidants cannot reach. It also modulates immune function, regulates tumor suppressor genes, and coordinates hormonal rhythms throughout the body. The pineal gland's melatonin output is not just about sleep timing — it is an anti-aging signal broadcast system-wide every night.</p>
               </div>
 
               <div className="glass-card p-5">
-                <h3 className="text-white font-bold mb-2 flex items-center gap-2">
+                <h3 className="text-gray-900 font-bold mb-2 flex items-center gap-2">
                   <Brain className="w-4 h-4 text-purple-400" />
                   Telomere Health and Circadian Rhythm: The Link
                 </h3>
-                <p className="text-slate-400 text-sm leading-relaxed">Circadian disruption (shift work, irregular sleep) is now established as a risk factor for accelerated biological aging. The mechanism involves DNA damage repair — which peaks during sleep — and oxidative stress accumulation from impaired melatonin antioxidant activity. Shorter telomeres are consistently found in populations with chronic sleep disruption. Restoring circadian rhythm via the pineal axis is not just about feeling rested — it directly supports telomere maintenance.</p>
+                <p className="text-gray-500 text-sm leading-relaxed">Circadian disruption (shift work, irregular sleep) is now established as a risk factor for accelerated biological aging. The mechanism involves DNA damage repair — which peaks during sleep — and oxidative stress accumulation from impaired melatonin antioxidant activity. Shorter telomeres are consistently found in populations with chronic sleep disruption. Restoring circadian rhythm via the pineal axis is not just about feeling rested — it directly supports telomere maintenance.</p>
               </div>
             </div>
 
             <div className="space-y-4">
               <div className="glass-card p-5">
-                <h3 className="text-white font-bold mb-2 flex items-center gap-2">
+                <h3 className="text-gray-900 font-bold mb-2 flex items-center gap-2">
                   <Activity className="w-4 h-4 text-purple-400" />
                   The Pineal Gland Decline with Age
                 </h3>
-                <p className="text-slate-400 text-sm leading-relaxed">The pineal gland begins calcifying in adolescence and this process accelerates significantly after age 40. By age 60, melatonin output is often less than 25% of youthful levels. The consequences compound: worse sleep quality leads to less nighttime repair, which leads to more oxidative damage, which leads to faster telomere attrition, which feeds back into accelerated aging. The pineal is a keystone organ — its decline cascades throughout the biological aging process.</p>
+                <p className="text-gray-500 text-sm leading-relaxed">The pineal gland begins calcifying in adolescence and this process accelerates significantly after age 40. By age 60, melatonin output is often less than 25% of youthful levels. The consequences compound: worse sleep quality leads to less nighttime repair, which leads to more oxidative damage, which leads to faster telomere attrition, which feeds back into accelerated aging. The pineal is a keystone organ — its decline cascades throughout the biological aging process.</p>
               </div>
 
               <div className="glass-card p-5">
-                <h3 className="text-white font-bold mb-2 flex items-center gap-2">
+                <h3 className="text-gray-900 font-bold mb-2 flex items-center gap-2">
                   <Star className="w-4 h-4 text-purple-400" />
                   Practical Implications
                 </h3>
@@ -341,7 +341,7 @@ export default function EpithalonCompleteGuidePage() {
                   ].map((item) => (
                     <li key={item.label} className="text-xs">
                       <span className="text-purple-400 font-semibold">{item.label}:</span>
-                      <span className="text-slate-400 ml-1">{item.detail}</span>
+                      <span className="text-gray-500 ml-1">{item.detail}</span>
                     </li>
                   ))}
                 </ul>
@@ -355,20 +355,20 @@ export default function EpithalonCompleteGuidePage() {
       <section className="py-16 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center gap-3 mb-3">
           <Dna className="w-6 h-6 text-purple-400" />
-          <h2 className="text-3xl font-black text-white">Epithalon vs. Resveratrol vs. NMN: Telomere Comparison</h2>
+          <h2 className="text-3xl font-black text-gray-900">Epithalon vs. Resveratrol vs. NMN: Telomere Comparison</h2>
         </div>
-        <p className="text-slate-400 mb-3 max-w-3xl">How does Epithalon compare to the most popular longevity supplements? The key differentiator is the directness of the telomere evidence.</p>
-        <p className="text-slate-500 text-sm mb-8">Resveratrol and NMN are excellent compounds with their own evidence base — but neither has demonstrated direct telomere lengthening in humans. Epithalon has.</p>
+        <p className="text-gray-500 mb-3 max-w-3xl">How does Epithalon compare to the most popular longevity supplements? The key differentiator is the directness of the telomere evidence.</p>
+        <p className="text-gray-500 text-sm mb-8">Resveratrol and NMN are excellent compounds with their own evidence base — but neither has demonstrated direct telomere lengthening in humans. Epithalon has.</p>
 
         <div className="overflow-x-auto rounded-2xl mb-8" style={{ border: '1px solid rgba(168,85,247,0.15)' }}>
           <table className="w-full text-sm">
             <thead>
               <tr style={{ background: 'rgba(168,85,247,0.06)' }}>
-                <th className="text-left py-3 px-4 text-slate-400 font-semibold">Compound</th>
-                <th className="text-left py-3 px-4 text-slate-400 font-semibold">Mechanism</th>
-                <th className="text-left py-3 px-4 text-slate-400 font-semibold">Telomere Effect</th>
-                <th className="text-left py-3 px-4 text-slate-400 font-semibold">Human Evidence</th>
-                <th className="text-left py-3 px-4 text-slate-400 font-semibold">Est. Cost</th>
+                <th className="text-left py-3 px-4 text-gray-500 font-semibold">Compound</th>
+                <th className="text-left py-3 px-4 text-gray-500 font-semibold">Mechanism</th>
+                <th className="text-left py-3 px-4 text-gray-500 font-semibold">Telomere Effect</th>
+                <th className="text-left py-3 px-4 text-gray-500 font-semibold">Human Evidence</th>
+                <th className="text-left py-3 px-4 text-gray-500 font-semibold">Est. Cost</th>
                 <th className="text-left py-3 px-4 text-purple-400 font-bold">Verdict</th>
               </tr>
             </thead>
@@ -382,17 +382,17 @@ export default function EpithalonCompleteGuidePage() {
                   }}
                 >
                   <td className="py-3 px-4">
-                    <span className={`font-bold ${row.highlight ? 'text-purple-300' : 'text-white'}`}>{row.compound}</span>
+                    <span className={`font-bold ${row.highlight ? 'text-purple-300' : 'text-gray-900'}`}>{row.compound}</span>
                     {row.highlight && <span className="ml-2 text-xs text-purple-400 font-bold px-2 py-0.5 rounded-full" style={{ background: 'rgba(168,85,247,0.15)' }}>★ Best</span>}
                   </td>
-                  <td className="py-3 px-4 text-slate-400 text-xs max-w-[180px]">{row.mechanism}</td>
+                  <td className="py-3 px-4 text-gray-500 text-xs max-w-[180px]">{row.mechanism}</td>
                   <td className="py-3 px-4 text-xs">
-                    <span className={row.highlight ? 'text-purple-300 font-semibold' : 'text-slate-400'}>{row.telomereEffect}</span>
+                    <span className={row.highlight ? 'text-purple-300 font-semibold' : 'text-gray-500'}>{row.telomereEffect}</span>
                   </td>
-                  <td className="py-3 px-4 text-slate-400 text-xs">{row.humanEvidence}</td>
-                  <td className="py-3 px-4 text-slate-400 text-xs font-mono">{row.cost}</td>
+                  <td className="py-3 px-4 text-gray-500 text-xs">{row.humanEvidence}</td>
+                  <td className="py-3 px-4 text-gray-500 text-xs font-mono">{row.cost}</td>
                   <td className="py-3 px-4 text-xs font-semibold">
-                    <span className={row.highlight ? 'text-purple-400' : 'text-slate-500'}>{row.verdict}</span>
+                    <span className={row.highlight ? 'text-purple-400' : 'text-gray-500'}>{row.verdict}</span>
                   </td>
                 </tr>
               ))}
@@ -401,7 +401,7 @@ export default function EpithalonCompleteGuidePage() {
         </div>
 
         <div className="glass-card p-6" style={{ border: '1px solid rgba(168,85,247,0.2)' }}>
-          <p className="text-slate-300 text-sm leading-relaxed">
+          <p className="text-gray-600 text-sm leading-relaxed">
             <strong className="text-purple-400">The key insight:</strong> Resveratrol and NMN work upstream (sirtuin activation, NAD+ restoration) and may indirectly support telomere maintenance, but neither has human evidence of direct telomere lengthening. Epithalon directly activates telomerase — the enzyme that extends telomeres — and this has been demonstrated in human cells and elderly human subjects. These compounds are not mutually exclusive — stacking Epithalon with NAD+ precursors addresses both telomere length and mitochondrial function simultaneously.
           </p>
         </div>
@@ -410,20 +410,20 @@ export default function EpithalonCompleteGuidePage() {
       {/* Protocol */}
       <section className="py-12" style={{ background: 'rgba(6,6,16,0.8)' }}>
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl font-black text-white mb-3">Dosing Protocols</h2>
-          <p className="text-slate-400 mb-8">Choose based on your goals and commitment level.</p>
+          <h2 className="text-2xl font-black text-gray-900 mb-3">Dosing Protocols</h2>
+          <p className="text-gray-500 mb-8">Choose based on your goals and commitment level.</p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
             {protocol.map((p, i) => (
               <div key={p.name} className={`glass-card p-6 ${i === 0 ? 'border border-purple-500/30' : ''}`}>
                 {i === 0 && <div className="text-xs font-bold text-purple-400 tracking-widest mb-2">RECOMMENDED</div>}
-                <h3 className="text-white font-black text-lg mb-4">{p.name}</h3>
+                <h3 className="text-gray-900 font-black text-lg mb-4">{p.name}</h3>
                 <div className="space-y-2 mb-4">
-                  <div><span className="text-slate-500 text-xs">Total dose: </span><span className="text-white text-xs font-semibold">{p.dose}</span></div>
-                  <div><span className="text-slate-500 text-xs">Schedule: </span><span className="text-white text-xs font-semibold">{p.schedule}</span></div>
-                  <div><span className="text-slate-500 text-xs">Frequency: </span><span className="text-white text-xs font-semibold">{p.frequency}</span></div>
-                  <div><span className="text-slate-500 text-xs">Route: </span><span className="text-purple-400 text-xs font-semibold">{p.route}</span></div>
+                  <div><span className="text-gray-500 text-xs">Total dose: </span><span className="text-gray-900 text-xs font-semibold">{p.dose}</span></div>
+                  <div><span className="text-gray-500 text-xs">Schedule: </span><span className="text-gray-900 text-xs font-semibold">{p.schedule}</span></div>
+                  <div><span className="text-gray-500 text-xs">Frequency: </span><span className="text-gray-900 text-xs font-semibold">{p.frequency}</span></div>
+                  <div><span className="text-gray-500 text-xs">Route: </span><span className="text-purple-400 text-xs font-semibold">{p.route}</span></div>
                 </div>
-                <p className="text-slate-400 text-xs leading-relaxed">{p.notes}</p>
+                <p className="text-gray-500 text-xs leading-relaxed">{p.notes}</p>
               </div>
             ))}
           </div>
@@ -432,7 +432,7 @@ export default function EpithalonCompleteGuidePage() {
 
       {/* What to expect */}
       <section className="py-16 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-2xl font-black text-white mb-8">What to Expect: Results Timeline</h2>
+        <h2 className="text-2xl font-black text-gray-900 mb-8">What to Expect: Results Timeline</h2>
         <div className="space-y-4">
           {[
             { period: 'Days 3–5 (during cycle)', results: 'Sleep quality noticeably improves — deeper sleep, more vivid dreams, waking more refreshed. This is the pineal/melatonin effect.' },
@@ -442,7 +442,7 @@ export default function EpithalonCompleteGuidePage() {
           ].map((t) => (
             <div key={t.period} className="glass-card p-5 flex gap-5">
               <div className="text-purple-400 font-black text-sm shrink-0 w-40">{t.period}</div>
-              <p className="text-slate-300 text-sm leading-relaxed">{t.results}</p>
+              <p className="text-gray-600 text-sm leading-relaxed">{t.results}</p>
             </div>
           ))}
         </div>
@@ -453,9 +453,9 @@ export default function EpithalonCompleteGuidePage() {
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center gap-3 mb-3">
             <Activity className="w-6 h-6 text-purple-400" />
-            <h2 className="text-3xl font-black text-white">Stacking Epithalon: The Anti-Aging Synergy Protocol</h2>
+            <h2 className="text-3xl font-black text-gray-900">Stacking Epithalon: The Anti-Aging Synergy Protocol</h2>
           </div>
-          <p className="text-slate-400 mb-10 max-w-3xl">Epithalon works through three mechanisms simultaneously — telomere, circadian, and gene expression. Each stacking partner addresses a distinct aging pathway, creating a multi-front anti-aging protocol used in Russian longevity clinics.</p>
+          <p className="text-gray-500 mb-10 max-w-3xl">Epithalon works through three mechanisms simultaneously — telomere, circadian, and gene expression. Each stacking partner addresses a distinct aging pathway, creating a multi-front anti-aging protocol used in Russian longevity clinics.</p>
 
           <div className="space-y-5 mb-10">
             {[
@@ -487,14 +487,14 @@ export default function EpithalonCompleteGuidePage() {
               <div key={item.combo} className="glass-card p-6" style={{ background: item.color, border: `1px solid ${item.border}` }}>
                 <div className="flex items-start justify-between gap-4 mb-3">
                   <div>
-                    <span className="text-xs font-bold text-slate-500 uppercase tracking-wide">{item.label}</span>
-                    <h3 className="text-white font-black text-lg">{item.combo}</h3>
+                    <span className="text-xs font-bold text-gray-500 uppercase tracking-wide">{item.label}</span>
+                    <h3 className="text-gray-900 font-black text-lg">{item.combo}</h3>
                   </div>
                   <span className="text-xs font-semibold text-purple-400 px-3 py-1 rounded-full shrink-0 whitespace-nowrap" style={{ background: 'rgba(168,85,247,0.1)', border: '1px solid rgba(168,85,247,0.2)' }}>
                     {item.tag}
                   </span>
                 </div>
-                <p className="text-slate-400 text-sm leading-relaxed">{item.mechanism}</p>
+                <p className="text-gray-500 text-sm leading-relaxed">{item.mechanism}</p>
               </div>
             ))}
           </div>
@@ -510,8 +510,8 @@ export default function EpithalonCompleteGuidePage() {
                 { compound: 'CJC-1295 + Ipamorelin', schedule: '100mcg each, nightly injection', role: 'GH restoration + body composition + sleep' },
               ].map((item) => (
                 <div key={item.compound} className="rounded-xl p-4" style={{ background: 'rgba(168,85,247,0.07)', border: '1px solid rgba(168,85,247,0.12)' }}>
-                  <div className="text-white font-black text-sm mb-1">{item.compound}</div>
-                  <div className="text-slate-400 text-xs mb-1 font-mono">{item.schedule}</div>
+                  <div className="text-gray-900 font-black text-sm mb-1">{item.compound}</div>
+                  <div className="text-gray-500 text-xs mb-1 font-mono">{item.schedule}</div>
                   <div className="text-purple-300 text-xs">{item.role}</div>
                 </div>
               ))}
@@ -522,16 +522,16 @@ export default function EpithalonCompleteGuidePage() {
 
       {/* FAQ */}
       <section className="py-16 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-black text-white mb-10 text-center">Epithalon FAQ</h2>
+        <h2 className="text-3xl font-black text-gray-900 mb-10 text-center">Epithalon FAQ</h2>
         <div className="space-y-3">
           {faqs.map(({ q, a }) => (
             <details key={q} className="glass-card group">
               <summary className="p-5 cursor-pointer list-none flex items-center justify-between">
-                <span className="text-white font-semibold text-sm">{q}</span>
+                <span className="text-gray-900 font-semibold text-sm">{q}</span>
                 <span className="text-purple-400 text-lg group-open:rotate-45 transition-transform shrink-0 ml-4">+</span>
               </summary>
               <div className="px-5 pb-5">
-                <p className="text-slate-400 text-sm leading-relaxed">{a}</p>
+                <p className="text-gray-500 text-sm leading-relaxed">{a}</p>
               </div>
             </details>
           ))}
@@ -541,8 +541,8 @@ export default function EpithalonCompleteGuidePage() {
       {/* CTA */}
       <section className="py-16 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="glass-card p-10">
-          <h2 className="text-2xl font-black text-white mb-3">Get Epithalon</h2>
-          <p className="text-slate-400 mb-6">COA-verified Epithalon — the telomere-lengthening longevity peptide. US domestic.</p>
+          <h2 className="text-2xl font-black text-gray-900 mb-3">Get Epithalon</h2>
+          <p className="text-gray-500 mb-6">COA-verified Epithalon — the telomere-lengthening longevity peptide. US domestic.</p>
           <div className="flex flex-wrap gap-4 justify-center">
             <a href={SOURCE_URL} target="_blank" rel="nofollow noopener noreferrer"
               className="btn-cta px-8 py-4 flex items-center gap-2">

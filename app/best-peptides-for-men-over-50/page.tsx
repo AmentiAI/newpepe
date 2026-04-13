@@ -140,11 +140,11 @@ export default function PeptidesForMenOver50Page() {
           <div className="inline-flex items-center gap-2 bg-blue-500/10 border border-blue-500/30 rounded-full px-4 py-2 mb-6">
             <span className="text-blue-400 text-sm font-semibold tracking-wide">PEPTIDES FOR MEN 50+ GUIDE 2026</span>
           </div>
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white leading-tight mb-6">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-gray-900 leading-tight mb-6">
             Best Peptides for<br />
             <span className="text-blue-400">Men Over 50</span>
           </h1>
-          <p className="text-slate-300 text-xl leading-relaxed mb-8 max-w-3xl">
+          <p className="text-gray-600 text-xl leading-relaxed mb-8 max-w-3xl">
             After 50, GH drops, muscle disappears, healing slows, and recovery suffers.
             Here are the peptides that directly target these changes — and what to expect from each.
           </p>
@@ -157,14 +157,14 @@ export default function PeptidesForMenOver50Page() {
           <div className="inline-flex items-center gap-2 bg-blue-500/10 border border-blue-500/20 rounded-full px-3 py-1.5 mb-6">
             <span className="text-blue-400 text-sm font-semibold">THE SCIENCE OF MALE AGING</span>
           </div>
-          <h2 className="text-3xl font-black text-white mb-8">The Male Aging Cascade: What Happens After 50</h2>
+          <h2 className="text-3xl font-black text-gray-900 mb-8">The Male Aging Cascade: What Happens After 50</h2>
 
-          <div className="space-y-6 text-slate-300 leading-relaxed">
+          <div className="space-y-6 text-gray-600 leading-relaxed">
             <p>
               Male aging after 50 is not a single process — it is a cascade of interconnected physiological declines that feed into and accelerate each other. Understanding this cascade is essential to understanding why peptide protocols are structured the way they are, targeting multiple pathways simultaneously.
             </p>
 
-            <h3 className="text-white font-bold text-xl mt-6 mb-3">Testosterone and GH Decline: The Hormonal Foundation</h3>
+            <h3 className="text-gray-900 font-bold text-xl mt-6 mb-3">Testosterone and GH Decline: The Hormonal Foundation</h3>
             <p>
               Testosterone declines at approximately 1–2% per year beginning around age 30. By age 50, total testosterone is typically 20–30% lower than peak levels. This decline is gradual enough that most men adapt without noticing dramatic changes — until secondary effects accumulate. More acutely impactful is growth hormone decline: GH drops 14% per decade, meaning by age 50, most men have approximately 50–60% of the GH they had at age 25. This matters enormously because GH is the master regulator of body composition, recovery speed, sleep quality, and metabolic rate.
             </p>
@@ -172,7 +172,7 @@ export default function PeptidesForMenOver50Page() {
               The testosterone and GH axes are interconnected: testosterone supports GH secretion, and adequate GH supports optimal testosterone receptor sensitivity. When both decline together — as they do after 50 — the effect is multiplicative rather than additive. A man with low-normal testosterone and low GH experiences worse body composition outcomes than either deficiency alone would predict.
             </p>
 
-            <h3 className="text-white font-bold text-xl mt-6 mb-3">Sarcopenia: The Muscle Loss Crisis</h3>
+            <h3 className="text-gray-900 font-bold text-xl mt-6 mb-3">Sarcopenia: The Muscle Loss Crisis</h3>
             <p>
               Sarcopenia (age-related muscle loss) begins in the 30s at 3–5% per decade but accelerates after 50 to 3–8% per decade — and some studies suggest even faster rates in sedentary men. By age 70, the average man has lost 25–30% of the muscle mass he had at 30. This is not merely cosmetic: muscle mass is the primary determinant of metabolic rate, insulin sensitivity, functional independence, and injury resistance. Sarcopenia drives the vicious cycle where less muscle → lower metabolism → more fat gain → more inflammation → more muscle loss.
             </p>
@@ -180,27 +180,27 @@ export default function PeptidesForMenOver50Page() {
               GH decline is the primary hormonal driver of sarcopenia. GH stimulates IGF-1, which activates muscle protein synthesis and satellite cell function (the mechanism of muscle repair). When GH drops, so does IGF-1, and muscle breakdown progressively outpaces synthesis. This is precisely why GH secretagogues are the highest-priority peptide for men over 50 — they directly address the root hormonal cause of sarcopenia.
             </p>
 
-            <h3 className="text-white font-bold text-xl mt-6 mb-3">NAD+ Loss and Mitochondrial Dysfunction</h3>
+            <h3 className="text-gray-900 font-bold text-xl mt-6 mb-3">NAD+ Loss and Mitochondrial Dysfunction</h3>
             <p>
               NAD+ (nicotinamide adenine dinucleotide) is a coenzyme involved in hundreds of metabolic reactions — it is the essential substrate for cellular energy production, DNA repair via sirtuins and PARP enzymes, and mitochondrial function. NAD+ levels decline approximately 50% between ages 20 and 60. This decline drives mitochondrial dysfunction (reduced ATP production), impaired DNA repair, and accumulation of senescent cells. The practical consequences are the energy deficit, cognitive cloudiness, and reduced physical capacity that characterize aging.
             </p>
 
-            <h3 className="text-white font-bold text-xl mt-6 mb-3">Telomere Shortening and Cellular Senescence</h3>
+            <h3 className="text-gray-900 font-bold text-xl mt-6 mb-3">Telomere Shortening and Cellular Senescence</h3>
             <p>
               Telomeres — the protective caps on chromosomes — shorten with each cell division. By age 50, significant telomere attrition has occurred, and cells with critically short telomeres either stop dividing (senescence) or undergo apoptosis. Senescent cells are particularly damaging because they secrete inflammatory cytokines (the senescence-associated secretory phenotype, SASP) that accelerate aging in surrounding tissue. This is why Epithalon&apos;s telomere-lengthening effect is so significant — it addresses a root mechanism of biological aging, not just a downstream symptom.
             </p>
 
-            <h3 className="text-white font-bold text-xl mt-6 mb-3">Fat Redistribution and the Visceral Fat Problem</h3>
+            <h3 className="text-gray-900 font-bold text-xl mt-6 mb-3">Fat Redistribution and the Visceral Fat Problem</h3>
             <p>
               Declining testosterone and GH alter fat distribution in men — shifting fat storage from subcutaneous (under the skin) to visceral (around internal organs) locations. Visceral fat is metabolically active in the worst sense: it secretes adipokines and inflammatory cytokines that worsen insulin resistance, drive systemic inflammation, reduce testosterone production in the testes, and increase cardiovascular risk. This creates another vicious cycle: more visceral fat → lower testosterone → more visceral fat accumulation. GH peptides directly address this: GH is specifically lipolytic toward visceral fat, and restoring GH pulsatility consistently reduces the waist measurement that reflects visceral accumulation.
             </p>
 
-            <h3 className="text-white font-bold text-xl mt-6 mb-3">Cognitive Decline and Neurological Changes</h3>
+            <h3 className="text-gray-900 font-bold text-xl mt-6 mb-3">Cognitive Decline and Neurological Changes</h3>
             <p>
               Cognitive changes after 50 in men are driven by multiple converging factors: declining testosterone (which has neuroprotective roles), declining GH/IGF-1 (which supports neurogenesis and synaptogenesis), NAD+ loss (which impairs neuronal mitochondrial function), and accumulating inflammation (which damages the blood-brain barrier and activates microglia). The subjective experience is the progressive &quot;brain fog,&quot; memory lapses, and reduced cognitive processing speed that men commonly report starting in their 50s. NAD+ restoration and GH peptide protocols both have evidence supporting cognitive improvement in this population.
             </p>
 
-            <h3 className="text-white font-bold text-xl mt-6 mb-3">Sexual Health Changes</h3>
+            <h3 className="text-gray-900 font-bold text-xl mt-6 mb-3">Sexual Health Changes</h3>
             <p>
               Declining testosterone is the primary driver of sexual health changes in men over 50 — reduced libido, erectile dysfunction, and decreased sexual satisfaction. However, sleep quality, cardiovascular health, nitric oxide production, and psychological factors all contribute. GH peptides improve sleep architecture (poor sleep is one of the strongest suppressors of testosterone), and BPC-157 has been studied for its NO-modulating properties relevant to erectile function. While peptides are not a substitute for TRT or PDE5 inhibitors when hormonal deficiency is the cause, the systemic improvements from a comprehensive peptide protocol support sexual health as part of the overall vitality picture.
             </p>
@@ -211,8 +211,8 @@ export default function PeptidesForMenOver50Page() {
       {/* Protocol Builder Widget */}
       <section className="py-16 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-10">
-          <h2 className="text-3xl font-black text-white mb-3">Men Over 50 Protocol Builder</h2>
-          <p className="text-slate-400 max-w-xl mx-auto">
+          <h2 className="text-3xl font-black text-gray-900 mb-3">Men Over 50 Protocol Builder</h2>
+          <p className="text-gray-500 max-w-xl mx-auto">
             Answer 3 questions to generate a personalized 3-peptide starter protocol with bloodwork recommendations.
           </p>
         </div>
@@ -221,12 +221,12 @@ export default function PeptidesForMenOver50Page() {
 
       {/* Why aging matters */}
       <section className="py-12 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-2xl font-black text-white mb-6">What Changes After 50 (And Why Peptides Help)</h2>
+        <h2 className="text-2xl font-black text-gray-900 mb-6">What Changes After 50 (And Why Peptides Help)</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {ageIssues.map((a) => (
             <div key={a.issue} className="glass-card p-5">
-              <h3 className="text-white font-bold mb-2">{a.issue}</h3>
-              <p className="text-slate-400 text-sm leading-relaxed">{a.detail}</p>
+              <h3 className="text-gray-900 font-bold mb-2">{a.issue}</h3>
+              <p className="text-gray-500 text-sm leading-relaxed">{a.detail}</p>
             </div>
           ))}
         </div>
@@ -238,37 +238,37 @@ export default function PeptidesForMenOver50Page() {
           <div className="inline-flex items-center gap-2 bg-blue-500/10 border border-blue-500/20 rounded-full px-3 py-1.5 mb-6">
             <span className="text-blue-400 text-sm font-semibold">FOR MEN ON TRT</span>
           </div>
-          <h2 className="text-3xl font-black text-white mb-8">TRT + Peptides: The Synergy Protocol</h2>
+          <h2 className="text-3xl font-black text-gray-900 mb-8">TRT + Peptides: The Synergy Protocol</h2>
 
-          <div className="space-y-5 text-slate-300 leading-relaxed">
+          <div className="space-y-5 text-gray-600 leading-relaxed">
             <p>
               Testosterone replacement therapy addresses the testosterone deficiency of male aging, but it leaves multiple other aging pathways completely unaddressed. Men on TRT who add a targeted peptide protocol consistently report significantly better outcomes than TRT alone — and understanding why makes the additions obvious.
             </p>
 
             <div className="glass-card p-6">
-              <h3 className="text-white font-bold text-lg mb-3">CJC-1295 / Ipamorelin: The Missing GH Piece</h3>
-              <p className="text-slate-300 text-sm leading-relaxed">
+              <h3 className="text-gray-900 font-bold text-lg mb-3">CJC-1295 / Ipamorelin: The Missing GH Piece</h3>
+              <p className="text-gray-600 text-sm leading-relaxed">
                 TRT replaces testosterone. It does not address GH decline. By 50, most men have lost 50–60% of their youthful GH levels — and TRT does nothing to restore this. The body composition improvement from TRT alone is often underwhelming because testosterone requires adequate GH/IGF-1 signaling to fully execute its anabolic effects. Adding CJC-1295/Ipamorelin restores the GH axis that TRT cannot touch, producing dramatically better muscle building, fat loss, sleep quality, and recovery than TRT monotherapy. This is increasingly recognized as the standard of care in progressive anti-aging medicine.
               </p>
             </div>
 
             <div className="glass-card p-6">
-              <h3 className="text-white font-bold text-lg mb-3">BPC-157: Joint Protection Under TRT Loads</h3>
-              <p className="text-slate-300 text-sm leading-relaxed">
+              <h3 className="text-gray-900 font-bold text-lg mb-3">BPC-157: Joint Protection Under TRT Loads</h3>
+              <p className="text-gray-600 text-sm leading-relaxed">
                 A common challenge for men on TRT is that increased anabolic drive and training intensity — enabled by higher testosterone — outpaces tendon and ligament adaptation. Connective tissue adapts more slowly than muscle, creating a window where training loads exceed tissue tolerance and injuries accumulate. BPC-157 directly addresses this: it dramatically accelerates tendon and ligament repair, protects against the connective tissue injuries that plague men who train aggressively on TRT, and reduces the chronic joint inflammation that limits training quality. Adding BPC-157 from the start of TRT is increasingly the recommended approach in informed men&apos;s health communities.
               </p>
             </div>
 
             <div className="glass-card p-6">
-              <h3 className="text-white font-bold text-lg mb-3">Epithalon: Cellular Longevity Beyond Hormonal Optimization</h3>
-              <p className="text-slate-300 text-sm leading-relaxed">
+              <h3 className="text-gray-900 font-bold text-lg mb-3">Epithalon: Cellular Longevity Beyond Hormonal Optimization</h3>
+              <p className="text-gray-600 text-sm leading-relaxed">
                 TRT and GH peptides optimize the hormonal environment. Epithalon operates at a more fundamental level — DNA protection via telomere lengthening and cellular senescence reduction. Men on TRT who add Epithalon are addressing the cellular aging that hormonal optimization cannot reach: the accumulated senescent cell burden, the telomere attrition, and the circadian rhythm dysregulation that continue to progress regardless of hormone levels. Twice-yearly Epithalon cycles are the most practical way to address this layer of biological aging.
               </p>
             </div>
 
             <div className="rounded-xl p-5" style={{ background: 'rgba(245,158,11,0.05)', border: '1px solid rgba(245,158,11,0.2)' }}>
               <div className="text-amber-400 font-bold text-sm mb-2">Cautions and Interactions for Men on TRT</div>
-              <ul className="space-y-1.5 text-sm text-slate-300">
+              <ul className="space-y-1.5 text-sm text-gray-600">
                 <li className="flex items-start gap-2"><span className="text-amber-400 shrink-0 mt-0.5">•</span> No known pharmacokinetic interactions between peptides and testosterone esters (cypionate, enanthate, propionate)</li>
                 <li className="flex items-start gap-2"><span className="text-amber-400 shrink-0 mt-0.5">•</span> GH peptides increase IGF-1 — men with elevated PSA or prostate concerns should discuss with their physician before use</li>
                 <li className="flex items-start gap-2"><span className="text-amber-400 shrink-0 mt-0.5">•</span> Monitor hematocrit if using GH peptides alongside TRT — GH can mildly increase red blood cell production</li>
@@ -284,8 +284,8 @@ export default function PeptidesForMenOver50Page() {
         <div className="inline-flex items-center gap-2 bg-emerald-500/10 border border-emerald-500/20 rounded-full px-3 py-1.5 mb-6">
           <span className="text-emerald-400 text-sm font-semibold">BIOMARKER GUIDE</span>
         </div>
-        <h2 className="text-3xl font-black text-white mb-8">Men&apos;s Anti-Aging Blood Panel</h2>
-        <p className="text-slate-400 mb-8">The comprehensive biomarker guide for men over 50 starting a peptide protocol. Get baseline levels before starting, retest at 12 weeks.</p>
+        <h2 className="text-3xl font-black text-gray-900 mb-8">Men&apos;s Anti-Aging Blood Panel</h2>
+        <p className="text-gray-500 mb-8">The comprehensive biomarker guide for men over 50 starting a peptide protocol. Get baseline levels before starting, retest at 12 weeks.</p>
 
         <div className="space-y-4">
           {[
@@ -327,10 +327,10 @@ export default function PeptidesForMenOver50Page() {
                 {section.markers.map((m) => (
                   <div key={m.name} className="rounded-lg p-3" style={{ background: 'rgba(255,255,255,0.02)', border: '1px solid rgba(255,255,255,0.05)' }}>
                     <div className="flex items-start justify-between mb-1">
-                      <span className="text-white font-semibold text-sm">{m.name}</span>
-                      <span className="text-slate-500 text-xs">{m.normal}</span>
+                      <span className="text-gray-900 font-semibold text-sm">{m.name}</span>
+                      <span className="text-gray-500 text-xs">{m.normal}</span>
                     </div>
-                    <div className="text-slate-500 text-xs mb-1">{m.low}</div>
+                    <div className="text-gray-500 text-xs mb-1">{m.low}</div>
                     <div className="text-blue-400 text-xs"><span className="font-semibold">Peptide relevance: </span>{m.peptide}</div>
                   </div>
                 ))}
@@ -346,8 +346,8 @@ export default function PeptidesForMenOver50Page() {
           <div className="inline-flex items-center gap-2 bg-purple-500/10 border border-purple-500/20 rounded-full px-3 py-1.5 mb-6">
             <span className="text-purple-400 text-sm font-semibold">12-MONTH STRATEGY</span>
           </div>
-          <h2 className="text-3xl font-black text-white mb-8">Stacking for the Complete Men&apos;s Protocol</h2>
-          <p className="text-slate-400 mb-8">A strategic 12-month plan that cycles peptides for maximum cumulative benefit while managing cost and complexity.</p>
+          <h2 className="text-3xl font-black text-gray-900 mb-8">Stacking for the Complete Men&apos;s Protocol</h2>
+          <p className="text-gray-500 mb-8">A strategic 12-month plan that cycles peptides for maximum cumulative benefit while managing cost and complexity.</p>
 
           <div className="space-y-4 mb-8">
             {[
@@ -391,16 +391,16 @@ export default function PeptidesForMenOver50Page() {
                     <div className="text-purple-400 text-xs">{q.quarter.split(' ')[1]}</div>
                   </div>
                   <div>
-                    <div className="text-white font-black text-lg">{q.label}</div>
-                    <div className="text-slate-400 text-sm">{q.goal}</div>
+                    <div className="text-gray-900 font-black text-lg">{q.label}</div>
+                    <div className="text-gray-500 text-sm">{q.goal}</div>
                   </div>
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>
-                    <div className="text-slate-400 text-xs font-bold uppercase tracking-wide mb-2">Active Peptides</div>
+                    <div className="text-gray-500 text-xs font-bold uppercase tracking-wide mb-2">Active Peptides</div>
                     <ul className="space-y-1">
                       {q.peptides.map((p) => (
-                        <li key={p} className="flex items-start gap-2 text-xs text-slate-300">
+                        <li key={p} className="flex items-start gap-2 text-xs text-gray-600">
                           <CheckCircle className="w-3 h-3 text-purple-400 shrink-0 mt-0.5" />
                           {p}
                         </li>
@@ -408,8 +408,8 @@ export default function PeptidesForMenOver50Page() {
                     </ul>
                   </div>
                   <div>
-                    <div className="text-slate-400 text-xs font-bold uppercase tracking-wide mb-2">What to Expect</div>
-                    <p className="text-slate-400 text-xs leading-relaxed">{q.expect}</p>
+                    <div className="text-gray-500 text-xs font-bold uppercase tracking-wide mb-2">What to Expect</div>
+                    <p className="text-gray-500 text-xs leading-relaxed">{q.expect}</p>
                     <div className="mt-2 text-emerald-400 text-xs font-semibold">Est. cost: {q.cost}</div>
                   </div>
                 </div>
@@ -418,7 +418,7 @@ export default function PeptidesForMenOver50Page() {
           </div>
 
           <div className="glass-card p-5">
-            <div className="text-white font-bold mb-3">12-Month Summary: What to Expect</div>
+            <div className="text-gray-900 font-bold mb-3">12-Month Summary: What to Expect</div>
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
               {[
                 { time: '3 months', result: 'Sleep, energy, recovery transformed' },
@@ -428,7 +428,7 @@ export default function PeptidesForMenOver50Page() {
               ].map((item) => (
                 <div key={item.time} className="rounded-lg p-3 text-center" style={{ background: 'rgba(168,85,247,0.05)', border: '1px solid rgba(168,85,247,0.15)' }}>
                   <div className="text-purple-400 font-black text-sm">{item.time}</div>
-                  <div className="text-slate-400 text-xs mt-1">{item.result}</div>
+                  <div className="text-gray-500 text-xs mt-1">{item.result}</div>
                 </div>
               ))}
             </div>
@@ -439,8 +439,8 @@ export default function PeptidesForMenOver50Page() {
       {/* Peptide recommendations */}
       <section className="py-16" style={{ background: 'rgba(6,6,16,0.8)' }}>
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-black text-white mb-3">Top 5 Peptides for Men Over 50</h2>
-          <p className="text-slate-400 mb-10">Ranked by impact on age-related decline. Start with priority 1, add others over time.</p>
+          <h2 className="text-3xl font-black text-gray-900 mb-3">Top 5 Peptides for Men Over 50</h2>
+          <p className="text-gray-500 mb-10">Ranked by impact on age-related decline. Start with priority 1, add others over time.</p>
           <div className="space-y-6">
             {peptides.map((p) => (
               <div key={p.name} className="glass-card p-6">
@@ -450,21 +450,21 @@ export default function PeptidesForMenOver50Page() {
                   </div>
                   <div className="flex-1">
                     <div className={`text-xs font-bold tracking-widest mb-1 ${p.color === 'blue' ? 'text-blue-400' : p.color === 'emerald' ? 'text-emerald-400' : p.color === 'purple' ? 'text-purple-400' : 'text-amber-400'}`}>{p.target}</div>
-                    <h3 className="text-white font-black text-xl mb-2">{p.name}</h3>
-                    <p className="text-slate-300 text-sm leading-relaxed mb-4">{p.why}</p>
+                    <h3 className="text-gray-900 font-black text-xl mb-2">{p.name}</h3>
+                    <p className="text-gray-600 text-sm leading-relaxed mb-4">{p.why}</p>
                     <ul className="grid grid-cols-1 sm:grid-cols-2 gap-1 mb-4">
                       {p.results.map((r) => (
-                        <li key={r} className="flex items-start gap-2 text-slate-400 text-xs">
+                        <li key={r} className="flex items-start gap-2 text-gray-500 text-xs">
                           <CheckCircle className="w-3 h-3 shrink-0 mt-0.5 text-emerald-400" /> {r}
                         </li>
                       ))}
                     </ul>
                     <div className="flex items-center gap-4 flex-wrap">
                       <div className="bg-slate-800/50 rounded-lg px-3 py-1.5">
-                        <span className="text-slate-500 text-xs">Protocol: </span>
-                        <span className="text-white text-xs font-semibold">{p.dose}</span>
+                        <span className="text-gray-500 text-xs">Protocol: </span>
+                        <span className="text-gray-900 text-xs font-semibold">{p.dose}</span>
                       </div>
-                      <Link href={`/products/${p.slug}`} className="text-xs font-semibold text-slate-400 hover:text-white transition-colors">
+                      <Link href={`/products/${p.slug}`} className="text-xs font-semibold text-gray-500 hover:text-gray-900 transition-colors">
                         View {p.name} →
                       </Link>
                     </div>
@@ -478,16 +478,16 @@ export default function PeptidesForMenOver50Page() {
 
       {/* FAQ */}
       <section className="py-16 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-black text-white mb-10 text-center">Peptides for Men 50+ FAQ</h2>
+        <h2 className="text-3xl font-black text-gray-900 mb-10 text-center">Peptides for Men 50+ FAQ</h2>
         <div className="space-y-3">
           {allFaqs.map(({ q, a }) => (
             <details key={q} className="glass-card group">
               <summary className="p-5 cursor-pointer list-none flex items-center justify-between">
-                <span className="text-white font-semibold text-sm">{q}</span>
+                <span className="text-gray-900 font-semibold text-sm">{q}</span>
                 <span className="text-blue-400 text-lg group-open:rotate-45 transition-transform shrink-0 ml-4">+</span>
               </summary>
               <div className="px-5 pb-5">
-                <p className="text-slate-400 text-sm leading-relaxed">{a}</p>
+                <p className="text-gray-500 text-sm leading-relaxed">{a}</p>
               </div>
             </details>
           ))}
@@ -497,8 +497,8 @@ export default function PeptidesForMenOver50Page() {
       {/* CTA */}
       <section className="py-16 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="glass-card p-10">
-          <h2 className="text-2xl font-black text-white mb-3">Start Your Protocol</h2>
-          <p className="text-slate-400 mb-6">COA-verified peptides — CJC-1295/Ipamorelin, BPC-157, Epithalon, GHK-Cu, and NAD+.</p>
+          <h2 className="text-2xl font-black text-gray-900 mb-3">Start Your Protocol</h2>
+          <p className="text-gray-500 mb-6">COA-verified peptides — CJC-1295/Ipamorelin, BPC-157, Epithalon, GHK-Cu, and NAD+.</p>
           <div className="flex flex-wrap gap-4 justify-center">
             <a href={SOURCE_URL} target="_blank" rel="nofollow noopener noreferrer"
               className="btn-cta px-8 py-4 flex items-center gap-2">

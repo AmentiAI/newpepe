@@ -66,18 +66,18 @@ export default function ContactPage() {
 
         {/* Hero */}
         <div className="text-center mb-14">
-          <h1 className="text-4xl sm:text-5xl font-black text-white mb-4">
+          <h1 className="text-4xl sm:text-5xl font-black text-gray-900 mb-4">
             Help &amp; <span className="gradient-text">Resources</span>
           </h1>
-          <p className="text-slate-400 text-lg max-w-2xl mx-auto">
+          <p className="text-gray-500 text-lg max-w-2xl mx-auto">
             Find answers to your peptide questions, browse popular guides, or get in touch directly. Everything you need is below.
           </p>
         </div>
 
         {/* What Are You Looking For */}
         <div className="mb-12">
-          <h2 className="text-xl font-bold text-white mb-2">What Are You Looking For?</h2>
-          <p className="text-slate-400 text-sm mb-6">Jump directly to the most common topics.</p>
+          <h2 className="text-xl font-bold text-gray-900 mb-2">What Are You Looking For?</h2>
+          <p className="text-gray-500 text-sm mb-6">Jump directly to the most common topics.</p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {topicCards.map(({ label, href, desc }) => (
               <Link
@@ -86,7 +86,7 @@ export default function ContactPage() {
                 className="glass-card p-5 flex flex-col gap-2 hover:border-neon-green/30 border border-transparent transition-colors group"
               >
                 <span className="text-neon-green font-semibold text-sm group-hover:underline">{label}</span>
-                <span className="text-slate-500 text-xs leading-relaxed">{desc}</span>
+                <span className="text-gray-500 text-xs leading-relaxed">{desc}</span>
               </Link>
             ))}
           </div>
@@ -96,9 +96,9 @@ export default function ContactPage() {
         <div className="mb-12">
           <div className="flex items-center gap-2 mb-2">
             <BookOpen className="w-5 h-5 text-neon-green" />
-            <h2 className="text-xl font-bold text-white">Popular Resources</h2>
+            <h2 className="text-xl font-bold text-gray-900">Popular Resources</h2>
           </div>
-          <p className="text-slate-400 text-sm mb-6">The most visited pages on this site, in one place.</p>
+          <p className="text-gray-500 text-sm mb-6">The most visited pages on this site, in one place.</p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
             {popularResources.map(({ label, href, desc }) => (
               <Link
@@ -108,8 +108,8 @@ export default function ContactPage() {
               >
                 <ArrowRight className="w-4 h-4 text-neon-green shrink-0 mt-0.5" />
                 <div>
-                  <p className="text-white text-sm font-semibold group-hover:text-neon-green transition-colors">{label}</p>
-                  <p className="text-slate-500 text-xs mt-0.5 leading-relaxed">{desc}</p>
+                  <p className="text-gray-900 text-sm font-semibold group-hover:text-neon-green transition-colors">{label}</p>
+                  <p className="text-gray-500 text-xs mt-0.5 leading-relaxed">{desc}</p>
                 </div>
               </Link>
             ))}
@@ -120,19 +120,19 @@ export default function ContactPage() {
         <div className="mb-12">
           <div className="flex items-center gap-2 mb-2">
             <HelpCircle className="w-5 h-5 text-neon-green" />
-            <h2 className="text-xl font-bold text-white">Most Asked Questions</h2>
+            <h2 className="text-xl font-bold text-gray-900">Most Asked Questions</h2>
           </div>
-          <p className="text-slate-400 text-sm mb-6">
+          <p className="text-gray-500 text-sm mb-6">
             Practical questions about ordering, timing, and using this resource — not covered in the main FAQ.
           </p>
           <div className="space-y-4">
             {mostAskedQuestions.map(({ q, a }) => (
               <div key={q} className="glass-card p-6">
-                <h3 className="text-white font-semibold mb-3 flex items-start gap-2">
+                <h3 className="text-gray-900 font-semibold mb-3 flex items-start gap-2">
                   <span className="text-neon-green font-black shrink-0">Q.</span>
                   {q}
                 </h3>
-                <p className="text-slate-400 text-sm leading-relaxed pl-5">{a}</p>
+                <p className="text-gray-500 text-sm leading-relaxed pl-5">{a}</p>
               </div>
             ))}
           </div>
@@ -142,18 +142,18 @@ export default function ContactPage() {
         <div className="glass-card p-8 mb-12">
           <div className="flex items-center gap-3 mb-6">
             <Mail className="w-5 h-5 text-neon-green" />
-            <h2 className="text-white font-bold text-xl">Contact Options</h2>
+            <h2 className="text-gray-900 font-bold text-xl">Contact Options</h2>
           </div>
           <div className="space-y-4">
             <div className="bg-dark-700/50 rounded-xl p-5 border border-neon-green/10">
               <p className="text-neon-green text-sm font-semibold mb-1">AI Chat Assistant (Instant)</p>
-              <p className="text-slate-400 text-sm">
+              <p className="text-gray-500 text-sm">
                 Use the chat widget in the bottom right corner for instant answers to protocol, dosing, and stacking questions. The assistant is trained on BPC-157 and peptide research and can provide personalized protocol suggestions.
               </p>
             </div>
             <div className="bg-dark-700/50 rounded-xl p-5 border border-neon-green/10">
               <p className="text-neon-green text-sm font-semibold mb-1">Purchase, Shipping &amp; Product Questions</p>
-              <p className="text-slate-400 text-sm mb-3">
+              <p className="text-gray-500 text-sm mb-3">
                 For questions about ordering, shipping status, or specific products, visit our recommended supplier directly. They handle all order fulfillment and customer service for purchases.
               </p>
               <a
@@ -167,7 +167,7 @@ export default function ContactPage() {
             </div>
             <div className="bg-dark-700/50 rounded-xl p-5 border border-neon-green/10">
               <p className="text-neon-green text-sm font-semibold mb-1">Content &amp; Editorial Questions</p>
-              <p className="text-slate-400 text-sm">
+              <p className="text-gray-500 text-sm">
                 For content corrections, protocol feedback, or editorial inquiries about this site, use the AI chat widget or browse the FAQ. We review all feedback and update content regularly to reflect current research.
               </p>
             </div>
@@ -178,26 +178,26 @@ export default function ContactPage() {
         <div className="glass-card p-8 mb-12">
           <div className="flex items-center gap-3 mb-6">
             <Info className="w-5 h-5 text-neon-green" />
-            <h2 className="text-white font-bold text-xl">About This Site</h2>
+            <h2 className="text-gray-900 font-bold text-xl">About This Site</h2>
           </div>
 
-          <div className="space-y-6 text-slate-400 text-sm leading-relaxed">
+          <div className="space-y-6 text-gray-500 text-sm leading-relaxed">
             <div>
-              <h3 className="text-white font-semibold mb-2">What Is BPC-157 Stack?</h3>
+              <h3 className="text-gray-900 font-semibold mb-2">What Is BPC-157 Stack?</h3>
               <p>
                 BPC-157 Stack is an independent educational resource dedicated to peptide research, protocols, and application. The site covers BPC-157, TB-500, growth hormone secretagogues, anti-aging peptides, GLP-1 agonists, and related compounds. Our goal is to consolidate the most reliable, research-grounded information available on peptide use — presented in a clear, accessible format for anyone exploring this space for the first time or looking to refine an existing protocol.
               </p>
             </div>
 
             <div>
-              <h3 className="text-white font-semibold mb-2">Who Is This Site For?</h3>
+              <h3 className="text-gray-900 font-semibold mb-2">Who Is This Site For?</h3>
               <p>
                 This site is designed for adults interested in peptide research — including athletes seeking accelerated recovery, individuals managing chronic injuries, biohackers pursuing longevity and anti-aging protocols, and anyone curious about the science behind these compounds. The content assumes adult readers capable of independent research and decision-making. We do not market to minors and do not recommend peptide use for those under 21.
               </p>
             </div>
 
             <div>
-              <h3 className="text-white font-semibold mb-2">Editorial Standards</h3>
+              <h3 className="text-gray-900 font-semibold mb-2">Editorial Standards</h3>
               <p>
                 All protocols, dosing ranges, and mechanism descriptions are based on published animal and in vitro research, peer-reviewed literature, and well-documented community experience. We distinguish clearly between what is supported by controlled studies and what is extrapolated from community use. We do not publish anecdote-only claims as fact. Where human clinical data is absent, we say so explicitly. Pages are reviewed and updated on a rolling basis as new research emerges.
               </p>
@@ -207,7 +207,7 @@ export default function ContactPage() {
             </div>
 
             <div>
-              <h3 className="text-white font-semibold mb-2">Affiliate Disclosure</h3>
+              <h3 className="text-gray-900 font-semibold mb-2">Affiliate Disclosure</h3>
               <p>
                 This site earns a commission when visitors purchase through the affiliate link to our recommended supplier. This does not affect the price you pay. The affiliate relationship does not influence our editorial content — we would recommend COA-verified sourcing regardless of whether any affiliate program existed. If you prefer to source independently, our FAQ covers how to evaluate any supplier using COA verification standards.
               </p>
@@ -218,7 +218,7 @@ export default function ContactPage() {
                 <Shield className="w-5 h-5 text-amber-400 shrink-0 mt-0.5" />
                 <div>
                   <p className="text-amber-400 font-semibold mb-2">Medical Disclaimer</p>
-                  <p className="text-slate-400 text-sm leading-relaxed">
+                  <p className="text-gray-500 text-sm leading-relaxed">
                     All content on this site is for informational and educational purposes only. Nothing on this site constitutes medical advice, diagnosis, or treatment. Peptides discussed on this site are research compounds and are not FDA-approved for human therapeutic use. Always consult a qualified and licensed healthcare professional before starting any peptide protocol, especially if you have a pre-existing medical condition, are taking prescription medications, are pregnant or breastfeeding, or are under the age of 21. The authors and operators of this site assume no liability for the use or misuse of information presented here.
                   </p>
                 </div>
@@ -229,8 +229,8 @@ export default function ContactPage() {
 
         {/* Bottom CTA */}
         <div className="text-center p-10 glass-card">
-          <h2 className="text-2xl font-bold text-white mb-3">Ready to Start Your Protocol?</h2>
-          <p className="text-slate-400 mb-6">COA-verified peptides from the most trusted US domestic supplier.</p>
+          <h2 className="text-2xl font-bold text-gray-900 mb-3">Ready to Start Your Protocol?</h2>
+          <p className="text-gray-500 mb-6">COA-verified peptides from the most trusted US domestic supplier.</p>
           <div className="flex flex-wrap gap-4 justify-center">
             <a
               href={SOURCE_URL}

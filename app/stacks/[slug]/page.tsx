@@ -78,12 +78,12 @@ export default function StackPage({ params }: Props) {
       />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Breadcrumb */}
-        <div className="flex items-center gap-2 mb-8 text-sm text-slate-500">
+        <div className="flex items-center gap-2 mb-8 text-sm text-gray-500">
           <Link href="/" className="hover:text-neon-green">Home</Link>
           <span>/</span>
           <Link href="/stacks" className="hover:text-neon-green">Stacks</Link>
           <span>/</span>
-          <span className="text-slate-300">{stack.name}</span>
+          <span className="text-gray-600">{stack.name}</span>
         </div>
 
         {/* Header */}
@@ -96,14 +96,14 @@ export default function StackPage({ params }: Props) {
             }`}>
               {stack.difficulty}
             </span>
-            <span className="text-xs text-slate-500 border border-slate-700 px-3 py-1.5 rounded-full flex items-center gap-1">
+            <span className="text-xs text-gray-500 border border-slate-700 px-3 py-1.5 rounded-full flex items-center gap-1">
               <Clock className="w-3 h-3" /> {stack.duration}
             </span>
             <span className="text-xs text-neon-blue border border-neon-blue/30 bg-neon-blue/10 px-3 py-1.5 rounded-full text-neon-cyan">
               {stack.goal}
             </span>
           </div>
-          <h1 className="text-4xl sm:text-5xl font-black text-white mb-3">{stack.name}</h1>
+          <h1 className="text-4xl sm:text-5xl font-black text-gray-900 mb-3">{stack.name}</h1>
           <p className="text-xl text-neon-green font-medium mb-4">{stack.tagline}</p>
         </div>
 
@@ -112,23 +112,23 @@ export default function StackPage({ params }: Props) {
           <div className="lg:col-span-2 space-y-6">
             {/* Description */}
             <div className="glass-card p-6">
-              <h2 className="text-xl font-bold text-white mb-4">About This Stack</h2>
+              <h2 className="text-xl font-bold text-gray-900 mb-4">About This Stack</h2>
               <div className="space-y-3">
                 {stack.description.split('\n').filter(Boolean).map((line, i) => {
                   if (line.startsWith('**') && line.endsWith('**')) {
                     return <h3 key={i} className="text-neon-green font-semibold">{line.replace(/\*\*/g, '')}</h3>;
                   }
-                  return <p key={i} className="text-slate-400 text-sm leading-relaxed">{line}</p>;
+                  return <p key={i} className="text-gray-500 text-sm leading-relaxed">{line}</p>;
                 })}
               </div>
             </div>
 
             {/* Benefits */}
             <div className="glass-card p-6">
-              <h2 className="text-xl font-bold text-white mb-4">Stack Benefits</h2>
+              <h2 className="text-xl font-bold text-gray-900 mb-4">Stack Benefits</h2>
               <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 {stack.benefits.map((b) => (
-                  <li key={b} className="flex items-start gap-2 text-sm text-slate-300">
+                  <li key={b} className="flex items-start gap-2 text-sm text-gray-600">
                     <CheckCircle className="w-4 h-4 text-neon-green shrink-0 mt-0.5" />
                     {b}
                   </li>
@@ -138,7 +138,7 @@ export default function StackPage({ params }: Props) {
 
             {/* Protocol */}
             <div className="glass-card p-6">
-              <h2 className="text-xl font-bold text-white mb-4">Exact Protocol</h2>
+              <h2 className="text-xl font-bold text-gray-900 mb-4">Exact Protocol</h2>
               <div className="bg-dark-700/50 rounded-xl p-5 border border-neon-green/10 font-mono text-sm">
                 {stack.protocol.split('\n').filter(Boolean).map((line, i) => {
                   if (line.startsWith('**')) {
@@ -149,9 +149,9 @@ export default function StackPage({ params }: Props) {
                     );
                   }
                   if (line.startsWith('- ')) {
-                    return <p key={i} className="text-slate-300 pl-4">• {line.slice(2)}</p>;
+                    return <p key={i} className="text-gray-600 pl-4">• {line.slice(2)}</p>;
                   }
-                  return <p key={i} className="text-slate-400">{line}</p>;
+                  return <p key={i} className="text-gray-500">{line}</p>;
                 })}
               </div>
             </div>
@@ -159,7 +159,7 @@ export default function StackPage({ params }: Props) {
             {/* Peptide cards */}
             {peptideProducts.length > 0 && (
               <div>
-                <h2 className="text-xl font-bold text-white mb-4">Peptides in This Stack</h2>
+                <h2 className="text-xl font-bold text-gray-900 mb-4">Peptides in This Stack</h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                   {peptideProducts.map((p) => (
                     <ProductCard key={p.slug} product={p} />
@@ -172,8 +172,8 @@ export default function StackPage({ params }: Props) {
           {/* Sidebar */}
           <div className="space-y-6">
             <div className="glass-card p-6 sticky top-24">
-              <h3 className="text-white font-bold mb-2">Get This Stack</h3>
-              <p className="text-slate-400 text-sm mb-4">
+              <h3 className="text-gray-900 font-bold mb-2">Get This Stack</h3>
+              <p className="text-gray-500 text-sm mb-4">
                 All peptides in the {stack.name} are available from our recommended supplier.
               </p>
               <a
@@ -189,7 +189,7 @@ export default function StackPage({ params }: Props) {
               </Link>
 
               <div className="border-t border-neon-green/10 pt-4">
-                <p className="text-slate-500 text-xs font-semibold uppercase tracking-wider mb-3">Stack Peptides</p>
+                <p className="text-gray-500 text-xs font-semibold uppercase tracking-wider mb-3">Stack Peptides</p>
                 <div className="flex flex-wrap gap-2">
                   {stack.peptides.map((p) => (
                     <Link
@@ -210,8 +210,8 @@ export default function StackPage({ params }: Props) {
 
         {/* Bottom CTA */}
         <div className="mt-16 text-center p-10 glass-card">
-          <h2 className="text-2xl font-bold text-white mb-3">Ready to Start This Protocol?</h2>
-          <p className="text-slate-400 mb-6">
+          <h2 className="text-2xl font-bold text-gray-900 mb-3">Ready to Start This Protocol?</h2>
+          <p className="text-gray-500 mb-6">
             Source all peptides for the {stack.name} from our recommended supplier — the most trusted, COA-verified source.
           </p>
           <a
