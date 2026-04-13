@@ -270,7 +270,7 @@ const coaPoints = [
   {
     icon: Package,
     title: 'Our Sourcing Recommendation',
-    desc: 'We recommend Phiogen — every batch ships with a full third-party COA, 98%+ purity guarantee, US domestic fulfillment, and cold-chain packaging. They are the only supplier we link to on this site.',
+    desc: 'We recommend our trusted supplier — every batch ships with a full third-party COA, 98%+ purity guarantee, US domestic fulfillment, and cold-chain packaging. They are the only supplier we link to on this site.',
     color: 'neon',
     isAffiliate: true,
   },
@@ -852,7 +852,7 @@ export default function HomePage() {
           <div className="flex flex-wrap gap-4 justify-center">
             <Link href="/products" className="btn-secondary text-base px-8 py-4">View All {products.length} Peptides</Link>
             <a href={SOURCE_URL} target="_blank" rel="nofollow noopener noreferrer" className="btn-cta text-base px-8 py-4 flex items-center gap-2">
-              Shop Phiogen <ArrowRight className="w-5 h-5" />
+              Shop Now <ArrowRight className="w-5 h-5" />
             </a>
           </div>
         </div>
@@ -952,7 +952,7 @@ export default function HomePage() {
                         rel="nofollow noopener noreferrer"
                         className="btn-cta text-sm px-6 py-2.5 inline-flex items-center gap-2"
                       >
-                        View Phiogen <ExternalLink className="w-4 h-4" />
+                        Shop Now <ExternalLink className="w-4 h-4" />
                       </a>
                       <p className="text-gray-500 text-xs mt-2">Affiliate link — we earn a commission at no cost to you.</p>
                     </div>

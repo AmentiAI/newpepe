@@ -24,7 +24,7 @@ export interface Product {
 
 const aff = (slug: string) => `https://phiogen.is/products/${slug}?ref=PEPS`;
 
-// All product image URLs from Phiogen
+// All product image URLs
 const IMG = {
   bpc157:   'https://phiogen.is/images/products/bpc-157-10mg.png',
   tb500:    'https://phiogen.is/images/products/tb-500-thymosin-beta-4-10mg.png',
@@ -4866,7 +4866,7 @@ Clinical studies show that sermorelin restores GH secretion in GH-deficient adul
     price: 99.99,
     category: 'Body Composition',
     tags: ['Sermorelin', 'GHRH', 'Growth Hormone', 'Extended Protocol', 'Anti-Aging'],
-    image: 'https://phiogen.is/images/products/sermorelin-15mg.png',
+    image: 'https://phiogen.is/images/products/sermorelin-5mg.png',
     affiliateUrl: 'https://phiogen.is/products/sermorelin-15mg?ref=PEPS',
     shortDescription: 'Sermorelin 15mg — extended supply for 50+ days of anti-aging GHRH therapy in a single vial, ideal for committed long-cycle GH optimization protocols.',
     fullDescription: `**Long-Cycle Anti-Aging GHRH Therapy**
@@ -4912,7 +4912,7 @@ The 15mg vial offers improved cost-per-mg versus purchasing three 5mg vials — 
     price: 69.99,
     category: 'Body Composition',
     tags: ['Tesamorelin', 'GHRH', 'Visceral Fat', 'FDA-Approved', 'GH'],
-    image: 'https://phiogen.is/images/products/tesamorelin-2mg.png',
+    image: 'https://phiogen.is/images/products/tesamorelin-10mg.png',
     affiliateUrl: 'https://phiogen.is/products/tesamorelin-2mg?ref=PEPS',
     shortDescription: 'Tesamorelin (Egrifta) is an FDA-approved GHRH analog specifically indicated for HIV-associated lipodystrophy, demonstrating 15–20% reduction in visceral fat in clinical trials.',
     fullDescription: `**FDA-Approved for Visceral Fat Reduction**
@@ -5056,7 +5056,7 @@ The GLOW Blend is ideal for users who want a comprehensive skin anti-aging proto
     price: 79.99,
     category: 'Body Composition',
     tags: ['CJC-1295', 'GHRP-2', 'Blend', 'Growth Hormone', 'Body Composition'],
-    image: 'https://phiogen.is/images/products/cjc-1295-ghrp-2-blend-cjc-5mg-ghrp-2-5mg.png',
+    image: 'https://phiogen.is/images/products/ipamorelin-cjc-1295-blend-cjc-1295-5mg-ipa-5mg.png',
     affiliateUrl: 'https://phiogen.is/products/cjc-1295-ghrp-2-blend-cjc-5mg-ghrp-2-5mg?ref=PEPS',
     shortDescription: 'Pre-combined CJC-1295 No DAC (5mg) + GHRP-2 (5mg) blend — the maximum GH pulse combination in a single vial for streamlined GHRH+GHRP protocol execution.',
     fullDescription: `**The Maximum GH Pulse Combination**
@@ -5105,7 +5105,7 @@ The choice of GHRP-2 over Ipamorelin in this blend is intentional for mass-gaini
     price: 79.99,
     category: 'Body Composition',
     tags: ['CJC-1295', 'GHRP-6', 'Blend', 'Growth Hormone', 'Appetite'],
-    image: 'https://phiogen.is/images/products/cjc-1295-ghrp-6-blend-cjc-5mg-ghrp-6-5mg.png',
+    image: 'https://phiogen.is/images/products/ipamorelin-cjc-1295-blend-cjc-1295-5mg-ipa-5mg.png',
     affiliateUrl: 'https://phiogen.is/products/cjc-1295-ghrp-6-blend-cjc-5mg-ghrp-6-5mg?ref=PEPS',
     shortDescription: 'Pre-combined CJC-1295 No DAC (5mg) + GHRP-6 (5mg) blend — strong GH release combined with GHRP-6\'s aggressive appetite stimulation for mass-building protocols.',
     fullDescription: `**GHRH + Maximum Hunger GHRP**
@@ -5154,7 +5154,7 @@ Both blends use GHRH+GHRP synergy for amplified GH pulses. The GHRP-6 version em
     price: 109.99,
     category: 'Body Composition',
     tags: ['Ipamorelin', 'CJC-1295', 'Blend', 'Growth Hormone', 'Anti-Aging'],
-    image: 'https://phiogen.is/images/products/ipamorelin-cjc-1295-blend-cjc-10mg-ipa-5mg.png',
+    image: 'https://phiogen.is/images/products/ipamorelin-cjc-1295-blend-cjc-1295-5mg-ipa-5mg.png',
     affiliateUrl: 'https://phiogen.is/products/ipamorelin-cjc-1295-blend-cjc-10mg-ipa-5mg?ref=PEPS',
     shortDescription: 'Ipamorelin/CJC-1295 blend (CJC-10mg + Ipamorelin 5mg) — the gold-standard growth hormone protocol combining clean GHRP-mediated GH release with GHRH amplification.',
     fullDescription: `**The Gold-Standard Growth Peptide Protocol**
@@ -5490,7 +5490,7 @@ A full 12-24 week protocol produces measurable improvements in body composition,
     price: 99.99,
     category: 'Weight Loss',
     tags: ['GLP-1', 'liraglutide', 'Victoza', 'Saxenda', 'weight loss', 'daily'],
-    image: 'https://phiogen.is/images/products/liraglutide-18mg.png',
+    image: 'https://phiogen.is/images/products/semaglutide-6mg.png',
     affiliateUrl: 'https://phiogen.is/products/liraglutide-18mg?ref=PEPS',
     shortDescription: 'Liraglutide is the original GLP-1 receptor agonist (Victoza/Saxenda) — the foundational weight loss peptide with the most clinical data, dosed daily for continuous appetite control.',
     fullDescription: `Liraglutide was the first GLP-1 receptor agonist approved for weight management (as Saxenda, 3mg/day). While semaglutide and tirzepatide have superseded it in efficacy, liraglutide has the most extensive long-term safety data of any GLP-1 compound — with 15+ years of clinical experience and the SCALE and LEADER trials providing robust cardiovascular and metabolic outcome data.
@@ -5865,7 +5865,7 @@ Intranasal bioavailability of BPC-157 is lower than injection but significantly 
     price: 29.99,
     category: 'Body Composition',
     tags: ['IGF-1', 'LR3', 'muscle', 'hypertrophy', 'growth factor', 'repair'],
-    image: 'https://phiogen.is/images/products/igf-1-lr3-100mcg.png',
+    image: 'https://phiogen.is/images/products/igf-1-lr3-1mg.png',
     affiliateUrl: 'https://phiogen.is/products/igf-1-lr3-100mcg?ref=PEPS',
     shortDescription: 'IGF-1 LR3 100mcg — precision starter vial for the most potent muscle anabolic peptide. Stimulates satellite cell activation and myonuclear addition directly.',
     fullDescription: `IGF-1 LR3 (Long R3 Insulin-Like Growth Factor 1) is a modified version of endogenous IGF-1 with a 13-amino-acid N-terminal extension and arginine substitution that dramatically extends its half-life from minutes to 20-30 hours. This modification makes LR3 approximately 3x more potent than native IGF-1 for muscle growth signaling.
@@ -5959,7 +5959,7 @@ The Epithalon + GHK-Cu combination addresses two distinct hallmarks of aging sim
     price: 29.99,
     category: 'Body Composition',
     tags: ['GHRP-2', 'growth hormone', 'GH pulse', 'ghrelin', 'starter', 'muscle'],
-    image: 'https://phiogen.is/images/products/ghrp-2-5mg.png',
+    image: 'https://phiogen.is/images/products/ghrp-2-10mg.png',
     affiliateUrl: 'https://phiogen.is/products/ghrp-2-5mg?ref=PEPS',
     shortDescription: 'GHRP-2 5mg starter vial — strong ghrelin mimetic that triggers significant GH pulses with moderate cortisol and prolactin elevation at standard doses.',
     fullDescription: `GHRP-2 (Growth Hormone Releasing Peptide-2) is one of the earliest and most studied synthetic ghrelin receptor agonists. At research doses of 100-300mcg per injection, GHRP-2 produces strong GH pulses that are larger than those produced by Ipamorelin, at the cost of modest cortisol and prolactin elevation. For users prioritizing raw GH output, GHRP-2 is a powerful option.
@@ -6005,7 +6005,7 @@ The 5mg vial provides 16-50 injections at 100-300mcg per dose — enough to asse
     price: 79.99,
     category: 'Body Composition',
     tags: ['tesamorelin', 'GHRH', 'visceral fat', 'GH', 'FDA-approved', 'body composition'],
-    image: 'https://phiogen.is/images/products/tesamorelin-5mg.png',
+    image: 'https://phiogen.is/images/products/tesamorelin-10mg.png',
     affiliateUrl: 'https://phiogen.is/products/tesamorelin-5mg?ref=PEPS',
     shortDescription: 'Tesamorelin 5mg — the only FDA-approved growth hormone releasing hormone for visceral fat reduction. Proven to reduce abdominal fat 15-20% at 2mg/day.',
     fullDescription: `Tesamorelin is a synthetic GHRH (Growth Hormone Releasing Hormone) analog with trans-2-hexenoic acid modification that stabilizes it against degradation. The FDA approved it as Egrifta for HIV-associated lipodystrophy, where it reduces visceral adipose tissue 15-20% at 2mg/day — the only approved pharmaceutical for this specific indication.
@@ -6286,7 +6286,7 @@ Amlexanox is most valuable when combined with GLP-1 agonists or other weight los
     price: 34.99,
     category: 'Healing',
     tags: ['BPC-157', 'TB-500', 'blend', 'healing', 'starter', 'trial'],
-    image: 'https://phiogen.is/images/products/bpc-157-tb-500-blend-bpc-157-2-5mg-tb-500-2-5mg.png',
+    image: 'https://phiogen.is/images/products/bpc-157-tb-500-blend-bpc-157-5mg-tb-500-5mg.png',
     affiliateUrl: 'https://phiogen.is/products/bpc-157-tb-500-blend-bpc-157-2-5mg-tb-500-2-5mg?ref=PEPS',
     shortDescription: 'BPC-157 + TB-500 Blend 5mg (2.5mg each) — trial-size entry into the gold-standard healing stack. Perfect for first-timers assessing response before committing to larger vials.',
     fullDescription: `BPC-157 + TB-500 5mg blend (2.5mg BPC-157 + 2.5mg TB-500) is the trial entry point for the most clinically rational healing stack. At 500mcg/day split between both peptides, this vial provides approximately 5 days of standard dosing — long enough to experience initial pain reduction and mobility improvements that BPC-157 and TB-500 produce within the first week.
@@ -6753,7 +6753,7 @@ Melanotan II-induced melanogenesis requires some UV stimulus for optimal results
     price: 149.99,
     category: 'Anti-Aging',
     tags: ['GDF-11', 'anti-aging', 'parabiosis', 'rejuvenation', 'TGF-beta', 'longevity'],
-    image: 'https://phiogen.is/images/products/igf-1-lr3-100mcg.png',
+    image: 'https://phiogen.is/images/products/igf-1-lr3-1mg.png',
     affiliateUrl: 'https://phiogen.is/products/gdf-11-100mcg?ref=PEPS',
     shortDescription: 'GDF-11 is the circulating "young blood factor" from parabiosis research — a TGF-beta family protein that declines with aging and whose restoration reverses cardiac and neurological aging markers.',
     fullDescription: `GDF-11 (Growth Differentiation Factor 11) gained widespread attention after 2013 Harvard research demonstrated that its declining levels in aging blood contribute to multiple aging phenotypes, and that restoration of GDF-11 levels (via parabiotic blood exchange with young animals) reversed cardiac hypertrophy, improved skeletal muscle regeneration, and enhanced neurogenesis. GDF-11 is a circulating protein that declines with age and acts as a systemic signal of biological youth.
@@ -6845,7 +6845,7 @@ FGL2 is a frontier immune research compound with significant mechanistic interes
     price: 79.99,
     category: 'Body Composition',
     tags: ['IGF-1 DES', 'IGF', 'muscle', 'local anabolic', 'hypertrophy', 'satellite cells'],
-    image: 'https://phiogen.is/images/products/igf-1-lr3-100mcg.png',
+    image: 'https://phiogen.is/images/products/igf-1-lr3-1mg.png',
     affiliateUrl: 'https://phiogen.is/products/igf-1-des-1mg?ref=PEPS',
     shortDescription: 'IGF-1 DES is a truncated form of IGF-1 that is 10x more potent than native IGF-1 for local muscle anabolic signaling — the most potent injectable muscle growth peptide.',
     fullDescription: `IGF-1 DES (Des(1-3)IGF-1) is a naturally occurring truncated form of IGF-1 lacking the first three amino acids. This truncation reduces binding to IGF-binding proteins (IGFBPs), which would otherwise sequester most injected IGF-1 LR3. Without IGFBP binding, DES IGF-1 is immediately bioavailable at the injection site — making it 10x more potent than native IGF-1 for local muscle anabolic signaling.

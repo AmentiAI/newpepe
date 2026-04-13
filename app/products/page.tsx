@@ -6,7 +6,7 @@ import ProductImage from '@/components/ProductImage';
 
 export const metadata: Metadata = {
   title: 'All Peptides & Research Compounds | BPC-157 Stack',
-  description: 'Complete catalog of 140+ research peptides — BPC-157, TB-500, GLP-1 agonists, SARMs, nootropics, anti-aging compounds and more. Shop from Phiogen.',
+  description: 'Complete catalog of 140+ research peptides — BPC-157, TB-500, GLP-1 agonists, SARMs, nootropics, anti-aging compounds and more. Third-party tested, COA verified.',
 };
 
 const categoryColor: Record<string, string> = {
@@ -144,14 +144,14 @@ export default function ProductsPage() {
 
         {/* Bottom CTA */}
         <div className="text-center py-12 border-t border-gray-100">
-          <p className="text-gray-500 text-sm mb-4">All products ship from Phiogen — US-based, third-party tested, COA available</p>
+          <p className="text-gray-500 text-sm mb-4">All products — US-based supplier, third-party tested, COA available</p>
           <a
             href="https://phiogen.is/?ref=PEPS"
             target="_blank"
             rel="nofollow noopener noreferrer"
             className="inline-flex items-center gap-2 bg-amber-500 text-white font-black px-6 py-3 rounded-xl hover:bg-amber-600 transition-colors"
           >
-            View Full Phiogen Store <ArrowRight className="w-4 h-4" />
+            View Full Store <ArrowRight className="w-4 h-4" />
           </a>
         </div>
       </div>
