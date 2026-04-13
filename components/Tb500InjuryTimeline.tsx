@@ -61,7 +61,7 @@ const injuries = [
 const colorClasses: Record<string, { text: string; bg: string; border: string; bar: string }> = {
   emerald: { text: 'text-emerald-400', bg: 'bg-emerald-500/10', border: 'border-emerald-500/25', bar: 'bg-emerald-500' },
   blue: { text: 'text-blue-400', bg: 'bg-blue-500/10', border: 'border-blue-500/25', bar: 'bg-blue-500' },
-  purple: { text: 'text-purple-400', bg: 'bg-purple-500/10', border: 'border-purple-500/25', bar: 'bg-purple-500' },
+  purple: { text: 'text-amber-600', bg: 'bg-purple-500/10', border: 'border-amber-400/25', bar: 'bg-purple-500' },
   rose: { text: 'text-rose-400', bg: 'bg-rose-500/10', border: 'border-rose-500/25', bar: 'bg-rose-500' },
 };
 
@@ -72,8 +72,8 @@ export default function Tb500InjuryTimeline() {
   return (
     <div className="glass-card p-6 space-y-5">
       <div>
-        <h3 className="text-white font-black text-lg mb-1">TB-500 Healing Timeline by Injury Type</h3>
-        <p className="text-slate-400 text-sm">Select your injury type to see the research-based healing progression on a TB-500 protocol.</p>
+        <h3 className="text-gray-900 font-black text-lg mb-1">TB-500 Healing Timeline by Injury Type</h3>
+        <p className="text-gray-600 text-sm">Select your injury type to see the research-based healing progression on a TB-500 protocol.</p>
       </div>
 
       <div className="flex flex-wrap gap-2">
@@ -84,7 +84,7 @@ export default function Tb500InjuryTimeline() {
             className={`text-xs font-semibold px-3 py-2 rounded-lg border transition-all ${
               selected.id === inj.id
                 ? `${colorClasses[inj.color].bg} ${colorClasses[inj.color].border} ${colorClasses[inj.color].text}`
-                : 'bg-dark-800/40 border-slate-700/40 text-slate-400 hover:text-slate-200'
+                : 'bg-gray-50 border-gray-200/40 text-gray-600 hover:text-gray-900'
             }`}
           >
             {inj.label}
@@ -95,12 +95,12 @@ export default function Tb500InjuryTimeline() {
       <div className={`rounded-xl p-4 ${c.bg} border ${c.border}`}>
         <div className="flex items-center gap-4 text-sm mb-4">
           <div>
-            <p className="text-slate-500 text-xs mb-0.5">Natural Recovery</p>
-            <p className="text-slate-300 font-semibold">{selected.natural}</p>
+            <p className="text-gray-600 text-xs mb-0.5">Natural Recovery</p>
+            <p className="text-gray-800 font-semibold">{selected.natural}</p>
           </div>
           <div className={`w-px h-8 ${c.bar} opacity-30`} />
           <div>
-            <p className="text-slate-500 text-xs mb-0.5">TB-500 Protocol</p>
+            <p className="text-gray-600 text-xs mb-0.5">TB-500 Protocol</p>
             <p className={`${c.text} font-bold`}>{selected.tbWeeks}</p>
           </div>
         </div>
@@ -116,14 +116,14 @@ export default function Tb500InjuryTimeline() {
                   <Clock className={`w-3.5 h-3.5 ${c.text}`} />
                   <span className={`${c.text} text-xs font-bold`}>Week {w.week}</span>
                 </div>
-                <p className="text-slate-300 text-sm leading-relaxed">{w.milestone}</p>
+                <p className="text-gray-800 text-sm leading-relaxed">{w.milestone}</p>
               </div>
             </div>
           ))}
         </div>
       </div>
 
-      <p className="text-slate-600 text-xs">
+      <p className="text-gray-500 text-xs">
         Timeline estimates based on animal model research. Results vary with dose, severity, and individual factors. Stack TB-500 with BPC-157 for optimal outcomes.
       </p>
     </div>

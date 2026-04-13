@@ -373,14 +373,14 @@ export default function SkinQualityAssessment() {
   };
 
   return (
-    <div className="rounded-xl bg-dark-800/60 border border-white/10 p-6">
+    <div className="rounded-xl bg-gray-50 border border-gray-200 p-6">
       <div className="flex items-center justify-between mb-6">
         <div>
-          <h3 className="text-xl font-bold text-white">Skin Assessment Tool</h3>
-          <p className="text-slate-400 text-sm">Get a personalized peptide protocol in 3 steps</p>
+          <h3 className="text-xl font-bold text-gray-900">Skin Assessment Tool</h3>
+          <p className="text-gray-600 text-sm">Get a personalized peptide protocol in 3 steps</p>
         </div>
         {step > 1 && (
-          <button onClick={reset} className="text-slate-500 hover:text-slate-300 flex items-center gap-1 text-sm">
+          <button onClick={reset} className="text-gray-600 hover:text-gray-800 flex items-center gap-1 text-sm">
             <RotateCcw className="w-4 h-4" /> Restart
           </button>
         )}
@@ -391,7 +391,7 @@ export default function SkinQualityAssessment() {
         {[1, 2, 3].map(s => (
           <div
             key={s}
-            className={`flex-1 h-1.5 rounded-full transition-all duration-300 ${s <= step ? 'bg-emerald-500' : 'bg-dark-700'}`}
+            className={`flex-1 h-1.5 rounded-full transition-all duration-300 ${s <= step ? 'bg-emerald-500' : 'bg-white'}`}
           />
         ))}
       </div>
@@ -399,16 +399,16 @@ export default function SkinQualityAssessment() {
       {/* Step 1 */}
       {step === 1 && (
         <div>
-          <p className="text-white font-semibold mb-4">Step 1: What is your primary skin concern?</p>
+          <p className="text-gray-900 font-semibold mb-4">Step 1: What is your primary skin concern?</p>
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
             {concerns.map(c => (
               <button
                 key={c.value}
                 onClick={() => { setConcern(c.value); setStep(2); }}
-                className="flex flex-col items-center gap-2 p-4 rounded-xl border border-white/10 bg-dark-700/40 hover:border-emerald-500/50 hover:bg-emerald-500/5 transition-all text-center"
+                className="flex flex-col items-center gap-2 p-4 rounded-xl border border-gray-200 bg-gray-50 hover:border-emerald-500/50 hover:bg-emerald-500/5 transition-all text-center"
               >
                 <span className="text-2xl">{c.emoji}</span>
-                <span className="text-sm font-medium text-slate-200">{c.label}</span>
+                <span className="text-sm font-medium text-gray-900">{c.label}</span>
               </button>
             ))}
           </div>
@@ -418,20 +418,20 @@ export default function SkinQualityAssessment() {
       {/* Step 2 */}
       {step === 2 && (
         <div>
-          <p className="text-slate-400 text-sm mb-1">
+          <p className="text-gray-600 text-sm mb-1">
             Primary concern: <span className="text-emerald-400">{concerns.find(c => c.value === concern)?.label}</span>
           </p>
-          <p className="text-white font-semibold mb-4">Step 2: How would you describe your skin type?</p>
+          <p className="text-gray-900 font-semibold mb-4">Step 2: How would you describe your skin type?</p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
             {skinTypes.map(st => (
               <button
                 key={st.value}
                 onClick={() => { setSkinType(st.value); setStep(3); }}
-                className="flex items-center gap-3 p-4 rounded-xl border border-white/10 bg-dark-700/40 hover:border-emerald-500/50 hover:bg-emerald-500/5 transition-all text-left"
+                className="flex items-center gap-3 p-4 rounded-xl border border-gray-200 bg-gray-50 hover:border-emerald-500/50 hover:bg-emerald-500/5 transition-all text-left"
               >
                 <div>
-                  <div className="text-sm font-semibold text-slate-200">{st.label}</div>
-                  <div className="text-xs text-slate-500">{st.desc}</div>
+                  <div className="text-sm font-semibold text-gray-900">{st.label}</div>
+                  <div className="text-xs text-gray-600">{st.desc}</div>
                 </div>
               </button>
             ))}
@@ -443,34 +443,34 @@ export default function SkinQualityAssessment() {
       {step === 3 && protocol && (
         <div className="space-y-5">
           <div>
-            <p className="text-xs text-slate-500 mb-1">Your personalized protocol:</p>
-            <h4 className="text-lg font-bold text-white">{protocol.headline}</h4>
-            <p className="text-sm text-slate-400 mt-1">{protocol.description}</p>
+            <p className="text-xs text-gray-600 mb-1">Your personalized protocol:</p>
+            <h4 className="text-lg font-bold text-gray-900">{protocol.headline}</h4>
+            <p className="text-sm text-gray-600 mt-1">{protocol.description}</p>
           </div>
 
           <div className="space-y-3">
             {protocol.peptides.map((pep) => (
-              <div key={pep.name} className="bg-dark-700/50 border border-white/5 rounded-xl p-4">
+              <div key={pep.name} className="bg-gray-50 border border-gray-200 rounded-xl p-4">
                 <div className="flex items-center gap-3 mb-2">
                   <span className="text-xl">{pep.emoji}</span>
                   <div>
                     <span className={`font-bold text-sm ${pep.color}`}>{pep.name}</span>
-                    <span className="text-slate-500 text-xs ml-2">{pep.dose}</span>
+                    <span className="text-gray-600 text-xs ml-2">{pep.dose}</span>
                   </div>
                 </div>
-                <p className="text-xs text-slate-400">{pep.reason}</p>
+                <p className="text-xs text-gray-600">{pep.reason}</p>
               </div>
             ))}
           </div>
 
-          <div className="bg-dark-700/40 border border-emerald-500/20 rounded-xl p-4">
+          <div className="bg-gray-50 border border-emerald-500/20 rounded-xl p-4">
             <p className="text-xs font-semibold text-emerald-400 uppercase tracking-wider mb-2">Timeline</p>
-            <p className="text-sm text-slate-300">{protocol.timeline}</p>
+            <p className="text-sm text-gray-800">{protocol.timeline}</p>
           </div>
 
-          <div className="bg-dark-700/40 border border-amber-500/20 rounded-xl p-4">
+          <div className="bg-gray-50 border border-amber-500/20 rounded-xl p-4">
             <p className="text-xs font-semibold text-amber-400 uppercase tracking-wider mb-2">Pro Tip</p>
-            <p className="text-sm text-slate-300">{protocol.tip}</p>
+            <p className="text-sm text-gray-800">{protocol.tip}</p>
           </div>
 
           <a
@@ -482,13 +482,13 @@ export default function SkinQualityAssessment() {
             Source These Peptides <ArrowRight className="w-4 h-4" />
           </a>
 
-          <button onClick={reset} className="w-full text-slate-500 hover:text-slate-300 text-sm flex items-center justify-center gap-1 py-2">
+          <button onClick={reset} className="w-full text-gray-600 hover:text-gray-800 text-sm flex items-center justify-center gap-1 py-2">
             <RotateCcw className="w-4 h-4" /> Start Over
           </button>
         </div>
       )}
 
-      <p className="text-xs text-slate-600 text-center mt-4">
+      <p className="text-xs text-gray-500 text-center mt-4">
         For research purposes only. Not medical advice.
       </p>
     </div>

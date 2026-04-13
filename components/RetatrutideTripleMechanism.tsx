@@ -46,7 +46,7 @@ const receptors = [
 
 const colorClass: Record<string, { text: string; bg: string; border: string; badge: string }> = {
   blue: { text: 'text-blue-400', bg: 'bg-blue-500/10', border: 'border-blue-500/25', badge: 'bg-blue-500/20 text-blue-300' },
-  purple: { text: 'text-purple-400', bg: 'bg-purple-500/10', border: 'border-purple-500/25', badge: 'bg-purple-500/20 text-purple-300' },
+  purple: { text: 'text-amber-600', bg: 'bg-purple-500/10', border: 'border-amber-400/25', badge: 'bg-amber-50 text-amber-600' },
   amber: { text: 'text-amber-400', bg: 'bg-amber-500/10', border: 'border-amber-500/25', badge: 'bg-amber-500/20 text-amber-300' },
 };
 
@@ -58,8 +58,8 @@ export default function RetatrutideTripleMechanism() {
   return (
     <div className="glass-card p-6 space-y-5">
       <div>
-        <h3 className="text-white font-black text-lg mb-1">Retatrutide: Triple Receptor Mechanism Explorer</h3>
-        <p className="text-slate-400 text-sm">
+        <h3 className="text-gray-900 font-black text-lg mb-1">Retatrutide: Triple Receptor Mechanism Explorer</h3>
+        <p className="text-gray-600 text-sm">
           Retatrutide activates three receptors simultaneously. Select each to understand its unique contribution to the 24% weight loss result.
         </p>
       </div>
@@ -74,12 +74,12 @@ export default function RetatrutideTripleMechanism() {
               key={r.id}
               onClick={() => setActive(r.id)}
               className={`p-3 rounded-xl border transition-all text-center ${
-                isActive ? `${cc.bg} ${cc.border} ${cc.text}` : 'bg-dark-800/40 border-slate-700/40 text-slate-400'
+                isActive ? `${cc.bg} ${cc.border} ${cc.text}` : 'bg-gray-50 border-gray-200/40 text-gray-600'
               }`}
             >
               <div className="text-xl mb-1">{r.icon}</div>
               <div className="text-xs font-bold leading-tight">{r.name}</div>
-              <div className={`text-xs mt-1 px-2 py-0.5 rounded-full inline-block ${isActive ? cc.badge : 'bg-slate-700/30 text-slate-500'}`}>
+              <div className={`text-xs mt-1 px-2 py-0.5 rounded-full inline-block ${isActive ? cc.badge : 'bg-slate-700/30 text-gray-600'}`}>
                 {r.badge}
               </div>
             </button>
@@ -92,37 +92,37 @@ export default function RetatrutideTripleMechanism() {
         <h4 className={`${c.text} font-bold text-base`}>{receptor.name} — What It Does</h4>
         {receptor.effects.map((effect) => (
           <div key={effect.label} className="space-y-1">
-            <p className="text-slate-200 text-sm font-semibold">{effect.label}</p>
-            <p className="text-slate-400 text-sm leading-relaxed">{effect.detail}</p>
+            <p className="text-gray-900 text-sm font-semibold">{effect.label}</p>
+            <p className="text-gray-600 text-sm leading-relaxed">{effect.detail}</p>
           </div>
         ))}
-        <div className={`rounded-lg p-3 border ${c.border} bg-dark-800/30 mt-2`}>
+        <div className={`rounded-lg p-3 border ${c.border} bg-gray-50 mt-2`}>
           <p className={`${c.text} text-xs font-semibold mb-0.5`}>Clinical Context</p>
-          <p className="text-slate-400 text-xs leading-relaxed">{receptor.trialNote}</p>
+          <p className="text-gray-600 text-xs leading-relaxed">{receptor.trialNote}</p>
         </div>
       </div>
 
       {/* Summary */}
-      <div className="rounded-xl p-4 bg-dark-800/30 border border-slate-700/30">
+      <div className="rounded-xl p-4 bg-gray-50 border border-gray-200/30">
         <div className="flex items-center gap-4 text-center">
           <div className="flex-1">
             <div className="text-blue-400 font-black text-lg">15%</div>
-            <div className="text-slate-500 text-xs">Semaglutide<br/>(GLP-1 only)</div>
+            <div className="text-gray-600 text-xs">Semaglutide<br/>(GLP-1 only)</div>
           </div>
-          <div className="text-slate-600 text-sm font-bold">→</div>
+          <div className="text-gray-500 text-sm font-bold">→</div>
           <div className="flex-1">
-            <div className="text-purple-400 font-black text-lg">22.5%</div>
-            <div className="text-slate-500 text-xs">Tirzepatide<br/>(GLP-1 + GIP)</div>
+            <div className="text-amber-600 font-black text-lg">22.5%</div>
+            <div className="text-gray-600 text-xs">Tirzepatide<br/>(GLP-1 + GIP)</div>
           </div>
-          <div className="text-slate-600 text-sm font-bold">→</div>
+          <div className="text-gray-500 text-sm font-bold">→</div>
           <div className="flex-1">
             <div className="text-amber-400 font-black text-lg">24.2%</div>
-            <div className="text-slate-500 text-xs">Retatrutide<br/>(GLP-1 + GIP + Glucagon)</div>
+            <div className="text-gray-600 text-xs">Retatrutide<br/>(GLP-1 + GIP + Glucagon)</div>
           </div>
         </div>
       </div>
 
-      <p className="text-slate-600 text-xs">Phase II data. Phase III ongoing. For research and educational purposes only.</p>
+      <p className="text-gray-500 text-xs">Phase II data. Phase III ongoing. For research and educational purposes only.</p>
     </div>
   );
 }

@@ -89,9 +89,9 @@ export default function JawlineGoalQuiz() {
         <div className="flex items-center justify-between mb-6 flex-wrap gap-3">
           <div>
             <div className="text-xs font-bold tracking-widest mb-1" style={{ color: '#00ff88' }}>YOUR JAWLINE PROTOCOL</div>
-            <h3 className="text-white font-black text-lg">{jaw} Jaw → {goal} → {timeline}</h3>
+            <h3 className="text-gray-900 font-black text-lg">{jaw} Jaw → {goal} → {timeline}</h3>
           </div>
-          <button onClick={reset} className="text-slate-400 text-sm hover:text-white border border-slate-700 hover:border-slate-500 px-3 py-1 rounded transition-colors">
+          <button onClick={reset} className="text-gray-600 text-sm hover:text-gray-900 border border-gray-200 hover:border-gray-300 px-3 py-1 rounded transition-colors">
             Retake Quiz
           </button>
         </div>
@@ -103,22 +103,22 @@ export default function JawlineGoalQuiz() {
               <div key={p.name} className="rounded-xl p-5" style={{ background: c.bg, border: `1px solid ${c.border}` }}>
                 <div className="flex items-start justify-between gap-3 mb-2">
                   <div className="font-black text-base" style={{ color: p.color }}>{p.name}</div>
-                  <div className="text-xs font-bold px-2 py-1 rounded-lg text-slate-300" style={{ background: 'rgba(0,0,0,0.3)' }}>{p.dose}</div>
+                  <div className="text-xs font-bold px-2 py-1 rounded-lg text-gray-800" style={{ background: 'rgba(0,0,0,0.3)' }}>{p.dose}</div>
                 </div>
-                <p className="text-slate-300 text-sm leading-relaxed">{p.why}</p>
+                <p className="text-gray-800 text-sm leading-relaxed">{p.why}</p>
               </div>
             );
           })}
         </div>
 
         <div className="rounded-xl p-4 mb-4" style={{ background: 'rgba(0,255,136,0.05)', border: '1px solid rgba(0,255,136,0.15)' }}>
-          <div className="text-xs font-bold tracking-widest mb-2 text-slate-500">EXPECTED OUTCOME — {timeline?.toUpperCase()}</div>
-          <p className="text-slate-300 text-sm leading-relaxed">{protocol.expectation}</p>
+          <div className="text-xs font-bold tracking-widest mb-2 text-gray-600">EXPECTED OUTCOME — {timeline?.toUpperCase()}</div>
+          <p className="text-gray-800 text-sm leading-relaxed">{protocol.expectation}</p>
         </div>
 
         <div className="flex items-start gap-2 mb-5">
           <CheckCircle className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
-          <p className="text-slate-400 text-sm"><span className="text-white font-semibold">Priority note: </span>{protocol.priority}</p>
+          <p className="text-gray-600 text-sm"><span className="text-gray-900 font-semibold">Priority note: </span>{protocol.priority}</p>
         </div>
 
         <a
@@ -131,7 +131,7 @@ export default function JawlineGoalQuiz() {
           Shop Recommended Peptides <ArrowRight className="w-4 h-4" />
         </a>
 
-        <p className="text-slate-700 text-xs mt-4 border-t border-slate-800 pt-4">
+        <p className="text-gray-700 text-xs mt-4 border-t border-slate-800 pt-4">
           For research purposes only. Not medical advice. Consult a healthcare provider before use.
         </p>
       </div>
@@ -142,14 +142,14 @@ export default function JawlineGoalQuiz() {
     <div className="glass-card p-6 md:p-8">
       <div className="mb-6">
         <div className="text-xs font-bold tracking-widest mb-1" style={{ color: '#00ff88' }}>JAWLINE PROTOCOL QUIZ</div>
-        <h3 className="text-white font-black text-xl">Build Your Jawline Protocol</h3>
-        <p className="text-slate-400 text-sm mt-1">3 questions. Personalized peptide recommendation.</p>
+        <h3 className="text-gray-900 font-black text-xl">Build Your Jawline Protocol</h3>
+        <p className="text-gray-600 text-sm mt-1">3 questions. Personalized peptide recommendation.</p>
       </div>
 
       <div className="space-y-7">
         {/* Q1 */}
         <div>
-          <label className="block text-slate-300 text-sm font-semibold mb-3">1. How would you assess your current jaw?</label>
+          <label className="block text-gray-800 text-sm font-semibold mb-3">1. How would you assess your current jaw?</label>
           <div className="grid grid-cols-3 gap-3">
             {(['Weak', 'Average', 'Strong'] as JawAssessment[]).map((opt) => {
               const subs = { Weak: 'Recessed, soft definition', Average: 'Present but not sharp', Strong: 'Good, want to maximize' };
@@ -165,7 +165,7 @@ export default function JawlineGoalQuiz() {
                   }}
                 >
                   <div className="font-bold text-sm" style={{ color: isActive ? '#60a5fa' : '#e2e8f0' }}>{opt}</div>
-                  <div className="text-xs text-slate-500 mt-0.5">{subs[opt]}</div>
+                  <div className="text-xs text-gray-600 mt-0.5">{subs[opt]}</div>
                 </button>
               );
             })}
@@ -174,7 +174,7 @@ export default function JawlineGoalQuiz() {
 
         {/* Q2 */}
         <div>
-          <label className="block text-slate-300 text-sm font-semibold mb-3">2. Primary goal?</label>
+          <label className="block text-gray-800 text-sm font-semibold mb-3">2. Primary goal?</label>
           <div className="grid grid-cols-2 gap-3">
             {(['Definition', 'Bone Density', 'Facial Fat', 'All'] as PrimaryGoal[]).map((opt) => {
               const subs = { Definition: 'Sharper, more cut look', 'Bone Density': 'Structural mass / angularity', 'Facial Fat': 'Reduce buccal fat, recomp', All: 'Complete jawline optimization' };
@@ -190,7 +190,7 @@ export default function JawlineGoalQuiz() {
                   }}
                 >
                   <div className="font-bold text-sm" style={{ color: isActive ? '#a78bfa' : '#e2e8f0' }}>{opt}</div>
-                  <div className="text-xs text-slate-500 mt-0.5">{subs[opt]}</div>
+                  <div className="text-xs text-gray-600 mt-0.5">{subs[opt]}</div>
                 </button>
               );
             })}
@@ -199,7 +199,7 @@ export default function JawlineGoalQuiz() {
 
         {/* Q3 */}
         <div>
-          <label className="block text-slate-300 text-sm font-semibold mb-3">3. Commitment timeline?</label>
+          <label className="block text-gray-800 text-sm font-semibold mb-3">3. Commitment timeline?</label>
           <div className="grid grid-cols-3 gap-3">
             {(['3 months', '6 months', '1 year'] as Timeline[]).map((opt) => {
               const isActive = timeline === opt;

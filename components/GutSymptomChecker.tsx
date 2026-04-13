@@ -87,7 +87,7 @@ export default function GutSymptomChecker() {
 
   return (
     <div className="space-y-5">
-      <p className="text-slate-400 text-sm">Select all symptoms you regularly experience:</p>
+      <p className="text-gray-600 text-sm">Select all symptoms you regularly experience:</p>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
         {symptoms.map((s) => {
           const isChecked = checked.has(s.id);
@@ -97,14 +97,14 @@ export default function GutSymptomChecker() {
               onClick={() => toggle(s.id)}
               className={`flex items-center gap-3 p-4 rounded-xl border text-left transition-all duration-150 ${
                 isChecked
-                  ? 'border-emerald-500/60 bg-emerald-500/15 text-white'
-                  : 'border-white/10 bg-white/3 text-slate-400 hover:border-white/20'
+                  ? 'border-emerald-500/60 bg-emerald-500/15 text-gray-900'
+                  : 'border-gray-200 bg-white/3 text-gray-600 hover:border-gray-200'
               }`}
             >
               {isChecked ? (
                 <CheckSquare className="w-5 h-5 text-emerald-400 shrink-0" />
               ) : (
-                <Square className="w-5 h-5 text-slate-600 shrink-0" />
+                <Square className="w-5 h-5 text-gray-500 shrink-0" />
               )}
               <span className="text-sm font-medium">{s.label}</span>
             </button>
@@ -128,27 +128,27 @@ export default function GutSymptomChecker() {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-5">
             <div>
-              <p className="text-slate-500 text-xs mb-1">Recommended Route</p>
+              <p className="text-gray-600 text-xs mb-1">Recommended Route</p>
               <p className="text-emerald-400 font-bold text-sm">{recommendation.route}</p>
             </div>
             <div>
-              <p className="text-slate-500 text-xs mb-1">Daily Dose</p>
-              <p className="text-white font-mono text-sm">{recommendation.dose}</p>
+              <p className="text-gray-600 text-xs mb-1">Daily Dose</p>
+              <p className="text-gray-900 font-mono text-sm">{recommendation.dose}</p>
             </div>
             <div>
-              <p className="text-slate-500 text-xs mb-1">Estimated Timeline</p>
-              <p className="text-white text-sm">{recommendation.timeline}</p>
+              <p className="text-gray-600 text-xs mb-1">Estimated Timeline</p>
+              <p className="text-gray-900 text-sm">{recommendation.timeline}</p>
             </div>
           </div>
-          <div className="border-t border-white/10 pt-4 space-y-3">
+          <div className="border-t border-gray-200 pt-4 space-y-3">
             <div>
-              <p className="text-slate-500 text-xs font-semibold mb-1">WHY THIS PROTOCOL</p>
-              <p className="text-slate-300 text-sm leading-relaxed">{recommendation.rationale}</p>
+              <p className="text-gray-600 text-xs font-semibold mb-1">WHY THIS PROTOCOL</p>
+              <p className="text-gray-800 text-sm leading-relaxed">{recommendation.rationale}</p>
             </div>
             {recommendation.stack && (
               <div>
-                <p className="text-slate-500 text-xs font-semibold mb-1">SYNERGISTIC ADDITIONS</p>
-                <p className="text-slate-400 text-sm leading-relaxed">{recommendation.stack}</p>
+                <p className="text-gray-600 text-xs font-semibold mb-1">SYNERGISTIC ADDITIONS</p>
+                <p className="text-gray-600 text-sm leading-relaxed">{recommendation.stack}</p>
               </div>
             )}
           </div>

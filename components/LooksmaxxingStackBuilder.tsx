@@ -165,14 +165,14 @@ export default function LooksmaxxingStackBuilder() {
     <div className="glass-card p-6 space-y-6">
       <div className="flex items-center gap-3">
         <FlaskConical className="w-5 h-5 text-purple-400" />
-        <h3 className="text-lg font-bold text-slate-100">Looksmaxxing Stack Builder</h3>
+        <h3 className="text-lg font-bold text-gray-900">Looksmaxxing Stack Builder</h3>
       </div>
 
       {/* Step 1: Goals */}
       <div className="space-y-3">
         <div className="flex items-center gap-2">
           <span className="w-6 h-6 rounded-full bg-purple-500/20 border border-purple-500/40 flex items-center justify-center text-purple-300 text-xs font-bold">1</span>
-          <span className="text-slate-200 font-semibold text-sm">Select Your Goals</span>
+          <span className="text-gray-900 font-semibold text-sm">Select Your Goals</span>
         </div>
         <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
           {GOALS.map((goal) => {
@@ -184,10 +184,10 @@ export default function LooksmaxxingStackBuilder() {
                 className={`flex items-center gap-2 p-3 rounded-xl border text-sm font-medium text-left transition-all ${
                   selected
                     ? `border-purple-500/50 bg-purple-500/10 ${goal.color}`
-                    : 'border-slate-700 text-slate-400 hover:border-slate-600 hover:text-slate-300'
+                    : 'border-gray-200 text-gray-600 hover:border-gray-300 hover:text-gray-800'
                 }`}
               >
-                <span className={selected ? goal.color : 'text-slate-500'}>{goal.icon}</span>
+                <span className={selected ? goal.color : 'text-gray-600'}>{goal.icon}</span>
                 <span className="leading-tight">{goal.label}</span>
               </button>
             );
@@ -199,7 +199,7 @@ export default function LooksmaxxingStackBuilder() {
       <div className="space-y-3">
         <div className="flex items-center gap-2">
           <span className="w-6 h-6 rounded-full bg-purple-500/20 border border-purple-500/40 flex items-center justify-center text-purple-300 text-xs font-bold">2</span>
-          <span className="text-slate-200 font-semibold text-sm">Select Budget Tier</span>
+          <span className="text-gray-900 font-semibold text-sm">Select Budget Tier</span>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
           {BUDGET_TIERS.map((tier) => (
@@ -209,16 +209,16 @@ export default function LooksmaxxingStackBuilder() {
               className={`p-4 rounded-xl border text-left transition-all space-y-1 ${
                 budgetTier === tier.value
                   ? 'border-purple-500/60 bg-purple-500/10'
-                  : 'border-slate-700 hover:border-slate-600'
+                  : 'border-gray-200 hover:border-gray-300'
               }`}
             >
-              <p className={`font-semibold text-sm ${budgetTier === tier.value ? 'text-purple-300' : 'text-slate-300'}`}>
+              <p className={`font-semibold text-sm ${budgetTier === tier.value ? 'text-purple-300' : 'text-gray-800'}`}>
                 {tier.label}
               </p>
-              <p className={`text-xs font-bold ${budgetTier === tier.value ? 'text-amber-300' : 'text-slate-500'}`}>
+              <p className={`text-xs font-bold ${budgetTier === tier.value ? 'text-amber-300' : 'text-gray-600'}`}>
                 {tier.range}
               </p>
-              <p className="text-slate-500 text-xs leading-tight">{tier.desc}</p>
+              <p className="text-gray-600 text-xs leading-tight">{tier.desc}</p>
             </button>
           ))}
         </div>
@@ -239,16 +239,16 @@ export default function LooksmaxxingStackBuilder() {
         <div className="space-y-4">
           <div className="flex items-center gap-2">
             <span className="w-6 h-6 rounded-full bg-purple-500/20 border border-purple-500/40 flex items-center justify-center text-purple-300 text-xs font-bold">3</span>
-            <span className="text-slate-200 font-semibold text-sm">Your Recommended Stack</span>
+            <span className="text-gray-900 font-semibold text-sm">Your Recommended Stack</span>
           </div>
 
           <div className="space-y-3">
             {filteredStack.map((item, i) => (
-              <div key={item.name} className="bg-slate-800/60 border border-slate-700/50 rounded-xl p-4 space-y-2">
+              <div key={item.name} className="bg-slate-800/60 border border-gray-200/50 rounded-xl p-4 space-y-2">
                 <div className="flex items-start justify-between gap-2">
                   <div className="flex items-center gap-2">
-                    <span className="text-slate-500 text-sm font-mono w-5">#{i + 1}</span>
-                    <span className="text-slate-100 font-semibold text-sm">{item.name}</span>
+                    <span className="text-gray-600 text-sm font-mono w-5">#{i + 1}</span>
+                    <span className="text-gray-900 font-semibold text-sm">{item.name}</span>
                   </div>
                   <span className={`text-xs px-2 py-0.5 rounded-full font-semibold flex-shrink-0 ${PRIORITY_COLORS[item.priority]}`}>
                     {item.priority}
@@ -256,17 +256,17 @@ export default function LooksmaxxingStackBuilder() {
                 </div>
                 <div className="grid grid-cols-2 gap-2 text-xs">
                   <div>
-                    <span className="text-slate-500">Dose</span>
-                    <p className="text-slate-300">{item.dose}</p>
+                    <span className="text-gray-600">Dose</span>
+                    <p className="text-gray-800">{item.dose}</p>
                   </div>
                   <div>
-                    <span className="text-slate-500">Route</span>
-                    <p className="text-slate-300">{item.route}</p>
+                    <span className="text-gray-600">Route</span>
+                    <p className="text-gray-800">{item.route}</p>
                   </div>
                 </div>
-                <p className="text-slate-400 text-xs leading-relaxed">{item.role}</p>
-                <div className="flex items-center justify-between pt-1 border-t border-slate-700/50">
-                  <span className="text-slate-500 text-xs">Est. monthly cost</span>
+                <p className="text-gray-600 text-xs leading-relaxed">{item.role}</p>
+                <div className="flex items-center justify-between pt-1 border-t border-gray-200/50">
+                  <span className="text-gray-600 text-xs">Est. monthly cost</span>
                   <span className="text-amber-300 font-semibold text-sm">~${item.monthlyCost}/mo</span>
                 </div>
               </div>
@@ -275,14 +275,14 @@ export default function LooksmaxxingStackBuilder() {
 
           {/* Total Cost */}
           <div className="flex items-center justify-between bg-purple-500/10 border border-purple-500/30 rounded-xl px-4 py-3">
-            <span className="text-slate-300 font-semibold">Total Monthly Estimate</span>
+            <span className="text-gray-800 font-semibold">Total Monthly Estimate</span>
             <span className="text-purple-300 font-bold text-xl">~${totalCost}/mo</span>
           </div>
 
           {/* Save Button */}
           <button
             onClick={handleSave}
-            className="w-full py-2.5 rounded-xl border border-slate-600 text-slate-300 hover:border-purple-500/50 hover:text-purple-300 transition-all flex items-center justify-center gap-2 text-sm"
+            className="w-full py-2.5 rounded-xl border border-gray-300 text-gray-800 hover:border-purple-500/50 hover:text-purple-300 transition-all flex items-center justify-center gap-2 text-sm"
           >
             <Save className="w-4 h-4" />
             Save Protocol
@@ -290,7 +290,7 @@ export default function LooksmaxxingStackBuilder() {
         </div>
       )}
 
-      <p className="text-slate-500 text-xs text-center">For research purposes only. Consult a qualified physician before use.</p>
+      <p className="text-gray-600 text-xs text-center">For research purposes only. Consult a qualified physician before use.</p>
     </div>
   );
 }

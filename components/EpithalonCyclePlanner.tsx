@@ -98,19 +98,19 @@ export default function EpithalonCyclePlanner() {
     <div className="glass-card p-6 md:p-8" style={{ border: '1px solid rgba(168,85,247,0.2)' }}>
       <div className="flex items-center gap-3 mb-2">
         <div className="w-10 h-10 rounded-xl flex items-center justify-center" style={{ background: 'rgba(168,85,247,0.12)', border: '1px solid rgba(168,85,247,0.3)' }}>
-          <Calendar className="w-5 h-5 text-purple-400" />
+          <Calendar className="w-5 h-5 text-amber-600" />
         </div>
         <div>
-          <h3 className="text-white font-black text-lg">Epithalon Cycle Planner</h3>
-          <p className="text-slate-500 text-xs">Personalized protocol based on your age and goals</p>
+          <h3 className="text-gray-900 font-black text-lg">Epithalon Cycle Planner</h3>
+          <p className="text-gray-600 text-xs">Personalized protocol based on your age and goals</p>
         </div>
       </div>
-      <p className="text-slate-400 text-sm mb-6">Enter your details to receive a tailored Epithalon protocol recommendation.</p>
+      <p className="text-gray-600 text-sm mb-6">Enter your details to receive a tailored Epithalon protocol recommendation.</p>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 mb-6">
         {/* Age input */}
         <div>
-          <label className="block text-slate-400 text-xs font-semibold uppercase tracking-wide mb-2">Your Age</label>
+          <label className="block text-gray-600 text-xs font-semibold uppercase tracking-wide mb-2">Your Age</label>
           <div className="space-y-2">
             <input
               type="range"
@@ -118,7 +118,7 @@ export default function EpithalonCyclePlanner() {
               max={80}
               value={age}
               onChange={(e) => { setAge(parseInt(e.target.value)); setAgeInput(e.target.value); setShowResults(false); }}
-              className="w-full accent-purple-500"
+              className="w-full accent-amber-500"
             />
             <div className="flex items-center gap-2">
               <input
@@ -127,17 +127,17 @@ export default function EpithalonCyclePlanner() {
                 onChange={(e) => { handleAgeChange(e.target.value); setShowResults(false); }}
                 min={30}
                 max={80}
-                className="w-24 rounded-lg px-3 py-2 text-sm text-white font-mono"
+                className="w-24 rounded-lg px-3 py-2 text-sm text-gray-900 font-mono"
                 style={{ background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.1)' }}
               />
-              <span className="text-slate-400 text-sm">years old</span>
+              <span className="text-gray-600 text-sm">years old</span>
             </div>
           </div>
         </div>
 
         {/* Goal */}
         <div>
-          <label className="block text-slate-400 text-xs font-semibold uppercase tracking-wide mb-2">Primary Goal</label>
+          <label className="block text-gray-600 text-xs font-semibold uppercase tracking-wide mb-2">Primary Goal</label>
           <div className="grid grid-cols-2 gap-2">
             {GOALS.map((g) => (
               <button
@@ -145,8 +145,8 @@ export default function EpithalonCyclePlanner() {
                 onClick={() => { setGoal(g.id); setShowResults(false); }}
                 className={`p-2.5 rounded-lg text-xs font-semibold text-left transition-all border flex items-center gap-2 ${
                   goal === g.id
-                    ? 'border-purple-500/40 text-purple-300'
-                    : 'border-white/8 text-slate-400 hover:border-white/15'
+                    ? 'border-amber-400/40 text-amber-600'
+                    : 'border-gray-200 text-gray-600 hover:border-gray-300'
                 }`}
                 style={goal === g.id ? { background: 'rgba(168,85,247,0.1)' } : { background: 'rgba(255,255,255,0.03)' }}
               >
@@ -168,7 +168,7 @@ export default function EpithalonCyclePlanner() {
 
       {showResults && (
         <div className="mt-6 space-y-4">
-          <div className="rounded-xl p-1 text-center text-xs font-bold tracking-widest text-purple-400 uppercase" style={{ background: 'rgba(168,85,247,0.08)', border: '1px solid rgba(168,85,247,0.2)' }}>
+          <div className="rounded-xl p-1 text-center text-xs font-bold tracking-widest text-amber-600 uppercase" style={{ background: 'rgba(168,85,247,0.08)', border: '1px solid rgba(168,85,247,0.2)' }}>
             Protocol for {age}-year-old · {GOALS.find(g => g.id === goal)?.label}
           </div>
 
@@ -181,26 +181,26 @@ export default function EpithalonCyclePlanner() {
               { icon: <TrendingUp className="w-4 h-4" />, label: 'Inject Time', value: plan.bestTime.split('—')[0].trim() },
             ].map((item) => (
               <div key={item.label} className="rounded-xl p-3 text-center" style={{ background: 'rgba(168,85,247,0.07)', border: '1px solid rgba(168,85,247,0.15)' }}>
-                <div className="text-purple-400 flex justify-center mb-1">{item.icon}</div>
-                <div className="text-xs text-slate-500 mb-1">{item.label}</div>
-                <div className="text-white font-black text-xs">{item.value}</div>
+                <div className="text-amber-600 flex justify-center mb-1">{item.icon}</div>
+                <div className="text-xs text-gray-600 mb-1">{item.label}</div>
+                <div className="text-gray-900 font-black text-xs">{item.value}</div>
               </div>
             ))}
           </div>
 
           {/* Best time note */}
           <div className="rounded-xl p-4" style={{ background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.07)' }}>
-            <div className="text-xs font-bold text-slate-400 uppercase tracking-wide mb-1">Best Injection Time</div>
-            <p className="text-slate-300 text-sm">{plan.bestTime}</p>
+            <div className="text-xs font-bold text-gray-600 uppercase tracking-wide mb-1">Best Injection Time</div>
+            <p className="text-gray-800 text-sm">{plan.bestTime}</p>
           </div>
 
           {/* Biomarkers */}
           <div className="rounded-xl p-4" style={{ background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.07)' }}>
-            <div className="text-xs font-bold text-slate-400 uppercase tracking-wide mb-3">Biomarkers to Track</div>
+            <div className="text-xs font-bold text-gray-600 uppercase tracking-wide mb-3">Biomarkers to Track</div>
             <div className="space-y-1.5">
               {plan.biomarkers.map((b) => (
-                <div key={b} className="flex items-start gap-2 text-xs text-slate-300">
-                  <span className="text-purple-400 shrink-0 mt-0.5">→</span>
+                <div key={b} className="flex items-start gap-2 text-xs text-gray-800">
+                  <span className="text-amber-600 shrink-0 mt-0.5">→</span>
                   {b}
                 </div>
               ))}
@@ -210,18 +210,18 @@ export default function EpithalonCyclePlanner() {
           {/* Timeline */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
             <div className="rounded-xl p-4" style={{ background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.07)' }}>
-              <div className="text-xs font-bold text-purple-400 uppercase tracking-wide mb-2">1-Year Expectations</div>
-              <p className="text-slate-300 text-xs leading-relaxed">{plan.year1}</p>
+              <div className="text-xs font-bold text-amber-600 uppercase tracking-wide mb-2">1-Year Expectations</div>
+              <p className="text-gray-800 text-xs leading-relaxed">{plan.year1}</p>
             </div>
             <div className="rounded-xl p-4" style={{ background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.07)' }}>
-              <div className="text-xs font-bold text-purple-400 uppercase tracking-wide mb-2">3-Year Expectations</div>
-              <p className="text-slate-300 text-xs leading-relaxed">{plan.year3}</p>
+              <div className="text-xs font-bold text-amber-600 uppercase tracking-wide mb-2">3-Year Expectations</div>
+              <p className="text-gray-800 text-xs leading-relaxed">{plan.year3}</p>
             </div>
           </div>
 
           {/* Notes */}
           <div className="rounded-xl p-4" style={{ background: 'rgba(168,85,247,0.07)', border: '1px solid rgba(168,85,247,0.2)' }}>
-            <p className="text-purple-300 text-xs leading-relaxed"><strong>Protocol Note:</strong> {plan.notes}</p>
+            <p className="text-amber-600 text-xs leading-relaxed"><strong>Protocol Note:</strong> {plan.notes}</p>
           </div>
         </div>
       )}

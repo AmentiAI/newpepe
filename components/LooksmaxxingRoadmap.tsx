@@ -115,9 +115,9 @@ export default function LooksmaxxingRoadmap() {
   };
 
   return (
-    <div className="rounded-xl bg-dark-800/60 border border-white/10 p-6">
-      <h3 className="text-xl font-bold text-white mb-2">Looksmaxxing Peptide Roadmap</h3>
-      <p className="text-slate-400 text-sm mb-6">Click each phase to expand the full protocol details.</p>
+    <div className="rounded-xl bg-gray-50 border border-gray-200 p-6">
+      <h3 className="text-xl font-bold text-gray-900 mb-2">Looksmaxxing Peptide Roadmap</h3>
+      <p className="text-gray-600 text-sm mb-6">Click each phase to expand the full protocol details.</p>
 
       {/* Progress bar overview */}
       <div className="flex gap-1 mb-8 h-3 rounded-full overflow-hidden">
@@ -137,27 +137,27 @@ export default function LooksmaxxingRoadmap() {
           return (
             <div
               key={phase.id}
-              className={`rounded-xl border transition-all duration-300 ${phase.borderColor} ${isOpen ? phase.color : 'bg-dark-800/30 border-white/5'}`}
+              className={`rounded-xl border transition-all duration-300 ${phase.borderColor} ${isOpen ? phase.color : 'bg-gray-50 border-gray-200'}`}
             >
               <button
                 className="w-full flex items-center justify-between p-4 text-left"
                 onClick={() => togglePhase(phase.id)}
               >
                 <div className="flex items-center gap-3">
-                  <span className={`text-xs font-bold px-2 py-1 rounded-full ${phase.barColor} text-white`}>
+                  <span className={`text-xs font-bold px-2 py-1 rounded-full ${phase.barColor} text-gray-900`}>
                     {phase.id + 1}
                   </span>
                   <div>
-                    <span className={`font-bold text-base ${isOpen ? phase.textColor : 'text-white'}`}>
+                    <span className={`font-bold text-base ${isOpen ? phase.textColor : 'text-gray-900'}`}>
                       {phase.name}
                     </span>
-                    <span className="text-slate-400 text-sm ml-3">{phase.duration}</span>
+                    <span className="text-gray-600 text-sm ml-3">{phase.duration}</span>
                   </div>
                 </div>
                 {isOpen ? (
                   <ChevronUp className={`w-5 h-5 ${phase.textColor}`} />
                 ) : (
-                  <ChevronDown className="w-5 h-5 text-slate-500" />
+                  <ChevronDown className="w-5 h-5 text-gray-600" />
                 )}
               </button>
 
@@ -165,11 +165,11 @@ export default function LooksmaxxingRoadmap() {
                 <div className="px-4 pb-5 space-y-4">
                   {/* Progress bar */}
                   <div>
-                    <div className="flex justify-between text-xs text-slate-400 mb-1">
+                    <div className="flex justify-between text-xs text-gray-600 mb-1">
                       <span>Protocol Progress</span>
                       <span>{phase.progressPercent}%</span>
                     </div>
-                    <div className="h-2 bg-dark-700 rounded-full overflow-hidden">
+                    <div className="h-2 bg-white rounded-full overflow-hidden">
                       <div
                         className={`h-full rounded-full transition-all duration-700 ${phase.barColor}`}
                         style={{ width: `${phase.progressPercent}%` }}
@@ -184,7 +184,7 @@ export default function LooksmaxxingRoadmap() {
                     </p>
                     <ul className="space-y-1">
                       {phase.peptides.map((p, i) => (
-                        <li key={i} className="text-sm text-slate-300 flex items-start gap-2">
+                        <li key={i} className="text-sm text-gray-800 flex items-start gap-2">
                           <span className={`mt-1 w-1.5 h-1.5 rounded-full flex-shrink-0 ${phase.barColor}`} />
                           {p}
                         </li>
@@ -197,7 +197,7 @@ export default function LooksmaxxingRoadmap() {
                     <p className={`text-xs font-semibold uppercase tracking-wider mb-1 ${phase.textColor}`}>
                       Phase Goal
                     </p>
-                    <p className="text-sm text-slate-300">{phase.goal}</p>
+                    <p className="text-sm text-gray-800">{phase.goal}</p>
                   </div>
 
                   {/* Expected Changes */}
@@ -207,7 +207,7 @@ export default function LooksmaxxingRoadmap() {
                     </p>
                     <ul className="space-y-1">
                       {phase.expectedChanges.map((c, i) => (
-                        <li key={i} className="text-sm text-slate-300 flex items-start gap-2">
+                        <li key={i} className="text-sm text-gray-800 flex items-start gap-2">
                           <span className="text-emerald-400 mt-0.5">✓</span>
                           {c}
                         </li>
@@ -221,7 +221,7 @@ export default function LooksmaxxingRoadmap() {
         })}
       </div>
 
-      <p className="text-xs text-slate-500 mt-4 text-center">
+      <p className="text-xs text-gray-600 mt-4 text-center">
         For research purposes only. Not medical advice. Always consult a healthcare professional.
       </p>
     </div>

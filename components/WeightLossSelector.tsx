@@ -107,11 +107,11 @@ export default function WeightLossSelector() {
       content: (
         <div className="space-y-2">
           {goalOptions.map((o) => (
-            <label key={o.value} className={`flex items-start gap-3 p-4 rounded-xl border cursor-pointer transition-all ${goal === o.value ? 'border-rose-500/50 bg-rose-500/8' : 'border-white/8 hover:border-white/20'}`}>
+            <label key={o.value} className={`flex items-start gap-3 p-4 rounded-xl border cursor-pointer transition-all ${goal === o.value ? 'border-rose-500/50 bg-rose-500/8' : 'border-gray-200 hover:border-gray-200'}`}>
               <input type="radio" name="goal" value={o.value} checked={goal === o.value} onChange={() => setGoal(o.value)} className="accent-rose-500 mt-0.5" />
               <div>
-                <div className={`text-sm font-semibold ${goal === o.value ? 'text-white' : 'text-slate-300'}`}>{o.label}</div>
-                <div className="text-slate-500 text-xs">{o.sub}</div>
+                <div className={`text-sm font-semibold ${goal === o.value ? 'text-gray-900' : 'text-gray-800'}`}>{o.label}</div>
+                <div className="text-gray-600 text-xs">{o.sub}</div>
               </div>
             </label>
           ))}
@@ -123,11 +123,11 @@ export default function WeightLossSelector() {
       content: (
         <div className="space-y-2">
           {([['beginner', 'Complete Beginner', 'Never used peptides before'], ['some', 'Some Experience', 'Used 1–2 peptides before'], ['advanced', 'Advanced User', 'Multiple cycles, comfortable with protocols']] as [Experience, string, string][]).map(([v, l, s]) => (
-            <label key={v} className={`flex items-start gap-3 p-4 rounded-xl border cursor-pointer transition-all ${exp === v ? 'border-rose-500/50 bg-rose-500/8' : 'border-white/8 hover:border-white/20'}`}>
+            <label key={v} className={`flex items-start gap-3 p-4 rounded-xl border cursor-pointer transition-all ${exp === v ? 'border-rose-500/50 bg-rose-500/8' : 'border-gray-200 hover:border-gray-200'}`}>
               <input type="radio" name="exp" value={v} checked={exp === v} onChange={() => setExp(v)} className="accent-rose-500 mt-0.5" />
               <div>
-                <div className={`text-sm font-semibold ${exp === v ? 'text-white' : 'text-slate-300'}`}>{l}</div>
-                <div className="text-slate-500 text-xs">{s}</div>
+                <div className={`text-sm font-semibold ${exp === v ? 'text-gray-900' : 'text-gray-800'}`}>{l}</div>
+                <div className="text-gray-600 text-xs">{s}</div>
               </div>
             </label>
           ))}
@@ -139,11 +139,11 @@ export default function WeightLossSelector() {
       content: (
         <div className="space-y-2">
           {([['fine', 'No Problem with Injections', 'Comfortable with subcutaneous injections'], ['prefer-avoid', 'Prefer to Avoid Needles', 'Will inject if necessary, but prefer alternatives'], ['no-needles', 'Absolutely No Needles', 'Oral or topical only']] as [NeedleAversion, string, string][]).map(([v, l, s]) => (
-            <label key={v} className={`flex items-start gap-3 p-4 rounded-xl border cursor-pointer transition-all ${needles === v ? 'border-rose-500/50 bg-rose-500/8' : 'border-white/8 hover:border-white/20'}`}>
+            <label key={v} className={`flex items-start gap-3 p-4 rounded-xl border cursor-pointer transition-all ${needles === v ? 'border-rose-500/50 bg-rose-500/8' : 'border-gray-200 hover:border-gray-200'}`}>
               <input type="radio" name="needles" value={v} checked={needles === v} onChange={() => setNeedles(v)} className="accent-rose-500 mt-0.5" />
               <div>
-                <div className={`text-sm font-semibold ${needles === v ? 'text-white' : 'text-slate-300'}`}>{l}</div>
-                <div className="text-slate-500 text-xs">{s}</div>
+                <div className={`text-sm font-semibold ${needles === v ? 'text-gray-900' : 'text-gray-800'}`}>{l}</div>
+                <div className="text-gray-600 text-xs">{s}</div>
               </div>
             </label>
           ))}
@@ -155,11 +155,11 @@ export default function WeightLossSelector() {
       content: (
         <div className="space-y-2">
           {([['under-20', 'Less than 20 lbs', 'Mild recomposition goal'], ['20-50', '20–50 lbs', 'Significant weight loss goal'], ['50-plus', '50+ lbs', 'Major transformation goal']] as [HowMuch, string, string][]).map(([v, l, s]) => (
-            <label key={v} className={`flex items-start gap-3 p-4 rounded-xl border cursor-pointer transition-all ${amount === v ? 'border-rose-500/50 bg-rose-500/8' : 'border-white/8 hover:border-white/20'}`}>
+            <label key={v} className={`flex items-start gap-3 p-4 rounded-xl border cursor-pointer transition-all ${amount === v ? 'border-rose-500/50 bg-rose-500/8' : 'border-gray-200 hover:border-gray-200'}`}>
               <input type="radio" name="amount" value={v} checked={amount === v} onChange={() => setAmount(v)} className="accent-rose-500 mt-0.5" />
               <div>
-                <div className={`text-sm font-semibold ${amount === v ? 'text-white' : 'text-slate-300'}`}>{l}</div>
-                <div className="text-slate-500 text-xs">{s}</div>
+                <div className={`text-sm font-semibold ${amount === v ? 'text-gray-900' : 'text-gray-800'}`}>{l}</div>
+                <div className="text-gray-600 text-xs">{s}</div>
               </div>
             </label>
           ))}
@@ -171,8 +171,8 @@ export default function WeightLossSelector() {
   return (
     <div className="glass-card p-6 md:p-8">
       <div className="mb-6">
-        <h3 className="text-white font-black text-xl mb-1">Weight Loss Peptide Selector</h3>
-        <p className="text-slate-400 text-sm">Answer 4 questions to get your personalized peptide recommendation.</p>
+        <h3 className="text-gray-900 font-black text-xl mb-1">Weight Loss Peptide Selector</h3>
+        <p className="text-gray-600 text-sm">Answer 4 questions to get your personalized peptide recommendation.</p>
         {step < 4 && (
           <div className="flex gap-1.5 mt-4">
             {[0, 1, 2, 3].map((i) => (
@@ -186,7 +186,7 @@ export default function WeightLossSelector() {
         <>
           <div className="mb-2">
             <span className="text-rose-400 text-xs font-bold uppercase tracking-wide">Step {step + 1} of 4</span>
-            <h4 className="text-white font-bold text-lg mt-1">{steps[step].title}</h4>
+            <h4 className="text-gray-900 font-bold text-lg mt-1">{steps[step].title}</h4>
           </div>
           <div className="mb-6">{steps[step].content}</div>
           <div className="flex gap-3">
@@ -210,7 +210,7 @@ export default function WeightLossSelector() {
             <div className="text-rose-400 text-xs font-bold uppercase tracking-wide mb-3">Recommended Peptides</div>
             <ul className="space-y-2">
               {result.peptides.map((p) => (
-                <li key={p} className="flex items-start gap-2 text-sm text-white">
+                <li key={p} className="flex items-start gap-2 text-sm text-gray-900">
                   <CheckCircle className="w-4 h-4 text-rose-400 shrink-0 mt-0.5" />
                   {p}
                 </li>
@@ -226,24 +226,24 @@ export default function WeightLossSelector() {
           )}
 
           <div className="rounded-xl p-4" style={{ background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.08)' }}>
-            <div className="text-slate-400 text-xs font-bold uppercase tracking-wide mb-2">Why This Protocol</div>
-            <p className="text-slate-300 text-sm leading-relaxed">{result.reasoning}</p>
+            <div className="text-gray-600 text-xs font-bold uppercase tracking-wide mb-2">Why This Protocol</div>
+            <p className="text-gray-800 text-sm leading-relaxed">{result.reasoning}</p>
           </div>
 
           <div className="rounded-xl p-4" style={{ background: 'rgba(59,130,246,0.06)', border: '1px solid rgba(59,130,246,0.2)' }}>
             <div className="text-blue-400 text-xs font-bold uppercase tracking-wide mb-2">Sample Protocol</div>
-            <p className="text-slate-300 text-sm leading-relaxed">{result.protocol}</p>
+            <p className="text-gray-800 text-sm leading-relaxed">{result.protocol}</p>
           </div>
 
           <div className="rounded-xl p-4" style={{ background: 'rgba(16,185,129,0.06)', border: '1px solid rgba(16,185,129,0.2)' }}>
             <div className="text-emerald-400 text-xs font-bold uppercase tracking-wide mb-1">Expected Timeline</div>
-            <p className="text-slate-300 text-sm">{result.timeline}</p>
+            <p className="text-gray-800 text-sm">{result.timeline}</p>
           </div>
 
-          <button onClick={() => { setStep(0); setResult(null); }} className="w-full py-2.5 text-sm text-slate-400 border border-white/10 rounded-xl hover:border-white/20 hover:text-white transition-colors">
+          <button onClick={() => { setStep(0); setResult(null); }} className="w-full py-2.5 text-sm text-gray-600 border border-gray-200 rounded-xl hover:border-gray-200 hover:text-gray-900 transition-colors">
             Start Over
           </button>
-          <p className="text-slate-600 text-xs text-center">For informational purposes only. Not medical advice.</p>
+          <p className="text-gray-500 text-xs text-center">For informational purposes only. Not medical advice.</p>
         </div>
       ) : null}
     </div>

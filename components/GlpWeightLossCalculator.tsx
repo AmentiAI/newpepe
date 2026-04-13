@@ -42,7 +42,7 @@ const timelineScaling: Record<Timeline, { minScale: number; maxScale: number; la
 const colorMap: Record<string, { text: string; bg: string; border: string; bar: string; ring: string }> = {
   blue: { text: 'text-blue-400', bg: 'bg-blue-500/10', border: 'border-blue-500/30', bar: 'bg-blue-500', ring: 'ring-blue-500/50' },
   emerald: { text: 'text-emerald-400', bg: 'bg-emerald-500/10', border: 'border-emerald-500/30', bar: 'bg-emerald-500', ring: 'ring-emerald-500/50' },
-  purple: { text: 'text-purple-400', bg: 'bg-purple-500/10', border: 'border-purple-500/30', bar: 'bg-purple-500', ring: 'ring-purple-500/50' },
+  purple: { text: 'text-amber-600', bg: 'bg-purple-500/10', border: 'border-amber-400/30', bar: 'bg-purple-500', ring: 'ring-purple-500/50' },
 };
 
 function roundTo(value: number, decimals: number): number {
@@ -85,14 +85,14 @@ export default function GlpWeightLossCalculator() {
   return (
     <div className="glass-card p-6 sm:p-8">
       <div className="mb-6">
-        <h3 className="text-xl font-black text-white mb-1">GLP-1 Weight Loss Calculator</h3>
-        <p className="text-slate-400 text-sm">Estimate your expected weight loss range based on clinical trial data for each peptide.</p>
+        <h3 className="text-xl font-black text-gray-900 mb-1">GLP-1 Weight Loss Calculator</h3>
+        <p className="text-gray-600 text-sm">Estimate your expected weight loss range based on clinical trial data for each peptide.</p>
       </div>
 
       <div className="space-y-5 mb-6">
         {/* Weight Input */}
         <div>
-          <label className="text-slate-300 text-sm font-semibold mb-2 block">Current Weight</label>
+          <label className="text-gray-800 text-sm font-semibold mb-2 block">Current Weight</label>
           <div className="flex gap-2">
             <input
               type="number"
@@ -100,16 +100,16 @@ export default function GlpWeightLossCalculator() {
               onChange={(e) => { setWeight(e.target.value); setCalculated(false); }}
               min={50}
               max={800}
-              className="flex-1 bg-slate-800/60 border border-white/10 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-white/30 transition-colors"
+              className="flex-1 bg-slate-800/60 border border-gray-200 rounded-xl px-4 py-3 text-gray-900 text-sm focus:outline-none focus:border-gray-200 transition-colors"
               placeholder="Enter weight"
             />
-            <div className="flex rounded-xl overflow-hidden border border-white/10">
+            <div className="flex rounded-xl overflow-hidden border border-gray-200">
               {(['lbs', 'kg'] as Unit[]).map((u) => (
                 <button
                   key={u}
                   onClick={() => { setUnit(u); setCalculated(false); }}
                   className={`px-4 py-3 text-sm font-semibold transition-colors ${
-                    unit === u ? 'bg-slate-600 text-white' : 'bg-slate-800/60 text-slate-400 hover:text-white'
+                    unit === u ? 'bg-slate-600 text-gray-900' : 'bg-slate-800/60 text-gray-600 hover:text-gray-900'
                   }`}
                 >
                   {u}
@@ -121,7 +121,7 @@ export default function GlpWeightLossCalculator() {
 
         {/* Peptide Choice */}
         <div>
-          <label className="text-slate-300 text-sm font-semibold mb-2 block">Peptide Choice</label>
+          <label className="text-gray-800 text-sm font-semibold mb-2 block">Peptide Choice</label>
           <div className="grid grid-cols-3 gap-2">
             {(Object.entries(peptideData) as [Peptide, typeof peptideData.semaglutide][]).map(([key, info]) => {
               const c = colorMap[info.color];
@@ -132,7 +132,7 @@ export default function GlpWeightLossCalculator() {
                   className={`rounded-xl p-3 text-xs font-bold border transition-all text-center ${
                     peptide === key
                       ? `${c.bg} ${c.border} ${c.text} ring-1 ${c.ring}`
-                      : 'bg-slate-800/40 border-white/10 text-slate-400 hover:text-white hover:border-white/20'
+                      : 'bg-slate-800/40 border-gray-200 text-gray-600 hover:text-gray-900 hover:border-gray-200'
                   }`}
                 >
                   <div className="font-black mb-0.5">{info.name}</div>
@@ -145,7 +145,7 @@ export default function GlpWeightLossCalculator() {
 
         {/* Timeline */}
         <div>
-          <label className="text-slate-300 text-sm font-semibold mb-2 block">Timeline</label>
+          <label className="text-gray-800 text-sm font-semibold mb-2 block">Timeline</label>
           <div className="grid grid-cols-3 gap-2">
             {([3, 6, 12] as Timeline[]).map((t) => (
               <button
@@ -154,7 +154,7 @@ export default function GlpWeightLossCalculator() {
                 className={`rounded-xl py-3 text-sm font-bold border transition-all ${
                   timeline === t
                     ? `${colors.bg} ${colors.border} ${colors.text}`
-                    : 'bg-slate-800/40 border-white/10 text-slate-400 hover:text-white hover:border-white/20'
+                    : 'bg-slate-800/40 border-gray-200 text-gray-600 hover:text-gray-900 hover:border-gray-200'
                 }`}
               >
                 {t} months
@@ -169,7 +169,7 @@ export default function GlpWeightLossCalculator() {
           className={`w-full py-4 rounded-xl font-black text-sm transition-all ${
             weightNum > 0
               ? `${colors.bg} ${colors.border} border ${colors.text} hover:opacity-90`
-              : 'bg-slate-800/40 border border-white/5 text-slate-600 cursor-not-allowed'
+              : 'bg-slate-800/40 border border-gray-100 text-gray-500 cursor-not-allowed'
           }`}
         >
           Calculate Expected Results
@@ -183,28 +183,28 @@ export default function GlpWeightLossCalculator() {
             <p className={`text-xs font-bold tracking-widest uppercase ${colors.text} mb-2`}>
               {peptideInfo.name} — {timelineInfo.label}
             </p>
-            <p className="text-xs text-slate-500 mb-4 italic">{peptideInfo.mechanism}</p>
+            <p className="text-xs text-gray-600 mb-4 italic">{peptideInfo.mechanism}</p>
           </div>
 
           <div className="grid grid-cols-2 gap-4">
             <div className="bg-slate-900/50 rounded-xl p-4 text-center">
-              <p className="text-slate-400 text-xs mb-1">Expected Weight Loss</p>
+              <p className="text-gray-600 text-xs mb-1">Expected Weight Loss</p>
               <p className={`text-2xl font-black ${colors.text}`}>{minLossDisplay}</p>
-              <p className="text-slate-500 text-xs">to</p>
+              <p className="text-gray-600 text-xs">to</p>
               <p className={`text-2xl font-black ${colors.text}`}>{maxLossDisplay}</p>
-              <p className="text-slate-500 text-xs mt-1">({lossMinPct}–{lossMaxPct}% of body weight)</p>
+              <p className="text-gray-600 text-xs mt-1">({lossMinPct}–{lossMaxPct}% of body weight)</p>
             </div>
             <div className="bg-slate-900/50 rounded-xl p-4 text-center">
-              <p className="text-slate-400 text-xs mb-1">Projected Final Weight</p>
+              <p className="text-gray-600 text-xs mb-1">Projected Final Weight</p>
               <p className={`text-2xl font-black ${colors.text}`}>{minFinalDisplay}</p>
-              <p className="text-slate-500 text-xs">to</p>
+              <p className="text-gray-600 text-xs">to</p>
               <p className={`text-2xl font-black ${colors.text}`}>{maxFinalDisplay}</p>
-              <p className="text-slate-500 text-xs mt-1">after {timelineInfo.label}</p>
+              <p className="text-gray-600 text-xs mt-1">after {timelineInfo.label}</p>
             </div>
           </div>
 
           <div>
-            <div className="flex justify-between text-xs text-slate-400 mb-1">
+            <div className="flex justify-between text-xs text-gray-600 mb-1">
               <span>Progress indicator</span>
               <span>{lossMinPct}–{lossMaxPct}% body weight</span>
             </div>
@@ -217,13 +217,13 @@ export default function GlpWeightLossCalculator() {
           </div>
 
           <div className="bg-slate-900/40 rounded-xl p-3">
-            <p className="text-slate-400 text-xs font-semibold mb-1">Estimated Cost</p>
-            <p className="text-slate-300 text-xs">{peptideInfo.costNote}</p>
+            <p className="text-gray-600 text-xs font-semibold mb-1">Estimated Cost</p>
+            <p className="text-gray-800 text-xs">{peptideInfo.costNote}</p>
           </div>
 
           <div className="border border-yellow-500/20 bg-yellow-500/5 rounded-xl p-3">
             <p className="text-yellow-400 text-xs font-bold mb-1">Important Disclaimer</p>
-            <p className="text-slate-400 text-xs leading-relaxed">
+            <p className="text-gray-600 text-xs leading-relaxed">
               These estimates are based on clinical trial averages and will vary significantly based on diet, exercise, starting metabolic rate, adherence to protocol, and individual response. Results shown represent what was observed in controlled clinical settings at optimal doses — not guaranteed outcomes. Always consult a healthcare professional before starting any peptide protocol.
             </p>
           </div>

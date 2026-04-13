@@ -137,9 +137,9 @@ export default function AcneTriggerAssessment() {
   return (
     <div className="glass-card p-6 space-y-6">
       <div className="flex items-center justify-between">
-        <h3 className="text-lg font-bold text-slate-100">Acne Protocol Assessment</h3>
+        <h3 className="text-lg font-bold text-gray-900">Acne Protocol Assessment</h3>
         {step > 1 && (
-          <button onClick={reset} className="flex items-center gap-1 text-slate-400 hover:text-slate-200 text-sm transition-colors">
+          <button onClick={reset} className="flex items-center gap-1 text-gray-600 hover:text-gray-900 text-sm transition-colors">
             <RotateCcw className="w-3.5 h-3.5" /> Reset
           </button>
         )}
@@ -147,7 +147,7 @@ export default function AcneTriggerAssessment() {
 
       {/* Progress Bar */}
       <div className="space-y-1">
-        <div className="flex justify-between text-xs text-slate-500">
+        <div className="flex justify-between text-xs text-gray-600">
           <span>Step {step} of {step < 4 ? '3' : '3'}</span>
           <span>{step < 4 ? `${Math.round(progressPct)}% complete` : 'Complete'}</span>
         </div>
@@ -162,7 +162,7 @@ export default function AcneTriggerAssessment() {
       {/* Step 1 */}
       {step === 1 && (
         <div className="space-y-4">
-          <p className="text-slate-300 font-medium">Where does your acne appear most? <span className="text-slate-500 text-sm font-normal">(select all that apply)</span></p>
+          <p className="text-gray-800 font-medium">Where does your acne appear most? <span className="text-gray-600 text-sm font-normal">(select all that apply)</span></p>
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
             {LOCATION_OPTIONS.map((opt) => {
               const selected = locations.includes(opt.value);
@@ -173,7 +173,7 @@ export default function AcneTriggerAssessment() {
                   className={`flex items-center gap-2 p-3 rounded-xl border text-sm font-medium transition-all text-left ${
                     selected
                       ? 'border-rose-500/50 bg-rose-500/10 text-rose-300'
-                      : 'border-slate-700 text-slate-400 hover:border-slate-600'
+                      : 'border-gray-200 text-gray-600 hover:border-gray-300'
                   }`}
                 >
                   {selected && <CheckCircle className="w-4 h-4 text-rose-400 flex-shrink-0" />}
@@ -195,7 +195,7 @@ export default function AcneTriggerAssessment() {
       {/* Step 2 */}
       {step === 2 && (
         <div className="space-y-4">
-          <p className="text-slate-300 font-medium">What type of acne do you primarily get?</p>
+          <p className="text-gray-800 font-medium">What type of acne do you primarily get?</p>
           <div className="space-y-2">
             {ACNE_TYPE_OPTIONS.map((opt) => (
               <button
@@ -204,14 +204,14 @@ export default function AcneTriggerAssessment() {
                 className={`w-full flex items-center justify-between p-3 rounded-xl border text-left transition-all ${
                   acneType === opt.value
                     ? 'border-rose-500/50 bg-rose-500/10 text-rose-300'
-                    : 'border-slate-700 text-slate-300 hover:border-slate-600 hover:bg-slate-800/50'
+                    : 'border-gray-200 text-gray-800 hover:border-gray-300 hover:bg-gray-50'
                 }`}
               >
                 <div>
                   <span className="font-medium">{opt.label}</span>
-                  <p className="text-slate-500 text-xs mt-0.5">{opt.desc}</p>
+                  <p className="text-gray-600 text-xs mt-0.5">{opt.desc}</p>
                 </div>
-                <ArrowRight className="w-4 h-4 text-slate-500 flex-shrink-0" />
+                <ArrowRight className="w-4 h-4 text-gray-600 flex-shrink-0" />
               </button>
             ))}
           </div>
@@ -221,7 +221,7 @@ export default function AcneTriggerAssessment() {
       {/* Step 3 */}
       {step === 3 && (
         <div className="space-y-4">
-          <p className="text-slate-300 font-medium">Do you have gut issues? (bloating, IBS, irregular digestion)</p>
+          <p className="text-gray-800 font-medium">Do you have gut issues? (bloating, IBS, irregular digestion)</p>
           <div className="space-y-2">
             {GUT_OPTIONS.map((opt) => (
               <button
@@ -230,11 +230,11 @@ export default function AcneTriggerAssessment() {
                 className={`w-full flex items-center justify-between p-3 rounded-xl border text-left transition-all ${
                   gutStatus === opt.value
                     ? 'border-emerald-500/50 bg-emerald-500/10 text-emerald-300'
-                    : 'border-slate-700 text-slate-300 hover:border-slate-600 hover:bg-slate-800/50'
+                    : 'border-gray-200 text-gray-800 hover:border-gray-300 hover:bg-gray-50'
                 }`}
               >
                 <span className="font-medium">{opt.label}</span>
-                <ArrowRight className="w-4 h-4 text-slate-500 flex-shrink-0" />
+                <ArrowRight className="w-4 h-4 text-gray-600 flex-shrink-0" />
               </button>
             ))}
           </div>
@@ -249,24 +249,24 @@ export default function AcneTriggerAssessment() {
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <div className="bg-slate-800/60 border border-slate-700/50 rounded-xl p-4 space-y-2">
-              <span className="text-xs text-slate-500 uppercase tracking-wide">Primary Peptide</span>
-              <p className="text-slate-100 font-semibold">{protocol.primaryPeptide}</p>
+            <div className="bg-slate-800/60 border border-gray-200/50 rounded-xl p-4 space-y-2">
+              <span className="text-xs text-gray-600 uppercase tracking-wide">Primary Peptide</span>
+              <p className="text-gray-900 font-semibold">{protocol.primaryPeptide}</p>
               <p className="text-rose-300 text-sm">{protocol.primaryDose} — {protocol.primaryFrequency}</p>
             </div>
-            <div className="bg-slate-800/60 border border-slate-700/50 rounded-xl p-4 space-y-2">
-              <span className="text-xs text-slate-500 uppercase tracking-wide">Secondary Peptide</span>
-              <p className="text-slate-100 font-semibold">{protocol.secondaryPeptide}</p>
+            <div className="bg-slate-800/60 border border-gray-200/50 rounded-xl p-4 space-y-2">
+              <span className="text-xs text-gray-600 uppercase tracking-wide">Secondary Peptide</span>
+              <p className="text-gray-900 font-semibold">{protocol.secondaryPeptide}</p>
               <p className="text-purple-300 text-sm">{protocol.secondaryDose}</p>
             </div>
           </div>
 
           {protocol.optionalAddOns.length > 0 && (
             <div>
-              <span className="text-xs text-slate-500 uppercase tracking-wide">Optional Add-Ons</span>
+              <span className="text-xs text-gray-600 uppercase tracking-wide">Optional Add-Ons</span>
               <ul className="mt-2 space-y-1">
                 {protocol.optionalAddOns.map((item) => (
-                  <li key={item} className="flex items-start gap-2 text-slate-300 text-sm">
+                  <li key={item} className="flex items-start gap-2 text-gray-800 text-sm">
                     <CheckCircle className="w-4 h-4 text-emerald-400 mt-0.5 flex-shrink-0" />
                     {item}
                   </li>
@@ -276,10 +276,10 @@ export default function AcneTriggerAssessment() {
           )}
 
           <div>
-            <span className="text-xs text-slate-500 uppercase tracking-wide">Lifestyle Interventions</span>
+            <span className="text-xs text-gray-600 uppercase tracking-wide">Lifestyle Interventions</span>
             <ul className="mt-2 space-y-1">
               {protocol.lifestyle.map((item) => (
-                <li key={item} className="flex items-start gap-2 text-slate-300 text-sm">
+                <li key={item} className="flex items-start gap-2 text-gray-800 text-sm">
                   <CheckCircle className="w-4 h-4 text-amber-400 mt-0.5 flex-shrink-0" />
                   {item}
                 </li>
@@ -289,16 +289,16 @@ export default function AcneTriggerAssessment() {
 
           <div className="border border-amber-500/30 bg-amber-500/5 rounded-xl p-4">
             <span className="text-xs text-amber-400 uppercase tracking-wide font-semibold">Expected Timeline</span>
-            <p className="text-slate-300 text-sm mt-1">{protocol.timeline}</p>
+            <p className="text-gray-800 text-sm mt-1">{protocol.timeline}</p>
           </div>
 
-          <button onClick={reset} className="w-full py-2.5 rounded-xl border border-slate-700 text-slate-400 text-sm hover:border-slate-600 hover:text-slate-300 transition-colors flex items-center justify-center gap-2">
+          <button onClick={reset} className="w-full py-2.5 rounded-xl border border-gray-200 text-gray-600 text-sm hover:border-gray-300 hover:text-gray-800 transition-colors flex items-center justify-center gap-2">
             <RotateCcw className="w-3.5 h-3.5" /> Start Over
           </button>
         </div>
       )}
 
-      <p className="text-slate-500 text-xs text-center">For research purposes only. Consult a qualified physician before use.</p>
+      <p className="text-gray-600 text-xs text-center">For research purposes only. Consult a qualified physician before use.</p>
     </div>
   );
 }

@@ -202,24 +202,24 @@ export default function StackQuiz() {
             <CheckCircle className={`w-3 h-3 ${result.textColor}`} />
             <span className={result.textColor}>Your Recommended Stack</span>
           </div>
-          <h3 className="text-white font-black text-2xl mb-1">{result.name}</h3>
+          <h3 className="text-gray-900 font-black text-2xl mb-1">{result.name}</h3>
           <p className={`${result.textColor} text-sm font-semibold mb-4`}>{result.tagline}</p>
         </div>
 
         <div className="rounded-xl p-4 mb-5"
           style={{ background: colorMap[result.color], border: `1px solid ${borderMap[result.color]}` }}>
           <p className={`${result.textColor} text-xs font-bold uppercase tracking-wide mb-2`}>Why this stack for you</p>
-          <p className="text-slate-300 text-sm leading-relaxed">{result.why}</p>
+          <p className="text-gray-800 text-sm leading-relaxed">{result.why}</p>
         </div>
 
         <div className="flex items-center justify-between mb-6 px-1">
           <div>
-            <div className="text-xs text-slate-500 mb-0.5">Estimated monthly cost</div>
-            <div className="text-white font-bold text-sm">{result.estimatedCost}</div>
+            <div className="text-xs text-gray-600 mb-0.5">Estimated monthly cost</div>
+            <div className="text-gray-900 font-bold text-sm">{result.estimatedCost}</div>
           </div>
           <div className="text-right">
-            <div className="text-xs text-slate-500 mb-0.5">Answers given</div>
-            <div className="text-white font-bold text-sm">{Object.keys(answers).length}/{QUESTIONS.length}</div>
+            <div className="text-xs text-gray-600 mb-0.5">Answers given</div>
+            <div className="text-gray-900 font-bold text-sm">{Object.keys(answers).length}/{QUESTIONS.length}</div>
           </div>
         </div>
 
@@ -241,7 +241,7 @@ export default function StackQuiz() {
           </a>
         </div>
 
-        <button onClick={reset} className="w-full mt-3 text-slate-500 text-xs hover:text-slate-400 py-2 transition-colors">
+        <button onClick={reset} className="w-full mt-3 text-gray-600 text-xs hover:text-gray-600 py-2 transition-colors">
           Start over — retake quiz
         </button>
       </div>
@@ -251,10 +251,10 @@ export default function StackQuiz() {
   return (
     <div className="glass-card p-6 md:p-8">
       <div className="flex items-center justify-between mb-2">
-        <h3 className="text-white font-black text-lg">Stack Finder Quiz</h3>
-        <span className="text-xs text-slate-500">Question {currentQ + 1} of {QUESTIONS.length}</span>
+        <h3 className="text-gray-900 font-black text-lg">Stack Finder Quiz</h3>
+        <span className="text-xs text-gray-600">Question {currentQ + 1} of {QUESTIONS.length}</span>
       </div>
-      <p className="text-slate-400 text-sm mb-5">Answer 5 quick questions to find your ideal peptide stack.</p>
+      <p className="text-gray-600 text-sm mb-5">Answer 5 quick questions to find your ideal peptide stack.</p>
 
       {/* Progress */}
       <div className="w-full h-1.5 rounded-full mb-6" style={{ background: 'rgba(255,255,255,0.06)' }}>
@@ -264,14 +264,14 @@ export default function StackQuiz() {
         />
       </div>
 
-      <p className="text-white font-bold text-base mb-5">{question.question}</p>
+      <p className="text-gray-900 font-bold text-base mb-5">{question.question}</p>
 
       <div className="space-y-2.5">
         {question.options.map((opt) => (
           <button
             key={opt.value}
             onClick={() => handleAnswer(opt.value)}
-            className="w-full text-left px-5 py-4 rounded-xl text-sm font-semibold text-slate-300 transition-all hover:text-white border border-white/8 hover:border-neon-green/30"
+            className="w-full text-left px-5 py-4 rounded-xl text-sm font-semibold text-gray-800 transition-all hover:text-gray-900 border border-gray-200 hover:border-neon-green/30"
             style={{ background: 'rgba(255,255,255,0.03)' }}
             onMouseEnter={e => (e.currentTarget.style.background = 'rgba(0,255,136,0.05)')}
             onMouseLeave={e => (e.currentTarget.style.background = 'rgba(255,255,255,0.03)')}
@@ -285,7 +285,7 @@ export default function StackQuiz() {
       {currentQ > 0 && (
         <button
           onClick={() => setCurrentQ((p) => p - 1)}
-          className="mt-4 flex items-center gap-1.5 text-slate-500 hover:text-slate-400 text-xs transition-colors"
+          className="mt-4 flex items-center gap-1.5 text-gray-600 hover:text-gray-600 text-xs transition-colors"
         >
           <ChevronLeft className="w-3 h-3" /> Back to previous question
         </button>

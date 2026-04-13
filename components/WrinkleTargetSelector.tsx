@@ -209,10 +209,10 @@ export default function WrinkleTargetSelector() {
   const rec = selectedZone ? recommendations[selectedZone][severity] : null;
 
   return (
-    <div className="rounded-xl bg-dark-800/60 border border-white/10 overflow-hidden">
-      <div className="p-5 border-b border-white/10">
-        <h3 className="text-xl font-bold text-white mb-1">Wrinkle Zone Selector</h3>
-        <p className="text-slate-400 text-sm">Click a zone on the face diagram to get a targeted SNAP-8 protocol.</p>
+    <div className="rounded-xl bg-white border border-gray-200 border border-gray-200 overflow-hidden">
+      <div className="p-5 border-b border-gray-200">
+        <h3 className="text-xl font-bold text-gray-900 mb-1">Wrinkle Zone Selector</h3>
+        <p className="text-gray-600 text-sm">Click a zone on the face diagram to get a targeted SNAP-8 protocol.</p>
       </div>
 
       <div className="grid md:grid-cols-2 gap-0 divide-y md:divide-y-0 md:divide-x divide-white/10">
@@ -244,8 +244,8 @@ export default function WrinkleTargetSelector() {
                 onClick={() => setSelectedZone(prev => prev === zone.id ? null : zone.id)}
                 className={`absolute rounded transition-all duration-200 flex items-center justify-center text-xs font-semibold ${
                   selectedZone === zone.id
-                    ? 'bg-indigo-500/50 border-2 border-indigo-400 text-white'
-                    : 'bg-white/5 border border-white/20 text-slate-400 hover:bg-indigo-500/20 hover:border-indigo-400/50 hover:text-white'
+                    ? 'bg-indigo-500/50 border-2 border-indigo-400 text-gray-900'
+                    : 'bg-white/5 border border-gray-200 text-gray-600 hover:bg-indigo-500/20 hover:border-indigo-400/50 hover:text-gray-900'
                 }`}
                 style={{ top: zone.top, left: zone.left, width: zone.w, height: zone.h }}
                 aria-label={`Select ${zone.label} zone`}
@@ -255,14 +255,14 @@ export default function WrinkleTargetSelector() {
             ))}
           </div>
 
-          <p className="text-xs text-slate-500 text-center mt-4">
+          <p className="text-xs text-gray-600 text-center mt-4">
             Click any highlighted zone to see the targeted protocol
           </p>
 
           {/* Severity Selector */}
           {selectedZone && (
             <div className="mt-5 w-full">
-              <p className="text-xs text-slate-400 mb-2 text-center">Severity Assessment</p>
+              <p className="text-xs text-gray-600 mb-2 text-center">Severity Assessment</p>
               <div className="flex gap-2">
                 {([1, 2, 3] as Severity[]).map((s) => (
                   <button
@@ -271,7 +271,7 @@ export default function WrinkleTargetSelector() {
                     className={`flex-1 py-2 rounded-lg text-xs font-semibold border transition-all ${
                       severity === s
                         ? `${severityLabels[s].bg} ${severityLabels[s].color} border-current`
-                        : 'bg-dark-700/40 text-slate-500 border-white/10 hover:border-white/20'
+                        : 'bg-gray-50 text-gray-600 border-gray-200 hover:border-gray-200'
                     }`}
                   >
                     {severityLabels[s].label}
@@ -287,50 +287,50 @@ export default function WrinkleTargetSelector() {
           {!selectedZone ? (
             <div className="h-full flex flex-col items-center justify-center text-center py-12">
               <div className="text-4xl mb-4">👆</div>
-              <p className="text-slate-400 text-sm">Select a zone on the face diagram to see your personalized SNAP-8 protocol and application technique.</p>
+              <p className="text-gray-600 text-sm">Select a zone on the face diagram to see your personalized SNAP-8 protocol and application technique.</p>
             </div>
           ) : (
             <div className="space-y-4">
               <div>
                 <div className="flex items-center gap-2 mb-1">
-                  <h4 className="font-bold text-white">{zoneData?.label}</h4>
+                  <h4 className="font-bold text-gray-900">{zoneData?.label}</h4>
                   <span className={`text-xs px-2 py-0.5 rounded-full ${severityLabels[severity].bg} ${severityLabels[severity].color}`}>
                     {severityLabels[severity].label}
                   </span>
                 </div>
                 <p className="text-xs text-indigo-400 mb-2">{zoneData?.wrinkleType}</p>
-                <p className="text-xs text-slate-400 leading-relaxed">{zoneData?.description}</p>
+                <p className="text-xs text-gray-600 leading-relaxed">{zoneData?.description}</p>
               </div>
 
               {rec && (
                 <>
                   <div className="bg-indigo-900/20 border border-indigo-500/30 rounded-xl p-4">
                     <p className="text-xs text-indigo-400 font-semibold uppercase tracking-wider mb-2">Recommended Concentration</p>
-                    <p className="text-2xl font-bold text-white">{rec.concentration}</p>
-                    <p className="text-xs text-slate-400 mt-1">SNAP-8 in serum/gel base</p>
+                    <p className="text-2xl font-bold text-gray-900">{rec.concentration}</p>
+                    <p className="text-xs text-gray-600 mt-1">SNAP-8 in serum/gel base</p>
                   </div>
 
-                  <div className="bg-dark-700/40 border border-white/5 rounded-xl p-4">
-                    <p className="text-xs text-slate-500 uppercase tracking-wider mb-2">Application Technique</p>
-                    <p className="text-xs text-slate-300 leading-relaxed">{rec.technique}</p>
+                  <div className="bg-gray-50 border border-gray-100 rounded-xl p-4">
+                    <p className="text-xs text-gray-600 uppercase tracking-wider mb-2">Application Technique</p>
+                    <p className="text-xs text-gray-800 leading-relaxed">{rec.technique}</p>
                   </div>
 
-                  <div className="bg-dark-700/40 border border-white/5 rounded-xl p-4">
-                    <p className="text-xs text-slate-500 uppercase tracking-wider mb-2">Expected Timeline</p>
-                    <p className="text-xs text-slate-300">{rec.weeksToResult}</p>
+                  <div className="bg-gray-50 border border-gray-100 rounded-xl p-4">
+                    <p className="text-xs text-gray-600 uppercase tracking-wider mb-2">Expected Timeline</p>
+                    <p className="text-xs text-gray-800">{rec.weeksToResult}</p>
                   </div>
 
                   {rec.combineWith && (
                     <div className="bg-emerald-900/20 border border-emerald-500/20 rounded-xl p-4">
                       <p className="text-xs text-emerald-400 uppercase tracking-wider mb-2">Combine With</p>
-                      <p className="text-xs text-slate-300">{rec.combineWith}</p>
+                      <p className="text-xs text-gray-800">{rec.combineWith}</p>
                     </div>
                   )}
 
                   {rec.note && (
                     <div className="bg-amber-900/20 border border-amber-500/30 rounded-xl p-4">
                       <p className="text-xs text-amber-400 uppercase tracking-wider mb-2">⚠ Note for Severe Lines</p>
-                      <p className="text-xs text-slate-300 leading-relaxed">{rec.note}</p>
+                      <p className="text-xs text-gray-800 leading-relaxed">{rec.note}</p>
                     </div>
                   )}
                 </>
@@ -341,7 +341,7 @@ export default function WrinkleTargetSelector() {
       </div>
 
       <div className="px-5 pb-4">
-        <p className="text-xs text-slate-600 text-center">
+        <p className="text-xs text-gray-500 text-center">
           For research purposes only. Not medical advice.
         </p>
       </div>

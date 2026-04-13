@@ -200,9 +200,9 @@ export default function InjuryAssessment() {
         <div className="flex items-center justify-between mb-5 flex-wrap gap-3">
           <div>
             <div className="text-xs font-bold tracking-widest mb-1" style={{ color: result.stackColor }}>RECOMMENDED PROTOCOL</div>
-            <h4 className="text-white font-black text-lg">{result.stack}</h4>
+            <h4 className="text-gray-900 font-black text-lg">{result.stack}</h4>
           </div>
-          <button onClick={reset} className="flex items-center gap-1.5 text-slate-400 text-sm hover:text-white transition-colors">
+          <button onClick={reset} className="flex items-center gap-1.5 text-gray-600 text-sm hover:text-gray-900 transition-colors">
             <RotateCcw className="w-3.5 h-3.5" /> Reassess
           </button>
         </div>
@@ -210,21 +210,21 @@ export default function InjuryAssessment() {
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-4">
           <div className="rounded-xl p-4" style={{ background: 'rgba(16,185,129,0.06)', border: '1px solid rgba(16,185,129,0.2)' }}>
             <div className="text-emerald-400 text-xs font-bold tracking-widest mb-1">BPC-157</div>
-            <div className="text-white text-sm font-semibold">{result.bpc157}</div>
+            <div className="text-gray-900 text-sm font-semibold">{result.bpc157}</div>
           </div>
           {result.tb500 && (
             <div className="rounded-xl p-4" style={{ background: 'rgba(59,130,246,0.06)', border: '1px solid rgba(59,130,246,0.2)' }}>
               <div className="text-blue-400 text-xs font-bold tracking-widest mb-1">TB-500</div>
-              <div className="text-white text-sm font-semibold">{result.tb500}</div>
+              <div className="text-gray-900 text-sm font-semibold">{result.tb500}</div>
             </div>
           )}
           <div className="rounded-xl p-4" style={{ background: 'rgba(245,158,11,0.06)', border: '1px solid rgba(245,158,11,0.2)' }}>
             <div className="text-amber-400 text-xs font-bold tracking-widest mb-1">EXPECTED TIMELINE</div>
-            <div className="text-white text-sm font-semibold">{result.timeline}</div>
+            <div className="text-gray-900 text-sm font-semibold">{result.timeline}</div>
           </div>
           <div className="rounded-xl p-4" style={{ background: 'rgba(168,85,247,0.06)', border: '1px solid rgba(168,85,247,0.2)' }}>
             <div className="text-purple-400 text-xs font-bold tracking-widest mb-1">INJECTION ROUTE</div>
-            <div className="text-white text-sm font-semibold">{result.injectionRoute}</div>
+            <div className="text-gray-900 text-sm font-semibold">{result.injectionRoute}</div>
           </div>
         </div>
 
@@ -233,7 +233,7 @@ export default function InjuryAssessment() {
             <div className="text-xs font-bold tracking-widest mb-2" style={{ color: '#00ff88' }}>OPTIONAL ADDITIONS</div>
             <ul className="space-y-1">
               {result.additionalPeptides.map((add, i) => (
-                <li key={i} className="text-slate-300 text-sm flex items-start gap-2">
+                <li key={i} className="text-gray-800 text-sm flex items-start gap-2">
                   <span style={{ color: '#00ff88' }} className="mt-0.5 shrink-0">+</span>{add}
                 </li>
               ))}
@@ -242,17 +242,17 @@ export default function InjuryAssessment() {
         )}
 
         <div>
-          <div className="text-slate-400 text-xs font-bold tracking-widest mb-3">PROTOCOL NOTES</div>
+          <div className="text-gray-600 text-xs font-bold tracking-widest mb-3">PROTOCOL NOTES</div>
           <ul className="space-y-2">
             {result.notes.map((note, i) => (
-              <li key={i} className="flex items-start gap-2 text-slate-300 text-sm">
+              <li key={i} className="flex items-start gap-2 text-gray-800 text-sm">
                 <CheckCircle className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />{note}
               </li>
             ))}
           </ul>
         </div>
 
-        <p className="text-slate-600 text-xs border-t border-slate-800 pt-3 mt-4">
+        <p className="text-gray-500 text-xs border-t border-slate-800 pt-3 mt-4">
           For research purposes only. Consult a qualified healthcare provider before use.
         </p>
       </div>
@@ -283,8 +283,8 @@ export default function InjuryAssessment() {
           <span style={{ color: '#00ff88' }} className="text-sm font-black">IA</span>
         </div>
         <div>
-          <h3 className="text-white font-black text-lg">Injury Assessment Tool</h3>
-          <p className="text-slate-400 text-xs">Answer 4 questions to get your recommended peptide protocol</p>
+          <h3 className="text-gray-900 font-black text-lg">Injury Assessment Tool</h3>
+          <p className="text-gray-600 text-xs">Answer 4 questions to get your recommended peptide protocol</p>
         </div>
       </div>
 
@@ -303,7 +303,7 @@ export default function InjuryAssessment() {
 
       <div className="mb-2">
         <div className="text-xs font-bold tracking-widest mb-1" style={{ color: '#00ff88' }}>STEP {step + 1} OF 4</div>
-        <div className="text-white font-bold text-base mb-4">{['Where is your injury?', 'What type of injury?', 'How long have you had it?', 'What is the severity?'][step]}</div>
+        <div className="text-gray-900 font-bold text-base mb-4">{['Where is your injury?', 'What type of injury?', 'How long have you had it?', 'What is the severity?'][step]}</div>
       </div>
 
       <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 mb-5">
@@ -330,7 +330,7 @@ export default function InjuryAssessment() {
         {step > 0 && (
           <button
             onClick={() => setStep(step - 1)}
-            className="px-4 py-2.5 rounded-lg text-sm text-slate-400 hover:text-white transition-colors"
+            className="px-4 py-2.5 rounded-lg text-sm text-gray-600 hover:text-gray-900 transition-colors"
             style={{ border: '1px solid rgba(255,255,255,0.08)' }}
           >
             Back

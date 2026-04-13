@@ -78,7 +78,7 @@ export default function AnxietyProfileWidget() {
 
   return (
     <div className="space-y-5">
-      <p className="text-slate-400 text-sm">Select all symptoms you regularly experience to see which of BPC-157's mechanisms are most relevant to you:</p>
+      <p className="text-gray-600 text-sm">Select all symptoms you regularly experience to see which of BPC-157's mechanisms are most relevant to you:</p>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
         {symptoms.map((s) => {
           const isChecked = checked.has(s.id);
@@ -88,14 +88,14 @@ export default function AnxietyProfileWidget() {
               onClick={() => toggle(s.id)}
               className={`flex items-center gap-3 p-4 rounded-xl border text-left transition-all duration-150 ${
                 isChecked
-                  ? 'border-indigo-500/60 bg-indigo-500/15 text-white'
-                  : 'border-white/10 bg-white/3 text-slate-400 hover:border-white/20'
+                  ? 'border-indigo-500/60 bg-indigo-500/15 text-gray-900'
+                  : 'border-gray-200 bg-white/3 text-gray-600 hover:border-gray-200'
               }`}
             >
               {isChecked ? (
                 <CheckSquare className="w-5 h-5 text-indigo-400 shrink-0" />
               ) : (
-                <Square className="w-5 h-5 text-slate-600 shrink-0" />
+                <Square className="w-5 h-5 text-gray-500 shrink-0" />
               )}
               <div>
                 <span className="text-sm font-medium block">{s.label}</span>
@@ -133,16 +133,16 @@ export default function AnxietyProfileWidget() {
                   <div
                     key={m.name}
                     className={`flex items-start gap-3 p-3 rounded-lg transition-all ${
-                      isRelevant ? 'bg-white/5 border border-white/10' : 'opacity-30'
+                      isRelevant ? 'bg-white/5 border border-gray-200' : 'opacity-30'
                     }`}
                   >
                     <div className={`w-2 h-2 rounded-full mt-1.5 shrink-0 ${isRelevant ? 'bg-current ' + m.color : 'bg-slate-700'}`} />
                     <div>
-                      <span className={`text-sm font-bold ${isRelevant ? m.color : 'text-slate-600'}`}>
+                      <span className={`text-sm font-bold ${isRelevant ? m.color : 'text-gray-500'}`}>
                         {m.name}
-                        {isRelevant && <span className="text-xs font-normal text-slate-500 ml-2">— active in your profile</span>}
+                        {isRelevant && <span className="text-xs font-normal text-gray-600 ml-2">— active in your profile</span>}
                       </span>
-                      {isRelevant && <p className="text-slate-400 text-xs leading-relaxed mt-1">{m.desc}</p>}
+                      {isRelevant && <p className="text-gray-600 text-xs leading-relaxed mt-1">{m.desc}</p>}
                     </div>
                   </div>
                 );
@@ -157,21 +157,21 @@ export default function AnxietyProfileWidget() {
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-4">
               <div>
-                <p className="text-slate-500 text-xs mb-1">Recommended Route</p>
+                <p className="text-gray-600 text-xs mb-1">Recommended Route</p>
                 <p className="text-indigo-400 font-bold text-sm">{protocol.route}</p>
               </div>
               <div>
-                <p className="text-slate-500 text-xs mb-1">Dose</p>
-                <p className="text-white font-mono text-sm">{protocol.dose}</p>
+                <p className="text-gray-600 text-xs mb-1">Dose</p>
+                <p className="text-gray-900 font-mono text-sm">{protocol.dose}</p>
               </div>
               <div>
-                <p className="text-slate-500 text-xs mb-1">Timeline</p>
-                <p className="text-white text-sm">{protocol.timeline}</p>
+                <p className="text-gray-600 text-xs mb-1">Timeline</p>
+                <p className="text-gray-900 text-sm">{protocol.timeline}</p>
               </div>
             </div>
-            <div className="border-t border-white/10 pt-4">
-              <p className="text-slate-500 text-xs font-semibold mb-1">WHY THIS PROTOCOL</p>
-              <p className="text-slate-300 text-sm leading-relaxed">{protocol.rationale}</p>
+            <div className="border-t border-gray-200 pt-4">
+              <p className="text-gray-600 text-xs font-semibold mb-1">WHY THIS PROTOCOL</p>
+              <p className="text-gray-800 text-sm leading-relaxed">{protocol.rationale}</p>
             </div>
           </div>
         </div>

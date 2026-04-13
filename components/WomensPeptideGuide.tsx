@@ -239,43 +239,43 @@ export default function WomensPeptideGuide() {
   return (
     <div className="glass-card p-6 md:p-8">
       <div className="mb-6">
-        <h3 className="text-white font-black text-xl mb-1">Women's Peptide Safety Guide</h3>
-        <p className="text-slate-400 text-sm">Select your primary goal and age range for personalized recommendations with women-specific dosing and safety notes.</p>
+        <h3 className="text-gray-900 font-black text-xl mb-1">Women's Peptide Safety Guide</h3>
+        <p className="text-gray-600 text-sm">Select your primary goal and age range for personalized recommendations with women-specific dosing and safety notes.</p>
       </div>
 
       <div className="mb-5">
-        <label className="block text-slate-400 text-xs font-bold uppercase tracking-wide mb-3">Primary Goal</label>
+        <label className="block text-gray-600 text-xs font-bold uppercase tracking-wide mb-3">Primary Goal</label>
         <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
           {goalOptions.map((o) => (
             <button
               key={o.value}
               onClick={() => setGoal(o.value)}
-              className={`p-3 rounded-xl border text-left transition-all ${goal === o.value ? 'border-purple-500/50 bg-purple-500/10' : 'border-white/8 hover:border-white/20'}`}
+              className={`p-3 rounded-xl border text-left transition-all ${goal === o.value ? 'border-purple-500/50 bg-purple-500/10' : 'border-gray-200 hover:border-gray-200'}`}
             >
               <div className="text-xl mb-1">{o.emoji}</div>
-              <div className={`text-xs font-semibold ${goal === o.value ? 'text-white' : 'text-slate-400'}`}>{o.label}</div>
+              <div className={`text-xs font-semibold ${goal === o.value ? 'text-gray-900' : 'text-gray-600'}`}>{o.label}</div>
             </button>
           ))}
         </div>
       </div>
 
       <div className="mb-6">
-        <label className="block text-slate-400 text-xs font-bold uppercase tracking-wide mb-3">Age Range</label>
+        <label className="block text-gray-600 text-xs font-bold uppercase tracking-wide mb-3">Age Range</label>
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
           {ageOptions.map((o) => (
             <button
               key={o.value}
               onClick={() => setAge(o.value)}
-              className={`p-3 rounded-xl border text-center transition-all ${age === o.value ? 'border-purple-500/50 bg-purple-500/10' : 'border-white/8 hover:border-white/20'}`}
+              className={`p-3 rounded-xl border text-center transition-all ${age === o.value ? 'border-purple-500/50 bg-purple-500/10' : 'border-gray-200 hover:border-gray-200'}`}
             >
-              <div className={`text-sm font-semibold ${age === o.value ? 'text-white' : 'text-slate-400'}`}>{o.label}</div>
+              <div className={`text-sm font-semibold ${age === o.value ? 'text-gray-900' : 'text-gray-600'}`}>{o.label}</div>
             </button>
           ))}
         </div>
       </div>
 
       {result ? (
-        <div className="space-y-4 border-t border-white/8 pt-6">
+        <div className="space-y-4 border-t border-gray-200 pt-6">
           <div className="rounded-xl p-4" style={{ background: 'rgba(168,85,247,0.06)', border: '1px solid rgba(168,85,247,0.2)' }}>
             <div className="text-purple-400 text-xs font-bold uppercase tracking-wide mb-3">Recommended Peptides</div>
             <div className="space-y-3">
@@ -283,9 +283,9 @@ export default function WomensPeptideGuide() {
                 <div key={p.name} className="flex items-start gap-3">
                   <CheckCircle className="w-4 h-4 text-purple-400 shrink-0 mt-1" />
                   <div>
-                    <div className="text-white font-semibold text-sm">{p.name}</div>
-                    <div className="text-slate-400 text-xs">{p.dose}</div>
-                    <div className="text-slate-500 text-xs mt-0.5 italic">{p.note}</div>
+                    <div className="text-gray-900 font-semibold text-sm">{p.name}</div>
+                    <div className="text-gray-600 text-xs">{p.dose}</div>
+                    <div className="text-gray-600 text-xs mt-0.5 italic">{p.note}</div>
                   </div>
                 </div>
               ))}
@@ -293,15 +293,15 @@ export default function WomensPeptideGuide() {
           </div>
 
           <div className="rounded-xl p-4" style={{ background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.08)' }}>
-            <div className="text-slate-400 text-xs font-bold uppercase tracking-wide mb-2">Why This Protocol</div>
-            <p className="text-slate-300 text-sm leading-relaxed">{result.rationale}</p>
+            <div className="text-gray-600 text-xs font-bold uppercase tracking-wide mb-2">Why This Protocol</div>
+            <p className="text-gray-800 text-sm leading-relaxed">{result.rationale}</p>
           </div>
 
           <div className="rounded-xl p-4" style={{ background: 'rgba(16,185,129,0.06)', border: '1px solid rgba(16,185,129,0.2)' }}>
             <div className="text-emerald-400 text-xs font-bold uppercase tracking-wide mb-2">Safety Notes</div>
             <ul className="space-y-1.5">
               {result.safetyNotes.map((n) => (
-                <li key={n} className="flex items-start gap-2 text-sm text-slate-300">
+                <li key={n} className="flex items-start gap-2 text-sm text-gray-800">
                   <span className="text-emerald-400 shrink-0 mt-0.5">✓</span>
                   {n}
                 </li>
@@ -313,16 +313,16 @@ export default function WomensPeptideGuide() {
             <div className="text-blue-400 text-xs font-bold uppercase tracking-wide mb-2">What to Monitor</div>
             <ul className="space-y-1">
               {result.monitor.map((m) => (
-                <li key={m} className="text-slate-300 text-sm">• {m}</li>
+                <li key={m} className="text-gray-800 text-sm">• {m}</li>
               ))}
             </ul>
           </div>
 
-          <p className="text-slate-600 text-xs text-center">For informational purposes only. Not medical advice. Consult a healthcare provider before starting any peptide protocol.</p>
+          <p className="text-gray-500 text-xs text-center">For informational purposes only. Not medical advice. Consult a healthcare provider before starting any peptide protocol.</p>
         </div>
       ) : (
         <div className="rounded-xl p-6 text-center" style={{ background: 'rgba(255,255,255,0.02)', border: '1px solid rgba(255,255,255,0.06)' }}>
-          <p className="text-slate-500 text-sm">Select your goal and age range above to see personalized recommendations.</p>
+          <p className="text-gray-600 text-sm">Select your goal and age range above to see personalized recommendations.</p>
         </div>
       )}
     </div>

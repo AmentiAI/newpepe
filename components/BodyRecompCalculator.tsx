@@ -85,40 +85,40 @@ export default function BodyRecompCalculator() {
   return (
     <div className="glass-card p-6 md:p-8">
       <div className="mb-6">
-        <h3 className="text-white font-black text-xl mb-1">Body Recomp Goal Calculator</h3>
-        <p className="text-slate-400 text-sm">Enter your stats to get a personalized peptide protocol and realistic timeline.</p>
+        <h3 className="text-gray-900 font-black text-xl mb-1">Body Recomp Goal Calculator</h3>
+        <p className="text-gray-600 text-sm">Enter your stats to get a personalized peptide protocol and realistic timeline.</p>
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
         <div>
-          <label className="block text-slate-400 text-xs font-semibold mb-2 uppercase tracking-wide">Current Weight (lbs)</label>
+          <label className="block text-gray-600 text-xs font-semibold mb-2 uppercase tracking-wide">Current Weight (lbs)</label>
           <input
             type="number"
             value={weight}
             onChange={(e) => setWeight(e.target.value)}
             placeholder="e.g. 185"
-            className="w-full bg-slate-800/60 border border-white/10 rounded-xl px-4 py-3 text-white text-sm placeholder-slate-600 focus:outline-none focus:border-blue-500/50 transition-colors"
+            className="w-full bg-slate-800/60 border border-gray-200 rounded-xl px-4 py-3 text-gray-900 text-sm placeholder-slate-600 focus:outline-none focus:border-blue-500/50 transition-colors"
           />
         </div>
         <div>
-          <label className="block text-slate-400 text-xs font-semibold mb-2 uppercase tracking-wide">Estimated Body Fat %</label>
+          <label className="block text-gray-600 text-xs font-semibold mb-2 uppercase tracking-wide">Estimated Body Fat %</label>
           <input
             type="number"
             value={bf}
             onChange={(e) => setBf(e.target.value)}
             placeholder="e.g. 22"
-            className="w-full bg-slate-800/60 border border-white/10 rounded-xl px-4 py-3 text-white text-sm placeholder-slate-600 focus:outline-none focus:border-blue-500/50 transition-colors"
+            className="w-full bg-slate-800/60 border border-gray-200 rounded-xl px-4 py-3 text-gray-900 text-sm placeholder-slate-600 focus:outline-none focus:border-blue-500/50 transition-colors"
           />
         </div>
       </div>
 
       <div className="mb-6">
-        <label className="block text-slate-400 text-xs font-semibold mb-2 uppercase tracking-wide">Primary Goal</label>
+        <label className="block text-gray-600 text-xs font-semibold mb-2 uppercase tracking-wide">Primary Goal</label>
         <div className="space-y-2">
           {(Object.keys(goalLabels) as Goal[]).map((g) => (
-            <label key={g} className={`flex items-center gap-3 p-3 rounded-xl border cursor-pointer transition-all ${goal === g ? 'border-blue-500/50 bg-blue-500/8' : 'border-white/8 hover:border-white/20'}`}>
+            <label key={g} className={`flex items-center gap-3 p-3 rounded-xl border cursor-pointer transition-all ${goal === g ? 'border-blue-500/50 bg-blue-500/8' : 'border-gray-200 hover:border-gray-200'}`}>
               <input type="radio" name="goal" value={g} checked={goal === g} onChange={() => setGoal(g)} className="accent-blue-500" />
-              <span className={`text-sm ${goal === g ? 'text-white font-semibold' : 'text-slate-400'}`}>{goalLabels[g]}</span>
+              <span className={`text-sm ${goal === g ? 'text-gray-900 font-semibold' : 'text-gray-600'}`}>{goalLabels[g]}</span>
             </label>
           ))}
         </div>
@@ -133,23 +133,23 @@ export default function BodyRecompCalculator() {
       </button>
 
       {results && (
-        <div className="mt-6 space-y-4 border-t border-white/8 pt-6">
+        <div className="mt-6 space-y-4 border-t border-gray-200 pt-6">
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div className="rounded-xl p-4" style={{ background: 'rgba(59,130,246,0.06)', border: '1px solid rgba(59,130,246,0.2)' }}>
               <div className="text-blue-400 text-xs font-bold uppercase tracking-wide mb-1">Expected Fat Loss</div>
-              <div className="text-white font-black text-lg">{results.fatLoss}</div>
+              <div className="text-gray-900 font-black text-lg">{results.fatLoss}</div>
             </div>
             <div className="rounded-xl p-4" style={{ background: 'rgba(16,185,129,0.06)', border: '1px solid rgba(16,185,129,0.2)' }}>
               <div className="text-emerald-400 text-xs font-bold uppercase tracking-wide mb-1">Expected Muscle Gain</div>
-              <div className="text-white font-black text-lg">{results.muscleGain}</div>
+              <div className="text-gray-900 font-black text-lg">{results.muscleGain}</div>
             </div>
           </div>
 
           <div className="rounded-xl p-4" style={{ background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.08)' }}>
-            <div className="text-slate-400 text-xs font-bold uppercase tracking-wide mb-3">Recommended Peptide Stack</div>
+            <div className="text-gray-600 text-xs font-bold uppercase tracking-wide mb-3">Recommended Peptide Stack</div>
             <ul className="space-y-2">
               {results.stack.map((item) => (
-                <li key={item} className="flex items-start gap-2 text-sm text-slate-300">
+                <li key={item} className="flex items-start gap-2 text-sm text-gray-800">
                   <CheckCircle className="w-4 h-4 text-blue-400 shrink-0 mt-0.5" />
                   {item}
                 </li>
@@ -159,19 +159,19 @@ export default function BodyRecompCalculator() {
 
           <div className="rounded-xl p-4" style={{ background: 'rgba(245,158,11,0.06)', border: '1px solid rgba(245,158,11,0.2)' }}>
             <div className="text-amber-400 text-xs font-bold uppercase tracking-wide mb-1">Protein Intake Target</div>
-            <div className="text-white text-sm">{results.protein}</div>
+            <div className="text-gray-900 text-sm">{results.protein}</div>
           </div>
 
           <div className="rounded-xl p-4" style={{ background: 'rgba(168,85,247,0.06)', border: '1px solid rgba(168,85,247,0.2)' }}>
             <div className="text-purple-400 text-xs font-bold uppercase tracking-wide mb-1">Timeline Estimate</div>
-            <div className="text-white text-sm">{results.timeline}</div>
+            <div className="text-gray-900 text-sm">{results.timeline}</div>
           </div>
 
           <div className="rounded-xl p-3" style={{ background: 'rgba(255,255,255,0.02)', border: '1px solid rgba(255,255,255,0.06)' }}>
-            <p className="text-slate-500 text-xs leading-relaxed">{results.notes}</p>
+            <p className="text-gray-600 text-xs leading-relaxed">{results.notes}</p>
           </div>
 
-          <p className="text-slate-600 text-xs">Estimates based on typical 12-week protocol outcomes. Individual results vary based on training, nutrition adherence, and baseline hormone levels. This is informational, not medical advice.</p>
+          <p className="text-gray-500 text-xs">Estimates based on typical 12-week protocol outcomes. Individual results vary based on training, nutrition adherence, and baseline hormone levels. This is informational, not medical advice.</p>
         </div>
       )}
     </div>

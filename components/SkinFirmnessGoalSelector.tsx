@@ -87,7 +87,7 @@ const protocols: Record<Goal, {
 const colorClass = {
   button: {
     active: 'bg-purple-500/15 border-purple-500/30 text-purple-200',
-    inactive: 'bg-slate-800/40 border-slate-700/30 text-slate-400 hover:text-slate-200 hover:border-slate-600',
+    inactive: 'bg-slate-800/40 border-gray-200/30 text-gray-600 hover:text-gray-900 hover:border-gray-300',
   },
 };
 
@@ -98,8 +98,8 @@ export default function SkinFirmnessGoalSelector() {
   return (
     <div className="glass-card p-6 space-y-6">
       <div>
-        <h3 className="text-white font-black text-lg mb-1">Skin Firmness Protocol Selector</h3>
-        <p className="text-slate-400 text-sm">Select your primary skin concern for a personalized topical + injectable protocol.</p>
+        <h3 className="text-gray-900 font-black text-lg mb-1">Skin Firmness Protocol Selector</h3>
+        <p className="text-gray-600 text-sm">Select your primary skin concern for a personalized topical + injectable protocol.</p>
       </div>
 
       {/* Goal buttons */}
@@ -122,7 +122,7 @@ export default function SkinFirmnessGoalSelector() {
       <div className="bg-purple-500/8 border border-purple-500/20 rounded-xl p-5 space-y-5">
         <div>
           <h4 className="text-purple-200 font-black text-base mb-1">{protocol.headline}</h4>
-          <p className="text-slate-300 text-sm leading-relaxed">{protocol.description}</p>
+          <p className="text-gray-800 text-sm leading-relaxed">{protocol.description}</p>
         </div>
 
         {/* Topical protocol */}
@@ -133,9 +133,9 @@ export default function SkinFirmnessGoalSelector() {
               <div key={t.product} className="bg-slate-900/40 rounded-lg p-3">
                 <div className="flex items-center justify-between flex-wrap gap-2 mb-1">
                   <span className="text-rose-300 font-bold text-sm">{t.product}</span>
-                  <span className="text-slate-400 text-xs bg-slate-800 rounded-full px-3 py-0.5">{t.application}</span>
+                  <span className="text-gray-600 text-xs bg-slate-800 rounded-full px-3 py-0.5">{t.application}</span>
                 </div>
-                <p className="text-slate-400 text-xs leading-relaxed">{t.why}</p>
+                <p className="text-gray-600 text-xs leading-relaxed">{t.why}</p>
               </div>
             ))}
           </div>
@@ -149,9 +149,9 @@ export default function SkinFirmnessGoalSelector() {
               <div key={inj.product} className="bg-slate-900/40 rounded-lg p-3">
                 <div className="flex items-center justify-between flex-wrap gap-2 mb-1">
                   <span className="text-purple-300 font-bold text-sm">{inj.product}</span>
-                  <span className="text-slate-400 text-xs bg-slate-800 rounded-full px-3 py-0.5">{inj.dose}</span>
+                  <span className="text-gray-600 text-xs bg-slate-800 rounded-full px-3 py-0.5">{inj.dose}</span>
                 </div>
-                <p className="text-slate-400 text-xs leading-relaxed">{inj.why}</p>
+                <p className="text-gray-600 text-xs leading-relaxed">{inj.why}</p>
               </div>
             ))}
           </div>
@@ -159,11 +159,11 @@ export default function SkinFirmnessGoalSelector() {
 
         <div className="bg-slate-900/40 rounded-lg p-3">
           <p className="text-purple-400 text-xs font-bold mb-1">Expected Timeline</p>
-          <p className="text-slate-300 text-xs">{protocol.timeline}</p>
+          <p className="text-gray-800 text-xs">{protocol.timeline}</p>
         </div>
       </div>
 
-      <p className="text-slate-600 text-xs">Research peptides only. Individual results vary. Topical application refers to cosmetic-grade formulations.</p>
+      <p className="text-gray-500 text-xs">Research peptides only. Individual results vary. Topical application refers to cosmetic-grade formulations.</p>
     </div>
   );
 }

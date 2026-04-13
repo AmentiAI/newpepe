@@ -118,8 +118,8 @@ export default function Igf1EffectsMap() {
 
   return (
     <div className="glass-card p-6 space-y-5">
-      <h3 className="text-lg font-bold text-slate-100">IGF-1 LR3 Appearance Effects Map</h3>
-      <p className="text-slate-400 text-sm">Select an area to explore how IGF-1 LR3 affects it.</p>
+      <h3 className="text-lg font-bold text-gray-900">IGF-1 LR3 Appearance Effects Map</h3>
+      <p className="text-gray-600 text-sm">Select an area to explore how IGF-1 LR3 affects it.</p>
 
       {/* Area Selector Grid */}
       <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
@@ -130,10 +130,10 @@ export default function Igf1EffectsMap() {
             className={`flex flex-col items-center gap-2 p-3 rounded-xl border transition-all text-sm font-medium ${
               selectedArea === area.id
                 ? `${area.borderColor} bg-cyan-500/10 ${area.color}`
-                : 'border-slate-700/60 text-slate-400 hover:border-slate-600 hover:text-slate-300'
+                : 'border-gray-200/60 text-gray-600 hover:border-gray-300 hover:text-gray-800'
             }`}
           >
-            <span className={selectedArea === area.id ? area.color : 'text-slate-500'}>{area.icon}</span>
+            <span className={selectedArea === area.id ? area.color : 'text-gray-600'}>{area.icon}</span>
             <span className="text-center text-xs leading-tight">{area.label}</span>
           </button>
         ))}
@@ -142,7 +142,7 @@ export default function Igf1EffectsMap() {
       {/* Relevance Bar */}
       <div className="space-y-1">
         <div className="flex justify-between text-xs">
-          <span className="text-slate-400">Relevance to Appearance</span>
+          <span className="text-gray-600">Relevance to Appearance</span>
           <span className={`font-bold ${selected.color}`}>{selected.relevance}%</span>
         </div>
         <div className="h-2 bg-slate-800 rounded-full overflow-hidden">
@@ -161,28 +161,28 @@ export default function Igf1EffectsMap() {
         </div>
 
         <div>
-          <span className="text-slate-500 text-xs uppercase tracking-wide">How IGF-1 LR3 Affects This Area</span>
-          <p className="text-slate-200 text-sm mt-1 leading-relaxed">{selected.howItWorks}</p>
+          <span className="text-gray-600 text-xs uppercase tracking-wide">How IGF-1 LR3 Affects This Area</span>
+          <p className="text-gray-900 text-sm mt-1 leading-relaxed">{selected.howItWorks}</p>
         </div>
 
         <div>
-          <span className="text-slate-500 text-xs uppercase tracking-wide">Specific Mechanism</span>
-          <p className="text-slate-400 text-sm mt-1 font-mono text-xs leading-relaxed">{selected.mechanism}</p>
+          <span className="text-gray-600 text-xs uppercase tracking-wide">Specific Mechanism</span>
+          <p className="text-gray-600 text-sm mt-1 font-mono text-xs leading-relaxed">{selected.mechanism}</p>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div>
-            <span className="text-slate-500 text-xs uppercase tracking-wide">Timeline</span>
+            <span className="text-gray-600 text-xs uppercase tracking-wide">Timeline</span>
             <p className={`text-sm mt-1 font-medium ${selected.color}`}>{selected.timeline}</p>
           </div>
           <div>
-            <span className="text-slate-500 text-xs uppercase tracking-wide">Dosage Note</span>
-            <p className="text-slate-300 text-sm mt-1">{selected.dosageNote}</p>
+            <span className="text-gray-600 text-xs uppercase tracking-wide">Dosage Note</span>
+            <p className="text-gray-800 text-sm mt-1">{selected.dosageNote}</p>
           </div>
         </div>
 
         <div>
-          <span className="text-slate-500 text-xs uppercase tracking-wide">Best Paired With</span>
+          <span className="text-gray-600 text-xs uppercase tracking-wide">Best Paired With</span>
           <div className="flex flex-wrap gap-2 mt-2">
             {selected.synergisticPeptides.map((p) => (
               <span key={p} className="px-2.5 py-1 bg-cyan-500/10 border border-cyan-500/30 text-cyan-300 text-xs rounded-full">
@@ -193,7 +193,7 @@ export default function Igf1EffectsMap() {
         </div>
       </div>
 
-      <p className="text-slate-500 text-xs text-center">For research purposes only. Consult a qualified physician before use.</p>
+      <p className="text-gray-600 text-xs text-center">For research purposes only. Consult a qualified physician before use.</p>
     </div>
   );
 }

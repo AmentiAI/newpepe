@@ -43,8 +43,8 @@ export default function ReconstitutionCalculator() {
           <Calculator className="w-5 h-5" style={{ color: '#00ff88' }} />
         </div>
         <div>
-          <h3 className="text-white font-black text-lg">Reconstitution Calculator</h3>
-          <p className="text-slate-500 text-xs">Instantly calculate concentration, dose volume, and syringe markings</p>
+          <h3 className="text-gray-900 font-black text-lg">Reconstitution Calculator</h3>
+          <p className="text-gray-600 text-xs">Instantly calculate concentration, dose volume, and syringe markings</p>
         </div>
       </div>
 
@@ -52,7 +52,7 @@ export default function ReconstitutionCalculator() {
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 mb-6">
         {/* Vial Size */}
         <div>
-          <label className="block text-slate-400 text-xs font-semibold uppercase tracking-wide mb-2">
+          <label className="block text-gray-600 text-xs font-semibold uppercase tracking-wide mb-2">
             Vial Size
           </label>
           <div className="flex gap-2">
@@ -63,7 +63,7 @@ export default function ReconstitutionCalculator() {
                 className={`flex-1 py-2.5 rounded-lg text-sm font-bold transition-all border ${
                   vialSize === size
                     ? 'border-neon-green/50 text-neon-green'
-                    : 'border-white/10 text-slate-400 hover:border-white/20'
+                    : 'border-gray-200 text-gray-600 hover:border-gray-200'
                 }`}
                 style={vialSize === size ? { background: 'rgba(0,255,136,0.1)' } : { background: 'rgba(255,255,255,0.03)' }}
               >
@@ -75,7 +75,7 @@ export default function ReconstitutionCalculator() {
 
         {/* BAC Water */}
         <div>
-          <label className="block text-slate-400 text-xs font-semibold uppercase tracking-wide mb-2">
+          <label className="block text-gray-600 text-xs font-semibold uppercase tracking-wide mb-2">
             BAC Water to Add
           </label>
           <div className="space-y-2">
@@ -96,17 +96,17 @@ export default function ReconstitutionCalculator() {
                 min={0.5}
                 max={3}
                 step={0.25}
-                className="w-full rounded-lg px-3 py-2 text-sm text-white font-mono"
+                className="w-full rounded-lg px-3 py-2 text-sm text-gray-900 font-mono"
                 style={{ background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.1)' }}
               />
-              <span className="text-slate-400 text-sm font-semibold shrink-0">mL</span>
+              <span className="text-gray-600 text-sm font-semibold shrink-0">mL</span>
             </div>
           </div>
         </div>
 
         {/* Desired Dose */}
         <div>
-          <label className="block text-slate-400 text-xs font-semibold uppercase tracking-wide mb-2">
+          <label className="block text-gray-600 text-xs font-semibold uppercase tracking-wide mb-2">
             Desired Dose
           </label>
           <div className="flex items-center gap-2">
@@ -118,12 +118,12 @@ export default function ReconstitutionCalculator() {
               max={vialSize * 1000}
               step={50}
               placeholder="e.g. 250"
-              className="w-full rounded-lg px-3 py-2.5 text-sm text-white font-mono"
+              className="w-full rounded-lg px-3 py-2.5 text-sm text-gray-900 font-mono"
               style={{ background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.1)' }}
             />
-            <span className="text-slate-400 text-sm font-semibold shrink-0">mcg</span>
+            <span className="text-gray-600 text-sm font-semibold shrink-0">mcg</span>
           </div>
-          <p className="text-slate-600 text-xs mt-1">Common: 250mcg, 500mcg, 1000mcg</p>
+          <p className="text-gray-500 text-xs mt-1">Common: 250mcg, 500mcg, 1000mcg</p>
         </div>
       </div>
 
@@ -169,9 +169,9 @@ export default function ReconstitutionCalculator() {
             },
           ].map((r) => (
             <div key={r.label} className="text-center">
-              <div className="text-slate-500 text-xs mb-1">{r.label}</div>
-              <div className="text-white font-black text-sm leading-tight mb-1">{r.value}</div>
-              <div className="text-slate-600 text-xs">{r.sub}</div>
+              <div className="text-gray-600 text-xs mb-1">{r.label}</div>
+              <div className="text-gray-900 font-black text-sm leading-tight mb-1">{r.value}</div>
+              <div className="text-gray-500 text-xs">{r.sub}</div>
             </div>
           ))}
         </div>
@@ -180,8 +180,8 @@ export default function ReconstitutionCalculator() {
       {/* How to read IU mark */}
       <div className="mt-4 flex items-start gap-2">
         <CheckCircle className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
-        <p className="text-slate-500 text-xs leading-relaxed">
-          <strong className="text-slate-400">How to read IU:</strong> On a standard 1mL insulin syringe, 100 IU = 1mL. Draw to the IU mark shown above. Example: 10 IU = 0.1mL = 100μL.
+        <p className="text-gray-600 text-xs leading-relaxed">
+          <strong className="text-gray-600">How to read IU:</strong> On a standard 1mL insulin syringe, 100 IU = 1mL. Draw to the IU mark shown above. Example: 10 IU = 0.1mL = 100μL.
         </p>
       </div>
     </div>

@@ -94,9 +94,9 @@ const colorMap: Record<string, { text: string; bg: string; border: string; bar: 
     bar: 'bg-emerald-500',
   },
   purple: {
-    text: 'text-purple-400',
+    text: 'text-amber-600',
     bg: 'bg-purple-500/10',
-    border: 'border-purple-500/30',
+    border: 'border-amber-400/30',
     bar: 'bg-purple-500',
   },
 };
@@ -120,16 +120,16 @@ export default function GhResultsTracker() {
   return (
     <div className="glass-card p-6 sm:p-8">
       <div className="mb-6">
-        <h3 className="text-xl font-black text-white mb-1">Interactive Results Tracker</h3>
-        <p className="text-slate-400 text-sm">Select your current week to see what changes to expect.</p>
+        <h3 className="text-xl font-black text-gray-900 mb-1">Interactive Results Tracker</h3>
+        <p className="text-gray-600 text-sm">Select your current week to see what changes to expect.</p>
       </div>
 
       {/* Week Selector */}
       <div className="mb-6">
         <div className="flex items-center justify-between mb-2">
-          <span className="text-slate-400 text-xs">Week 1</span>
+          <span className="text-gray-600 text-xs">Week 1</span>
           <span className={`font-black text-lg ${colors.text}`}>Week {selectedWeek}</span>
-          <span className="text-slate-400 text-xs">Week 16</span>
+          <span className="text-gray-600 text-xs">Week 16</span>
         </div>
         <input
           type="range"
@@ -151,7 +151,7 @@ export default function GhResultsTracker() {
               className={`w-8 h-8 rounded-lg text-xs font-bold transition-all ${
                 selectedWeek === w
                   ? `${colors.bg} ${colors.text} border ${colors.border}`
-                  : 'bg-slate-800/50 text-slate-500 hover:text-slate-300'
+                  : 'bg-slate-800/50 text-gray-600 hover:text-gray-800'
               }`}
             >
               {w}
@@ -163,7 +163,7 @@ export default function GhResultsTracker() {
       {/* Progress Bar */}
       <div className="mb-6">
         <div className="flex items-center justify-between mb-2">
-          <span className="text-slate-400 text-xs font-semibold uppercase tracking-wide">16-Week Cycle Progress</span>
+          <span className="text-gray-600 text-xs font-semibold uppercase tracking-wide">16-Week Cycle Progress</span>
           <span className={`text-xs font-bold ${colors.text}`}>{progressPercent}% complete</span>
         </div>
         <div className="h-3 bg-slate-800 rounded-full overflow-hidden">
@@ -176,7 +176,7 @@ export default function GhResultsTracker() {
           {weekData.map((wd) => (
             <span
               key={wd.weekRange}
-              className={`text-xs ${phaseIndex === weekData.indexOf(wd) ? colors.text : 'text-slate-600'}`}
+              className={`text-xs ${phaseIndex === weekData.indexOf(wd) ? colors.text : 'text-gray-500'}`}
             >
               {wd.weekRange.replace('Weeks ', 'Wk ')}
             </span>
@@ -187,29 +187,29 @@ export default function GhResultsTracker() {
       {/* Current Phase Badge */}
       <div className={`${colors.bg} border ${colors.border} rounded-xl px-4 py-3 mb-6`}>
         <p className={`text-xs font-bold tracking-widest uppercase ${colors.text} mb-0.5`}>Current Phase</p>
-        <p className="text-white font-black">{phase.weekRange}</p>
+        <p className="text-gray-900 font-black">{phase.weekRange}</p>
       </div>
 
       {/* Category Results */}
       <div className="space-y-4">
         {categories.map((cat) => (
-          <div key={cat.label} className="bg-slate-800/40 border border-white/5 rounded-xl p-4">
+          <div key={cat.label} className="bg-slate-800/40 border border-gray-100 rounded-xl p-4">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-base">{cat.icon}</span>
               <span className={`text-sm font-bold ${colors.text}`}>{cat.label}</span>
             </div>
-            <p className="text-slate-300 text-sm leading-relaxed">{cat.value}</p>
+            <p className="text-gray-800 text-sm leading-relaxed">{cat.value}</p>
           </div>
         ))}
       </div>
 
       {/* Milestone Note */}
-      <div className="mt-5 bg-slate-900/60 border border-white/10 rounded-xl p-4">
-        <p className="text-xs font-bold text-slate-300 uppercase tracking-wide mb-1">Protocol Insight</p>
-        <p className="text-slate-400 text-sm leading-relaxed italic">{phase.milestone}</p>
+      <div className="mt-5 bg-slate-900/60 border border-gray-200 rounded-xl p-4">
+        <p className="text-xs font-bold text-gray-800 uppercase tracking-wide mb-1">Protocol Insight</p>
+        <p className="text-gray-600 text-sm leading-relaxed italic">{phase.milestone}</p>
       </div>
 
-      <p className="text-slate-600 text-xs mt-4 text-center">Results vary by individual. Based on standard CJC-1295 (no DAC) 100–200mcg + Ipamorelin 200–300mcg protocol, 5 nights/week before bed.</p>
+      <p className="text-gray-500 text-xs mt-4 text-center">Results vary by individual. Based on standard CJC-1295 (no DAC) 100–200mcg + Ipamorelin 200–300mcg protocol, 5 nights/week before bed.</p>
     </div>
   );
 }

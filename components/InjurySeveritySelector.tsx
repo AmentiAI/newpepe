@@ -91,10 +91,10 @@ export default function InjurySeveritySelector() {
                 <Icon className={`w-5 h-5 ${level.color}`} />
                 <div>
                   <div className={`font-black text-lg ${level.color}`}>{level.grade}</div>
-                  <div className="text-slate-500 text-xs">{level.label}</div>
+                  <div className="text-gray-600 text-xs">{level.label}</div>
                 </div>
               </div>
-              <p className="text-slate-400 text-xs leading-relaxed">{level.description}</p>
+              <p className="text-gray-600 text-xs leading-relaxed">{level.description}</p>
               <div className={`mt-3 text-xs font-semibold ${level.color}`}>
                 {isSelected ? 'Selected — see protocol below' : 'Click to see protocol'}
               </div>
@@ -112,31 +112,31 @@ export default function InjurySeveritySelector() {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-5">
             <div>
-              <p className="text-slate-500 text-xs mb-1">Daily Dose</p>
+              <p className="text-gray-600 text-xs mb-1">Daily Dose</p>
               <p className={`font-mono font-bold ${active.color}`}>{active.protocol.dose}</p>
             </div>
             <div>
-              <p className="text-slate-500 text-xs mb-1">Frequency</p>
-              <p className="text-white text-sm">{active.protocol.frequency}</p>
+              <p className="text-gray-600 text-xs mb-1">Frequency</p>
+              <p className="text-gray-900 text-sm">{active.protocol.frequency}</p>
             </div>
             <div>
-              <p className="text-slate-500 text-xs mb-1">Protocol Duration</p>
-              <p className="text-white text-sm">{active.protocol.duration}</p>
+              <p className="text-gray-600 text-xs mb-1">Protocol Duration</p>
+              <p className="text-gray-900 text-sm">{active.protocol.duration}</p>
             </div>
             <div>
-              <p className="text-slate-500 text-xs mb-1">Injection Route</p>
-              <p className="text-white text-sm">{active.protocol.route}</p>
+              <p className="text-gray-600 text-xs mb-1">Injection Route</p>
+              <p className="text-gray-900 text-sm">{active.protocol.route}</p>
             </div>
             <div className="sm:col-span-2">
-              <p className="text-slate-500 text-xs mb-1">Expected Timeline</p>
+              <p className="text-gray-600 text-xs mb-1">Expected Timeline</p>
               <p className={`text-sm font-semibold ${active.color}`}>{active.protocol.expected}</p>
             </div>
           </div>
-          <div className="border-t border-white/10 pt-4">
-            <p className="text-slate-500 text-xs mb-2 font-semibold">PROTOCOL NOTES</p>
-            <p className="text-slate-300 text-sm leading-relaxed mb-3">{active.protocol.notes}</p>
-            <p className="text-slate-500 text-xs mb-1 font-semibold">ACTIVITY GUIDANCE</p>
-            <p className="text-slate-400 text-sm leading-relaxed">{active.protocol.activities}</p>
+          <div className="border-t border-gray-200 pt-4">
+            <p className="text-gray-600 text-xs mb-2 font-semibold">PROTOCOL NOTES</p>
+            <p className="text-gray-800 text-sm leading-relaxed mb-3">{active.protocol.notes}</p>
+            <p className="text-gray-600 text-xs mb-1 font-semibold">ACTIVITY GUIDANCE</p>
+            <p className="text-gray-600 text-sm leading-relaxed">{active.protocol.activities}</p>
           </div>
         </div>
       )}

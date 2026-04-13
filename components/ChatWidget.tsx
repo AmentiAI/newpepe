@@ -63,7 +63,7 @@ export default function ChatWidget() {
               <Zap className="w-4 h-4 text-neon-green" />
             </div>
             <div>
-              <p className="text-white text-sm font-semibold">Max — Peptide AI</p>
+              <p className="text-gray-900 text-sm font-semibold">Max — Peptide AI</p>
               <p className="text-neon-green text-xs">Online • BPC-157 Expert</p>
             </div>
           </div>
@@ -76,7 +76,7 @@ export default function ChatWidget() {
                   className={`max-w-[80%] rounded-2xl px-4 py-2.5 text-sm leading-relaxed ${
                     msg.role === 'user'
                       ? 'bg-neon-green text-dark-900 font-medium'
-                      : 'bg-dark-600 text-slate-200 border border-neon-green/10'
+                      : 'bg-white text-gray-900 border border-neon-green/10'
                   }`}
                 >
                   {msg.content}
@@ -85,7 +85,7 @@ export default function ChatWidget() {
             ))}
             {loading && (
               <div className="flex justify-start">
-                <div className="bg-dark-600 border border-neon-green/10 rounded-2xl px-4 py-2.5">
+                <div className="bg-white border border-neon-green/10 rounded-2xl px-4 py-2.5">
                   <div className="flex gap-1">
                     {[0, 1, 2].map((i) => (
                       <div
@@ -109,7 +109,7 @@ export default function ChatWidget() {
               onChange={(e) => setInput(e.target.value)}
               onKeyDown={(e) => e.key === 'Enter' && send()}
               placeholder="Ask about BPC-157, dosing, stacks..."
-              className="flex-1 bg-dark-700 border border-neon-green/20 rounded-xl px-3 py-2 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-neon-green/50"
+              className="flex-1 bg-white border border-neon-green/20 rounded-xl px-3 py-2 text-sm text-gray-900 placeholder-slate-500 focus:outline-none focus:border-neon-green/50"
             />
             <button
               onClick={send}

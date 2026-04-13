@@ -345,8 +345,8 @@ export default function WolverineProtocolPlanner() {
           <span style={{ color: '#00ff88' }} className="text-lg font-black">W</span>
         </div>
         <div>
-          <h3 className="text-white font-black text-lg">Wolverine Protocol Planner</h3>
-          <p className="text-slate-400 text-xs">Select your injury type and severity to generate a custom protocol</p>
+          <h3 className="text-gray-900 font-black text-lg">Wolverine Protocol Planner</h3>
+          <p className="text-gray-600 text-xs">Select your injury type and severity to generate a custom protocol</p>
         </div>
       </div>
 
@@ -354,7 +354,7 @@ export default function WolverineProtocolPlanner() {
         <div className="space-y-6">
           {/* Injury Type */}
           <div>
-            <label className="block text-slate-300 text-sm font-semibold mb-3">Step 1: Injury Type</label>
+            <label className="block text-gray-800 text-sm font-semibold mb-3">Step 1: Injury Type</label>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2">
               {(['Tendon', 'Ligament', 'Muscle Tear', 'Joint', 'Post-Surgery', 'Spine/Disc', 'Multiple/Full Body'] as InjuryType[]).map((type) => (
                 <button
@@ -375,7 +375,7 @@ export default function WolverineProtocolPlanner() {
 
           {/* Severity */}
           <div>
-            <label className="block text-slate-300 text-sm font-semibold mb-3">Step 2: Injury Severity</label>
+            <label className="block text-gray-800 text-sm font-semibold mb-3">Step 2: Injury Severity</label>
             <div className="grid grid-cols-3 gap-3">
               {(['Mild', 'Moderate', 'Severe'] as Severity[]).map((sev) => {
                 const colors = {
@@ -396,7 +396,7 @@ export default function WolverineProtocolPlanner() {
                     }}
                   >
                     <div className="font-bold text-sm" style={{ color: isActive ? c.text : '#94a3b8' }}>{sev}</div>
-                    <div className="text-xs text-slate-500 mt-0.5">{c.sub}</div>
+                    <div className="text-xs text-gray-600 mt-0.5">{c.sub}</div>
                   </button>
                 );
               })}
@@ -422,9 +422,9 @@ export default function WolverineProtocolPlanner() {
           <div className="flex items-center justify-between flex-wrap gap-3">
             <div>
               <div className="text-xs font-bold tracking-widest mb-1" style={{ color: '#00ff88' }}>CUSTOM WOLVERINE PROTOCOL</div>
-              <h4 className="text-white font-black text-lg">{injuryType} — {severity}</h4>
+              <h4 className="text-gray-900 font-black text-lg">{injuryType} — {severity}</h4>
             </div>
-            <button onClick={handleReset} className="text-slate-400 text-sm hover:text-white transition-colors px-3 py-1 rounded border border-slate-700 hover:border-slate-500">
+            <button onClick={handleReset} className="text-gray-600 text-sm hover:text-gray-900 transition-colors px-3 py-1 rounded border border-gray-200 hover:border-gray-300">
               Start Over
             </button>
           </div>
@@ -433,34 +433,34 @@ export default function WolverineProtocolPlanner() {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
             <div className="rounded-xl p-4" style={{ background: 'rgba(16,185,129,0.06)', border: '1px solid rgba(16,185,129,0.2)' }}>
               <div className="text-emerald-400 text-xs font-bold tracking-widest mb-1">BPC-157 DOSE</div>
-              <div className="text-white font-bold text-sm">{protocol.bpc157Dose}</div>
+              <div className="text-gray-900 font-bold text-sm">{protocol.bpc157Dose}</div>
             </div>
             <div className="rounded-xl p-4" style={{ background: 'rgba(59,130,246,0.06)', border: '1px solid rgba(59,130,246,0.2)' }}>
               <div className="text-blue-400 text-xs font-bold tracking-widest mb-1">TB-500 DOSE</div>
-              <div className="text-white font-bold text-sm">{protocol.tb500Dose}</div>
+              <div className="text-gray-900 font-bold text-sm">{protocol.tb500Dose}</div>
             </div>
             <div className="rounded-xl p-4" style={{ background: 'rgba(168,85,247,0.06)', border: '1px solid rgba(168,85,247,0.2)' }}>
               <div className="text-purple-400 text-xs font-bold tracking-widest mb-1">CYCLE LENGTH</div>
-              <div className="text-white font-bold text-sm">{protocol.cycleLength}</div>
+              <div className="text-gray-900 font-bold text-sm">{protocol.cycleLength}</div>
             </div>
             <div className="rounded-xl p-4" style={{ background: 'rgba(245,158,11,0.06)', border: '1px solid rgba(245,158,11,0.2)' }}>
               <div className="text-amber-400 text-xs font-bold tracking-widest mb-1">EXPECTED TIMELINE</div>
-              <div className="text-white font-bold text-sm">{protocol.timeline}</div>
+              <div className="text-gray-900 font-bold text-sm">{protocol.timeline}</div>
             </div>
           </div>
 
           {/* Schedule */}
           <div className="rounded-xl p-4" style={{ background: 'rgba(0,255,136,0.04)', border: '1px solid rgba(0,255,136,0.12)' }}>
             <div className="text-xs font-bold tracking-widest mb-2" style={{ color: '#00ff88' }}>INJECTION SCHEDULE</div>
-            <p className="text-slate-300 text-sm leading-relaxed">{protocol.schedule}</p>
+            <p className="text-gray-800 text-sm leading-relaxed">{protocol.schedule}</p>
           </div>
 
           {/* Notes */}
           <div>
-            <div className="text-slate-400 text-xs font-bold tracking-widest mb-3">PROTOCOL NOTES</div>
+            <div className="text-gray-600 text-xs font-bold tracking-widest mb-3">PROTOCOL NOTES</div>
             <ul className="space-y-2">
               {protocol.notes.map((note, i) => (
-                <li key={i} className="flex items-start gap-2 text-slate-300 text-sm">
+                <li key={i} className="flex items-start gap-2 text-gray-800 text-sm">
                   <CheckCircle className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
                   {note}
                 </li>
@@ -468,7 +468,7 @@ export default function WolverineProtocolPlanner() {
             </ul>
           </div>
 
-          <p className="text-slate-600 text-xs border-t border-slate-800 pt-3">
+          <p className="text-gray-500 text-xs border-t border-slate-800 pt-3">
             For research purposes only. Consult a healthcare provider before use. Individual results vary.
           </p>
         </div>

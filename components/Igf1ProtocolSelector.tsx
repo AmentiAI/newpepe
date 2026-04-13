@@ -134,12 +134,12 @@ export default function Igf1ProtocolSelector() {
   return (
     <div className="glass-card p-6 space-y-5">
       <div>
-        <h3 className="text-white font-black text-lg mb-1">IGF-1 LR3 Protocol Selector</h3>
-        <p className="text-slate-400 text-sm">Select your goal and experience level for a tailored research protocol.</p>
+        <h3 className="text-gray-900 font-black text-lg mb-1">IGF-1 LR3 Protocol Selector</h3>
+        <p className="text-gray-600 text-sm">Select your goal and experience level for a tailored research protocol.</p>
       </div>
 
       <div>
-        <p className="text-slate-400 text-xs font-semibold mb-2 uppercase tracking-wide">Goal</p>
+        <p className="text-gray-600 text-xs font-semibold mb-2 uppercase tracking-wide">Goal</p>
         <div className="grid grid-cols-2 gap-2">
           {goals.map((g) => (
             <button
@@ -148,7 +148,7 @@ export default function Igf1ProtocolSelector() {
               className={`text-sm font-semibold px-3 py-2.5 rounded-xl border transition-all flex items-center gap-2 ${
                 goal === g.id
                   ? 'bg-blue-500/15 border-blue-500/30 text-blue-300'
-                  : 'bg-dark-800/40 border-slate-700/40 text-slate-400 hover:text-slate-200'
+                  : 'bg-gray-50 border-gray-200/40 text-gray-600 hover:text-gray-900'
               }`}
             >
               <span>{g.icon}</span> {g.label}
@@ -158,7 +158,7 @@ export default function Igf1ProtocolSelector() {
       </div>
 
       <div>
-        <p className="text-slate-400 text-xs font-semibold mb-2 uppercase tracking-wide">Experience Level</p>
+        <p className="text-gray-600 text-xs font-semibold mb-2 uppercase tracking-wide">Experience Level</p>
         <div className="flex gap-2">
           {experience.map((e) => (
             <button
@@ -167,7 +167,7 @@ export default function Igf1ProtocolSelector() {
               className={`flex-1 text-xs font-semibold px-3 py-2 rounded-lg border transition-all ${
                 exp === e.id
                   ? 'bg-blue-500/15 border-blue-500/30 text-blue-300'
-                  : 'bg-dark-800/40 border-slate-700/40 text-slate-400 hover:text-slate-200'
+                  : 'bg-gray-50 border-gray-200/40 text-gray-600 hover:text-gray-900'
               }`}
             >
               {e.label}
@@ -186,15 +186,15 @@ export default function Igf1ProtocolSelector() {
               { label: 'Timing', value: proto.timing },
               { label: 'Cycle Length', value: proto.cycle },
             ].map((row) => (
-              <div key={row.label} className="bg-dark-800/40 rounded-lg p-3">
-                <p className="text-slate-500 text-xs mb-0.5">{row.label}</p>
-                <p className="text-slate-200 text-sm font-semibold">{row.value}</p>
+              <div key={row.label} className="bg-gray-50 rounded-lg p-3">
+                <p className="text-gray-600 text-xs mb-0.5">{row.label}</p>
+                <p className="text-gray-900 text-sm font-semibold">{row.value}</p>
               </div>
             ))}
           </div>
           <div className="flex items-start gap-2">
             <CheckCircle className="w-4 h-4 text-blue-400 shrink-0 mt-0.5" />
-            <p className="text-slate-300 text-sm leading-relaxed">{proto.note}</p>
+            <p className="text-gray-800 text-sm leading-relaxed">{proto.note}</p>
           </div>
           {proto.caution && (
             <div className="flex items-start gap-2">
@@ -205,7 +205,7 @@ export default function Igf1ProtocolSelector() {
         </div>
       )}
 
-      <p className="text-slate-600 text-xs">For research and educational purposes only. Consult a physician before use.</p>
+      <p className="text-gray-500 text-xs">For research and educational purposes only. Consult a physician before use.</p>
     </div>
   );
 }

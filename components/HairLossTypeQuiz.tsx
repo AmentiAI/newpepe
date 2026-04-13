@@ -163,11 +163,11 @@ export default function HairLossTypeQuiz() {
     <div className="glass-card p-6 sm:p-8">
       <div className="flex items-center justify-between mb-6">
         <div>
-          <h3 className="text-white font-black text-xl">Hair Loss Type Assessment</h3>
-          <p className="text-slate-400 text-sm mt-1">5 quick questions — get your hair loss type + GHK-Cu protocol</p>
+          <h3 className="text-gray-900 font-black text-xl">Hair Loss Type Assessment</h3>
+          <p className="text-gray-600 text-sm mt-1">5 quick questions — get your hair loss type + GHK-Cu protocol</p>
         </div>
         {(step > 0 || result) && (
-          <button onClick={reset} className="text-slate-500 hover:text-slate-300 flex items-center gap-1 text-xs transition-colors">
+          <button onClick={reset} className="text-gray-600 hover:text-gray-800 flex items-center gap-1 text-xs transition-colors">
             <RotateCcw className="w-3 h-3" /> Reset
           </button>
         )}
@@ -177,7 +177,7 @@ export default function HairLossTypeQuiz() {
         <>
           {/* Progress bar */}
           <div className="mb-6">
-            <div className="flex justify-between text-xs text-slate-500 mb-2">
+            <div className="flex justify-between text-xs text-gray-600 mb-2">
               <span>Question {step + 1} of {totalSteps}</span>
               <span>{Math.round(((step) / totalSteps) * 100)}% complete</span>
             </div>
@@ -189,13 +189,13 @@ export default function HairLossTypeQuiz() {
             </div>
           </div>
 
-          <p className="text-white font-semibold text-lg mb-5">{currentQ.text}</p>
+          <p className="text-gray-900 font-semibold text-lg mb-5">{currentQ.text}</p>
           <div className="space-y-2.5">
             {currentQ.options.map((opt) => (
               <button
                 key={opt.value}
                 onClick={() => handleAnswer(opt.value)}
-                className="w-full text-left px-5 py-3.5 rounded-xl border border-white/10 bg-white/3 hover:bg-amber-400/10 hover:border-amber-400/40 text-slate-300 hover:text-white text-sm font-medium transition-all duration-200"
+                className="w-full text-left px-5 py-3.5 rounded-xl border border-gray-200 bg-white/3 hover:bg-amber-400/10 hover:border-amber-400/40 text-gray-800 hover:text-gray-900 text-sm font-medium transition-all duration-200"
               >
                 {opt.label}
               </button>
@@ -210,24 +210,24 @@ export default function HairLossTypeQuiz() {
               <div className="text-amber-400 text-xs font-bold tracking-widest">{result.badge}</div>
             </div>
             <div>
-              <div className="text-slate-500 text-xs uppercase tracking-wide mb-1">{result.confidence}</div>
+              <div className="text-gray-600 text-xs uppercase tracking-wide mb-1">{result.confidence}</div>
               <h4 className={`font-black text-xl ${result.color}`}>{result.type}</h4>
             </div>
           </div>
 
           {/* Description */}
-          <p className="text-slate-300 text-sm leading-relaxed">{result.description}</p>
+          <p className="text-gray-800 text-sm leading-relaxed">{result.description}</p>
 
           {/* Protocol */}
           <div className="bg-amber-400/5 border border-amber-400/20 rounded-xl p-4">
             <div className="text-amber-400 text-xs font-bold tracking-widest uppercase mb-2">Recommended GHK-Cu Protocol</div>
-            <p className="text-slate-300 text-sm leading-relaxed">{result.protocol}</p>
+            <p className="text-gray-800 text-sm leading-relaxed">{result.protocol}</p>
           </div>
 
           {/* Combine */}
           <div className="bg-emerald-500/5 border border-emerald-500/20 rounded-xl p-4">
             <div className="text-emerald-400 text-xs font-bold tracking-widest uppercase mb-2">What to Combine With</div>
-            <p className="text-slate-300 text-sm leading-relaxed">{result.combine}</p>
+            <p className="text-gray-800 text-sm leading-relaxed">{result.combine}</p>
           </div>
 
           <div className="flex flex-wrap gap-3 pt-2">

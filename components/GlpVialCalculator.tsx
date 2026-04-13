@@ -63,32 +63,32 @@ export default function GlpVialCalculator({ compound, vialMg, defaultWater }: Gl
   return (
     <div className="glass-card p-6 space-y-5">
       <div>
-        <h3 className="text-white font-black text-lg mb-1">
+        <h3 className="text-gray-900 font-black text-lg mb-1">
           {info.label} {vialMg}mg — Dose & Supply Calculator
         </h3>
-        <p className="text-slate-400 text-sm">
+        <p className="text-gray-600 text-sm">
           Calculate your exact draw volume, injection amount (in IU/units), and how many weeks this vial will last.
         </p>
       </div>
 
       <div className="grid grid-cols-2 gap-4">
         <div>
-          <label className="text-slate-400 text-xs font-semibold mb-1.5 block">Bacteriostatic Water Added (mL)</label>
+          <label className="text-gray-600 text-xs font-semibold mb-1.5 block">Bacteriostatic Water Added (mL)</label>
           <input
             type="number"
             min={0.5}
             step={0.5}
             value={waterInput}
             onChange={(e) => handleWater(e.target.value)}
-            className="w-full bg-dark-800 border border-slate-700 rounded-lg px-4 py-3 text-white text-sm focus:outline-none focus:border-slate-500"
+            className="w-full bg-white border border-gray-200 rounded-lg px-4 py-3 text-gray-900 text-sm focus:outline-none focus:border-slate-500"
           />
         </div>
         <div>
-          <label className="text-slate-400 text-xs font-semibold mb-1.5 block">Weekly Dose ({info.unit})</label>
+          <label className="text-gray-600 text-xs font-semibold mb-1.5 block">Weekly Dose ({info.unit})</label>
           <select
             value={dose}
             onChange={(e) => setDose(parseFloat(e.target.value))}
-            className="w-full bg-dark-800 border border-slate-700 rounded-lg px-4 py-3 text-white text-sm focus:outline-none focus:border-slate-500"
+            className="w-full bg-white border border-gray-200 rounded-lg px-4 py-3 text-gray-900 text-sm focus:outline-none focus:border-slate-500"
           >
             {info.escalation.map((d) => (
               <option key={d} value={d}>{d}{info.unit}/week</option>
@@ -101,19 +101,19 @@ export default function GlpVialCalculator({ compound, vialMg, defaultWater }: Gl
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 text-center">
           <div>
             <div className={`text-2xl font-black ${c.text}`}>{concentration.toFixed(1)}</div>
-            <div className="text-slate-400 text-xs mt-1">{info.unit}/mL<br/>Concentration</div>
+            <div className="text-gray-600 text-xs mt-1">{info.unit}/mL<br/>Concentration</div>
           </div>
           <div>
             <div className={`text-2xl font-black ${c.text}`}>{mlPerDose.toFixed(3)}</div>
-            <div className="text-slate-400 text-xs mt-1">mL<br/>Per Dose</div>
+            <div className="text-gray-600 text-xs mt-1">mL<br/>Per Dose</div>
           </div>
           <div>
             <div className={`text-2xl font-black ${c.text}`}>{iuPerDose.toFixed(1)}</div>
-            <div className="text-slate-400 text-xs mt-1">IU / Units<br/>On Syringe</div>
+            <div className="text-gray-600 text-xs mt-1">IU / Units<br/>On Syringe</div>
           </div>
           <div>
             <div className={`text-2xl font-black ${c.text}`}>{weeksSupply}</div>
-            <div className="text-slate-400 text-xs mt-1">Weeks<br/>Supply</div>
+            <div className="text-gray-600 text-xs mt-1">Weeks<br/>Supply</div>
           </div>
         </div>
       </div>
@@ -125,14 +125,14 @@ export default function GlpVialCalculator({ compound, vialMg, defaultWater }: Gl
           'Refrigerate after reconstitution. Use within 28 days.',
           'Use a standard 1mL insulin syringe (100 IU markings) for precise dosing.',
         ].map((tip, i) => (
-          <div key={i} className="flex items-start gap-2 text-xs text-slate-400">
+          <div key={i} className="flex items-start gap-2 text-xs text-gray-600">
             <CheckCircle className={`w-3.5 h-3.5 ${c.text} shrink-0 mt-0.5`} />
             {tip}
           </div>
         ))}
       </div>
 
-      <p className="text-slate-600 text-xs">For research and educational purposes only. Always consult a qualified healthcare provider.</p>
+      <p className="text-gray-500 text-xs">For research and educational purposes only. Always consult a qualified healthcare provider.</p>
     </div>
   );
 }

@@ -67,7 +67,7 @@ const protocols: Record<Situation, {
 const colorClass = {
   button: {
     active: 'bg-amber-500/15 border-amber-500/30 text-amber-300',
-    inactive: 'bg-slate-800/40 border-slate-700/30 text-slate-400 hover:text-slate-200 hover:border-slate-600',
+    inactive: 'bg-slate-800/40 border-gray-200/30 text-gray-600 hover:text-gray-900 hover:border-gray-300',
   },
 };
 
@@ -78,8 +78,8 @@ export default function TestosteroneSupportSelector() {
   return (
     <div className="glass-card p-6 space-y-6">
       <div>
-        <h3 className="text-white font-black text-lg mb-1">Testosterone Support Protocol Selector</h3>
-        <p className="text-slate-400 text-sm">Select your situation to see the recommended peptide approach, dosing, and expected timeline.</p>
+        <h3 className="text-gray-900 font-black text-lg mb-1">Testosterone Support Protocol Selector</h3>
+        <p className="text-gray-600 text-sm">Select your situation to see the recommended peptide approach, dosing, and expected timeline.</p>
       </div>
 
       {/* Situation buttons */}
@@ -102,7 +102,7 @@ export default function TestosteroneSupportSelector() {
       <div className="bg-amber-500/8 border border-amber-500/20 rounded-xl p-5 space-y-4">
         <div>
           <h4 className="text-amber-300 font-black text-base mb-1">{protocol.headline}</h4>
-          <p className="text-slate-300 text-sm leading-relaxed">{protocol.description}</p>
+          <p className="text-gray-800 text-sm leading-relaxed">{protocol.description}</p>
         </div>
 
         <div className="space-y-3">
@@ -110,9 +110,9 @@ export default function TestosteroneSupportSelector() {
             <div key={p.name} className="bg-slate-900/40 rounded-lg p-4">
               <div className="flex items-center justify-between flex-wrap gap-2 mb-1">
                 <span className="text-amber-300 font-bold text-sm">{p.name}</span>
-                <span className="text-slate-400 text-xs bg-slate-800 rounded-full px-3 py-1">{p.dose} — {p.frequency}</span>
+                <span className="text-gray-600 text-xs bg-slate-800 rounded-full px-3 py-1">{p.dose} — {p.frequency}</span>
               </div>
-              <p className="text-slate-400 text-xs leading-relaxed">{p.role}</p>
+              <p className="text-gray-600 text-xs leading-relaxed">{p.role}</p>
             </div>
           ))}
         </div>
@@ -120,16 +120,16 @@ export default function TestosteroneSupportSelector() {
         <div className="grid sm:grid-cols-2 gap-3">
           <div className="bg-slate-900/40 rounded-lg p-3">
             <p className="text-amber-400 text-xs font-bold mb-1">Timeline</p>
-            <p className="text-slate-300 text-xs">{protocol.timeline}</p>
+            <p className="text-gray-800 text-xs">{protocol.timeline}</p>
           </div>
           <div className="bg-slate-900/40 rounded-lg p-3">
             <p className="text-amber-400 text-xs font-bold mb-1">What to Expect</p>
-            <p className="text-slate-300 text-xs leading-relaxed">{protocol.expectations}</p>
+            <p className="text-gray-800 text-xs leading-relaxed">{protocol.expectations}</p>
           </div>
         </div>
       </div>
 
-      <p className="text-slate-600 text-xs">Research peptides only. Always confirm hormonal status with bloodwork before and after any peptide protocol.</p>
+      <p className="text-gray-500 text-xs">Research peptides only. Always confirm hormonal status with bloodwork before and after any peptide protocol.</p>
     </div>
   );
 }

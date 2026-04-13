@@ -199,17 +199,17 @@ export default function GhkCuProtocolGuide() {
   );
 
   return (
-    <div className="rounded-xl bg-dark-800/60 border border-white/10 overflow-hidden">
+    <div className="rounded-xl bg-white border border-gray-200 border border-gray-200 overflow-hidden">
       {/* Tabs */}
-      <div className="flex border-b border-white/10">
+      <div className="flex border-b border-gray-200">
         {tabs.map((tab) => (
           <button
             key={tab.id}
             onClick={() => setActiveTab(tab.id)}
             className={`flex-1 py-4 text-sm font-semibold transition-all duration-200 ${
               activeTab === tab.id
-                ? 'bg-purple-900/30 text-purple-300 border-b-2 border-purple-500'
-                : 'text-slate-400 hover:text-slate-200 hover:bg-white/5'
+                ? 'bg-amber-50 text-amber-600 border-b-2 border-amber-400'
+                : 'text-gray-600 hover:text-gray-900 hover:bg-gray-50'
             }`}
           >
             {tab.label}
@@ -220,10 +220,10 @@ export default function GhkCuProtocolGuide() {
       <div className="p-6 space-y-6">
         {/* Topical: Concentration slider */}
         {activeTab === 'topical' && (
-          <div className="bg-dark-700/50 border border-white/5 rounded-xl p-5">
+          <div className="bg-gray-50 border border-gray-100 rounded-xl p-5">
             <div className="flex items-center justify-between mb-3">
-              <span className="text-sm font-semibold text-white">Concentration</span>
-              <span className="text-purple-400 font-bold text-lg">{concentration.toFixed(1)}%</span>
+              <span className="text-sm font-semibold text-gray-900">Concentration</span>
+              <span className="text-amber-600 font-bold text-lg">{concentration.toFixed(1)}%</span>
             </div>
             <input
               type="range"
@@ -232,9 +232,9 @@ export default function GhkCuProtocolGuide() {
               step={0.5}
               value={concentration}
               onChange={(e) => setConcentration(Number(e.target.value))}
-              className="w-full accent-purple-500 mb-3"
+              className="w-full accent-amber-500 mb-3"
             />
-            <div className="flex justify-between text-xs text-slate-500 mb-4">
+            <div className="flex justify-between text-xs text-gray-600 mb-4">
               <span>0.5%</span>
               <span>1.0%</span>
               <span>2.0%</span>
@@ -242,17 +242,17 @@ export default function GhkCuProtocolGuide() {
 
             {/* Strength indicator */}
             <div>
-              <div className="flex justify-between text-xs text-slate-400 mb-1">
+              <div className="flex justify-between text-xs text-gray-600 mb-1">
                 <span>Strength Indicator</span>
-                <span className="text-purple-400">{concentrationInfo.label} — {concentrationInfo.desc}</span>
+                <span className="text-amber-600">{concentrationInfo.label} — {concentrationInfo.desc}</span>
               </div>
-              <div className="h-3 bg-dark-600 rounded-full overflow-hidden">
+              <div className="h-3 bg-gray-200 rounded-full overflow-hidden">
                 <div
-                  className="h-full bg-gradient-to-r from-purple-800 to-purple-400 rounded-full transition-all duration-500"
+                  className="h-full bg-gradient-to-r from-amber-500 to-amber-300 rounded-full transition-all duration-500"
                   style={{ width: `${concentrationInfo.strength}%` }}
                 />
               </div>
-              <div className="text-xs text-slate-500 mt-2">
+              <div className="text-xs text-gray-600 mt-2">
                 {concentration === 0.5 && 'Good for: sensitive skin, first-time GHK-Cu users, or long-term maintenance after loading phase'}
                 {concentration === 1 && 'Good for: standard anti-aging protocol, most skin types, daily use without saturation'}
                 {concentration === 2 && 'Good for: accelerated protocols, experienced users, intensive scar or aging reversal courses (8–12 weeks then reduce)'}
@@ -263,44 +263,44 @@ export default function GhkCuProtocolGuide() {
 
         {/* Protocol Card */}
         <div className="grid sm:grid-cols-2 gap-4">
-          <div className="bg-dark-700/40 border border-white/5 rounded-xl p-4">
-            <p className="text-xs text-slate-500 uppercase tracking-wider mb-1">Dose</p>
-            <p className="text-sm text-slate-200">{protocol.dose}</p>
+          <div className="bg-gray-50 border border-gray-100 rounded-xl p-4">
+            <p className="text-xs text-gray-600 uppercase tracking-wider mb-1">Dose</p>
+            <p className="text-sm text-gray-900">{protocol.dose}</p>
           </div>
-          <div className="bg-dark-700/40 border border-white/5 rounded-xl p-4">
-            <p className="text-xs text-slate-500 uppercase tracking-wider mb-1">Frequency</p>
-            <p className="text-sm text-slate-200">{protocol.frequency}</p>
+          <div className="bg-gray-50 border border-gray-100 rounded-xl p-4">
+            <p className="text-xs text-gray-600 uppercase tracking-wider mb-1">Frequency</p>
+            <p className="text-sm text-gray-900">{protocol.frequency}</p>
           </div>
-          <div className="bg-dark-700/40 border border-white/5 rounded-xl p-4 sm:col-span-2">
-            <p className="text-xs text-slate-500 uppercase tracking-wider mb-1">Application Method</p>
-            <p className="text-sm text-slate-300 leading-relaxed">{protocol.method}</p>
+          <div className="bg-gray-50 border border-gray-100 rounded-xl p-4 sm:col-span-2">
+            <p className="text-xs text-gray-600 uppercase tracking-wider mb-1">Application Method</p>
+            <p className="text-sm text-gray-800 leading-relaxed">{protocol.method}</p>
           </div>
-          <div className="bg-dark-700/40 border border-white/5 rounded-xl p-4">
-            <p className="text-xs text-slate-500 uppercase tracking-wider mb-1">Best For</p>
-            <p className="text-sm text-slate-300">{protocol.bestFor}</p>
+          <div className="bg-gray-50 border border-gray-100 rounded-xl p-4">
+            <p className="text-xs text-gray-600 uppercase tracking-wider mb-1">Best For</p>
+            <p className="text-sm text-gray-800">{protocol.bestFor}</p>
           </div>
-          <div className="bg-dark-700/40 border border-white/5 rounded-xl p-4">
-            <p className="text-xs text-slate-500 uppercase tracking-wider mb-1">Expected Results</p>
-            <p className="text-sm text-slate-300">{protocol.expectedResults}</p>
+          <div className="bg-gray-50 border border-gray-100 rounded-xl p-4">
+            <p className="text-xs text-gray-600 uppercase tracking-wider mb-1">Expected Results</p>
+            <p className="text-sm text-gray-800">{protocol.expectedResults}</p>
           </div>
         </div>
 
         {/* Week-by-week Timeline */}
         <div>
-          <p className="text-sm font-semibold text-purple-300 mb-4">Week-by-Week Timeline</p>
+          <p className="text-sm font-semibold text-amber-600 mb-4">Week-by-Week Timeline</p>
           <div className="grid sm:grid-cols-2 gap-3">
             {protocol.timeline.map((entry) => (
-              <div key={entry.period} className="bg-dark-700/40 border border-purple-500/20 rounded-xl p-4">
+              <div key={entry.period} className="bg-gray-50 border border-amber-400/20 rounded-xl p-4">
                 <div className="flex items-center gap-2 mb-2">
-                  <span className="text-xs bg-purple-500/20 text-purple-300 border border-purple-500/30 rounded-full px-2 py-0.5 font-semibold">
+                  <span className="text-xs bg-amber-50 text-amber-600 border border-amber-400/30 rounded-full px-2 py-0.5 font-semibold">
                     {entry.period}
                   </span>
-                  <span className="text-sm font-medium text-white">{entry.title}</span>
+                  <span className="text-sm font-medium text-gray-900">{entry.title}</span>
                 </div>
                 <ul className="space-y-1">
                   {entry.changes.map((c, i) => (
-                    <li key={i} className="text-xs text-slate-400 flex items-start gap-2">
-                      <span className="text-purple-400 mt-0.5">•</span>
+                    <li key={i} className="text-xs text-gray-600 flex items-start gap-2">
+                      <span className="text-amber-600 mt-0.5">•</span>
                       {c}
                     </li>
                   ))}
@@ -319,7 +319,7 @@ export default function GhkCuProtocolGuide() {
           Source GHK-Cu <ArrowRight className="w-4 h-4" />
         </a>
 
-        <p className="text-xs text-slate-600 text-center">
+        <p className="text-xs text-gray-500 text-center">
           For research purposes only. Not medical advice.
         </p>
       </div>

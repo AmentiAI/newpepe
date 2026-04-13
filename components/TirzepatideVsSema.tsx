@@ -51,8 +51,8 @@ export default function TirzepatideVsSema() {
   return (
     <div className="glass-card p-6 space-y-5">
       <div>
-        <h3 className="text-white font-black text-lg mb-1">Tirzepatide vs Semaglutide — Head-to-Head Data</h3>
-        <p className="text-slate-400 text-sm">Select a clinical metric to compare outcomes from published trial data.</p>
+        <h3 className="text-gray-900 font-black text-lg mb-1">Tirzepatide vs Semaglutide — Head-to-Head Data</h3>
+        <p className="text-gray-600 text-sm">Select a clinical metric to compare outcomes from published trial data.</p>
       </div>
 
       <div className="flex flex-wrap gap-2">
@@ -63,7 +63,7 @@ export default function TirzepatideVsSema() {
             className={`text-xs font-semibold px-3 py-2 rounded-lg border transition-all ${
               metric === m.id
                 ? 'bg-emerald-500/15 border-emerald-500/30 text-emerald-300'
-                : 'bg-dark-800/40 border-slate-700/40 text-slate-400 hover:text-slate-200'
+                : 'bg-gray-50 border-gray-200/40 text-gray-600 hover:text-gray-900'
             }`}
           >
             {m.label}
@@ -83,7 +83,7 @@ export default function TirzepatideVsSema() {
               className="h-full bg-blue-500 rounded-xl flex items-center justify-end pr-3 transition-all duration-700"
               style={{ width: `${semaWidth}%` }}
             >
-              <span className="text-white text-xs font-bold">{d.semaLabel}</span>
+              <span className="text-gray-900 text-xs font-bold">{d.semaLabel}</span>
             </div>
           </div>
         </div>
@@ -99,25 +99,25 @@ export default function TirzepatideVsSema() {
               className="h-full bg-emerald-500 rounded-xl flex items-center justify-end pr-3 transition-all duration-700"
               style={{ width: `${tirzWidth}%` }}
             >
-              <span className="text-white text-xs font-bold">{d.tirzLabel}</span>
+              <span className="text-gray-900 text-xs font-bold">{d.tirzLabel}</span>
             </div>
           </div>
         </div>
       </div>
 
       <div className="rounded-xl p-4 bg-emerald-500/8 border border-emerald-500/20">
-        <p className="text-slate-300 text-sm leading-relaxed">{d.source}</p>
+        <p className="text-gray-800 text-sm leading-relaxed">{d.source}</p>
       </div>
 
-      <div className="rounded-xl p-4 bg-dark-800/40 border border-slate-700/30">
-        <p className="text-slate-400 text-xs leading-relaxed">
-          <strong className="text-slate-300">Why tirzepatide outperforms:</strong> Dual GIP + GLP-1 receptor agonism produces synergistic effects
+      <div className="rounded-xl p-4 bg-gray-50 border border-gray-200/30">
+        <p className="text-gray-600 text-xs leading-relaxed">
+          <strong className="text-gray-800">Why tirzepatide outperforms:</strong> Dual GIP + GLP-1 receptor agonism produces synergistic effects
           that neither receptor can achieve alone. GIP receptor activation directly impacts adipose tissue and potentiates insulin secretion
           through a different mechanism than GLP-1, explaining the superior clinical outcomes.
         </p>
       </div>
 
-      <p className="text-slate-600 text-xs">Data sourced from STEP, SUSTAIN, SURPASS, and SURMOUNT clinical trial programs. For educational purposes.</p>
+      <p className="text-gray-500 text-xs">Data sourced from STEP, SUSTAIN, SURPASS, and SURMOUNT clinical trial programs. For educational purposes.</p>
     </div>
   );
 }

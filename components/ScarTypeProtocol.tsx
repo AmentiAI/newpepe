@@ -233,15 +233,15 @@ export default function ScarTypeProtocol() {
   };
 
   return (
-    <div className="rounded-xl bg-dark-800/60 border border-white/10 overflow-hidden">
+    <div className="rounded-xl bg-gray-50 border border-gray-200 overflow-hidden">
       {/* Header */}
-      <div className="p-5 border-b border-white/10 flex items-center justify-between">
+      <div className="p-5 border-b border-gray-200 flex items-center justify-between">
         <div>
-          <h3 className="text-xl font-bold text-white">Scar Protocol Selector</h3>
-          <p className="text-slate-400 text-sm">Select scar type and age for your personalized BPC-157 protocol</p>
+          <h3 className="text-xl font-bold text-gray-900">Scar Protocol Selector</h3>
+          <p className="text-gray-600 text-sm">Select scar type and age for your personalized BPC-157 protocol</p>
         </div>
         {step > 1 && (
-          <button onClick={reset} className="text-slate-500 hover:text-slate-300 flex items-center gap-1 text-sm">
+          <button onClick={reset} className="text-gray-600 hover:text-gray-800 flex items-center gap-1 text-sm">
             <RotateCcw className="w-4 h-4" /> Restart
           </button>
         )}
@@ -250,7 +250,7 @@ export default function ScarTypeProtocol() {
       {/* Progress */}
       <div className="flex gap-1 px-5 pt-5">
         {[1, 2, 3].map(s => (
-          <div key={s} className={`flex-1 h-1.5 rounded-full transition-all duration-300 ${s <= step ? 'bg-emerald-500' : 'bg-dark-700'}`} />
+          <div key={s} className={`flex-1 h-1.5 rounded-full transition-all duration-300 ${s <= step ? 'bg-emerald-500' : 'bg-white'}`} />
         ))}
       </div>
 
@@ -258,18 +258,18 @@ export default function ScarTypeProtocol() {
         {/* Step 1: Scar Type */}
         {step === 1 && (
           <div>
-            <p className="text-white font-semibold mb-4">Step 1: Select your scar type</p>
+            <p className="text-gray-900 font-semibold mb-4">Step 1: Select your scar type</p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
               {scarTypes.map(st => (
                 <button
                   key={st.value}
                   onClick={() => { setScarType(st.value); setStep(2); }}
-                  className="flex items-center gap-3 p-4 rounded-xl border border-white/10 bg-dark-700/40 hover:border-emerald-500/50 hover:bg-emerald-500/5 transition-all text-left"
+                  className="flex items-center gap-3 p-4 rounded-xl border border-gray-200 bg-gray-50 hover:border-emerald-500/50 hover:bg-emerald-500/5 transition-all text-left"
                 >
                   <span className="text-2xl">{st.emoji}</span>
                   <div>
-                    <div className="text-sm font-semibold text-slate-200">{st.label}</div>
-                    <div className="text-xs text-slate-500">{st.desc}</div>
+                    <div className="text-sm font-semibold text-gray-900">{st.label}</div>
+                    <div className="text-xs text-gray-600">{st.desc}</div>
                   </div>
                 </button>
               ))}
@@ -280,20 +280,20 @@ export default function ScarTypeProtocol() {
         {/* Step 2: Scar Age */}
         {step === 2 && (
           <div>
-            <p className="text-slate-400 text-sm mb-1">
+            <p className="text-gray-600 text-sm mb-1">
               Scar type: <span className="text-emerald-400">{scarTypes.find(s => s.value === scarType)?.label}</span>
             </p>
-            <p className="text-white font-semibold mb-4">Step 2: How old is the scar?</p>
+            <p className="text-gray-900 font-semibold mb-4">Step 2: How old is the scar?</p>
             <div className="flex flex-col gap-3">
               {scarAges.map(sa => (
                 <button
                   key={sa.value}
                   onClick={() => { setScarAge(sa.value); setStep(3); }}
-                  className={`flex items-center justify-between p-4 rounded-xl border bg-dark-700/40 hover:bg-dark-700/60 transition-all ${sa.color}`}
+                  className={`flex items-center justify-between p-4 rounded-xl border bg-gray-50 hover:bg-gray-50 transition-all ${sa.color}`}
                 >
                   <div className="text-left">
-                    <div className="font-semibold text-slate-200">{sa.label}</div>
-                    <div className="text-xs text-slate-500">{sa.sub}</div>
+                    <div className="font-semibold text-gray-900">{sa.label}</div>
+                    <div className="text-xs text-gray-600">{sa.sub}</div>
                   </div>
                   <ArrowRight className="w-4 h-4 opacity-50" />
                 </button>
@@ -306,44 +306,44 @@ export default function ScarTypeProtocol() {
         {step === 3 && protocol && diff && (
           <div className="space-y-4">
             <div>
-              <p className="text-xs text-slate-500 mb-1">Your personalized protocol:</p>
-              <h4 className="text-lg font-bold text-white">{protocol.headline}</h4>
+              <p className="text-xs text-gray-600 mb-1">Your personalized protocol:</p>
+              <h4 className="text-lg font-bold text-gray-900">{protocol.headline}</h4>
             </div>
 
             {/* Treatment Difficulty */}
             <div className={`rounded-xl border p-4 ${diff.bg} border-current/20`}>
               <div className="flex items-center justify-between mb-2">
-                <p className="text-xs font-semibold uppercase tracking-wider text-slate-400">Treatment Difficulty</p>
+                <p className="text-xs font-semibold uppercase tracking-wider text-gray-600">Treatment Difficulty</p>
                 <span className={`text-sm font-bold ${diff.color}`}>{diff.label}</span>
               </div>
-              <div className="h-2 bg-dark-600 rounded-full overflow-hidden">
+              <div className="h-2 bg-white rounded-full overflow-hidden">
                 <div className={`h-full rounded-full ${diff.bar}`} style={{ width: diff.width }} />
               </div>
             </div>
 
             {/* Mechanism Focus */}
-            <div className="bg-dark-700/40 border border-white/5 rounded-xl p-4">
-              <p className="text-xs text-slate-500 uppercase tracking-wider mb-1">Mechanism Focus</p>
-              <p className="text-sm text-slate-300">{protocol.mechanismFocus}</p>
+            <div className="bg-gray-50 border border-gray-200 rounded-xl p-4">
+              <p className="text-xs text-gray-600 uppercase tracking-wider mb-1">Mechanism Focus</p>
+              <p className="text-sm text-gray-800">{protocol.mechanismFocus}</p>
             </div>
 
             {/* Protocol Details Grid */}
             <div className="grid sm:grid-cols-2 gap-3">
-              <div className="bg-dark-700/40 border border-white/5 rounded-xl p-4">
-                <p className="text-xs text-slate-500 uppercase tracking-wider mb-1">Injection Method</p>
-                <p className="text-sm text-slate-300">{protocol.injectionMethod}</p>
+              <div className="bg-gray-50 border border-gray-200 rounded-xl p-4">
+                <p className="text-xs text-gray-600 uppercase tracking-wider mb-1">Injection Method</p>
+                <p className="text-sm text-gray-800">{protocol.injectionMethod}</p>
               </div>
-              <div className="bg-dark-700/40 border border-white/5 rounded-xl p-4">
-                <p className="text-xs text-slate-500 uppercase tracking-wider mb-1">Dose</p>
-                <p className="text-sm text-slate-300">{protocol.dose}</p>
+              <div className="bg-gray-50 border border-gray-200 rounded-xl p-4">
+                <p className="text-xs text-gray-600 uppercase tracking-wider mb-1">Dose</p>
+                <p className="text-sm text-gray-800">{protocol.dose}</p>
               </div>
-              <div className="bg-dark-700/40 border border-white/5 rounded-xl p-4">
-                <p className="text-xs text-slate-500 uppercase tracking-wider mb-1">Frequency</p>
-                <p className="text-sm text-slate-300">{protocol.frequency}</p>
+              <div className="bg-gray-50 border border-gray-200 rounded-xl p-4">
+                <p className="text-xs text-gray-600 uppercase tracking-wider mb-1">Frequency</p>
+                <p className="text-sm text-gray-800">{protocol.frequency}</p>
               </div>
-              <div className="bg-dark-700/40 border border-white/5 rounded-xl p-4">
-                <p className="text-xs text-slate-500 uppercase tracking-wider mb-1">Expected Duration</p>
-                <p className="text-sm text-slate-300">{protocol.expectedDuration}</p>
+              <div className="bg-gray-50 border border-gray-200 rounded-xl p-4">
+                <p className="text-xs text-gray-600 uppercase tracking-wider mb-1">Expected Duration</p>
+                <p className="text-sm text-gray-800">{protocol.expectedDuration}</p>
               </div>
             </div>
 
@@ -352,7 +352,7 @@ export default function ScarTypeProtocol() {
               <p className="text-xs text-emerald-400 font-semibold uppercase tracking-wider mb-2">Combination Peptides</p>
               <ul className="space-y-1">
                 {protocol.comboPeptides.map((p) => (
-                  <li key={p} className="text-sm text-slate-300 flex items-start gap-2">
+                  <li key={p} className="text-sm text-gray-800 flex items-start gap-2">
                     <span className="text-emerald-400 mt-1 text-xs">+</span>
                     {p}
                   </li>
@@ -363,7 +363,7 @@ export default function ScarTypeProtocol() {
             {/* Notes */}
             <div className="bg-amber-900/20 border border-amber-500/20 rounded-xl p-4">
               <p className="text-xs text-amber-400 font-semibold uppercase tracking-wider mb-2">Protocol Notes</p>
-              <p className="text-sm text-slate-300 leading-relaxed">{protocol.notes}</p>
+              <p className="text-sm text-gray-800 leading-relaxed">{protocol.notes}</p>
             </div>
 
             <a
@@ -375,13 +375,13 @@ export default function ScarTypeProtocol() {
               Source BPC-157 & GHK-Cu <ArrowRight className="w-4 h-4" />
             </a>
 
-            <button onClick={reset} className="w-full text-slate-500 hover:text-slate-300 text-sm flex items-center justify-center gap-1 py-1">
+            <button onClick={reset} className="w-full text-gray-600 hover:text-gray-800 text-sm flex items-center justify-center gap-1 py-1">
               <RotateCcw className="w-4 h-4" /> Start Over
             </button>
           </div>
         )}
 
-        <p className="text-xs text-slate-600 text-center">
+        <p className="text-xs text-gray-500 text-center">
           For research purposes only. Not medical advice. Consult a healthcare professional.
         </p>
       </div>

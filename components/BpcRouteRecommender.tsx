@@ -77,8 +77,8 @@ function getRecommendation(answers: Answers): RouteResult {
       protocol: 'Take 250mcg oral in the morning (gut protection and systemic base load), and 250mcg subcutaneous injection in the evening (systemic tissue healing and anti-inflammatory coverage). Total daily dose: 500mcg split across both routes.',
       dose: '250mcg oral + 250mcg SC injectable',
       frequency: 'Oral: AM daily | Injectable: PM daily',
-      color: 'text-purple-400',
-      borderColor: 'border-purple-500',
+      color: 'text-amber-600',
+      borderColor: 'border-amber-400',
     };
   }
 
@@ -141,11 +141,11 @@ export default function BpcRouteRecommender() {
     <div className="glass-card p-6 sm:p-8">
       <div className="flex items-center justify-between mb-6">
         <div>
-          <h3 className="text-white font-black text-xl">BPC-157 Route Recommender</h3>
-          <p className="text-slate-400 text-sm mt-1">4 questions — get your personalized administration route</p>
+          <h3 className="text-gray-900 font-black text-xl">BPC-157 Route Recommender</h3>
+          <p className="text-gray-600 text-sm mt-1">4 questions — get your personalized administration route</p>
         </div>
         {(step > 0 || result) && (
-          <button onClick={reset} className="text-slate-500 hover:text-slate-300 flex items-center gap-1 text-xs transition-colors">
+          <button onClick={reset} className="text-gray-600 hover:text-gray-800 flex items-center gap-1 text-xs transition-colors">
             <RotateCcw className="w-3 h-3" /> Reset
           </button>
         )}
@@ -155,7 +155,7 @@ export default function BpcRouteRecommender() {
         <>
           {/* Progress */}
           <div className="mb-6">
-            <div className="flex justify-between text-xs text-slate-500 mb-2">
+            <div className="flex justify-between text-xs text-gray-600 mb-2">
               <span>Question {step + 1} of {totalSteps}</span>
               <span>{Math.round((step / totalSteps) * 100)}% complete</span>
             </div>
@@ -167,13 +167,13 @@ export default function BpcRouteRecommender() {
             </div>
           </div>
 
-          <p className="text-white font-semibold text-lg mb-5">{currentQ.text}</p>
+          <p className="text-gray-900 font-semibold text-lg mb-5">{currentQ.text}</p>
           <div className="space-y-2.5">
             {currentQ.options.map((opt) => (
               <button
                 key={opt.value}
                 onClick={() => handleAnswer(opt.value)}
-                className="w-full text-left px-5 py-3.5 rounded-xl border border-white/10 bg-white/3 hover:bg-emerald-400/10 hover:border-emerald-400/40 text-slate-300 hover:text-white text-sm font-medium transition-all duration-200"
+                className="w-full text-left px-5 py-3.5 rounded-xl border border-gray-200 bg-white/3 hover:bg-emerald-400/10 hover:border-emerald-400/40 text-gray-800 hover:text-gray-900 text-sm font-medium transition-all duration-200"
               >
                 {opt.label}
               </button>
@@ -188,29 +188,29 @@ export default function BpcRouteRecommender() {
               <div className={`${result.color} text-xs font-bold tracking-widest`}>{result.badge}</div>
             </div>
             <div>
-              <div className="text-slate-500 text-xs uppercase tracking-wide mb-1">Recommended Route</div>
+              <div className="text-gray-600 text-xs uppercase tracking-wide mb-1">Recommended Route</div>
               <h4 className={`font-black text-xl ${result.color}`}>{result.route}</h4>
-              <p className="text-slate-400 text-sm mt-1">{result.tagline}</p>
+              <p className="text-gray-600 text-sm mt-1">{result.tagline}</p>
             </div>
           </div>
 
           {/* Explanation */}
-          <p className="text-slate-300 text-sm leading-relaxed">{result.explanation}</p>
+          <p className="text-gray-800 text-sm leading-relaxed">{result.explanation}</p>
 
           {/* Protocol */}
           <div className="bg-emerald-500/5 border border-emerald-500/20 rounded-xl p-4">
             <div className="text-emerald-400 text-xs font-bold tracking-widest uppercase mb-3">Sample Protocol</div>
             <div className="grid grid-cols-2 gap-4 mb-3">
               <div>
-                <div className="text-slate-500 text-xs mb-1">Dose</div>
-                <div className="text-white text-sm font-semibold">{result.dose}</div>
+                <div className="text-gray-600 text-xs mb-1">Dose</div>
+                <div className="text-gray-900 text-sm font-semibold">{result.dose}</div>
               </div>
               <div>
-                <div className="text-slate-500 text-xs mb-1">Frequency</div>
-                <div className="text-white text-sm font-semibold">{result.frequency}</div>
+                <div className="text-gray-600 text-xs mb-1">Frequency</div>
+                <div className="text-gray-900 text-sm font-semibold">{result.frequency}</div>
               </div>
             </div>
-            <p className="text-slate-400 text-sm leading-relaxed">{result.protocol}</p>
+            <p className="text-gray-600 text-sm leading-relaxed">{result.protocol}</p>
           </div>
 
           <div className="flex flex-wrap gap-3 pt-2">

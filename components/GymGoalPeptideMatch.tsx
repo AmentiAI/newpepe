@@ -108,8 +108,8 @@ export default function GymGoalPeptideMatch() {
     <div className="glass-card p-6 md:p-8">
       <div className="mb-6">
         <p className="text-xs font-bold tracking-widest mb-1" style={{ color: '#00ff88' }}>PEPTIDE GOAL MATCHER</p>
-        <h3 className="text-white font-black text-xl">Match Peptides to Your Gym Goal</h3>
-        <p className="text-slate-400 text-sm mt-1">Select your primary goal to see the optimal peptide stack.</p>
+        <h3 className="text-gray-900 font-black text-xl">Match Peptides to Your Gym Goal</h3>
+        <p className="text-gray-600 text-sm mt-1">Select your primary goal to see the optimal peptide stack.</p>
       </div>
 
       <div className="grid grid-cols-2 sm:grid-cols-5 gap-2 mb-6">
@@ -128,7 +128,7 @@ export default function GymGoalPeptideMatch() {
             >
               <div className="text-2xl mb-1">{icon}</div>
               <div className="font-bold text-xs" style={{ color: isActive ? c.accentHex : '#e2e8f0' }}>{id}</div>
-              <div className="text-xs text-slate-600 mt-0.5 leading-tight">{sub}</div>
+              <div className="text-xs text-gray-500 mt-0.5 leading-tight">{sub}</div>
             </button>
           );
         })}
@@ -142,7 +142,7 @@ export default function GymGoalPeptideMatch() {
           <div className="text-xs font-bold tracking-widest mb-1" style={{ color: match.accentHex }}>
             {selected.toUpperCase()} PROTOCOL
           </div>
-          <p className="text-slate-300 text-sm italic mb-5">&quot;{match.tagline}&quot;</p>
+          <p className="text-gray-800 text-sm italic mb-5">&quot;{match.tagline}&quot;</p>
 
           <div className="space-y-4 mb-5">
             {match.peptides.map((p, i) => (
@@ -151,9 +151,9 @@ export default function GymGoalPeptideMatch() {
                   <div className="font-black text-sm" style={{ color: match.accentHex }}>
                     {i + 1}. {p.name}
                   </div>
-                  <div className="text-xs text-slate-400 font-semibold bg-black/30 px-2 py-1 rounded-lg">{p.dose}</div>
+                  <div className="text-xs text-gray-600 font-semibold bg-black/30 px-2 py-1 rounded-lg">{p.dose}</div>
                 </div>
-                <p className="text-slate-400 text-xs leading-relaxed">{p.why}</p>
+                <p className="text-gray-600 text-xs leading-relaxed">{p.why}</p>
               </div>
             ))}
           </div>
@@ -162,15 +162,15 @@ export default function GymGoalPeptideMatch() {
             <div className="rounded-xl p-3 flex items-center gap-2" style={{ background: 'rgba(0,0,0,0.2)' }}>
               <Clock className="w-4 h-4 shrink-0" style={{ color: match.accentHex }} />
               <div>
-                <div className="text-xs text-slate-500 font-semibold">Timeline</div>
-                <div className="text-white text-xs font-bold">{match.timeline}</div>
+                <div className="text-xs text-gray-600 font-semibold">Timeline</div>
+                <div className="text-gray-900 text-xs font-bold">{match.timeline}</div>
               </div>
             </div>
             <div className="rounded-xl p-3 flex items-center gap-2" style={{ background: 'rgba(0,0,0,0.2)' }}>
               <DollarSign className="w-4 h-4 shrink-0" style={{ color: match.accentHex }} />
               <div>
-                <div className="text-xs text-slate-500 font-semibold">Est. Cost</div>
-                <div className="text-white text-xs font-bold">{match.costEstimate}</div>
+                <div className="text-xs text-gray-600 font-semibold">Est. Cost</div>
+                <div className="text-gray-900 text-xs font-bold">{match.costEstimate}</div>
               </div>
             </div>
           </div>
@@ -188,12 +188,12 @@ export default function GymGoalPeptideMatch() {
       )}
 
       {!match && (
-        <div className="text-center py-4 text-slate-600 text-sm">
+        <div className="text-center py-4 text-gray-500 text-sm">
           Select your primary gym goal above to see your personalized peptide match.
         </div>
       )}
 
-      <p className="text-slate-700 text-xs mt-4 border-t border-slate-800 pt-4">
+      <p className="text-gray-700 text-xs mt-4 border-t border-slate-800 pt-4">
         For research purposes only. Not medical advice. Consult a healthcare provider before use.
       </p>
     </div>

@@ -75,8 +75,8 @@ export default function SleepPeptideSelector() {
     <div className="glass-card p-6 md:p-8">
       <div className="mb-6">
         <p className="text-xs font-bold tracking-widest mb-1" style={{ color: '#00ff88' }}>SLEEP PROBLEM IDENTIFIER</p>
-        <h3 className="text-white font-black text-xl">What&apos;s Your Sleep Problem?</h3>
-        <p className="text-slate-400 text-sm mt-1">Select your primary sleep issue to get a targeted peptide recommendation.</p>
+        <h3 className="text-gray-900 font-black text-xl">What&apos;s Your Sleep Problem?</h3>
+        <p className="text-gray-600 text-sm mt-1">Select your primary sleep issue to get a targeted peptide recommendation.</p>
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6">
@@ -95,7 +95,7 @@ export default function SleepPeptideSelector() {
               <span style={{ color: isActive ? '#00ff88' : '#64748b' }}>{icon}</span>
               <div>
                 <div className="font-bold text-sm" style={{ color: isActive ? '#00ff88' : '#e2e8f0' }}>{label}</div>
-                <div className="text-xs text-slate-500 mt-0.5">{sub}</div>
+                <div className="text-xs text-gray-600 mt-0.5">{sub}</div>
               </div>
             </button>
           );
@@ -108,22 +108,22 @@ export default function SleepPeptideSelector() {
           style={{ background: rec.color, border: `1px solid ${rec.borderColor}` }}
         >
           <div className="text-xs font-bold tracking-widest mb-1" style={{ color: rec.textColor }}>RECOMMENDED PROTOCOL</div>
-          <h4 className="text-white font-black text-lg mb-4">{rec.peptide}</h4>
+          <h4 className="text-gray-900 font-black text-lg mb-4">{rec.peptide}</h4>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-4">
             <div className="rounded-xl p-3" style={{ background: 'rgba(0,0,0,0.3)' }}>
-              <div className="text-xs font-bold tracking-widest mb-1 text-slate-500">DOSE</div>
-              <div className="text-white font-semibold text-sm">{rec.dose}</div>
+              <div className="text-xs font-bold tracking-widest mb-1 text-gray-600">DOSE</div>
+              <div className="text-gray-900 font-semibold text-sm">{rec.dose}</div>
             </div>
             <div className="rounded-xl p-3" style={{ background: 'rgba(0,0,0,0.3)' }}>
-              <div className="text-xs font-bold tracking-widest mb-1 text-slate-500">TIMING</div>
-              <div className="text-white font-semibold text-sm">{rec.timing}</div>
+              <div className="text-xs font-bold tracking-widest mb-1 text-gray-600">TIMING</div>
+              <div className="text-gray-900 font-semibold text-sm">{rec.timing}</div>
             </div>
           </div>
 
           <div>
-            <div className="text-xs font-bold tracking-widest mb-2 text-slate-500">WHY THIS WORKS</div>
-            <p className="text-slate-300 text-sm leading-relaxed">{rec.why}</p>
+            <div className="text-xs font-bold tracking-widest mb-2 text-gray-600">WHY THIS WORKS</div>
+            <p className="text-gray-800 text-sm leading-relaxed">{rec.why}</p>
           </div>
 
           <a
@@ -139,12 +139,12 @@ export default function SleepPeptideSelector() {
       )}
 
       {!rec && (
-        <div className="text-center py-4 text-slate-600 text-sm">
+        <div className="text-center py-4 text-gray-500 text-sm">
           Select a sleep problem above to see your personalized recommendation.
         </div>
       )}
 
-      <p className="text-slate-700 text-xs mt-4 border-t border-slate-800 pt-4">
+      <p className="text-gray-700 text-xs mt-4 border-t border-slate-800 pt-4">
         For research purposes only. Not medical advice. Consult a healthcare provider before use.
       </p>
     </div>

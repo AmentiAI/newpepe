@@ -32,7 +32,7 @@ const PHASE_COLORS = {
   anagen: { bg: 'bg-emerald-500', border: 'border-emerald-400', text: 'text-emerald-400', ring: 'ring-emerald-400' },
   'early-anagen': { bg: 'bg-teal-500', border: 'border-teal-400', text: 'text-teal-400', ring: 'ring-teal-400' },
   catagen: { bg: 'bg-amber-500', border: 'border-amber-400', text: 'text-amber-400', ring: 'ring-amber-400' },
-  telogen: { bg: 'bg-slate-500', border: 'border-slate-400', text: 'text-slate-400', ring: 'ring-slate-400' },
+  telogen: { bg: 'bg-slate-500', border: 'border-slate-400', text: 'text-gray-600', ring: 'ring-slate-400' },
 };
 
 const WEEK_OPTIONS = [0, 1, 2, 3, 4, 6, 8, 10, 12, 16, 20, 24];
@@ -67,11 +67,11 @@ export default function BeardGrowthTracker() {
   return (
     <div className="glass-card p-6 space-y-6">
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
-        <h3 className="text-lg font-bold text-slate-100">Beard Growth Cycle Tracker</h3>
+        <h3 className="text-lg font-bold text-gray-900">Beard Growth Cycle Tracker</h3>
         <div className="flex gap-2">
           <button
             onClick={reset}
-            className="flex items-center gap-1 px-3 py-1.5 bg-slate-800 border border-slate-700 rounded-lg text-slate-300 text-sm hover:border-slate-500 transition-colors"
+            className="flex items-center gap-1 px-3 py-1.5 bg-slate-800 border border-gray-200 rounded-lg text-gray-800 text-sm hover:border-gray-300 transition-colors"
           >
             <RotateCcw className="w-3.5 h-3.5" /> Start Over
           </button>
@@ -96,13 +96,13 @@ export default function BeardGrowthTracker() {
                 className={`w-20 h-20 rounded-full border-2 flex flex-col items-center justify-center transition-all ${
                   isActive
                     ? `${colors.bg}/30 ${colors.border} ring-2 ${colors.ring}/30 scale-110`
-                    : 'bg-slate-800/50 border-slate-600'
+                    : 'bg-slate-800/50 border-gray-300'
                 }`}
               >
-                <span className={`text-xs font-bold text-center leading-tight ${isActive ? colors.text : 'text-slate-500'}`}>
+                <span className={`text-xs font-bold text-center leading-tight ${isActive ? colors.text : 'text-gray-600'}`}>
                   {phase === 'anagen' ? 'Anagen' : phase === 'catagen' ? 'Catagen' : 'Telogen'}
                 </span>
-                <span className={`text-[10px] text-center leading-tight mt-0.5 ${isActive ? colors.text : 'text-slate-600'}`}>
+                <span className={`text-[10px] text-center leading-tight mt-0.5 ${isActive ? colors.text : 'text-gray-500'}`}>
                   {phase === 'anagen' ? '(Growth)' : phase === 'catagen' ? '(Transition)' : '(Rest)'}
                 </span>
               </div>
@@ -119,7 +119,7 @@ export default function BeardGrowthTracker() {
 
       {/* Week Slider */}
       <div className="space-y-2">
-        <div className="flex justify-between text-xs text-slate-400">
+        <div className="flex justify-between text-xs text-gray-600">
           <span>Week 0</span>
           <span className={`font-semibold text-sm ${phaseColors.text}`}>Week {currentWeek}</span>
           <span>Week 24</span>
@@ -132,7 +132,7 @@ export default function BeardGrowthTracker() {
           onChange={handleSlider}
           className="w-full accent-emerald-500"
         />
-        <div className="flex justify-between text-[10px] text-slate-600">
+        <div className="flex justify-between text-[10px] text-gray-500">
           {WEEK_OPTIONS.map((w) => (
             <span key={w}>{w}</span>
           ))}
@@ -142,7 +142,7 @@ export default function BeardGrowthTracker() {
       {/* Follicle Health Score */}
       <div className="space-y-2">
         <div className="flex items-center justify-between">
-          <span className="text-sm text-slate-400 font-medium">Follicle Health Score</span>
+          <span className="text-sm text-gray-600 font-medium">Follicle Health Score</span>
           <span className={`text-2xl font-bold ${phaseColors.text}`}>{healthPct}</span>
         </div>
         <div className="h-3 bg-slate-800 rounded-full overflow-hidden">
@@ -160,20 +160,20 @@ export default function BeardGrowthTracker() {
             {data.phaseName}
           </span>
         </div>
-        <p className="text-slate-300 text-sm">{data.phaseDetail}</p>
+        <p className="text-gray-800 text-sm">{data.phaseDetail}</p>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
           <div>
-            <span className="text-slate-500 text-xs uppercase tracking-wide">Biological Changes</span>
-            <p className="text-slate-300 text-sm mt-1">{data.changes}</p>
+            <span className="text-gray-600 text-xs uppercase tracking-wide">Biological Changes</span>
+            <p className="text-gray-800 text-sm mt-1">{data.changes}</p>
           </div>
           <div>
-            <span className="text-slate-500 text-xs uppercase tracking-wide">Expected Visual Change</span>
+            <span className="text-gray-600 text-xs uppercase tracking-wide">Expected Visual Change</span>
             <p className={`text-sm mt-1 font-medium ${phaseColors.text}`}>{data.expectedVisual}</p>
           </div>
         </div>
       </div>
 
-      <p className="text-slate-500 text-xs text-center">For research purposes only. Individual results vary based on follicle baseline and genetics.</p>
+      <p className="text-gray-600 text-xs text-center">For research purposes only. Individual results vary based on follicle baseline and genetics.</p>
     </div>
   );
 }

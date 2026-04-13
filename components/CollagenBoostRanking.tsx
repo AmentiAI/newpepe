@@ -143,7 +143,7 @@ function StarRating({ count }: { count: number }) {
       {[1, 2, 3, 4, 5].map((i) => (
         <Star
           key={i}
-          className={`w-3.5 h-3.5 ${i <= count ? 'text-amber-400 fill-amber-400' : 'text-slate-600'}`}
+          className={`w-3.5 h-3.5 ${i <= count ? 'text-amber-400 fill-amber-400' : 'text-gray-500'}`}
         />
       ))}
     </span>
@@ -165,9 +165,9 @@ export default function CollagenBoostRanking() {
   return (
     <div className="glass-card p-6 space-y-4">
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-2">
-        <h3 className="text-lg font-bold text-slate-100">Collagen-Boosting Peptide Rankings</h3>
+        <h3 className="text-lg font-bold text-gray-900">Collagen-Boosting Peptide Rankings</h3>
         <div className="flex items-center gap-2 flex-wrap">
-          <ArrowUpDown className="w-4 h-4 text-slate-400" />
+          <ArrowUpDown className="w-4 h-4 text-gray-600" />
           {SORT_OPTIONS.map((opt) => (
             <button
               key={opt.key}
@@ -175,7 +175,7 @@ export default function CollagenBoostRanking() {
               className={`px-3 py-1 rounded-full text-xs font-semibold transition-all ${
                 sortBy === opt.key
                   ? 'bg-amber-500/30 text-amber-300 border border-amber-500/50'
-                  : 'bg-slate-800 text-slate-400 border border-slate-700 hover:border-slate-500'
+                  : 'bg-slate-800 text-gray-600 border border-gray-200 hover:border-gray-300'
               }`}
             >
               {opt.label}
@@ -188,16 +188,16 @@ export default function CollagenBoostRanking() {
         {sorted.map((peptide) => {
           const isOpen = selectedPeptide === peptide.name;
           return (
-            <div key={peptide.name} className="border border-slate-700/50 rounded-lg overflow-hidden">
+            <div key={peptide.name} className="border border-gray-200/50 rounded-lg overflow-hidden">
               <button
                 onClick={() => setSelectedPeptide(isOpen ? null : peptide.name)}
-                className="w-full text-left p-4 hover:bg-slate-800/50 transition-colors"
+                className="w-full text-left p-4 hover:bg-gray-50 transition-colors"
               >
                 <div className="flex items-center gap-3 flex-wrap">
                   <span className="w-7 h-7 rounded-full bg-purple-500/20 border border-purple-500/40 flex items-center justify-center text-purple-300 text-sm font-bold flex-shrink-0">
                     {peptide.rank}
                   </span>
-                  <span className="font-semibold text-slate-100 min-w-[110px]">{peptide.name}</span>
+                  <span className="font-semibold text-gray-900 min-w-[110px]">{peptide.name}</span>
 
                   {peptide.bestEvidence && (
                     <span className="flex items-center gap-1 bg-amber-500/20 border border-amber-500/40 text-amber-300 text-xs px-2 py-0.5 rounded-full font-semibold">
@@ -217,37 +217,37 @@ export default function CollagenBoostRanking() {
                   <div className="ml-auto flex items-center gap-3">
                     <StarRating count={peptide.evidence} />
                     {isOpen ? (
-                      <ChevronUp className="w-4 h-4 text-slate-400" />
+                      <ChevronUp className="w-4 h-4 text-gray-600" />
                     ) : (
-                      <ChevronDown className="w-4 h-4 text-slate-400" />
+                      <ChevronDown className="w-4 h-4 text-gray-600" />
                     )}
                   </div>
                 </div>
 
-                <p className="text-slate-400 text-sm mt-2 ml-10">{peptide.mechanism}</p>
+                <p className="text-gray-600 text-sm mt-2 ml-10">{peptide.mechanism}</p>
               </button>
 
               {isOpen && (
-                <div className="border-t border-slate-700/50 bg-slate-900/50 p-4 grid grid-cols-1 sm:grid-cols-3 gap-4 text-sm">
+                <div className="border-t border-gray-200/50 bg-slate-900/50 p-4 grid grid-cols-1 sm:grid-cols-3 gap-4 text-sm">
                   <div>
-                    <span className="text-slate-400 text-xs uppercase tracking-wide">Dose</span>
-                    <p className="text-slate-200 mt-1">{peptide.dose}</p>
+                    <span className="text-gray-600 text-xs uppercase tracking-wide">Dose</span>
+                    <p className="text-gray-900 mt-1">{peptide.dose}</p>
                   </div>
                   <div>
-                    <span className="text-slate-400 text-xs uppercase tracking-wide">Route</span>
-                    <p className="text-slate-200 mt-1">{peptide.route}</p>
+                    <span className="text-gray-600 text-xs uppercase tracking-wide">Route</span>
+                    <p className="text-gray-900 mt-1">{peptide.route}</p>
                   </div>
                   <div>
-                    <span className="text-slate-400 text-xs uppercase tracking-wide">Cycle</span>
-                    <p className="text-slate-200 mt-1">{peptide.cycle}</p>
+                    <span className="text-gray-600 text-xs uppercase tracking-wide">Cycle</span>
+                    <p className="text-gray-900 mt-1">{peptide.cycle}</p>
                   </div>
                   <div className="sm:col-span-3">
-                    <span className="text-slate-400 text-xs uppercase tracking-wide">Expected Timeline</span>
+                    <span className="text-gray-600 text-xs uppercase tracking-wide">Expected Timeline</span>
                     <p className="text-amber-300 mt-1 font-medium">{peptide.timeline}</p>
                   </div>
                   <div className="sm:col-span-3 flex gap-4">
                     <div className="flex-1">
-                      <span className="text-slate-400 text-xs uppercase tracking-wide">Speed</span>
+                      <span className="text-gray-600 text-xs uppercase tracking-wide">Speed</span>
                       <div className="mt-1 h-2 bg-slate-700 rounded-full overflow-hidden">
                         <div
                           className="h-full bg-purple-500 rounded-full"
@@ -256,7 +256,7 @@ export default function CollagenBoostRanking() {
                       </div>
                     </div>
                     <div className="flex-1">
-                      <span className="text-slate-400 text-xs uppercase tracking-wide">Cost-Effectiveness</span>
+                      <span className="text-gray-600 text-xs uppercase tracking-wide">Cost-Effectiveness</span>
                       <div className="mt-1 h-2 bg-slate-700 rounded-full overflow-hidden">
                         <div
                           className="h-full bg-amber-500 rounded-full"
@@ -272,7 +272,7 @@ export default function CollagenBoostRanking() {
         })}
       </div>
 
-      <p className="text-slate-500 text-xs text-center pt-2">
+      <p className="text-gray-600 text-xs text-center pt-2">
         Click any peptide row to expand dosing details. For research purposes only.
       </p>
     </div>

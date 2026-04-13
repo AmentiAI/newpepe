@@ -34,12 +34,12 @@ export default function EquipmentChecklist() {
   return (
     <div className="glass-card p-6 md:p-8">
       <div className="flex items-center justify-between mb-2">
-        <h3 className="text-white font-black text-lg">Equipment Checklist</h3>
+        <h3 className="text-gray-900 font-black text-lg">Equipment Checklist</h3>
         <span className="text-xs font-bold px-3 py-1 rounded-full" style={{ background: 'rgba(0,255,136,0.1)', color: '#00ff88', border: '1px solid rgba(0,255,136,0.2)' }}>
           {checked.size}/{ITEMS.length}
         </span>
       </div>
-      <p className="text-slate-400 text-sm mb-5">Check off each item before you begin. Having everything ready prevents mid-procedure mistakes.</p>
+      <p className="text-gray-600 text-sm mb-5">Check off each item before you begin. Having everything ready prevents mid-procedure mistakes.</p>
 
       {/* Progress bar */}
       <div className="w-full h-1.5 rounded-full mb-6" style={{ background: 'rgba(255,255,255,0.06)' }}>
@@ -67,13 +67,13 @@ export default function EquipmentChecklist() {
               {isChecked ? (
                 <CheckCircle2 className="w-5 h-5 shrink-0 mt-0.5" style={{ color: '#00ff88' }} />
               ) : (
-                <Circle className="w-5 h-5 text-slate-600 shrink-0 mt-0.5" />
+                <Circle className="w-5 h-5 text-gray-500 shrink-0 mt-0.5" />
               )}
               <div>
-                <span className={`text-sm font-semibold ${isChecked ? 'text-neon-green line-through decoration-neon-green/40' : 'text-white'}`}>
+                <span className={`text-sm font-semibold ${isChecked ? 'text-neon-green line-through decoration-neon-green/40' : 'text-gray-900'}`}>
                   {item.label}
                 </span>
-                <p className="text-slate-500 text-xs mt-0.5 leading-relaxed">{item.note}</p>
+                <p className="text-gray-600 text-xs mt-0.5 leading-relaxed">{item.note}</p>
               </div>
             </button>
           );
@@ -84,8 +84,8 @@ export default function EquipmentChecklist() {
       {allDone && (
         <div className="mt-6 rounded-2xl p-5 text-center" style={{ background: 'rgba(0,255,136,0.08)', border: '1px solid rgba(0,255,136,0.3)' }}>
           <PartyPopper className="w-8 h-8 mx-auto mb-2" style={{ color: '#00ff88' }} />
-          <p className="text-white font-black text-lg mb-1">You are ready to reconstitute!</p>
-          <p className="text-slate-400 text-sm">All equipment accounted for. Proceed with the step-by-step guide below.</p>
+          <p className="text-gray-900 font-black text-lg mb-1">You are ready to reconstitute!</p>
+          <p className="text-gray-600 text-sm">All equipment accounted for. Proceed with the step-by-step guide below.</p>
         </div>
       )}
     </div>

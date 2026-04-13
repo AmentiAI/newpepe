@@ -154,18 +154,18 @@ export default function BioAgeAssessment() {
         <div className="flex items-center justify-between mb-5 flex-wrap gap-3">
           <div>
             <div className="text-xs font-bold tracking-widest mb-1 text-purple-400">BIOLOGICAL AGE ASSESSMENT</div>
-            <h4 className="text-white font-black text-xl">Your Results</h4>
+            <h4 className="text-gray-900 font-black text-xl">Your Results</h4>
           </div>
-          <button onClick={reset} className="flex items-center gap-1.5 text-slate-400 text-sm hover:text-white transition-colors">
+          <button onClick={reset} className="flex items-center gap-1.5 text-gray-600 text-sm hover:text-gray-900 transition-colors">
             <RotateCcw className="w-3.5 h-3.5" /> Retake
           </button>
         </div>
 
         {/* Score card */}
         <div className="rounded-2xl p-6 mb-5 text-center" style={{ background: `${result.gapColor}08`, border: `1px solid ${result.gapColor}30` }}>
-          <div className="text-slate-400 text-sm mb-1">Estimated Biological Age Gap</div>
+          <div className="text-gray-600 text-sm mb-1">Estimated Biological Age Gap</div>
           <div className="text-5xl font-black mb-2" style={{ color: result.gapColor }}>{result.biologicalAgeGap}</div>
-          <div className="text-slate-300 text-sm max-w-md mx-auto">{result.gapDescription}</div>
+          <div className="text-gray-800 text-sm max-w-md mx-auto">{result.gapDescription}</div>
           <div className="mt-3 inline-flex items-center gap-2 rounded-full px-3 py-1.5 text-xs font-semibold" style={{ background: `${result.gapColor}15`, color: result.gapColor }}>
             {result.urgency}
           </div>
@@ -174,14 +174,14 @@ export default function BioAgeAssessment() {
         {/* Primary recommendation */}
         <div className="rounded-xl p-5 mb-4" style={{ background: 'rgba(168,85,247,0.06)', border: '1px solid rgba(168,85,247,0.2)' }}>
           <div className="text-purple-400 text-xs font-bold tracking-widest mb-2">START WITH</div>
-          <div className="text-white font-black text-lg mb-2">{result.primaryPeptide}</div>
-          <p className="text-slate-300 text-sm leading-relaxed">{result.primaryReason}</p>
+          <div className="text-gray-900 font-black text-lg mb-2">{result.primaryPeptide}</div>
+          <p className="text-gray-800 text-sm leading-relaxed">{result.primaryReason}</p>
         </div>
 
         {/* Weak areas */}
         {result.weakAreas.length > 0 && (
           <div className="mb-4">
-            <div className="text-slate-400 text-xs font-bold tracking-widest mb-2">AREAS NEEDING MOST ATTENTION</div>
+            <div className="text-gray-600 text-xs font-bold tracking-widest mb-2">AREAS NEEDING MOST ATTENTION</div>
             <div className="flex flex-wrap gap-2">
               {result.weakAreas.map((area) => (
                 <span key={area} className="text-xs px-2.5 py-1 rounded-full" style={{ background: 'rgba(239,68,68,0.1)', border: '1px solid rgba(239,68,68,0.2)', color: '#f87171' }}>
@@ -194,7 +194,7 @@ export default function BioAgeAssessment() {
 
         {/* Full stack */}
         <div>
-          <div className="text-slate-400 text-xs font-bold tracking-widest mb-3">RECOMMENDED FULL PROTOCOL</div>
+          <div className="text-gray-600 text-xs font-bold tracking-widest mb-3">RECOMMENDED FULL PROTOCOL</div>
           <div className="space-y-2">
             {result.fullStack.map((item, i) => (
               <div key={item.peptide} className="flex items-start gap-3 p-3 rounded-lg" style={{ background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.06)' }}>
@@ -202,15 +202,15 @@ export default function BioAgeAssessment() {
                   <span className="text-purple-400 font-black text-xs">{i + 1}</span>
                 </div>
                 <div>
-                  <div className="text-white font-bold text-sm">{item.peptide}</div>
-                  <div className="text-slate-400 text-xs mt-0.5">{item.role}</div>
+                  <div className="text-gray-900 font-bold text-sm">{item.peptide}</div>
+                  <div className="text-gray-600 text-xs mt-0.5">{item.role}</div>
                 </div>
               </div>
             ))}
           </div>
         </div>
 
-        <p className="text-slate-600 text-xs border-t border-slate-800 pt-3 mt-4">
+        <p className="text-gray-500 text-xs border-t border-slate-800 pt-3 mt-4">
           This assessment is educational only and does not constitute medical advice. Consult a qualified physician before starting any peptide protocol.
         </p>
       </div>
@@ -223,9 +223,9 @@ export default function BioAgeAssessment() {
         <div className="flex items-center justify-between mb-5">
           <div>
             <div className="text-xs font-bold tracking-widest text-purple-400 mb-1">BIOLOGICAL AGE ASSESSMENT</div>
-            <h3 className="text-white font-black text-lg">Rate Your Current State</h3>
+            <h3 className="text-gray-900 font-black text-lg">Rate Your Current State</h3>
           </div>
-          <div className="text-slate-400 text-sm">{completedCount}/{QUESTIONS.length}</div>
+          <div className="text-gray-600 text-sm">{completedCount}/{QUESTIONS.length}</div>
         </div>
 
         {/* Progress bar */}
@@ -237,7 +237,7 @@ export default function BioAgeAssessment() {
           {QUESTIONS.map((q) => (
             <div key={q.id}>
               <div className="flex items-start justify-between mb-2">
-                <label className="text-white font-semibold text-sm">{q.id}. {q.label}</label>
+                <label className="text-gray-900 font-semibold text-sm">{q.id}. {q.label}</label>
                 {scores[q.id] !== undefined && (
                   <span className="text-purple-400 text-xs font-bold">{scores[q.id]}/4</span>
                 )}
@@ -260,8 +260,8 @@ export default function BioAgeAssessment() {
                 ))}
               </div>
               <div className="flex justify-between mt-1">
-                <span className="text-slate-600 text-xs">{q.low}</span>
-                <span className="text-slate-600 text-xs">{q.high}</span>
+                <span className="text-gray-500 text-xs">{q.low}</span>
+                <span className="text-gray-500 text-xs">{q.high}</span>
               </div>
             </div>
           ))}
@@ -291,13 +291,13 @@ export default function BioAgeAssessment() {
           <span className="text-purple-400 text-sm font-black">BA</span>
         </div>
         <div>
-          <h3 className="text-white font-black text-lg">Biological Age Assessment</h3>
-          <p className="text-slate-400 text-xs">10 questions to estimate your biological age gap and recommend a protocol</p>
+          <h3 className="text-gray-900 font-black text-lg">Biological Age Assessment</h3>
+          <p className="text-gray-600 text-xs">10 questions to estimate your biological age gap and recommend a protocol</p>
         </div>
       </div>
 
       <div className="mb-6">
-        <label className="block text-white font-semibold text-sm mb-3">What is your chronological age?</label>
+        <label className="block text-gray-900 font-semibold text-sm mb-3">What is your chronological age?</label>
         <div className="flex items-center gap-4">
           <input
             type="range"
@@ -312,13 +312,13 @@ export default function BioAgeAssessment() {
           </div>
         </div>
         <div className="flex justify-between mt-1">
-          <span className="text-slate-600 text-xs">20</span>
-          <span className="text-slate-600 text-xs">80</span>
+          <span className="text-gray-500 text-xs">20</span>
+          <span className="text-gray-500 text-xs">80</span>
         </div>
       </div>
 
       <div className="mb-6 p-4 rounded-xl" style={{ background: 'rgba(168,85,247,0.05)', border: '1px solid rgba(168,85,247,0.12)' }}>
-        <p className="text-slate-300 text-sm leading-relaxed">
+        <p className="text-gray-800 text-sm leading-relaxed">
           You&apos;ll rate 10 aspects of your current health and vitality on a 0–4 scale.
           The assessment estimates your biological age gap and identifies which aging hallmarks
           are most relevant for your peptide protocol.
