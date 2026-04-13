@@ -214,7 +214,7 @@ export default function SearchModal() {
                 onClick={() => setOpen(false)}
                 className="text-xs text-amber-600 font-bold hover:text-amber-700 flex items-center gap-1"
               >
-                Browse all 20 <ArrowRight className="w-3 h-3" />
+                Browse all {products.length} <ArrowRight className="w-3 h-3" />
               </Link>
             </div>
           </div>

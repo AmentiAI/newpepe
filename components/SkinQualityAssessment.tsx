@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import { ArrowRight, RotateCcw } from 'lucide-react';
 
-const SOURCE_URL = '/out';
+const SOURCE_URL = 'https://phiogen.is/?ref=PEPS';
 
 type Concern = 'wrinkles' | 'dullness' | 'texture' | 'sagging' | 'acne' | 'uneven' | null;
 type SkinType = 'dry' | 'oily' | 'combination' | 'normal' | 'sensitive' | null;

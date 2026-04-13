@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   description: 'Discover the most effective BPC-157 stacks and peptide protocols. Science-backed guides for injury healing, body recomposition, anti-aging, and cognitive enhancement.',
 };
 
-const SOURCE_URL = '/out';
+const SOURCE_URL = 'https://phiogen.is/?ref=PEPS';
 
 const stats = [
   { value: '100+', label: 'Peer-Reviewed Studies', icon: FlaskConical },

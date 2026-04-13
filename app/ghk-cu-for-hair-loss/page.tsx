@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   },
 };
 
-const SOURCE_URL = '/out';
+const SOURCE_URL = 'https://phiogen.is/?ref=PEPS';
 
 const mechanisms = [
   { title: 'Follicle Stem Cell Activation', desc: 'GHK-Cu reactivates dormant hair follicle stem cells that have stopped cycling. This is the core mechanism for hair regrowth — getting miniaturized follicles cycling again.' },

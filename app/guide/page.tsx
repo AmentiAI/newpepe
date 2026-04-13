@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   },
 };
 
-const SOURCE_URL = '/out';
+const SOURCE_URL = 'https://phiogen.is/?ref=PEPS';
 
 const steps = [
   { num: '01', title: 'Choose Your Goal', desc: 'Identify what you\'re targeting — injury healing, anti-aging, body composition, or cognitive enhancement. Your goal determines your stack.' },

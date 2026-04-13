@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   },
 };
 
-const SOURCE_URL = '/out';
+const SOURCE_URL = 'https://phiogen.is/?ref=PEPS';
 
 const stackMeta: Record<string, { emoji: string; color: string; borderColor: string; glowColor: string; category: string; highlight: string; difficulty: string; weeklyInjections: string; firstResults: string; bestFor: string; notFor: string; cycleLength: string }> = {
   'ultimate-healing': {

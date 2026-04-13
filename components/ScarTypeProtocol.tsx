@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import { ArrowRight, RotateCcw } from 'lucide-react';
 
-const SOURCE_URL = '/out';
+const SOURCE_URL = 'https://phiogen.is/?ref=PEPS';
 
 type ScarType = 'acne' | 'surgical' | 'keloid' | 'stretch' | 'burn' | null;
 type ScarAge = 'recent' | 'established' | 'old' | null;

@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   },
 };
 
-const SOURCE_URL = '/out';
+const SOURCE_URL = 'https://phiogen.is/?ref=PEPS';
 
 const stats = [
   { value: '4', label: 'Distinct fat loss mechanisms', color: 'text-[#00ff88]' },

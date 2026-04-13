@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   },
 };
 
-const SOURCE_URL = '/out';
+const SOURCE_URL = 'https://phiogen.is/?ref=PEPS';
 
 const topicCards = [
   { label: 'BPC-157 Dosing', href: '/faq#dosing', desc: 'Dose ranges, timing, and injection protocols for BPC-157.' },

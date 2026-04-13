@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   },
 };
 
-const SOURCE_URL = '/out';
+const SOURCE_URL = 'https://phiogen.is/?ref=PEPS';
 
 const ghPulseSteps = [
   { num: '01', title: 'CJC-1295 Primes the Pituitary', color: 'blue', desc: 'CJC-1295 (no-DAC) is a GHRH analog — it binds GHRH receptors on somatotroph cells in the pituitary, priming them to release GH. Without this step, subsequent GHRP stimulus is significantly weaker.' },

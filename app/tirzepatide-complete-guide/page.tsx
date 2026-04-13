@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   },
 };
 
-const SOURCE_URL = '/out';
+const SOURCE_URL = 'https://phiogen.is/?ref=PEPS';
 
 const stats = [
   { value: '22.5%', label: 'Average weight loss (SURMOUNT-1)', color: 'text-[#00ff88]' },

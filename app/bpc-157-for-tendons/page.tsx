@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   },
 };
 
-const SOURCE_URL = '/out';
+const SOURCE_URL = 'https://phiogen.is/?ref=PEPS';
 
 const injuries = [
   { injury: 'Achilles Tendon', dose: '250–500mcg/day', site: 'Local SC near Achilles', timeline: '4–8 weeks', notes: 'Most researched BPC-157 tendon application. Inject subcutaneously near (not into) the tendon. Local + systemic protocol for severe tears.' },

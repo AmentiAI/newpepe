@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   },
 };
 
-const SOURCE_URL = '/out';
+const SOURCE_URL = 'https://phiogen.is/?ref=PEPS';
 
 const stats = [
   { value: '63%', label: 'Wrinkle depth reduction (SNAP-8 trial)', color: 'text-[#00ff88]' },

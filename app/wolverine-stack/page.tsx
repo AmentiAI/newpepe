@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   },
 };
 
-const SOURCE_URL = '/out';
+const SOURCE_URL = 'https://phiogen.is/?ref=PEPS';
 
 const protocol = [
   { phase: 'Loading (Weeks 1–6)', steps: ['BPC-157: 500mcg subcutaneous or oral, once daily', 'TB-500: 2.5mg subcutaneous, twice per week', 'Inject BPC-157 near injury site or abdomen', 'TB-500 in abdomen or thigh — systemic, location less critical'] },

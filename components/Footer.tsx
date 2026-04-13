@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { Zap, ExternalLink } from 'lucide-react';
 
-const SOURCE_URL = '/out';
+const SOURCE_URL = 'https://phiogen.is/?ref=PEPS';
 
 export default function Footer() {
   return (

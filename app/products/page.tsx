@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   description: 'Complete peptide catalog with protocols and dosing guides. BPC-157, TB-500, GHK-Cu, Ipamorelin, Epithalon, and more.',
 };
 
-const SOURCE_URL = '/out';
+const SOURCE_URL = 'https://phiogen.is/?ref=PEPS';
 
 const goalCards = [
   {

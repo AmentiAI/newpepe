@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import { ArrowRight } from 'lucide-react';
 
-const SOURCE_URL = '/out';
+const SOURCE_URL = 'https://phiogen.is/?ref=PEPS';
 
 type TabId = 'topical' | 'injectable' | 'combination';
 

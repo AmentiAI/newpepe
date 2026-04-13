@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   },
 };
 
-const SOURCE_URL = '/out';
+const SOURCE_URL = 'https://phiogen.is/?ref=PEPS';
 
 const comparison = [
   { feature: 'Mechanism', bpc: 'Local healing — upregulates GHR in fibroblasts, activates VEGF', tb: 'Systemic healing — mobilizes stem cells body-wide via actin binding' },

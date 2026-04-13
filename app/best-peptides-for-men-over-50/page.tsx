@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   },
 };
 
-const SOURCE_URL = '/out';
+const SOURCE_URL = 'https://phiogen.is/?ref=PEPS';
 
 const ageIssues = [
   { issue: 'GH decline', detail: 'Growth hormone drops 14% per decade after 30. By 50, most men have 50–60% less GH than at peak. This drives muscle loss, fat gain, poor sleep, and slower recovery.' },

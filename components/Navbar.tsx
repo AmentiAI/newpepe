@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { Menu, X, Zap } from 'lucide-react';
 import SearchModal from '@/components/SearchModal';
 
-const SOURCE_URL = '/out';
+const SOURCE_URL = 'https://phiogen.is/?ref=PEPS';
 
 const navLinks = [
   { href: '/products', label: 'Peptides' },

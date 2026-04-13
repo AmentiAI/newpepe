@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   },
 };
 
-const SOURCE_URL = '/out';
+const SOURCE_URL = 'https://phiogen.is/?ref=PEPS';
 
 const benefits = [
   { title: 'Intestinal Wall Repair', desc: 'BPC-157 upregulates tight junction proteins (occludin, claudin) that seal gaps in the intestinal wall — directly addressing the mechanism of leaky gut syndrome.' },

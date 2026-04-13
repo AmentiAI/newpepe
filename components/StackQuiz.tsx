@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { ArrowRight, ChevronLeft, CheckCircle } from 'lucide-react';
 import Link from 'next/link';
 
-const SOURCE_URL = '/out';
+const SOURCE_URL = 'https://phiogen.is/?ref=PEPS';
 
 type Option = { value: string; label: string };
 

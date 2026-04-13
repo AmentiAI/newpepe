@@ -13,7 +13,7 @@ export interface Stack {
   image: string;
 }
 
-const AFFILIATE = '/out';
+const AFFILIATE = 'https://phiogen.is/?ref=PEPS';
 
 export const stacks: Stack[] = [
   {

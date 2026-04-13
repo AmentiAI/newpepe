@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   },
 };
 
-const SOURCE_URL = '/out';
+const SOURCE_URL = 'https://phiogen.is/?ref=PEPS';
 
 const injuryTypes = [
   { icon: '🦴', label: 'Tendons & Ligaments', time: '4–8 weeks', desc: 'ACL, MCL, rotator cuff, Achilles — BPC-157 directly activates tendon fibroblasts and growth factor receptors at the injury site.' },

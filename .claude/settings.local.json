@@ -24,7 +24,9 @@
       "Bash(echo \"Exit: $?\")",
       "WebFetch(domain:phiogen.is)",
       "Bash(echo \"exit: $?\")",
-      "Bash(echo \"exit:$?\")"
+      "Bash(echo \"exit:$?\")",
+      "Bash(echo \"EXIT:$?\")",
+      "Bash(grep -c \"^ {$\\\\|^ { $\" lib/products.ts)"
     ]
   }
 }
