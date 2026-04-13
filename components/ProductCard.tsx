@@ -19,10 +19,14 @@ export default function ProductCard({ product }: Props) {
   const colorClass = categoryColors[product.category] ?? 'text-amber-700 bg-amber-50 border-amber-200';
 
   return (
-    <Link
-      href={`/products/${product.slug}`}
-      className="glass-card overflow-hidden group hover:border-amber-300 transition-all duration-300 flex flex-col cursor-pointer"
-    >
+    <div className="glass-card overflow-hidden group hover:border-amber-300 transition-all duration-300 flex flex-col relative">
+      {/* Stretched link — covers entire card, sits behind content */}
+      <Link
+        href={`/products/${product.slug}`}
+        className="absolute inset-0 z-0"
+        aria-label={`View ${product.name}`}
+      />
+
       {/* Image */}
       <div className="relative h-52 overflow-hidden bg-gray-50 shrink-0">
         <ProductImage
@@ -32,13 +36,13 @@ export default function ProductCard({ product }: Props) {
           className="object-contain p-4 group-hover:scale-105 transition-transform duration-500"
           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
         />
-        <span className={`absolute top-3 left-3 text-xs font-bold px-2 py-1 rounded-full border ${colorClass}`}>
+        <span className={`absolute top-3 left-3 text-xs font-bold px-2 py-1 rounded-full border ${colorClass} relative z-10`}>
           {product.category}
         </span>
       </div>
 
       {/* Content */}
-      <div className="p-5 flex flex-col flex-1">
+      <div className="p-5 flex flex-col flex-1 relative z-10">
         <h3 className="text-gray-900 font-black text-xl mb-1 group-hover:text-amber-600 transition-colors">
           {product.name}
         </h3>
@@ -66,13 +70,12 @@ export default function ProductCard({ product }: Props) {
             href={product.affiliateUrl}
             target="_blank"
             rel="nofollow noopener noreferrer"
-            onClick={(e) => e.stopPropagation()}
-            className="btn-cta text-xs px-4 py-2.5 flex items-center gap-1"
+            className="relative z-10 btn-cta text-xs px-4 py-2.5 flex items-center gap-1"
           >
             Check Price <ArrowRight className="w-3 h-3" />
           </a>
         </div>
       </div>
-    </Link>
+    </div>
   );
 }
