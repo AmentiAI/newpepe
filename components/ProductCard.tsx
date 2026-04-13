@@ -19,15 +19,18 @@ export default function ProductCard({ product }: Props) {
   const colorClass = categoryColors[product.category] ?? 'text-amber-700 bg-amber-50 border-amber-200';
 
   return (
-    <div className="glass-card overflow-hidden group hover:border-amber-300 transition-all duration-300">
+    <Link
+      href={`/products/${product.slug}`}
+      className="glass-card overflow-hidden group hover:border-amber-300 transition-all duration-300 flex flex-col cursor-pointer"
+    >
       {/* Image */}
-      <div className="relative h-44 overflow-hidden bg-gray-50">
+      <div className="relative h-52 overflow-hidden bg-gray-50 shrink-0">
         <ProductImage
           src={product.image}
           alt={product.name}
           fill
-          className="object-contain p-3 group-hover:scale-105 transition-transform duration-500"
-          sizes="(max-width: 768px) 100vw, 33vw"
+          className="object-contain p-4 group-hover:scale-105 transition-transform duration-500"
+          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
         />
         <span className={`absolute top-3 left-3 text-xs font-bold px-2 py-1 rounded-full border ${colorClass}`}>
           {product.category}
@@ -35,7 +38,7 @@ export default function ProductCard({ product }: Props) {
       </div>
 
       {/* Content */}
-      <div className="p-5">
+      <div className="p-5 flex flex-col flex-1">
         <h3 className="text-gray-900 font-black text-xl mb-1 group-hover:text-amber-600 transition-colors">
           {product.name}
         </h3>
@@ -54,29 +57,22 @@ export default function ProductCard({ product }: Props) {
         </div>
 
         {/* Price + CTA */}
-        <div className="flex items-center justify-between">
+        <div className="flex items-center justify-between mt-auto">
           <div className="flex flex-col leading-tight">
             <span className="text-gray-900 font-black text-xl">${sale(product.price)}</span>
             <span className="text-gray-400 text-xs line-through">${product.price}</span>
           </div>
-          <div className="flex gap-2">
-            <Link
-              href={`/products/${product.slug}`}
-              className="btn-secondary text-xs px-3 py-2"
-            >
-              Learn More
-            </Link>
-            <a
-              href={product.affiliateUrl}
-              target="_blank"
-              rel="nofollow noopener noreferrer"
-              className="btn-cta text-xs px-3 py-2 flex items-center gap-1"
-            >
-              Check Price <ArrowRight className="w-3 h-3" />
-            </a>
-          </div>
+          <a
+            href={product.affiliateUrl}
+            target="_blank"
+            rel="nofollow noopener noreferrer"
+            onClick={(e) => e.stopPropagation()}
+            className="btn-cta text-xs px-4 py-2.5 flex items-center gap-1"
+          >
+            Check Price <ArrowRight className="w-3 h-3" />
+          </a>
         </div>
       </div>
-    </div>
+    </Link>
   );
 }

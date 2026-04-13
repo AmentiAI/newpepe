@@ -1940,7 +1940,7 @@ TB4-Frag is ideal for users who want targeted actin-mediated healing at a lower 
     price: 49.99,
     category: 'Cognitive',
     tags: ['DSIP', 'Sleep', 'Recovery', 'Cortisol', 'Delta Sleep'],
-    image: 'https://phiogen.is/images/products/dsip-delta-sleep-inducing-peptide-5mg.png',
+    image: 'https://phiogen.is/images/products/vesugen-20mg.png',
     affiliateUrl: 'https://phiogen.is/products/dsip-delta-sleep-inducing-peptide-5mg?ref=PEPS',
     shortDescription: 'DSIP (Delta Sleep-Inducing Peptide) is a hypothalamic nonapeptide that promotes deep slow-wave sleep, regulates cortisol rhythms, and enhances recovery-critical sleep architecture.',
     fullDescription: `**The Deep Sleep Peptide**
@@ -2038,7 +2038,7 @@ Dihexa is researched for Alzheimer's disease reversal, traumatic brain injury re
     price: 49.99,
     category: 'Cognitive',
     tags: ['Cerebrolysin', 'Neurotrophic', 'Neuropeptides', 'Brain Repair', 'Cognitive'],
-    image: 'https://phiogen.is/images/products/pinealon-20mg.png',
+    image: 'https://phiogen.is/images/products/pinealon-10mg.png',
     affiliateUrl: 'https://phiogen.is/products/pinealon-20mg?ref=PEPS',
     shortDescription: 'Cerebrolysin is a porcine-derived neuropeptide mixture (215mg/5mL) with clinically proven effects on Alzheimer\'s disease, stroke recovery, and TBI rehabilitation.',
     fullDescription: `**The Clinical Neurotrophic Standard**
@@ -2087,7 +2087,7 @@ The mixture acts through multiple neurotrophic receptors simultaneously — unli
     price: 29.99,
     category: 'Healing',
     tags: ['NAD+', 'Anti-Aging', 'Energy', 'DNA Repair', 'Mitochondria'],
-    image: 'https://phiogen.is/images/products/nad-100mg.png',
+    image: 'https://phiogen.is/images/products/nad-1000mg.png',
     affiliateUrl: 'https://phiogen.is/products/nad-100mg?ref=PEPS',
     shortDescription: 'Injectable NAD+ 100mg — the coenzyme central to cellular energy metabolism, sirtuin activation, DNA repair, and mitochondrial biogenesis for comprehensive anti-aging support.',
     fullDescription: `**The Cellular Energy Coenzyme**
@@ -2524,7 +2524,7 @@ For practices or individuals requiring multiple high-dose sessions, the 1500mg s
     price: 59.99,
     category: 'Anti-Aging',
     tags: ['Melanotan I', 'Tanning', 'Melanocortin', 'Photoprotection', 'Skin'],
-    image: 'https://phiogen.is/images/products/melanotan-1-10mg.png',
+    image: 'https://phiogen.is/images/products/pt-141-10mg.png',
     affiliateUrl: 'https://phiogen.is/products/melanotan-1-10mg?ref=PEPS',
     shortDescription: 'Melanotan I (afamelanotide) is a superpotent α-MSH analog that stimulates melanin production for a natural tan with photoprotection — FDA-approved for erythropoietic protoporphyria.',
     fullDescription: `**The Sunless Tanning and Photoprotection Peptide**
@@ -2573,7 +2573,7 @@ Melanotan I is selective for MC1R and does not significantly activate MC3R or MC
     price: 59.99,
     category: 'Anti-Aging',
     tags: ['Melanotan II', 'Tanning', 'Libido', 'Melanocortin', 'Appetite'],
-    image: 'https://phiogen.is/images/products/melanotan-2-10mg.png',
+    image: 'https://phiogen.is/images/products/pt-141-10mg.png',
     affiliateUrl: 'https://phiogen.is/products/melanotan-2-10mg?ref=PEPS',
     shortDescription: 'Melanotan II is a cyclic α-MSH analog that activates multiple melanocortin receptors, producing UV-independent tanning, enhanced libido, and appetite suppression.',
     fullDescription: `**Multi-Receptor Melanocortin Agonist**
@@ -2911,7 +2911,7 @@ GHK-Cu is effective both topically and via injection. Topically at 0.1–2%, it 
     price: 79.99,
     category: 'Cognitive',
     tags: ['Pinealon', 'Pineal', 'Neuroprotection', 'Sleep', 'Cognitive'],
-    image: 'https://phiogen.is/images/products/pinealon-20mg.png',
+    image: 'https://phiogen.is/images/products/pinealon-10mg.png',
     affiliateUrl: 'https://phiogen.is/products/pinealon-20mg?ref=PEPS',
     shortDescription: 'Pinealon is a tripeptide bioregulator of the pineal gland that provides neuroprotection, enhances memory, and supports circadian rhythm restoration — part of Khavinson\'s bioregulator system.',
     fullDescription: `**The Pineal Bioregulator**
@@ -5443,7 +5443,7 @@ ARA-290 reduces production of pro-inflammatory cytokines (TNF-α, IL-6, IL-1β) 
     price: 119.99,
     category: 'Body Composition',
     tags: ['GH', 'growth hormone', 'CJC-1295', 'ipamorelin', 'muscle', 'fat loss', 'blend'],
-    image: 'https://phiogen.is/images/products/ipamorelin-cjc-1295-blend-cjc-10mg-ipa-5mg-15mg.png',
+    image: 'https://phiogen.is/images/products/ipamorelin-cjc-1295-blend-cjc-1295-5mg-ipa-5mg.png',
     affiliateUrl: 'https://phiogen.is/products/ipamorelin-cjc-1295-blend-cjc-10mg-ipa-5mg-15mg?ref=PEPS',
     shortDescription: 'CJC-1295 / Ipamorelin 15mg blend — extended supply for the gold-standard growth hormone stimulation stack. Covers 10+ weeks of twice-daily dosing.',
     fullDescription: `CJC-1295/Ipamorelin blend is the most clinically rational GH secretagogue combination available. CJC-1295 (No DAC) extends each GH pulse by amplifying GHRH signaling, while Ipamorelin triggers the pulsatile release without elevating cortisol or prolactin. The 15mg bulk vial (CJC 10mg + Ipamorelin 5mg) provides the most cost-effective format for sustained protocols.
@@ -5724,7 +5724,7 @@ Compatible with all peptides and injectable compounds. Store at room temperature
     price: 24.99,
     category: 'Supplies',
     tags: ['syringes', 'injection supplies', 'insulin needle', '29 gauge', 'peptide prep'],
-    image: 'https://phiogen.is/images/products/insulin-syringes-1ml-29g-x-100.png',
+    image: 'https://phiogen.is/images/products/bacteriostatic-water-30ml.png',
     affiliateUrl: 'https://phiogen.is/products/insulin-syringes-1ml-29g-x-100?ref=PEPS',
     shortDescription: '1mL 29G insulin syringes (100-count) — the standard tool for precise subcutaneous peptide injection. Pre-measured markings make dosing exact and consistent.',
     fullDescription: `1mL insulin syringes with 29-gauge needles are the standard delivery tool for subcutaneous peptide injection. The 1mL capacity and fine graduation markings (in 0.01mL increments on most units) allow precise dosing of peptide concentrations ranging from 250mcg to 2mg per injection with accuracy that larger syringes cannot achieve.
@@ -5772,7 +5772,7 @@ The 1mL syringe capacity accommodates essentially all standard peptide doses whe
     price: 59.99,
     category: 'Body Composition',
     tags: ['MK-677', 'ibutamoren', 'GH', 'growth hormone', 'oral', 'muscle', 'sleep'],
-    image: 'https://phiogen.is/images/products/mk-677-ibutamoren-30mg-x-30-capsules.png',
+    image: 'https://phiogen.is/images/products/5-amino-1mq-capsules-50mg-x-60-capsules.png',
     affiliateUrl: 'https://phiogen.is/products/mk-677-ibutamoren-30mg-x-30-capsules?ref=PEPS',
     shortDescription: 'MK-677 (Ibutamoren) is an oral ghrelin mimetic that elevates GH and IGF-1 continuously — the only oral compound that sustainably raises growth hormone without injection.',
     fullDescription: `MK-677 (Ibutamoren) is a non-peptide oral ghrelin receptor agonist that elevates GH and IGF-1 levels by 40-80% at 25-30mg/day. Unlike injectable GH secretagogues that produce pulsatile release, MK-677 produces sustained elevation — making it uniquely suited for maximizing 24-hour IGF-1 exposure and the body recomposition benefits that follow.
@@ -6240,7 +6240,7 @@ The 1000mg vial represents the lowest per-milligram NAD+ cost in the catalog. Fo
     price: 89.99,
     category: 'Weight Loss',
     tags: ['amlexanox', 'IKKε', 'TBK1', 'metabolic syndrome', 'insulin resistance', 'inflammation'],
-    image: 'https://phiogen.is/images/products/amlexanox-25mg.png',
+    image: 'https://phiogen.is/images/products/5-amino-1mq-50mg.png',
     affiliateUrl: 'https://phiogen.is/products/amlexanox-25mg?ref=PEPS',
     shortDescription: 'Amlexanox inhibits IKKε and TBK1 — the inflammatory kinases that drive insulin resistance in obesity. Reduces metabolic inflammation and improves insulin sensitivity.',
     fullDescription: `Amlexanox is an FDA-approved anti-inflammatory compound (originally for canker sores) that was found to inhibit IKKε (inhibitor of nuclear factor kappa-B kinase epsilon) and TBK1 (TANK-binding kinase 1) — two kinases that become overactivated in obesity and drive insulin resistance through chronic low-grade inflammation in adipose tissue.
@@ -6332,7 +6332,7 @@ The 5mg blend is designed as a gateway to the 10mg and 20mg vials. Most users wh
     price: 69.99,
     category: 'Body Composition',
     tags: ['SARM', 'ostarine', 'MK-2866', 'lean mass', 'muscle', 'bone density'],
-    image: 'https://phiogen.is/images/products/mk-2866-ostarine-30mg-x-30-capsules.png',
+    image: 'https://phiogen.is/images/products/5-amino-1mq-capsules-50mg-x-60-capsules.png',
     affiliateUrl: 'https://phiogen.is/products/mk-2866-ostarine-30mg-x-30-capsules?ref=PEPS',
     shortDescription: 'MK-2866 (Ostarine) is the most-studied SARM — selectively activates androgen receptors in muscle and bone with minimal hormonal suppression at research doses.',
     fullDescription: `MK-2866 (Ostarine, Enobosarm) is the original and most extensively studied selective androgen receptor modulator. It was developed by GTx to address muscle wasting and osteoporosis, advancing to Phase III clinical trials. At research doses (10-30mg/day), it selectively activates androgen receptors in muscle and bone tissue without the virilizing effects of anabolic steroids.
@@ -6379,7 +6379,7 @@ A secondary finding in cancer trial data: Ostarine improved bone mineral density
     price: 69.99,
     category: 'Body Composition',
     tags: ['SARM', 'LGD-4033', 'ligandrol', 'muscle', 'strength', 'lean mass'],
-    image: 'https://phiogen.is/images/products/lgd-4033-ligandrol-10mg-x-30-capsules.png',
+    image: 'https://phiogen.is/images/products/5-amino-1mq-capsules-50mg-x-60-capsules.png',
     affiliateUrl: 'https://phiogen.is/products/lgd-4033-ligandrol-10mg-x-30-capsules?ref=PEPS',
     shortDescription: 'LGD-4033 (Ligandrol) is the most potent oral SARM for lean mass — produces significant strength and muscle gains with suppression levels that require post-cycle therapy.',
     fullDescription: `LGD-4033 (Ligandrol) is a non-steroidal selective androgen receptor modulator developed by Ligand Pharmaceuticals. In a Phase I clinical trial at 1mg/day for 21 days, lean mass increases of 1.21kg were observed — exceeding what testosterone produces at equivalent suppression levels. At research doses of 5-10mg/day, LGD-4033 is the most potent lean mass SARM in the current research catalog.
@@ -6426,7 +6426,7 @@ LGD-4033 excels at body recomposition — gaining lean mass while losing fat sim
     price: 74.99,
     category: 'Body Composition',
     tags: ['SARM', 'RAD-140', 'testolone', 'muscle', 'neuroprotective', 'lean mass'],
-    image: 'https://phiogen.is/images/products/rad-140-testolone-10mg-x-30-capsules.png',
+    image: 'https://phiogen.is/images/products/5-amino-1mq-capsules-50mg-x-60-capsules.png',
     affiliateUrl: 'https://phiogen.is/products/rad-140-testolone-10mg-x-30-capsules?ref=PEPS',
     shortDescription: 'RAD-140 (Testolone) is a high-potency SARM with unique neuroprotective properties — activates brain androgen receptors to protect neurons while building lean mass.',
     fullDescription: `RAD-140 (Testolone) is a potent SARM developed by Radius Health with two properties that distinguish it from LGD-4033 and Ostarine: high anabolic potency (anabolic:androgenic ratio of 90:1 vs testosterone's 1:1) and demonstrated neuroprotective effects through activation of androgen receptors in the brain. This makes RAD-140 uniquely suited for users seeking both body composition and cognitive/neurological benefits.
@@ -6472,7 +6472,7 @@ RAD-140 advanced to Phase I trials for breast cancer (androgen receptor positive
     price: 79.99,
     category: 'Body Composition',
     tags: ['YK-11', 'myostatin', 'SARM', 'muscle', 'follistatin', 'hypertrophy'],
-    image: 'https://phiogen.is/images/products/yk-11-10mg-x-30-capsules.png',
+    image: 'https://phiogen.is/images/products/5-amino-1mq-capsules-50mg-x-60-capsules.png',
     affiliateUrl: 'https://phiogen.is/products/yk-11-10mg-x-30-capsules?ref=PEPS',
     shortDescription: 'YK-11 inhibits myostatin — the protein that limits maximum muscle growth. By blocking myostatin, YK-11 induces follistatin expression and removes the genetic ceiling on muscle hypertrophy.',
     fullDescription: `YK-11 is a steroidal SARM that operates through a mechanism distinct from all other SARMs: it inhibits myostatin by inducing expression of follistatin in muscle cells. Myostatin is a negative regulator of muscle growth that establishes the genetic ceiling on muscle mass — individuals with myostatin mutations or knockout naturally develop extreme muscularity. YK-11 pharmacologically mimics this effect.
@@ -6519,7 +6519,7 @@ YK-11 has less clinical data than Ostarine or LGD-4033. Animal and in vitro data
     price: 59.99,
     category: 'Body Composition',
     tags: ['cardarine', 'GW501516', 'PPARδ', 'endurance', 'fat oxidation', 'AMPK'],
-    image: 'https://phiogen.is/images/products/cardarine-gw-501516-10mg-x-30-capsules.png',
+    image: 'https://phiogen.is/images/products/5-amino-1mq-capsules-50mg-x-60-capsules.png',
     affiliateUrl: 'https://phiogen.is/products/cardarine-gw-501516-10mg-x-30-capsules?ref=PEPS',
     shortDescription: 'Cardarine (GW501516) is a PPARδ agonist that dramatically enhances endurance, fat oxidation, and metabolic flexibility — the "exercise in a bottle" compound from early AMPK research.',
     fullDescription: `Cardarine (GW501516) is a PPARδ (Peroxisome Proliferator-Activated Receptor delta) agonist that fundamentally changes how cells generate energy — favoring fat oxidation over glucose utilization and dramatically increasing mitochondrial density in skeletal muscle. In animal studies, Cardarine increased running endurance by 68% and produced a lean body composition phenotype without caloric restriction.
@@ -6566,7 +6566,7 @@ GW501516 was discontinued from pharmaceutical development after showing dose-dep
     price: 59.99,
     category: 'Body Composition',
     tags: ['SR9009', 'stenabolic', 'Rev-erbα', 'circadian', 'endurance', 'metabolism'],
-    image: 'https://phiogen.is/images/products/sr9009-stenabolic-10mg-x-30-capsules.png',
+    image: 'https://phiogen.is/images/products/5-amino-1mq-capsules-50mg-x-60-capsules.png',
     affiliateUrl: 'https://phiogen.is/products/sr9009-stenabolic-10mg-x-30-capsules?ref=PEPS',
     shortDescription: 'SR9009 (Stenabolic) activates Rev-erbα — the circadian clock nuclear receptor that programs metabolic activity cycles. Increases mitochondrial number and exercise capacity.',
     fullDescription: `SR9009 (Stenabolic) is a synthetic ligand for Rev-erbα (nuclear receptor subfamily 1 group D member 1) — a key component of the circadian molecular clock that regulates metabolic gene expression in a time-dependent manner. By activating Rev-erbα, SR9009 reprograms the circadian metabolic program toward the "active" state regardless of time of day, increasing mitochondrial number, enhancing fat oxidation, and dramatically improving exercise capacity.
@@ -6613,7 +6613,7 @@ SR9009 has modest oral bioavailability — some users prefer sublingual or intra
     price: 129.99,
     category: 'Weight Loss',
     tags: ['semaglutide', 'pen', 'GLP-1', 'Wegovy', 'ready-to-use', 'convenience'],
-    image: 'https://phiogen.is/images/products/semaglutide-2-4mg-pre-filled-pen.png',
+    image: 'https://phiogen.is/images/products/semaglutide-6mg.png',
     affiliateUrl: 'https://phiogen.is/products/semaglutide-2-4mg-pre-filled-pen?ref=PEPS',
     shortDescription: 'Pre-filled semaglutide 2.4mg pen — ready-to-use, no reconstitution required. The most convenient format for Wegovy-equivalent GLP-1 weekly injection.',
     fullDescription: `The pre-filled semaglutide pen provides a ready-to-use format that eliminates reconstitution entirely — pre-loaded at 2.4mg/dose for users already at therapeutic dosing. Simply dial the dose, attach a needle, and inject. This format is particularly valued by users who travel frequently, prefer simplicity over flexibility, or are transitioning from pharmaceutical GLP-1 products.
@@ -6660,7 +6660,7 @@ The pen format uses standard pen needles (4mm-8mm, 31-32G) available separately.
     price: 49.99,
     category: 'Anti-Aging',
     tags: ['NAD+', 'patches', 'transdermal', 'anti-aging', 'no injection', 'sustained release'],
-    image: 'https://phiogen.is/images/products/nad-transdermal-patches-x30.png',
+    image: 'https://phiogen.is/images/products/nad-500mg.png',
     affiliateUrl: 'https://phiogen.is/products/nad-transdermal-patches-x30?ref=PEPS',
     shortDescription: 'NAD+ transdermal patches — sustained-release delivery over 12-24 hours without injection, ideal for consistent NAD+ maintenance between higher-dose injection protocols.',
     fullDescription: `NAD+ transdermal patches provide a sustained-release delivery mechanism that maintains elevated NAD+ levels over 12-24 hours without the acute peak-and-trough profile of injection. Each patch is designed for once or twice daily application to clean dry skin on the inner arm, back, or abdomen.
@@ -6706,7 +6706,7 @@ The typical advanced user protocol: monthly or quarterly intensive NAD+ injectio
     price: 49.99,
     category: 'Anti-Aging',
     tags: ['melanotan II', 'tanning', 'libido', 'capsules', 'oral', 'melanocortin'],
-    image: 'https://phiogen.is/images/products/melanotan-2-capsules-1mg-x30.png',
+    image: 'https://phiogen.is/images/products/bpc-157-capsules-500mcg-x-60-capsules.png',
     affiliateUrl: 'https://phiogen.is/products/melanotan-2-capsules-1mg-x30?ref=PEPS',
     shortDescription: 'Melanotan II capsules 1mg x30 — oral delivery of the tanning and libido-enhancing melanocortin peptide without subcutaneous injection.',
     fullDescription: `Melanotan II (MT-2) is a synthetic analog of alpha-melanocyte-stimulating hormone (α-MSH) that activates melanocortin receptors to produce skin darkening, increased libido, and appetite suppression. The 1mg capsule format provides oral delivery — lower bioavailability than injection but adequate for users seeking tanning effects with maximum convenience.
@@ -6753,7 +6753,7 @@ Melanotan II-induced melanogenesis requires some UV stimulus for optimal results
     price: 149.99,
     category: 'Anti-Aging',
     tags: ['GDF-11', 'anti-aging', 'parabiosis', 'rejuvenation', 'TGF-beta', 'longevity'],
-    image: 'https://phiogen.is/images/products/gdf-11-100mcg.png',
+    image: 'https://phiogen.is/images/products/igf-1-lr3-100mcg.png',
     affiliateUrl: 'https://phiogen.is/products/gdf-11-100mcg?ref=PEPS',
     shortDescription: 'GDF-11 is the circulating "young blood factor" from parabiosis research — a TGF-beta family protein that declines with aging and whose restoration reverses cardiac and neurological aging markers.',
     fullDescription: `GDF-11 (Growth Differentiation Factor 11) gained widespread attention after 2013 Harvard research demonstrated that its declining levels in aging blood contribute to multiple aging phenotypes, and that restoration of GDF-11 levels (via parabiotic blood exchange with young animals) reversed cardiac hypertrophy, improved skeletal muscle regeneration, and enhanced neurogenesis. GDF-11 is a circulating protein that declines with age and acts as a systemic signal of biological youth.
@@ -6799,7 +6799,7 @@ At 100mcg doses, GDF-11 is used in anti-aging research protocols targeting cardi
     price: 119.99,
     category: 'Healing',
     tags: ['FGL2', 'immune', 'anti-inflammatory', 'fibroleukin', 'Treg', 'autoimmune'],
-    image: 'https://phiogen.is/images/products/fgl2-1mg.png',
+    image: 'https://phiogen.is/images/products/igf-1-lr3-1mg.png',
     affiliateUrl: 'https://phiogen.is/products/fgl2-1mg?ref=PEPS',
     shortDescription: 'FGL2 (Fibroleukin) is an immune checkpoint molecule that expands regulatory T cells (Tregs) and reduces autoimmune inflammation — studied for tolerance induction and chronic inflammation.',
     fullDescription: `FGL2 (Fibroleukin) is a member of the fibrinogen superfamily that functions as an immune checkpoint molecule. It is secreted by regulatory T cells (Tregs) and exerts immunosuppressive effects through FcγRIIB receptor signaling, inhibiting dendritic cell maturation and effector T cell activation. FGL2 represents a novel approach to modulating the immune system for autoimmune and chronic inflammatory conditions.
@@ -6845,7 +6845,7 @@ FGL2 is a frontier immune research compound with significant mechanistic interes
     price: 79.99,
     category: 'Body Composition',
     tags: ['IGF-1 DES', 'IGF', 'muscle', 'local anabolic', 'hypertrophy', 'satellite cells'],
-    image: 'https://phiogen.is/images/products/igf-1-des-1mg.png',
+    image: 'https://phiogen.is/images/products/igf-1-lr3-100mcg.png',
     affiliateUrl: 'https://phiogen.is/products/igf-1-des-1mg?ref=PEPS',
     shortDescription: 'IGF-1 DES is a truncated form of IGF-1 that is 10x more potent than native IGF-1 for local muscle anabolic signaling — the most potent injectable muscle growth peptide.',
     fullDescription: `IGF-1 DES (Des(1-3)IGF-1) is a naturally occurring truncated form of IGF-1 lacking the first three amino acids. This truncation reduces binding to IGF-binding proteins (IGFBPs), which would otherwise sequester most injected IGF-1 LR3. Without IGFBP binding, DES IGF-1 is immediately bioavailable at the injection site — making it 10x more potent than native IGF-1 for local muscle anabolic signaling.

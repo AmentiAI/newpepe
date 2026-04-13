@@ -400,36 +400,36 @@ export default function HomePage() {
                 </div>
 
                 {/* 2×2 product grid — BIG cards */}
-                <div className="grid grid-cols-2 gap-5 mb-5">
+                <div className="grid grid-cols-2 gap-4 mb-5">
                   {heroProducts.map((product) => (
                     <Link
                       key={product.slug}
                       href={`/products/${product.slug}`}
-                      className="group glass-card p-5 hover:border-amber-400/60 transition-all duration-200 block"
+                      className="group glass-card p-4 hover:border-amber-400/60 transition-all duration-200 block"
                     >
-                      {/* Large image area */}
-                      <div className="relative h-44 mb-4 overflow-hidden rounded-xl bg-gray-50 border border-gray-100">
+                      {/* Image area */}
+                      <div className="relative h-28 mb-3 overflow-hidden rounded-lg bg-gray-50 border border-gray-100">
                         <ProductImage
                           src={product.image}
                           alt={product.name}
                           fill
-                          className="object-contain p-4 group-hover:scale-105 transition-transform duration-300"
+                          className="object-contain p-3 group-hover:scale-105 transition-transform duration-300"
                           sizes="280px"
                         />
                       </div>
                       {/* Category badge */}
-                      <span className="inline-block text-xs font-bold bg-amber-50 text-amber-700 border border-amber-200 px-2.5 py-1 rounded-full mb-2">
+                      <span className="inline-block text-xs font-bold bg-amber-50 text-amber-700 border border-amber-200 px-2 py-0.5 rounded-full mb-1.5">
                         {product.category}
                       </span>
-                      <p className="text-gray-900 font-black text-2xl mb-1 group-hover:text-amber-600 transition-colors leading-tight">{product.name}</p>
-                      <p className="text-gray-700 text-base mb-4 line-clamp-2 leading-snug">{product.tagline}</p>
-                      <div className="flex items-center justify-between pt-3 border-t border-gray-200">
-                        <div className="flex items-baseline gap-1.5">
-                          <span className="text-amber-600 text-2xl font-black">${sale(product.price)}</span>
-                          <span className="text-gray-400 text-sm line-through">${product.price}</span>
+                      <p className="text-gray-900 font-black text-lg mb-0.5 group-hover:text-amber-600 transition-colors leading-tight">{product.name}</p>
+                      <p className="text-gray-700 text-sm mb-3 line-clamp-2 leading-snug">{product.tagline}</p>
+                      <div className="flex items-center justify-between pt-2.5 border-t border-gray-200">
+                        <div className="flex items-baseline gap-1">
+                          <span className="text-amber-600 text-lg font-black">${sale(product.price)}</span>
+                          <span className="text-gray-400 text-xs line-through">${product.price}</span>
                         </div>
-                        <span className="text-sm font-bold text-gray-700 group-hover:text-amber-600 flex items-center gap-1 transition-colors">
-                          View Product <ArrowRight className="w-3.5 h-3.5" />
+                        <span className="text-xs font-bold text-gray-700 group-hover:text-amber-600 flex items-center gap-1 transition-colors">
+                          View <ArrowRight className="w-3 h-3" />
                         </span>
                       </div>
                     </Link>
@@ -828,7 +828,7 @@ export default function HomePage() {
             </Link>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-10">
             {featuredProducts.map((product) => (
               <ProductCard key={product.slug} product={product} />
             ))}
