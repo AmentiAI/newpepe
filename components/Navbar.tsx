@@ -1,8 +1,9 @@
 'use client';
 import { useState } from 'react';
 import Link from 'next/link';
-import { Menu, X, Zap } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import SearchModal from '@/components/SearchModal';
+import Logo from '@/components/Logo';
 
 const SOURCE_URL = 'https://phiogen.is/?ref=PEPS';
 
@@ -32,13 +33,8 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2 group">
-            <div className="w-8 h-8 rounded-lg bg-amber-50 border border-amber-200 flex items-center justify-center group-hover:bg-amber-100 transition-colors">
-              <Zap className="w-4 h-4 text-amber-500" />
-            </div>
-            <span className="font-bold text-lg text-gray-900">
-              BPC<span className="text-amber-500">157</span>Stack
-            </span>
+          <Link href="/" className="flex items-center hover:opacity-80 transition-opacity">
+            <Logo className="h-8 w-auto" />
           </Link>
 
           {/* Desktop nav */}
