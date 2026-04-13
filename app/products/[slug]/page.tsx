@@ -3,7 +3,7 @@ import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import ProductImage from '@/components/ProductImage';
 import { ArrowRight, CheckCircle, FlaskConical, Microscope, Shield, Zap, Flame, Star } from 'lucide-react';
-import { products, getProductBySlug, getRelatedProducts } from '@/lib/products';
+import { products, getProductBySlug, getRelatedProducts, sale } from '@/lib/products';
 import ProductCard from '@/components/ProductCard';
 import InternalLinks from '@/components/InternalLinks';
 import { productFaqs } from '@/lib/product-faqs';
@@ -234,7 +234,11 @@ export default function ProductPage({ params }: Props) {
             {/* Price + CTA */}
             <div className="rounded-xl p-5 mb-4 bg-gray-50 border border-gray-200">
               <div className="flex items-center gap-3 mb-4">
-                <span className="text-3xl sm:text-4xl font-black text-gray-900">${product.price}</span>
+                <div className="flex flex-col leading-tight">
+                  <span className="text-3xl sm:text-4xl font-black text-gray-900">${sale(product.price)}</span>
+                  <span className="text-gray-400 text-sm line-through">${product.price}</span>
+                </div>
+                <span className="text-xs font-black bg-amber-500 text-white px-2 py-1 rounded-full">10% OFF</span>
                 <div>
                   <div className="text-gray-500 text-xs font-medium">COA Verified · Third-Party Tested</div>
                   <div className={`${theme.accentLight} text-xs font-bold`}>US Domestic Shipping</div>
@@ -386,7 +390,8 @@ export default function ProductPage({ params }: Props) {
               </div>
 
               <div className="mt-4 pt-4 border-t border-gray-100">
-                <div className="text-3xl font-black text-gray-900">${product.price}</div>
+                <div className="text-3xl font-black text-gray-900">${sale(product.price)}</div>
+                <div className="text-gray-400 text-sm line-through">${product.price}</div>
               </div>
             </div>
 

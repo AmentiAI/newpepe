@@ -103,7 +103,7 @@ export default function AntiAgingPage() {
     <div className="bg-white min-h-screen">
 
       {/* Hero */}
-      <section className="relative pt-32 pb-20 overflow-hidden">
+      <section className="relative pt-20 sm:pt-32 pb-12 sm:pb-20 overflow-hidden">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[500px] bg-amber-50 blur-[150px] rounded-full pointer-events-none" />
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -479,7 +479,7 @@ export default function AntiAgingPage() {
                 <Dna className="w-4 h-4 text-amber-600" />
                 <span className="text-amber-600 text-sm font-semibold">THE LONGEVITY STACK</span>
               </div>
-              <h2 className="text-4xl font-black text-gray-900 mb-4">
+              <h2 className="text-3xl sm:text-4xl font-black text-gray-900 mb-4">
                 A Multi-Target<br />
                 <span className="text-amber-600">Longevity Protocol</span>
               </h2>
@@ -532,7 +532,7 @@ export default function AntiAgingPage() {
             <Activity className="w-4 h-4 text-amber-600" />
             <span className="text-amber-600 text-sm font-bold tracking-wide">BIOMARKER GUIDE</span>
           </div>
-          <h2 className="text-4xl font-black text-gray-900 mb-4">
+          <h2 className="text-3xl sm:text-4xl font-black text-gray-900 mb-4">
             Anti-Aging Blood Panel:<br />
             <span style={{ color: '#d97706' }}>What to Test and When</span>
           </h2>

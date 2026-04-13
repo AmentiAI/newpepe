@@ -153,7 +153,7 @@ export default function Bpc157TendonsPage() {
       />
 
       {/* Hero */}
-      <section className="relative pt-32 pb-16 overflow-hidden">
+      <section className="relative pt-20 sm:pt-32 pb-10 sm:pb-16 overflow-hidden">
         <div className="absolute inset-0 grid-bg opacity-40" />
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] bg-blue-500/8 blur-[120px] rounded-full pointer-events-none" />
         <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -161,7 +161,7 @@ export default function Bpc157TendonsPage() {
             <Zap className="w-4 h-4 text-blue-400" />
             <span className="text-blue-400 text-sm font-semibold tracking-wide">BPC-157 TENDON HEALING GUIDE</span>
           </div>
-          <h1 className="text-5xl sm:text-6xl font-black text-white leading-tight mb-6">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white leading-tight mb-6">
             BPC-157 for<br />
             <span className="text-blue-400">Tendons & Ligaments</span>
           </h1>

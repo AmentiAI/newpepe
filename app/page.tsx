@@ -1,15 +1,15 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import Image from 'next/image';
 import {
   ArrowRight, Zap, Shield, TrendingUp, Brain, FlaskConical, Star,
   CheckCircle, Activity, Clock, Users, Award, Target, BookOpen,
   Microscope, Dna, HeartPulse, Leaf, Wind, ExternalLink,
   AlertTriangle, Package, Thermometer, BadgeCheck,
 } from 'lucide-react';
-import { products } from '@/lib/products';
+import { products, sale } from '@/lib/products';
 import { stacks } from '@/lib/stacks';
 import ProductCard from '@/components/ProductCard';
+import ProductImage from '@/components/ProductImage';
 
 export const metadata: Metadata = {
   title: 'BPC-157 Stack | #1 Peptide Protocols for Healing, Performance & Longevity',
@@ -408,12 +408,12 @@ export default function HomePage() {
                       className="group glass-card p-5 hover:border-amber-400/60 transition-all duration-200 block"
                     >
                       {/* Large image area */}
-                      <div className="relative h-56 mb-4 overflow-hidden rounded-xl bg-gray-50 border border-gray-100">
-                        <Image
+                      <div className="relative h-44 mb-4 overflow-hidden rounded-xl bg-gray-50 border border-gray-100">
+                        <ProductImage
                           src={product.image}
                           alt={product.name}
                           fill
-                          className="object-contain p-5 group-hover:scale-105 transition-transform duration-300"
+                          className="object-contain p-4 group-hover:scale-105 transition-transform duration-300"
                           sizes="280px"
                         />
                       </div>
@@ -424,7 +424,10 @@ export default function HomePage() {
                       <p className="text-gray-900 font-black text-2xl mb-1 group-hover:text-amber-600 transition-colors leading-tight">{product.name}</p>
                       <p className="text-gray-700 text-base mb-4 line-clamp-2 leading-snug">{product.tagline}</p>
                       <div className="flex items-center justify-between pt-3 border-t border-gray-200">
-                        <span className="text-amber-600 text-2xl font-black">${product.price}</span>
+                        <div className="flex items-baseline gap-1.5">
+                          <span className="text-amber-600 text-2xl font-black">${sale(product.price)}</span>
+                          <span className="text-gray-400 text-sm line-through">${product.price}</span>
+                        </div>
                         <span className="text-sm font-bold text-gray-700 group-hover:text-amber-600 flex items-center gap-1 transition-colors">
                           View Product <ArrowRight className="w-3.5 h-3.5" />
                         </span>
@@ -773,10 +776,20 @@ export default function HomePage() {
                   <p className="text-amber-600 text-xs font-bold mb-3">{stack.goal}</p>
                   <p className="text-gray-700 text-base leading-relaxed mb-5 flex-1">{stack.tagline}</p>
 
-                  <div className="flex flex-wrap gap-1.5 mb-6">
-                    {stack.peptides.map((p) => (
-                      <span key={p} className="text-xs font-bold bg-gray-100 text-gray-800 px-2.5 py-1 rounded border border-gray-200">{p.toUpperCase()}</span>
-                    ))}
+                  {/* Product image thumbnails */}
+                  <div className="flex flex-wrap gap-2 mb-5">
+                    {stack.peptides.map((slug) => {
+                      const prod = products.find(pr => pr.slug === slug);
+                      if (!prod) return <span key={slug} className="text-xs font-bold bg-gray-100 text-gray-800 px-2.5 py-1 rounded border border-gray-200">{slug.toUpperCase()}</span>;
+                      return (
+                        <Link key={slug} href={`/products/${slug}`} className="group/img flex flex-col items-center gap-0.5">
+                          <div className="w-12 h-12 rounded-lg bg-gray-50 border border-gray-200 overflow-hidden relative group-hover/img:border-amber-300 transition-colors">
+                            <ProductImage src={prod.image} alt={prod.name} fill className="object-contain p-1" sizes="48px" />
+                          </div>
+                          <span className="text-[10px] text-gray-400 font-mono max-w-[48px] truncate text-center">{prod.name.split(' ')[0]}</span>
+                        </Link>
+                      );
+                    })}
                   </div>
 
                   <div className="flex gap-2 mt-auto">

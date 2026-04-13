@@ -1,3 +1,8 @@
+export const DISCOUNT = 0.10;
+export function sale(price: number): string {
+  return (price * (1 - DISCOUNT)).toFixed(2);
+}
+
 export interface Product {
   slug: string;
   name: string;
@@ -1312,8 +1317,8 @@ No reconstitution, no needles, no refrigeration concerns. Simply take 1-2 capsul
     price: 59.99,
     category: 'Healing',
     tags: ['BPC-157', 'Capsules', 'Oral', 'High-Dose', 'Gut Healing'],
-    image: 'https://phiogen.is/images/products/bpc-157-capsules-1000mcg-x-30-capsules.png',
-    affiliateUrl: 'https://phiogen.is/products/bpc-157-capsules-1000mcg-x-30-capsules?ref=PEPS',
+    image: 'https://phiogen.is/images/products/bpc-157-capsules-500mcg-x-60-capsules.png',
+    affiliateUrl: 'https://phiogen.is/products/bpc-157-capsules-500mcg-x-60-capsules?ref=PEPS',
     shortDescription: '30 capsules of 1000mcg BPC-157 — double-strength oral formula for intensive gut repair, acute GI conditions, and accelerated systemic recovery.',
     fullDescription: `**Double-Strength Oral BPC-157**
 
@@ -1358,8 +1363,8 @@ Compared to the 500mcg x60 format, this 1000mcg x30 option suits users who prefe
     price: 34.99,
     category: 'Healing',
     tags: ['BPC-157', 'Injectable', 'Healing', 'Tendon', 'Gut'],
-    image: 'https://phiogen.is/images/products/bpc-157-5mg.png',
-    affiliateUrl: 'https://phiogen.is/products/bpc-157-5mg?ref=PEPS',
+    image: 'https://phiogen.is/images/products/bpc-157-10mg.png',
+    affiliateUrl: 'https://phiogen.is/products/bpc-157-10mg?ref=PEPS',
     shortDescription: 'Injectable BPC-157 5mg — the foundational healing peptide for tendon repair, gut healing, nerve regeneration, and anti-inflammatory support.',
     fullDescription: `**The Most Researched Healing Peptide**
 
@@ -1406,8 +1411,8 @@ The 5mg vial is the standard entry dose for BPC-157 protocols. It's commonly sta
     price: 89.99,
     category: 'Healing',
     tags: ['BPC-157', 'Injectable', 'Healing', 'High-Dose', 'Extended Protocol'],
-    image: 'https://phiogen.is/images/products/bpc-157-20mg.png',
-    affiliateUrl: 'https://phiogen.is/products/bpc-157-20mg?ref=PEPS',
+    image: 'https://phiogen.is/images/products/bpc-157-10mg.png',
+    affiliateUrl: 'https://phiogen.is/products/bpc-157-10mg?ref=PEPS',
     shortDescription: 'A 20mg vial of injectable BPC-157 — ideal for extended healing protocols, high-dose research applications, and users who prefer fewer reconstitutions.',
     fullDescription: `**Extended Protocol Supply**
 
@@ -1503,8 +1508,8 @@ Research has demonstrated KPV's efficacy in models of colitis, Crohn's disease, 
     price: 69.99,
     category: 'Healing',
     tags: ['LL-37', 'Antimicrobial', 'Immune', 'Host Defense', 'Wound Healing'],
-    image: 'https://phiogen.is/images/products/ll-37-5mg.png',
-    affiliateUrl: 'https://phiogen.is/products/ll-37-5mg?ref=PEPS',
+    image: 'https://phiogen.is/images/products/ll-37-10mg.png',
+    affiliateUrl: 'https://phiogen.is/products/ll-37-10mg?ref=PEPS',
     shortDescription: 'LL-37 is the only human cathelicidin — a host defense peptide that kills bacteria, modulates immune responses, and promotes wound healing and angiogenesis.',
     fullDescription: `**The Body's Own Defense Molecule**
 
@@ -1552,8 +1557,8 @@ LL-37 deficiency has been linked to chronic non-healing wounds, recurrent skin i
     price: 59.99,
     category: 'Healing',
     tags: ['BPC', 'Pentadecapeptide', 'Healing', 'Gut', 'Stable'],
-    image: 'https://phiogen.is/images/products/pentadecapeptide-bpc-10mg.png',
-    affiliateUrl: 'https://phiogen.is/products/pentadecapeptide-bpc-10mg?ref=PEPS',
+    image: 'https://phiogen.is/images/products/bpc-157-10mg.png',
+    affiliateUrl: 'https://phiogen.is/products/bpc-157-10mg?ref=PEPS',
     shortDescription: 'Pentadecapeptide BPC is a stable, research-verified form of the 15-amino-acid body protection compound — active via injectable and oral routes for comprehensive healing.',
     fullDescription: `**The Research-Verified BPC Sequence**
 
@@ -1597,8 +1602,8 @@ Applications span the full range of BPC-157 research: tendon and ligament repair
     price: 69.99,
     category: 'Healing',
     tags: ['PT-141', 'Bremelanotide', 'Sexual Health', 'Libido', 'Melanocortin'],
-    image: 'https://phiogen.is/images/products/pt-141-bremelanotide-10mg.png',
-    affiliateUrl: 'https://phiogen.is/products/pt-141-bremelanotide-10mg?ref=PEPS',
+    image: 'https://phiogen.is/images/products/pt-141-10mg.png',
+    affiliateUrl: 'https://phiogen.is/products/pt-141-10mg?ref=PEPS',
     shortDescription: 'PT-141 (Bremelanotide) is an FDA-referenced melanocortin receptor agonist that enhances sexual arousal and libido in both men and women through central nervous system pathways.',
     fullDescription: `**Central Pathway Sexual Enhancement**
 
@@ -1646,8 +1651,8 @@ In men, PT-141 enhances erectile function through a mechanism entirely separate 
     price: 59.99,
     category: 'Cognitive',
     tags: ['Selank', 'Anxiety', 'Nootropic', 'BDNF', 'Cognitive'],
-    image: 'https://phiogen.is/images/products/selank-5mg.png',
-    affiliateUrl: 'https://phiogen.is/products/selank-5mg?ref=PEPS',
+    image: 'https://phiogen.is/images/products/selank-10mg.png',
+    affiliateUrl: 'https://phiogen.is/products/selank-10mg?ref=PEPS',
     shortDescription: 'Selank is a synthetic heptapeptide anxiolytic developed by the Russian Academy of Sciences — reduces anxiety without sedation while enhancing BDNF and cognitive function.',
     fullDescription: `**Russia's Non-Sedating Anxiolytic Peptide**
 
@@ -1694,8 +1699,8 @@ Users report reduced anxiety, improved stress resilience, enhanced focus, and be
     price: 59.99,
     category: 'Cognitive',
     tags: ['Semax', 'Nootropic', 'BDNF', 'Neuroprotective', 'Cognitive'],
-    image: 'https://phiogen.is/images/products/semax-10mg.png',
-    affiliateUrl: 'https://phiogen.is/products/semax-10mg?ref=PEPS',
+    image: 'https://phiogen.is/images/products/n-acetyl-semax-amidate-30mg.png',
+    affiliateUrl: 'https://phiogen.is/products/n-acetyl-semax-amidate-30mg?ref=PEPS',
     shortDescription: 'Semax is a synthetic ACTH(4-7) analog developed in Russia for cognitive enhancement, neuroprotection, and recovery from stroke or brain injury.',
     fullDescription: `**ACTH-Derived Neuroprotective Peptide**
 
@@ -1935,8 +1940,8 @@ TB4-Frag is ideal for users who want targeted actin-mediated healing at a lower 
     price: 49.99,
     category: 'Cognitive',
     tags: ['DSIP', 'Sleep', 'Recovery', 'Cortisol', 'Delta Sleep'],
-    image: 'https://phiogen.is/images/products/dsip-5mg.png',
-    affiliateUrl: 'https://phiogen.is/products/dsip-5mg?ref=PEPS',
+    image: 'https://phiogen.is/images/products/dsip-delta-sleep-inducing-peptide-5mg.png',
+    affiliateUrl: 'https://phiogen.is/products/dsip-delta-sleep-inducing-peptide-5mg?ref=PEPS',
     shortDescription: 'DSIP (Delta Sleep-Inducing Peptide) is a hypothalamic nonapeptide that promotes deep slow-wave sleep, regulates cortisol rhythms, and enhances recovery-critical sleep architecture.',
     fullDescription: `**The Deep Sleep Peptide**
 
@@ -1984,8 +1989,8 @@ Athletes and high-performers use DSIP to restore sleep quality degraded by train
     price: 99.99,
     category: 'Cognitive',
     tags: ['Dihexa', 'Nootropic', 'Synaptogenesis', 'Memory', 'Cognitive Enhancement'],
-    image: 'https://phiogen.is/images/products/dihexa-50mg.png',
-    affiliateUrl: 'https://phiogen.is/products/dihexa-50mg?ref=PEPS',
+    image: 'https://phiogen.is/images/products/p21-10mg.png',
+    affiliateUrl: 'https://phiogen.is/products/p21-10mg?ref=PEPS',
     shortDescription: 'Dihexa is an HGF/c-Met signaling agent reported to be 10 million times more potent than BDNF at promoting synaptogenesis — the most powerful nootropic peptide in research.',
     fullDescription: `**The Synaptogenesis Peptide**
 
@@ -2033,8 +2038,8 @@ Dihexa is researched for Alzheimer's disease reversal, traumatic brain injury re
     price: 49.99,
     category: 'Cognitive',
     tags: ['Cerebrolysin', 'Neurotrophic', 'Neuropeptides', 'Brain Repair', 'Cognitive'],
-    image: 'https://phiogen.is/images/products/cerebrolysin-215mg-5ml.png',
-    affiliateUrl: 'https://phiogen.is/products/cerebrolysin-215mg-5ml?ref=PEPS',
+    image: 'https://phiogen.is/images/products/pinealon-20mg.png',
+    affiliateUrl: 'https://phiogen.is/products/pinealon-20mg?ref=PEPS',
     shortDescription: 'Cerebrolysin is a porcine-derived neuropeptide mixture (215mg/5mL) with clinically proven effects on Alzheimer\'s disease, stroke recovery, and TBI rehabilitation.',
     fullDescription: `**The Clinical Neurotrophic Standard**
 
@@ -2617,8 +2622,8 @@ The broad receptor activation of MT-II means more comprehensive effects but also
     price: 99.99,
     category: 'Anti-Aging',
     tags: ['Humanin', 'Mitochondria', 'Neuroprotection', 'Anti-Aging', 'Longevity'],
-    image: 'https://phiogen.is/images/products/humanin-1mg.png',
-    affiliateUrl: 'https://phiogen.is/products/humanin-1mg?ref=PEPS',
+    image: 'https://phiogen.is/images/products/mots-c-10mg.png',
+    affiliateUrl: 'https://phiogen.is/products/mots-c-10mg?ref=PEPS',
     shortDescription: 'Humanin is a mitochondria-encoded micropeptide that provides neuroprotection against Alzheimer\'s pathology, improves insulin sensitivity, and extends lifespan in multiple model organisms.',
     fullDescription: `**Mitochondrial-Derived Longevity Peptide**
 
@@ -2666,8 +2671,8 @@ Humanin levels correlate with longevity — centenarians and their offspring hav
     price: 129.99,
     category: 'Anti-Aging',
     tags: ['MOTS-c', 'Mitochondria', 'Metabolic', 'Exercise', 'Longevity'],
-    image: 'https://phiogen.is/images/products/mots-c-5mg.png',
-    affiliateUrl: 'https://phiogen.is/products/mots-c-5mg?ref=PEPS',
+    image: 'https://phiogen.is/images/products/mots-c-10mg.png',
+    affiliateUrl: 'https://phiogen.is/products/mots-c-10mg?ref=PEPS',
     shortDescription: 'MOTS-c is a mitochondria-encoded peptide that mimics the metabolic effects of exercise, improves insulin sensitivity, reduces obesity, and activates AMPK for longevity signaling.',
     fullDescription: `**Exercise in a Peptide**
 
@@ -2715,8 +2720,8 @@ MOTS-c levels decline with age and obesity. In animal models, exogenous MOTS-c a
     price: 149.99,
     category: 'Anti-Aging',
     tags: ['SS-31', 'Elamipretide', 'Mitochondria', 'Cardiac', 'Anti-Aging'],
-    image: 'https://phiogen.is/images/products/ss-31-elamipretide-10mg.png',
-    affiliateUrl: 'https://phiogen.is/products/ss-31-elamipretide-10mg?ref=PEPS',
+    image: 'https://phiogen.is/images/products/ss-31-10mg.png',
+    affiliateUrl: 'https://phiogen.is/products/ss-31-10mg?ref=PEPS',
     shortDescription: 'SS-31 (Elamipretide) is a mitochondria-targeted tetrapeptide that binds cardiolipin, restores electron transport chain efficiency, and reverses age-related mitochondrial dysfunction.',
     fullDescription: `**Targeting the Heart of Cellular Energy**
 
@@ -2764,8 +2769,8 @@ Aging is fundamentally accompanied by cardiolipin loss and ETC disorganization. 
     price: 79.99,
     category: 'Anti-Aging',
     tags: ['Thymalin', 'Thymus', 'Immune', 'Anti-Aging', 'Bioregulator'],
-    image: 'https://phiogen.is/images/products/thymalin-20mg.png',
-    affiliateUrl: 'https://phiogen.is/products/thymalin-20mg?ref=PEPS',
+    image: 'https://phiogen.is/images/products/thymulin-10mg.png',
+    affiliateUrl: 'https://phiogen.is/products/thymulin-10mg?ref=PEPS',
     shortDescription: 'Thymalin is a polypeptide thymus bioregulator developed by Professor Khavinson that rejuvenates immune function, reduces cancer incidence, and extends longevity in human clinical data.',
     fullDescription: `**The Thymus Rejuvenation Peptide**
 
@@ -2813,8 +2818,8 @@ Thymalin restores T-cell populations — particularly CD4+ helper and CD8+ cytot
     price: 89.99,
     category: 'Anti-Aging',
     tags: ['SNAP-8', 'Anti-Wrinkle', 'Botox Alternative', 'Skin', 'Expression Lines'],
-    image: 'https://phiogen.is/images/products/snap-8-50mg.png',
-    affiliateUrl: 'https://phiogen.is/products/snap-8-50mg?ref=PEPS',
+    image: 'https://phiogen.is/images/products/snap-8-10mg.png',
+    affiliateUrl: 'https://phiogen.is/products/snap-8-10mg?ref=PEPS',
     shortDescription: 'SNAP-8 is an octapeptide that competes with SNAP-25 to inhibit SNARE complex formation, reducing muscle micro-contractions and expression lines for a topical botox-like effect.',
     fullDescription: `**Topical Neurotransmission Inhibitor for Wrinkle Reduction**
 
@@ -5002,8 +5007,8 @@ For researchers studying tesamorelin's dose-response relationships, cognitive ef
     price: 99.99,
     category: 'Anti-Aging',
     tags: ['GLOW Blend', 'Anti-Aging', 'Skin', 'Collagen', 'GHK-Cu', 'Blend'],
-    image: 'https://phiogen.is/images/products/glow-blend-20mg.png',
-    affiliateUrl: 'https://phiogen.is/products/glow-blend-20mg?ref=PEPS',
+    image: 'https://phiogen.is/images/products/glow-blend-50mg.png',
+    affiliateUrl: 'https://phiogen.is/products/glow-blend-50mg?ref=PEPS',
     shortDescription: 'GLOW Blend is a curated anti-aging peptide combination targeting skin radiance, collagen production, and cellular rejuvenation — a multi-peptide approach to comprehensive skin health.',
     fullDescription: `**The Multi-Peptide Anti-Aging Blend**
 
@@ -5346,8 +5351,8 @@ Cagrilintide is a long-acting amylin analog that activates amylin receptors in t
     price: 119.99,
     category: 'Healing',
     tags: ['healing', 'gut', 'tendons', 'bulk', 'long-term', 'value'],
-    image: 'https://phiogen.is/images/products/bpc-157-30mg.png',
-    affiliateUrl: 'https://phiogen.is/products/bpc-157-30mg?ref=PEPS',
+    image: 'https://phiogen.is/images/products/bpc-157-10mg.png',
+    affiliateUrl: 'https://phiogen.is/products/bpc-157-10mg?ref=PEPS',
     shortDescription: 'BPC-157 30mg is the bulk vial for extended healing protocols — provides 60+ days of standard dosing at 500mcg/day with the lowest per-mcg cost.',
     fullDescription: `BPC-157 30mg provides the best per-unit value for users running extended healing protocols or stacking BPC-157 with TB-500 over multiple months. A single 30mg vial reconstituted with 6mL bacteriostatic water yields a 5mg/mL concentration, providing 60 days of 500mcg/day dosing from one vial.
 
@@ -5392,8 +5397,8 @@ Extended BPC-157 protocols (12+ weeks) are used for complete structural repair o
     price: 89.99,
     category: 'Healing',
     tags: ['neuropathy', 'nerve repair', 'pain', 'inflammation', 'EPO-derived'],
-    image: 'https://phiogen.is/images/products/ara-290-4mg.png',
-    affiliateUrl: 'https://phiogen.is/products/ara-290-4mg?ref=PEPS',
+    image: 'https://phiogen.is/images/products/ara-290-10mg.png',
+    affiliateUrl: 'https://phiogen.is/products/ara-290-10mg?ref=PEPS',
     shortDescription: 'ARA-290 is a non-hematopoietic erythropoietin peptide that repairs small fiber neuropathy and reduces neuroinflammation — studied clinically for diabetic neuropathy.',
     fullDescription: `ARA-290 is an 11-amino-acid peptide derived from the helix-B surface of erythropoietin (EPO) — engineered to retain EPO's tissue-protective and anti-inflammatory effects while eliminating red blood cell stimulation. This makes ARA-290 safe for repeated use without the hematopoietic risks associated with EPO itself.
 
@@ -5578,8 +5583,8 @@ As a standalone, cagrilintide at 4.5mg/week produced approximately 10.8% body we
     price: 89.99,
     category: 'Anti-Aging',
     tags: ['NAD+', 'anti-aging', 'mitochondria', 'energy', 'longevity', 'cellular repair'],
-    image: 'https://phiogen.is/images/products/nad-250mg.png',
-    affiliateUrl: 'https://phiogen.is/products/nad-250mg?ref=PEPS',
+    image: 'https://phiogen.is/images/products/nad-500mg.png',
+    affiliateUrl: 'https://phiogen.is/products/nad-500mg?ref=PEPS',
     shortDescription: 'NAD+ 250mg provides high-dose nicotinamide adenine dinucleotide for mitochondrial optimization, DNA repair activation, and sirtuin-mediated longevity signaling.',
     fullDescription: `NAD+ (Nicotinamide Adenine Dinucleotide) is the master regulator of cellular energy metabolism. It declines 50% from age 20 to 60, and this decline is now understood to be a causal driver of the aging phenotype. Direct NAD+ supplementation via injection restores intracellular levels within hours, activating sirtuins, PARP enzymes, and the CD38 pathway simultaneously.
 
@@ -5813,8 +5818,8 @@ MK-677 increases appetite significantly through its ghrelin mechanism — users 
     price: 49.99,
     category: 'Healing',
     tags: ['BPC-157', 'nasal', 'intranasal', 'CNS', 'gut', 'healing', 'no injection'],
-    image: 'https://phiogen.is/images/products/bpc-157-nasal-spray-500mcg-ml.png',
-    affiliateUrl: 'https://phiogen.is/products/bpc-157-nasal-spray-500mcg-ml?ref=PEPS',
+    image: 'https://phiogen.is/images/products/bpc-157-capsules-500mcg-x-60-capsules.png',
+    affiliateUrl: 'https://phiogen.is/products/bpc-157-capsules-500mcg-x-60-capsules?ref=PEPS',
     shortDescription: 'BPC-157 intranasal spray delivers the peptide directly through the nasal mucosa for CNS, sinus, and systemic effects — needle-free alternative with rapid onset.',
     fullDescription: `BPC-157 intranasal spray provides an alternative delivery route for users seeking CNS-targeted effects or needle-free administration. The nasal mucosa has a rich blood supply and direct olfactory nerve pathways to the brain — intranasal delivery achieves measurable plasma levels and CNS penetration without injection.
 
@@ -6049,8 +6054,8 @@ Adding Ipamorelin or GHRP-2 to tesamorelin amplifies GH pulses through dual rece
     price: 44.99,
     category: 'Healing',
     tags: ['PT-141', 'sexual health', 'libido', 'bremelanotide', 'melanocortin', 'starter'],
-    image: 'https://phiogen.is/images/products/pt-141-bremelanotide-5mg.png',
-    affiliateUrl: 'https://phiogen.is/products/pt-141-bremelanotide-5mg?ref=PEPS',
+    image: 'https://phiogen.is/images/products/pt-141-10mg.png',
+    affiliateUrl: 'https://phiogen.is/products/pt-141-10mg?ref=PEPS',
     shortDescription: 'PT-141 (Bremelanotide) 5mg starter vial — FDA-approved melanocortin receptor agonist that enhances sexual desire through central nervous system mechanisms.',
     fullDescription: `PT-141 (Bremelanotide) is a synthetic melanocortin receptor agonist that acts centrally in the brain to enhance sexual desire and arousal. Unlike PDE5 inhibitors (Viagra, Cialis) that work peripherally on blood flow, PT-141 activates the MC3R and MC4R receptors in the hypothalamus — the brain centers that regulate sexual motivation. This is why PT-141 works for both men and women across different etiologies of sexual dysfunction.
 
@@ -6142,8 +6147,8 @@ At 250-500mcg intranasal daily (a common protocol), a 10mg vial provides 20-40 d
     price: 149.99,
     category: 'Cognitive',
     tags: ['semax', 'nootropic', 'cognitive', 'BDNF', 'ACTH', 'neuroprotection', 'bulk'],
-    image: 'https://phiogen.is/images/products/semax-30mg.png',
-    affiliateUrl: 'https://phiogen.is/products/semax-30mg?ref=PEPS',
+    image: 'https://phiogen.is/images/products/n-acetyl-semax-amidate-30mg.png',
+    affiliateUrl: 'https://phiogen.is/products/n-acetyl-semax-amidate-30mg?ref=PEPS',
     shortDescription: 'Semax 30mg bulk supply — the ACTH-derived cognitive enhancer approved in Russia for stroke recovery and neuroprotection, with powerful nootropic and BDNF-upregulating effects.',
     fullDescription: `Semax is a synthetic heptapeptide derived from ACTH(4-10) — a fragment of adrenocorticotropic hormone that retains cognitive effects without hormonal activity. Developed in Russia and approved for clinical use in stroke recovery and transient ischemic attack, Semax has a 25-year clinical safety record and extensive nootropic research base.
 

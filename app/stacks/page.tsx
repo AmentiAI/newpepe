@@ -2,6 +2,8 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { ArrowRight, Clock, Layers, ChevronRight, Star, Zap, Shield, BookOpen, Users } from 'lucide-react';
 import { stacks } from '@/lib/stacks';
+import { products } from '@/lib/products';
+import ProductImage from '@/components/ProductImage';
 import InternalLinks from '@/components/InternalLinks';
 import StackQuiz from '@/components/StackQuiz';
 
@@ -158,7 +160,7 @@ export default function StacksPage() {
     <div className="bg-white min-h-screen">
 
       {/* Hero */}
-      <section className="relative pt-32 pb-20 overflow-hidden">
+      <section className="relative pt-20 sm:pt-32 pb-12 sm:pb-20 overflow-hidden">
         <div className="absolute inset-0 opacity-30" />
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[400px] bg-amber-50 blur-[150px] rounded-full pointer-events-none" />
 
@@ -189,7 +191,7 @@ export default function StacksPage() {
           </div>
 
           {/* Stack count badges */}
-          <div className="grid grid-cols-3 sm:grid-cols-5 gap-3 mt-16 max-w-3xl mx-auto">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3 mt-10 sm:mt-16 max-w-3xl mx-auto">
             {stacks.map((stack) => {
               const meta = stackMeta[stack.id];
               const cols = colorClasses[meta?.color || 'emerald'];
@@ -334,6 +336,30 @@ export default function StacksPage() {
 
                   {/* Right — protocol snapshot */}
                   <div className="p-6 md:p-8 border-t lg:border-t-0 lg:border-l border-gray-200">
+                    {/* Product images for peptides in this stack */}
+                    <div className="mb-5">
+                      <div className="text-xs font-bold text-gray-500 uppercase tracking-widest mb-3">Peptides in Stack</div>
+                      <div className="flex flex-wrap gap-2">
+                        {stack.peptides.map((slug) => {
+                          const p = products.find(pr => pr.slug === slug);
+                          if (!p) return null;
+                          return (
+                            <Link key={slug} href={`/products/${slug}`} className="group flex flex-col items-center gap-1">
+                              <div className="w-16 h-16 rounded-xl bg-white border border-gray-200 overflow-hidden relative group-hover:border-amber-300 transition-colors">
+                                <ProductImage
+                                  src={p.image}
+                                  alt={p.name}
+                                  fill
+                                  className="object-contain p-1.5"
+                                  sizes="64px"
+                                />
+                              </div>
+                              <span className="text-[10px] text-gray-500 font-mono font-bold text-center leading-tight max-w-[64px] truncate">{p.name}</span>
+                            </Link>
+                          );
+                        })}
+                      </div>
+                    </div>
                     <div className="text-xs font-bold text-gray-500 uppercase tracking-widest mb-4">Protocol Snapshot</div>
 
                     {/* Quick stats */}

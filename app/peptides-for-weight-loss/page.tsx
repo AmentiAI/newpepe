@@ -86,7 +86,7 @@ export default function PeptidesForWeightLossPage() {
       ]) }} />
 
       {/* Hero */}
-      <section className="relative pt-32 pb-16 overflow-hidden">
+      <section className="relative pt-20 sm:pt-32 pb-10 sm:pb-16 overflow-hidden">
         <div className="absolute inset-0 grid-bg opacity-40" />
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[400px] bg-rose-500/8 blur-[120px] rounded-full pointer-events-none" />
         <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -94,7 +94,7 @@ export default function PeptidesForWeightLossPage() {
             <Flame className="w-4 h-4 text-rose-400" />
             <span className="text-rose-400 text-sm font-semibold tracking-wide">WEIGHT LOSS PEPTIDE GUIDE 2026</span>
           </div>
-          <h1 className="text-5xl sm:text-6xl font-black text-white leading-tight mb-6">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white leading-tight mb-6">
             Best Peptides for<br /><span className="text-rose-400">Weight Loss</span>
           </h1>
           <p className="text-slate-300 text-xl leading-relaxed mb-8 max-w-3xl">

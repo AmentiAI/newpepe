@@ -3,7 +3,7 @@ import { useState, useEffect, useRef, useMemo } from 'react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import { Search, X, ArrowRight, Command } from 'lucide-react';
-import { products } from '@/lib/products';
+import { products, sale } from '@/lib/products';
 import ProductImage from '@/components/ProductImage';
 
 const categoryColor: Record<string, string> = {
@@ -193,7 +193,8 @@ export default function SearchModal() {
 
                       {/* Price + arrow */}
                       <div className="shrink-0 flex flex-col items-end gap-1">
-                        <span className="text-amber-600 font-black text-lg">${p.price}</span>
+                        <span className="text-amber-600 font-black text-lg">${sale(p.price)}</span>
+                        <span className="text-gray-400 text-xs line-through">${p.price}</span>
                         <ArrowRight className={`w-4 h-4 transition-colors ${i === activeIndex ? 'text-amber-500' : 'text-gray-300'}`} />
                       </div>
                     </button>

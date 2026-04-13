@@ -140,14 +140,14 @@ export default function PeptidesForWomenPage() {
       />
 
       {/* Hero */}
-      <section className="relative pt-32 pb-16 overflow-hidden">
+      <section className="relative pt-20 sm:pt-32 pb-10 sm:pb-16 overflow-hidden">
         <div className="absolute inset-0 grid-bg opacity-40" />
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] bg-purple-500/8 blur-[120px] rounded-full pointer-events-none" />
         <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="inline-flex items-center gap-2 bg-purple-500/10 border border-purple-500/30 rounded-full px-4 py-2 mb-6">
             <span className="text-purple-400 text-sm font-semibold tracking-wide">PEPTIDES FOR WOMEN GUIDE 2026</span>
           </div>
-          <h1 className="text-5xl sm:text-6xl font-black text-white leading-tight mb-6">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white leading-tight mb-6">
             Best Peptides<br />
             <span className="text-purple-400">for Women</span>
           </h1>

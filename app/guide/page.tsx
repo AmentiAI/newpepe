@@ -113,7 +113,7 @@ export default function GuidePage() {
       />
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Hero */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-10 sm:mb-16">
           <div className="inline-flex items-center gap-2 bg-amber-50 border border-amber-200 rounded-full px-4 py-2 mb-6">
             <BookOpen className="w-4 h-4 text-amber-600" />
             <span className="text-amber-600 text-sm font-medium">Complete Beginner Guide</span>
@@ -155,7 +155,7 @@ export default function GuidePage() {
         <DosageCalculator />
 
         {/* Static reconstitution reference */}
-        <div className="glass-card p-8 mb-8">
+        <div className="glass-card p-5 sm:p-8 mb-6 sm:mb-8">
           <h2 className="text-xl font-bold text-gray-900 mb-4">Reconstitution Reference</h2>
           <p className="text-gray-700 text-sm mb-4">Use this formula to calculate your dose per injection:</p>
           <div className="bg-gray-100 rounded-xl p-4 font-mono text-sm border border-amber-200 mb-4">
@@ -172,7 +172,7 @@ export default function GuidePage() {
         </div>
 
         {/* Storage */}
-        <div className="glass-card p-8 mb-8">
+        <div className="glass-card p-5 sm:p-8 mb-6 sm:mb-8">
           <h2 className="text-xl font-bold text-gray-900 mb-4">Storage & Handling</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {[
@@ -190,7 +190,7 @@ export default function GuidePage() {
         </div>
 
         {/* Injection Site Rotation Guide */}
-        <div className="glass-card p-8 mb-8">
+        <div className="glass-card p-5 sm:p-8 mb-6 sm:mb-8">
           <div className="flex items-center gap-3 mb-2">
             <RotateCcw className="w-5 h-5 text-amber-600" />
             <h2 className="text-xl font-bold text-gray-900">Injection Site Rotation Guide</h2>
@@ -222,7 +222,7 @@ export default function GuidePage() {
         </div>
 
         {/* Common Beginner Mistakes */}
-        <div className="glass-card p-8 mb-8">
+        <div className="glass-card p-5 sm:p-8 mb-6 sm:mb-8">
           <div className="flex items-center gap-3 mb-2">
             <XCircle className="w-5 h-5 text-red-600" />
             <h2 className="text-xl font-bold text-gray-900">Common Beginner Mistakes</h2>
@@ -244,7 +244,7 @@ export default function GuidePage() {
         </div>
 
         {/* Peptide Cycling Reference Table */}
-        <div className="glass-card p-8 mb-8 overflow-x-auto">
+        <div className="glass-card p-5 sm:p-8 mb-6 sm:mb-8 overflow-x-auto">
           <div className="flex items-center gap-3 mb-2">
             <CheckCircle className="w-5 h-5 text-amber-600" />
             <h2 className="text-xl font-bold text-gray-900">Peptide Cycling Reference Table</h2>

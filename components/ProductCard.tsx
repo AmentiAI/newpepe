@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { ArrowRight, Tag } from 'lucide-react';
 import type { Product } from '@/lib/products';
+import { sale } from '@/lib/products';
 import ProductImage from '@/components/ProductImage';
 
 interface Props {
@@ -20,12 +21,12 @@ export default function ProductCard({ product }: Props) {
   return (
     <div className="glass-card overflow-hidden group hover:border-amber-300 transition-all duration-300">
       {/* Image */}
-      <div className="relative h-64 overflow-hidden bg-gray-50">
+      <div className="relative h-44 overflow-hidden bg-gray-50">
         <ProductImage
           src={product.image}
           alt={product.name}
           fill
-          className="object-contain p-4 group-hover:scale-105 transition-transform duration-500"
+          className="object-contain p-3 group-hover:scale-105 transition-transform duration-500"
           sizes="(max-width: 768px) 100vw, 33vw"
         />
         <span className={`absolute top-3 left-3 text-xs font-bold px-2 py-1 rounded-full border ${colorClass}`}>
@@ -54,7 +55,10 @@ export default function ProductCard({ product }: Props) {
 
         {/* Price + CTA */}
         <div className="flex items-center justify-between">
-          <span className="text-gray-900 font-black text-xl">${product.price}</span>
+          <div className="flex flex-col leading-tight">
+            <span className="text-gray-900 font-black text-xl">${sale(product.price)}</span>
+            <span className="text-gray-400 text-xs line-through">${product.price}</span>
+          </div>
           <div className="flex gap-2">
             <Link
               href={`/products/${product.slug}`}

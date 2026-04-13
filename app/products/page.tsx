@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { ArrowRight, Tag, FlaskConical } from 'lucide-react';
-import { products } from '@/lib/products';
+import { products, sale } from '@/lib/products';
 import ProductImage from '@/components/ProductImage';
 
 export const metadata: Metadata = {
@@ -115,7 +115,10 @@ export default function ProductsPage() {
 
                     {/* Price + CTA */}
                     <div className="flex items-center justify-between mt-auto pt-3 border-t border-gray-100">
-                      <span className="text-gray-900 font-black text-lg">${product.price}</span>
+                      <div className="flex flex-col leading-tight">
+                        <span className="text-gray-900 font-black text-lg">${sale(product.price)}</span>
+                        <span className="text-gray-400 text-xs line-through">${product.price}</span>
+                      </div>
                       <div className="flex gap-1.5">
                         <Link
                           href={`/products/${product.slug}`}

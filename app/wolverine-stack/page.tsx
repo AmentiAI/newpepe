@@ -111,7 +111,7 @@ export default function WolverineStackPage() {
       />
 
       {/* Hero */}
-      <section className="relative pt-32 pb-20 overflow-hidden">
+      <section className="relative pt-20 sm:pt-32 pb-12 sm:pb-20 overflow-hidden">
         <div className="absolute inset-0 grid-bg opacity-40" />
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] bg-emerald-500/10 blur-[120px] rounded-full pointer-events-none" />
         <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -119,7 +119,7 @@ export default function WolverineStackPage() {
             <Shield className="w-4 h-4 text-emerald-400" />
             <span className="text-emerald-400 text-sm font-semibold tracking-wide">THE WOLVERINE STACK</span>
           </div>
-          <h1 className="text-5xl sm:text-6xl font-black text-white leading-tight mb-6">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white leading-tight mb-6">
             BPC-157 + TB-500:<br />
             <span style={{ color: '#00ff88' }}>Heal Like Wolverine</span>
           </h1>

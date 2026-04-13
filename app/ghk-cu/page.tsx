@@ -5,7 +5,7 @@ import {
   ArrowRight, CheckCircle, Zap, Dna, ExternalLink, Award,
   Sparkles, Wind,
 } from 'lucide-react';
-import { getProductBySlug } from '@/lib/products';
+import { getProductBySlug, sale } from '@/lib/products';
 
 export const metadata: Metadata = {
   title: 'Buy GHK-Cu Copper Peptide | Reverses 31% of Aged Genes, Skin & Hair | BPC-157 Stack',
@@ -64,7 +64,7 @@ export default function GHKCuPage() {
                 </span>
               </div>
 
-              <h1 className="text-6xl sm:text-7xl lg:text-8xl font-black leading-[0.9] mb-6 tracking-tight">
+              <h1 className="text-5xl sm:text-6xl lg:text-8xl font-black leading-[0.9] mb-6 tracking-tight">
                 <span className="text-white block">Buy GHK-Cu</span>
                 <span className="text-3xl sm:text-4xl font-bold text-slate-400 block mt-2 leading-tight">
                   Copper Peptide That<br />
@@ -84,7 +84,7 @@ export default function GHKCuPage() {
                   rel="nofollow noopener noreferrer"
                   className="btn-cta text-base px-8 py-4 flex items-center gap-2 group"
                 >
-                  Shop GHK-Cu — ${product.price}
+                  Shop GHK-Cu — ${sale(product.price)}
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </a>
                 <Link href="/products/ghk-cu" className="btn-secondary text-base px-8 py-4 flex items-center gap-2">

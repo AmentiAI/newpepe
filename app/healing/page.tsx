@@ -97,7 +97,7 @@ export default function HealingPage() {
     <div className="bg-white min-h-screen">
 
       {/* Hero */}
-      <section className="relative pt-32 pb-20 overflow-hidden">
+      <section className="relative pt-20 sm:pt-32 pb-12 sm:pb-20 overflow-hidden">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] bg-emerald-50 blur-[120px] rounded-full pointer-events-none" />
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -155,7 +155,7 @@ export default function HealingPage() {
             <Microscope className="w-4 h-4 text-emerald-600" />
             <span className="text-emerald-600 text-xs font-bold tracking-wide">FOUNDATIONAL SCIENCE</span>
           </div>
-          <h2 className="text-4xl font-black text-gray-900 mb-6">
+          <h2 className="text-3xl sm:text-4xl font-black text-gray-900 mb-6">
             How the Body Heals:<br />
             <span style={{ color: '#00ff88' }}>And Why It&apos;s So Slow</span>
           </h2>
@@ -260,7 +260,7 @@ export default function HealingPage() {
                 <Zap className="w-4 h-4 text-amber-600" />
                 <span className="text-sm font-semibold text-amber-600">THE GOLD STANDARD COMBO</span>
               </div>
-              <h2 className="text-4xl font-black text-gray-900 mb-4">
+              <h2 className="text-3xl sm:text-4xl font-black text-gray-900 mb-4">
                 BPC-157 + TB-500:<br />
                 <span style={{ color: '#00ff88' }}>Complementary Healing</span>
               </h2>
@@ -512,7 +512,7 @@ export default function HealingPage() {
             <TrendingUp className="w-4 h-4 text-emerald-600" />
             <span className="text-emerald-600 text-xs font-bold tracking-wide">COMPANION GUIDE</span>
           </div>
-          <h2 className="text-4xl font-black text-gray-900 mb-4">
+          <h2 className="text-3xl sm:text-4xl font-black text-gray-900 mb-4">
             Nutrition for<br />
             <span style={{ color: '#00ff88' }}>Accelerated Healing</span>
           </h2>

@@ -5,7 +5,7 @@ import {
   ArrowRight, CheckCircle, Shield, Activity, Zap, FlaskConical,
   Star, ExternalLink, Award, HeartPulse, Brain, Leaf,
 } from 'lucide-react';
-import { getProductBySlug } from '@/lib/products';
+import { getProductBySlug, sale } from '@/lib/products';
 
 export const metadata: Metadata = {
   title: 'Buy BPC-157 | #1 Healing Peptide — Tendons, Gut, Recovery | BPC-157 Stack',
@@ -76,7 +76,7 @@ export default function BPC157Page() {
                 </span>
               </div>
 
-              <h1 className="text-6xl sm:text-7xl lg:text-8xl font-black leading-[0.9] mb-6 tracking-tight">
+              <h1 className="text-5xl sm:text-6xl lg:text-8xl font-black leading-[0.9] mb-6 tracking-tight">
                 <span className="text-white block">Buy BPC-157</span>
                 <span className="text-3xl sm:text-4xl font-bold text-slate-400 block mt-2 leading-tight">
                   The World&apos;s Most Studied<br />
@@ -96,7 +96,7 @@ export default function BPC157Page() {
                   rel="nofollow noopener noreferrer"
                   className="btn-cta text-base px-8 py-4 flex items-center gap-2 group"
                 >
-                  Shop BPC-157 — ${product.price}
+                  Shop BPC-157 — ${sale(product.price)}
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </a>
                 <Link href="/products/bpc-157" className="btn-secondary text-base px-8 py-4 flex items-center gap-2">

@@ -5,7 +5,7 @@ import {
   ArrowRight, CheckCircle, TrendingUp, Zap, Moon, FlaskConical,
   ExternalLink, Award, Activity,
 } from 'lucide-react';
-import { getProductBySlug } from '@/lib/products';
+import { getProductBySlug, sale } from '@/lib/products';
 
 export const metadata: Metadata = {
   title: 'Buy CJC-1295 / Ipamorelin | Gold Standard GH Stack for Fat Loss & Muscle | BPC-157 Stack',
@@ -87,7 +87,7 @@ export default function IpamorelinPage() {
                   rel="nofollow noopener noreferrer"
                   className="btn-cta text-base px-8 py-4 flex items-center gap-2 group"
                 >
-                  Shop Ipamorelin/CJC — ${product.price}
+                  Shop Ipamorelin/CJC — ${sale(product.price)}
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </a>
                 <Link href="/products/cjc1295-ipamorelin" className="btn-secondary text-base px-8 py-4 flex items-center gap-2">

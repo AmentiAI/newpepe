@@ -100,7 +100,7 @@ export default function BodyCompositionPage() {
     <div className="bg-white min-h-screen">
 
       {/* Hero */}
-      <section className="relative pt-32 pb-20 overflow-hidden">
+      <section className="relative pt-20 sm:pt-32 pb-12 sm:pb-20 overflow-hidden">
         <div className="absolute inset-0 opacity-30" />
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] bg-blue-50 blur-[130px] rounded-full pointer-events-none" />
 
@@ -464,7 +464,7 @@ export default function BodyCompositionPage() {
                 <Scale className="w-4 h-4 text-rose-600" />
                 <span className="text-rose-600 text-sm font-semibold">GLP WEIGHT LOSS PEPTIDES</span>
               </div>
-              <h2 className="text-4xl font-black text-gray-900 mb-4">
+              <h2 className="text-3xl sm:text-4xl font-black text-gray-900 mb-4">
                 The GLP-1 Revolution:<br />
                 <span className="text-rose-600">Sema, Tirz & Reta</span>
               </h2>
