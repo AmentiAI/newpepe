@@ -294,7 +294,7 @@ export default function PeptidesForSkinQualityPage() {
               Peptides for Skin Quality:{' '}
               <span className="text-emerald-700">The Evidence-Based Guide</span>
             </h1>
-            <p className="text-xl text-gray-600 mb-8 leading-relaxed">
+            <p className="text-xl text-gray-900 mb-8 leading-relaxed">
               Skin quality is the highest-leverage variable in perceived attractiveness and estimated age. Research shows that homogeneous, firm, luminous skin signals health and youth more powerfully than any other facial feature. This guide covers every peptide with evidence for skin quality improvement — from GHK-Cu&apos;s 31% gene reset to Epithalon&apos;s telomere extension — with specific protocols for each skin concern.
             </p>
             <a
@@ -383,7 +383,7 @@ export default function PeptidesForSkinQualityPage() {
                 <div className="grid md:grid-cols-2 divide-y md:divide-y-0 md:divide-x divide-white/5">
                   {pep.sections.map((section) => (
                     <div key={section.title} className="p-5">
-                      <h4 className="font-semibold text-gray-700 mb-2 text-sm">{section.title}</h4>
+                      <h4 className="font-semibold text-gray-900 mb-2 text-sm">{section.title}</h4>
                       <p className="text-sm text-gray-500 leading-relaxed">{section.content}</p>
                     </div>
                   ))}

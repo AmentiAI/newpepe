@@ -12,7 +12,7 @@ const categoryColor: Record<string, string> = {
   'Body Composition': 'bg-blue-50 text-blue-700 border-blue-200',
   'Weight Loss': 'bg-rose-50 text-rose-700 border-rose-200',
   Cognitive: 'bg-cyan-50 text-cyan-700 border-cyan-200',
-  Supplies: 'bg-gray-100 text-gray-600 border-gray-200',
+  Supplies: 'bg-gray-100 text-gray-800 border-gray-200',
 };
 
 const POPULAR = ['bpc-157', 'tb-500', 'ghk-cu', 'epithalon', 'glp-1s-semaglutide', 'glp-2t-tirzepatide'];
@@ -93,7 +93,7 @@ export default function SearchModal() {
       {/* Trigger button */}
       <button
         onClick={() => setOpen(true)}
-        className="flex items-center gap-2 px-3 py-1.5 rounded-lg border border-gray-200 bg-gray-50 hover:bg-gray-100 hover:border-gray-300 transition-all text-sm text-gray-500 group"
+        className="flex items-center gap-2 px-3 py-1.5 rounded-lg border border-gray-200 bg-gray-50 hover:bg-gray-100 hover:border-gray-300 transition-all text-sm text-gray-700 group"
         aria-label="Search peptides"
       >
         <Search className="w-4 h-4 text-gray-400 group-hover:text-amber-500 transition-colors" />
@@ -179,7 +179,7 @@ export default function SearchModal() {
                       <div className="flex-1 min-w-0">
                         <div className="flex items-center gap-2 mb-0.5">
                           <span className="text-gray-900 font-black text-base truncate">{p.name}</span>
-                          <span className={`text-xs font-bold px-2 py-0.5 rounded-full border shrink-0 ${categoryColor[p.category] ?? 'bg-gray-100 text-gray-600 border-gray-200'}`}>
+                          <span className={`text-xs font-bold px-2 py-0.5 rounded-full border shrink-0 ${categoryColor[p.category] ?? 'bg-gray-100 text-gray-800 border-gray-200'}`}>
                             {p.category}
                           </span>
                         </div>

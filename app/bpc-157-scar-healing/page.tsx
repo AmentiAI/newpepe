@@ -185,7 +185,7 @@ export default function Bpc157ScarHealingPage() {
               BPC-157 for Scar Healing:{' '}
               <span className="text-emerald-700">Mechanisms, Types & Protocols</span>
             </h1>
-            <p className="text-xl text-gray-600 mb-8 leading-relaxed">
+            <p className="text-xl text-gray-900 mb-8 leading-relaxed">
               BPC-157 is the most mechanistically complete peptide for scar tissue remodeling. It drives angiogenesis in avascular scar tissue, activates fibroblasts for type III→type I collagen remodeling, normalizes TGF-β to prevent hypertrophic scarring, and repairs the gut-skin axis that drives inflammatory acne. This guide covers every scar type, the relevant mechanisms, and complete protocols.
             </p>
             <a
@@ -215,7 +215,7 @@ export default function Bpc157ScarHealingPage() {
                 <p className="text-sm text-gray-500 leading-relaxed mb-3">{m.desc}</p>
                 <div className="border-t border-gray-100 pt-3">
                   <p className="text-xs text-gray-500 uppercase tracking-wider mb-1">Clinical Significance</p>
-                  <p className="text-xs text-gray-600 leading-relaxed">{m.significance}</p>
+                  <p className="text-xs text-gray-900 leading-relaxed">{m.significance}</p>
                 </div>
               </div>
             ))}
@@ -237,11 +237,11 @@ export default function Bpc157ScarHealingPage() {
                 <div className="grid md:grid-cols-2 gap-5">
                   <div>
                     <p className="text-xs text-gray-500 uppercase tracking-wider mb-1">Primary Mechanism</p>
-                    <p className="text-sm text-gray-600 leading-relaxed">{st.mechanism}</p>
+                    <p className="text-sm text-gray-900 leading-relaxed">{st.mechanism}</p>
                   </div>
                   <div>
                     <p className="text-xs text-gray-500 uppercase tracking-wider mb-1">Gut-Skin Axis / Combination</p>
-                    <p className="text-sm text-gray-600 leading-relaxed">{st.gutSkinAxis}</p>
+                    <p className="text-sm text-gray-900 leading-relaxed">{st.gutSkinAxis}</p>
                   </div>
                   <div>
                     <p className="text-xs text-gray-500 uppercase tracking-wider mb-1">Best Route</p>

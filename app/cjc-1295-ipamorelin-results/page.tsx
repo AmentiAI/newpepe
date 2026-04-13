@@ -179,7 +179,7 @@ export default function CjcIpamoreinResultsPage() {
           {/* CJC-1295 */}
           <div className="glass-card p-8">
             <h3 className="text-xl font-black text-blue-400 mb-6">CJC-1295: The GHRH Analog</h3>
-            <div className="space-y-4 text-gray-600 text-sm leading-relaxed">
+            <div className="space-y-4 text-gray-900 text-sm leading-relaxed">
               <div>
                 <h4 className="text-blue-700 font-bold mb-2">What GHRH Does Naturally</h4>
                 <p>Growth Hormone Releasing Hormone (GHRH) is produced by the hypothalamus and travels to the anterior pituitary gland, where it binds GHRH receptors and triggers the synthesis and release of GH into circulation. The problem with natural GHRH: it has a half-life of approximately 30 minutes in blood due to rapid degradation by the enzyme dipeptidyl peptidase IV (DPP-IV).</p>
@@ -199,7 +199,7 @@ export default function CjcIpamoreinResultsPage() {
           {/* Ipamorelin */}
           <div className="glass-card p-8">
             <h3 className="text-xl font-black text-emerald-400 mb-6">Ipamorelin: The Cleanest GHS</h3>
-            <div className="space-y-4 text-gray-600 text-sm leading-relaxed">
+            <div className="space-y-4 text-gray-900 text-sm leading-relaxed">
               <div>
                 <h4 className="text-emerald-700 font-bold mb-2">Ghrelin Mimetic Mechanism</h4>
                 <p>Ipamorelin belongs to the Growth Hormone Secretagogue (GHS) class — it mimics ghrelin, a gut-derived hormone that acts on GHSR-1a receptors (ghrelin receptors) on pituitary somatotrophs. This is an entirely different receptor pathway from GHRH. Ghrelin normally triggers GH pulses through hunger signaling; Ipamorelin activates this same pathway without causing meaningful hunger stimulation at standard doses.</p>
@@ -219,7 +219,7 @@ export default function CjcIpamoreinResultsPage() {
         {/* Synergy Explanation */}
         <div className="glass-card p-8 border-t-4 border-blue-500/50">
           <h3 className="text-xl font-black text-gray-900 mb-4">The Synergy: Why 1 + 1 = 8–10x</h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-gray-600 text-sm leading-relaxed">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-gray-900 text-sm leading-relaxed">
             <div>
               <p className="mb-3">When CJC-1295 (GHRH analog) and Ipamorelin (ghrelin mimetic) are injected together, they activate two completely distinct receptor pathways on the same pituitary somatotroph cell simultaneously. These pathways converge at a common intracellular point — cyclic AMP (cAMP) and protein kinase A — to trigger GH vesicle exocytosis.</p>
               <p>The combined signaling produces a GH pulse that is 8–10 times higher than resting GH output — significantly greater than either peptide could achieve alone. CJC-1295 alone produces approximately 2–3x GH amplification. Ipamorelin alone produces 2–3x. Together, the result is not 4–6x but 8–10x, demonstrating genuine synergy beyond simple addition.</p>
@@ -260,7 +260,7 @@ export default function CjcIpamoreinResultsPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
             <div className="glass-card p-6">
               <h3 className="text-blue-400 font-black text-lg mb-4">Why Inject Before Sleep</h3>
-              <div className="space-y-3 text-gray-600 text-sm leading-relaxed">
+              <div className="space-y-3 text-gray-900 text-sm leading-relaxed">
                 <p>The pituitary gland produces approximately 70–80% of its daily GH output during slow-wave (deep) sleep, specifically in the first 1–2 hours after sleep onset. This pulse is the most physiologically significant GH event of the day — it drives the majority of tissue repair, fat mobilization, and IGF-1 production that occurs overnight.</p>
                 <p>Injecting CJC-1295/Ipamorelin 30–60 minutes before sleep amplifies this already-large nocturnal pulse. Instead of replacing the natural GH signal, the peptides stack on top of it, producing the 8–10x output described above precisely when the body&apos;s natural GH axis is already at its peak activity. This is superior to injecting at other times because you are amplifying the body&apos;s largest natural GH event rather than creating a smaller artificial pulse during an otherwise low-GH window.</p>
               </div>
@@ -268,7 +268,7 @@ export default function CjcIpamoreinResultsPage() {
 
             <div className="glass-card p-6">
               <h3 className="text-blue-400 font-black text-lg mb-4">Fasting Window: Why Carbs Kill GH</h3>
-              <div className="space-y-3 text-gray-600 text-sm leading-relaxed">
+              <div className="space-y-3 text-gray-900 text-sm leading-relaxed">
                 <p>Glucose and insulin are the two most potent suppressors of GH release. When blood glucose rises after eating — particularly after carbohydrate consumption — insulin spikes, and insulin directly suppresses GHRH signaling at the pituitary level. A carbohydrate-rich meal eaten 1–2 hours before a CJC/Ipamorelin injection can blunt the GH pulse by 50–80%.</p>
                 <p>The required fasting window is a minimum of 2 hours before injection, with 3 hours preferred. Protein and fat are less suppressive than carbohydrates but still have some impact. The ideal scenario is no food for 2–3 hours before the injection, with the last meal being protein-dominant. This is why the pre-bed injection protocol requires eating dinner at least 2–3 hours before sleep.</p>
               </div>
@@ -276,7 +276,7 @@ export default function CjcIpamoreinResultsPage() {
 
             <div className="glass-card p-6">
               <h3 className="text-blue-400 font-black text-lg mb-4">Once Daily vs Twice Daily</h3>
-              <div className="space-y-3 text-gray-600 text-sm leading-relaxed">
+              <div className="space-y-3 text-gray-900 text-sm leading-relaxed">
                 <p><strong className="text-gray-900">Once daily (before bed):</strong> The standard protocol for most users. Maximizes the nocturnal GH pulse, is easiest to maintain consistently, and produces excellent results at 100–200mcg CJC / 200–300mcg Ipamorelin. Recommended for beginners and anyone prioritizing sleep quality and body composition changes.</p>
                 <p><strong className="text-gray-900">Twice daily (morning + night):</strong> An advanced approach that adds a morning fasted dose. The morning dose must be taken on an empty stomach — at least 30–60 minutes before eating breakfast. This creates a second, additional GH pulse during the day without interfering with the nocturnal pulse. Results are faster for body composition but the added complexity makes compliance harder. Typical morning dose is 100mcg CJC / 200mcg Ipamorelin (slightly lower than the bedtime dose).</p>
               </div>

@@ -385,12 +385,12 @@ export default function EpithalonCompleteGuidePage() {
                     <span className={`font-bold ${row.highlight ? 'text-purple-700' : 'text-gray-900'}`}>{row.compound}</span>
                     {row.highlight && <span className="ml-2 text-xs text-purple-400 font-bold px-2 py-0.5 rounded-full" style={{ background: 'rgba(168,85,247,0.15)' }}>★ Best</span>}
                   </td>
-                  <td className="py-3 px-4 text-gray-500 text-xs max-w-[180px]">{row.mechanism}</td>
+                  <td className="py-3 px-4 text-gray-700 text-xs max-w-[180px]">{row.mechanism}</td>
                   <td className="py-3 px-4 text-xs">
                     <span className={row.highlight ? 'text-purple-700 font-semibold' : 'text-gray-500'}>{row.telomereEffect}</span>
                   </td>
                   <td className="py-3 px-4 text-gray-500 text-xs">{row.humanEvidence}</td>
-                  <td className="py-3 px-4 text-gray-500 text-xs font-mono">{row.cost}</td>
+                  <td className="py-3 px-4 text-gray-700 text-xs font-mono">{row.cost}</td>
                   <td className="py-3 px-4 text-xs font-semibold">
                     <span className={row.highlight ? 'text-purple-400' : 'text-gray-500'}>{row.verdict}</span>
                   </td>

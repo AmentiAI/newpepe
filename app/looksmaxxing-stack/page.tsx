@@ -296,7 +296,7 @@ export default function LooksmaxxingStackPage() {
             The Complete{' '}
             <span className="text-emerald-700">Looksmaxxing Stack</span>
           </h1>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+          <p className="text-xl text-gray-800 max-w-2xl mx-auto">
             Three tiers of scientifically-grounded peptide protocols for appearance optimization — from accessible Foundation to comprehensive Advanced. Build your stack, set your timeline, transform your appearance.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
@@ -315,13 +315,13 @@ export default function LooksmaxxingStackPage() {
         <div className="max-w-4xl mx-auto space-y-8">
           <h2 className="text-3xl font-bold text-gray-900">The Philosophy: Biology-First Appearance Optimization</h2>
           <div className="glass-card p-8 space-y-5">
-            <p className="text-gray-600 leading-relaxed">
+            <p className="text-gray-900 leading-relaxed">
               Looksmaxxing through peptides is categorically different from cosmetic procedures or topical cover-up products. It operates on the biological foundations of appearance — the collagen matrix that provides skin structure, the gut-skin axis that drives inflammation and acne, the GH/IGF-1 axis that governs whole-body anabolic and reparative signaling, and the cellular aging processes that determine how quickly these foundations degrade.
             </p>
-            <p className="text-gray-600 leading-relaxed">
+            <p className="text-gray-900 leading-relaxed">
               The results from this approach are structural and lasting — not temporary. When you rebuild collagen density, the new collagen fibers have a half-life of approximately two years. When you heal the gut-skin axis, the skin barrier improvements persist as long as the gut remains healthy. When you optimize the GH/IGF-1 axis, you are maintaining the hormonal environment that keeps all of these reparative processes running.
             </p>
-            <p className="text-gray-600 leading-relaxed">
+            <p className="text-gray-900 leading-relaxed">
               The key peptides that constitute the looksmaxxing arsenal each address a specific biological foundation: GHK-Cu for collagen and cellular aging, BPC-157 for gut-skin axis and systemic inflammation, SNAP-8 for expression line prevention, CJC-1295/Ipamorelin for GH axis optimization, IGF-1 LR3 for direct growth factor signaling, and Epithalon for cellular longevity. Understanding why each one belongs in the protocol — and what happens when you combine them — is the difference between a random supplement stack and a precision appearance optimization system.
             </p>
           </div>

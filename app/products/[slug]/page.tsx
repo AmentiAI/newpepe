@@ -219,7 +219,7 @@ export default function ProductPage({ params }: Props) {
             </div>
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black text-gray-900 mb-2 leading-tight">Buy {product.name}</h1>
             <p className={`text-lg sm:text-xl ${theme.accentLight} font-bold mb-4`}>{product.tagline}</p>
-            <p className="text-gray-700 leading-relaxed mb-6 text-base">{product.shortDescription}</p>
+            <p className="text-gray-900 leading-relaxed mb-6 text-base">{product.shortDescription}</p>
 
             {/* Benefits preview */}
             <ul className="space-y-2 mb-8">
@@ -240,7 +240,7 @@ export default function ProductPage({ params }: Props) {
                 </div>
                 <span className="text-xs font-black bg-amber-500 text-gray-900 px-2 py-1 rounded-full">10% OFF</span>
                 <div>
-                  <div className="text-gray-500 text-xs font-medium">COA Verified · Third-Party Tested</div>
+                  <div className="text-gray-700 text-xs font-medium">COA Verified · Third-Party Tested</div>
                   <div className={`${theme.accentLight} text-xs font-bold`}>US Domestic Shipping</div>
                 </div>
               </div>
@@ -253,7 +253,7 @@ export default function ProductPage({ params }: Props) {
                 Buy {product.name} on Phiogen <ArrowRight className="w-5 h-5" />
               </a>
             </div>
-            <p className="text-gray-500 text-xs text-center">
+            <p className="text-gray-700 text-xs text-center">
               COA verified · US domestic shipping
             </p>
           </div>
@@ -270,7 +270,7 @@ export default function ProductPage({ params }: Props) {
                 {product.highlights.map((h) => (
                   <div key={h.title} className="glass-card p-5 rounded-xl">
                     <h3 className={`${theme.accentLight} font-black text-base mb-2`}>{h.title}</h3>
-                    <p className="text-gray-700 text-sm leading-relaxed">{h.body}</p>
+                    <p className="text-gray-900 text-sm leading-relaxed">{h.body}</p>
                   </div>
                 ))}
               </div>
@@ -293,13 +293,13 @@ export default function ProductPage({ params }: Props) {
                   }
                   if (line.startsWith('- ')) {
                     return (
-                      <p key={i} className="text-gray-700 text-sm pl-4 flex items-start gap-2">
+                      <p key={i} className="text-gray-900 text-sm pl-4 flex items-start gap-2">
                         <span className={theme.accentLight}>→</span>
                         {line.slice(2)}
                       </p>
                     );
                   }
-                  return <p key={i} className="text-gray-700 text-sm leading-relaxed">{line}</p>;
+                  return <p key={i} className="text-gray-900 text-sm leading-relaxed">{line}</p>;
                 })}
               </div>
             </div>
@@ -354,7 +354,7 @@ export default function ProductPage({ params }: Props) {
             </div>
 
             <div className="rounded-xl p-4 bg-gray-50 border border-gray-200">
-              <p className="text-gray-500 text-xs leading-relaxed">
+              <p className="text-gray-700 text-xs leading-relaxed">
                 All information on this site is for educational purposes only. Always consult with a qualified healthcare provider before use.
                 COA documentation is available for all products.
               </p>
@@ -366,7 +366,7 @@ export default function ProductPage({ params }: Props) {
             {/* Buy box sticky */}
             <div className="glass-card p-6 sticky top-24">
               <h3 className="text-gray-900 font-black mb-1">{product.name}</h3>
-              <p className="text-gray-500 text-xs mb-4">
+              <p className="text-gray-700 text-xs mb-4">
                 COA verified · Third-party tested · US domestic shipping
               </p>
               <a
@@ -401,7 +401,7 @@ export default function ProductPage({ params }: Props) {
                 {theme.icon}
                 <span className={`${theme.accentLight} text-sm font-bold`}>{theme.categoryLabel}</span>
               </div>
-              <p className="text-gray-700 text-xs leading-relaxed">
+              <p className="text-gray-800 text-xs leading-relaxed">
                 {product.category === 'Healing' && 'Healing peptides repair tissue at the molecular level — activating growth factors, stem cell mobilization, and collagen synthesis.'}
                 {product.category === 'Anti-Aging' && 'Longevity peptides target the root causes of aging — telomere shortening, epigenetic drift, and mitochondrial decline.'}
                 {product.category === 'Body Composition' && 'Body composition peptides optimize the GH/IGF-1 axis and metabolic signaling for simultaneous fat loss and muscle gain.'}
@@ -490,7 +490,7 @@ export default function ProductPage({ params }: Props) {
                     <span className={`${theme.accentLight} text-lg shrink-0 group-open:rotate-45 transition-transform`}>+</span>
                   </summary>
                   <div className="px-5 pb-5">
-                    <p className="text-gray-700 text-sm leading-relaxed">{a}</p>
+                    <p className="text-gray-900 text-sm leading-relaxed">{a}</p>
                   </div>
                 </details>
               ))}

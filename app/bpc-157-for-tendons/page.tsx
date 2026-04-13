@@ -243,7 +243,7 @@ export default function Bpc157TendonsPage() {
           <div className="space-y-8">
             <div className="glass-card p-8">
               <h3 className="text-xl font-black text-blue-400 mb-4">What Tendons Are Made Of</h3>
-              <div className="prose-content space-y-4 text-gray-600 text-sm leading-relaxed">
+              <div className="prose-content space-y-4 text-gray-900 text-sm leading-relaxed">
                 <p>
                   Tendons are dense connective tissue structures composed primarily of collagen — the structural protein that gives them their remarkable tensile strength. The dominant collagen in healthy tendons is <strong className="text-gray-900">Type I collagen</strong>, accounting for roughly 65–80% of dry tendon mass. Type I collagen forms long, parallel fiber bundles called fascicles, organized hierarchically: individual tropocollagen molecules assemble into microfibrils, microfibrils into fibrils, fibrils into fiber bundles, and fiber bundles into fascicles. This hierarchical organization is what gives a healthy tendon the ability to transmit forces of 6–10 times bodyweight without failure.
                 </p>
@@ -258,7 +258,7 @@ export default function Bpc157TendonsPage() {
 
             <div className="glass-card p-8">
               <h3 className="text-xl font-black text-blue-400 mb-4">Why Tendons Heal So Slowly: The Vascularization Problem</h3>
-              <div className="space-y-4 text-gray-600 text-sm leading-relaxed">
+              <div className="space-y-4 text-gray-900 text-sm leading-relaxed">
                 <p>
                   The central challenge in tendon healing is blood supply — or the profound lack of it. Tendons are among the least vascularized tissues in the human body. While muscle tissue has a capillary density of approximately 300–400 capillaries per mm², tendon midsubstance has a capillary density of roughly <strong className="text-gray-900">20–30 capillaries per mm²</strong> — a 10–15x difference. Certain regions, like the "critical zone" of the Achilles tendon 2–6cm above its calcaneal insertion, are essentially avascular — relying on diffusion from synovial fluid rather than direct blood supply.
                 </p>
@@ -273,7 +273,7 @@ export default function Bpc157TendonsPage() {
 
             <div className="glass-card p-8">
               <h3 className="text-xl font-black text-blue-400 mb-4">How BPC-157 Overcomes These Barriers</h3>
-              <div className="space-y-4 text-gray-600 text-sm leading-relaxed">
+              <div className="space-y-4 text-gray-900 text-sm leading-relaxed">
                 <p>
                   BPC-157's extraordinary effectiveness for tendon repair comes from its ability to directly address every major barrier to tendon healing simultaneously. It does not act through a single pathway — it is a multi-mechanism intervention that acts at the cellular, vascular, and molecular levels concurrently.
                 </p>

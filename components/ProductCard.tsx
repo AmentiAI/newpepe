@@ -46,14 +46,14 @@ export default function ProductCard({ product }: Props) {
           {product.name}
         </h3>
         <p className="text-amber-600 text-sm font-bold mb-2">{product.tagline}</p>
-        <p className="text-gray-700 text-sm leading-relaxed mb-4 line-clamp-2">
+        <p className="text-gray-900 text-sm leading-relaxed mb-4 line-clamp-2">
           {product.shortDescription}
         </p>
 
         {/* Tags */}
         <div className="flex flex-wrap gap-1 mb-4">
           {product.tags.slice(0, 3).map((tag) => (
-            <span key={tag} className="flex items-center gap-1 text-xs text-gray-600 bg-gray-100 border border-gray-200 px-2 py-0.5 rounded-full">
+            <span key={tag} className="flex items-center gap-1 text-xs text-gray-800 bg-gray-100 border border-gray-200 px-2 py-0.5 rounded-full">
               <Tag className="w-3 h-3" /> {tag}
             </span>
           ))}

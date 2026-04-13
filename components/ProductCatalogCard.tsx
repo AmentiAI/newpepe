@@ -12,7 +12,7 @@ const categoryColor: Record<string, string> = {
   'Body Composition': 'bg-blue-50 text-blue-700 border-blue-200',
   'Weight Loss': 'bg-rose-50 text-rose-700 border-rose-200',
   Cognitive: 'bg-cyan-50 text-cyan-700 border-cyan-200',
-  Supplies: 'bg-gray-100 text-gray-600 border-gray-200',
+  Supplies: 'bg-gray-100 text-gray-800 border-gray-200',
 };
 
 export default function ProductCatalogCard({ product }: { product: Product }) {
@@ -40,14 +40,14 @@ export default function ProductCatalogCard({ product }: { product: Product }) {
           {product.name}
         </h3>
         <p className="text-amber-600 text-sm font-bold mb-2 leading-tight">{product.tagline}</p>
-        <p className="text-gray-600 text-sm leading-relaxed mb-4 line-clamp-2 flex-1">
+        <p className="text-gray-900 text-sm leading-relaxed mb-4 line-clamp-2 flex-1">
           {product.shortDescription}
         </p>
 
         {/* Tags */}
         <div className="flex flex-wrap gap-1 mb-4">
           {product.tags.slice(0, 3).map(tag => (
-            <span key={tag} className="flex items-center gap-0.5 text-xs text-gray-500 bg-gray-100 px-2 py-0.5 rounded">
+            <span key={tag} className="flex items-center gap-0.5 text-xs text-gray-900 bg-gray-100 px-2 py-0.5 rounded">
               <Tag className="w-2.5 h-2.5" />{tag}
             </span>
           ))}

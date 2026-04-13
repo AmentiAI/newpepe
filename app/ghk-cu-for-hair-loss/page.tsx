@@ -342,7 +342,7 @@ export default function GhkCuHairLossPage() {
                         )}
                       </span>
                     </td>
-                    <td className="py-3 px-4 text-gray-500 text-xs leading-relaxed max-w-[220px]">{row.mechanism}</td>
+                    <td className="py-3 px-4 text-gray-700 text-xs leading-relaxed max-w-[220px]">{row.mechanism}</td>
                     <td className="py-3 px-4 text-gray-600 text-xs">{row.efficacyAGA}</td>
                     <td className="py-3 px-4 text-gray-500 text-xs">{row.sideEffects}</td>
                     <td className="py-3 px-4 text-gray-600 text-xs font-semibold">{row.costMonth}</td>
@@ -570,7 +570,7 @@ export default function GhkCuHairLossPage() {
             <span className="text-emerald-400 text-xs font-bold tracking-widest uppercase">Bonus: Skin Benefits</span>
           </div>
           <h2 className="text-2xl font-black text-gray-900 mb-3">GHK-Cu for Skin: Anti-Aging Powerhouse</h2>
-          <p className="text-gray-600 leading-relaxed mb-8 max-w-2xl">
+          <p className="text-gray-900 leading-relaxed mb-8 max-w-2xl">
             The same bottle of GHK-Cu you use for your scalp can transform your skin. GHK-Cu is one of the most comprehensively researched anti-aging peptides in dermatology — with a different dilution, the same compound provides remarkable facial benefits simultaneously.
           </p>
 

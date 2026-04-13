@@ -159,7 +159,7 @@ export default function PeptidesForMenOver50Page() {
           </div>
           <h2 className="text-3xl font-black text-gray-900 mb-8">The Male Aging Cascade: What Happens After 50</h2>
 
-          <div className="space-y-6 text-gray-600 leading-relaxed">
+          <div className="space-y-6 text-gray-900 leading-relaxed">
             <p>
               Male aging after 50 is not a single process — it is a cascade of interconnected physiological declines that feed into and accelerate each other. Understanding this cascade is essential to understanding why peptide protocols are structured the way they are, targeting multiple pathways simultaneously.
             </p>
@@ -240,7 +240,7 @@ export default function PeptidesForMenOver50Page() {
           </div>
           <h2 className="text-3xl font-black text-gray-900 mb-8">TRT + Peptides: The Synergy Protocol</h2>
 
-          <div className="space-y-5 text-gray-600 leading-relaxed">
+          <div className="space-y-5 text-gray-900 leading-relaxed">
             <p>
               Testosterone replacement therapy addresses the testosterone deficiency of male aging, but it leaves multiple other aging pathways completely unaddressed. Men on TRT who add a targeted peptide protocol consistently report significantly better outcomes than TRT alone — and understanding why makes the additions obvious.
             </p>

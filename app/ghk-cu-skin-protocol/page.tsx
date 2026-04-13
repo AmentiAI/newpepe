@@ -185,7 +185,7 @@ export default function GhkCuSkinProtocolPage() {
               GHK-Cu Skin Protocol:{' '}
               <span className="text-emerald-700">31% Gene Reset, 5 Collagen Types</span>
             </h1>
-            <p className="text-xl text-gray-600 mb-8 leading-relaxed">
+            <p className="text-xl text-gray-900 mb-8 leading-relaxed">
               GHK-Cu (glycyl-l-histidyl-l-lysine copper) is the most comprehensively researched peptide for skin. It resets 31% of aged genes, stimulates five distinct collagen types, drives angiogenesis, activates proteasome function, and suppresses inflammation — producing skin quality changes no cosmetic ingredient can replicate. This guide covers the complete skin protocol: topical concentrations, injectable dosing, combination stacks, and week-by-week timelines.
             </p>
             <a
@@ -216,7 +216,7 @@ export default function GhkCuSkinProtocolPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">The 31% Gene Reset: What It Actually Means</h2>
           <div className="grid lg:grid-cols-2 gap-10 items-start mb-10">
-            <div className="space-y-4 text-gray-600 leading-relaxed">
+            <div className="space-y-4 text-gray-900 leading-relaxed">
               <p>
                 In 2012, Dr. Loren Pickart and Amanda Margolina published a comprehensive analysis of GHK-Cu&apos;s effects on human gene expression using genome-wide microarray data. The analysis examined which genes change expression as tissue ages, then assessed how GHK-Cu exposure altered those expression patterns.
               </p>
@@ -267,7 +267,7 @@ export default function GhkCuSkinProtocolPage() {
                 <p className="text-sm text-gray-500 mb-3 leading-relaxed">{ct.role}</p>
                 <div className="border-t border-gray-100 pt-3">
                   <p className="text-xs text-gray-500 uppercase tracking-wider mb-1">GHK-Cu Effect</p>
-                  <p className="text-xs text-gray-600 leading-relaxed">{ct.ghkEffect}</p>
+                  <p className="text-xs text-gray-900 leading-relaxed">{ct.ghkEffect}</p>
                 </div>
               </div>
             ))}
@@ -289,7 +289,7 @@ export default function GhkCuSkinProtocolPage() {
                 <p className="text-sm text-gray-500 mb-3">{m.what}</p>
                 <div className="border-t border-gray-100 pt-3">
                   <p className="text-xs text-gray-500 uppercase tracking-wider mb-1">GHK-Cu Response</p>
-                  <p className="text-sm text-gray-600 leading-relaxed">{m.ghkAction}</p>
+                  <p className="text-sm text-gray-900 leading-relaxed">{m.ghkAction}</p>
                 </div>
               </div>
             ))}
@@ -309,7 +309,7 @@ export default function GhkCuSkinProtocolPage() {
               <div key={combo.stack} className={`rounded-xl border bg-gray-50 p-6 ${combo.color}`}>
                 <h3 className="font-bold text-gray-900 mb-1">{combo.stack}</h3>
                 <p className="text-xs text-gray-500 uppercase tracking-wider mb-3">{combo.purpose}</p>
-                <p className="text-sm text-gray-600 leading-relaxed mb-4">{combo.synergy}</p>
+                <p className="text-sm text-gray-900 leading-relaxed mb-4">{combo.synergy}</p>
                 <div className="border-t border-gray-100 pt-3">
                   <p className="text-xs text-gray-500 uppercase tracking-wider mb-1">Protocol</p>
                   <p className="text-xs text-gray-500 leading-relaxed">{combo.protocol}</p>

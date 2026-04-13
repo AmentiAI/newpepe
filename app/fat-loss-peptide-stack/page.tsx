@@ -170,7 +170,7 @@ export default function FatLossPeptideStack() {
             Your Hormonal Environment{' '}
             <span className="text-[#00ff88]">24 Hours a Day</span>
           </h1>
-          <p className="text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto mb-8">
+          <p className="text-xl text-gray-900 leading-relaxed max-w-3xl mx-auto mb-8">
             Fat loss peptides don't work the way you think. It's not about burning fat during your workout — it's about changing the hormonal environment your body operates in 24 hours a day. GLP-1 agonists reshape your appetite hormones. GH peptides shift your overnight metabolism. Together, they produce fat loss that isolated caloric restriction never could.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
@@ -197,7 +197,7 @@ export default function FatLossPeptideStack() {
       {/* The 4 Layers */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
         <h2 className="text-3xl font-black text-gray-900 mb-4">The Four-Layer Fat Loss System</h2>
-        <p className="text-gray-600 leading-relaxed text-lg mb-10">
+        <p className="text-gray-900 leading-relaxed text-lg mb-10">
           Each layer targets a different part of the fat loss equation. Layer 1 creates the caloric deficit. Layer 2 optimizes what you lose. Layer 3 attacks the fat cells directly. Layer 4 keeps the entire metabolic system running efficiently. You can run just Layer 1 and get excellent results — or stack all four for the most comprehensive fat loss protocol available.
         </p>
         <div className="space-y-6">
@@ -295,7 +295,7 @@ export default function FatLossPeptideStack() {
       {/* Budget Tiers */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
         <h2 className="text-3xl font-black text-gray-900 mb-4">Budget Tiers</h2>
-        <p className="text-gray-600 leading-relaxed text-lg mb-8">
+        <p className="text-gray-900 leading-relaxed text-lg mb-8">
           You don't need the full advanced stack to see dramatic results. The starter tier is highly effective for most users. The key is consistency — a simple stack run for 6 months will outperform a complex stack abandoned after 6 weeks.
         </p>
         <div className="grid sm:grid-cols-3 gap-5">
@@ -331,7 +331,7 @@ export default function FatLossPeptideStack() {
                 {faq.q}
                 <span className="text-[#00ff88] text-xl font-black shrink-0 group-open:rotate-45 transition-transform">+</span>
               </summary>
-              <div className="px-6 pb-6 text-gray-600 leading-relaxed text-base">
+              <div className="px-6 pb-6 text-gray-900 leading-relaxed text-base">
                 {faq.a}
               </div>
             </details>

@@ -240,7 +240,7 @@ export default function Bpc157OralVsInjectablePage() {
           <h2 className="text-2xl font-black text-gray-900 mb-3">Bioavailability Deep Dive</h2>
           <p className="text-gray-500 mb-8 max-w-2xl">Why most peptides can't be taken orally — and what makes BPC-157 uniquely different.</p>
 
-          <div className="space-y-6 text-gray-600 leading-relaxed">
+          <div className="space-y-6 text-gray-900 leading-relaxed">
             <div className="glass-card p-6">
               <h3 className="text-gray-900 font-bold text-lg mb-3">What Bioavailability Means for Peptides</h3>
               <p className="text-sm mb-3">
@@ -445,7 +445,7 @@ export default function Bpc157OralVsInjectablePage() {
                   <td className="py-3 px-4 text-gray-600 font-semibold text-sm">{row.monthly}</td>
                   <td className="py-3 px-4 text-gray-500 text-xs">{row.perMcg}</td>
                   <td className="py-3 px-4 text-gray-600 text-xs">{row.bestROI}</td>
-                  <td className="py-3 px-4 text-gray-500 text-xs max-w-[200px]">{row.notes}</td>
+                  <td className="py-3 px-4 text-gray-700 text-xs max-w-[200px]">{row.notes}</td>
                 </tr>
               ))}
             </tbody>

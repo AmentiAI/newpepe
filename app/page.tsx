@@ -341,7 +341,7 @@ export default function HomePage() {
                 <span className="text-gray-900 block">Dominate.</span>
               </h1>
 
-              <p className="text-lg text-gray-600 leading-relaxed mb-10 max-w-lg">
+              <p className="text-lg text-gray-900 leading-relaxed mb-10 max-w-lg">
                 The most comprehensive BPC-157 and peptide protocol resource.
                 Science-backed stacks for injury healing, body recomposition,
                 anti-aging, and cognitive enhancement.

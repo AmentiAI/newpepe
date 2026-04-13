@@ -181,7 +181,7 @@ export default function ContactPage() {
             <h2 className="text-gray-900 font-bold text-xl">About This Site</h2>
           </div>
 
-          <div className="space-y-6 text-gray-500 text-sm leading-relaxed">
+          <div className="space-y-6 text-gray-800 text-sm leading-relaxed">
             <div>
               <h3 className="text-gray-900 font-semibold mb-2">What Is BPC-157 Stack?</h3>
               <p>

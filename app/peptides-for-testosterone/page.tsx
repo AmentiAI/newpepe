@@ -119,7 +119,7 @@ export default function PeptidesForTestosterone() {
             Peptides That Work{' '}
             <span className="text-[#00ff88]">With Your Axis</span>
           </h1>
-          <p className="text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto mb-8">
+          <p className="text-xl text-gray-900 leading-relaxed max-w-3xl mx-auto mb-8">
             Testosterone replacement shuts down your natural production. These peptides work the other way — they remind your body how to make testosterone itself. Kisspeptin triggers the hypothalamic signal. Gonadorelin stimulates LH release from the pituitary. BPC-157 supports the Leydig cells that do the actual synthesis. This is hormonal optimization without hormonal dependency.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
@@ -146,7 +146,7 @@ export default function PeptidesForTestosterone() {
       {/* The Hormonal Axis Explained */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
         <h2 className="text-3xl font-black text-gray-900 mb-4">The Testosterone Production Chain</h2>
-        <p className="text-gray-600 leading-relaxed text-lg mb-10">
+        <p className="text-gray-900 leading-relaxed text-lg mb-10">
           Testosterone doesn't just come from the testes in isolation. It's the end product of a cascade that starts in the brain — and there are peptide-based interventions at every step. Understanding the chain explains why these peptides are so much more nuanced than just injecting T.
         </p>
         <div className="space-y-5">
@@ -244,7 +244,7 @@ export default function PeptidesForTestosterone() {
       {/* Sermorelin & GH-T Relationship */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
         <h2 className="text-3xl font-black text-gray-900 mb-4">The GH–Testosterone Connection</h2>
-        <p className="text-gray-600 leading-relaxed text-lg mb-8">
+        <p className="text-gray-900 leading-relaxed text-lg mb-8">
           Most men think of growth hormone as something separate from testosterone — a muscle-building tool for another conversation. But the GH-IGF-1 axis and the HPT axis are deeply interconnected. Optimizing GH through peptides like Sermorelin has real downstream effects on testosterone biology.
         </p>
         <div className="glass-card p-6 space-y-4">
@@ -335,7 +335,7 @@ export default function PeptidesForTestosterone() {
                 {faq.q}
                 <span className="text-[#00ff88] text-xl font-black shrink-0 group-open:rotate-45 transition-transform">+</span>
               </summary>
-              <div className="px-6 pb-6 text-gray-600 leading-relaxed text-base">
+              <div className="px-6 pb-6 text-gray-900 leading-relaxed text-base">
                 {faq.a}
               </div>
             </details>

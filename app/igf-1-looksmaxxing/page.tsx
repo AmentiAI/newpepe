@@ -184,7 +184,7 @@ export default function Igf1LooksmaxxingPage() {
             IGF-1 LR3 for{' '}
             <span className="text-emerald-700">Looksmaxxing</span>
           </h1>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+          <p className="text-xl text-gray-800 max-w-2xl mx-auto">
             IGF-1 LR3 affects seven distinct appearance mechanisms. Here is exactly how it works, what doses to use, and how to stack it for maximum appearance optimization.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
@@ -203,13 +203,13 @@ export default function Igf1LooksmaxxingPage() {
         <div className="max-w-4xl mx-auto space-y-8">
           <h2 className="text-3xl font-bold text-gray-900">What is IGF-1 LR3?</h2>
           <div className="glass-card p-8 space-y-5">
-            <p className="text-gray-600 leading-relaxed">
+            <p className="text-gray-900 leading-relaxed">
               IGF-1 LR3 (Insulin-like Growth Factor-1, Long-Arg3) is a modified variant of the naturally occurring IGF-1 hormone. Natural IGF-1 is produced primarily by the liver in response to growth hormone (GH) signaling and has a half-life of just 15 minutes before it is bound by IGF-binding proteins (IGFBPs) that render it inactive.
             </p>
-            <p className="text-gray-600 leading-relaxed">
+            <p className="text-gray-900 leading-relaxed">
               IGF-1 LR3 has two specific amino acid modifications that transform this limitation: an arginine substitution at position 3 and an N-terminal extension that together reduce IGFBP binding affinity by approximately <strong className="text-cyan-700">90%</strong>. The result is a peptide that circulates in its fully active form for 20–30 hours after a single injection — providing continuous receptor activation that natural IGF-1 cannot achieve.
             </p>
-            <p className="text-gray-600 leading-relaxed">
+            <p className="text-gray-900 leading-relaxed">
               IGF-1 is the central mediator of growth hormone's anabolic and reparative effects on the body. While GH acts on bone and fat directly, the majority of GH's tissue-building effects — including collagen synthesis, muscle protein synthesis, skin thickness, and hair follicle support — are mediated through IGF-1. By providing sustained IGF-1 receptor stimulation, IGF-1 LR3 unlocks these appearance-relevant effects at doses far below those required with natural IGF-1.
             </p>
           </div>
@@ -295,7 +295,7 @@ export default function Igf1LooksmaxxingPage() {
             ))}
           </div>
           <div className="glass-card p-6">
-            <p className="text-gray-600 leading-relaxed text-sm">
+            <p className="text-gray-900 leading-relaxed text-sm">
               <strong className="text-cyan-700">Injection technique:</strong> Use a 29–31 gauge insulin syringe. Inject subcutaneously into the abdomen fat or outer thigh — 45-degree angle, slow injection. Rotate sites daily. Reconstitute with bacteriostatic water (1–2mL per vial) and store in refrigerator. Draw 0.1mL for a 20 mcg dose from a 200 mcg/mL solution (reconstitute 2mg in 10mL for this concentration). Always eat before or immediately after injection to prevent hypoglycemia.
             </p>
           </div>

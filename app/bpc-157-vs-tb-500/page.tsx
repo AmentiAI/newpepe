@@ -202,7 +202,7 @@ export default function BpcVsTb500Page() {
           <div className="glass-card p-8">
             <h3 className="text-2xl font-black text-emerald-400 mb-6">BPC-157: The Local Healer Decoded</h3>
 
-            <div className="space-y-5 text-gray-600 text-sm leading-relaxed">
+            <div className="space-y-5 text-gray-900 text-sm leading-relaxed">
               <div>
                 <h4 className="text-emerald-700 font-bold mb-2">Origins: Gastric Protein Fragment</h4>
                 <p>BPC-157 stands for Body Protection Compound 157. It is a 15-amino acid peptide sequence (Gly-Glu-Pro-Pro-Pro-Gly-Lys-Pro-Ala-Asp-Asp-Ala-Gly-Leu-Val) first isolated from human gastric juice by Croatian researchers in the early 1990s. The name reflects its origin — it was isolated as fragment 157 from the human gastric juice protein BPC. Its natural source in the stomach explains why it survives oral administration without being degraded by stomach acid, a property that makes it uniquely versatile compared to nearly every other research peptide.</p>
@@ -229,7 +229,7 @@ export default function BpcVsTb500Page() {
           <div className="glass-card p-8">
             <h3 className="text-2xl font-black text-blue-400 mb-6">TB-500: The Systemic Healer Decoded</h3>
 
-            <div className="space-y-5 text-gray-600 text-sm leading-relaxed">
+            <div className="space-y-5 text-gray-900 text-sm leading-relaxed">
               <div>
                 <h4 className="text-blue-700 font-bold mb-2">Origins: Naturally Occurring Thymic Protein</h4>
                 <p>TB-500 is the synthetic version of the 43-amino acid fragment (amino acids 17–23) of Thymosin Beta-4 (Tβ4) — a naturally occurring protein found in virtually all human cells at some concentration, with particularly high levels in thymus tissue, blood platelets, and wound fluid. Unlike BPC-157, which is a synthetic compound derived from a naturally occurring sequence, TB-500 is essentially a bioidentical fragment of a protein your body already produces. The full Thymosin Beta-4 molecule contains 43 amino acids; TB-500 isolates the most pharmacologically active fragment responsible for tissue repair, which is the LKKTETQ sequence at positions 17–23. This is the segment responsible for actin binding and most of the regenerative activity.</p>
@@ -333,7 +333,7 @@ export default function BpcVsTb500Page() {
                   <span className="text-gray-500 text-xs font-bold tracking-widest uppercase">Phase 3</span>
                   <h3 className="text-gray-900 font-black text-xl">Maintenance Phase — Weeks 9–12</h3>
                 </div>
-                <span className="bg-slate-700/50 text-gray-500 text-xs font-bold px-3 py-1 rounded-full border border-gray-300/30">Consolidation</span>
+                <span className="bg-slate-700/50 text-gray-700 text-xs font-bold px-3 py-1 rounded-full border border-gray-300/30">Consolidation</span>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-4">
                 <div className="bg-slate-800/50 rounded-xl p-5">
@@ -386,7 +386,7 @@ export default function BpcVsTb500Page() {
                   <td className="py-3 px-3 text-center text-base">{row.bpc}</td>
                   <td className="py-3 px-3 text-center text-base">{row.tb}</td>
                   <td className="py-3 px-3 text-center text-xs font-bold text-emerald-700">{row.both || (row.bpc === '⭐ Best' && !row.tb ? 'BPC-157 Only' : row.tb === '⭐ Best' ? 'TB-500 Priority' : 'Both')}</td>
-                  <td className="py-3 px-4 text-gray-500 text-xs leading-relaxed">{row.reasoning}</td>
+                  <td className="py-3 px-4 text-gray-700 text-xs leading-relaxed">{row.reasoning}</td>
                 </tr>
               ))}
             </tbody>

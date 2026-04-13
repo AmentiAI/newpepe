@@ -186,7 +186,7 @@ export default function PeptidesForCollagenPage() {
             Peptides for Collagen:{' '}
             <span className="text-emerald-700">Ranked by Evidence</span>
           </h1>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+          <p className="text-xl text-gray-800 max-w-2xl mx-auto">
             Collagen is the structural foundation of your appearance. Here are the peptides with the strongest evidence for rebuilding it — ranked, explained, and with complete protocols.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
@@ -211,13 +211,13 @@ export default function PeptidesForCollagenPage() {
           </div>
 
           <div className="glass-card p-8 space-y-6">
-            <p className="text-gray-600 leading-relaxed">
+            <p className="text-gray-900 leading-relaxed">
               Before understanding peptide interventions, it is essential to understand <em>what</em> collagen actually does in the context of appearance. Collagen is not a single protein — it is a family of 28 related proteins, each with distinct structural roles. The five most relevant to appearance are Types I, III, IV, VII, and XVII.
             </p>
-            <p className="text-gray-600 leading-relaxed">
+            <p className="text-gray-900 leading-relaxed">
               Type I collagen is the primary target of anti-aging interventions: it comprises the dense fibrous network in the dermis that gives skin its firmness, resistance to gravity, and structural volume. When Type I collagen declines — beginning in the mid-20s at a rate of 1–2% per year — the visible result is gradual sagging, laxity, and the appearance of hollowing under the eyes and in the cheeks.
             </p>
-            <p className="text-gray-600 leading-relaxed">
+            <p className="text-gray-900 leading-relaxed">
               Type III collagen coexists with Type I and provides elasticity — the bounce-back quality that distinguishes young skin from older skin. When you pinch young skin and release it, the snap-back is Type III collagen at work. Hair follicles are anchored by Type XVII collagen in the scalp dermis; its decline is directly linked to age-related hair miniaturization. The basement membrane (Type IV) controls skin permeability and pore appearance. Understanding which peptide stimulates which collagen type allows you to target your specific appearance goals precisely.
             </p>
           </div>
@@ -252,7 +252,7 @@ export default function PeptidesForCollagenPage() {
           </div>
 
           <div className="glass-card p-6">
-            <p className="text-gray-600 leading-relaxed mb-6">
+            <p className="text-gray-900 leading-relaxed mb-6">
               The natural baseline decline is 1–2% of total collagen per year after age 25. This sounds small, but compounded over decades it means that by age 45, you have lost 20–40% of peak collagen density. The consequences include dermis thinning, reduced skin moisture retention (collagen holds water), decreased elasticity, and progressive hollowing of facial fat compartments supported by the collagen scaffold. By age 60, total skin collagen can be 40–60% below the 25-year-old peak without intervention.
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -291,13 +291,13 @@ export default function PeptidesForCollagenPage() {
         <div className="max-w-4xl mx-auto space-y-8">
           <h2 className="text-3xl font-bold text-gray-900">#1: GHK-Cu — The Collagen Reset Peptide</h2>
           <div className="glass-card p-8 space-y-5">
-            <p className="text-gray-600 leading-relaxed">
+            <p className="text-gray-900 leading-relaxed">
               GHK-Cu (glycyl-L-histidyl-L-lysine copper complex) earns the top ranking for collagen due to its uniquely comprehensive mechanism. While most peptides work through a single pathway, GHK-Cu operates through multiple simultaneous mechanisms that collectively deliver what researchers describe as a "gene expression reset" — returning aged fibroblasts to a more youthful collagen-producing state.
             </p>
-            <p className="text-gray-600 leading-relaxed">
+            <p className="text-gray-900 leading-relaxed">
               The key findings from human and animal research: GHK-Cu stimulates collagen synthesis in skin fibroblasts by an average of <strong className="text-amber-700">70%</strong> above baseline in cell culture models. It increases the production of collagen Types I, III, and IV simultaneously. It activates tissue inhibitors of metalloproteinases (TIMPs), which block the MMP enzymes that break down collagen — providing a dual benefit of increasing production and decreasing breakdown. Lunde et al. demonstrated that GHK-Cu applied topically for 12 weeks produced significant improvements in skin density, thickness, and the reduction of fine lines compared to controls.
             </p>
-            <p className="text-gray-600 leading-relaxed">
+            <p className="text-gray-900 leading-relaxed">
               The gene expression research is particularly compelling. A 2010 analysis found that GHK-Cu modulates over 4,000 human genes, with specific effects on 31% of genes that change with aging — returning their expression to a more youthful pattern. Of particular relevance to collagen: GHK-Cu upregulates COLLAGEN1A1 and COLLAGEN3A1 gene expression while downregulating inflammatory genes (IL-6, TNF-α) that suppress fibroblast activity. This is a fundamentally different mechanism from simple "collagen stimulation" — it is resetting the cellular machinery responsible for collagen production at the genetic level.
             </p>
             <div className="border border-amber-500/30 bg-amber-500/5 rounded-xl p-4">
@@ -315,13 +315,13 @@ export default function PeptidesForCollagenPage() {
         <div className="max-w-4xl mx-auto space-y-8">
           <h2 className="text-3xl font-bold text-gray-900">#2: BPC-157 — The Angiogenesis-to-Collagen Pipeline</h2>
           <div className="glass-card p-8 space-y-5">
-            <p className="text-gray-600 leading-relaxed">
+            <p className="text-gray-900 leading-relaxed">
               BPC-157 (Body Protection Compound-157) ranks second for collagen due to its powerful indirect mechanism: it drives angiogenesis (new blood vessel formation) which dramatically improves the delivery of nutrients, oxygen, and growth factors to collagen-producing fibroblasts. Without adequate blood supply, fibroblasts — even when biochemically stimulated — cannot produce collagen at optimal rates.
             </p>
-            <p className="text-gray-600 leading-relaxed">
+            <p className="text-gray-900 leading-relaxed">
               The BPC-157 collagen pathway: BPC-157 activates VEGF (Vascular Endothelial Growth Factor) and PDGF (Platelet-Derived Growth Factor) → new blood vessel formation around existing and new fibroblasts → improved nutrient delivery → increased collagen I and III production. This mechanism is particularly effective for healing injured tissue (where blood supply is disrupted) and for skin areas with poor circulation (often the areas with the worst collagen density).
             </p>
-            <p className="text-gray-600 leading-relaxed">
+            <p className="text-gray-900 leading-relaxed">
               BPC-157 also activates the growth hormone receptor in tissues directly — providing a local GH-like signal that stimulates fibroblast activity independently of systemic GH levels. Research in tendon healing models (Krivic et al., Gwyer et al.) consistently demonstrates 30–60% faster collagen fiber organization and tensile strength recovery compared to controls — evidence of both increased collagen production and improved collagen fiber quality.
             </p>
           </div>
@@ -355,10 +355,10 @@ export default function PeptidesForCollagenPage() {
             ))}
           </div>
           <div className="glass-card p-6">
-            <p className="text-gray-600 leading-relaxed">
+            <p className="text-gray-900 leading-relaxed">
               The synergy between these three peptides is mechanistically logical: GHK-Cu directly stimulates fibroblasts and provides the genetic reset. BPC-157 ensures those fibroblasts have the blood supply needed to perform at maximum capacity. CJC-1295/Ipamorelin creates the systemic hormonal environment (elevated IGF-1 and GH) that amplifies collagen production throughout the entire body — not just at the topical application site.
             </p>
-            <p className="text-gray-600 leading-relaxed mt-4">
+            <p className="text-gray-900 leading-relaxed mt-4">
               Additionally, this stack addresses the collagen-degradation side of the equation: GHK-Cu activates TIMPs (collagen breakdown inhibitors), BPC-157 reduces inflammatory cytokines that upregulate MMPs (collagen-degrading enzymes), and GH optimization reduces cortisol-mediated collagen suppression. You are simultaneously producing more collagen and breaking it down more slowly.
             </p>
           </div>
@@ -370,7 +370,7 @@ export default function PeptidesForCollagenPage() {
         <div className="max-w-4xl mx-auto space-y-8">
           <h2 className="text-3xl font-bold text-gray-900">Diet &amp; Lifestyle Factors That Amplify Results</h2>
           <div className="glass-card p-8 space-y-5">
-            <p className="text-gray-600 leading-relaxed">
+            <p className="text-gray-900 leading-relaxed">
               Peptides work dramatically better when the foundational lifestyle variables supporting collagen synthesis are in place. The most critical non-peptide factors:
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">

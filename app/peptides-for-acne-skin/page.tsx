@@ -217,7 +217,7 @@ export default function PeptidesForAcneSkinPage() {
             Peptides for{' '}
             <span className="text-emerald-700">Acne &amp; Skin</span>
           </h1>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+          <p className="text-xl text-gray-800 max-w-2xl mx-auto">
             Acne and acne scarring are among the most significant appearance detractors. BPC-157 heals the gut-skin axis that drives inflammation. GHK-Cu rebuilds the skin architecture left damaged by years of acne.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
@@ -236,13 +236,13 @@ export default function PeptidesForAcneSkinPage() {
         <div className="max-w-4xl mx-auto space-y-8">
           <h2 className="text-3xl font-bold text-gray-900">Why Acne is a Looksmaxxing Priority</h2>
           <div className="glass-card p-8 space-y-5">
-            <p className="text-gray-600 leading-relaxed">
+            <p className="text-gray-900 leading-relaxed">
               Research on facial attractiveness consistently identifies skin quality as one of the highest-weighted variables in appearance assessment — ahead of facial symmetry, proportions, and even bone structure in some studies. Active acne, and particularly the scarring it leaves, are among the most significant negative signals in skin quality assessment.
             </p>
-            <p className="text-gray-600 leading-relaxed">
+            <p className="text-gray-900 leading-relaxed">
               Unlike aging-related appearance changes (which are gradual and expected), acne presents a visible inflammatory disease that signals health and hormonal dysregulation. Post-inflammatory hyperpigmentation (PIH) and acne scarring can persist for years — sometimes decades — after the active acne resolves, creating a permanent appearance burden from a condition that was hopefully temporary.
             </p>
-            <p className="text-gray-600 leading-relaxed">
+            <p className="text-gray-900 leading-relaxed">
               The peptide approach to acne is fundamentally different from conventional dermatology: instead of killing bacteria on the skin surface (benzoyl peroxide, antibiotics) or suppressing sebum gland activity (isotretinoin), it addresses the systemic inflammatory root causes — particularly the gut-skin axis — while simultaneously rebuilding the skin architecture damaged by years of inflammation.
             </p>
           </div>

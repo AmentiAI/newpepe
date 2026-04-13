@@ -190,7 +190,7 @@ export default function PeptidesForBeardGrowthPage() {
             Peptides for{' '}
             <span className="text-emerald-700">Beard Growth</span>
           </h1>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+          <p className="text-xl text-gray-800 max-w-2xl mx-auto">
             The biology of beard follicles is fundamentally different from scalp hair. Here is how to use peptides correctly for beard density — with full protocols and realistic timelines.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
@@ -209,10 +209,10 @@ export default function PeptidesForBeardGrowthPage() {
         <div className="max-w-4xl mx-auto space-y-8">
           <h2 className="text-3xl font-bold text-gray-900">Why Beard Density Matters for Appearance</h2>
           <div className="glass-card p-8 space-y-5">
-            <p className="text-gray-600 leading-relaxed">
+            <p className="text-gray-900 leading-relaxed">
               Facial hair is one of the most significant masculinity signals in human appearance research. Studies on facial attractiveness consistently show that full, well-groomed beard coverage correlates with higher perceived dominance, maturity, and social status. More practically for looksmaxxing: a dense beard provides jawline definition, masks jawline asymmetry, and creates the visual illusion of a stronger, more angular facial structure.
             </p>
-            <p className="text-gray-600 leading-relaxed">
+            <p className="text-gray-900 leading-relaxed">
               For men with patchy or sparse beards, the gap between their genetic ceiling and their current beard density is the opportunity that peptide protocols target. A patchy beard is often not a reflection of absolute follicle absence — it frequently reflects follicles that are in a vellus state (fine, unpigmented, essentially invisible) that have not yet converted to terminal (thick, pigmented, visible) hair. This vellus-to-terminal conversion is driven by androgens (primarily DHT) and growth factors — precisely the pathways that targeted peptides influence.
             </p>
           </div>
@@ -224,13 +224,13 @@ export default function PeptidesForBeardGrowthPage() {
         <div className="max-w-4xl mx-auto space-y-8">
           <h2 className="text-3xl font-bold text-gray-900">The Biology of Beard Growth</h2>
           <div className="glass-card p-8 space-y-5">
-            <p className="text-gray-600 leading-relaxed">
+            <p className="text-gray-900 leading-relaxed">
               Understanding beard hair biology is essential before designing a peptide protocol — because beard follicles operate differently from scalp follicles in a critical way that affects which peptides to use and how.
             </p>
-            <p className="text-gray-600 leading-relaxed">
+            <p className="text-gray-900 leading-relaxed">
               Beard follicles begin as vellus follicles — small, minimally pigmented, producing barely visible "peach fuzz" hairs. Terminal conversion is driven primarily by dihydrotestosterone (DHT), which binds to androgen receptors in facial follicle dermal papilla cells and triggers the signaling cascade that enlarges the follicle and switches on pigmented, thick hair production. This is the <em>opposite</em> of scalp hair — scalp follicles in genetically sensitive individuals are miniaturized by DHT (androgenetic alopecia), while the same DHT drives beard terminal conversion.
             </p>
-            <p className="text-gray-600 leading-relaxed">
+            <p className="text-gray-900 leading-relaxed">
               The three-phase hair cycle (anagen, catagen, telogen) applies to beard hair as it does to all hair. Beard anagen phase is much shorter than scalp hair anagen — beard hair grows for 2–6 months before entering catagen and telogen, which is why beard hair has a natural length limit even without cutting. Peptides that prolong the anagen phase directly extend how long each follicle is actively producing hair — resulting in denser coverage from more follicles being in active growth simultaneously.
             </p>
           </div>
@@ -310,13 +310,13 @@ export default function PeptidesForBeardGrowthPage() {
         <div className="max-w-4xl mx-auto space-y-8">
           <h2 className="text-3xl font-bold text-gray-900">GHK-Cu and DHT: Why It Helps Beard Without Hurting It</h2>
           <div className="glass-card p-8 space-y-5">
-            <p className="text-gray-600 leading-relaxed">
+            <p className="text-gray-900 leading-relaxed">
               The most frequently asked question about GHK-Cu for beard growth is whether its anti-androgenic effects on scalp follicles will suppress the DHT-driven beard terminal conversion. The answer requires understanding the fundamentally different androgen receptor expression profiles between scalp and facial follicles.
             </p>
-            <p className="text-gray-600 leading-relaxed">
+            <p className="text-gray-900 leading-relaxed">
               Scalp follicles in androgenetic alopecia are highly sensitive to DHT due to overexpression of androgen receptors and 5α-reductase type II. GHK-Cu modulates androgen receptor sensitivity in scalp dermal papilla cells — a beneficial effect for scalp hair loss. Facial follicles, however, have a completely different receptor configuration: they are activated, not suppressed, by DHT, and their androgen receptor expression is regulated by different genetic factors than scalp follicles.
             </p>
-            <p className="text-gray-600 leading-relaxed">
+            <p className="text-gray-900 leading-relaxed">
               When GHK-Cu is applied topically to the beard area, it acts through growth factor stimulation (IGF-1, VEGF, FGF) and local anti-inflammatory mechanisms — not through androgen receptor suppression in the facial follicle context. The key finding from research: GHK-Cu's primary mechanism for follicle stimulation is IGF-1 upregulation and angiogenesis, not androgen modulation. These pathways are beard-positive regardless of DHT status.
             </p>
             <div className="border border-emerald-500/30 bg-emerald-500/5 rounded-xl p-4">

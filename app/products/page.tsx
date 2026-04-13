@@ -42,7 +42,7 @@ export default function ProductsPage() {
           <h1 className="text-4xl sm:text-5xl font-black text-gray-900 mb-3">
             All {products.length} Peptides
           </h1>
-          <p className="text-gray-600 text-lg max-w-2xl">
+          <p className="text-gray-900 text-lg max-w-2xl">
             Complete research compound catalog — healing peptides, GLP-1 agonists, growth hormone secretagogues, nootropics, anti-aging compounds, and SARMs.
           </p>
 
@@ -86,7 +86,7 @@ export default function ProductsPage() {
 
         {/* Bottom CTA */}
         <div className="text-center py-12 border-t border-gray-100">
-          <p className="text-gray-500 text-sm mb-4">All products — US-based supplier, third-party tested, COA available</p>
+          <p className="text-gray-700 text-sm mb-4">All products — US-based supplier, third-party tested, COA available</p>
           <a
             href="https://phiogen.is/?ref=PEPS"
             target="_blank"

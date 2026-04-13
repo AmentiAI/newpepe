@@ -383,7 +383,7 @@ export default function Bpc157GutHealthPage() {
         <div className="space-y-6">
           <div className="glass-card p-8">
             <h3 className="text-xl font-black text-emerald-400 mb-4">The Microbiome-Inflammation Cycle</h3>
-            <div className="space-y-4 text-gray-600 text-sm leading-relaxed">
+            <div className="space-y-4 text-gray-900 text-sm leading-relaxed">
               <p>{microbiomeSection.intro}</p>
               <p>{microbiomeSection.microbiomedisease}</p>
               <p>{microbiomeSection.bpcMicrobiome}</p>

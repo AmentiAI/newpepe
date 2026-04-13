@@ -194,7 +194,7 @@ export default function WolverineStackPage() {
             <span style={{ color: '#00ff88' }}>Accelerated Regeneration</span>
           </h2>
 
-          <div className="prose prose-invert max-w-none space-y-6 text-gray-600 leading-relaxed">
+          <div className="prose prose-invert max-w-none space-y-6 text-gray-900 leading-relaxed">
             <p>
               In the Marvel universe, James Howlett — the mutant known as Wolverine — possesses a superpower that most people would choose above flight, strength, or telepathy: the ability to heal from virtually any wound in minutes. Slashed by blades, riddled with bullets, burned to bone — within seconds, Wolverine&apos;s tissue knits back together, scarless and functional. The name &quot;Wolverine Stack&quot; was not coined by a marketing department. It emerged organically from the biohacking and research peptide community in the early 2010s as anecdotal reports began accumulating of athletes, post-surgical patients, and researchers using BPC-157 and TB-500 together and experiencing healing timelines that seemed to defy conventional medicine&apos;s expectations.
             </p>
@@ -449,7 +449,7 @@ export default function WolverineStackPage() {
           {/* Synergy explanation */}
           <div className="rounded-2xl p-8" style={{ background: 'rgba(0,255,136,0.03)', border: '1px solid rgba(0,255,136,0.15)' }}>
             <h3 className="text-gray-900 font-black text-xl mb-4" style={{ color: '#00ff88' }}>Why 1 + 1 = 3: The Synergistic Healing Principle</h3>
-            <div className="space-y-3 text-gray-600 text-sm leading-relaxed">
+            <div className="space-y-3 text-gray-900 text-sm leading-relaxed">
               <p>
                 The combination of BPC-157 and TB-500 produces healing outcomes that consistently exceed what either peptide achieves independently. This is not additive — it is synergistic. Understanding why requires understanding the bottlenecks in healing.
               </p>

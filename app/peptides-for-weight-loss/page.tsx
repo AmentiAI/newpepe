@@ -151,7 +151,7 @@ export default function PeptidesForWeightLossPage() {
           </div>
           <h2 className="text-3xl font-black text-gray-900 mb-8">GLP-1 Peptides vs. GH Peptides: The Full Comparison</h2>
 
-          <div className="space-y-6 text-gray-600 leading-relaxed">
+          <div className="space-y-6 text-gray-900 leading-relaxed">
             <p>
               The two major categories of weight loss peptides work through fundamentally different mechanisms, produce different kinds of fat loss, and suit different types of people. Understanding this distinction is the most important decision in building a peptide fat loss protocol.
             </p>
@@ -236,7 +236,7 @@ export default function PeptidesForWeightLossPage() {
         <h2 className="text-3xl font-black text-gray-900 mb-8">Fat Loss Without Muscle Loss: The Protein Protocol</h2>
 
         <div className="space-y-5">
-          <p className="text-gray-600 leading-relaxed">
+          <p className="text-gray-900 leading-relaxed">
             The single biggest mistake in peptide-assisted weight loss is neglecting protein intake. Research consistently shows that 25–40% of total weight loss on GLP-1 monotherapy is lean mass, not fat. At high deficit levels, this means losing significant muscle alongside fat — producing a &quot;smaller but softer&quot; result rather than the lean, defined physique most people want.
           </p>
 
@@ -325,7 +325,7 @@ export default function PeptidesForWeightLossPage() {
           </div>
           <h2 className="text-3xl font-black text-gray-900 mb-8">The Weight Loss Plateau Problem</h2>
 
-          <div className="space-y-6 text-gray-600 leading-relaxed">
+          <div className="space-y-6 text-gray-900 leading-relaxed">
             <p>
               Weight loss plateaus are almost universal in long-term fat loss protocols — including peptide-assisted ones. Understanding what a plateau actually represents versus a temporary fluctuation is critical before making any protocol changes.
             </p>

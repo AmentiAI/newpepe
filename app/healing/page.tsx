@@ -211,7 +211,7 @@ export default function HealingPage() {
       <section className="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-10">
           <h2 className="text-3xl font-black text-gray-900 mb-3">What Injuries Does BPC-157 Heal?</h2>
-          <p className="text-gray-700 max-w-2xl mx-auto">
+          <p className="text-gray-900 max-w-2xl mx-auto">
             Unlike any other compound, BPC-157 shows activity across virtually every tissue type studied —
             with documented healing effects in controlled animal models.
           </p>
@@ -244,7 +244,7 @@ export default function HealingPage() {
             <span className="text-emerald-600 text-xs font-bold tracking-wide">INJURY ASSESSMENT</span>
           </div>
           <h2 className="text-3xl font-black text-gray-900 mb-3">Find Your Recommended Protocol</h2>
-          <p className="text-gray-700 max-w-xl mx-auto">
+          <p className="text-gray-900 max-w-xl mx-auto">
             Answer 4 questions about your injury and get a personalized peptide stack recommendation with doses and timeline.
           </p>
         </div>
@@ -389,7 +389,7 @@ export default function HealingPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-black text-gray-900 mb-3">Healing Peptide Protocols</h2>
-            <p className="text-gray-700 max-w-xl mx-auto">
+            <p className="text-gray-900 max-w-xl mx-auto">
               Different injury types require different approaches. Use these evidence-based protocols as your starting point.
             </p>
           </div>
@@ -410,7 +410,7 @@ export default function HealingPage() {
               </div>
             ))}
           </div>
-          <p className="text-center text-gray-500 text-xs mt-6">Consult a healthcare provider before use.</p>
+          <p className="text-center text-gray-700 text-xs mt-6">Consult a healthcare provider before use.</p>
         </div>
       </section>
 
@@ -422,7 +422,7 @@ export default function HealingPage() {
             <span className="text-emerald-600 text-xs font-bold tracking-wide">SPORT-SPECIFIC PROTOCOLS</span>
           </div>
           <h2 className="text-3xl font-black text-gray-900 mb-3">Healing Protocols by Sport</h2>
-          <p className="text-gray-700 max-w-2xl mx-auto">
+          <p className="text-gray-900 max-w-2xl mx-auto">
             Every sport has its characteristic injury patterns. These sport-specific protocols target the most common presentations with optimized peptide combinations.
           </p>
         </div>
@@ -516,7 +516,7 @@ export default function HealingPage() {
             Nutrition for<br />
             <span style={{ color: '#00ff88' }}>Accelerated Healing</span>
           </h2>
-          <p className="text-gray-700 mb-8 max-w-2xl">
+          <p className="text-gray-900 mb-8 max-w-2xl">
             Peptides accelerate the signaling that drives healing — but the raw material for building new tissue must come from your diet. These nutritional requirements are non-negotiable if you want maximum results from your protocol.
           </p>
 
@@ -616,7 +616,7 @@ export default function HealingPage() {
             <span className="text-gray-700 text-sm">30+ Year Research History</span>
           </div>
           <h2 className="text-3xl font-black text-gray-900 mb-3">The Science of BPC-157</h2>
-          <p className="text-gray-700 max-w-xl mx-auto">From gastric juice isolation to the most studied healing peptide in the world.</p>
+          <p className="text-gray-900 max-w-xl mx-auto">From gastric juice isolation to the most studied healing peptide in the world.</p>
         </div>
         <div className="relative">
           <div className="absolute left-6 top-0 bottom-0 w-px bg-gradient-to-b from-emerald-500/50 via-emerald-500/20 to-transparent" />

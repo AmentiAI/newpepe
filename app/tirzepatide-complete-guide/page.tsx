@@ -124,7 +124,7 @@ export default function TirzepatideCompleteGuide() {
             The Drug That Changed{' '}
             <span className="text-[#00ff88]">Weight Loss Medicine</span>
           </h1>
-          <p className="text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto mb-8">
+          <p className="text-xl text-gray-900 leading-relaxed max-w-3xl mx-auto mb-8">
             For decades, the medical community told overweight people to "eat less and move more." Then tirzepatide showed up and produced results that 30 years of willpower hadn't. A 150-pound person loses 33 pounds. A 220-pound person loses nearly 50. Not in some theoretical model — in controlled trials, in real patients, with no surgery.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
@@ -178,7 +178,7 @@ export default function TirzepatideCompleteGuide() {
       {/* Dual Mechanism */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
         <h2 className="text-3xl font-black text-gray-900 mb-4">Why Two Receptors Beat One</h2>
-        <p className="text-gray-600 leading-relaxed text-lg mb-8">
+        <p className="text-gray-900 leading-relaxed text-lg mb-8">
           The story of tirzepatide is really the story of GIP — the overlooked receptor that changes everything. Pharmaceutical research had focused almost entirely on GLP-1 for decades. GIP was considered a "lesser" incretin with unclear benefits. Then Eli Lilly's researchers combined both and got results nobody expected.
         </p>
         <div className="space-y-4">
@@ -191,7 +191,7 @@ export default function TirzepatideCompleteGuide() {
           ))}
         </div>
         <div className="mt-6 glass-card p-6 border border-gray-100">
-          <p className="text-gray-600 leading-relaxed">
+          <p className="text-gray-900 leading-relaxed">
             The synergy is the key insight. GLP-1 and GIP don't just add their effects — they amplify each other's action. GIP potentiates insulin secretion through a completely different intracellular pathway than GLP-1, which is why the combined effect exceeds what you'd predict by adding each receptor's contribution separately. This is called receptor cross-talk, and it's why the 22.5% figure isn't just "1.5× semaglutide" — it's qualitatively different weight loss.
           </p>
         </div>
@@ -232,7 +232,7 @@ export default function TirzepatideCompleteGuide() {
       {/* Escalation Protocol */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
         <h2 className="text-3xl font-black text-gray-900 mb-4">The Escalation Protocol</h2>
-        <p className="text-gray-600 leading-relaxed text-lg mb-8">
+        <p className="text-gray-900 leading-relaxed text-lg mb-8">
           Tirzepatide's side effects are real but manageable — and almost entirely dose-dependent. The escalation protocol exists to give your GI tract time to adapt before increasing to the next dose. Skipping steps is the most common mistake, and it leads to unnecessary nausea and early discontinuation. Patience at the lower doses pays off.
         </p>
         <div className="space-y-3">
@@ -329,7 +329,7 @@ export default function TirzepatideCompleteGuide() {
                 {faq.q}
                 <span className="text-[#00ff88] text-xl font-black shrink-0 group-open:rotate-45 transition-transform">+</span>
               </summary>
-              <div className="px-6 pb-6 text-gray-600 leading-relaxed text-base">
+              <div className="px-6 pb-6 text-gray-900 leading-relaxed text-base">
                 {faq.a}
               </div>
             </details>

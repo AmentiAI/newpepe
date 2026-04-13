@@ -213,7 +213,7 @@ export default function StacksPage() {
           <Layers className="w-6 h-6 text-amber-600" />
           <h2 className="text-3xl font-black text-gray-900">Stack Comparison Matrix</h2>
         </div>
-        <p className="text-gray-700 mb-8 max-w-3xl">Compare all five stacks side-by-side across every relevant dimension to find the right fit for your goals, experience level, and commitment.</p>
+        <p className="text-gray-900 mb-8 max-w-3xl">Compare all five stacks side-by-side across every relevant dimension to find the right fit for your goals, experience level, and commitment.</p>
 
         <div className="overflow-x-auto rounded-2xl border border-amber-200">
           <table className="w-full text-xs min-w-[900px]">
@@ -248,7 +248,7 @@ export default function StacksPage() {
                     <td className="py-4 px-4 text-gray-700 whitespace-nowrap">{meta?.cycleLength || stack.duration}</td>
                     <td className="py-4 px-4 text-gray-800 font-mono">{meta?.weeklyInjections || '7'}</td>
                     <td className="py-4 px-4 text-gray-800">{meta?.firstResults || '1–2 weeks'}</td>
-                    <td className="py-4 px-4 text-gray-700 max-w-[160px]">{meta?.bestFor}</td>
+                    <td className="py-4 px-4 text-gray-900 max-w-[160px]">{meta?.bestFor}</td>
                     <td className="py-4 px-4 text-red-500 max-w-[160px]">{meta?.notFor}</td>
                   </tr>
                 );
@@ -261,7 +261,7 @@ export default function StacksPage() {
       {/* Stacks Grid */}
       <section id="stacks" className="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl font-black text-gray-900 mb-3">All Stack Protocols</h2>
-        <p className="text-gray-700 mb-10">Full detail on each protocol — benefits, peptides, and how to get started.</p>
+        <p className="text-gray-900 mb-10">Full detail on each protocol — benefits, peptides, and how to get started.</p>
         <div className="space-y-8">
           {stacks.map((stack, index) => {
             const meta = stackMeta[stack.id];
@@ -294,7 +294,7 @@ export default function StacksPage() {
 
                     <h2 className="text-3xl font-black text-gray-900 mb-2">{stack.name}</h2>
                     <p className={`${cols.text} font-semibold mb-4`}>{stack.tagline}</p>
-                    <p className="text-gray-700 leading-relaxed mb-6">
+                    <p className="text-gray-900 leading-relaxed mb-6">
                       {stack.description.split('\n')[0]}
                     </p>
 
@@ -412,7 +412,7 @@ export default function StacksPage() {
               <Zap className="w-6 h-6 text-amber-600" />
               <h2 className="text-3xl font-black text-gray-900">Not Sure Which Stack?</h2>
             </div>
-            <p className="text-gray-700 max-w-xl mx-auto">Answer 5 questions about your goals, experience, and commitment — and get a personalized stack recommendation with estimated cost and next steps.</p>
+            <p className="text-gray-900 max-w-xl mx-auto">Answer 5 questions about your goals, experience, and commitment — and get a personalized stack recommendation with estimated cost and next steps.</p>
           </div>
           <StackQuiz />
         </div>
@@ -423,7 +423,7 @@ export default function StacksPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-black text-gray-900 mb-3">How Peptide Stacking Works</h2>
-            <p className="text-gray-700 max-w-xl mx-auto">
+            <p className="text-gray-900 max-w-xl mx-auto">
               Peptide stacking is the practice of combining compounds that work on complementary mechanisms —
               producing results that are greater than the sum of individual peptides.
             </p>
@@ -446,7 +446,7 @@ export default function StacksPage() {
           <BookOpen className="w-6 h-6 text-amber-600" />
           <h2 className="text-3xl font-black text-gray-900">How to Build Your Own Stack</h2>
         </div>
-        <p className="text-gray-700 mb-10 max-w-3xl">The principles behind the pre-built stacks — so you can design intelligently for your specific situation.</p>
+        <p className="text-gray-900 mb-10 max-w-3xl">The principles behind the pre-built stacks — so you can design intelligently for your specific situation.</p>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           <div className="space-y-5">
@@ -676,7 +676,7 @@ export default function StacksPage() {
             <Shield className="w-6 h-6 text-amber-600" />
             <h2 className="text-3xl font-black text-gray-900">Frequently Asked Stack Questions</h2>
           </div>
-          <p className="text-gray-700 mb-10">The most important questions before starting a peptide stack protocol — answered directly.</p>
+          <p className="text-gray-900 mb-10">The most important questions before starting a peptide stack protocol — answered directly.</p>
           <div className="space-y-3">
             {stackFaqs.map(({ q, a }) => (
               <details key={q} className="glass-card group">

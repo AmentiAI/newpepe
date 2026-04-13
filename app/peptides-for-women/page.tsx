@@ -178,7 +178,7 @@ export default function PeptidesForWomenPage() {
           </div>
           <h2 className="text-3xl font-black text-gray-900 mb-8">Women&apos;s Unique Peptide Response</h2>
 
-          <div className="space-y-5 text-gray-600 leading-relaxed">
+          <div className="space-y-5 text-gray-900 leading-relaxed">
             <p>
               Women respond to peptides in ways that are meaningfully different from men — not in terms of safety or efficacy, but in the physiological context that shapes optimal dosing, timing, and protocol design. Understanding these differences allows for protocols that work with the female hormonal environment rather than against it.
             </p>

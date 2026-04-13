@@ -261,7 +261,7 @@ export default function Snap8AntiWrinklePage() {
               SNAP-8: The SNARE-Inhibiting{' '}
               <span className="text-emerald-700">Botox Alternative</span>
             </h1>
-            <p className="text-xl text-gray-600 mb-8 leading-relaxed">
+            <p className="text-xl text-gray-900 mb-8 leading-relaxed">
               SNAP-8 (acetyl glutamyl heptapeptide-3) is an 8 amino acid neuropeptide that targets the same molecular machinery as Botox — the SNARE complex — without neurotoxin, injection, or paralysis risk. Clinical studies show up to 63% reduction in wrinkle depth at 10% topical concentration. This guide covers the mechanism, application zones, formulation, and how to combine SNAP-8 with GHK-Cu for superior results.
             </p>
             <a
@@ -358,7 +358,7 @@ export default function Snap8AntiWrinklePage() {
                 </div>
                 <p className="text-xs text-gray-500 mb-1">Wrinkle Type: {zone.lines}</p>
                 <p className="text-xs text-gray-500 mb-3">Muscle: {zone.muscle}</p>
-                <p className="text-sm text-gray-600 leading-relaxed">{zone.technique}</p>
+                <p className="text-sm text-gray-900 leading-relaxed">{zone.technique}</p>
               </div>
             ))}
           </div>
@@ -386,7 +386,7 @@ export default function Snap8AntiWrinklePage() {
 
           <div className="mt-8 bg-indigo-900/20 border border-indigo-500/20 rounded-xl p-6">
             <h3 className="font-bold text-gray-900 mb-3">GHK-Cu + SNAP-8 Combination: The Synergistic Anti-Wrinkle Stack</h3>
-            <p className="text-gray-600 leading-relaxed mb-4">
+            <p className="text-gray-900 leading-relaxed mb-4">
               SNAP-8 addresses wrinkle formation (muscle contraction driving expression lines); GHK-Cu addresses the collagen deficit beneath the wrinkle. These mechanisms are not just additive — they are synergistic. SNAP-8 reduces the mechanical stress on the collagen matrix; GHK-Cu rebuilds it. GHK-Cu&apos;s collagen synthesis produces gains that persist after peptide cessation; SNAP-8&apos;s muscle relaxation effect makes those structural gains more visible.
             </p>
             <div className="grid sm:grid-cols-2 gap-3 text-sm">

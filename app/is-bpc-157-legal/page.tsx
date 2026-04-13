@@ -318,13 +318,13 @@ export default function IsBpc157LegalPage() {
 
         <div className="glass-card p-8">
           <h2 className="text-2xl font-black text-gray-900 mb-4">FDA Status: What Actually Happened</h2>
-          <p className="text-gray-600 leading-relaxed mb-4">
+          <p className="text-gray-900 leading-relaxed mb-4">
             In 2022, the FDA added BPC-157 to its list of bulk drug substances under 503A compounding regulations — specifically the list of substances that "may present significant safety risks" when used in compounded drugs.
           </p>
-          <p className="text-gray-600 leading-relaxed mb-4">
+          <p className="text-gray-900 leading-relaxed mb-4">
             <strong className="text-gray-900">What this means:</strong> Licensed compounding pharmacies that fill prescriptions cannot legally make BPC-157 for patients. This is a restriction on pharmaceutical compounding, not on the substance itself.
           </p>
-          <p className="text-gray-600 leading-relaxed mb-4">
+          <p className="text-gray-900 leading-relaxed mb-4">
             <strong className="text-gray-900">What this does NOT mean:</strong> BPC-157 is not a controlled substance (it's not scheduled by the DEA). Individual purchase of BPC-157 as a research chemical remains legal in the United States. The FDA action specifically targets the prescription compounding pathway — not research chemical sales.
           </p>
           <div className="bg-amber-500/10 border border-amber-500/20 rounded-xl p-4 mt-4">
@@ -336,7 +336,7 @@ export default function IsBpc157LegalPage() {
 
         <div className="glass-card p-8">
           <h2 className="text-2xl font-black text-gray-900 mb-4">WADA Status: Athletes Must Know This</h2>
-          <p className="text-gray-600 leading-relaxed mb-4">
+          <p className="text-gray-900 leading-relaxed mb-4">
             BPC-157 is listed on the WADA (World Anti-Doping Agency) Prohibited List under Section S2 — Peptide Hormones, Growth Factors, Related Substances, and Mimetics.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
@@ -366,10 +366,10 @@ export default function IsBpc157LegalPage() {
 
         <div className="glass-card p-8">
           <h2 className="text-2xl font-black text-gray-900 mb-4">Research Chemical Status: How People Legally Buy BPC-157</h2>
-          <p className="text-gray-600 leading-relaxed mb-4">
+          <p className="text-gray-900 leading-relaxed mb-4">
             BPC-157 is sold legally throughout the US as a research chemical — a designation for chemical compounds sold for laboratory and research purposes. Reputable suppliers operate under this framework, providing certificates of analysis (COA) confirming purity and identity.
           </p>
-          <p className="text-gray-600 leading-relaxed mb-4">
+          <p className="text-gray-900 leading-relaxed mb-4">
             Research chemicals are not subject to the same regulatory framework as pharmaceutical drugs. They are legal to purchase and possess, though they are marketed for research purposes rather than human consumption.
           </p>
           <div className="flex gap-3 mt-4">
@@ -412,7 +412,7 @@ export default function IsBpc157LegalPage() {
                     </td>
                     <td className="py-3 px-4 text-gray-600 text-xs">{row.purchaseLegal}</td>
                     <td className="py-3 px-4 text-gray-600 text-xs">{row.importLegal}</td>
-                    <td className="py-3 px-4 text-gray-500 text-xs max-w-[280px] leading-relaxed">{row.notes}</td>
+                    <td className="py-3 px-4 text-gray-700 text-xs max-w-[280px] leading-relaxed">{row.notes}</td>
                   </tr>
                 ))}
               </tbody>

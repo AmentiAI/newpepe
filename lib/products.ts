@@ -59,7 +59,7 @@ export const products: Product[] = [
     tags: ['healing', 'gut', 'tendons', 'ligaments', 'inflammation', 'flagship', 'oral'],
     image: IMG.bpc157,
     affiliateUrl: aff('bpc157-10mg'),
-    shortDescription: 'BPC-157 is the most studied healing peptide — accelerates tendon, ligament, muscle, and gut repair with zero systemic side effects and no known LD50.',
+    shortDescription: 'Buy BPC-157 — BPC-157 is the most studied healing peptide — accelerates tendon, ligament, muscle, and gut repair with zero systemic side effects and no known LD50.',
     fullDescription: `BPC-157 (Body Protection Compound 157) is a 15-amino acid peptide derived from human gastric juice. It has been studied in over 100 peer-reviewed papers and consistently demonstrates remarkable regenerative properties across multiple tissue types.
 
 **How It Works**
@@ -122,7 +122,7 @@ BPC-157 has no known LD50 in animal studies — no dose has been found to cause 
     tags: ['healing', 'flexibility', 'muscle', 'tendons', 'systemic', 'stem cells'],
     image: IMG.tb500,
     affiliateUrl: aff('tb500-10mg'),
-    shortDescription: 'TB-500 (Thymosin Beta-4) provides systemic healing — mobilizes stem cells, repairs muscles and tendons simultaneously, and dramatically improves flexibility.',
+    shortDescription: 'TB-500 For Sale — TB-500 (Thymosin Beta-4) provides systemic healing — mobilizes stem cells, repairs muscles and tendons simultaneously, and dramatically improves flexibility.',
     fullDescription: `TB-500 is a synthetic version of Thymosin Beta-4, a naturally occurring peptide found in virtually all human and animal cells. It plays a critical role in tissue repair, cell migration, and the regulation of actin — the protein responsible for cellular movement and wound healing.
 
 **How It Works**
@@ -168,7 +168,7 @@ Flexibility improvements within 2-3 weeks. Chronic tendon injuries show measurab
 
 **Best Stack:** Combine with BPC-157 for comprehensive local + systemic healing.`,
     synergies: ['bpc-157', 'ghk-cu', 'cjc1295-ipamorelin', 'igf-1lr3'],
-    seoTitle: 'Buy TB-500 Thymosin Beta-4 | Systemic Healing & Flexibility Peptide | BPC-157 Stack',
+    seoTitle: 'TB-500 Thymosin Beta-4 For Sale | Systemic Healing & Flexibility Peptide | BPC-157 Stack',
     deepDiveTitle: 'TB-500: The Systemic Healing Peptide That Completes the BPC-157 Stack',
     highlights: [
       { title: 'Systemic vs Local', body: 'TB-500 circulates body-wide via bloodstream — healing multiple injury sites at once, while BPC-157 excels at local targeted repair.' },
@@ -188,7 +188,7 @@ Flexibility improvements within 2-3 weeks. Chronic tendon injuries show measurab
     tags: ['anti-aging', 'skin', 'collagen', 'copper', 'hair', 'gene-reset', 'longevity'],
     image: IMG.ghkcu,
     affiliateUrl: aff('ghk-cu'),
-    shortDescription: 'GHK-Cu (Copper Peptide) reverses the gene expression of 31% of aged genes, rebuilds collagen, and activates cellular cleanup — the master anti-aging signal.',
+    shortDescription: 'Cheap GHK-Cu — GHK-Cu (Copper Peptide) reverses the gene expression of 31% of aged genes, rebuilds collagen, and activates cellular cleanup — the master anti-aging signal.',
     fullDescription: `GHK-Cu (Glycine-Histidine-Lysine Copper) is a naturally occurring copper complex found in human plasma, saliva, and urine. Discovered in the 1970s, it has been studied as what may be the body's most important anti-aging molecular signal.
 
 **The 31% Gene Reset**
@@ -232,7 +232,7 @@ GHK-Cu enlarges hair follicle size, prolongs the growth phase, and blocks DHT lo
 
 **Best Stack:** GHK-Cu + Epithalon for comprehensive anti-aging protocol.`,
     synergies: ['epithalon', 'bpc-157', 'snap-8', 'nad'],
-    seoTitle: 'Buy GHK-Cu Copper Peptide | Reverses 31% of Aged Genes | BPC-157 Stack',
+    seoTitle: 'Cheap GHK-Cu Copper Peptide | Reverses 31% of Aged Genes | BPC-157 Stack',
     deepDiveTitle: 'GHK-Cu: The Copper Peptide That Resets Your Genes and Reverses Biological Aging',
     highlights: [
       { title: '31% Gene Reset', body: 'Landmark research shows GHK-Cu reverses 31% of aged gene expression — the most powerful anti-aging molecular signal discovered to date.' },
@@ -250,7 +250,7 @@ GHK-Cu enlarges hair follicle size, prolongs the growth phase, and blocks DHT lo
     tags: ['longevity', 'telomeres', 'telomerase', 'sleep', 'epigenetics', 'mortality'],
     image: IMG.epithalon,
     affiliateUrl: aff('epithalon-50mg'),
-    shortDescription: 'Epithalon is the only known compound to stimulate telomerase and lengthen telomeres — with a 28% mortality reduction shown in a 12-year human clinical trial.',
+    shortDescription: 'Trusted Epithalon — Epithalon is the only known compound to stimulate telomerase and lengthen telomeres — with a 28% mortality reduction shown in a 12-year human clinical trial.',
     fullDescription: `Epithalon (Epitalon) is a tetrapeptide (Ala-Glu-Asp-Gly) derived from Epithalamin, a polypeptide extracted from the pineal gland. Developed and studied by Russian scientist Vladimir Khavinson, who has published over 60 research papers on its longevity effects over 40 years.
 
 **The Telomere Connection**
@@ -294,7 +294,7 @@ Epithalon normalizes the hypothalamus-pituitary axis and restores pineal gland f
 
 **Storage:** Lyophilized powder — refrigerate; reconstitute with bacteriostatic water just before use.`,
     synergies: ['ghk-cu', 'nad', 'epithalon', 'snap-8'],
-    seoTitle: 'Buy Epithalon 50mg | Telomere Extension & 28% Mortality Reduction | BPC-157 Stack',
+    seoTitle: 'Trusted Epithalon 50mg | Telomere Extension & 28% Mortality Reduction | BPC-157 Stack',
     deepDiveTitle: 'Epithalon: The Russian Longevity Peptide With 60 Studies and 12-Year Human Trial Data',
     highlights: [
       { title: 'Telomerase Activation', body: 'The only compound proven to activate telomerase and actually lengthen telomeres in humans — reversing a core mechanism of cellular aging.' },
@@ -312,7 +312,7 @@ Epithalon normalizes the hypothalamus-pituitary axis and restores pineal gland f
     tags: ['NAD+', 'longevity', 'mitochondria', 'energy', 'DNA repair', 'sirtuins'],
     image: IMG.nad,
     affiliateUrl: aff('nad'),
-    shortDescription: 'NAD+ is the master cellular energy molecule that declines 50% by age 50 — supplementation restores sirtuin activity, DNA repair, and mitochondrial function.',
+    shortDescription: 'Verified NAD+ 500mg — NAD+ is the master cellular energy molecule that declines 50% by age 50 — supplementation restores sirtuin activity, DNA repair, and mitochondrial function.',
     fullDescription: `NAD+ (Nicotinamide Adenine Dinucleotide) is a coenzyme found in every living cell and essential for over 500 enzymatic reactions. It is most critical for mitochondrial energy production (ATP synthesis) and as a substrate for sirtuins — the longevity proteins that control epigenetic aging.
 
 **The Decline Problem**
@@ -352,7 +352,7 @@ Users report significant increases in physical energy within 1-2 weeks. Exercise
 
 **Stack with:** Epithalon + GHK-Cu for comprehensive anti-aging protocol.`,
     synergies: ['epithalon', 'ghk-cu', 'nad'],
-    seoTitle: 'Buy NAD+ 500mg | Cellular Energy, Sirtuins & Longevity | BPC-157 Stack',
+    seoTitle: 'Verified NAD+ 500mg | Cellular Energy, Sirtuins & Longevity | BPC-157 Stack',
     deepDiveTitle: 'NAD+: The Master Longevity Molecule That Powers Every Cell in Your Body',
     highlights: [
       { title: '50% Decline by 50', body: 'NAD+ levels drop approximately 50% between ages 20 and 50 — this decline drives most of the biochemical hallmarks of aging.' },
@@ -370,7 +370,7 @@ Users report significant increases in physical energy within 1-2 weeks. Exercise
     tags: ['anti-aging', 'skin', 'wrinkles', 'expression lines', 'topical', 'Botox-alternative'],
     image: IMG.snap8,
     affiliateUrl: aff('snap-8'),
-    shortDescription: 'SNAP-8 is a peptide that inhibits neuromuscular transmission to reduce expression wrinkles — a non-injection alternative to Botox with clinical efficacy data.',
+    shortDescription: 'Buy SNAP-8 — SNAP-8 is a peptide that inhibits neuromuscular transmission to reduce expression wrinkles — a non-injection alternative to Botox with clinical efficacy data.',
     fullDescription: `SNAP-8 (Acetyl Glutamyl Heptapeptide-3) is a synthetic octapeptide that mimics the N-terminal end of SNAP-25, a protein involved in neuromuscular signal transmission. By competing with SNAP-25, it reduces the release of neurotransmitters that cause muscle contractions — softening expression wrinkles without injections.
 
 **How It Works**
@@ -429,7 +429,7 @@ SNAP-8 + GHK-Cu is the definitive topical anti-aging stack: SNAP-8 reduces expre
     tags: ['growth hormone', 'GH', 'fat loss', 'muscle', 'sleep', 'recovery', 'GHRH', 'GHRP'],
     image: IMG.cjcipa,
     affiliateUrl: aff('cjc1295-ipamorelin'),
-    shortDescription: 'CJC-1295 + Ipamorelin is the gold standard GH peptide combination — synergistically producing 8-10x more growth hormone than either alone, with zero cortisol spike.',
+    shortDescription: 'CJC-1295 / Ipamorelin For Sale — CJC-1295 + Ipamorelin is the gold standard GH peptide combination — synergistically producing 8-10x more growth hormone than either alone, with zero cortisol spike.',
     fullDescription: `CJC-1295 (Modified GRF 1-29) is a synthetic GHRH analog. Ipamorelin is a selective GHRP (Growth Hormone Releasing Peptide). Together they form the most widely prescribed peptide combination in anti-aging and regenerative medicine clinics worldwide.
 
 **Why the Combination Works**
@@ -472,7 +472,7 @@ Months 2-4: Lean muscle gains, significant body composition shift`,
 
 **Cycle Length:** 3-6 months minimum for meaningful body composition changes.`,
     synergies: ['bpc-157', 'tb-500', 'igf-1lr3', 'nad'],
-    seoTitle: 'Buy CJC-1295 Ipamorelin | Gold Standard GH Stack for Fat Loss & Muscle | BPC-157 Stack',
+    seoTitle: 'CJC-1295 Ipamorelin For Sale | Gold Standard GH Stack for Fat Loss & Muscle | BPC-157 Stack',
     deepDiveTitle: 'CJC-1295 / Ipamorelin: The Clinic-Standard GH Peptide Stack That Transforms Body Composition',
     highlights: [
       { title: '8-10x GH Amplification', body: 'Synergistic GHRH + GHRP action produces 8-10x more GH than either peptide alone — the most powerful legal GH optimization available.' },
@@ -490,7 +490,7 @@ Months 2-4: Lean muscle gains, significant body composition shift`,
     tags: ['IGF-1', 'muscle growth', 'recovery', 'anabolic', 'satellite cells', 'performance'],
     image: IMG.igf,
     affiliateUrl: aff('igf-1lr3'),
-    shortDescription: 'IGF-1 LR3 is a long-acting analog of Insulin-Like Growth Factor 1 — activating muscle satellite cells and driving muscle hypertrophy and repair beyond what GH alone achieves.',
+    shortDescription: 'Cheap IGF-1 LR3 — IGF-1 LR3 is a long-acting analog of Insulin-Like Growth Factor 1 — activating muscle satellite cells and driving muscle hypertrophy and repair beyond what GH alone achieves.',
     fullDescription: `IGF-1 LR3 (Long R3 Insulin-Like Growth Factor 1) is a modified form of IGF-1 with an arginine substitution and an extended N-terminal peptide that dramatically increases its half-life from minutes to hours and reduces binding to IGF-binding proteins.
 
 **IGF-1 vs Growth Hormone**
@@ -533,7 +533,7 @@ IGF-1 LR3 is a potent compound. Due to its anabolic potency, it's best used in s
 
 **Caution:** Start at lowest dose (20mcg) to assess response. Monitor blood glucose — IGF-1 has mild hypoglycemic effects. Use with food nearby.`,
     synergies: ['cjc1295-ipamorelin', 'tb-500', 'bpc-157', 'nad'],
-    seoTitle: 'Buy IGF-1 LR3 | Muscle Satellite Cell Activator for Hypertrophy | BPC-157 Stack',
+    seoTitle: 'Cheap IGF-1 LR3 | Muscle Satellite Cell Activator for Hypertrophy | BPC-157 Stack',
     deepDiveTitle: 'IGF-1 LR3: The Long-Acting Growth Factor That Activates Muscle Satellite Cells',
     highlights: [
       { title: 'Satellite Cell Activation', body: 'IGF-1 LR3 activates muscle satellite cells — the stem cells that create new muscle fibers. This is the mechanism behind muscle hyperplasia, not just hypertrophy.' },
@@ -553,7 +553,7 @@ IGF-1 LR3 is a potent compound. Due to its anabolic potency, it's best used in s
     tags: ['GLP-1', 'semaglutide', 'weight loss', 'insulin', 'Ozempic', 'Wegovy', 'metabolic'],
     image: IMG.sema,
     affiliateUrl: aff('glp-1s-10mg'),
-    shortDescription: 'Semaglutide (GLP-1 S) is a GLP-1 receptor agonist with clinical trials showing 15-20% body weight reduction — the most effective pharmacological weight loss agent studied.',
+    shortDescription: 'Trusted GLP-1 S (Semaglutide) — Semaglutide (GLP-1 S) is a GLP-1 receptor agonist with clinical trials showing 15-20% body weight reduction — the most effective pharmacological weight loss agent studied.',
     fullDescription: `Semaglutide is a GLP-1 (Glucagon-Like Peptide-1) receptor agonist — a class of compounds that mimic the gut hormone GLP-1, which regulates appetite, insulin secretion, and gastric emptying. Commercially available as Ozempic (diabetes) and Wegovy (weight loss), semaglutide represents the most significant advancement in metabolic medicine in decades.
 
 **How It Works**
@@ -595,7 +595,7 @@ Semaglutide has shown benefits beyond weight loss:
 **Injection:** Once weekly subcutaneous. Rotate injection sites (abdomen, thigh, upper arm).
 **Note:** Consult a physician if using therapeutically.`,
     synergies: ['glp-2t-tirzepatide', 'nad', 'bpc-157'],
-    seoTitle: 'Buy GLP-1 S Semaglutide | 15-20% Weight Loss Research Peptide | BPC-157 Stack',
+    seoTitle: 'Trusted GLP-1 S Semaglutide | 15-20% Weight Loss Research Peptide | BPC-157 Stack',
     deepDiveTitle: 'Semaglutide (GLP-1 S): The Research Peptide Behind the Weight Loss Revolution',
     highlights: [
       { title: '15-20% Weight Reduction', body: 'STEP trials: average 15-20% body weight reduction over 68 weeks — the highest efficacy ever demonstrated in pharmaceutical weight loss research.' },
@@ -613,7 +613,7 @@ Semaglutide has shown benefits beyond weight loss:
     tags: ['GLP-1', 'GIP', 'tirzepatide', 'weight loss', 'Mounjaro', 'dual agonist', 'metabolic'],
     image: IMG.tirz,
     affiliateUrl: aff('glp-2t-15m'),
-    shortDescription: 'Tirzepatide (GLP-2 T) is a dual GIP/GLP-1 receptor agonist showing up to 22.5% body weight reduction in trials — outperforming semaglutide in head-to-head data.',
+    shortDescription: 'Verified GLP-2 T (Tirzepatide) — Tirzepatide (GLP-2 T) is a dual GIP/GLP-1 receptor agonist showing up to 22.5% body weight reduction in trials — outperforming semaglutide in head-to-head data.',
     fullDescription: `Tirzepatide is a first-in-class dual glucose-dependent insulinotropic polypeptide (GIP) and GLP-1 receptor agonist. By activating both receptor types simultaneously, it achieves superior weight loss efficacy compared to GLP-1 agonists alone. Available commercially as Mounjaro (diabetes) and Zepbound (obesity).
 
 **Why Dual Agonism Is More Effective**
@@ -658,7 +658,7 @@ In the SURPASS-2 trial directly comparing tirzepatide vs semaglutide, tirzepatid
 **Injection:** Once weekly subcutaneous. Rotate sites.
 `,
     synergies: ['glp-1s-semaglutide', 'glp-3r-retatrutide', 'nad'],
-    seoTitle: 'Buy GLP-2 T Tirzepatide | Dual GIP/GLP-1 for 22.5% Weight Loss | BPC-157 Stack',
+    seoTitle: 'Verified GLP-2 T Tirzepatide | Dual GIP/GLP-1 for 22.5% Weight Loss | BPC-157 Stack',
     deepDiveTitle: 'Tirzepatide (GLP-2 T): The Dual Agonist That Outperformed Semaglutide in Every Trial',
     highlights: [
       { title: '22.5% Weight Reduction', body: 'SURMOUNT-1: maximum dose achieved 22.5% body weight reduction — the highest efficacy ever demonstrated in controlled weight loss trials at the time of publication.' },
@@ -676,7 +676,7 @@ In the SURPASS-2 trial directly comparing tirzepatide vs semaglutide, tirzepatid
     tags: ['GLP-1', 'GIP', 'glucagon', 'retatrutide', 'triple agonist', 'weight loss', 'next-gen'],
     image: IMG.reta,
     affiliateUrl: aff('glp-3r-10mg'),
-    shortDescription: 'Retatrutide (GLP-3 R) is a triple GLP-1/GIP/glucagon receptor agonist showing 24% body weight reduction in Phase II — the most potent weight loss peptide in clinical development.',
+    shortDescription: 'Buy GLP-3 R (Retatrutide) — Retatrutide (GLP-3 R) is a triple GLP-1/GIP/glucagon receptor agonist showing 24% body weight reduction in Phase II — the most potent weight loss peptide in clinical development.',
     fullDescription: `Retatrutide is a triple receptor agonist simultaneously targeting GLP-1, GIP, and glucagon receptors — representing the next frontier beyond dual agonists like tirzepatide. It is in late-stage clinical development and has already demonstrated the most impressive weight loss data in clinical trial history.
 
 **Triple Mechanism**
@@ -739,7 +739,7 @@ Retatrutide is currently in Phase III trials. If results hold, it will represent
     tags: ['cagrilintide', 'semaglutide', 'amylin', 'GLP-1', 'combination', 'weight loss', 'next-gen'],
     image: IMG.cagri,
     affiliateUrl: aff('glp-1cglp-1s-5mg'),
-    shortDescription: 'Cagrisema combines cagrilintide (amylin analog) with semaglutide — targeting two separate appetite pathways for additive weight loss exceeding either compound alone.',
+    shortDescription: 'GLP-1 C + GLP-1 S (Cagrisema) For Sale — Cagrisema combines cagrilintide (amylin analog) with semaglutide — targeting two separate appetite pathways for additive weight loss exceeding either compound alone.',
     fullDescription: `Cagrisema is a novel combination of cagrilintide (a long-acting amylin analog) and semaglutide. This combination targets two completely distinct appetite regulatory systems simultaneously — the amylin pathway and the GLP-1 pathway — achieving additive weight loss superior to semaglutide alone.
 
 **The Amylin Pathway**
@@ -779,7 +779,7 @@ Cagrisema is in Phase III trials. Early data positions it between tirzepatide an
 
  Phase III compound. Clinical guidance required for pharmaceutical use.`,
     synergies: ['glp-1s-semaglutide', 'glp-2t-tirzepatide', 'glp-3r-retatrutide', 'nad'],
-    seoTitle: 'Buy Cagrisema GLP-1 C + GLP-1 S | Dual Amylin/GLP-1 for 25% Weight Loss | BPC-157 Stack',
+    seoTitle: 'Cagrisema GLP-1 C + GLP-1 S For Sale | Dual Amylin/GLP-1 for 25% Weight Loss | BPC-157 Stack',
     deepDiveTitle: 'Cagrisema: The Amylin + Semaglutide Combination That Rewrites Weight Loss Expectations',
     highlights: [
       { title: '25% vs 15%', body: 'REDEFINE trials: cagrisema achieved ~25% weight reduction vs ~15% for semaglutide alone — a 67% improvement from adding the amylin pathway.' },
@@ -799,7 +799,7 @@ Cagrisema is in Phase III trials. Early data positions it between tirzepatide an
     tags: ['GLP-1', 'semaglutide', 'weight loss', 'Ozempic', 'starter', 'metabolic'],
     image: IMG.sema5,
     affiliateUrl: aff('glp-1s-5mg'),
-    shortDescription: 'Semaglutide 5mg — ideal starter vial for GLP-1 weight loss protocols. Same compound as Ozempic/Wegovy at a research-grade price point for dose titration.',
+    shortDescription: 'Cheap GLP-1 S Semaglutide 5mg — Semaglutide 5mg — ideal starter vial for GLP-1 weight loss protocols. Same compound as Ozempic/Wegovy at a research-grade price point for dose titration.',
     fullDescription: `Semaglutide 5mg is the preferred starting size for GLP-1 receptor agonist protocols. At a 0.25mg/week starting dose, a single 5mg vial provides roughly 20 weeks of initial dosing — making it the ideal entry point for those new to GLP-1 therapy who want to assess tolerability before committing to larger vials. Starting low is not just cautious; it is the protocol that produced the clinical trial results.
 
 **Why Starting Low Matters**
@@ -826,7 +826,7 @@ A 5mg vial reconstituted with 2mL bacteriostatic water yields a 2.5mg/mL concent
 - Week 5-8: 0.2mL (0.5mg) weekly
 - Move to 10mg vial to continue escalation`,
     synergies: ['glp-2t-tirzepatide', 'glp-1s-semaglutide', 'nad', 'bpc-157'],
-    seoTitle: 'Buy Semaglutide 5mg | GLP-1 S Starter Dose Weight Loss | BPC-157 Stack',
+    seoTitle: 'Cheap Semaglutide 5mg | GLP-1 S Starter Dose Weight Loss | BPC-157 Stack',
     deepDiveTitle: 'Semaglutide 5mg: The Right Starting Size for Your GLP-1 Protocol',
     highlights: [
       { title: 'Starter Value', body: 'Perfect first vial — 20 weeks of starter dosing at 0.25mg/week while you assess tolerability.' },
@@ -844,7 +844,7 @@ A 5mg vial reconstituted with 2mL bacteriostatic water yields a 2.5mg/mL concent
     tags: ['GLP-1', 'semaglutide', 'weight loss', 'Wegovy', 'maintenance', 'full course'],
     image: IMG.sema15,
     affiliateUrl: aff('glp-1s-15mg'),
-    shortDescription: 'Semaglutide 15mg — the largest single-vial option for full-protocol GLP-1 weight loss. Covers multiple months at maintenance doses for maximum weight reduction.',
+    shortDescription: 'Trusted GLP-1 S Semaglutide 15mg — Semaglutide 15mg — the largest single-vial option for full-protocol GLP-1 weight loss. Covers multiple months at maintenance doses for maximum weight reduction.',
     fullDescription: `Semaglutide 15mg is the most cost-effective option for experienced GLP-1 users already at therapeutic doses. At 2mg/week, a 15mg vial provides 7.5 weeks of maximum-dose coverage. At 1mg/week, it covers 15 full weeks — making it the best value per milligram for committed users who have completed escalation and are maintaining their target dose.
 
 **STEP-1 Trial Data — What Maintenance Achieves**
@@ -870,7 +870,7 @@ Reconstitute with 3mL bacteriostatic water for a 5mg/mL concentration. At 2mg/we
 - Maintenance: 0.2mL (1mg) or 0.4mL (2mg) weekly
 - Store reconstituted; use within 28 days`,
     synergies: ['glp-2t-tirzepatide', 'glp-1s-semaglutide', 'nad', 'bpc-157'],
-    seoTitle: 'Buy Semaglutide 15mg | GLP-1 S Maximum Dose Long-Term Supply | BPC-157 Stack',
+    seoTitle: 'Trusted Semaglutide 15mg | GLP-1 S Maximum Dose Long-Term Supply | BPC-157 Stack',
     deepDiveTitle: 'Semaglutide 15mg: Most Economical Option for Full-Protocol GLP-1 Weight Loss',
     highlights: [
       { title: 'Best Value', body: 'Lowest per-milligram semaglutide price — optimal for users maintaining therapeutic doses.' },
@@ -888,7 +888,7 @@ Reconstitute with 3mL bacteriostatic water for a 5mg/mL concentration. At 2mg/we
     tags: ['GLP-1', 'GIP', 'tirzepatide', 'Mounjaro', 'high dose', 'escalation', 'dual agonist'],
     image: IMG.tirz30,
     affiliateUrl: aff('glp-2t-30mg'),
-    shortDescription: 'Tirzepatide 30mg — covers the complete escalation from 2.5mg to 7.5mg/week in one vial. Optimal size for full SURMOUNT protocol dosing.',
+    shortDescription: 'Verified GLP-2 T Tirzepatide 30mg — Tirzepatide 30mg — covers the complete escalation from 2.5mg to 7.5mg/week in one vial. Optimal size for full SURMOUNT protocol dosing.',
     fullDescription: `Tirzepatide 30mg is the ideal vial for running a complete escalation protocol from start to the mid-range dose. The SURMOUNT trial escalates from 2.5mg/week to 15mg/week over several months — a 30mg vial covers the first three escalation steps cleanly, providing 4 weeks at each dose level before needing to move to a larger vial.
 
 **SURMOUNT-1 Results at Maximum Dose**
@@ -915,7 +915,7 @@ Reconstitute with 3mL bacteriostatic water for a 10mg/mL concentration. Week 1-4
 - Weeks 5-8: 0.5mL (5mg) weekly
 - Weeks 9-12: 0.75mL (7.5mg) weekly — 22.5mg used`,
     synergies: ['glp-1s-semaglutide', 'glp-3r-retatrutide', 'glp-2t-tirzepatide', 'nad'],
-    seoTitle: 'Buy Tirzepatide 30mg | GLP-2 T Full Escalation Dual Agonist | BPC-157 Stack',
+    seoTitle: 'Verified Tirzepatide 30mg | GLP-2 T Full Escalation Dual Agonist | BPC-157 Stack',
     deepDiveTitle: 'Tirzepatide 30mg: Optimal Vial for Full-Protocol Dual GIP/GLP-1 Weight Loss',
     highlights: [
       { title: '22.5% Weight Loss', body: 'SURMOUNT-1 at 15mg: 22.5% body weight reduction — the highest weight loss ever demonstrated in a controlled trial at that time.' },
@@ -933,7 +933,7 @@ Reconstitute with 3mL bacteriostatic water for a 10mg/mL concentration. Week 1-4
     tags: ['GLP-1', 'GIP', 'tirzepatide', 'Mounjaro', 'bulk', 'maintenance', 'long-term'],
     image: IMG.tirz60,
     affiliateUrl: aff('glp-2-t-60mg'),
-    shortDescription: 'Tirzepatide 60mg — maximum bulk supply for long-term protocols at 10-15mg/week maintenance. Best per-milligram pricing for committed tirzepatide users.',
+    shortDescription: 'Buy GLP-2 T Tirzepatide 60mg — Tirzepatide 60mg — maximum bulk supply for long-term protocols at 10-15mg/week maintenance. Best per-milligram pricing for committed tirzepatide users.',
     fullDescription: `Tirzepatide 60mg provides the best economy of scale for users who have completed escalation and are maintaining at 10-15mg/week. At 10mg/week, one vial covers 6 full weeks. At 15mg/week (the maximum dose), a single vial covers 4 weeks. This is the bulk option for committed users who have verified their optimal dose and want to minimize cost and reconstitution frequency.
 
 **SURMOUNT-4 Withdrawal Data — Why Continuous Dosing Matters**
@@ -978,7 +978,7 @@ Reconstitute with 4-6mL bacteriostatic water to achieve a working concentration 
     tags: ['GLP-1', 'GIP', 'glucagon', 'retatrutide', 'triple agonist', 'Phase III', 'escalation'],
     image: IMG.reta15,
     affiliateUrl: aff('glp-3r-15mg'),
-    shortDescription: 'Retatrutide 15mg — starter vial for the world\'s most potent weight loss peptide in Phase III development. 24% weight loss with no plateau at 48 weeks.',
+    shortDescription: 'GLP-3 R Retatrutide 15mg For Sale — Retatrutide 15mg — starter vial for the world\'s most potent weight loss peptide in Phase III development. 24% weight loss with no plateau at 48 weeks.',
     fullDescription: `Retatrutide 15mg covers the first 7-8 weeks of the escalation protocol at 2mg/week, making it the ideal entry point for the most advanced weight loss peptide in clinical development. The triple receptor mechanism — simultaneously activating GLP-1, GIP, and glucagon receptors — adds hepatic fat oxidation and basal metabolic rate elevation beyond what dual agonists like tirzepatide can achieve, which is why Phase II data showed 24.2% weight reduction at 48 weeks.
 
 **The Glucagon Receptor Addition — Why It Matters**
@@ -1005,7 +1005,7 @@ Reconstitute with 3mL bacteriostatic water for a 5mg/mL concentration. At 2mg/we
 - Weeks 5-8: 0.8mL (4mg) weekly — all 15mg used
 - Continue with 30mg or 60mg vial`,
     synergies: ['glp-2t-tirzepatide', 'glp-1s-semaglutide', 'glp-3r-retatrutide', 'nad'],
-    seoTitle: 'Buy Retatrutide 15mg | GLP-3 R Triple Agonist Starter | BPC-157 Stack',
+    seoTitle: 'Retatrutide 15mg For Sale | GLP-3 R Triple Agonist Starter | BPC-157 Stack',
     deepDiveTitle: 'Retatrutide 15mg: Entry Point to the Most Potent Weight Loss Peptide in Development',
     highlights: [
       { title: '24% Weight Loss', body: 'Phase II: 24.2% body weight reduction at 48 weeks — highest ever in weight loss clinical history.' },
@@ -1023,7 +1023,7 @@ Reconstitute with 3mL bacteriostatic water for a 5mg/mL concentration. At 2mg/we
     tags: ['GLP-1', 'GIP', 'glucagon', 'retatrutide', 'triple agonist', 'escalation', 'weight loss'],
     image: IMG.reta30,
     affiliateUrl: aff('glp-3-r-30mg'),
-    shortDescription: 'Retatrutide 30mg — most practical vial for the complete triple agonist escalation protocol. Covers weeks 1-12 of the Phase II reference dosing schedule.',
+    shortDescription: 'Cheap GLP-3 R Retatrutide 30mg — Retatrutide 30mg — most practical vial for the complete triple agonist escalation protocol. Covers weeks 1-12 of the Phase II reference dosing schedule.',
     fullDescription: `Retatrutide 30mg covers the complete initial escalation from 2mg to 8mg/week over the first 8-10 weeks. Running 4 weeks at 2mg (8mg total) and 4 weeks at 4mg (16mg total) uses 24mg — leaving 6mg as a bridging dose before moving to the 60mg vial for high-dose maintenance. This makes the 30mg vial the most efficient single purchase for establishing the retatrutide protocol.
 
 **The Phase II Escalation Reference Protocol**
@@ -1050,7 +1050,7 @@ Reconstitute with 3mL bacteriostatic water for a 10mg/mL concentration, making d
 - Weeks 5-8: 4mg (0.4mL) weekly — 24mg used
 - Remaining 6mg bridges to 60mg vial`,
     synergies: ['glp-2t-tirzepatide', 'glp-1s-semaglutide', 'glp-3r-retatrutide-15mg', 'nad'],
-    seoTitle: 'Buy Retatrutide 30mg | GLP-3 R Full Escalation Triple Agonist | BPC-157 Stack',
+    seoTitle: 'Cheap Retatrutide 30mg | GLP-3 R Full Escalation Triple Agonist | BPC-157 Stack',
     deepDiveTitle: 'Retatrutide 30mg: Most Efficient Vial for Triple Agonist Escalation Protocol',
     highlights: [
       { title: 'Full 8-Week Escalation', body: 'Covers weeks 1-8 from 2mg to 4mg/week — the most efficient single vial for starting the retatrutide protocol.' },
@@ -1068,7 +1068,7 @@ Reconstitute with 3mL bacteriostatic water for a 10mg/mL concentration, making d
     tags: ['GLP-1', 'GIP', 'glucagon', 'retatrutide', 'triple agonist', 'bulk', 'maximum dose'],
     image: IMG.reta60,
     affiliateUrl: aff('glp-3-r-60mg'),
-    shortDescription: 'Retatrutide 60mg — bulk supply for the most potent weight loss peptide in Phase III. Optimal for maintenance dosing at 8-12mg/week with the lowest per-mg cost.',
+    shortDescription: 'Trusted GLP-3 R Retatrutide 60mg — Retatrutide 60mg — bulk supply for the most potent weight loss peptide in Phase III. Optimal for maintenance dosing at 8-12mg/week with the lowest per-mg cost.',
     fullDescription: `Retatrutide 60mg is the bulk format for experienced users who have completed the escalation protocol and are maintaining at 8-12mg/week. At 12mg/week it provides 5 full weeks of uninterrupted treatment. At 8mg/week, one vial covers 7.5 weeks. Phase II data at 12mg/week showed continued weight loss through 48 weeks without plateau — the only weight loss compound to demonstrate this, and the core reason continuous uninterrupted high-dose use is both achievable and clinically justified.
 
 **No Plateau at 48 Weeks — The Critical Finding**
@@ -1095,7 +1095,7 @@ The 60mg vial represents the lowest per-milligram cost for retatrutide. Reconsti
 - At 12mg/week: 1.2mL weekly — 5 weeks supply
 - Refrigerate; use within 28 days`,
     synergies: ['glp-2t-tirzepatide-60mg', 'glp-1s-semaglutide-15mg', 'glp-3r-retatrutide-30mg', 'nad'],
-    seoTitle: 'Buy Retatrutide 60mg | GLP-3 R Bulk Maximum Dose Triple Agonist | BPC-157 Stack',
+    seoTitle: 'Trusted Retatrutide 60mg | GLP-3 R Bulk Maximum Dose Triple Agonist | BPC-157 Stack',
     deepDiveTitle: 'Retatrutide 60mg: Bulk Maintenance Supply for the Most Potent Weight Loss Peptide',
     highlights: [
       { title: 'Best Bulk Value', body: 'Lowest per-mg retatrutide cost — for experienced users maintaining at 8-12mg/week long-term.' },
@@ -1115,7 +1115,7 @@ The 60mg vial represents the lowest per-milligram cost for retatrutide. Reconsti
     tags: ['reconstitution', 'bacteriostatic water', 'injection supplies', 'essential', 'peptide prep'],
     image: IMG.bacwater,
     affiliateUrl: aff('bacteriostatic-water-reconstitution-solution-10ml'),
-    shortDescription: 'Pharmaceutical-grade bacteriostatic water for safe peptide reconstitution — contains 0.9% benzyl alcohol to prevent bacterial growth in multi-use vials.',
+    shortDescription: 'Verified Bacteriostatic Water 10mL — Pharmaceutical-grade bacteriostatic water for safe peptide reconstitution — contains 0.9% benzyl alcohol to prevent bacterial growth in multi-use vials.',
     fullDescription: `Bacteriostatic water is sterile water containing 0.9% benzyl alcohol as a bacteriostatic agent. It is specifically designed for reconstituting lyophilized (freeze-dried) peptides and other compounds. Using the correct reconstitution solution is essential for maintaining peptide integrity, purity, and sterility.
 
 **Why Bacteriostatic Water, Not Sterile Water**
@@ -1155,7 +1155,7 @@ Reconstituted peptides stored with bacteriostatic water should be refrigerated a
 
 **Standard ratio:** 1mL per 5mg peptide = 5,000mcg/mL concentration.`,
     synergies: ['bpc-157', 'tb-500', 'cjc1295-ipamorelin', 'epithalon'],
-    seoTitle: 'Buy Bacteriostatic Water 10mL | Peptide Reconstitution Solution | BPC-157 Stack',
+    seoTitle: 'Verified Bacteriostatic Water 10mL | Peptide Reconstitution Solution | BPC-157 Stack',
     deepDiveTitle: 'Bacteriostatic Water: Why Correct Reconstitution Is Critical for Peptide Safety and Efficacy',
     highlights: [
       { title: 'Bacteriostatic Protection', body: '0.9% benzyl alcohol prevents bacterial contamination for 28+ days after opening — essential for multi-use vials and repeated dosing.' },
@@ -1176,7 +1176,7 @@ Reconstituted peptides stored with bacteriostatic water should be refrigerated a
     tags: ['BPC-157', 'TB-500', 'Blend', 'Healing', 'Recovery', 'Injury'],
     image: 'https://phiogen.is/images/products/bpc-157-tb-500-blend-bpc-157-10mg-tb-500-10mg.png',
     affiliateUrl: 'https://phiogen.is/products/bpc-157-tb-500-blend-bpc-157-10mg-tb-500-10mg?ref=PEPS',
-    shortDescription: 'A 20mg blend of BPC-157 (10mg) and TB-500 (10mg) combining gut-brain healing with systemic tissue remodeling for comprehensive injury recovery.',
+    shortDescription: 'Buy BPC-157 + TB-500 Blend 20mg — A 20mg blend of BPC-157 (10mg) and TB-500 (10mg) combining gut-brain healing with systemic tissue remodeling for comprehensive injury recovery.',
     fullDescription: `**The Synergistic Healing Stack**
 
 BPC-157 and TB-500 are the two most widely researched regenerative peptides available, and combining them in a single vial creates a healing protocol that addresses injury from multiple biological angles. BPC-157 operates primarily through the NO-cGMP pathway, promoting angiogenesis and modulating growth hormone receptors locally at sites of damage. TB-500 (Thymosin Beta-4) acts systemically by upregulating actin polymerization, facilitating cell migration, and reducing inflammation across connective tissue.
@@ -1225,7 +1225,7 @@ Athletes dealing with chronic overuse injuries, post-surgical patients, or anyon
     tags: ['BPC-157', 'TB-500', 'Blend', 'Healing', 'Recovery'],
     image: 'https://phiogen.is/images/products/bpc-157-tb-500-blend-bpc-157-5mg-tb-500-5mg.png',
     affiliateUrl: 'https://phiogen.is/products/bpc-157-tb-500-blend-bpc-157-5mg-tb-500-5mg?ref=PEPS',
-    shortDescription: 'A 10mg blend of BPC-157 (5mg) and TB-500 (5mg) — an accessible entry point for the gold-standard healing peptide combination.',
+    shortDescription: 'BPC-157 + TB-500 Blend 10mg For Sale — A 10mg blend of BPC-157 (5mg) and TB-500 (5mg) — an accessible entry point for the gold-standard healing peptide combination.',
     fullDescription: `**Starting the Healing Stack**
 
 The 10mg blend (5mg BPC-157 + 5mg TB-500) provides a cost-effective introduction to the most powerful healing peptide combination in the research community. This smaller dose is ideal for new users testing their response, for shorter acute injury protocols, or as a maintenance dose following a full 20mg cycle.
@@ -1253,7 +1253,7 @@ Many users start with this 10mg blend, assess their recovery response, and then 
 
 **Injection route:** Subcutaneous near injury site`,
     synergies: ['bpc-157', 'tb-500', 'ghk-cu', 'epithalon'],
-    seoTitle: 'Buy BPC-157 + TB-500 Blend 10mg | Healing Peptide Starter | Injury Recovery',
+    seoTitle: 'BPC-157 + TB-500 Blend 10mg For Sale | Healing Peptide Starter | Injury Recovery',
     deepDiveTitle: 'BPC-157 + TB-500 10mg Blend: Accessible Dual-Peptide Healing for Every Budget',
     highlights: [
       { title: '5mg + 5mg Formula', body: 'Delivers 5mg of each peptide — enough for a full acute protocol at standard doses or an extended maintenance cycle.' },
@@ -1272,7 +1272,7 @@ Many users start with this 10mg blend, assess their recovery response, and then 
     tags: ['BPC-157', 'Capsules', 'Oral', 'Gut Healing', 'Recovery'],
     image: 'https://phiogen.is/images/products/bpc-157-capsules-500mcg-x-60-capsules.png',
     affiliateUrl: 'https://phiogen.is/products/bpc-157-capsules-500mcg-x-60-capsules?ref=PEPS',
-    shortDescription: '60 capsules of 500mcg BPC-157 each — the needle-free option for gut healing, leaky gut, and systemic recovery via oral administration.',
+    shortDescription: 'Cheap BPC-157 Capsules 500mcg x60 — 60 capsules of 500mcg BPC-157 each — the needle-free option for gut healing, leaky gut, and systemic recovery via oral administration.',
     fullDescription: `**Oral BPC-157: The Gut-First Approach**
 
 BPC-157 was originally discovered as a fragment derived from gastric juice proteins, making oral delivery a scientifically sound route — particularly for gastrointestinal applications. Each capsule contains 500mcg of BPC-157, providing a 60-day supply at standard daily dosing. Oral BPC-157 bypasses the need for injection while still delivering meaningful systemic concentrations for many users.
@@ -1300,7 +1300,7 @@ No reconstitution, no needles, no refrigeration concerns. Simply take 1-2 capsul
 
 **Timing:** Take 30 minutes before meals for best GI absorption`,
     synergies: ['bpc-157', 'tb-500', 'ghk-cu', 'kpv-10mg'],
-    seoTitle: 'Buy BPC-157 Capsules 500mcg x60 | Oral BPC-157 for Gut Healing | No Injection',
+    seoTitle: 'Cheap BPC-157 Capsules 500mcg x60 | Oral BPC-157 for Gut Healing | No Injection',
     deepDiveTitle: 'Oral BPC-157 Capsules: Gut-Targeted Healing Without Needles',
     highlights: [
       { title: '60-Day Supply', body: '60 capsules at 500mcg each provides a full two-month protocol at standard daily dosing — exceptional value for a complete healing cycle.' },
@@ -1319,7 +1319,7 @@ No reconstitution, no needles, no refrigeration concerns. Simply take 1-2 capsul
     tags: ['BPC-157', 'Capsules', 'Oral', 'High-Dose', 'Gut Healing'],
     image: 'https://phiogen.is/images/products/bpc-157-capsules-500mcg-x-60-capsules.png',
     affiliateUrl: 'https://phiogen.is/products/bpc-157-capsules-500mcg-x-60-capsules?ref=PEPS',
-    shortDescription: '30 capsules of 1000mcg BPC-157 — double-strength oral formula for intensive gut repair, acute GI conditions, and accelerated systemic recovery.',
+    shortDescription: 'Trusted BPC-157 Capsules 1000mcg x30 — 30 capsules of 1000mcg BPC-157 — double-strength oral formula for intensive gut repair, acute GI conditions, and accelerated systemic recovery.',
     fullDescription: `**Double-Strength Oral BPC-157**
 
 The 1000mcg capsule format delivers twice the per-dose concentration compared to standard 500mcg capsules, making it ideal for users who need intensive gut healing or prefer single-capsule dosing at higher therapeutic amounts. With 30 capsules, this provides a full month of daily high-dose therapy or two months of 500mcg dosing split from each capsule.
@@ -1346,7 +1346,7 @@ Compared to the 500mcg x60 format, this 1000mcg x30 option suits users who prefe
 
 **Timing:** Morning on empty stomach for maximum gut absorption`,
     synergies: ['bpc-157', 'tb-500', 'kpv-10mg', 'ghk-cu'],
-    seoTitle: 'Buy BPC-157 Capsules 1000mcg x30 | High-Dose Oral BPC-157 | Gut Repair',
+    seoTitle: 'Trusted BPC-157 Capsules 1000mcg x30 | High-Dose Oral BPC-157 | Gut Repair',
     deepDiveTitle: 'BPC-157 1000mcg Capsules: High-Dose Oral Therapy for Intensive Gut and Systemic Healing',
     highlights: [
       { title: '1mg Per Capsule', body: 'Each capsule delivers a full 1000mcg (1mg) of BPC-157 — the higher therapeutic range for acute gut conditions and intensive recovery phases.' },
@@ -1365,7 +1365,7 @@ Compared to the 500mcg x60 format, this 1000mcg x30 option suits users who prefe
     tags: ['BPC-157', 'Injectable', 'Healing', 'Tendon', 'Gut'],
     image: 'https://phiogen.is/images/products/bpc-157-10mg.png',
     affiliateUrl: 'https://phiogen.is/products/bpc-157-10mg?ref=PEPS',
-    shortDescription: 'Injectable BPC-157 5mg — the foundational healing peptide for tendon repair, gut healing, nerve regeneration, and anti-inflammatory support.',
+    shortDescription: 'Verified BPC-157 5mg — Injectable BPC-157 5mg — the foundational healing peptide for tendon repair, gut healing, nerve regeneration, and anti-inflammatory support.',
     fullDescription: `**The Most Researched Healing Peptide**
 
 Body Protection Compound-157 (BPC-157) is a 15-amino-acid peptide derived from a protein found in gastric juice. It has accumulated one of the largest bodies of preclinical research of any healing peptide, demonstrating regenerative effects on tendons, ligaments, muscles, the gut lining, peripheral nerves, and even brain tissue. The 5mg vial provides approximately 10–20 days of standard injectable dosing.
@@ -1394,7 +1394,7 @@ The 5mg vial is the standard entry dose for BPC-157 protocols. It's commonly sta
 - Systemic: inject in abdominal subcutaneous fat
 - Cycle: 4–8 weeks on, 2–4 weeks off`,
     synergies: ['tb-500', 'ghk-cu', 'bpc-157-tb-500-blend-20mg', 'kpv-10mg'],
-    seoTitle: 'Buy BPC-157 5mg | Injectable Healing Peptide | Tendon Repair & Gut Health',
+    seoTitle: 'Verified BPC-157 5mg | Injectable Healing Peptide | Tendon Repair & Gut Health',
     deepDiveTitle: 'BPC-157 5mg: The Complete Guide to the Most Versatile Healing Peptide',
     highlights: [
       { title: 'Tendon & Ligament Repair', body: 'BPC-157 is the most studied peptide for tendon-to-bone healing, significantly accelerating recovery from common sports injuries in animal models.' },
@@ -1413,7 +1413,7 @@ The 5mg vial is the standard entry dose for BPC-157 protocols. It's commonly sta
     tags: ['BPC-157', 'Injectable', 'Healing', 'High-Dose', 'Extended Protocol'],
     image: 'https://phiogen.is/images/products/bpc-157-10mg.png',
     affiliateUrl: 'https://phiogen.is/products/bpc-157-10mg?ref=PEPS',
-    shortDescription: 'A 20mg vial of injectable BPC-157 — ideal for extended healing protocols, high-dose research applications, and users who prefer fewer reconstitutions.',
+    shortDescription: 'Buy BPC-157 20mg — A 20mg vial of injectable BPC-157 — ideal for extended healing protocols, high-dose research applications, and users who prefer fewer reconstitutions.',
     fullDescription: `**Extended Protocol Supply**
 
 The 20mg BPC-157 vial is designed for researchers and users who require a sustained, long-cycle approach to tissue healing. At standard dosing (250–500mcg twice daily), a single 20mg vial provides 20–40 days of continuous therapy without the need to reconstitute a new vial mid-protocol — ensuring consistent dosing and reducing preparation overhead.
@@ -1462,7 +1462,7 @@ For those studying BPC-157's systemic effects across longer timeframes — cardi
     tags: ['KPV', 'Anti-Inflammatory', 'Gut Healing', 'IBD', 'Immune'],
     image: 'https://phiogen.is/images/products/kpv-10mg.png',
     affiliateUrl: 'https://phiogen.is/products/kpv-10mg?ref=PEPS',
-    shortDescription: 'KPV (Lys-Pro-Val) is a naturally occurring C-terminal alpha-MSH tripeptide with potent anti-inflammatory properties targeting the gut lining and immune system.',
+    shortDescription: 'KPV 10mg For Sale — KPV (Lys-Pro-Val) is a naturally occurring C-terminal alpha-MSH tripeptide with potent anti-inflammatory properties targeting the gut lining and immune system.',
     fullDescription: `**Nature's Anti-Inflammatory Tripeptide**
 
 KPV is a tripeptide (Lysine-Proline-Valine) that represents the active C-terminal fragment of alpha-melanocyte-stimulating hormone (α-MSH). It retains the anti-inflammatory properties of the full α-MSH molecule while being significantly smaller and more stable. KPV acts directly on intestinal epithelial cells and immune cells to reduce pro-inflammatory cytokine production, making it one of the most targeted peptides for gut-specific inflammation.
@@ -1491,7 +1491,7 @@ Research has demonstrated KPV's efficacy in models of colitis, Crohn's disease, 
 - Acute flare: 500mcg twice daily for 2 weeks, then maintenance
 - Cycle: 4–8 weeks`,
     synergies: ['bpc-157', 'bpc-157-capsules', 'tb-500', 'll-37'],
-    seoTitle: 'Buy KPV 10mg | Anti-Inflammatory Peptide | Gut Healing & IBD Support',
+    seoTitle: 'KPV 10mg For Sale | Anti-Inflammatory Peptide | Gut Healing & IBD Support',
     deepDiveTitle: 'KPV Peptide: The Tripeptide Targeting Gut Inflammation at the Cellular Level',
     highlights: [
       { title: 'NF-κB Suppression', body: 'KPV directly inhibits NF-κB, the master switch for inflammatory gene expression — delivering targeted anti-inflammatory action without systemic immune suppression.' },
@@ -1510,7 +1510,7 @@ Research has demonstrated KPV's efficacy in models of colitis, Crohn's disease, 
     tags: ['LL-37', 'Antimicrobial', 'Immune', 'Host Defense', 'Wound Healing'],
     image: 'https://phiogen.is/images/products/ll-37-10mg.png',
     affiliateUrl: 'https://phiogen.is/products/ll-37-10mg?ref=PEPS',
-    shortDescription: 'LL-37 is the only human cathelicidin — a host defense peptide that kills bacteria, modulates immune responses, and promotes wound healing and angiogenesis.',
+    shortDescription: 'Cheap LL-37 5mg — LL-37 is the only human cathelicidin — a host defense peptide that kills bacteria, modulates immune responses, and promotes wound healing and angiogenesis.',
     fullDescription: `**The Body's Own Defense Molecule**
 
 LL-37 is a 37-amino-acid peptide that is the sole human cathelicidin, part of the innate immune system's first-line defense against pathogens. Named for its leucine-leucine (LL) N-terminus and 37-amino-acid length, it is naturally produced by neutrophils, macrophages, and epithelial cells. Beyond its antimicrobial activity, LL-37 has emerged as a potent regulator of immune responses, wound healing, and angiogenesis.
@@ -1540,7 +1540,7 @@ LL-37 deficiency has been linked to chronic non-healing wounds, recurrent skin i
 
 **Note:** LL-37 has broad biological activity; start at lower doses`,
     synergies: ['bpc-157', 'kpv-10mg', 'ghk-cu', 'tb-500'],
-    seoTitle: 'Buy LL-37 5mg | Human Cathelicidin Peptide | Antimicrobial & Wound Healing',
+    seoTitle: 'Cheap LL-37 5mg | Human Cathelicidin Peptide | Antimicrobial & Wound Healing',
     deepDiveTitle: 'LL-37: The Only Human Cathelicidin and Its Role in Immune Defense and Tissue Repair',
     highlights: [
       { title: 'Sole Human Cathelicidin', body: 'LL-37 is the only cathelicidin expressed in humans — making it a unique and irreplaceable component of innate immune defense and wound repair biology.' },
@@ -1559,7 +1559,7 @@ LL-37 deficiency has been linked to chronic non-healing wounds, recurrent skin i
     tags: ['BPC', 'Pentadecapeptide', 'Healing', 'Gut', 'Stable'],
     image: 'https://phiogen.is/images/products/bpc-157-10mg.png',
     affiliateUrl: 'https://phiogen.is/products/bpc-157-10mg?ref=PEPS',
-    shortDescription: 'Pentadecapeptide BPC is a stable, research-verified form of the 15-amino-acid body protection compound — active via injectable and oral routes for comprehensive healing.',
+    shortDescription: 'Trusted Pentadecapeptide BPC 10mg — Pentadecapeptide BPC is a stable, research-verified form of the 15-amino-acid body protection compound — active via injectable and oral routes for comprehensive healing.',
     fullDescription: `**The Research-Verified BPC Sequence**
 
 Pentadecapeptide BPC refers to the verified 15-amino-acid sequence of Body Protection Compound, the same sequence originally isolated from gastric juice and studied extensively across more than 500 publications. This designation emphasizes the verified peptide identity and purity, confirming the exact research sequence that has been used in virtually all BPC-157 studies to date.
@@ -1585,7 +1585,7 @@ Applications span the full range of BPC-157 research: tendon and ligament repair
 
 **Cycle:** 4–8 weeks, 2–4 weeks off`,
     synergies: ['tb-500', 'bpc-157', 'kpv-10mg', 'ghk-cu'],
-    seoTitle: 'Buy Pentadecapeptide BPC 10mg | Research BPC Peptide | Gut & Tissue Healing',
+    seoTitle: 'Trusted Pentadecapeptide BPC 10mg | Research BPC Peptide | Gut & Tissue Healing',
     deepDiveTitle: 'Pentadecapeptide BPC: The Verified Research Sequence Behind 500+ BPC-157 Studies',
     highlights: [
       { title: 'Research-Verified Sequence', body: 'Pentadecapeptide BPC is the exact 15-amino-acid sequence used in the scientific literature — ensuring your results match what the research predicts.' },
@@ -1604,7 +1604,7 @@ Applications span the full range of BPC-157 research: tendon and ligament repair
     tags: ['PT-141', 'Bremelanotide', 'Sexual Health', 'Libido', 'Melanocortin'],
     image: 'https://phiogen.is/images/products/pt-141-10mg.png',
     affiliateUrl: 'https://phiogen.is/products/pt-141-10mg?ref=PEPS',
-    shortDescription: 'PT-141 (Bremelanotide) is an FDA-referenced melanocortin receptor agonist that enhances sexual arousal and libido in both men and women through central nervous system pathways.',
+    shortDescription: 'Verified PT-141 (Bremelanotide) 10mg — PT-141 (Bremelanotide) is an FDA-referenced melanocortin receptor agonist that enhances sexual arousal and libido in both men and women through central nervous system pathways.',
     fullDescription: `**Central Pathway Sexual Enhancement**
 
 PT-141 (Bremelanotide) is unique among sexual health compounds because it acts through the central nervous system rather than through cardiovascular mechanisms. By activating melanocortin receptors MC3R and MC4R in the hypothalamus, PT-141 directly triggers sexual arousal pathways — making it effective regardless of vascular health status, unlike PDE5 inhibitors such as sildenafil.
@@ -1634,7 +1634,7 @@ In men, PT-141 enhances erectile function through a mechanism entirely separate 
 
 **Common side effects:** Transient nausea, flushing — typically resolve within 2 hours`,
     synergies: ['tb-500', 'bpc-157', 'nad-100mg', 'ghk-cu'],
-    seoTitle: 'Buy PT-141 Bremelanotide 10mg | Sexual Health Peptide | Libido Enhancement',
+    seoTitle: 'Verified PT-141 Bremelanotide 10mg | Sexual Health Peptide | Libido Enhancement',
     deepDiveTitle: 'PT-141 Bremelanotide: The CNS Sexual Arousal Peptide With FDA-Referenced Mechanism',
     highlights: [
       { title: 'CNS, Not Vascular', body: 'Unlike Viagra or Cialis, PT-141 works through brain receptors — activating hypothalamic arousal centers directly, independent of blood pressure or vascular health.' },
@@ -1653,7 +1653,7 @@ In men, PT-141 enhances erectile function through a mechanism entirely separate 
     tags: ['Selank', 'Anxiety', 'Nootropic', 'BDNF', 'Cognitive'],
     image: 'https://phiogen.is/images/products/selank-10mg.png',
     affiliateUrl: 'https://phiogen.is/products/selank-10mg?ref=PEPS',
-    shortDescription: 'Selank is a synthetic heptapeptide anxiolytic developed by the Russian Academy of Sciences — reduces anxiety without sedation while enhancing BDNF and cognitive function.',
+    shortDescription: 'Buy Selank 5mg — Selank is a synthetic heptapeptide anxiolytic developed by the Russian Academy of Sciences — reduces anxiety without sedation while enhancing BDNF and cognitive function.',
     fullDescription: `**Russia's Non-Sedating Anxiolytic Peptide**
 
 Selank was developed at the Institute of Molecular Genetics in Russia as a synthetic analog of the endogenous immunomodulatory peptide tuftsin. Approved as a pharmaceutical in Russia for anxiety disorders, it has gained international attention as a research peptide with a unique profile: anxiolytic effects comparable to benzodiazepines without sedation, addiction potential, or cognitive impairment.
@@ -1701,7 +1701,7 @@ Users report reduced anxiety, improved stress resilience, enhanced focus, and be
     tags: ['Semax', 'Nootropic', 'BDNF', 'Neuroprotective', 'Cognitive'],
     image: 'https://phiogen.is/images/products/n-acetyl-semax-amidate-30mg.png',
     affiliateUrl: 'https://phiogen.is/products/n-acetyl-semax-amidate-30mg?ref=PEPS',
-    shortDescription: 'Semax is a synthetic ACTH(4-7) analog developed in Russia for cognitive enhancement, neuroprotection, and recovery from stroke or brain injury.',
+    shortDescription: 'Semax 10mg For Sale — Semax is a synthetic ACTH(4-7) analog developed in Russia for cognitive enhancement, neuroprotection, and recovery from stroke or brain injury.',
     fullDescription: `**ACTH-Derived Neuroprotective Peptide**
 
 Semax is a heptapeptide analog of ACTH(4-10) developed by the Institute of Molecular Genetics in Moscow. Approved in Russia and Ukraine for stroke rehabilitation, brain trauma recovery, and cognitive disorders, it has emerged as one of the most potent nootropic peptides available for research. Semax dramatically increases BDNF, NGF, and other neurotrophic factors while providing neuroprotection against ischemic damage.
@@ -1730,7 +1730,7 @@ Clinically, Semax has been used for stroke rehabilitation, ADHD-like attention d
 - Cycle: 2–4 weeks on, 1–2 weeks off
 - Intranasal route preferred for direct CNS delivery`,
     synergies: ['selank', 'dihexa', 'cerebrolysin', 'dsip'],
-    seoTitle: 'Buy Semax 10mg | Nootropic Peptide | BDNF Upregulation & Neuroprotection',
+    seoTitle: 'Semax 10mg For Sale | Nootropic Peptide | BDNF Upregulation & Neuroprotection',
     deepDiveTitle: 'Semax: ACTH-Analog Neuropeptide That Transforms Cognitive Performance Through BDNF',
     highlights: [
       { title: 'BDNF Amplification', body: 'Semax produces some of the largest BDNF increases of any known compound — the neurotrophic factor that drives neuroplasticity, learning, and neuronal survival.' },
@@ -1749,7 +1749,7 @@ Clinically, Semax has been used for stroke rehabilitation, ADHD-like attention d
     tags: ['TB-500', 'Thymosin Beta-4', 'Healing', 'Recovery', 'Anti-Inflammatory'],
     image: 'https://phiogen.is/images/products/tb-500-thymosin-beta-4-5mg.png',
     affiliateUrl: 'https://phiogen.is/products/tb-500-thymosin-beta-4-5mg?ref=PEPS',
-    shortDescription: 'TB-500 (Thymosin Beta-4) 5mg — the systemic tissue repair peptide that promotes actin regulation, cell migration, and anti-inflammatory healing throughout the body.',
+    shortDescription: 'Cheap TB-500 5mg — TB-500 (Thymosin Beta-4) 5mg — the systemic tissue repair peptide that promotes actin regulation, cell migration, and anti-inflammatory healing throughout the body.',
     fullDescription: `**Systemic Tissue Repair Through Actin Regulation**
 
 TB-500, the synthetic form of Thymosin Beta-4 (Tβ4), is a 43-amino-acid peptide that regulates cellular actin — the structural protein fundamental to cell migration, proliferation, and differentiation. By sequestering G-actin and promoting actin polymerization, TB-500 facilitates the movement of cells to injury sites, accelerating tissue repair in muscle, tendon, ligament, skin, and cardiac tissue systemically.
@@ -1779,7 +1779,7 @@ While BPC-157 operates primarily through local NO-cGMP pathways, TB-500 acts sys
 
 **Stack:** Combine with BPC-157 for synergistic healing`,
     synergies: ['bpc-157', 'bpc-157-tb-500-blend-20mg', 'ghk-cu', 'tb4-frag'],
-    seoTitle: 'Buy TB-500 5mg | Thymosin Beta-4 Peptide | Systemic Tissue Repair',
+    seoTitle: 'Cheap TB-500 5mg | Thymosin Beta-4 Peptide | Systemic Tissue Repair',
     deepDiveTitle: 'TB-500 Thymosin Beta-4: Systemic Healing Through Actin Regulation and Cell Migration',
     highlights: [
       { title: 'Systemic Action', body: 'Unlike locally-acting peptides, TB-500 works throughout the entire body regardless of injection site — ideal for widespread injury, multiple areas, or inaccessible deep tissue.' },
@@ -1798,7 +1798,7 @@ While BPC-157 operates primarily through local NO-cGMP pathways, TB-500 acts sys
     tags: ['TB-500', 'Thymosin Beta-4', 'Healing', 'High-Dose', 'Extended Protocol'],
     image: 'https://phiogen.is/images/products/tb-500-thymosin-beta-4-20mg.png',
     affiliateUrl: 'https://phiogen.is/products/tb-500-thymosin-beta-4-20mg?ref=PEPS',
-    shortDescription: 'TB-500 (Thymosin Beta-4) 20mg — maximum supply for extended healing cycles, loading protocols, and research requiring sustained systemic tissue repair.',
+    shortDescription: 'Trusted TB-500 20mg — TB-500 (Thymosin Beta-4) 20mg — maximum supply for extended healing cycles, loading protocols, and research requiring sustained systemic tissue repair.',
     fullDescription: `**Extended Supply for Comprehensive Recovery**
 
 The TB-500 20mg vial is designed for users committed to a full therapeutic loading and maintenance protocol or for research applications requiring multiple cycles. At the standard loading dose of 2–2.5mg twice weekly, a 20mg vial provides 4–5 weeks of loading phase supply — matching exactly with the typical protocol structure before transitioning to a maintenance schedule.
@@ -1826,7 +1826,7 @@ For researchers running multiple TB-500 cycles or studying its cardiovascular, m
 
 **Storage:** Refrigerate; use within 30 days of reconstitution`,
     synergies: ['bpc-157-20mg', 'bpc-157-tb-500-blend-20mg', 'ghk-cu', 'tb4-frag'],
-    seoTitle: 'Buy TB-500 20mg | High-Volume Thymosin Beta-4 | Extended Healing Protocol',
+    seoTitle: 'Trusted TB-500 20mg | High-Volume Thymosin Beta-4 | Extended Healing Protocol',
     deepDiveTitle: 'TB-500 20mg: Maximum Thymosin Beta-4 Supply for Full Loading and Maintenance Protocols',
     highlights: [
       { title: '20mg Single Vial', body: 'A full loading phase supply in one vial — no mid-protocol disruption, no batch variance, and a straightforward path through the complete loading schedule.' },
@@ -1845,7 +1845,7 @@ For researchers running multiple TB-500 cycles or studying its cardiovascular, m
     tags: ['Thymosin Alpha-1', 'Immune', 'Antiviral', 'Thymus', 'Immune Modulation'],
     image: 'https://phiogen.is/images/products/thymosin-alpha-1-5mg.png',
     affiliateUrl: 'https://phiogen.is/products/thymosin-alpha-1-5mg?ref=PEPS',
-    shortDescription: 'Thymosin Alpha-1 (Tα1) is an endogenous thymic peptide that modulates T-cell function, enhances antiviral immunity, and has FDA-approved applications in cancer and hepatitis treatment.',
+    shortDescription: 'Verified Thymosin Alpha-1 5mg — Thymosin Alpha-1 (Tα1) is an endogenous thymic peptide that modulates T-cell function, enhances antiviral immunity, and has FDA-approved applications in cancer and hepatitis treatment.',
     fullDescription: `**The Thymus-Derived Immune Regulator**
 
 Thymosin Alpha-1 is a 28-amino-acid peptide naturally secreted by the thymus gland that plays a central role in T-cell maturation and immune system regulation. First isolated in the 1970s by Allan Goldstein, it has since been approved (as Zadaxin) in over 35 countries for treatment of hepatitis B, hepatitis C, and as an adjunct in cancer chemotherapy. Its unique mechanism of immune modulation rather than simple stimulation makes it valuable for both immunodeficient and autoimmune conditions.
@@ -1874,7 +1874,7 @@ Beyond viral hepatitis and cancer adjunct therapy, research supports Tα1 applic
 - Chronic protocol: 1.6mg twice weekly for 6–12 months
 - Vaccine enhancement: 1.6mg on day of and day after vaccination`,
     synergies: ['thymalin', 'epithalon', 'ghk-cu', 'll-37'],
-    seoTitle: 'Buy Thymosin Alpha-1 5mg | Immune Modulation Peptide | T-Cell Enhancement',
+    seoTitle: 'Verified Thymosin Alpha-1 5mg | Immune Modulation Peptide | T-Cell Enhancement',
     deepDiveTitle: 'Thymosin Alpha-1: The Thymic Peptide Bridging Immunodeficiency and Autoimmunity Research',
     highlights: [
       { title: 'Approved in 35+ Countries', body: 'Thymosin Alpha-1 (Zadaxin) has genuine pharmaceutical approval for hepatitis and cancer applications — one of the few research peptides with a direct clinical counterpart.' },
@@ -1893,7 +1893,7 @@ Beyond viral hepatitis and cancer adjunct therapy, research supports Tα1 applic
     tags: ['TB4-Frag', 'Thymosin Beta-4 Fragment', 'Healing', 'Actin', 'Recovery'],
     image: 'https://phiogen.is/images/products/tb4-frag-2mg.png',
     affiliateUrl: 'https://phiogen.is/products/tb4-frag-2mg?ref=PEPS',
-    shortDescription: 'TB4-Frag is the active actin-binding fragment of Thymosin Beta-4, providing targeted tissue repair and anti-inflammatory activity at lower cost than full TB-500.',
+    shortDescription: 'Buy TB4-Frag 2mg — TB4-Frag is the active actin-binding fragment of Thymosin Beta-4, providing targeted tissue repair and anti-inflammatory activity at lower cost than full TB-500.',
     fullDescription: `**The Active Core of Thymosin Beta-4**
 
 TB4-Frag is the 17-amino-acid active fragment of Thymosin Beta-4 that contains the actin-binding sequence (LKKTETQ) responsible for most of TB-500's regenerative activity. Research has identified this fragment as the minimal sequence sufficient for actin sequestration, cell migration promotion, and anti-inflammatory signaling — providing a more targeted and cost-effective alternative to full-length TB-500 for some applications.
@@ -1942,7 +1942,7 @@ TB4-Frag is ideal for users who want targeted actin-mediated healing at a lower 
     tags: ['DSIP', 'Sleep', 'Recovery', 'Cortisol', 'Delta Sleep'],
     image: 'https://phiogen.is/images/products/vesugen-20mg.png',
     affiliateUrl: 'https://phiogen.is/products/dsip-delta-sleep-inducing-peptide-5mg?ref=PEPS',
-    shortDescription: 'DSIP (Delta Sleep-Inducing Peptide) is a hypothalamic nonapeptide that promotes deep slow-wave sleep, regulates cortisol rhythms, and enhances recovery-critical sleep architecture.',
+    shortDescription: 'DSIP 5mg For Sale — DSIP (Delta Sleep-Inducing Peptide) is a hypothalamic nonapeptide that promotes deep slow-wave sleep, regulates cortisol rhythms, and enhances recovery-critical sleep architecture.',
     fullDescription: `**The Deep Sleep Peptide**
 
 Delta Sleep-Inducing Peptide (DSIP) was first isolated from the cerebral venous blood of rabbits in a state of electrically-induced delta sleep. This nonapeptide (9 amino acids) naturally promotes the generation of slow-wave (delta wave) sleep — the deepest, most restorative phase of the sleep cycle during which GH secretion peaks, tissue repair accelerates, and memory consolidation occurs. DSIP has since been found in the hypothalamus, limbic system, and peripheral tissues.
@@ -1972,7 +1972,7 @@ Athletes and high-performers use DSIP to restore sleep quality degraded by train
 
 **Note:** Effects are most pronounced on the first few nights of use`,
     synergies: ['selank', 'semax', 'epithalon', 'nad-100mg'],
-    seoTitle: 'Buy DSIP 5mg | Delta Sleep Peptide | Deep Sleep Restoration & Cortisol Control',
+    seoTitle: 'DSIP 5mg For Sale | Delta Sleep Peptide | Deep Sleep Restoration & Cortisol Control',
     deepDiveTitle: 'DSIP: The Hypothalamic Peptide That Restores Deep Sleep and Regulates Your Stress Axis',
     highlights: [
       { title: 'Delta Wave Promotion', body: 'DSIP was named for its ability to induce slow-wave sleep — the deep, restorative phase where GH peaks, tissue repairs, and memory consolidates.' },
@@ -1991,7 +1991,7 @@ Athletes and high-performers use DSIP to restore sleep quality degraded by train
     tags: ['Dihexa', 'Nootropic', 'Synaptogenesis', 'Memory', 'Cognitive Enhancement'],
     image: 'https://phiogen.is/images/products/p21-10mg.png',
     affiliateUrl: 'https://phiogen.is/products/p21-10mg?ref=PEPS',
-    shortDescription: 'Dihexa is an HGF/c-Met signaling agent reported to be 10 million times more potent than BDNF at promoting synaptogenesis — the most powerful nootropic peptide in research.',
+    shortDescription: 'Cheap Dihexa 50mg — Dihexa is an HGF/c-Met signaling agent reported to be 10 million times more potent than BDNF at promoting synaptogenesis — the most powerful nootropic peptide in research.',
     fullDescription: `**The Synaptogenesis Peptide**
 
 Dihexa (N-hexanoic-Tyr-Ile-(6) aminohexanoic amide) is a small peptide developed at Washington State University that amplifies hepatocyte growth factor (HGF) signaling through the c-Met receptor. Its discovery emerged from Alzheimer's disease research, and it demonstrated extraordinary potency in promoting the formation of new synaptic connections — the physical substrate of memory and learning. Researchers estimated Dihexa to be approximately 10 million times more potent than BDNF at inducing synaptogenesis in vitro.
@@ -2021,7 +2021,7 @@ Dihexa is researched for Alzheimer's disease reversal, traumatic brain injury re
 
 **Caution:** Start low; powerful effects — assess cognitive response before escalating`,
     synergies: ['semax', 'selank', 'cerebrolysin', 'nad-100mg'],
-    seoTitle: 'Buy Dihexa 50mg | Synaptogenesis Nootropic Peptide | Most Potent Cognitive Peptide',
+    seoTitle: 'Cheap Dihexa 50mg | Synaptogenesis Nootropic Peptide | Most Potent Cognitive Peptide',
     deepDiveTitle: 'Dihexa: The HGF/c-Met Amplifier 10 Million Times Stronger Than BDNF at Building Synapses',
     highlights: [
       { title: '10 Million x BDNF Potency', body: 'Dihexa\'s potency at inducing synaptogenesis dwarfs even BDNF — currently the most potent synapse-forming compound identified in research.' },
@@ -2040,7 +2040,7 @@ Dihexa is researched for Alzheimer's disease reversal, traumatic brain injury re
     tags: ['Cerebrolysin', 'Neurotrophic', 'Neuropeptides', 'Brain Repair', 'Cognitive'],
     image: 'https://phiogen.is/images/products/pinealon-10mg.png',
     affiliateUrl: 'https://phiogen.is/products/pinealon-20mg?ref=PEPS',
-    shortDescription: 'Cerebrolysin is a porcine-derived neuropeptide mixture (215mg/5mL) with clinically proven effects on Alzheimer\'s disease, stroke recovery, and TBI rehabilitation.',
+    shortDescription: 'Trusted Cerebrolysin 215mg/5mL — Cerebrolysin is a porcine-derived neuropeptide mixture (215mg/5mL) with clinically proven effects on Alzheimer\'s disease, stroke recovery, and TBI rehabilitation.',
     fullDescription: `**The Clinical Neurotrophic Standard**
 
 Cerebrolysin is a standardized neuropeptide preparation derived from purified porcine brain proteins. Approximately 25% of the preparation consists of active neuropeptides, with the remainder being amino acids. It contains naturally-occurring neurotrophic factors including BDNF, NGF, CNTF, GDNF, and others in bioavailable form — creating a multi-target neurotrophic support that mimics the brain's own growth factor cocktail.
@@ -2070,7 +2070,7 @@ The mixture acts through multiple neurotrophic receptors simultaneously — unli
 
 **Note:** IV administration requires slow infusion; dilute in saline`,
     synergies: ['semax', 'dihexa', 'selank', 'nad-100mg'],
-    seoTitle: 'Buy Cerebrolysin 215mg/5mL | Clinical Neurotrophic Peptide | Alzheimer\'s & TBI',
+    seoTitle: 'Trusted Cerebrolysin 215mg/5mL | Clinical Neurotrophic Peptide | Alzheimer\'s & TBI',
     deepDiveTitle: 'Cerebrolysin: The Clinically Validated Neuropeptide Mixture Used in 40+ Countries for Brain Repair',
     highlights: [
       { title: '200+ Clinical Trials', body: 'Cerebrolysin has one of the largest clinical evidence bases of any neuropeptide — proven effective in Alzheimer\'s, stroke recovery, and TBI across decades of research.' },
@@ -2089,7 +2089,7 @@ The mixture acts through multiple neurotrophic receptors simultaneously — unli
     tags: ['NAD+', 'Anti-Aging', 'Energy', 'DNA Repair', 'Mitochondria'],
     image: 'https://phiogen.is/images/products/nad-1000mg.png',
     affiliateUrl: 'https://phiogen.is/products/nad-100mg?ref=PEPS',
-    shortDescription: 'Injectable NAD+ 100mg — the coenzyme central to cellular energy metabolism, sirtuin activation, DNA repair, and mitochondrial biogenesis for comprehensive anti-aging support.',
+    shortDescription: 'Verified NAD+ 100mg — Injectable NAD+ 100mg — the coenzyme central to cellular energy metabolism, sirtuin activation, DNA repair, and mitochondrial biogenesis for comprehensive anti-aging support.',
     fullDescription: `**The Cellular Energy Coenzyme**
 
 Nicotinamide adenine dinucleotide (NAD+) is a coenzyme found in every living cell, essential for over 500 enzymatic reactions including those governing energy metabolism, DNA repair, and circadian rhythm regulation. NAD+ levels decline by approximately 50% between the ages of 40 and 60, contributing to mitochondrial dysfunction, reduced cellular stress resistance, and accelerated aging. Injectable NAD+ directly replenishes intracellular levels faster than oral precursors.
@@ -2119,7 +2119,7 @@ While oral NMN and NR are popular NAD+ precursors, injectable NAD+ bypasses inte
 
 **Note:** IV NAD+ commonly causes a flushing sensation during infusion — normal and transient`,
     synergies: ['epithalon', 'ghk-cu', 'mots-c', 'ss-31'],
-    seoTitle: 'Buy NAD+ 100mg Injectable | Cellular Energy & Anti-Aging Coenzyme | Sirtuin Activation',
+    seoTitle: 'Verified NAD+ 100mg Injectable | Cellular Energy & Anti-Aging Coenzyme | Sirtuin Activation',
     deepDiveTitle: 'Injectable NAD+: Restoring the Master Coenzyme of Cellular Energy, DNA Repair, and Longevity',
     highlights: [
       { title: 'Direct NAD+ Repletion', body: 'Injectable NAD+ bypasses intestinal conversion required by oral precursors — delivering the active coenzyme directly to cells for immediate energetic and metabolic impact.' },
@@ -2140,7 +2140,7 @@ While oral NMN and NR are popular NAD+ precursors, injectable NAD+ bypasses inte
     tags: ['ACE-031', 'Myostatin', 'Muscle Growth', 'Body Composition', 'Lean Mass'],
     image: 'https://phiogen.is/images/products/ace-031-1mg.png',
     affiliateUrl: 'https://phiogen.is/products/ace-031-1mg?ref=PEPS',
-    shortDescription: 'ACE-031 is an ActRIIB-Fc fusion protein that blocks myostatin and related TGF-β ligands, producing dramatic increases in lean muscle mass with concurrent fat loss.',
+    shortDescription: 'Buy ACE-031 1mg — ACE-031 is an ActRIIB-Fc fusion protein that blocks myostatin and related TGF-β ligands, producing dramatic increases in lean muscle mass with concurrent fat loss.',
     fullDescription: `**Blocking the Muscle Growth Brake**
 
 ACE-031 (ACVR2B-Fc) is a fusion protein that acts as a decoy receptor for ActRIIB — the receptor through which myostatin, activin A, GDF-11, and other TGF-β family members signal to inhibit muscle growth. By binding these ligands before they reach their natural receptors, ACE-031 effectively removes the biological brakes on muscle hypertrophy, allowing dramatically accelerated muscle growth even without changes in training.
@@ -2189,7 +2189,7 @@ While developed for muscle-wasting diseases, ACE-031's mechanism is of intense r
     tags: ['Abaloparatide', 'Bone Density', 'PTHrP', 'Osteoporosis', 'Anti-Aging'],
     image: 'https://phiogen.is/images/products/abaloparatide-3mg.png',
     affiliateUrl: 'https://phiogen.is/products/abaloparatide-3mg?ref=PEPS',
-    shortDescription: 'Abaloparatide is a PTHrP(1-34) analog (FDA-approved as Tymlos) that builds bone density by predominantly stimulating bone formation over resorption — the anabolic bone therapy.',
+    shortDescription: 'Abaloparatide 3mg For Sale — Abaloparatide is a PTHrP(1-34) analog (FDA-approved as Tymlos) that builds bone density by predominantly stimulating bone formation over resorption — the anabolic bone therapy.',
     fullDescription: `**FDA-Approved Anabolic Bone Therapy**
 
 Abaloparatide (brand name Tymlos) is a synthetic 34-amino-acid analog of parathyroid hormone-related protein (PTHrP) approved by the FDA in 2017 for postmenopausal osteoporosis. Unlike bisphosphonates that merely slow bone loss, abaloparatide actively stimulates new bone formation by selectively engaging the PTH1R receptor in a conformation that predominantly activates osteoblastic (bone-building) rather than osteoclastic (bone-resorbing) pathways.
@@ -2219,7 +2219,7 @@ The ACTIVE trial demonstrated 86% reduction in vertebral fracture risk and 43% r
 
 **Note:** Monitor for orthostatic hypotension; avoid if history of bone cancers or hypercalcemia`,
     synergies: ['ghk-cu', 'thymosin-alpha-1', 'nad-100mg', 'ss-31'],
-    seoTitle: 'Buy Abaloparatide 3mg | Bone Density Peptide | FDA-Approved PTHrP Analog',
+    seoTitle: 'Abaloparatide 3mg For Sale | Bone Density Peptide | FDA-Approved PTHrP Analog',
     deepDiveTitle: 'Abaloparatide: The FDA-Approved PTHrP Analog That Actually Builds New Bone',
     highlights: [
       { title: 'FDA Approved (Tymlos)', body: 'Abaloparatide carries FDA approval for osteoporosis — providing the highest regulatory validation for safety and efficacy of any bone-building peptide.' },
@@ -2238,7 +2238,7 @@ The ACTIVE trial demonstrated 86% reduction in vertebral fracture risk and 43% r
     tags: ['Epitalon', 'Telomerase', 'Anti-Aging', 'Longevity', 'Pineal'],
     image: 'https://phiogen.is/images/products/epitalon-10mg.png',
     affiliateUrl: 'https://phiogen.is/products/epitalon-10mg?ref=PEPS',
-    shortDescription: 'Epitalon (Epithalon) is a tetrapeptide developed by Professor Khavinson that activates telomerase, elongates telomeres, and restores pineal function for longevity and circadian health.',
+    shortDescription: 'Cheap Epitalon 10mg — Epitalon (Epithalon) is a tetrapeptide developed by Professor Khavinson that activates telomerase, elongates telomeres, and restores pineal function for longevity and circadian health.',
     fullDescription: `**The Longevity Tetrapeptide**
 
 Epitalon (Ala-Glu-Asp-Gly) is a synthetic tetrapeptide developed by Professor Vladimir Khavinson at the St. Petersburg Institute of Bioregulation and Gerontology. It is the synthetic analog of Epithalamin, a natural polypeptide extracted from the pineal gland. Khavinson's decades of research — including a 25-year human trial showing significantly increased survival and reduced cancer incidence — have established Epitalon as one of the most researched longevity peptides in existence.
@@ -2268,7 +2268,7 @@ Animal studies demonstrated dramatically increased maximum lifespan in multiple 
 
 **Note:** Twice-yearly cycling (spring and fall) mirrors the research protocols`,
     synergies: ['nad-100mg', 'ghk-cu', 'thymosin-alpha-1', 'mots-c'],
-    seoTitle: 'Buy Epitalon 10mg | Telomerase Activating Peptide | Anti-Aging Longevity',
+    seoTitle: 'Cheap Epitalon 10mg | Telomerase Activating Peptide | Anti-Aging Longevity',
     deepDiveTitle: 'Epitalon: The Telomerase-Activating Tetrapeptide With 25-Year Human Longevity Data',
     highlights: [
       { title: 'Telomerase Activation', body: 'Epitalon activates telomerase — the enzyme that rebuilds shortened telomeres — addressing the fundamental cellular clock of aging at the chromosomal level.' },
@@ -2287,7 +2287,7 @@ Animal studies demonstrated dramatically increased maximum lifespan in multiple 
     tags: ['FOXO4-DRI', 'Senolytic', 'Senescence', 'Anti-Aging', 'Longevity'],
     image: 'https://phiogen.is/images/products/fox04-dri-10mg.png',
     affiliateUrl: 'https://phiogen.is/products/fox04-dri-10mg?ref=PEPS',
-    shortDescription: 'FOXO4-DRI is a D-retro-inverso peptide that selectively eliminates senescent cells by disrupting the FOXO4-p53 survival signal that prevents their apoptosis.',
+    shortDescription: 'Trusted FOXO4-DRI 10mg — FOXO4-DRI is a D-retro-inverso peptide that selectively eliminates senescent cells by disrupting the FOXO4-p53 survival signal that prevents their apoptosis.',
     fullDescription: `**Eliminating the Zombie Cells of Aging**
 
 Senescent cells — cells that have permanently stopped dividing but resist apoptosis — accumulate with age and are increasingly recognized as a primary driver of age-related disease. They secrete a toxic mix of inflammatory cytokines, proteases, and growth factors (the senescence-associated secretory phenotype, or SASP) that damages surrounding tissue, drives chronic inflammation, and accelerates aging in neighboring cells. FOXO4-DRI targets the exact survival signal that keeps these cells alive.
@@ -2317,7 +2317,7 @@ The landmark 2017 Nature Medicine paper by de Keizer et al. showed that FOXO4-DR
 
 **Caution:** Emerging research area — protocols are not fully established`,
     synergies: ['nad-100mg', 'epithalon', 'ghk-cu', 'ss-31'],
-    seoTitle: 'Buy FOXO4-DRI 10mg | Senolytic Peptide | Senescent Cell Elimination',
+    seoTitle: 'Trusted FOXO4-DRI 10mg | Senolytic Peptide | Senescent Cell Elimination',
     deepDiveTitle: 'FOXO4-DRI: The Senolytic Peptide That Forces Senescent Cells to Self-Destruct',
     highlights: [
       { title: 'Senolytic Precision', body: 'FOXO4-DRI selectively kills senescent cells by disrupting their survival signal — leaving healthy cells completely unharmed through a mechanism of high biological specificity.' },
@@ -2336,7 +2336,7 @@ The landmark 2017 Nature Medicine paper by de Keizer et al. showed that FOXO4-DR
     tags: ['GHK-Cu', 'Copper Peptide', 'Skin', 'Anti-Aging', 'Wound Healing'],
     image: 'https://phiogen.is/images/products/ghk-cu-100mg.png',
     affiliateUrl: 'https://phiogen.is/products/ghk-cu-100mg?ref=PEPS',
-    shortDescription: 'GHK-Cu 100mg — maximum supply of the copper-binding tripeptide that activates over 4,000 human genes, restores skin structure, and reverses markers of cellular aging.',
+    shortDescription: 'Verified GHK-Cu 100mg — GHK-Cu 100mg — maximum supply of the copper-binding tripeptide that activates over 4,000 human genes, restores skin structure, and reverses markers of cellular aging.',
     fullDescription: `**The Gene-Activating Copper Peptide**
 
 GHK-Cu (glycyl-L-histidyl-L-lysine copper) is a naturally occurring copper-binding tripeptide found in human plasma that activates over 4,000 human genes — representing approximately 31% of all genes associated with aging processes. Plasma GHK-Cu levels peak in early adulthood and decline by approximately 60% between age 20 and 60, a decline that correlates strongly with increased skin aging, impaired wound healing, and reduced tissue regenerative capacity.
@@ -2362,7 +2362,7 @@ In skin, GHK-Cu stimulates collagen, elastin, and decorin synthesis while activa
 
 **Cycle:** Injectable 4–8 weeks; topical continuous use`,
     synergies: ['snap-8-50mg', 'epithalon', 'nad-100mg', 'ghk-cu-50mg'],
-    seoTitle: 'Buy GHK-Cu 100mg | Copper Peptide Anti-Aging | Gene Activation & Skin Repair',
+    seoTitle: 'Verified GHK-Cu 100mg | Copper Peptide Anti-Aging | Gene Activation & Skin Repair',
     deepDiveTitle: 'GHK-Cu: The 4,000-Gene Activating Copper Peptide at the Core of Anti-Aging Biology',
     highlights: [
       { title: '4,000+ Gene Activation', body: 'GHK-Cu influences the expression of over 4,000 human genes — an extraordinary breadth of biological reach that no single pharmaceutical compound can match.' },
@@ -2381,7 +2381,7 @@ In skin, GHK-Cu stimulates collagen, elastin, and decorin synthesis while activa
     tags: ['Glutathione', 'Antioxidant', 'Detox', 'Anti-Aging', 'Immune'],
     image: 'https://phiogen.is/images/products/glutathione-200mg.png',
     affiliateUrl: 'https://phiogen.is/products/glutathione-200mg?ref=PEPS',
-    shortDescription: 'Injectable Glutathione 200mg — the body\'s master antioxidant for cellular detoxification, immune enhancement, skin brightening, and protection against oxidative aging.',
+    shortDescription: 'Buy Glutathione 200mg — Injectable Glutathione 200mg — the body\'s master antioxidant for cellular detoxification, immune enhancement, skin brightening, and protection against oxidative aging.',
     fullDescription: `**The Master Antioxidant**
 
 Glutathione (GSH) is a tripeptide (γ-L-glutamyl-L-cysteinyl-glycine) that serves as the primary endogenous antioxidant in virtually every cell of the human body. It is central to phase II detoxification in the liver, protects mitochondria from oxidative damage, maintains the redox state of immune cells, and regenerates other antioxidants including vitamins C and E. Glutathione levels decline significantly with age, chronic illness, poor diet, and environmental toxin exposure.
@@ -2429,7 +2429,7 @@ Beyond its critical biological functions, glutathione has become widely used for
     tags: ['Glutathione', 'Antioxidant', 'Detox', 'Anti-Aging', 'Clinical Dose'],
     image: 'https://phiogen.is/images/products/glutathione-600mg.png',
     affiliateUrl: 'https://phiogen.is/products/glutathione-600mg?ref=PEPS',
-    shortDescription: 'Glutathione 600mg injectable — triple the standard dose for intensive detoxification protocols, Parkinson\'s therapy, skin brightening, and clinical-level antioxidant support.',
+    shortDescription: 'Glutathione 600mg For Sale — Glutathione 600mg injectable — triple the standard dose for intensive detoxification protocols, Parkinson\'s therapy, skin brightening, and clinical-level antioxidant support.',
     fullDescription: `**Clinical-Level Antioxidant Intervention**
 
 The 600mg glutathione dose matches the protocol used in Parkinson's disease clinical research, where IV glutathione administration produced significant reductions in motor symptoms by reducing oxidative stress in the substantia nigra. This dosage also represents the standard "whitening dose" used in aesthetic medicine for skin brightening protocols, and the typical dose used in clinical IV nutrient therapy for liver disease and heavy metal detoxification.
@@ -2458,7 +2458,7 @@ A single 600mg vial eliminates the need to combine multiple lower-dose vials for
 - Skin brightening: 600–1500mg IV 3x weekly for 3–6 months
 - Detoxification: 600mg IV 3x weekly for 4–8 weeks`,
     synergies: ['nad-100mg', 'ghk-cu', 'ss-31', 'epithalon'],
-    seoTitle: 'Buy Glutathione 600mg Injectable | Clinical Dose Antioxidant | Parkinson\'s & Detox',
+    seoTitle: 'Glutathione 600mg Injectable For Sale | Clinical Dose Antioxidant | Parkinson\'s & Detox',
     deepDiveTitle: 'Glutathione 600mg: Clinical-Dose Antioxidant Therapy for Neurological, Hepatic, and Aesthetic Applications',
     highlights: [
       { title: 'Parkinson\'s Protocol Dose', body: '600mg matches the dose used in Parkinson\'s disease IV glutathione clinical research, where it reduced oxidative damage in the substantia nigra and improved motor function.' },
@@ -2477,7 +2477,7 @@ A single 600mg vial eliminates the need to combine multiple lower-dose vials for
     tags: ['Glutathione', 'Antioxidant', 'High-Dose', 'Anti-Aging', 'Detox'],
     image: 'https://phiogen.is/images/products/glutathione-1500mg.png',
     affiliateUrl: 'https://phiogen.is/products/glutathione-1500mg?ref=PEPS',
-    shortDescription: 'Glutathione 1500mg injectable — high-dose format for intensive skin brightening, severe oxidative stress, hepatic loading, and maximum antioxidant saturation protocols.',
+    shortDescription: 'Cheap Glutathione 1500mg — Glutathione 1500mg injectable — high-dose format for intensive skin brightening, severe oxidative stress, hepatic loading, and maximum antioxidant saturation protocols.',
     fullDescription: `**Maximum Glutathione Intervention**
 
 The 1500mg glutathione vial is designed for intensive therapeutic protocols where maximum antioxidant saturation is the goal. This dose is used in aggressive skin brightening programs, severe hepatic disease management, high-dose antioxidant protocols following toxic exposures, and research applications requiring maximum systemic glutathione repletion. It represents approximately 7.5x the body's daily endogenous production rate.
@@ -2507,7 +2507,7 @@ For practices or individuals requiring multiple high-dose sessions, the 1500mg s
 
 **Note:** High-dose IV GSH should be administered by qualified practitioners`,
     synergies: ['nad-100mg', 'ghk-cu', 'ss-31', 'epithalon'],
-    seoTitle: 'Buy Glutathione 1500mg Injectable | High-Dose Antioxidant | Skin Brightening Protocol',
+    seoTitle: 'Cheap Glutathione 1500mg Injectable | High-Dose Antioxidant | Skin Brightening Protocol',
     deepDiveTitle: 'Glutathione 1500mg: Maximum-Dose Antioxidant Therapy for Intensive Clinical and Aesthetic Applications',
     highlights: [
       { title: '1500mg Single Vial', body: 'The highest single-dose glutathione format available — supporting intensive clinical protocols that require 1200mg+ per session without multi-vial combinations.' },
@@ -2526,7 +2526,7 @@ For practices or individuals requiring multiple high-dose sessions, the 1500mg s
     tags: ['Melanotan I', 'Tanning', 'Melanocortin', 'Photoprotection', 'Skin'],
     image: 'https://phiogen.is/images/products/pt-141-10mg.png',
     affiliateUrl: 'https://phiogen.is/products/melanotan-1-10mg?ref=PEPS',
-    shortDescription: 'Melanotan I (afamelanotide) is a superpotent α-MSH analog that stimulates melanin production for a natural tan with photoprotection — FDA-approved for erythropoietic protoporphyria.',
+    shortDescription: 'Trusted Melanotan I 10mg — Melanotan I (afamelanotide) is a superpotent α-MSH analog that stimulates melanin production for a natural tan with photoprotection — FDA-approved for erythropoietic protoporphyria.',
     fullDescription: `**The Sunless Tanning and Photoprotection Peptide**
 
 Melanotan I (afamelanotide) is a synthetic analog of α-melanocyte stimulating hormone (α-MSH) that is more potent and longer-lasting than the endogenous hormone. It acts on MC1R (melanocortin-1 receptor) on melanocytes to stimulate melanin synthesis — producing a natural, UV-independent tan that also provides genuine photoprotection by increasing the skin's UV-absorbing pigment.
@@ -2556,7 +2556,7 @@ Melanotan I is selective for MC1R and does not significantly activate MC3R or MC
 
 **Note:** Nausea common initially — take before bed or use antiemetic`,
     synergies: ['melanotan-2', 'ghk-cu', 'snap-8-50mg', 'pt-141'],
-    seoTitle: 'Buy Melanotan I 10mg | Afamelanotide | UV-Independent Tanning & Photoprotection',
+    seoTitle: 'Trusted Melanotan I 10mg | Afamelanotide | UV-Independent Tanning & Photoprotection',
     deepDiveTitle: 'Melanotan I: The FDA-Approved α-MSH Analog for Safe Tanning and UV Photoprotection',
     highlights: [
       { title: 'FDA-Approved Mechanism', body: 'The exact same peptide (afamelanotide/Scenesse) is FDA-approved for EPP — confirming Melanotan I\'s efficacy and mechanism for melanin stimulation at the regulatory level.' },
@@ -2575,7 +2575,7 @@ Melanotan I is selective for MC1R and does not significantly activate MC3R or MC
     tags: ['Melanotan II', 'Tanning', 'Libido', 'Melanocortin', 'Appetite'],
     image: 'https://phiogen.is/images/products/pt-141-10mg.png',
     affiliateUrl: 'https://phiogen.is/products/melanotan-2-10mg?ref=PEPS',
-    shortDescription: 'Melanotan II is a cyclic α-MSH analog that activates multiple melanocortin receptors, producing UV-independent tanning, enhanced libido, and appetite suppression.',
+    shortDescription: 'Verified Melanotan II 10mg — Melanotan II is a cyclic α-MSH analog that activates multiple melanocortin receptors, producing UV-independent tanning, enhanced libido, and appetite suppression.',
     fullDescription: `**Multi-Receptor Melanocortin Agonist**
 
 Melanotan II (MT-II) is a cyclic heptapeptide analog of α-MSH that activates MC1R, MC3R, and MC4R — delivering effects beyond just tanning. MC1R activation produces melanin synthesis and tanning, MC3R activation affects energy balance and anti-inflammation, and MC4R activation drives the central nervous system effects including sexual arousal and appetite suppression. This multi-receptor profile makes MT-II a uniquely multifunctional melanocortin peptide.
@@ -2605,7 +2605,7 @@ The broad receptor activation of MT-II means more comprehensive effects but also
 
 **Note:** Strong effects at MC4R; do not use if not prepared for sexual arousal effects`,
     synergies: ['melanotan-1', 'pt-141', 'ghk-cu', 'snap-8-50mg'],
-    seoTitle: 'Buy Melanotan II 10mg | Multi-Receptor Tanning Peptide | Libido & Tan Stack',
+    seoTitle: 'Verified Melanotan II 10mg | Multi-Receptor Tanning Peptide | Libido & Tan Stack',
     deepDiveTitle: 'Melanotan II: The Multi-Receptor Melanocortin Peptide for Tanning, Libido, and Appetite Control',
     highlights: [
       { title: 'Triple Receptor Action', body: 'Activates MC1R for tanning, MC3R for anti-inflammation, and MC4R for sexual arousal and appetite suppression — three therapeutic axes from a single peptide.' },
@@ -2624,7 +2624,7 @@ The broad receptor activation of MT-II means more comprehensive effects but also
     tags: ['Humanin', 'Mitochondria', 'Neuroprotection', 'Anti-Aging', 'Longevity'],
     image: 'https://phiogen.is/images/products/mots-c-10mg.png',
     affiliateUrl: 'https://phiogen.is/products/mots-c-10mg?ref=PEPS',
-    shortDescription: 'Humanin is a mitochondria-encoded micropeptide that provides neuroprotection against Alzheimer\'s pathology, improves insulin sensitivity, and extends lifespan in multiple model organisms.',
+    shortDescription: 'Buy Humanin 1mg — Humanin is a mitochondria-encoded micropeptide that provides neuroprotection against Alzheimer\'s pathology, improves insulin sensitivity, and extends lifespan in multiple model organisms.',
     fullDescription: `**Mitochondrial-Derived Longevity Peptide**
 
 Humanin is a 21-amino-acid peptide encoded within the 16S rRNA gene of mitochondrial DNA — the first member of a newly recognized class of mitochondria-derived peptides (MDPs) with systemic hormonal functions. Discovered through expression screening for Alzheimer's-protective genes, Humanin is secreted by mitochondria and cells in response to stress, acting in an endocrine fashion to protect against apoptosis, inflammation, and metabolic dysfunction.
@@ -2673,7 +2673,7 @@ Humanin levels correlate with longevity — centenarians and their offspring hav
     tags: ['MOTS-c', 'Mitochondria', 'Metabolic', 'Exercise', 'Longevity'],
     image: 'https://phiogen.is/images/products/mots-c-10mg.png',
     affiliateUrl: 'https://phiogen.is/products/mots-c-10mg?ref=PEPS',
-    shortDescription: 'MOTS-c is a mitochondria-encoded peptide that mimics the metabolic effects of exercise, improves insulin sensitivity, reduces obesity, and activates AMPK for longevity signaling.',
+    shortDescription: 'MOTS-c 5mg For Sale — MOTS-c is a mitochondria-encoded peptide that mimics the metabolic effects of exercise, improves insulin sensitivity, reduces obesity, and activates AMPK for longevity signaling.',
     fullDescription: `**Exercise in a Peptide**
 
 MOTS-c (mitochondrial open reading frame of the 12S rRNA-c) is a 16-amino-acid peptide encoded in mitochondrial DNA that circulates as an endocrine hormone, regulating metabolic homeostasis. Its actions are sometimes described as "exercise in a peptide" because it activates the same AMPK pathway triggered by physical activity, while also inducing GLUT4 translocation for improved glucose uptake, enhancing fatty acid oxidation, and improving mitochondrial efficiency.
@@ -2703,7 +2703,7 @@ MOTS-c levels decline with age and obesity. In animal models, exogenous MOTS-c a
 
 **Stack:** Combine with Humanin for complete mitochondrial MDP protocol`,
     synergies: ['humanin', 'ss-31', 'nad-100mg', 'epithalon'],
-    seoTitle: 'Buy MOTS-c 5mg | Mitochondrial Exercise Peptide | AMPK & Metabolic Health',
+    seoTitle: 'MOTS-c 5mg For Sale | Mitochondrial Exercise Peptide | AMPK & Metabolic Health',
     deepDiveTitle: 'MOTS-c: The Mitochondrial Exercise Peptide That Reprograms Metabolism Through AMPK',
     highlights: [
       { title: 'Exercise Mimetic', body: 'MOTS-c activates AMPK — the same pathway triggered by aerobic exercise — producing metabolic benefits of physical activity at a cellular level regardless of training status.' },
@@ -2722,7 +2722,7 @@ MOTS-c levels decline with age and obesity. In animal models, exogenous MOTS-c a
     tags: ['SS-31', 'Elamipretide', 'Mitochondria', 'Cardiac', 'Anti-Aging'],
     image: 'https://phiogen.is/images/products/ss-31-10mg.png',
     affiliateUrl: 'https://phiogen.is/products/ss-31-10mg?ref=PEPS',
-    shortDescription: 'SS-31 (Elamipretide) is a mitochondria-targeted tetrapeptide that binds cardiolipin, restores electron transport chain efficiency, and reverses age-related mitochondrial dysfunction.',
+    shortDescription: 'Cheap SS-31 (Elamipretide) 10mg — SS-31 (Elamipretide) is a mitochondria-targeted tetrapeptide that binds cardiolipin, restores electron transport chain efficiency, and reverses age-related mitochondrial dysfunction.',
     fullDescription: `**Targeting the Heart of Cellular Energy**
 
 SS-31 (Szeto-Schiller peptide-31, elamipretide) is a cell-permeable tetrapeptide that selectively accumulates in the inner mitochondrial membrane where it binds to cardiolipin — a phospholipid essential for organizing the respiratory complexes of the electron transport chain (ETC). By stabilizing cardiolipin and preventing its peroxidation, SS-31 maintains cristae architecture and electron transport efficiency, directly addressing the mitochondrial dysfunction that underlies aging and many chronic diseases.
@@ -2752,7 +2752,7 @@ Aging is fundamentally accompanied by cardiolipin loss and ETC disorganization. 
 
 **Stack:** Combine with NAD+, MOTS-c, and Humanin for full mitochondrial stack`,
     synergies: ['humanin', 'mots-c', 'nad-100mg', 'epithalon'],
-    seoTitle: 'Buy SS-31 Elamipretide 10mg | Mitochondria-Targeted Peptide | Cardiac Anti-Aging',
+    seoTitle: 'Cheap SS-31 Elamipretide 10mg | Mitochondria-Targeted Peptide | Cardiac Anti-Aging',
     deepDiveTitle: 'SS-31 Elamipretide: The Cardiolipin-Binding Peptide That Restores Mitochondrial Function at the Source',
     highlights: [
       { title: 'Cardiolipin Binding', body: 'SS-31 is the only peptide that directly binds cardiolipin — the mitochondrial lipid that organizes electron transport complexes and whose peroxidation is a central event in aging.' },
@@ -2771,7 +2771,7 @@ Aging is fundamentally accompanied by cardiolipin loss and ETC disorganization. 
     tags: ['Thymalin', 'Thymus', 'Immune', 'Anti-Aging', 'Bioregulator'],
     image: 'https://phiogen.is/images/products/thymulin-10mg.png',
     affiliateUrl: 'https://phiogen.is/products/thymulin-10mg?ref=PEPS',
-    shortDescription: 'Thymalin is a polypeptide thymus bioregulator developed by Professor Khavinson that rejuvenates immune function, reduces cancer incidence, and extends longevity in human clinical data.',
+    shortDescription: 'Trusted Thymalin 20mg — Thymalin is a polypeptide thymus bioregulator developed by Professor Khavinson that rejuvenates immune function, reduces cancer incidence, and extends longevity in human clinical data.',
     fullDescription: `**The Thymus Rejuvenation Peptide**
 
 Thymalin is a polypeptide extract of the thymus gland developed by Professor Khavinson as part of his peptide bioregulator research program at the St. Petersburg Institute of Bioregulation. The thymus — the master organ of T-cell maturation — undergoes progressive involution beginning in puberty and is nearly completely atrophied by age 50, contributing directly to the immune senescence that makes older adults vulnerable to infections, cancer, and autoimmune disease. Thymalin counteracts this decline.
@@ -2801,7 +2801,7 @@ Thymalin restores T-cell populations — particularly CD4+ helper and CD8+ cytot
 
 **Stack:** Combine with Epitalon and Cortagen for full Khavinson bioregulator stack`,
     synergies: ['thymosin-alpha-1', 'epithalon', 'cortagen', 'nad-100mg'],
-    seoTitle: 'Buy Thymalin 20mg | Thymus Bioregulator Peptide | Immune Rejuvenation & Longevity',
+    seoTitle: 'Trusted Thymalin 20mg | Thymus Bioregulator Peptide | Immune Rejuvenation & Longevity',
     deepDiveTitle: 'Thymalin: The Thymus Peptide With 30-Year Human Clinical Data on Longevity and Cancer Prevention',
     highlights: [
       { title: '30-Year Human Trial', body: 'Thymalin is supported by one of the longest-running peptide longevity studies — a 30-year human clinical trial showing reduced mortality, cancer, and cardiovascular disease.' },
@@ -2820,7 +2820,7 @@ Thymalin restores T-cell populations — particularly CD4+ helper and CD8+ cytot
     tags: ['SNAP-8', 'Anti-Wrinkle', 'Botox Alternative', 'Skin', 'Expression Lines'],
     image: 'https://phiogen.is/images/products/snap-8-10mg.png',
     affiliateUrl: 'https://phiogen.is/products/snap-8-10mg?ref=PEPS',
-    shortDescription: 'SNAP-8 is an octapeptide that competes with SNAP-25 to inhibit SNARE complex formation, reducing muscle micro-contractions and expression lines for a topical botox-like effect.',
+    shortDescription: 'Verified SNAP-8 50mg — SNAP-8 is an octapeptide that competes with SNAP-25 to inhibit SNARE complex formation, reducing muscle micro-contractions and expression lines for a topical botox-like effect.',
     fullDescription: `**Topical Neurotransmission Inhibitor for Wrinkle Reduction**
 
 SNAP-8 (acetyl octapeptide-3) is a synthetic octapeptide fragment of SNAP-25 — a protein critical to the SNARE complex that mediates acetylcholine vesicle release at neuromuscular junctions. By competitively inhibiting SNAP-25 binding within the SNARE complex, SNAP-8 reduces the intensity of muscle contractions in facial muscles, diminishing the repetitive micro-movements that form expression lines and dynamic wrinkles.
@@ -2849,7 +2849,7 @@ SNAP-8 is used exclusively as a topical ingredient — dissolved in water and in
 - Results typically visible within 2–4 weeks of daily use
 - Continue daily for sustained effect`,
     synergies: ['ghk-cu', 'ghk-cu-50mg', 'ghk-cu-100mg', 'melanotan-1'],
-    seoTitle: 'Buy SNAP-8 50mg | Anti-Wrinkle Peptide | Topical Botox Alternative',
+    seoTitle: 'Verified SNAP-8 50mg | Anti-Wrinkle Peptide | Topical Botox Alternative',
     deepDiveTitle: 'SNAP-8: The SNARE-Inhibiting Octapeptide That Reduces Expression Wrinkles Like Topical Botox',
     highlights: [
       { title: 'SNARE Complex Inhibition', body: 'SNAP-8 targets the same neuromuscular transmission pathway as botulinum toxin — competitively binding to SNAP-25 to reduce the acetylcholine release that drives expression line formation.' },
@@ -2868,7 +2868,7 @@ SNAP-8 is used exclusively as a topical ingredient — dissolved in water and in
     tags: ['GHK-Cu', 'Copper Peptide', 'Skin', 'Anti-Aging', 'Collagen'],
     image: 'https://phiogen.is/images/products/ghk-cu-50mg.png',
     affiliateUrl: 'https://phiogen.is/products/ghk-cu-50mg?ref=PEPS',
-    shortDescription: 'GHK-Cu 50mg — the accessible entry point for the copper tripeptide that activates thousands of anti-aging genes and restores skin collagen, elastin, and barrier function.',
+    shortDescription: 'Buy GHK-Cu 50mg — GHK-Cu 50mg — the accessible entry point for the copper tripeptide that activates thousands of anti-aging genes and restores skin collagen, elastin, and barrier function.',
     fullDescription: `**The Original Copper Peptide**
 
 GHK-Cu (glycyl-L-histidyl-L-lysine copper) was first isolated by Loren Pickart in 1973 from human plasma albumin. Decades of subsequent research revealed that this simple tripeptide coordinates copper ions and serves as a master regulator of tissue remodeling, wound healing, and anti-aging gene expression. The 50mg vial is the ideal starting point for users beginning topical or injectable GHK-Cu protocols.
@@ -2913,7 +2913,7 @@ GHK-Cu is effective both topically and via injection. Topically at 0.1–2%, it 
     tags: ['Pinealon', 'Pineal', 'Neuroprotection', 'Sleep', 'Cognitive'],
     image: 'https://phiogen.is/images/products/pinealon-10mg.png',
     affiliateUrl: 'https://phiogen.is/products/pinealon-20mg?ref=PEPS',
-    shortDescription: 'Pinealon is a tripeptide bioregulator of the pineal gland that provides neuroprotection, enhances memory, and supports circadian rhythm restoration — part of Khavinson\'s bioregulator system.',
+    shortDescription: 'Pinealon 20mg For Sale — Pinealon is a tripeptide bioregulator of the pineal gland that provides neuroprotection, enhances memory, and supports circadian rhythm restoration — part of Khavinson\'s bioregulator system.',
     fullDescription: `**The Pineal Bioregulator**
 
 Pinealon (Glu-Asp-Arg, EDR) is a short tripeptide bioregulator developed by Professor Khavinson that corresponds to the active sequence of the pineal gland. Like all of Khavinson's bioregulators, it is designed to restore the gene expression patterns of the specific organ from which it is derived — in this case the pineal gland, which governs melatonin secretion, circadian rhythms, and exerts neuroprotective effects throughout the nervous system.
@@ -2943,7 +2943,7 @@ Unlike DSIP which primarily targets sleep architecture, Pinealon addresses the p
 
 **Stack:** Combine with Epitalon and Thymalin in Khavinson protocol`,
     synergies: ['epithalon', 'thymalin', 'dsip', 'semax'],
-    seoTitle: 'Buy Pinealon 20mg | Pineal Gland Peptide | Neuroprotection & Circadian Sleep',
+    seoTitle: 'Pinealon 20mg For Sale | Pineal Gland Peptide | Neuroprotection & Circadian Sleep',
     deepDiveTitle: 'Pinealon: The Pineal Gland Tripeptide for Neuroprotection, Sleep Restoration, and Cognitive Longevity',
     highlights: [
       { title: 'Pineal Gland Bioregulator', body: 'Pinealon is the specific bioregulator for the pineal gland — restoring the organ that governs melatonin, circadian entrainment, and neurological antioxidant protection.' },
@@ -2962,7 +2962,7 @@ Unlike DSIP which primarily targets sleep architecture, Pinealon addresses the p
     tags: ['Cortagen', 'Brain', 'Neuropeptide', 'Cognitive', 'Bioregulator'],
     image: 'https://phiogen.is/images/products/cortagen-20mg.png',
     affiliateUrl: 'https://phiogen.is/products/cortagen-20mg?ref=PEPS',
-    shortDescription: 'Cortagen is a bioregulator peptide for the cerebral cortex that supports neurological function, cognitive longevity, and neuroprotection — part of Khavinson\'s organ-specific bioregulator system.',
+    shortDescription: 'Cheap Cortagen 20mg — Cortagen is a bioregulator peptide for the cerebral cortex that supports neurological function, cognitive longevity, and neuroprotection — part of Khavinson\'s organ-specific bioregulator system.',
     fullDescription: `**Cortical Bioregulation for Cognitive Longevity**
 
 Cortagen (Ala-Glu-Asp-Pro) is a tetrapeptide bioregulator developed by Khavinson that corresponds to an active sequence of the cerebral cortex. Like all bioregulators in this system, it is designed to restore normal gene expression patterns in the target organ — in this case the cerebral cortex — by penetrating cell nuclei and interacting with DNA to upregulate organ-specific protein synthesis.
@@ -2992,7 +2992,7 @@ Cortagen is used as part of comprehensive anti-aging peptide stacks targeting th
 
 **Stack:** Epitalon + Thymalin + Cortagen + Pinealon for comprehensive Khavinson protocol`,
     synergies: ['epithalon', 'thymalin', 'pinealon', 'nad-100mg'],
-    seoTitle: 'Buy Cortagen 20mg | Brain Cortex Bioregulator | Cognitive Anti-Aging Peptide',
+    seoTitle: 'Cheap Cortagen 20mg | Brain Cortex Bioregulator | Cognitive Anti-Aging Peptide',
     deepDiveTitle: 'Cortagen: The Cerebral Cortex Bioregulator for Cognitive Longevity in the Khavinson Bioregulator System',
     highlights: [
       { title: 'Cerebral Cortex Specificity', body: 'Cortagen is developed specifically for the cerebral cortex — targeting the brain region responsible for higher cognitive function, memory, and neurological aging.' },
@@ -3011,7 +3011,7 @@ Cortagen is used as part of comprehensive anti-aging peptide stacks targeting th
     tags: ['Vesugen', 'Vascular', 'Cardiovascular', 'Bioregulator', 'Anti-Aging'],
     image: 'https://phiogen.is/images/products/vesugen-20mg.png',
     affiliateUrl: 'https://phiogen.is/products/vesugen-20mg?ref=PEPS',
-    shortDescription: 'Vesugen is a vascular bioregulator peptide that restores blood vessel integrity, reduces endothelial aging, and supports cardiovascular longevity in Khavinson\'s bioregulator system.',
+    shortDescription: 'Trusted Vesugen 20mg — Vesugen is a vascular bioregulator peptide that restores blood vessel integrity, reduces endothelial aging, and supports cardiovascular longevity in Khavinson\'s bioregulator system.',
     fullDescription: `**Vascular System Bioregulation**
 
 Vesugen (Lys-Glu-Asp) is a tripeptide bioregulator developed by Professor Khavinson targeting the vascular endothelium and smooth muscle — the tissues that line and control blood vessels. Vascular aging, characterized by endothelial dysfunction, increased arterial stiffness, and atherosclerotic plaque formation, is one of the primary drivers of age-related morbidity and mortality. Vesugen is designed to restore normal gene expression in vascular tissue, counteracting these age-related changes.
@@ -3041,7 +3041,7 @@ Cardiovascular disease accounts for the largest share of age-related mortality. 
 
 **Stack:** Vesugen + Thymalin + Epitalon + Cortagen for comprehensive longevity protocol`,
     synergies: ['epithalon', 'thymalin', 'cortagen', 'nad-100mg'],
-    seoTitle: 'Buy Vesugen 20mg | Vascular Bioregulator Peptide | Cardiovascular Longevity',
+    seoTitle: 'Trusted Vesugen 20mg | Vascular Bioregulator Peptide | Cardiovascular Longevity',
     deepDiveTitle: 'Vesugen: The Vascular Bioregulator Addressing Endothelial Aging and Cardiovascular Longevity',
     highlights: [
       { title: 'Endothelial Targeting', body: 'Vesugen specifically targets vascular endothelium — the single-cell layer lining all blood vessels whose dysfunction underlies virtually every form of cardiovascular disease.' },
@@ -3060,7 +3060,7 @@ Cardiovascular disease accounts for the largest share of age-related mortality. 
     tags: ['Cartalax', 'Cartilage', 'Joint', 'Bioregulator', 'Healing'],
     image: 'https://phiogen.is/images/products/cartalax-20mg.png',
     affiliateUrl: 'https://phiogen.is/products/cartalax-20mg?ref=PEPS',
-    shortDescription: 'Cartalax is a cartilage bioregulator tripeptide that restores chondrocyte gene expression, supports joint regeneration, and addresses the root cause of age-related cartilage degeneration.',
+    shortDescription: 'Verified Cartalax 20mg — Cartalax is a cartilage bioregulator tripeptide that restores chondrocyte gene expression, supports joint regeneration, and addresses the root cause of age-related cartilage degeneration.',
     fullDescription: `**Cartilage Bioregulation for Joint Longevity**
 
 Cartalax (Ala-Glu-Asp) is a tripeptide bioregulator developed by Khavinson that targets cartilage tissue — the specialized connective tissue that covers joint surfaces and whose degeneration is the defining feature of osteoarthritis. Unlike symptomatic treatments for joint pain, Cartalax is designed to restore normal gene expression in chondrocytes (the cells of cartilage), potentially addressing the root cause of age-related cartilage loss rather than just managing its symptoms.
@@ -3090,7 +3090,7 @@ For athletes, Cartalax provides a proactive approach to joint health that comple
 
 **Stack:** Combine with BPC-157 and TB-500 for acute repair plus bioregulatory support`,
     synergies: ['bpc-157', 'tb-500', 'epithalon', 'ghk-cu'],
-    seoTitle: 'Buy Cartalax 20mg | Cartilage Bioregulator Peptide | Joint Regeneration',
+    seoTitle: 'Verified Cartalax 20mg | Cartilage Bioregulator Peptide | Joint Regeneration',
     deepDiveTitle: 'Cartalax: The Cartilage Bioregulator That Restores Chondrocyte Function at the Root of Joint Aging',
     highlights: [
       { title: 'Chondrocyte-Specific Action', body: 'Cartalax targets chondrocytes — the only cells in cartilage — to restore their collagen II and proteoglycan synthesis that maintains joint surface integrity.' },
@@ -3111,7 +3111,7 @@ For athletes, Cartalax provides a proactive approach to joint health that comple
     tags: ['5-Amino-1MQ', 'NNMT Inhibitor', 'Fat Loss', 'NAD+', 'Metabolic'],
     image: 'https://phiogen.is/images/products/5-amino-1mq-50mg.png',
     affiliateUrl: 'https://phiogen.is/products/5-amino-1mq-50mg?ref=PEPS',
-    shortDescription: '5-Amino-1MQ is a selective NNMT inhibitor that reduces fat cell size, elevates intracellular NAD+, and enhances metabolic rate — the mechanistically novel small molecule for body composition.',
+    shortDescription: 'Buy 5-Amino-1MQ 50mg — 5-Amino-1MQ is a selective NNMT inhibitor that reduces fat cell size, elevates intracellular NAD+, and enhances metabolic rate — the mechanistically novel small molecule for body composition.',
     fullDescription: `**NNMT Inhibition: The Novel Fat Loss Target**
 
 5-Amino-1-methylquinolinium (5-Amino-1MQ) is a selective inhibitor of nicotinamide N-methyltransferase (NNMT), an enzyme highly expressed in adipose tissue that promotes fat storage by consuming methyl groups and lowering intracellular NAD+. By blocking NNMT, 5-Amino-1MQ simultaneously elevates NAD+ levels in fat cells, activates SIRT1-mediated fat oxidation, and reverses the metabolic reprogramming that causes adipocyte hypertrophy (fat cell enlargement).
@@ -3158,7 +3158,7 @@ NNMT overactivity in adipose tissue creates a cycle of low NAD+, suppressed sirt
     tags: ['5-Amino-1MQ', 'Capsules', 'NNMT Inhibitor', 'Fat Loss', 'Oral'],
     image: 'https://phiogen.is/images/products/5-amino-1mq-capsules-50mg-x-60-capsules.png',
     affiliateUrl: 'https://phiogen.is/products/5-amino-1mq-capsules-50mg-x-60-capsules?ref=PEPS',
-    shortDescription: '60 capsules of 5-Amino-1MQ 50mg each — a full 60-day supply of the NNMT inhibitor for sustained metabolic fat loss and NAD+ enhancement in convenient capsule form.',
+    shortDescription: '5-Amino-1MQ Capsules 50mg x60 For Sale — 60 capsules of 5-Amino-1MQ 50mg each — a full 60-day supply of the NNMT inhibitor for sustained metabolic fat loss and NAD+ enhancement in convenient capsule form.',
     fullDescription: `**60-Day NNMT Inhibitor Protocol in Capsule Form**
 
 The 5-Amino-1MQ 50mg x60 capsule format provides a complete two-month supply of this novel fat loss compound in the most convenient possible delivery system. Each capsule contains 50mg of 5-Amino-1MQ pre-measured and ready to use — no weighing, no dissolution, no DMSO required. Simply take 1–2 capsules daily and let the NNMT inhibition mechanism do its work.
@@ -3186,7 +3186,7 @@ At $119.99 for 60 capsules, this format provides superior cost-per-dose compared
 
 **Stack:** Combine with resistance training and moderate caloric deficit`,
     synergies: ['5-amino-1mq-50mg', 'nad-100mg', 'semaglutide-3mg', 'aod9604-5mg'],
-    seoTitle: 'Buy 5-Amino-1MQ Capsules 50mg x60 | NNMT Inhibitor Fat Loss | 60-Day Supply',
+    seoTitle: '5-Amino-1MQ Capsules 50mg x60 For Sale | NNMT Inhibitor Fat Loss | 60-Day Supply',
     deepDiveTitle: '5-Amino-1MQ Capsules 60-Day Supply: The Convenient Long-Cycle NNMT Inhibitor Protocol',
     highlights: [
       { title: '60-Day Complete Protocol', body: 'One bottle provides the full 60-day NNMT inhibition cycle that allows metabolic reprogramming to fully manifest — the right duration for meaningful fat cell reduction.' },
@@ -3205,7 +3205,7 @@ At $119.99 for 60 capsules, this format provides superior cost-per-dose compared
     tags: ['5-Amino-1MQ', 'Low-Dose', 'NNMT Inhibitor', 'Research', 'Microdosing'],
     image: 'https://phiogen.is/images/products/5-amino-1mq-5mg.png',
     affiliateUrl: 'https://phiogen.is/products/5-amino-1mq-5mg?ref=PEPS',
-    shortDescription: '5-Amino-1MQ 5mg — a research-scale quantity ideal for dose titration, initial response assessment, or as a low-dose NNMT inhibitor adjunct in combination protocols.',
+    shortDescription: 'Cheap 5-Amino-1MQ 5mg — 5-Amino-1MQ 5mg — a research-scale quantity ideal for dose titration, initial response assessment, or as a low-dose NNMT inhibitor adjunct in combination protocols.',
     fullDescription: `**Research-Scale Entry Point**
 
 The 5mg 5-Amino-1MQ vial is designed for researchers performing initial dose-response assessments, for users who want to test tolerability before committing to larger quantities, or as a low-dose component in stacked metabolic protocols. At 5mg, it provides approximately 5 days of microdose testing (1mg/day) or a single full assessment at the 5mg level.
@@ -3232,7 +3232,7 @@ Some advanced protocols combine 5-Amino-1MQ at lower doses (5–10mg) with compl
 
 **Administration:** Dissolve in DMSO or carrier for sublingual/topical use`,
     synergies: ['5-amino-1mq-50mg', '5-amino-1mq-capsules', 'nad-100mg', 'aod9604-2mg'],
-    seoTitle: 'Buy 5-Amino-1MQ 5mg | Low-Dose NNMT Inhibitor | Research Titration',
+    seoTitle: 'Cheap 5-Amino-1MQ 5mg | Low-Dose NNMT Inhibitor | Research Titration',
     deepDiveTitle: '5-Amino-1MQ 5mg: Research-Scale NNMT Inhibitor for Titration and Combination Protocols',
     highlights: [
       { title: 'Titration-Sized Format', body: 'The 5mg quantity is precisely sized for responsible dose escalation — start low, assess individual NNMT inhibitor response, then scale to the therapeutic 50mg protocol with confidence.' },
@@ -3251,7 +3251,7 @@ Some advanced protocols combine 5-Amino-1MQ at lower doses (5–10mg) with compl
     tags: ['AICAR', 'AMPK', 'Endurance', 'Fat Oxidation', 'Metabolic'],
     image: 'https://phiogen.is/images/products/aicar-50mg.png',
     affiliateUrl: 'https://phiogen.is/products/aicar-50mg?ref=PEPS',
-    shortDescription: 'AICAR (AICA ribonucleotide) is an AMPK activator that increases endurance capacity, enhances fat oxidation, and produces metabolic adaptations mimicking aerobic exercise training.',
+    shortDescription: 'Trusted AICAR 50mg — AICAR (AICA ribonucleotide) is an AMPK activator that increases endurance capacity, enhances fat oxidation, and produces metabolic adaptations mimicking aerobic exercise training.',
     fullDescription: `**The Exercise Mimetic AMPK Activator**
 
 AICAR (5-aminoimidazole-4-carboxamide ribonucleotide) is a cell-permeable adenosine monophosphate analog that activates AMP-activated protein kinase (AMPK) — the master metabolic switch that senses cellular energy status and coordinates responses to energy stress. AICAR was famously used in the Salk Institute research that showed it could double the running endurance of sedentary mice, even without training — earning it the label of an "exercise pill."
@@ -3281,7 +3281,7 @@ Athletes use AICAR for endurance enhancement, accelerated metabolic adaptation d
 
 **Note:** AICAR is a prohibited substance in competitive sport`,
     synergies: ['slu-pp-332-30caps', 'nad-100mg', 'mots-c', 'bam-15-30ml'],
-    seoTitle: 'Buy AICAR 50mg | AMPK Activator | Exercise Mimetic Endurance Enhancement',
+    seoTitle: 'Trusted AICAR 50mg | AMPK Activator | Exercise Mimetic Endurance Enhancement',
     deepDiveTitle: 'AICAR: The AMPK-Activating Exercise Mimetic That Doubled Endurance Without Training',
     highlights: [
       { title: 'Doubled Endurance in Studies', body: 'Salk Institute research showed AICAR administration doubled running endurance in untrained mice — producing the cardiovascular adaptation of months of training in weeks of injection.' },
@@ -3300,7 +3300,7 @@ Athletes use AICAR for endurance enhancement, accelerated metabolic adaptation d
     tags: ['AOD9604', 'HGH Fragment', 'Fat Loss', 'Lipolysis', 'Body Composition'],
     image: 'https://phiogen.is/images/products/aod9604-2mg.png',
     affiliateUrl: 'https://phiogen.is/products/aod9604-2mg?ref=PEPS',
-    shortDescription: 'AOD9604 is the lipolytic C-terminal fragment of human growth hormone (hGH 177-191) that stimulates fat breakdown and inhibits lipogenesis without growth-promoting side effects.',
+    shortDescription: 'Verified AOD9604 2mg — AOD9604 is the lipolytic C-terminal fragment of human growth hormone (hGH 177-191) that stimulates fat breakdown and inhibits lipogenesis without growth-promoting side effects.',
     fullDescription: `**The Fat-Burning Fragment of Growth Hormone**
 
 AOD9604 is a synthetic peptide comprising amino acids 177–191 of the C-terminus of human growth hormone — the fragment responsible for hGH's lipolytic (fat-breaking) activity. Unlike full-length hGH, AOD9604 does not bind to the IGF-1 receptor, produce IGF-1, promote glucose intolerance, or cause tissue growth — it is purely the fat-mobilizing portion of hGH with none of the anabolic risks.
@@ -3330,7 +3330,7 @@ AOD9604 has progressed through Phase IIb clinical trials for obesity with a good
 
 **Timing:** Morning fasted injection maximizes lipolytic effect`,
     synergies: ['semaglutide-3mg', '5-amino-1mq-50mg', 'aod9604-5mg', 'adipotide-5mg'],
-    seoTitle: 'Buy AOD9604 2mg | HGH Fragment Fat Loss Peptide | Lipolytic Without IGF-1',
+    seoTitle: 'Verified AOD9604 2mg | HGH Fragment Fat Loss Peptide | Lipolytic Without IGF-1',
     deepDiveTitle: 'AOD9604: The Pure Lipolytic Fragment of Growth Hormone With Clinical Safety Data',
     highlights: [
       { title: 'Pure Fat Loss Mechanism', body: 'AOD9604 contains only the lipolytic domain of hGH — stimulating fat breakdown and inhibiting fat storage without any of the anabolic, growth-promoting, or diabetogenic effects of full hGH.' },
@@ -3349,7 +3349,7 @@ AOD9604 has progressed through Phase IIb clinical trials for obesity with a good
     tags: ['AOD9604', 'HGH Fragment', 'Fat Loss', 'Lipolysis', 'Extended Protocol'],
     image: 'https://phiogen.is/images/products/aod9604-5mg.png',
     affiliateUrl: 'https://phiogen.is/products/aod9604-5mg?ref=PEPS',
-    shortDescription: 'AOD9604 5mg — extended supply of the hGH lipolytic fragment for longer fat loss cycles without mid-protocol reconstitution.',
+    shortDescription: 'Buy AOD9604 5mg — AOD9604 5mg — extended supply of the hGH lipolytic fragment for longer fat loss cycles without mid-protocol reconstitution.',
     fullDescription: `**Extended Protocol AOD9604**
 
 The 5mg AOD9604 vial provides approximately 10–17 days of standard daily dosing (300–500mcg/day) — sufficient for continuous protocol use without the interruption of reconstituting a new vial mid-cycle. For users committed to a 12–16 week AOD9604 fat loss cycle, the 5mg format reduces the frequency of reconstitution and maintains consistent peptide concentration throughout the protocol.
@@ -3395,7 +3395,7 @@ At $69.99 for 5mg versus $39.99 for 2mg, the 5mg vial provides approximately 14%
     tags: ['AOD9604', 'HGH Fragment', 'Fat Loss', 'High-Volume', 'Body Composition'],
     image: 'https://phiogen.is/images/products/aod9604-10mg.png',
     affiliateUrl: 'https://phiogen.is/products/aod9604-10mg?ref=PEPS',
-    shortDescription: 'AOD9604 10mg — a full 20-33 day supply for extended fat loss cycles, representing the best value-per-mg for committed AOD9604 users.',
+    shortDescription: 'AOD9604 10mg For Sale — AOD9604 10mg — a full 20-33 day supply for extended fat loss cycles, representing the best value-per-mg for committed AOD9604 users.',
     fullDescription: `**Full-Cycle Supply for Maximum Commitment**
 
 The 10mg AOD9604 vial provides 20–33 days of continuous daily dosing at standard therapeutic doses — covering a full month of protocol with a single vial. For users running AOD9604 as the lipolytic backbone of a 12–16 week fat loss program, the 10mg format minimizes vial purchases while maximizing cost efficiency and protocol consistency.
@@ -3422,7 +3422,7 @@ For researchers studying AOD9604's lipolytic mechanism, the 10mg format provides
 - Full cycle: 10mg covers 20–33 days; two vials for 6-week block
 - Best with sustained caloric deficit and training consistency`,
     synergies: ['semaglutide-3mg', 'aod9604-5mg', '5-amino-1mq-50mg', 'adipotide-10mg'],
-    seoTitle: 'Buy AOD9604 10mg | HGH Fragment Best Value Fat Loss | Full Cycle Supply',
+    seoTitle: 'AOD9604 10mg For Sale | HGH Fragment Best Value Fat Loss | Full Cycle Supply',
     deepDiveTitle: 'AOD9604 10mg: Maximum Supply for Comprehensive Lipolytic Fat Loss Protocols',
     highlights: [
       { title: 'Best Value per mg', body: 'The 10mg format delivers AOD9604 at the lowest cost-per-mg — the rational purchase for anyone committed to a full 12+ week fat loss cycle.' },
@@ -3441,7 +3441,7 @@ For researchers studying AOD9604's lipolytic mechanism, the 10mg format provides
     tags: ['Adipotide', 'FTPP', 'Fat Loss', 'Proapoptotic', 'Vasculature'],
     image: 'https://phiogen.is/images/products/adipotide-fttp-5mg.png',
     affiliateUrl: 'https://phiogen.is/products/adipotide-fttp-5mg?ref=PEPS',
-    shortDescription: 'Adipotide (FTPP) is a chimeric proapoptotic peptide that selectively destroys the blood vessels supplying white adipose tissue, causing fat cell death through targeted vascular elimination.',
+    shortDescription: 'Cheap Adipotide (FTPP) 5mg — Adipotide (FTPP) is a chimeric proapoptotic peptide that selectively destroys the blood vessels supplying white adipose tissue, causing fat cell death through targeted vascular elimination.',
     fullDescription: `**Targeting Fat Tissue's Blood Supply**
 
 Adipotide (Fat-Targeting Pro-apoptotic Peptide, FTPP) is a chimeric peptide consisting of a targeting sequence that binds prohibitin on the surface of white adipose tissue blood vessels, conjugated to a proapoptotic sequence (KLAKLAK)2 that kills the cell it enters. By selectively binding to and destroying the vasculature of white adipose tissue, Adipotide causes the fat cells it supplies to die from lack of blood flow — a completely novel mechanism for fat loss.
@@ -3471,7 +3471,7 @@ In obese rhesus monkeys, Adipotide treatment produced 11% body weight loss and 2
 
 **Caution:** Monitor hydration and kidney function; renal effects noted in research`,
     synergies: ['semaglutide-3mg', 'aod9604-5mg', '5-amino-1mq-50mg', 'adipotide-10mg'],
-    seoTitle: 'Buy Adipotide FTPP 5mg | Proapoptotic Fat Loss Peptide | Visceral Fat Reduction',
+    seoTitle: 'Cheap Adipotide FTPP 5mg | Proapoptotic Fat Loss Peptide | Visceral Fat Reduction',
     deepDiveTitle: 'Adipotide FTPP: The Proapoptotic Peptide That Eliminates Fat Tissue by Destroying Its Blood Supply',
     highlights: [
       { title: 'Unprecedented Fat Loss Mechanism', body: 'Adipotide works by a mechanism no other compound uses — binding specifically to adipose vasculature and inducing apoptosis to destroy the blood supply that sustains fat cells.' },
@@ -3490,7 +3490,7 @@ In obese rhesus monkeys, Adipotide treatment produced 11% body weight loss and 2
     tags: ['Adipotide', 'FTPP', 'Fat Loss', 'Proapoptotic', 'High-Dose'],
     image: 'https://phiogen.is/images/products/adipotide-fttp-10mg.png',
     affiliateUrl: 'https://phiogen.is/products/adipotide-fttp-10mg?ref=PEPS',
-    shortDescription: 'Adipotide (FTPP) 10mg — double supply for extended or higher-dose proapoptotic fat loss protocols targeting visceral adipose vasculature.',
+    shortDescription: 'Trusted Adipotide (FTPP) 10mg — Adipotide (FTPP) 10mg — double supply for extended or higher-dose proapoptotic fat loss protocols targeting visceral adipose vasculature.',
     fullDescription: `**Extended Proapoptotic Fat Loss Protocol**
 
 The 10mg Adipotide vial provides twice the quantity of the 5mg format — extending the research or therapeutic cycle duration, enabling higher dose investigations, or providing a longer continuous protocol without mid-cycle vial changes. For the 4-week primate protocol that showed 11% bodyweight loss, 10mg provides more flexibility in dose calibration and protocol length.
@@ -3519,7 +3519,7 @@ At $149.99 for 10mg versus $89.99 for 5mg, the 10mg vial offers better cost-per-
 
 **Caution:** Start low; monitor renal markers every 2 weeks`,
     synergies: ['semaglutide-3mg', 'adipotide-5mg', 'aod9604-10mg', '5-amino-1mq-50mg'],
-    seoTitle: 'Buy Adipotide FTPP 10mg | Extended Proapoptotic Fat Loss | High-Volume Research',
+    seoTitle: 'Trusted Adipotide FTPP 10mg | Extended Proapoptotic Fat Loss | High-Volume Research',
     deepDiveTitle: 'Adipotide FTPP 10mg: Maximum Supply for Extended Visceral Fat Targeting Protocols',
     highlights: [
       { title: '10mg Research Volume', body: 'Double the 5mg format — supporting extended protocol durations, dose escalation designs, or multi-subject research without supply interruptions.' },
@@ -3538,7 +3538,7 @@ At $149.99 for 10mg versus $89.99 for 5mg, the 10mg vial offers better cost-per-
     tags: ['BAM-15', 'Mitochondrial Uncoupler', 'Thermogenic', 'Fat Loss', 'Metabolic Rate'],
     image: 'https://phiogen.is/images/products/bam-15-30mg-ml-30ml.png',
     affiliateUrl: 'https://phiogen.is/products/bam-15-30mg-ml-30ml?ref=PEPS',
-    shortDescription: 'BAM-15 is a mitochondria-targeted protonophore that increases metabolic rate and thermogenic fat burning without raising body temperature or causing cardiovascular toxicity.',
+    shortDescription: 'Verified BAM-15 30mg/mL 30mL — BAM-15 is a mitochondria-targeted protonophore that increases metabolic rate and thermogenic fat burning without raising body temperature or causing cardiovascular toxicity.',
     fullDescription: `**Safe Mitochondrial Uncoupling**
 
 BAM-15 (BAM15; N5,N6-bis(2-fluorophenyl)-[1,2,5]oxadiazolo[3,4-b]pyrazine-5,6-diamine) is a novel mitochondrial uncoupler developed to address the fundamental limitation of older uncouplers like DNP — dangerous and non-selective heating of the body. BAM-15 uncouples the mitochondrial proton gradient to generate heat from metabolic substrates, increasing overall energy expenditure and fat oxidation, but without accumulating in off-target tissues or raising core body temperature at relevant doses.
@@ -3568,7 +3568,7 @@ Mouse studies using BAM-15 showed 30% reduction in fat mass over 4 weeks with pr
 
 **Note:** Emerging research compound; human protocols not yet established`,
     synergies: ['slu-pp-332-30caps', 'aicar', 'nad-100mg', 'semaglutide-3mg'],
-    seoTitle: 'Buy BAM-15 30mg/mL 30mL | Safe Mitochondrial Uncoupler | Thermogenic Fat Loss',
+    seoTitle: 'Verified BAM-15 30mg/mL 30mL | Safe Mitochondrial Uncoupler | Thermogenic Fat Loss',
     deepDiveTitle: 'BAM-15: The Mitochondrial Uncoupler That Burns Fat Without Raising Body Temperature',
     highlights: [
       { title: 'Temperature-Safe Uncoupling', body: 'BAM-15 achieves mitochondrial uncoupling and metabolic rate increase without the dangerous core temperature elevation that made DNP and earlier uncouplers lethal.' },
@@ -3587,7 +3587,7 @@ Mouse studies using BAM-15 showed 30% reduction in fat mass over 4 weeks with pr
     tags: ['BAM-15', 'Mitochondrial Uncoupler', 'High Concentration', 'Thermogenic', 'Fat Loss'],
     image: 'https://phiogen.is/images/products/bam-15-50mg-ml-30ml.png',
     affiliateUrl: 'https://phiogen.is/products/bam-15-50mg-ml-30ml?ref=PEPS',
-    shortDescription: 'BAM-15 at 50mg/mL in 30mL — higher concentration format for increased flexibility in dose calibration across research protocols for mitochondrial uncoupling.',
+    shortDescription: 'Buy BAM-15 50mg/mL 30mL — BAM-15 at 50mg/mL in 30mL — higher concentration format for increased flexibility in dose calibration across research protocols for mitochondrial uncoupling.',
     fullDescription: `**Higher Concentration for Protocol Flexibility**
 
 The 50mg/mL BAM-15 format provides 1,500mg total in 30mL — 67% more total compound than the 30mg/mL format at smaller liquid volume. This concentration allows more precise dose calibration for users who need to accurately deliver specific mg/kg doses in lower liquid volumes, reducing the volume of oral administration required at higher research doses.
@@ -3635,7 +3635,7 @@ The BAM-15 compound is identical at both concentrations — the only difference 
     tags: ['L-Carnitine', 'Fat Oxidation', 'Performance', 'Injectable', 'Body Composition'],
     image: 'https://phiogen.is/images/products/l-carnitine-400mg-ml.png',
     affiliateUrl: 'https://phiogen.is/products/l-carnitine-400mg-ml?ref=PEPS',
-    shortDescription: 'Injectable L-Carnitine 400mg/mL for superior bioavailability versus oral supplementation — transports fatty acids into mitochondria for enhanced fat oxidation and performance.',
+    shortDescription: 'L-Carnitine 400mg/mL For Sale — Injectable L-Carnitine 400mg/mL for superior bioavailability versus oral supplementation — transports fatty acids into mitochondria for enhanced fat oxidation and performance.',
     fullDescription: `**The Fatty Acid Transport Molecule**
 
 L-Carnitine is a conditionally essential nutrient that plays an indispensable role in energy metabolism — it is the transporter that carries long-chain fatty acids across the inner mitochondrial membrane for beta-oxidation. Without adequate L-Carnitine, fat cannot be efficiently used as fuel, making carnitine status a rate-limiting factor for fat oxidation. Injectable L-Carnitine achieves blood levels far superior to oral supplementation.
@@ -3662,7 +3662,7 @@ Research supports L-Carnitine's role in reducing exercise-induced muscle damage 
 - Daily: 500mg–1g subcutaneous morning injection on non-training days
 - Cycle: continuous use is safe; no cycling required`,
     synergies: ['aod9604-5mg', 'aicar', 'l-carnitine-600mg', 'semaglutide-3mg'],
-    seoTitle: 'Buy L-Carnitine 400mg/mL Injectable | Fat Oxidation | Exercise Performance',
+    seoTitle: 'L-Carnitine 400mg/mL Injectable For Sale | Fat Oxidation | Exercise Performance',
     deepDiveTitle: 'Injectable L-Carnitine: Superior Bioavailability for Maximum Fat Oxidation and Performance',
     highlights: [
       { title: '400mg/mL Concentration', body: 'A clinically relevant concentration delivering 400mg per mL — a full gram dose in just 2.5mL injection, minimizing injection volume while delivering therapeutic carnitine levels.' },
@@ -3681,7 +3681,7 @@ Research supports L-Carnitine's role in reducing exercise-induced muscle damage 
     tags: ['L-Carnitine', 'High Concentration', 'Fat Oxidation', 'Injectable', 'Performance'],
     image: 'https://phiogen.is/images/products/l-carnitine-600mg-ml.png',
     affiliateUrl: 'https://phiogen.is/products/l-carnitine-600mg-ml?ref=PEPS',
-    shortDescription: 'L-Carnitine 600mg/mL — higher concentration injectable for delivering full gram doses in minimal injection volume, ideal for clinical IV protocols and pre-workout performance stacks.',
+    shortDescription: 'Cheap L-Carnitine 600mg/mL — L-Carnitine 600mg/mL — higher concentration injectable for delivering full gram doses in minimal injection volume, ideal for clinical IV protocols and pre-workout performance stacks.',
     fullDescription: `**Maximum Concentration for Minimum Volume**
 
 The 600mg/mL L-Carnitine formulation delivers 600mg per mL — allowing a full 1,800mg dose in just 3mL of injection fluid. This high concentration is designed for users who require larger carnitine doses (1.5–3g) but prefer to minimize injection volume, or for IV drip applications where the concentrated formulation can be diluted precisely into saline for infusion.
@@ -3707,7 +3707,7 @@ For regular users who inject L-Carnitine daily, the 600mg/mL concentration means
 - Daily maintenance: 500mg–1g subcutaneous daily
 - Continuous use protocol; no cycling required`,
     synergies: ['l-carnitine-400mg', 'aod9604-5mg', 'aicar', 'semaglutide-3mg'],
-    seoTitle: 'Buy L-Carnitine 600mg/mL Injectable | High Concentration Fat Oxidation | IV Protocol',
+    seoTitle: 'Cheap L-Carnitine 600mg/mL Injectable | High Concentration Fat Oxidation | IV Protocol',
     deepDiveTitle: 'L-Carnitine 600mg/mL: Maximum Concentration Injectable for Clinical and Performance Protocols',
     highlights: [
       { title: '600mg/mL Peak Concentration', body: 'The highest available L-Carnitine injectable concentration — delivering full 1.8g doses in a 3mL injection, minimizing volume while maximizing carnitine delivery.' },
@@ -3726,7 +3726,7 @@ For regular users who inject L-Carnitine daily, the 600mg/mL concentration means
     tags: ['Mazdutide', 'GLP-1', 'Glucagon', 'Dual Agonist', 'Weight Loss'],
     image: 'https://phiogen.is/images/products/mazdutide-6mg.png',
     affiliateUrl: 'https://phiogen.is/products/mazdutide-6mg?ref=PEPS',
-    shortDescription: 'Mazdutide is a once-weekly GLP-1/glucagon receptor dual agonist in Phase III trials that produces superior weight loss versus GLP-1 monotherapy by adding thermogenic glucagon activation.',
+    shortDescription: 'Trusted Mazdutide 6mg — Mazdutide is a once-weekly GLP-1/glucagon receptor dual agonist in Phase III trials that produces superior weight loss versus GLP-1 monotherapy by adding thermogenic glucagon activation.',
     fullDescription: `**Dual-Receptor Weight Loss Innovation**
 
 Mazdutide (IBI362, OXM3) is an oxyntomodulin-based peptide being developed by Innovent Biologics that simultaneously activates both GLP-1 receptors and glucagon receptors. While GLP-1 agonists like semaglutide reduce appetite and slow gastric emptying, the additional glucagon receptor activation increases energy expenditure through hepatic fat oxidation and thermogenesis — addressing both sides of the energy balance equation simultaneously.
@@ -3756,7 +3756,7 @@ Mazdutide is currently in Phase III trials in China and Phase II/III in global m
 
 **Note:** Phase III compound; protocols are based on clinical trial data`,
     synergies: ['semaglutide-3mg', 'survodutide', '5-amino-1mq-50mg', 'aod9604-5mg'],
-    seoTitle: 'Buy Mazdutide 6mg | GLP-1 Glucagon Dual Agonist | Phase III Weight Loss Peptide',
+    seoTitle: 'Trusted Mazdutide 6mg | GLP-1 Glucagon Dual Agonist | Phase III Weight Loss Peptide',
     deepDiveTitle: 'Mazdutide: The GLP-1/Glucagon Dual Agonist Delivering Superior Weight Loss in Phase III Trials',
     highlights: [
       { title: 'Dual Receptor Mechanism', body: 'Combines GLP-1 appetite suppression with glucagon\'s thermogenic and hepatic fat oxidation effects — addressing both caloric intake and energy expenditure for superior weight loss.' },
@@ -3775,7 +3775,7 @@ Mazdutide is currently in Phase III trials in China and Phase II/III in global m
     tags: ['O-304', 'ATX-304', 'AMPK', 'Metabolic Syndrome', 'Exercise Mimetic'],
     image: 'https://phiogen.is/images/products/o-304-atx-304-100mg-x-60-capsules.png',
     affiliateUrl: 'https://phiogen.is/products/o-304-atx-304-100mg-x-60-capsules?ref=PEPS',
-    shortDescription: 'O-304 (ATX-304) is a first-in-class pan-AMPK activator in clinical trials that produces exercise-like metabolic effects — improving insulin sensitivity, reducing fat, and enhancing vascular function.',
+    shortDescription: 'Verified O-304 (ATX-304) 100mg x60 Capsules — O-304 (ATX-304) is a first-in-class pan-AMPK activator in clinical trials that produces exercise-like metabolic effects — improving insulin sensitivity, reducing fat, and enhancing vascular function.',
     fullDescription: `**The Clinical-Stage Pan-AMPK Activator**
 
 O-304 (ATX-304) is a small molecule pan-AMPK activator developed by Betagenon AB, currently in Phase IIb trials for type 2 diabetes and cardiovascular disease. As a "pan" activator, it activates all AMPK heterotrimeric complexes — not just the α2β1γ1 form activated by existing agents — producing a more complete exercise-mimetic metabolic response than any previous AMPK activator.
@@ -3803,7 +3803,7 @@ Phase I/IIa trials demonstrated that O-304 significantly reduced fasting glucose
 
 **Capsule format:** Take with food; clinical trials used once-daily oral dosing`,
     synergies: ['aicar', 'mots-c', 'slu-pp-332-30caps', 'nad-100mg'],
-    seoTitle: 'Buy O-304 ATX-304 100mg x60 Capsules | Pan-AMPK Activator | Clinical Metabolic Agent',
+    seoTitle: 'Verified O-304 ATX-304 100mg x60 Capsules | Pan-AMPK Activator | Clinical Metabolic Agent',
     deepDiveTitle: 'O-304 (ATX-304): The Pan-AMPK Activator in Clinical Trials for Metabolic Syndrome and Cardiovascular Disease',
     highlights: [
       { title: 'Pan-AMPK Activation', body: 'O-304 activates all AMPK complexes simultaneously — delivering more complete exercise-mimetic metabolic signaling than any previous AMPK-targeting compound.' },
@@ -3822,7 +3822,7 @@ Phase I/IIa trials demonstrated that O-304 significantly reduced fasting glucose
     tags: ['Semaglutide', 'GLP-1', 'Weight Loss', 'Appetite', 'Ozempic'],
     image: 'https://phiogen.is/images/products/semaglutide-3mg.png',
     affiliateUrl: 'https://phiogen.is/products/semaglutide-3mg?ref=PEPS',
-    shortDescription: 'Semaglutide 3mg — the GLP-1 receptor agonist behind Ozempic and Wegovy, for appetite suppression, blood glucose control, and significant body weight reduction.',
+    shortDescription: 'Buy Semaglutide 3mg — Semaglutide 3mg — the GLP-1 receptor agonist behind Ozempic and Wegovy, for appetite suppression, blood glucose control, and significant body weight reduction.',
     fullDescription: `**The World's Most Impactful Weight Loss Drug**
 
 Semaglutide is a glucagon-like peptide-1 (GLP-1) receptor agonist developed by Novo Nordisk, approved as Ozempic for type 2 diabetes and Wegovy for obesity. It mimics endogenous GLP-1 by activating GLP-1 receptors in the pancreas, hypothalamus, and GI tract — producing dose-dependent appetite suppression, delayed gastric emptying, improved insulin secretion, and reduced glucagon production. Clinical trials demonstrated 15–20% body weight loss — more than any previous anti-obesity medication.
@@ -3870,7 +3870,7 @@ Beyond weight loss, semaglutide reduces major adverse cardiovascular events (MAC
     tags: ['Semaglutide', 'GLP-1', 'Weight Loss', 'High-Volume', 'Extended Protocol'],
     image: 'https://phiogen.is/images/products/semaglutide-30mg.png',
     affiliateUrl: 'https://phiogen.is/products/semaglutide-30mg?ref=PEPS',
-    shortDescription: 'Semaglutide 30mg — a 10x larger vial for extended GLP-1 weight loss programs, providing approximately 30+ weeks of therapeutic dosing at Ozempic maintenance doses.',
+    shortDescription: 'Semaglutide 30mg For Sale — Semaglutide 30mg — a 10x larger vial for extended GLP-1 weight loss programs, providing approximately 30+ weeks of therapeutic dosing at Ozempic maintenance doses.',
     fullDescription: `**Sustained GLP-1 Protocol Supply**
 
 The 30mg semaglutide vial provides approximately 15–30 weeks of dosing at the standard Ozempic maintenance dose of 1–2mg weekly — covering the full titration phase and much of the maintenance phase from a single vial. This eliminates the repeated purchasing and reconstitution required when managing semaglutide protocols with smaller vials, ensuring consistent concentration and protocol adherence throughout the weight loss journey.
@@ -3896,7 +3896,7 @@ For physicians, wellness clinics, or research programs managing multiple subject
 **Extended protocol:** Plan 12–18 months of continuous use for maximum weight loss results
 **Storage:** Refrigerate after reconstitution; use within 28–30 days`,
     synergies: ['semaglutide-3mg', 'aod9604-10mg', 'mazdutide', 'survodutide'],
-    seoTitle: 'Buy Semaglutide 30mg | High-Volume GLP-1 | Extended Weight Loss Protocol',
+    seoTitle: 'Semaglutide 30mg For Sale | High-Volume GLP-1 | Extended Weight Loss Protocol',
     deepDiveTitle: 'Semaglutide 30mg: Maximum Supply for Long-Term GLP-1 Weight Loss Programs',
     highlights: [
       { title: '30mg Single Vial', body: 'Ten times the quantity of the 3mg vial — providing a continuous, uninterrupted semaglutide supply that matches the long-term treatment timelines where maximum weight loss occurs.' },
@@ -3915,7 +3915,7 @@ For physicians, wellness clinics, or research programs managing multiple subject
     tags: ['SLU-PP-332', 'ERR', 'Exercise Mimetic', 'Endurance', 'Fat Oxidation'],
     image: 'https://phiogen.is/images/products/slu-pp-332-100mg-x-30-capsules.png',
     affiliateUrl: 'https://phiogen.is/products/slu-pp-332-100mg-x-30-capsules?ref=PEPS',
-    shortDescription: 'SLU-PP-332 is a synthetic ERRα/γ agonist that activates the transcriptional programs of extreme endurance exercise — dramatically increasing mitochondrial density and fat oxidation capacity.',
+    shortDescription: 'Cheap SLU-PP-332 100mg x30 Capsules — SLU-PP-332 is a synthetic ERRα/γ agonist that activates the transcriptional programs of extreme endurance exercise — dramatically increasing mitochondrial density and fat oxidation capacity.',
     fullDescription: `**Activating the Endurance Exercise Transcriptome**
 
 SLU-PP-332 is a synthetic agonist of estrogen-related receptors alpha and gamma (ERRα/γ) — orphan nuclear receptors that act as master regulators of the transcriptional response to endurance exercise. By directly activating ERRα/γ, SLU-PP-332 triggers the expression of hundreds of genes normally only activated by sustained aerobic training, producing mitochondrial biogenesis, increased fatty acid oxidation capacity, and improved exercise efficiency without physical training.
@@ -3943,7 +3943,7 @@ The original Washington University study demonstrated dramatic improvements in e
 
 **Note:** ERRα/γ agonism produces genuine transcriptional changes — expect 2–4 weeks before full effects manifest`,
     synergies: ['aicar', 'slu-pp-332-120caps', 'bam-15-30ml', 'nad-100mg'],
-    seoTitle: 'Buy SLU-PP-332 100mg x30 Capsules | ERR Agonist | Exercise Mimetic Endurance',
+    seoTitle: 'Cheap SLU-PP-332 100mg x30 Capsules | ERR Agonist | Exercise Mimetic Endurance',
     deepDiveTitle: 'SLU-PP-332: The ERRα/γ Agonist That Activates the Endurance Exercise Transcriptome',
     highlights: [
       { title: '70% Endurance Increase', body: 'The original research showed SLU-PP-332 increased running distance by 70% in sedentary mice — among the most dramatic exercise performance enhancements observed with any single compound.' },
@@ -3962,7 +3962,7 @@ The original Washington University study demonstrated dramatic improvements in e
     tags: ['SLU-PP-332', 'ERR Agonist', 'Endurance', 'Bulk Supply', 'Exercise Mimetic'],
     image: 'https://phiogen.is/images/products/slu-pp-332-100mg-x-120-capsules.png',
     affiliateUrl: 'https://phiogen.is/products/slu-pp-332-100mg-x-120-capsules?ref=PEPS',
-    shortDescription: 'SLU-PP-332 100mg x120 capsules — a four-month supply for sustained ERRα/γ-mediated endurance enhancement and metabolic optimization at the best available price per dose.',
+    shortDescription: 'Trusted SLU-PP-332 100mg x120 Capsules — SLU-PP-332 100mg x120 capsules — a four-month supply for sustained ERRα/γ-mediated endurance enhancement and metabolic optimization at the best available price per dose.',
     fullDescription: `**Sustained ERRα/γ Activation for Lasting Results**
 
 The 120-capsule format represents a four-month supply of SLU-PP-332 at 100mg daily — enough for a full extended protocol that allows the nuclear receptor transcriptional changes to fully manifest and produce lasting mitochondrial and metabolic adaptations. ERRα/γ-mediated gene expression changes require several weeks to translate into meaningful phenotypic improvements; the 120-capsule format ensures this timeline isn't cut short.
@@ -3989,7 +3989,7 @@ At $159.99 for 120 capsules versus $59.99 for 30 capsules, the bulk format provi
 
 **Protocol design:** Allow 4–6 weeks for initial adaptations; maximum benefits typically visible at week 8–12`,
     synergies: ['slu-pp-332-30caps', 'aicar', 'bam-15-30ml', 'nad-100mg'],
-    seoTitle: 'Buy SLU-PP-332 100mg x120 | ERR Agonist Bulk Supply | 4-Month Endurance Protocol',
+    seoTitle: 'Trusted SLU-PP-332 100mg x120 | ERR Agonist Bulk Supply | 4-Month Endurance Protocol',
     deepDiveTitle: 'SLU-PP-332 120 Capsules: Four-Month Sustained ERRα/γ Activation for Maximum Metabolic Adaptation',
     highlights: [
       { title: '4-Month Protocol Supply', body: '120 capsules at one daily covers exactly 4 months — the duration needed for nuclear receptor transcriptional changes to produce lasting, self-sustaining mitochondrial adaptations.' },
@@ -4008,7 +4008,7 @@ At $159.99 for 120 capsules versus $59.99 for 30 capsules, the bulk format provi
     tags: ['SLU-PP-332', 'Low-Dose', 'ERR Agonist', 'Titration', 'Research'],
     image: 'https://phiogen.is/images/products/slu-pp-332-1mg-x-30-capsules.png',
     affiliateUrl: 'https://phiogen.is/products/slu-pp-332-1mg-x-30-capsules?ref=PEPS',
-    shortDescription: 'SLU-PP-332 1mg x30 capsules — low-dose format for dose-response research, titration before standard 100mg protocols, and combination stacks requiring precise low-level ERRα/γ activation.',
+    shortDescription: 'Verified SLU-PP-332 1mg x30 Capsules — SLU-PP-332 1mg x30 capsules — low-dose format for dose-response research, titration before standard 100mg protocols, and combination stacks requiring precise low-level ERRα/γ activation.',
     fullDescription: `**Research-Scale Low-Dose Format**
 
 The 1mg SLU-PP-332 capsule format is designed for researchers studying dose-response relationships of ERRα/γ agonism, for users initiating SLU-PP-332 at below-therapeutic doses to characterize their individual response, or for combination protocols where low-level ERRα/γ activation is desired as part of a multi-mechanism metabolic stack.
@@ -4035,7 +4035,7 @@ Advanced metabolic stacks combining multiple exercise mimetics (AICAR, SLU-PP-33
 
 **Note:** Below-therapeutic doses may show minimal individual effects; useful for combination use`,
     synergies: ['slu-pp-332-30caps', 'aicar', 'mots-c', 'bam-15-30ml'],
-    seoTitle: 'Buy SLU-PP-332 1mg x30 Capsules | Low-Dose ERR Agonist | Titration Research',
+    seoTitle: 'Verified SLU-PP-332 1mg x30 Capsules | Low-Dose ERR Agonist | Titration Research',
     deepDiveTitle: 'SLU-PP-332 1mg Capsules: Low-Dose ERRα/γ Activation for Research Titration and Combination Protocols',
     highlights: [
       { title: '1mg Precision Dosing', body: 'Enables investigation of sub-threshold ERRα/γ activation levels that standard 100mg capsules make impossible — filling a genuine gap in dose-response characterization.' },
@@ -4054,7 +4054,7 @@ Advanced metabolic stacks combining multiple exercise mimetics (AICAR, SLU-PP-33
     tags: ['SLU-PP-332', 'Liquid', 'ERR Agonist', 'Sublingual', 'Flexible Dosing'],
     image: 'https://phiogen.is/images/products/slu-pp-332-1mg-ml-30ml.png',
     affiliateUrl: 'https://phiogen.is/products/slu-pp-332-1mg-ml-30ml?ref=PEPS',
-    shortDescription: 'SLU-PP-332 liquid at 1mg/mL in 30mL — for precise volume-based dosing of this ERRα/γ agonist, enabling flexible sublingual or oral administration at any desired dose.',
+    shortDescription: 'Buy SLU-PP-332 1mg/mL 30mL — SLU-PP-332 liquid at 1mg/mL in 30mL — for precise volume-based dosing of this ERRα/γ agonist, enabling flexible sublingual or oral administration at any desired dose.',
     fullDescription: `**Liquid Format for Flexible Dosing**
 
 The liquid SLU-PP-332 formulation at 1mg/mL provides the flexibility to dose anywhere from 0.5mg (0.5mL) to 30mg (30mL) within a single bottle — making it the most versatile format for exploring SLU-PP-332's dose-response profile or for users who prefer liquid oral administration. Sublingual delivery may enhance bioavailability compared to capsule forms for some users.
@@ -4100,7 +4100,7 @@ For researchers or advanced users who want to precisely control dose in mg (rath
     tags: ['SLU-PP-332', 'Liquid', 'High Concentration', 'ERR Agonist', 'Exercise Mimetic'],
     image: 'https://phiogen.is/images/products/slu-pp-332-5mg-ml-30ml.png',
     affiliateUrl: 'https://phiogen.is/products/slu-pp-332-5mg-ml-30ml?ref=PEPS',
-    shortDescription: 'SLU-PP-332 5mg/mL in 30mL — higher concentration liquid for users requiring 50–150mg doses who prefer liquid format with reduced administration volume.',
+    shortDescription: 'SLU-PP-332 5mg/mL 30mL For Sale — SLU-PP-332 5mg/mL in 30mL — higher concentration liquid for users requiring 50–150mg doses who prefer liquid format with reduced administration volume.',
     fullDescription: `**Higher Concentration Liquid for Standard Doses**
 
 The 5mg/mL SLU-PP-332 liquid provides 150mg total in 30mL — and at 5x the concentration of the 1mg/mL format, delivers the standard 100mg research dose in just 20mL of liquid. This reduces the oral volume required for therapeutic doses while maintaining the flexibility advantages of liquid administration over capsules.
@@ -4128,7 +4128,7 @@ Users transitioning from the 1mg/mL titration format to standard dosing often pr
 
 **Daily use:** Simple once-daily oral administration; take with or without food`,
     synergies: ['slu-pp-332-liquid', 'slu-pp-332-30caps', 'aicar', 'bam-15-50ml'],
-    seoTitle: 'Buy SLU-PP-332 5mg/mL 30mL Liquid | Higher Concentration ERR Agonist | Standard Dosing',
+    seoTitle: 'SLU-PP-332 5mg/mL 30mL Liquid For Sale | Higher Concentration ERR Agonist | Standard Dosing',
     deepDiveTitle: 'SLU-PP-332 5mg/mL Liquid: Higher Concentration Format for Standard-Dose ERRα/γ Protocols',
     highlights: [
       { title: '5mg/mL Practical Concentration', body: 'Delivers the research standard 100mg dose in a practical 20mL oral volume — versus 100mL required with the 1mg/mL format at the same dose.' },
@@ -4147,7 +4147,7 @@ Users transitioning from the 1mg/mL titration format to standard dosing often pr
     tags: ['Survodutide', 'GLP-1', 'Glucagon', 'Dual Agonist', 'NASH', 'Obesity'],
     image: 'https://phiogen.is/images/products/survodutide-10mg.png',
     affiliateUrl: 'https://phiogen.is/products/survodutide-10mg?ref=PEPS',
-    shortDescription: 'Survodutide (BI 456906) is a Phase III GLP-1/glucagon receptor dual agonist from Boehringer Ingelheim with particular efficacy against non-alcoholic steatohepatitis (NASH) and obesity.',
+    shortDescription: 'Cheap Survodutide 10mg — Survodutide (BI 456906) is a Phase III GLP-1/glucagon receptor dual agonist from Boehringer Ingelheim with particular efficacy against non-alcoholic steatohepatitis (NASH) and obesity.',
     fullDescription: `**Next-Generation GLP-1/Glucagon Dual Agonism**
 
 Survodutide (BI 456906) is a once-weekly subcutaneous dual GLP-1/glucagon receptor agonist developed by Boehringer Ingelheim, currently in Phase III trials for obesity and NASH. Its glucagon receptor component is particularly potent for hepatic fat reduction — making Survodutide the dual agonist with the strongest evidence for treating both obesity and the associated liver disease (NASH) that is increasingly prevalent in obese populations.
@@ -4176,7 +4176,7 @@ Phase II obesity trials showed 14.9% body weight loss over 46 weeks at optimal d
 - Maximum studied: 4.8mg weekly
 - Once-weekly subcutaneous injection`,
     synergies: ['semaglutide-3mg', 'mazdutide', '5-amino-1mq-50mg', 'nad-100mg'],
-    seoTitle: 'Buy Survodutide 10mg | GLP-1/Glucagon Dual Agonist | NASH and Obesity Treatment',
+    seoTitle: 'Cheap Survodutide 10mg | GLP-1/Glucagon Dual Agonist | NASH and Obesity Treatment',
     deepDiveTitle: 'Survodutide: The Phase III GLP-1/Glucagon Dual Agonist Targeting Obesity and NASH Simultaneously',
     highlights: [
       { title: 'NASH Disease Modification', body: 'Survodutide is in active Phase III trials as a potential first approved NASH treatment — targeting liver fat, inflammation, and fibrosis simultaneously through glucagon receptor hepatic activation.' },
@@ -4195,7 +4195,7 @@ Phase II obesity trials showed 14.9% body weight loss over 46 weeks at optimal d
     tags: ['Tesofensine', 'Triple Reuptake Inhibitor', 'Appetite', 'Weight Loss', 'Monoamine'],
     image: 'https://phiogen.is/images/products/tesofensine-500mcg-x-30-capsules.png',
     affiliateUrl: 'https://phiogen.is/products/tesofensine-500mcg-x-30-capsules?ref=PEPS',
-    shortDescription: 'Tesofensine is a triple serotonin/dopamine/norepinephrine reuptake inhibitor that produces 10.6% body weight loss — more than double older appetite suppressants — through central appetite suppression.',
+    shortDescription: 'Trusted Tesofensine 500mcg x30 Capsules — Tesofensine is a triple serotonin/dopamine/norepinephrine reuptake inhibitor that produces 10.6% body weight loss — more than double older appetite suppressants — through central appetite suppression.',
     fullDescription: `**The Triple Monoamine Reuptake Inhibitor**
 
 Tesofensine was originally developed for Parkinson's and Alzheimer's disease, where it incidentally produced dramatic weight loss in clinical trial participants — leading to its redevelopment as an obesity treatment. As a serotonin-dopamine-norepinephrine reuptake inhibitor (SNDRI), it raises monoamine levels in hypothalamic appetite centers, producing powerful appetite suppression that exceeds sibutramine (which only inhibits two transporters) without the cardiovascular side effects that led to sibutramine's withdrawal.
@@ -4223,7 +4223,7 @@ Tesofensine's purely central mechanism contrasts with GLP-1 agonists' peripheral
 
 **Common effects:** Dry mouth, nausea, insomnia at initiation — typically resolve in 1–2 weeks`,
     synergies: ['semaglutide-3mg', 'tesofensine-tablets', 'aod9604-5mg', '5-amino-1mq-50mg'],
-    seoTitle: 'Buy Tesofensine 500mcg x30 Capsules | Triple Reuptake Inhibitor Weight Loss',
+    seoTitle: 'Trusted Tesofensine 500mcg x30 Capsules | Triple Reuptake Inhibitor Weight Loss',
     deepDiveTitle: 'Tesofensine: The Triple Monoamine Reuptake Inhibitor With Phase II Weight Loss Exceeding All Comparators',
     highlights: [
       { title: '10.6% Weight Loss', body: 'Phase IIb TIPO-1 trial demonstrated 10.6% body weight loss over 24 weeks at 0.5mg daily — more than double sibutramine and any other centrally-acting appetite suppressant studied.' },
@@ -4242,7 +4242,7 @@ Tesofensine's purely central mechanism contrasts with GLP-1 agonists' peripheral
     tags: ['Tesofensine', 'Tablets', 'Triple Reuptake Inhibitor', 'Weight Loss', 'Appetite'],
     image: 'https://phiogen.is/images/products/tesofensine-500mcg-x-30-tablets.png',
     affiliateUrl: 'https://phiogen.is/products/tesofensine-500mcg-x-30-tablets?ref=PEPS',
-    shortDescription: 'Tesofensine 500mcg tablets — the same triple monoamine reuptake inhibitor in tablet form, offering the scored tablet option for easier half-dose (250mcg) administration during titration.',
+    shortDescription: 'Verified Tesofensine 500mcg x30 Tablets — Tesofensine 500mcg tablets — the same triple monoamine reuptake inhibitor in tablet form, offering the scored tablet option for easier half-dose (250mcg) administration during titration.',
     fullDescription: `**Tablet Format for Dose Flexibility**
 
 The tablet formulation of Tesofensine 500mcg provides the same active compound as the capsule version, with the additional advantage of scorability — tablets can be divided to deliver 250mcg doses during the initial titration phase. This practical dose-splitting capability reduces the need to purchase separate 250mcg capsule formats for initiation protocols.
@@ -4268,7 +4268,7 @@ Some users prefer the swallowability of capsules while others prefer the control
 - Morning administration for optimal CNS monoamine elevation
 - 24-week protocol per Phase IIb design`,
     synergies: ['tesofensine-capsules', 'semaglutide-3mg', 'aod9604-5mg', '5-amino-1mq-50mg'],
-    seoTitle: 'Buy Tesofensine 500mcg x30 Tablets | Triple Reuptake Inhibitor | Scored for Titration',
+    seoTitle: 'Verified Tesofensine 500mcg x30 Tablets | Triple Reuptake Inhibitor | Scored for Titration',
     deepDiveTitle: 'Tesofensine Tablets: Scored Format Enabling Precise Dose Titration for Triple Monoamine Weight Loss',
     highlights: [
       { title: 'Scored for Half-Dosing', body: 'Tablets can be divided for the recommended 250mcg initiation dose — eliminating the need for a separate lower-strength formulation during the first 2 weeks of titration.' },
@@ -4289,7 +4289,7 @@ Some users prefer the swallowability of capsules while others prefer the control
     tags: ['Ipamorelin', 'GHRP', 'Growth Hormone', 'Body Composition', 'Recovery'],
     image: 'https://phiogen.is/images/products/ipamorelin-10mg.png',
     affiliateUrl: 'https://phiogen.is/products/ipamorelin-10mg?ref=PEPS',
-    shortDescription: 'Ipamorelin is a selective growth hormone releasing peptide (GHRP) that stimulates pulsatile GH release with minimal cortisol, prolactin, or acetylcholine side effects.',
+    shortDescription: 'Buy Ipamorelin 10mg — Ipamorelin is a selective growth hormone releasing peptide (GHRP) that stimulates pulsatile GH release with minimal cortisol, prolactin, or acetylcholine side effects.',
     fullDescription: `**The Cleanest GHRP**
 
 Ipamorelin is a pentapeptide GHRP that stimulates GH secretion through ghrelin receptor (GHS-R1a) activation in the pituitary and hypothalamus. Among all GHRPs, Ipamorelin is distinguished by its exceptional selectivity — it releases GH without the cortisol, prolactin, or acetylcholine side effects that complicate GHRP-2 and GHRP-6. This clean profile makes it the GHRP of choice for anti-aging, body composition, and long-term use protocols.
@@ -4338,7 +4338,7 @@ Ipamorelin is most commonly used as part of a GHRH+GHRP combination (most often 
     tags: ['CJC-1295', 'No DAC', 'GHRH', 'Growth Hormone', 'Body Composition'],
     image: 'https://phiogen.is/images/products/cjc-1295-no-dac-10mg.png',
     affiliateUrl: 'https://phiogen.is/products/cjc-1295-no-dac-10mg?ref=PEPS',
-    shortDescription: 'CJC-1295 No DAC is a modified GHRH peptide that stimulates GH secretion in pulsatile bursts (half-life ~30 min), preserving natural feedback regulation while amplifying GH release.',
+    shortDescription: 'CJC-1295 No DAC 10mg For Sale — CJC-1295 No DAC is a modified GHRH peptide that stimulates GH secretion in pulsatile bursts (half-life ~30 min), preserving natural feedback regulation while amplifying GH release.',
     fullDescription: `**The Pulsatile GHRH Analog**
 
 CJC-1295 No DAC (also called MOD GRF 1-29) is a modified version of GHRH(1-29) with 4 amino acid substitutions that improve stability and half-life. The "No DAC" designation indicates the absence of the Drug Affinity Complex that characterizes the long-acting CJC-1295 with DAC — making this version a short-acting GHRH analog with a ~30 minute half-life that produces discrete GH pulses rather than sustained elevation.
@@ -4367,7 +4367,7 @@ CJC-1295 No DAC is most commonly injected simultaneously with Ipamorelin to crea
 - Cycle: 3 months on, 1 month off
 - Fasted state; avoid food 2 hours before and 1 hour after injection`,
     synergies: ['ipamorelin-10mg', 'cjc-ghrp2-blend', 'ipa-cjc-15mg', 'cjc-1295-nodac-5mg'],
-    seoTitle: 'Buy CJC-1295 No DAC 10mg | GHRH Peptide | Pulsatile GH Release Protocol',
+    seoTitle: 'CJC-1295 No DAC 10mg For Sale | GHRH Peptide | Pulsatile GH Release Protocol',
     deepDiveTitle: 'CJC-1295 No DAC: The Pulsatile GHRH Analog That Preserves Natural GH Feedback in Growth Peptide Protocols',
     highlights: [
       { title: 'Pulsatile vs. Sustained Release', body: 'The short half-life (~30 min) of CJC-1295 No DAC produces discrete GH pulses rather than the sustained elevation that risks receptor downregulation and feedback suppression.' },
@@ -4386,7 +4386,7 @@ CJC-1295 No DAC is most commonly injected simultaneously with Ipamorelin to crea
     tags: ['CJC-1295', 'No DAC', 'GHRH', 'Growth Hormone', 'Entry-Level'],
     image: 'https://phiogen.is/images/products/cjc-1295-no-dac-5mg.png',
     affiliateUrl: 'https://phiogen.is/products/cjc-1295-no-dac-5mg?ref=PEPS',
-    shortDescription: 'CJC-1295 No DAC 5mg — the entry-level GHRH quantity for testing the classic pulsatile GH protocol before committing to larger supply.',
+    shortDescription: 'Cheap CJC-1295 No DAC 5mg — CJC-1295 No DAC 5mg — the entry-level GHRH quantity for testing the classic pulsatile GH protocol before committing to larger supply.',
     fullDescription: `**Entry-Level GHRH for Protocol Testing**
 
 The 5mg CJC-1295 No DAC vial provides approximately 16–50 doses at standard dosing (100–300mcg per injection) — sufficient for 2–7 weeks of daily use or 4–8 weeks of every-other-day use. This format is ideal for users new to GHRH peptides who want to assess their response to the CJC-1295/Ipamorelin protocol before purchasing larger quantities.
@@ -4413,7 +4413,7 @@ Many users begin their growth peptide journey with CJC-1295 No DAC 5mg + Ipamore
 - Combine in same syringe as Ipamorelin
 - Fasted state 2 hours before injection`,
     synergies: ['ipamorelin-10mg', 'cjc-1295-nodac-10mg', 'ipa-cjc-15mg', 'ghrp-2'],
-    seoTitle: 'Buy CJC-1295 No DAC 5mg | Entry-Level GHRH | Growth Hormone Protocol Starter',
+    seoTitle: 'Cheap CJC-1295 No DAC 5mg | Entry-Level GHRH | Growth Hormone Protocol Starter',
     deepDiveTitle: 'CJC-1295 No DAC 5mg: Entry-Level GHRH for the Classic Pulsatile Growth Hormone Protocol',
     highlights: [
       { title: '5mg Starter Supply', body: 'Provides 16–50 doses for testing the CJC-1295/Ipamorelin protocol — enough to experience the sleep, recovery, and body composition effects before committing to larger vials.' },
@@ -4432,7 +4432,7 @@ Many users begin their growth peptide journey with CJC-1295 No DAC 5mg + Ipamore
     tags: ['CJC-1295', 'DAC', 'GHRH', 'Long-Acting', 'Growth Hormone'],
     image: 'https://phiogen.is/images/products/cjc-1295-with-dac-10mg.png',
     affiliateUrl: 'https://phiogen.is/products/cjc-1295-with-dac-10mg?ref=PEPS',
-    shortDescription: 'CJC-1295 with DAC is a long-acting GHRH analog (half-life 6–8 days) that provides sustained GH elevation through albumin binding — enabling once-weekly injection protocols.',
+    shortDescription: 'Trusted CJC-1295 with DAC 10mg — CJC-1295 with DAC is a long-acting GHRH analog (half-life 6–8 days) that provides sustained GH elevation through albumin binding — enabling once-weekly injection protocols.',
     fullDescription: `**The Long-Acting GHRH**
 
 CJC-1295 with DAC (Drug Affinity Complex) uses a maleimide technology to covalently bind to circulating albumin after injection, dramatically extending its half-life from ~30 minutes (No DAC version) to 6–8 days. A single weekly injection maintains sustained GHRH receptor stimulation, producing elevated baseline GH and IGF-1 levels throughout the week — a fundamentally different pharmacokinetic profile from the No DAC version.
@@ -4462,7 +4462,7 @@ The convenience of once-weekly dosing comes with a different activity profile. C
 
 **Timing:** Any time; no fasting requirement due to sustained release mechanism`,
     synergies: ['ipamorelin-10mg', 'cjc-1295-nodac-10mg', 'sermorelin', 'tesamorelin'],
-    seoTitle: 'Buy CJC-1295 with DAC 10mg | Long-Acting GHRH | Once-Weekly GH Protocol',
+    seoTitle: 'Trusted CJC-1295 with DAC 10mg | Long-Acting GHRH | Once-Weekly GH Protocol',
     deepDiveTitle: 'CJC-1295 with DAC: The Albumin-Bound Long-Acting GHRH for Once-Weekly Sustained GH Elevation',
     highlights: [
       { title: '6–8 Day Half-Life', body: 'The DAC technology extends CJC-1295\'s half-life from 30 minutes to 6–8 days through covalent albumin binding — enabling once-weekly injection without daily protocol complexity.' },
@@ -4481,7 +4481,7 @@ The convenience of once-weekly dosing comes with a different activity profile. C
     tags: ['GHRP-2', 'GHRP', 'Growth Hormone', 'Body Composition', 'Muscle Growth'],
     image: 'https://phiogen.is/images/products/ghrp-2-10mg.png',
     affiliateUrl: 'https://phiogen.is/products/ghrp-2-10mg?ref=PEPS',
-    shortDescription: 'GHRP-2 (Pralmorelin) is a synthetic hexapeptide that triggers maximal GH secretion with moderate cortisol elevation — ideal for mass-gaining phases requiring maximum GH amplitude.',
+    shortDescription: 'Verified GHRP-2 10mg — GHRP-2 (Pralmorelin) is a synthetic hexapeptide that triggers maximal GH secretion with moderate cortisol elevation — ideal for mass-gaining phases requiring maximum GH amplitude.',
     fullDescription: `**Maximum GH Amplitude GHRP**
 
 GHRP-2 is a synthetic hexapeptide GHRP that activates ghrelin receptor (GHS-R1a) to produce among the largest GH pulses of any GHRP studied. Unlike Ipamorelin's clean selectivity, GHRP-2 also stimulates modest cortisol and prolactin release — a trade-off that users accept for the higher GH peak. For mass-gaining protocols where maximum anabolic GH exposure is the priority, GHRP-2 may outperform the more selective Ipamorelin.
@@ -4511,7 +4511,7 @@ Like the endogenous ghrelin it mimics, GHRP-2 stimulates appetite — a potentia
 
 **Note:** Take on empty stomach; higher cortisol may require management in sensitive individuals`,
     synergies: ['cjc-1295-nodac-10mg', 'cjc-ghrp2-blend', 'ipamorelin-10mg', 'hexarelin'],
-    seoTitle: 'Buy GHRP-2 10mg | Maximum GH Release Peptide | Mass Gaining GHRP Protocol',
+    seoTitle: 'Verified GHRP-2 10mg | Maximum GH Release Peptide | Mass Gaining GHRP Protocol',
     deepDiveTitle: 'GHRP-2: Maximum Amplitude Growth Hormone Releasing Peptide for Mass-Gaining Protocols',
     highlights: [
       { title: 'Maximum GH Amplitude', body: 'GHRP-2 produces among the largest GH pulses of any GHRP — making it the choice for mass-gaining phases where maximum anabolic GH exposure is the priority over side effect cleanliness.' },
@@ -4530,7 +4530,7 @@ Like the endogenous ghrelin it mimics, GHRP-2 stimulates appetite — a potentia
     tags: ['GHRP-6', 'GHRP', 'Growth Hormone', 'Appetite', 'Mass Gaining'],
     image: 'https://phiogen.is/images/products/ghrp-6-10mg.png',
     affiliateUrl: 'https://phiogen.is/products/ghrp-6-10mg?ref=PEPS',
-    shortDescription: 'GHRP-6 is the original growth hormone releasing hexapeptide — producing powerful GH secretion and the strongest appetite stimulation of any GHRP for aggressive mass protocols.',
+    shortDescription: 'Buy GHRP-6 10mg — GHRP-6 is the original growth hormone releasing hexapeptide — producing powerful GH secretion and the strongest appetite stimulation of any GHRP for aggressive mass protocols.',
     fullDescription: `**The Original GHRP**
 
 GHRP-6 was one of the first synthetic GHRPs developed and remains widely used for its combination of significant GH release and potent appetite stimulation. Like GHRP-2, it activates the ghrelin receptor, but it produces more pronounced appetite and hunger effects — a feature exploited in mass-gaining protocols where food intake maximization is the goal alongside GH optimization.
@@ -4578,7 +4578,7 @@ GHRP-6 laid the groundwork for understanding the ghrelin receptor system and its
     tags: ['Gonadorelin', 'GnRH', 'LH', 'FSH', 'TRT', 'Hormonal Axis'],
     image: 'https://phiogen.is/images/products/gonadorelin-acetate.png',
     affiliateUrl: 'https://phiogen.is/products/gonadorelin-acetate?ref=PEPS',
-    shortDescription: 'Gonadorelin is synthetic GnRH (gonadotropin-releasing hormone) that stimulates LH and FSH secretion — used to maintain testicular function and fertility during testosterone replacement therapy.',
+    shortDescription: 'Gonadorelin Acetate For Sale — Gonadorelin is synthetic GnRH (gonadotropin-releasing hormone) that stimulates LH and FSH secretion — used to maintain testicular function and fertility during testosterone replacement therapy.',
     fullDescription: `**Preserving the Hormonal Axis on TRT**
 
 Gonadorelin is synthetic gonadotropin-releasing hormone (GnRH) — the hypothalamic decapeptide that normally stimulates the pituitary to release luteinizing hormone (LH) and follicle-stimulating hormone (FSH). On testosterone replacement therapy, exogenous testosterone suppresses the hypothalamic-pituitary-gonadal (HPG) axis, resulting in LH/FSH suppression and testicular atrophy. Gonadorelin directly replaces the suppressed GnRH signal to maintain pituitary LH/FSH secretion.
@@ -4608,7 +4608,7 @@ Gonadorelin has become the preferred alternative to HCG (human chorionic gonadot
 
 **Note:** Pulsatile administration is critical — avoid continuous infusion`,
     synergies: ['cjc-1295-nodac-10mg', 'ipamorelin-10mg', 'kisspeptin-5mg', 'sermorelin'],
-    seoTitle: 'Buy Gonadorelin Acetate | GnRH Peptide | LH/FSH Stimulation for TRT',
+    seoTitle: 'Gonadorelin Acetate For Sale | GnRH Peptide | LH/FSH Stimulation for TRT',
     deepDiveTitle: 'Gonadorelin: Synthetic GnRH for Preserving the HPG Axis and Testicular Function During TRT',
     highlights: [
       { title: 'TRT Axis Preservation', body: 'Prevents the testicular atrophy and fertility loss that accompanies testosterone replacement by maintaining the LH/FSH stimulation that exogenous testosterone suppresses.' },
@@ -4627,7 +4627,7 @@ Gonadorelin has become the preferred alternative to HCG (human chorionic gonadot
     tags: ['Hexarelin', 'GHRP', 'Growth Hormone', 'Cardioprotection', 'Maximum GH'],
     image: 'https://phiogen.is/images/products/hexarelin-5mg.png',
     affiliateUrl: 'https://phiogen.is/products/hexarelin-5mg?ref=PEPS',
-    shortDescription: 'Hexarelin is the most potent synthetic GHRP, producing maximum GH release while also demonstrating cardioprotective effects through a separate receptor mechanism.',
+    shortDescription: 'Cheap Hexarelin 5mg — Hexarelin is the most potent synthetic GHRP, producing maximum GH release while also demonstrating cardioprotective effects through a separate receptor mechanism.',
     fullDescription: `**The Most Potent GHRP**
 
 Hexarelin (His-D-Trp-Ala-Trp-D-Phe-Lys-NH2) is a synthetic hexapeptide GHRP that produces the highest GH release per dose of all commonly available GHRPs. It activates GHS-R1a for GH secretion but also binds to a separate, uncharacterized receptor in cardiac tissue — producing cardioprotective effects that are independent of GH and occur even in GH-deficient models. This dual mechanism makes Hexarelin unique among GHRPs.
@@ -4656,7 +4656,7 @@ Hexarelin's potency comes with a desensitization liability — with chronic high
 - Cycle: 4–6 weeks at high dose, 2–4 weeks off; or lower-dose continuous
 - Combine with CJC-1295 No DAC for GH pulse amplification`,
     synergies: ['cjc-1295-nodac-10mg', 'ghrp-2', 'ipamorelin-10mg', 'nad-100mg'],
-    seoTitle: 'Buy Hexarelin 5mg | Most Potent GHRP | Maximum GH Release & Cardioprotection',
+    seoTitle: 'Cheap Hexarelin 5mg | Most Potent GHRP | Maximum GH Release & Cardioprotection',
     deepDiveTitle: 'Hexarelin: The Most Potent GHRP With Unique Cardioprotective Receptor Effects',
     highlights: [
       { title: 'Highest GH Potency', body: 'Hexarelin produces the largest GH release per dose of any synthetic GHRP — the maximum option for intensive cycles where peak GH exposure is the priority.' },
@@ -4675,7 +4675,7 @@ Hexarelin's potency comes with a desensitization liability — with chronic high
     tags: ['Kisspeptin', 'GnRH', 'LH', 'Testosterone', 'Hormonal Axis'],
     image: 'https://phiogen.is/images/products/kisspeptin-10-5mg.png',
     affiliateUrl: 'https://phiogen.is/products/kisspeptin-10-5mg?ref=PEPS',
-    shortDescription: 'Kisspeptin-10 is the endogenous neuropeptide that triggers hypothalamic GnRH release — the most upstream intervention for restoring natural LH, FSH, and testosterone production.',
+    shortDescription: 'Trusted Kisspeptin-10 5mg — Kisspeptin-10 is the endogenous neuropeptide that triggers hypothalamic GnRH release — the most upstream intervention for restoring natural LH, FSH, and testosterone production.',
     fullDescription: `**The GnRH Trigger**
 
 Kisspeptin is a neuropeptide produced by hypothalamic KNDy neurons that acts as the master regulator of GnRH pulsatility — it is the upstream signal that tells hypothalamic GnRH neurons when to fire. Kisspeptin-10 refers to the biologically active 10-amino-acid C-terminal fragment. By activating Kiss1R receptors on GnRH neurons, Kisspeptin-10 directly stimulates pulsatile GnRH release, which in turn triggers LH and FSH secretion from the pituitary, and ultimately testosterone production from the testes.
@@ -4705,7 +4705,7 @@ Kisspeptin-10 stimulates both LH and FSH simultaneously through its GnRH-mediate
 
 **Note:** Pulsatile administration maximizes GnRH response; avoid continuous high-dose`,
     synergies: ['gonadorelin', 'kisspeptin-10mg', 'cjc-1295-nodac-10mg', 'sermorelin'],
-    seoTitle: 'Buy Kisspeptin-10 5mg | GnRH Trigger | HPG Axis Restoration & PCT',
+    seoTitle: 'Trusted Kisspeptin-10 5mg | GnRH Trigger | HPG Axis Restoration & PCT',
     deepDiveTitle: 'Kisspeptin-10: The Upstream Hypothalamic Trigger for Complete HPG Axis Restoration',
     highlights: [
       { title: 'Upstream HPG Activation', body: 'Kisspeptin acts above GnRH in the axis hierarchy — the most fundamental intervention for restoring natural testosterone by addressing hypothalamic suppression directly.' },
@@ -4724,7 +4724,7 @@ Kisspeptin-10 stimulates both LH and FSH simultaneously through its GnRH-mediate
     tags: ['Kisspeptin', 'GnRH', 'LH', 'FSH', 'High-Volume', 'Fertility'],
     image: 'https://phiogen.is/images/products/kisspeptin-10-10mg.png',
     affiliateUrl: 'https://phiogen.is/products/kisspeptin-10-10mg?ref=PEPS',
-    shortDescription: 'Kisspeptin-10 10mg — double supply for extended HPG axis restoration protocols, fertility treatment cycles, and research applications requiring sustained kisspeptin administration.',
+    shortDescription: 'Verified Kisspeptin-10 10mg — Kisspeptin-10 10mg — double supply for extended HPG axis restoration protocols, fertility treatment cycles, and research applications requiring sustained kisspeptin administration.',
     fullDescription: `**Extended Supply for Long-Cycle Restoration**
 
 The 10mg Kisspeptin-10 vial is designed for users running extended post-cycle recovery protocols, fertility treatment cycles, or research applications requiring sustained kisspeptin administration over multiple weeks. At 250mcg twice daily, a single 10mg vial provides 20 days of dosing — significantly longer than the 5mg format enables for sustained HPG axis restoration programs.
@@ -4753,7 +4753,7 @@ Kisspeptin-10 is an active area of reproductive endocrinology research. The 10mg
 
 **Stack:** Combine with Gonadorelin for combined GnRH stimulus`,
     synergies: ['kisspeptin-5mg', 'gonadorelin', 'cjc-1295-nodac-10mg', 'sermorelin'],
-    seoTitle: 'Buy Kisspeptin-10 10mg | Extended HPG Restoration | Fertility Protocol Supply',
+    seoTitle: 'Verified Kisspeptin-10 10mg | Extended HPG Restoration | Fertility Protocol Supply',
     deepDiveTitle: 'Kisspeptin-10 10mg: Extended Supply for Comprehensive HPG Axis Restoration and Fertility Protocols',
     highlights: [
       { title: '20+ Day Continuous Supply', body: 'At twice-daily 250mcg dosing, the 10mg vial provides 20 days of uninterrupted kisspeptin administration — appropriate for the extended recovery timelines HPG axis restoration requires.' },
@@ -4772,7 +4772,7 @@ Kisspeptin-10 is an active area of reproductive endocrinology research. The 10mg
     tags: ['PEG-MGF', 'MGF', 'IGF-1 Splice', 'Muscle Hypertrophy', 'Satellite Cells'],
     image: 'https://phiogen.is/images/products/peg-mgf-2mg.png',
     affiliateUrl: 'https://phiogen.is/products/peg-mgf-2mg?ref=PEPS',
-    shortDescription: 'PEG-MGF (Pegylated Mechano Growth Factor) is a pegylated IGF-1 splice variant that activates muscle satellite cells and promotes hypertrophy through a mechanism distinct from systemic IGF-1.',
+    shortDescription: 'Buy PEG-MGF 2mg — PEG-MGF (Pegylated Mechano Growth Factor) is a pegylated IGF-1 splice variant that activates muscle satellite cells and promotes hypertrophy through a mechanism distinct from systemic IGF-1.',
     fullDescription: `**Muscle Satellite Cell Activator**
 
 Mechano Growth Factor (MGF) is a splice variant of IGF-1 that is locally expressed in muscle tissue in response to mechanical strain or damage. It differs from systemic IGF-1 in that its primary action is on muscle satellite cells (myogenic stem cells) — activating them to fuse with damaged muscle fibers and contribute new nuclei for growth. PEG-MGF is the pegylated version, which extends its half-life from ~minutes to approximately 1–2 days by protecting it from enzymatic degradation.
@@ -4820,7 +4820,7 @@ PEG-MGF is used post-workout (within hours of training) to amplify the mechanica
     tags: ['Sermorelin', 'GHRH', 'Growth Hormone', 'Anti-Aging', 'GH Optimization'],
     image: 'https://phiogen.is/images/products/sermorelin-5mg.png',
     affiliateUrl: 'https://phiogen.is/products/sermorelin-5mg?ref=PEPS',
-    shortDescription: 'Sermorelin is the first 29 amino acids of GHRH, formerly FDA-approved for pediatric GH deficiency — stimulates pulsatile GH release for anti-aging and body composition without exogenous HGH risks.',
+    shortDescription: 'Sermorelin 5mg For Sale — Sermorelin is the first 29 amino acids of GHRH, formerly FDA-approved for pediatric GH deficiency — stimulates pulsatile GH release for anti-aging and body composition without exogenous HGH risks.',
     fullDescription: `**The Original Synthetic GHRH**
 
 Sermorelin (GHRH 1-29 NH2) was the first synthetic GHRH analog to receive FDA approval, originally marketed as Geref for the diagnosis and treatment of pediatric growth hormone deficiency. It contains the first 29 amino acids of native GHRH, which represents the biologically active domain responsible for GHS stimulation of pituitary GH secretion. While FDA approval has lapsed (commercial manufacture discontinued), it remains one of the most researched GHRH analogs.
@@ -4849,7 +4849,7 @@ Clinical studies show that sermorelin restores GH secretion in GH-deficient adul
 - Cycle: 3–6 months on, 1 month off
 - Fasted state for maximum GH release`,
     synergies: ['ipamorelin-10mg', 'cjc-1295-nodac-10mg', 'sermorelin-15mg', 'ghrp-2'],
-    seoTitle: 'Buy Sermorelin 5mg | GHRH(1-29) Peptide | Anti-Aging GH Stimulation',
+    seoTitle: 'Sermorelin 5mg For Sale | GHRH(1-29) Peptide | Anti-Aging GH Stimulation',
     deepDiveTitle: 'Sermorelin: The FDA-Approved GHRH(1-29) Peptide for Physiological GH Optimization and Anti-Aging',
     highlights: [
       { title: 'FDA-Approved History', body: 'Sermorelin was an FDA-approved pharmaceutical for GH deficiency — providing regulatory-validated clinical evidence for its GH-stimulating mechanism and safety profile.' },
@@ -4868,7 +4868,7 @@ Clinical studies show that sermorelin restores GH secretion in GH-deficient adul
     tags: ['Sermorelin', 'GHRH', 'Growth Hormone', 'Extended Protocol', 'Anti-Aging'],
     image: 'https://phiogen.is/images/products/sermorelin-5mg.png',
     affiliateUrl: 'https://phiogen.is/products/sermorelin-15mg?ref=PEPS',
-    shortDescription: 'Sermorelin 15mg — extended supply for 50+ days of anti-aging GHRH therapy in a single vial, ideal for committed long-cycle GH optimization protocols.',
+    shortDescription: 'Cheap Sermorelin 15mg — Sermorelin 15mg — extended supply for 50+ days of anti-aging GHRH therapy in a single vial, ideal for committed long-cycle GH optimization protocols.',
     fullDescription: `**Long-Cycle Anti-Aging GHRH Therapy**
 
 The 15mg Sermorelin vial provides 50–75 days of continuous anti-aging dosing at standard 200–300mcg nightly injection — covering an entire 2–3 month protocol phase from a single vial. Anti-aging sermorelin protocols are most effective when run continuously for 6 months or more; the 15mg format enables extended uninterrupted therapy with fewer reconstitutions.
@@ -4895,7 +4895,7 @@ The 15mg vial offers improved cost-per-mg versus purchasing three 5mg vials — 
 - One vial covers 50–75 days of continuous therapy
 - Cycle: 3–6 months per phase; reassess every 6 months`,
     synergies: ['ipamorelin-10mg', 'sermorelin', 'cjc-1295-nodac-10mg', 'ghrp-2'],
-    seoTitle: 'Buy Sermorelin 15mg | Extended Anti-Aging GHRH | Long-Cycle GH Optimization',
+    seoTitle: 'Cheap Sermorelin 15mg | Extended Anti-Aging GHRH | Long-Cycle GH Optimization',
     deepDiveTitle: 'Sermorelin 15mg: Extended Supply GHRH(1-29) for Long-Cycle Anti-Aging Growth Hormone Protocols',
     highlights: [
       { title: '15mg Long-Cycle Supply', body: 'Three times the 5mg starter format — providing 50–75 days of nightly dosing for the extended protocols where sermorelin\'s anti-aging benefits fully manifest.' },
@@ -4914,7 +4914,7 @@ The 15mg vial offers improved cost-per-mg versus purchasing three 5mg vials — 
     tags: ['Tesamorelin', 'GHRH', 'Visceral Fat', 'FDA-Approved', 'GH'],
     image: 'https://phiogen.is/images/products/tesamorelin-10mg.png',
     affiliateUrl: 'https://phiogen.is/products/tesamorelin-2mg?ref=PEPS',
-    shortDescription: 'Tesamorelin (Egrifta) is an FDA-approved GHRH analog specifically indicated for HIV-associated lipodystrophy, demonstrating 15–20% reduction in visceral fat in clinical trials.',
+    shortDescription: 'Trusted Tesamorelin 2mg — Tesamorelin (Egrifta) is an FDA-approved GHRH analog specifically indicated for HIV-associated lipodystrophy, demonstrating 15–20% reduction in visceral fat in clinical trials.',
     fullDescription: `**FDA-Approved for Visceral Fat Reduction**
 
 Tesamorelin (trade name Egrifta) is a synthetic GHRH analog that received FDA approval in 2010 for the treatment of HIV-associated lipodystrophy — a condition of excess visceral fat accumulation caused by antiretroviral therapy. It is unique among GHRH analogs in having specific FDA approval for a fat-reducing indication, with randomized controlled trial data demonstrating 15–20% reductions in visceral adipose tissue (VAT) after 26 weeks.
@@ -4944,7 +4944,7 @@ The mechanism of GH-restored visceral fat reduction is relevant beyond HIV lipod
 
 **Timing:** Morning injection; clinical protocol uses daily dosing`,
     synergies: ['ipamorelin-10mg', 'tesamorelin-10mg', 'sermorelin', 'aod9604-5mg'],
-    seoTitle: 'Buy Tesamorelin 2mg | FDA-Approved Visceral Fat GHRH | Egrifta Research Peptide',
+    seoTitle: 'Trusted Tesamorelin 2mg | FDA-Approved Visceral Fat GHRH | Egrifta Research Peptide',
     deepDiveTitle: 'Tesamorelin: The FDA-Approved GHRH Analog With Clinical Evidence for 15–20% Visceral Fat Reduction',
     highlights: [
       { title: 'FDA Approved for Fat Reduction', body: 'Tesamorelin (Egrifta) is FDA-approved specifically for visceral fat reduction — the only GHRH analog with regulatory approval for a body composition indication.' },
@@ -4963,7 +4963,7 @@ The mechanism of GH-restored visceral fat reduction is relevant beyond HIV lipod
     tags: ['Tesamorelin', 'GHRH', 'Visceral Fat', 'High-Volume', 'Extended Protocol'],
     image: 'https://phiogen.is/images/products/tesamorelin-10mg.png',
     affiliateUrl: 'https://phiogen.is/products/tesamorelin-10mg?ref=PEPS',
-    shortDescription: 'Tesamorelin 10mg — 5x the single-dose vial, providing 10 days of the FDA clinical dose for extended visceral fat reduction protocols.',
+    shortDescription: 'Verified Tesamorelin 10mg — Tesamorelin 10mg — 5x the single-dose vial, providing 10 days of the FDA clinical dose for extended visceral fat reduction protocols.',
     fullDescription: `**Extended Tesamorelin Protocol Supply**
 
 The 10mg tesamorelin vial contains five times the amount of the standard 2mg vial — providing 10 days of daily 1mg dosing, or 5 days at the full FDA 2mg/day dose. This format reduces the frequency of vial reconstitution for users running the standard 26-week clinical protocol with daily injections, and offers cost efficiency versus purchasing five 2mg vials.
@@ -4990,7 +4990,7 @@ For researchers studying tesamorelin's dose-response relationships, cognitive ef
 - Research: 1–2mg subcutaneous daily
 - Extended cycle: 26 weeks minimum for full visceral fat reduction effect`,
     synergies: ['tesamorelin', 'ipamorelin-10mg', 'ipa-tesa-blend', 'aod9604-10mg'],
-    seoTitle: 'Buy Tesamorelin 10mg | Extended Visceral Fat Protocol | GHRH High-Volume',
+    seoTitle: 'Verified Tesamorelin 10mg | Extended Visceral Fat Protocol | GHRH High-Volume',
     deepDiveTitle: 'Tesamorelin 10mg: Maximum Supply for the Extended Daily Protocol That Delivers Visceral Fat Reduction',
     highlights: [
       { title: '10mg Protocol Anchor', body: 'Five times the standard 2mg vial — covering 5–10 days of the clinical protocol from a single reconstitution, reducing preparation frequency for committed daily users.' },
@@ -5009,7 +5009,7 @@ For researchers studying tesamorelin's dose-response relationships, cognitive ef
     tags: ['GLOW Blend', 'Anti-Aging', 'Skin', 'Collagen', 'GHK-Cu', 'Blend'],
     image: 'https://phiogen.is/images/products/glow-blend-50mg.png',
     affiliateUrl: 'https://phiogen.is/products/glow-blend-50mg?ref=PEPS',
-    shortDescription: 'GLOW Blend is a curated anti-aging peptide combination targeting skin radiance, collagen production, and cellular rejuvenation — a multi-peptide approach to comprehensive skin health.',
+    shortDescription: 'Buy GLOW Blend 20mg — GLOW Blend is a curated anti-aging peptide combination targeting skin radiance, collagen production, and cellular rejuvenation — a multi-peptide approach to comprehensive skin health.',
     fullDescription: `**The Multi-Peptide Anti-Aging Blend**
 
 GLOW Blend combines complementary anti-aging peptides that work through different mechanisms to address the multiple pathways of skin aging — collagen degradation, oxidative damage, vascular changes, and cellular senescence. The blend approach allows each peptide to contribute its specific activity while synergistic interactions between them amplify the overall anti-aging effect beyond what any single peptide achieves alone.
@@ -5058,7 +5058,7 @@ The GLOW Blend is ideal for users who want a comprehensive skin anti-aging proto
     tags: ['CJC-1295', 'GHRP-2', 'Blend', 'Growth Hormone', 'Body Composition'],
     image: 'https://phiogen.is/images/products/ipamorelin-cjc-1295-blend-cjc-1295-5mg-ipa-5mg.png',
     affiliateUrl: 'https://phiogen.is/products/cjc-1295-ghrp-2-blend-cjc-5mg-ghrp-2-5mg?ref=PEPS',
-    shortDescription: 'Pre-combined CJC-1295 No DAC (5mg) + GHRP-2 (5mg) blend — the maximum GH pulse combination in a single vial for streamlined GHRH+GHRP protocol execution.',
+    shortDescription: 'CJC-1295/GHRP-2 Blend 10mg For Sale — Pre-combined CJC-1295 No DAC (5mg) + GHRP-2 (5mg) blend — the maximum GH pulse combination in a single vial for streamlined GHRH+GHRP protocol execution.',
     fullDescription: `**The Maximum GH Pulse Combination**
 
 The CJC-1295/GHRP-2 blend combines the complementary GHRH and GHRP mechanisms in a single pre-mixed vial — the GHRH primes and amplifies pituitary somatotroph response while GHRP-2 simultaneously triggers GH secretion. This combination consistently produces GH pulses that are 2–10x larger than either peptide alone, exploiting the synergy between the two GH regulatory pathways that converge at the pituitary.
@@ -5088,7 +5088,7 @@ The choice of GHRP-2 over Ipamorelin in this blend is intentional for mass-gaini
 
 **Cycle:** 3 months on, 1 month off`,
     synergies: ['cjc-1295-nodac-10mg', 'ghrp-2', 'ipa-cjc-15mg', 'ipamorelin-10mg'],
-    seoTitle: 'Buy CJC-1295/GHRP-2 Blend 10mg | Maximum GH Pulse | GHRH+GHRP Combination',
+    seoTitle: 'CJC-1295/GHRP-2 Blend 10mg For Sale | Maximum GH Pulse | GHRH+GHRP Combination',
     deepDiveTitle: 'CJC-1295/GHRP-2 Blend: Pre-Combined Maximum GH Pulse Amplification in a Single Vial',
     highlights: [
       { title: 'Maximum GH Synergy', body: 'GHRH primes pituitary somatotrophs while GHRP-2 triggers peak GH release — the combination produces GH pulses 2–10x larger than either component alone.' },
@@ -5107,7 +5107,7 @@ The choice of GHRP-2 over Ipamorelin in this blend is intentional for mass-gaini
     tags: ['CJC-1295', 'GHRP-6', 'Blend', 'Growth Hormone', 'Appetite'],
     image: 'https://phiogen.is/images/products/ipamorelin-cjc-1295-blend-cjc-1295-5mg-ipa-5mg.png',
     affiliateUrl: 'https://phiogen.is/products/cjc-1295-ghrp-6-blend-cjc-5mg-ghrp-6-5mg?ref=PEPS',
-    shortDescription: 'Pre-combined CJC-1295 No DAC (5mg) + GHRP-6 (5mg) blend — strong GH release combined with GHRP-6\'s aggressive appetite stimulation for mass-building protocols.',
+    shortDescription: 'Cheap CJC-1295/GHRP-6 Blend 10mg — Pre-combined CJC-1295 No DAC (5mg) + GHRP-6 (5mg) blend — strong GH release combined with GHRP-6\'s aggressive appetite stimulation for mass-building protocols.',
     fullDescription: `**GHRH + Maximum Hunger GHRP**
 
 The CJC-1295/GHRP-6 blend combines CJC-1295 No DAC's pituitary priming with GHRP-6's powerful ghrelin-mediated GH secretion and appetite effects. GHRP-6 produces the strongest appetite stimulation of any GHRP — making this blend the optimal choice for hardgainers or mass-phase athletes who struggle to consume sufficient calories and want both GH optimization and hunger amplification from a single pre-workout/pre-bed injection.
@@ -5137,7 +5137,7 @@ Both blends use GHRH+GHRP synergy for amplified GH pulses. The GHRP-6 version em
 
 **Cycle:** 3 months on, 1 month off`,
     synergies: ['cjc-1295-nodac-10mg', 'ghrp-6', 'cjc-ghrp2-blend', 'ipamorelin-10mg'],
-    seoTitle: 'Buy CJC-1295/GHRP-6 Blend 10mg | GHRH+GHRP-6 | Maximum Appetite + GH Release',
+    seoTitle: 'Cheap CJC-1295/GHRP-6 Blend 10mg | GHRH+GHRP-6 | Maximum Appetite + GH Release',
     deepDiveTitle: 'CJC-1295/GHRP-6 Blend: GHRH Combined with Maximum Appetite GHRP for Mass-Building Protocols',
     highlights: [
       { title: 'Maximum Appetite GHRP', body: 'GHRP-6 produces the strongest hunger of any GHRP — this blend is designed specifically for users who want both GH optimization and aggressive appetite amplification from a single injection.' },
@@ -5156,7 +5156,7 @@ Both blends use GHRH+GHRP synergy for amplified GH pulses. The GHRP-6 version em
     tags: ['Ipamorelin', 'CJC-1295', 'Blend', 'Growth Hormone', 'Anti-Aging'],
     image: 'https://phiogen.is/images/products/ipamorelin-cjc-1295-blend-cjc-1295-5mg-ipa-5mg.png',
     affiliateUrl: 'https://phiogen.is/products/ipamorelin-cjc-1295-blend-cjc-10mg-ipa-5mg?ref=PEPS',
-    shortDescription: 'Ipamorelin/CJC-1295 blend (CJC-10mg + Ipamorelin 5mg) — the gold-standard growth hormone protocol combining clean GHRP-mediated GH release with GHRH amplification.',
+    shortDescription: 'Trusted Ipamorelin/CJC-1295 Blend 15mg — Ipamorelin/CJC-1295 blend (CJC-10mg + Ipamorelin 5mg) — the gold-standard growth hormone protocol combining clean GHRP-mediated GH release with GHRH amplification.',
     fullDescription: `**The Gold-Standard Growth Peptide Protocol**
 
 The Ipamorelin/CJC-1295 combination has become the most widely used growth hormone peptide protocol in the anti-aging and body composition communities — earning this reputation through its optimal balance of efficacy and tolerability. CJC-1295 No DAC provides the GHRH stimulus that primes the pituitary for enhanced GH release, while Ipamorelin selectively triggers the release without the cortisol, prolactin, or excessive appetite effects of GHRP-2 or GHRP-6.
@@ -5186,7 +5186,7 @@ Pre-combining CJC-1295 and Ipamorelin in one vial eliminates the daily ritual of
 
 **Cycle:** 3–6 months on, 1 month off — the standard anti-aging protocol`,
     synergies: ['cjc-1295-nodac-10mg', 'ipamorelin-10mg', 'cjc-ghrp2-blend', 'sermorelin'],
-    seoTitle: 'Buy Ipamorelin/CJC-1295 Blend 15mg | Gold-Standard GH Protocol | Anti-Aging',
+    seoTitle: 'Trusted Ipamorelin/CJC-1295 Blend 15mg | Gold-Standard GH Protocol | Anti-Aging',
     deepDiveTitle: 'Ipamorelin/CJC-1295 Blend: The Gold-Standard Growth Hormone Peptide Protocol in a Single Vial',
     highlights: [
       { title: 'Gold-Standard Protocol', body: 'The Ipamorelin/CJC-1295 combination is the most widely prescribed growth peptide protocol — combining maximum GH pulse amplification with the cleanest side effect profile of any GHRH+GHRP combination.' },
@@ -5205,7 +5205,7 @@ Pre-combining CJC-1295 and Ipamorelin in one vial eliminates the daily ritual of
     tags: ['Ipamorelin', 'Tesamorelin', 'Blend', 'Visceral Fat', 'Body Composition'],
     image: 'https://phiogen.is/images/products/ipa-tesa-blend-ipa-5mg-tesa-10mg-15mg.png',
     affiliateUrl: 'https://phiogen.is/products/ipa-tesa-blend-ipa-5mg-tesa-10mg-15mg?ref=PEPS',
-    shortDescription: 'IPA/TESA Blend (Ipamorelin 5mg + Tesamorelin 10mg) — combines FDA-validated tesamorelin visceral fat reduction with Ipamorelin\'s clean GHRP amplification in a single vial.',
+    shortDescription: 'Verified IPA/TESA Blend 15mg — IPA/TESA Blend (Ipamorelin 5mg + Tesamorelin 10mg) — combines FDA-validated tesamorelin visceral fat reduction with Ipamorelin\'s clean GHRP amplification in a single vial.',
     fullDescription: `**The Visceral Fat Reduction Stack**
 
 The IPA/TESA blend combines the FDA-validated visceral fat-reducing GHRH analog (tesamorelin) with the cleanest GH-amplifying GHRP (ipamorelin) for a comprehensive GH optimization protocol with particular emphasis on visceral adipose tissue reduction. Tesamorelin's proven 15–20% VAT reduction combined with ipamorelin's additional GH pulse amplification creates a synergistic protocol for addressing metabolically dangerous visceral fat.
@@ -5235,7 +5235,7 @@ This blend is ideal for middle-aged to older individuals with excess visceral fa
 
 **Cycle:** 26 weeks minimum for full visceral fat reduction effect`,
     synergies: ['tesamorelin', 'ipamorelin-10mg', 'aod9604-5mg', 'cjc-1295-nodac-10mg'],
-    seoTitle: 'Buy IPA/TESA Blend 15mg | Ipamorelin + Tesamorelin | Visceral Fat & GH Stack',
+    seoTitle: 'Verified IPA/TESA Blend 15mg | Ipamorelin + Tesamorelin | Visceral Fat & GH Stack',
     deepDiveTitle: 'IPA/TESA Blend: Ipamorelin + Tesamorelin Synergy for Visceral Fat Reduction and GH Optimization',
     highlights: [
       { title: 'FDA-Validated Fat Reduction', body: 'Tesamorelin\'s 15–20% visceral fat reduction clinical evidence is the foundation of this blend — combining the strongest evidence-based visceral fat GHRH with ipamorelin\'s clean amplification.' },
@@ -5254,7 +5254,7 @@ This blend is ideal for middle-aged to older individuals with excess visceral fa
     tags: ['KLOW Blend', 'Metabolic', 'GLP-1 Support', 'Body Composition', 'Blend'],
     image: 'https://phiogen.is/images/products/klow-blend-80mg.png',
     affiliateUrl: 'https://phiogen.is/products/klow-blend-80mg?ref=PEPS',
-    shortDescription: 'KLOW Blend 80mg is a specialized metabolic support formulation designed to address the common side effects and metabolic shifts experienced during GLP-1 agonist weight loss protocols.',
+    shortDescription: 'Buy KLOW Blend 80mg — KLOW Blend 80mg is a specialized metabolic support formulation designed to address the common side effects and metabolic shifts experienced during GLP-1 agonist weight loss protocols.',
     fullDescription: `**Metabolic Support During GLP-1 Therapy**
 
 KLOW Blend is a specialized combination peptide and metabolic support formulation designed to complement GLP-1 agonist protocols (semaglutide, tirzepatide, survodutide) by addressing the metabolic shifts, muscle loss risk, and GI effects that can complicate GLP-1 therapy. As GLP-1 agonists become the dominant weight loss intervention, the need for adjunct support formulations that optimize outcomes and reduce side effects has grown significantly.
@@ -5303,7 +5303,7 @@ The blend's components work together to address the specific metabolic context o
     tags: ['Retatrutide', 'Cagrilintide', 'Dual Agonist', 'GLP-1', 'Amylin', 'Obesity'],
     image: 'https://phiogen.is/images/products/reta-cagri-5mg-5mg.png',
     affiliateUrl: 'https://phiogen.is/products/reta-cagri-5mg-5mg?ref=PEPS',
-    shortDescription: 'Reta-Cagri combines Retatrutide (GIP/GLP-1/glucagon triple agonist) with Cagrilintide (long-acting amylin analog) — representing the next generation of obesity pharmacology beyond semaglutide.',
+    shortDescription: 'Reta-Cagri 5mg/5mg For Sale — Reta-Cagri combines Retatrutide (GIP/GLP-1/glucagon triple agonist) with Cagrilintide (long-acting amylin analog) — representing the next generation of obesity pharmacology beyond semaglutide.',
     fullDescription: `**The Next Generation of Obesity Pharmacology**
 
 Reta-Cagri combines two of the most advanced obesity pipeline compounds into a single formulation: Retatrutide (LY3437943), Eli Lilly's triple GIP/GLP-1/glucagon receptor agonist currently in Phase III, and Cagrilintide, Novo Nordisk's long-acting amylin analog that is the companion drug to semaglutide in the Phase III CagriSema combination trial. This combination targets four complementary weight loss mechanisms simultaneously.
@@ -5333,7 +5333,7 @@ Cagrilintide is a long-acting amylin analog that activates amylin receptors in t
 
 **Note:** Advanced pipeline compounds; base protocols on Phase II/III clinical data`,
     synergies: ['semaglutide-3mg', 'survodutide', 'mazdutide', '5-amino-1mq-50mg'],
-    seoTitle: 'Buy Reta-Cagri 5mg/5mg | Retatrutide + Cagrilintide | Next-Gen Obesity Treatment',
+    seoTitle: 'Reta-Cagri 5mg/5mg For Sale | Retatrutide + Cagrilintide | Next-Gen Obesity Treatment',
     deepDiveTitle: 'Reta-Cagri: Combining Retatrutide Triple Agonism with Cagrilintide Amylin Action for Maximum Weight Loss',
     highlights: [
       { title: '24% Body Weight Loss', body: 'Retatrutide\'s Phase II trial produced 24% body weight reduction over 48 weeks — the highest weight loss ever reported for any injectable obesity medication in clinical history.' },
@@ -5353,7 +5353,7 @@ Cagrilintide is a long-acting amylin analog that activates amylin receptors in t
     tags: ['healing', 'gut', 'tendons', 'bulk', 'long-term', 'value'],
     image: 'https://phiogen.is/images/products/bpc-157-10mg.png',
     affiliateUrl: 'https://phiogen.is/products/bpc-157-10mg?ref=PEPS',
-    shortDescription: 'BPC-157 30mg is the bulk vial for extended healing protocols — provides 60+ days of standard dosing at 500mcg/day with the lowest per-mcg cost.',
+    shortDescription: 'Cheap BPC-157 30mg — BPC-157 30mg is the bulk vial for extended healing protocols — provides 60+ days of standard dosing at 500mcg/day with the lowest per-mcg cost.',
     fullDescription: `BPC-157 30mg provides the best per-unit value for users running extended healing protocols or stacking BPC-157 with TB-500 over multiple months. A single 30mg vial reconstituted with 6mL bacteriostatic water yields a 5mg/mL concentration, providing 60 days of 500mcg/day dosing from one vial.
 
 **Who Needs the 30mg Vial**
@@ -5381,7 +5381,7 @@ Extended BPC-157 protocols (12+ weeks) are used for complete structural repair o
 - Cycle: 12-16 weeks for chronic injuries
 - Store refrigerated; use within 28 days`,
     synergies: ['tb-500', 'ghk-cu', 'nad', 'bpc-157-tb-500-blend-20mg'],
-    seoTitle: 'Buy BPC-157 30mg | Bulk Healing Peptide Extended Protocol | BPC-157 Stack',
+    seoTitle: 'Cheap BPC-157 30mg | Bulk Healing Peptide Extended Protocol | BPC-157 Stack',
     deepDiveTitle: 'BPC-157 30mg: Best Value Bulk Supply for Extended Healing Protocols',
     highlights: [
       { title: 'Best Value', body: 'Lowest per-mcg BPC-157 price — 30mg covers 60+ days of 500mcg daily dosing from a single vial.' },
@@ -5399,7 +5399,7 @@ Extended BPC-157 protocols (12+ weeks) are used for complete structural repair o
     tags: ['neuropathy', 'nerve repair', 'pain', 'inflammation', 'EPO-derived'],
     image: 'https://phiogen.is/images/products/ara-290-10mg.png',
     affiliateUrl: 'https://phiogen.is/products/ara-290-10mg?ref=PEPS',
-    shortDescription: 'ARA-290 is a non-hematopoietic erythropoietin peptide that repairs small fiber neuropathy and reduces neuroinflammation — studied clinically for diabetic neuropathy.',
+    shortDescription: 'Trusted ARA-290 4mg — ARA-290 is a non-hematopoietic erythropoietin peptide that repairs small fiber neuropathy and reduces neuroinflammation — studied clinically for diabetic neuropathy.',
     fullDescription: `ARA-290 is an 11-amino-acid peptide derived from the helix-B surface of erythropoietin (EPO) — engineered to retain EPO's tissue-protective and anti-inflammatory effects while eliminating red blood cell stimulation. This makes ARA-290 safe for repeated use without the hematopoietic risks associated with EPO itself.
 
 **Mechanism: Innate Repair Receptor**
@@ -5427,7 +5427,7 @@ ARA-290 reduces production of pro-inflammatory cytokines (TNF-α, IL-6, IL-1β) 
 - Typical: 1mg-4mg per injection for most users
 - Best paired with BPC-157 for comprehensive nerve + tissue repair`,
     synergies: ['bpc-157', 'tb-500', 'ghk-cu', 'nad'],
-    seoTitle: 'Buy ARA-290 | EPO-Derived Neuropathy Repair Peptide | BPC-157 Stack',
+    seoTitle: 'Trusted ARA-290 | EPO-Derived Neuropathy Repair Peptide | BPC-157 Stack',
     deepDiveTitle: 'ARA-290: The EPO Peptide That Repairs Peripheral Neuropathy',
     highlights: [
       { title: 'Nerve Regrowth', body: 'Phase II trials demonstrated small fiber nerve density improvements in sarcoidosis neuropathy — the only peptide with this clinical proof.' },
@@ -5445,7 +5445,7 @@ ARA-290 reduces production of pro-inflammatory cytokines (TNF-α, IL-6, IL-1β) 
     tags: ['GH', 'growth hormone', 'CJC-1295', 'ipamorelin', 'muscle', 'fat loss', 'blend'],
     image: 'https://phiogen.is/images/products/ipamorelin-cjc-1295-blend-cjc-1295-5mg-ipa-5mg.png',
     affiliateUrl: 'https://phiogen.is/products/ipamorelin-cjc-1295-blend-cjc-10mg-ipa-5mg-15mg?ref=PEPS',
-    shortDescription: 'CJC-1295 / Ipamorelin 15mg blend — extended supply for the gold-standard growth hormone stimulation stack. Covers 10+ weeks of twice-daily dosing.',
+    shortDescription: 'Verified CJC-1295 / Ipamorelin Blend 15mg — CJC-1295 / Ipamorelin 15mg blend — extended supply for the gold-standard growth hormone stimulation stack. Covers 10+ weeks of twice-daily dosing.',
     fullDescription: `CJC-1295/Ipamorelin blend is the most clinically rational GH secretagogue combination available. CJC-1295 (No DAC) extends each GH pulse by amplifying GHRH signaling, while Ipamorelin triggers the pulsatile release without elevating cortisol or prolactin. The 15mg bulk vial (CJC 10mg + Ipamorelin 5mg) provides the most cost-effective format for sustained protocols.
 
 **Why This Combination Works**
@@ -5474,7 +5474,7 @@ A full 12-24 week protocol produces measurable improvements in body composition,
 - Timing: Upon waking + 30min before sleep
 - Cycle: 12-24 weeks, 4-week off periods`,
     synergies: ['cjc1295-ipamorelin', 'igf-1lr3', 'ghk-cu', 'tb-500'],
-    seoTitle: 'Buy CJC-1295 Ipamorelin 15mg Blend | Extended GH Protocol Supply | BPC-157 Stack',
+    seoTitle: 'Verified CJC-1295 Ipamorelin 15mg Blend | Extended GH Protocol Supply | BPC-157 Stack',
     deepDiveTitle: 'CJC-1295/Ipamorelin 15mg: Extended Supply for the Gold-Standard GH Stack',
     highlights: [
       { title: '10+ Weeks Supply', body: '15mg vial covers 10+ weeks of twice-daily 500mcg dosing — enough for a complete growth hormone optimization cycle.' },
@@ -5492,7 +5492,7 @@ A full 12-24 week protocol produces measurable improvements in body composition,
     tags: ['GLP-1', 'liraglutide', 'Victoza', 'Saxenda', 'weight loss', 'daily'],
     image: 'https://phiogen.is/images/products/semaglutide-6mg.png',
     affiliateUrl: 'https://phiogen.is/products/liraglutide-18mg?ref=PEPS',
-    shortDescription: 'Liraglutide is the original GLP-1 receptor agonist (Victoza/Saxenda) — the foundational weight loss peptide with the most clinical data, dosed daily for continuous appetite control.',
+    shortDescription: 'Buy Liraglutide 18mg — Liraglutide is the original GLP-1 receptor agonist (Victoza/Saxenda) — the foundational weight loss peptide with the most clinical data, dosed daily for continuous appetite control.',
     fullDescription: `Liraglutide was the first GLP-1 receptor agonist approved for weight management (as Saxenda, 3mg/day). While semaglutide and tirzepatide have superseded it in efficacy, liraglutide has the most extensive long-term safety data of any GLP-1 compound — with 15+ years of clinical experience and the SCALE and LEADER trials providing robust cardiovascular and metabolic outcome data.
 
 **Why Some Prefer Daily Liraglutide**
@@ -5539,7 +5539,7 @@ An 18mg vial reconstituted with 3.6mL bacteriostatic water yields a 5mg/mL conce
     tags: ['amylin', 'cagrilintide', 'GLP-1', 'weight loss', 'satiety', 'Phase III'],
     image: 'https://phiogen.is/images/products/cagrilintide-5mg.png',
     affiliateUrl: 'https://phiogen.is/products/cagrilintide-5mg?ref=PEPS',
-    shortDescription: 'Cagrilintide is a long-acting amylin analog that adds a fourth mechanism to GLP-1 protocols — slows gastric emptying through amylin receptor agonism for compounding weight loss.',
+    shortDescription: 'Cagrilintide 5mg For Sale — Cagrilintide is a long-acting amylin analog that adds a fourth mechanism to GLP-1 protocols — slows gastric emptying through amylin receptor agonism for compounding weight loss.',
     fullDescription: `Cagrilintide is a long-acting amylin analog developed by Novo Nordisk for once-weekly subcutaneous dosing. Amylin is a peptide co-secreted with insulin from pancreatic beta cells that slows gastric emptying, reduces glucagon secretion, and signals satiety to the brain. Cagrilintide recapitulates these effects with a half-life that supports weekly dosing.
 
 **The Amylin Mechanism**
@@ -5567,7 +5567,7 @@ As a standalone, cagrilintide at 4.5mg/week produced approximately 10.8% body we
 - Maximum studied: 4.5mg once weekly
 - Most combine with semaglutide or tirzepatide for synergy`,
     synergies: ['glp-1s-semaglutide', 'glp-2t-tirzepatide', 'reta-cagri', 'cagri-sema'],
-    seoTitle: 'Buy Cagrilintide 5mg | Amylin Analog for Enhanced GLP-1 Weight Loss | BPC-157 Stack',
+    seoTitle: 'Cagrilintide 5mg For Sale | Amylin Analog for Enhanced GLP-1 Weight Loss | BPC-157 Stack',
     deepDiveTitle: 'Cagrilintide: The Amylin Analog That Adds 42% More Weight Loss to Semaglutide',
     highlights: [
       { title: '+42% Weight Loss', body: 'CagriSema Phase III: adding cagrilintide to semaglutide increased weight loss from 16.1% to 22.7% — a 42% relative improvement.' },
@@ -5585,7 +5585,7 @@ As a standalone, cagrilintide at 4.5mg/week produced approximately 10.8% body we
     tags: ['NAD+', 'anti-aging', 'mitochondria', 'energy', 'longevity', 'cellular repair'],
     image: 'https://phiogen.is/images/products/nad-500mg.png',
     affiliateUrl: 'https://phiogen.is/products/nad-500mg?ref=PEPS',
-    shortDescription: 'NAD+ 250mg provides high-dose nicotinamide adenine dinucleotide for mitochondrial optimization, DNA repair activation, and sirtuin-mediated longevity signaling.',
+    shortDescription: 'Cheap NAD+ 250mg — NAD+ 250mg provides high-dose nicotinamide adenine dinucleotide for mitochondrial optimization, DNA repair activation, and sirtuin-mediated longevity signaling.',
     fullDescription: `NAD+ (Nicotinamide Adenine Dinucleotide) is the master regulator of cellular energy metabolism. It declines 50% from age 20 to 60, and this decline is now understood to be a causal driver of the aging phenotype. Direct NAD+ supplementation via injection restores intracellular levels within hours, activating sirtuins, PARP enzymes, and the CD38 pathway simultaneously.
 
 **The 250mg Advantage**
@@ -5614,7 +5614,7 @@ While IV NAD+ is used clinically for addiction and neurological conditions, subc
 - Many start at 100mg and escalate to 250mg based on response
 - Store refrigerated; use within 28 days`,
     synergies: ['nad', 'nad-100mg', 'ghk-cu', 'epithalon'],
-    seoTitle: 'Buy NAD+ 250mg | High-Dose Mitochondrial Optimization | BPC-157 Stack',
+    seoTitle: 'Cheap NAD+ 250mg | High-Dose Mitochondrial Optimization | BPC-157 Stack',
     deepDiveTitle: 'NAD+ 250mg: High-Dose Protocol for Mitochondrial and Longevity Optimization',
     highlights: [
       { title: '50% Age Decline', body: 'NAD+ drops 50% from age 20 to 60 — injection directly restores cellular levels within hours, reactivating all dependent longevity pathways.' },
@@ -5632,7 +5632,7 @@ While IV NAD+ is used clinically for addiction and neurological conditions, subc
     tags: ['NAD+', 'anti-aging', 'mitochondria', 'longevity', 'clinical', 'high-dose'],
     image: 'https://phiogen.is/images/products/nad-500mg.png',
     affiliateUrl: 'https://phiogen.is/products/nad-500mg?ref=PEPS',
-    shortDescription: 'NAD+ 500mg is the clinical-grade high-dose option — used in addiction recovery, neurological repair, and longevity clinics for maximum mitochondrial restoration.',
+    shortDescription: 'Trusted NAD+ 500mg — NAD+ 500mg is the clinical-grade high-dose option — used in addiction recovery, neurological repair, and longevity clinics for maximum mitochondrial restoration.',
     fullDescription: `NAD+ 500mg represents the clinical-grade dosing tier used in IV infusion clinics for addiction recovery, traumatic brain injury, and aggressive anti-aging protocols. While IV delivery is traditionally preferred for this dose range, subcutaneous injection of 500mg produces systemic restoration and is increasingly used by longevity-focused individuals seeking the full mitochondrial and neurological benefits without clinical infrastructure.
 
 **Clinical Applications at This Dose Range**
@@ -5661,7 +5661,7 @@ Standard longevity clinic NAD+ protocol: 500mg 2-3x per week for 2-4 weeks (load
 - For cognitive effects: morning dosing
 - For sleep: evening dosing preferred`,
     synergies: ['nad', 'nad-250mg', 'epithalon', 'ghk-cu'],
-    seoTitle: 'Buy NAD+ 500mg | Clinical-Grade Maximum Dose Longevity Protocol | BPC-157 Stack',
+    seoTitle: 'Trusted NAD+ 500mg | Clinical-Grade Maximum Dose Longevity Protocol | BPC-157 Stack',
     deepDiveTitle: 'NAD+ 500mg: The Clinical Dose for Maximum Mitochondrial Restoration',
     highlights: [
       { title: 'Clinical-Grade Dose', body: 'Used in addiction recovery, TBI, and neurological clinics — the dose range where the most clinically significant NAD+ effects occur.' },
@@ -5679,7 +5679,7 @@ Standard longevity clinic NAD+ protocol: 500mg 2-3x per week for 2-4 weeks (load
     tags: ['reconstitution', 'bacteriostatic water', 'supplies', 'injection', 'peptide prep'],
     image: 'https://phiogen.is/images/products/bacteriostatic-water-30ml.png',
     affiliateUrl: 'https://phiogen.is/products/bacteriostatic-water-30ml?ref=PEPS',
-    shortDescription: 'Bacteriostatic water 30mL — triple the volume of the standard vial for running multiple concurrent peptide protocols or bulk reconstitution needs.',
+    shortDescription: 'Verified Bacteriostatic Water 30mL — Bacteriostatic water 30mL — triple the volume of the standard vial for running multiple concurrent peptide protocols or bulk reconstitution needs.',
     fullDescription: `Bacteriostatic water 30mL provides three times the reconstitution volume of the standard 10mL vial, making it ideal for users running multiple concurrent peptide protocols or those who prefer to reconstitute larger vials with single-step accuracy. The 30mL vial contains the same 0.9% benzyl alcohol bacteriostatic solution that preserves multi-use vials for 28+ days after reconstitution.
 
 **When to Choose 30mL**
@@ -5708,7 +5708,7 @@ Compatible with all peptides and injectable compounds. Store at room temperature
 - Refrigerate reconstituted peptides; use within 28 days
 - Larger vial is easy to draw from with standard insulin syringes`,
     synergies: ['bacteriostatic-water', 'bpc-157', 'tb-500', 'nad'],
-    seoTitle: 'Buy Bacteriostatic Water 30mL | Large Volume Peptide Reconstitution | BPC-157 Stack',
+    seoTitle: 'Verified Bacteriostatic Water 30mL | Large Volume Peptide Reconstitution | BPC-157 Stack',
     deepDiveTitle: 'Bacteriostatic Water 30mL: Triple-Volume Supply for Multi-Protocol Peptide Users',
     highlights: [
       { title: '3x Volume', body: '30mL covers reconstitution for multiple peptide vials across a complete multi-compound stack — one bottle handles everything.' },
@@ -5726,7 +5726,7 @@ Compatible with all peptides and injectable compounds. Store at room temperature
     tags: ['syringes', 'injection supplies', 'insulin needle', '29 gauge', 'peptide prep'],
     image: 'https://phiogen.is/images/products/bacteriostatic-water-30ml.png',
     affiliateUrl: 'https://phiogen.is/products/insulin-syringes-1ml-29g-x-100?ref=PEPS',
-    shortDescription: '1mL 29G insulin syringes (100-count) — the standard tool for precise subcutaneous peptide injection. Pre-measured markings make dosing exact and consistent.',
+    shortDescription: 'Buy Insulin Syringes 1mL 29G x 100 — 1mL 29G insulin syringes (100-count) — the standard tool for precise subcutaneous peptide injection. Pre-measured markings make dosing exact and consistent.',
     fullDescription: `1mL insulin syringes with 29-gauge needles are the standard delivery tool for subcutaneous peptide injection. The 1mL capacity and fine graduation markings (in 0.01mL increments on most units) allow precise dosing of peptide concentrations ranging from 250mcg to 2mg per injection with accuracy that larger syringes cannot achieve.
 
 **Why 29G for Peptide Injection**
@@ -5774,7 +5774,7 @@ The 1mL syringe capacity accommodates essentially all standard peptide doses whe
     tags: ['MK-677', 'ibutamoren', 'GH', 'growth hormone', 'oral', 'muscle', 'sleep'],
     image: 'https://phiogen.is/images/products/5-amino-1mq-capsules-50mg-x-60-capsules.png',
     affiliateUrl: 'https://phiogen.is/products/mk-677-ibutamoren-30mg-x-30-capsules?ref=PEPS',
-    shortDescription: 'MK-677 (Ibutamoren) is an oral ghrelin mimetic that elevates GH and IGF-1 continuously — the only oral compound that sustainably raises growth hormone without injection.',
+    shortDescription: 'MK-677 (Ibutamoren) 30mg x30 Capsules For Sale — MK-677 (Ibutamoren) is an oral ghrelin mimetic that elevates GH and IGF-1 continuously — the only oral compound that sustainably raises growth hormone without injection.',
     fullDescription: `MK-677 (Ibutamoren) is a non-peptide oral ghrelin receptor agonist that elevates GH and IGF-1 levels by 40-80% at 25-30mg/day. Unlike injectable GH secretagogues that produce pulsatile release, MK-677 produces sustained elevation — making it uniquely suited for maximizing 24-hour IGF-1 exposure and the body recomposition benefits that follow.
 
 **Mechanism: Ghrelin Receptor Agonism**
@@ -5802,7 +5802,7 @@ MK-677 increases appetite significantly through its ghrelin mechanism — users 
 - Cycle: 3-6 months minimum for body recomposition effects
 - Take with food to reduce nausea at initiation`,
     synergies: ['cjc1295-ipamorelin', 'igf-1lr3', 'tb-500', 'ghk-cu'],
-    seoTitle: 'Buy MK-677 Ibutamoren 30mg x30 Caps | Oral GH Secretagogue | BPC-157 Stack',
+    seoTitle: 'MK-677 Ibutamoren 30mg x30 Caps For Sale | Oral GH Secretagogue | BPC-157 Stack',
     deepDiveTitle: 'MK-677: The Only Oral Compound That Sustainably Elevates Growth Hormone',
     highlights: [
       { title: '40-80% GH Increase', body: '2-year clinical trial: 40-80% IGF-1 elevation maintained throughout without desensitization — unprecedented duration for a GH secretagogue.' },
@@ -5820,7 +5820,7 @@ MK-677 increases appetite significantly through its ghrelin mechanism — users 
     tags: ['BPC-157', 'nasal', 'intranasal', 'CNS', 'gut', 'healing', 'no injection'],
     image: 'https://phiogen.is/images/products/bpc-157-capsules-500mcg-x-60-capsules.png',
     affiliateUrl: 'https://phiogen.is/products/bpc-157-capsules-500mcg-x-60-capsules?ref=PEPS',
-    shortDescription: 'BPC-157 intranasal spray delivers the peptide directly through the nasal mucosa for CNS, sinus, and systemic effects — needle-free alternative with rapid onset.',
+    shortDescription: 'Cheap BPC-157 Nasal Spray 500mcg/mL — BPC-157 intranasal spray delivers the peptide directly through the nasal mucosa for CNS, sinus, and systemic effects — needle-free alternative with rapid onset.',
     fullDescription: `BPC-157 intranasal spray provides an alternative delivery route for users seeking CNS-targeted effects or needle-free administration. The nasal mucosa has a rich blood supply and direct olfactory nerve pathways to the brain — intranasal delivery achieves measurable plasma levels and CNS penetration without injection.
 
 **Intranasal Advantages for CNS Indications**
@@ -5849,7 +5849,7 @@ Intranasal bioavailability of BPC-157 is lower than injection but significantly 
 - For CNS effects: morning dosing preferred
 - For sinus healing: use after nasal rinsing`,
     synergies: ['bpc-157', 'bpc-157-capsules', 'selank', 'semax'],
-    seoTitle: 'Buy BPC-157 Nasal Spray | Intranasal Delivery for CNS and Healing | BPC-157 Stack',
+    seoTitle: 'Cheap BPC-157 Nasal Spray | Intranasal Delivery for CNS and Healing | BPC-157 Stack',
     deepDiveTitle: 'BPC-157 Nasal Spray: Direct CNS Delivery for Neurological and Sinus Applications',
     highlights: [
       { title: 'No Injection', body: 'Nasal spray delivery eliminates needles entirely — the most accessible BPC-157 format for injection-averse users.' },
@@ -5867,7 +5867,7 @@ Intranasal bioavailability of BPC-157 is lower than injection but significantly 
     tags: ['IGF-1', 'LR3', 'muscle', 'hypertrophy', 'growth factor', 'repair'],
     image: 'https://phiogen.is/images/products/igf-1-lr3-1mg.png',
     affiliateUrl: 'https://phiogen.is/products/igf-1-lr3-100mcg?ref=PEPS',
-    shortDescription: 'IGF-1 LR3 100mcg — precision starter vial for the most potent muscle anabolic peptide. Stimulates satellite cell activation and myonuclear addition directly.',
+    shortDescription: 'Trusted IGF-1 LR3 100mcg — IGF-1 LR3 100mcg — precision starter vial for the most potent muscle anabolic peptide. Stimulates satellite cell activation and myonuclear addition directly.',
     fullDescription: `IGF-1 LR3 (Long R3 Insulin-Like Growth Factor 1) is a modified version of endogenous IGF-1 with a 13-amino-acid N-terminal extension and arginine substitution that dramatically extends its half-life from minutes to 20-30 hours. This modification makes LR3 approximately 3x more potent than native IGF-1 for muscle growth signaling.
 
 **Satellite Cell Activation**
@@ -5896,7 +5896,7 @@ IGF-1 LR3 works synergistically with CJC-1295/Ipamorelin: the growth hormone sec
 - Inject near trained muscle groups (bilateral local injection)
 - Monitor for hypoglycemia at higher doses — eat nearby`,
     synergies: ['igf-1lr3', 'cjc1295-ipamorelin', 'tb-500', 'bpc-157'],
-    seoTitle: 'Buy IGF-1 LR3 100mcg | Starter Vial Muscle Anabolic Peptide | BPC-157 Stack',
+    seoTitle: 'Trusted IGF-1 LR3 100mcg | Starter Vial Muscle Anabolic Peptide | BPC-157 Stack',
     deepDiveTitle: 'IGF-1 LR3 100mcg: Satellite Cell Activation and Myonuclear Addition for Permanent Hypertrophy',
     highlights: [
       { title: 'Permanent Hypertrophy', body: 'IGF-1 adds myonuclei to muscle fibers — a durable structural change that persists beyond the protocol, unlike hormonal hypertrophy.' },
@@ -5914,7 +5914,7 @@ IGF-1 LR3 works synergistically with CJC-1295/Ipamorelin: the growth hormone sec
     tags: ['epithalon', 'telomeres', 'longevity', 'anti-aging', 'telomerase', 'bulk'],
     image: 'https://phiogen.is/images/products/epitalon-50mg.png',
     affiliateUrl: 'https://phiogen.is/products/epitalon-50mg?ref=PEPS',
-    shortDescription: 'Epithalon 50mg — bulk supply for extended telomere extension and longevity protocols. The most cost-effective format for the only known telomerase-activating compound.',
+    shortDescription: 'Verified Epithalon 50mg — Epithalon 50mg — bulk supply for extended telomere extension and longevity protocols. The most cost-effective format for the only known telomerase-activating compound.',
     fullDescription: `Epithalon (Epitalon) 50mg is the bulk supply option for users who have confirmed their response to Epithalon and want to run extended or repeated protocols. Standard Epithalon cycles use 5-10mg/day for 10-20 days, meaning a 50mg vial covers 2-5 complete cycles — making it the most economical choice for annual or biannual longevity protocols.
 
 **Telomerase Activation — Still Unique After 40 Years**
@@ -5943,7 +5943,7 @@ The Epithalon + GHK-Cu combination addresses two distinct hallmarks of aging sim
 - Annual protocol: 10mg/day × 10 days = 100mg/year
 - Run 1-2x per year for longevity maintenance`,
     synergies: ['epithalon', 'ghk-cu', 'nad', 'nad-250mg'],
-    seoTitle: 'Buy Epithalon 50mg | Bulk Telomere Extension Longevity Protocol | BPC-157 Stack',
+    seoTitle: 'Verified Epithalon 50mg | Bulk Telomere Extension Longevity Protocol | BPC-157 Stack',
     deepDiveTitle: 'Epithalon 50mg: Bulk Supply for Multi-Year Telomere Extension Protocols',
     highlights: [
       { title: '5 Annual Cycles', body: 'At 10mg/day × 10 days per year, 50mg covers 5 complete annual longevity protocols — years of telomerase activation from one vial.' },
@@ -5961,7 +5961,7 @@ The Epithalon + GHK-Cu combination addresses two distinct hallmarks of aging sim
     tags: ['GHRP-2', 'growth hormone', 'GH pulse', 'ghrelin', 'starter', 'muscle'],
     image: 'https://phiogen.is/images/products/ghrp-2-10mg.png',
     affiliateUrl: 'https://phiogen.is/products/ghrp-2-5mg?ref=PEPS',
-    shortDescription: 'GHRP-2 5mg starter vial — strong ghrelin mimetic that triggers significant GH pulses with moderate cortisol and prolactin elevation at standard doses.',
+    shortDescription: 'Buy GHRP-2 5mg — GHRP-2 5mg starter vial — strong ghrelin mimetic that triggers significant GH pulses with moderate cortisol and prolactin elevation at standard doses.',
     fullDescription: `GHRP-2 (Growth Hormone Releasing Peptide-2) is one of the earliest and most studied synthetic ghrelin receptor agonists. At research doses of 100-300mcg per injection, GHRP-2 produces strong GH pulses that are larger than those produced by Ipamorelin, at the cost of modest cortisol and prolactin elevation. For users prioritizing raw GH output, GHRP-2 is a powerful option.
 
 **GHRP-2 vs Ipamorelin**
@@ -6007,7 +6007,7 @@ The 5mg vial provides 16-50 injections at 100-300mcg per dose — enough to asse
     tags: ['tesamorelin', 'GHRH', 'visceral fat', 'GH', 'FDA-approved', 'body composition'],
     image: 'https://phiogen.is/images/products/tesamorelin-10mg.png',
     affiliateUrl: 'https://phiogen.is/products/tesamorelin-5mg?ref=PEPS',
-    shortDescription: 'Tesamorelin 5mg — the only FDA-approved growth hormone releasing hormone for visceral fat reduction. Proven to reduce abdominal fat 15-20% at 2mg/day.',
+    shortDescription: 'Tesamorelin 5mg For Sale — Tesamorelin 5mg — the only FDA-approved growth hormone releasing hormone for visceral fat reduction. Proven to reduce abdominal fat 15-20% at 2mg/day.',
     fullDescription: `Tesamorelin is a synthetic GHRH (Growth Hormone Releasing Hormone) analog with trans-2-hexenoic acid modification that stabilizes it against degradation. The FDA approved it as Egrifta for HIV-associated lipodystrophy, where it reduces visceral adipose tissue 15-20% at 2mg/day — the only approved pharmaceutical for this specific indication.
 
 **Visceral Fat Mechanism**
@@ -6036,7 +6036,7 @@ Adding Ipamorelin or GHRP-2 to tesamorelin amplifies GH pulses through dual rece
 - Cycle: 26+ weeks based on FDA trial data
 - 5mg vial covers 2.5 days — typically paired with 10mg vials for full protocols`,
     synergies: ['tesamorelin-10mg', 'ipa-tesa-blend', 'ipamorelin-10mg', 'sermorelin'],
-    seoTitle: 'Buy Tesamorelin 5mg | FDA-Approved GHRH Visceral Fat Reduction | BPC-157 Stack',
+    seoTitle: 'Tesamorelin 5mg For Sale | FDA-Approved GHRH Visceral Fat Reduction | BPC-157 Stack',
     deepDiveTitle: 'Tesamorelin 5mg: FDA-Approved Growth Hormone Analog for Visceral Fat Loss',
     highlights: [
       { title: 'FDA Approved', body: 'The only FDA-approved GHRH for visceral fat reduction — based on two Phase III trials demonstrating 15-20% visceral adipose tissue decrease.' },
@@ -6056,7 +6056,7 @@ Adding Ipamorelin or GHRP-2 to tesamorelin amplifies GH pulses through dual rece
     tags: ['PT-141', 'sexual health', 'libido', 'bremelanotide', 'melanocortin', 'starter'],
     image: 'https://phiogen.is/images/products/pt-141-10mg.png',
     affiliateUrl: 'https://phiogen.is/products/pt-141-10mg?ref=PEPS',
-    shortDescription: 'PT-141 (Bremelanotide) 5mg starter vial — FDA-approved melanocortin receptor agonist that enhances sexual desire through central nervous system mechanisms.',
+    shortDescription: 'Cheap PT-141 (Bremelanotide) 5mg — PT-141 (Bremelanotide) 5mg starter vial — FDA-approved melanocortin receptor agonist that enhances sexual desire through central nervous system mechanisms.',
     fullDescription: `PT-141 (Bremelanotide) is a synthetic melanocortin receptor agonist that acts centrally in the brain to enhance sexual desire and arousal. Unlike PDE5 inhibitors (Viagra, Cialis) that work peripherally on blood flow, PT-141 activates the MC3R and MC4R receptors in the hypothalamus — the brain centers that regulate sexual motivation. This is why PT-141 works for both men and women across different etiologies of sexual dysfunction.
 
 **FDA Approval and Clinical Evidence**
@@ -6085,7 +6085,7 @@ At 1.75mg per dose (the FDA-approved dose for HSDD), a 5mg vial provides approxi
 - Use no more than once every 24 hours
 - Note: transient nausea and flushing are common at initiation`,
     synergies: ['pt-141', 'bpc-157', 'melanotan-2', 'ghk-cu'],
-    seoTitle: 'Buy PT-141 Bremelanotide 5mg | Starter Vial Sexual Enhancement Peptide | BPC-157 Stack',
+    seoTitle: 'Cheap PT-141 Bremelanotide 5mg | Starter Vial Sexual Enhancement Peptide | BPC-157 Stack',
     deepDiveTitle: 'PT-141 5mg: FDA-Approved Melanocortin Agonist for Central Sexual Desire Enhancement',
     highlights: [
       { title: 'FDA Approved', body: 'Bremelanotide (Vyleesi) is FDA-approved for HSDD — clinical validation of both safety and efficacy through the RECONNECT trial program.' },
@@ -6103,7 +6103,7 @@ At 1.75mg per dose (the FDA-approved dose for HSDD), a 5mg vial provides approxi
     tags: ['selank', 'anxiety', 'nootropic', 'cognitive', 'BDNF', 'stress', 'bulk'],
     image: 'https://phiogen.is/images/products/selank-10mg.png',
     affiliateUrl: 'https://phiogen.is/products/selank-10mg?ref=PEPS',
-    shortDescription: 'Selank 10mg — extended supply for the Russian nootropic peptide that reduces anxiety, enhances BDNF, and improves working memory without sedation or tolerance.',
+    shortDescription: 'Trusted Selank 10mg — Selank 10mg — extended supply for the Russian nootropic peptide that reduces anxiety, enhances BDNF, and improves working memory without sedation or tolerance.',
     fullDescription: `Selank is a heptapeptide (Thr-Lys-Pro-Arg-Pro-Gly-Pro) developed by the Institute of Molecular Genetics of the Russian Academy of Sciences as an anxiolytic and nootropic compound. Unlike benzodiazepines, Selank does not cause sedation, dependence, or tolerance — it produces anti-anxiety effects through GABA modulation and simultaneously enhances cognitive function.
 
 **Dual Anxiolytic-Nootropic Profile**
@@ -6131,7 +6131,7 @@ At 250-500mcg intranasal daily (a common protocol), a 10mg vial provides 20-40 d
 - Cycle: 2-4 weeks on, 1-2 weeks off
 - Best taken morning for cognitive effects, evening for anxiety/sleep`,
     synergies: ['selank', 'semax', 'dihexa', 'dsip'],
-    seoTitle: 'Buy Selank 10mg | Extended Supply Cognitive Nootropic Anxiolytic | BPC-157 Stack',
+    seoTitle: 'Trusted Selank 10mg | Extended Supply Cognitive Nootropic Anxiolytic | BPC-157 Stack',
     deepDiveTitle: 'Selank 10mg: Extended Supply for the Dual Anxiolytic-Nootropic Peptide',
     highlights: [
       { title: 'Anxiety Without Sedation', body: 'Reduces anxiety through GABA modulation without the cognitive impairment and dependence risk of benzodiazepines.' },
@@ -6149,7 +6149,7 @@ At 250-500mcg intranasal daily (a common protocol), a 10mg vial provides 20-40 d
     tags: ['semax', 'nootropic', 'cognitive', 'BDNF', 'ACTH', 'neuroprotection', 'bulk'],
     image: 'https://phiogen.is/images/products/n-acetyl-semax-amidate-30mg.png',
     affiliateUrl: 'https://phiogen.is/products/n-acetyl-semax-amidate-30mg?ref=PEPS',
-    shortDescription: 'Semax 30mg bulk supply — the ACTH-derived cognitive enhancer approved in Russia for stroke recovery and neuroprotection, with powerful nootropic and BDNF-upregulating effects.',
+    shortDescription: 'Verified Semax 30mg — Semax 30mg bulk supply — the ACTH-derived cognitive enhancer approved in Russia for stroke recovery and neuroprotection, with powerful nootropic and BDNF-upregulating effects.',
     fullDescription: `Semax is a synthetic heptapeptide derived from ACTH(4-10) — a fragment of adrenocorticotropic hormone that retains cognitive effects without hormonal activity. Developed in Russia and approved for clinical use in stroke recovery and transient ischemic attack, Semax has a 25-year clinical safety record and extensive nootropic research base.
 
 **BDNF and NGF Upregulation**
@@ -6177,7 +6177,7 @@ At 200-600mcg intranasal daily (typical nootropic dosing), 30mg provides 50-150 
 - Cycle: 2-4 weeks, assess response, cycle off 1-2 weeks
 - Best taken in the morning for sustained cognitive effects`,
     synergies: ['semax', 'selank', 'dihexa', 'nad'],
-    seoTitle: 'Buy Semax 30mg | Bulk ACTH Nootropic Cognitive Enhancement | BPC-157 Stack',
+    seoTitle: 'Verified Semax 30mg | Bulk ACTH Nootropic Cognitive Enhancement | BPC-157 Stack',
     deepDiveTitle: 'Semax 30mg: Bulk Supply for Russia\'s Clinical-Grade Nootropic Peptide',
     highlights: [
       { title: 'Clinically Approved', body: 'Approved in Russia for 25+ years for stroke and TIA recovery — one of the most clinically validated nootropic peptides.' },
@@ -6195,7 +6195,7 @@ At 200-600mcg intranasal daily (typical nootropic dosing), 30mg provides 50-150 
     tags: ['NAD+', 'longevity', 'mitochondria', 'neurological', 'clinic', 'bulk', 'maximum'],
     image: 'https://phiogen.is/images/products/nad-1000mg.png',
     affiliateUrl: 'https://phiogen.is/products/nad-1000mg?ref=PEPS',
-    shortDescription: 'NAD+ 1000mg — clinic-grade bulk supply for maximum longevity, neurological recovery, and addiction medicine protocols at the lowest per-milligram cost.',
+    shortDescription: 'Buy NAD+ 1000mg — NAD+ 1000mg — clinic-grade bulk supply for maximum longevity, neurological recovery, and addiction medicine protocols at the lowest per-milligram cost.',
     fullDescription: `NAD+ 1000mg is the bulk format for users running aggressive anti-aging protocols, intensive neurological recovery programs, or ongoing maintenance at high doses. IV infusion clinics commonly use 500-1000mg per session for neurological applications — the 1000mg vial provides two full clinic-equivalent sessions or extended maintenance supply.
 
 **Maximum Sirtuin and PARP Engagement**
@@ -6242,7 +6242,7 @@ The 1000mg vial represents the lowest per-milligram NAD+ cost in the catalog. Fo
     tags: ['amlexanox', 'IKKε', 'TBK1', 'metabolic syndrome', 'insulin resistance', 'inflammation'],
     image: 'https://phiogen.is/images/products/5-amino-1mq-50mg.png',
     affiliateUrl: 'https://phiogen.is/products/amlexanox-25mg?ref=PEPS',
-    shortDescription: 'Amlexanox inhibits IKKε and TBK1 — the inflammatory kinases that drive insulin resistance in obesity. Reduces metabolic inflammation and improves insulin sensitivity.',
+    shortDescription: 'Amlexanox 25mg For Sale — Amlexanox inhibits IKKε and TBK1 — the inflammatory kinases that drive insulin resistance in obesity. Reduces metabolic inflammation and improves insulin sensitivity.',
     fullDescription: `Amlexanox is an FDA-approved anti-inflammatory compound (originally for canker sores) that was found to inhibit IKKε (inhibitor of nuclear factor kappa-B kinase epsilon) and TBK1 (TANK-binding kinase 1) — two kinases that become overactivated in obesity and drive insulin resistance through chronic low-grade inflammation in adipose tissue.
 
 **The Metabolic Inflammation Mechanism**
@@ -6270,7 +6270,7 @@ Amlexanox is most valuable when combined with GLP-1 agonists or other weight los
 - Best combined with GLP-1 agonists in insulin-resistant individuals
 - Monitor fasting glucose and HbA1c every 4-6 weeks`,
     synergies: ['glp-1s-semaglutide', 'glp-2t-tirzepatide', '5-amino-1mq-50mg', 'aicar'],
-    seoTitle: 'Buy Amlexanox 25mg | IKKε TBK1 Inhibitor Metabolic Inflammation | BPC-157 Stack',
+    seoTitle: 'Amlexanox 25mg For Sale | IKKε TBK1 Inhibitor Metabolic Inflammation | BPC-157 Stack',
     deepDiveTitle: 'Amlexanox: Targeting the Inflammatory Root of Insulin Resistance',
     highlights: [
       { title: 'Root Cause', body: 'Inhibits IKKε/TBK1 — the inflammatory kinases that convert obesity into insulin resistance, not just appetite suppression or calorie reduction.' },
@@ -6288,7 +6288,7 @@ Amlexanox is most valuable when combined with GLP-1 agonists or other weight los
     tags: ['BPC-157', 'TB-500', 'blend', 'healing', 'starter', 'trial'],
     image: 'https://phiogen.is/images/products/bpc-157-tb-500-blend-bpc-157-5mg-tb-500-5mg.png',
     affiliateUrl: 'https://phiogen.is/products/bpc-157-tb-500-blend-bpc-157-2-5mg-tb-500-2-5mg?ref=PEPS',
-    shortDescription: 'BPC-157 + TB-500 Blend 5mg (2.5mg each) — trial-size entry into the gold-standard healing stack. Perfect for first-timers assessing response before committing to larger vials.',
+    shortDescription: 'Cheap BPC-157 + TB-500 Blend 5mg — BPC-157 + TB-500 Blend 5mg (2.5mg each) — trial-size entry into the gold-standard healing stack. Perfect for first-timers assessing response before committing to larger vials.',
     fullDescription: `BPC-157 + TB-500 5mg blend (2.5mg BPC-157 + 2.5mg TB-500) is the trial entry point for the most clinically rational healing stack. At 500mcg/day split between both peptides, this vial provides approximately 5 days of standard dosing — long enough to experience initial pain reduction and mobility improvements that BPC-157 and TB-500 produce within the first week.
 
 **Why Start With the Blend**
@@ -6316,7 +6316,7 @@ The 5mg blend is designed as a gateway to the 10mg and 20mg vials. Most users wh
 - Once daily subcutaneous for 5 days
 - Assess response, then move to 10mg or 20mg blend`,
     synergies: ['bpc-157-tb-500-blend-10mg', 'bpc-157-tb-500-blend-20mg', 'bpc-157', 'tb-500'],
-    seoTitle: 'Buy BPC-157 TB-500 Blend 5mg | Starter Trial Healing Stack | BPC-157 Stack',
+    seoTitle: 'Cheap BPC-157 TB-500 Blend 5mg | Starter Trial Healing Stack | BPC-157 Stack',
     deepDiveTitle: 'BPC-157 + TB-500 5mg: Trial-Size Entry into the Gold-Standard Healing Stack',
     highlights: [
       { title: 'Lowest Entry Cost', body: 'Minimum investment to experience the BPC-157 + TB-500 synergy — ideal for first-timers evaluating the stack.' },
@@ -6334,7 +6334,7 @@ The 5mg blend is designed as a gateway to the 10mg and 20mg vials. Most users wh
     tags: ['SARM', 'ostarine', 'MK-2866', 'lean mass', 'muscle', 'bone density'],
     image: 'https://phiogen.is/images/products/5-amino-1mq-capsules-50mg-x-60-capsules.png',
     affiliateUrl: 'https://phiogen.is/products/mk-2866-ostarine-30mg-x-30-capsules?ref=PEPS',
-    shortDescription: 'MK-2866 (Ostarine) is the most-studied SARM — selectively activates androgen receptors in muscle and bone with minimal hormonal suppression at research doses.',
+    shortDescription: 'Trusted MK-2866 (Ostarine) 30mg x30 Capsules — MK-2866 (Ostarine) is the most-studied SARM — selectively activates androgen receptors in muscle and bone with minimal hormonal suppression at research doses.',
     fullDescription: `MK-2866 (Ostarine, Enobosarm) is the original and most extensively studied selective androgen receptor modulator. It was developed by GTx to address muscle wasting and osteoporosis, advancing to Phase III clinical trials. At research doses (10-30mg/day), it selectively activates androgen receptors in muscle and bone tissue without the virilizing effects of anabolic steroids.
 
 **Clinical Trial Data**
@@ -6363,7 +6363,7 @@ A secondary finding in cancer trial data: Ostarine improved bone mineral density
 - Timing: once daily, same time each day
 - Bulking: 25-30mg. Cutting/recomp: 15-20mg`,
     synergies: ['mk-677', 'lgd-4033', 'cjc1295-ipamorelin', 'igf-1lr3'],
-    seoTitle: 'Buy MK-2866 Ostarine 30mg x30 | Most Studied SARM Lean Mass | BPC-157 Stack',
+    seoTitle: 'Trusted MK-2866 Ostarine 30mg x30 | Most Studied SARM Lean Mass | BPC-157 Stack',
     deepDiveTitle: 'MK-2866 Ostarine: Phase III Clinical Data on the Most Studied SARM',
     highlights: [
       { title: 'Phase III Data', body: 'POWER 1 and 2 trials enrolled 650+ patients — more clinical data than any other SARM compound.' },
@@ -6381,7 +6381,7 @@ A secondary finding in cancer trial data: Ostarine improved bone mineral density
     tags: ['SARM', 'LGD-4033', 'ligandrol', 'muscle', 'strength', 'lean mass'],
     image: 'https://phiogen.is/images/products/5-amino-1mq-capsules-50mg-x-60-capsules.png',
     affiliateUrl: 'https://phiogen.is/products/lgd-4033-ligandrol-10mg-x-30-capsules?ref=PEPS',
-    shortDescription: 'LGD-4033 (Ligandrol) is the most potent oral SARM for lean mass — produces significant strength and muscle gains with suppression levels that require post-cycle therapy.',
+    shortDescription: 'Verified LGD-4033 (Ligandrol) 10mg x30 Capsules — LGD-4033 (Ligandrol) is the most potent oral SARM for lean mass — produces significant strength and muscle gains with suppression levels that require post-cycle therapy.',
     fullDescription: `LGD-4033 (Ligandrol) is a non-steroidal selective androgen receptor modulator developed by Ligand Pharmaceuticals. In a Phase I clinical trial at 1mg/day for 21 days, lean mass increases of 1.21kg were observed — exceeding what testosterone produces at equivalent suppression levels. At research doses of 5-10mg/day, LGD-4033 is the most potent lean mass SARM in the current research catalog.
 
 **Phase I Clinical Data**
@@ -6410,7 +6410,7 @@ LGD-4033 excels at body recomposition — gaining lean mass while losing fat sim
 - Bulking: 10mg/day. Recomp: 5mg/day
 - Monitor testosterone levels at end of cycle`,
     synergies: ['mk-2866-ostarine', 'mk-677', 'cjc1295-ipamorelin', 'igf-1lr3'],
-    seoTitle: 'Buy LGD-4033 Ligandrol 10mg x30 | Most Potent SARM for Lean Mass | BPC-157 Stack',
+    seoTitle: 'Verified LGD-4033 Ligandrol 10mg x30 | Most Potent SARM for Lean Mass | BPC-157 Stack',
     deepDiveTitle: 'LGD-4033 Ligandrol: Phase I Clinical Data on the Most Potent Lean Mass SARM',
     highlights: [
       { title: 'Phase I Validated', body: '1.21kg lean mass in 21 days at 1mg/day in controlled trial — exceeds testosterone at equivalent suppression in Phase I data.' },
@@ -6428,7 +6428,7 @@ LGD-4033 excels at body recomposition — gaining lean mass while losing fat sim
     tags: ['SARM', 'RAD-140', 'testolone', 'muscle', 'neuroprotective', 'lean mass'],
     image: 'https://phiogen.is/images/products/5-amino-1mq-capsules-50mg-x-60-capsules.png',
     affiliateUrl: 'https://phiogen.is/products/rad-140-testolone-10mg-x-30-capsules?ref=PEPS',
-    shortDescription: 'RAD-140 (Testolone) is a high-potency SARM with unique neuroprotective properties — activates brain androgen receptors to protect neurons while building lean mass.',
+    shortDescription: 'Buy RAD-140 (Testolone) 10mg x30 Capsules — RAD-140 (Testolone) is a high-potency SARM with unique neuroprotective properties — activates brain androgen receptors to protect neurons while building lean mass.',
     fullDescription: `RAD-140 (Testolone) is a potent SARM developed by Radius Health with two properties that distinguish it from LGD-4033 and Ostarine: high anabolic potency (anabolic:androgenic ratio of 90:1 vs testosterone's 1:1) and demonstrated neuroprotective effects through activation of androgen receptors in the brain. This makes RAD-140 uniquely suited for users seeking both body composition and cognitive/neurological benefits.
 
 **Neuroprotection Mechanism**
@@ -6474,7 +6474,7 @@ RAD-140 advanced to Phase I trials for breast cancer (androgen receptor positive
     tags: ['YK-11', 'myostatin', 'SARM', 'muscle', 'follistatin', 'hypertrophy'],
     image: 'https://phiogen.is/images/products/5-amino-1mq-capsules-50mg-x-60-capsules.png',
     affiliateUrl: 'https://phiogen.is/products/yk-11-10mg-x-30-capsules?ref=PEPS',
-    shortDescription: 'YK-11 inhibits myostatin — the protein that limits maximum muscle growth. By blocking myostatin, YK-11 induces follistatin expression and removes the genetic ceiling on muscle hypertrophy.',
+    shortDescription: 'YK-11 10mg x30 Capsules For Sale — YK-11 inhibits myostatin — the protein that limits maximum muscle growth. By blocking myostatin, YK-11 induces follistatin expression and removes the genetic ceiling on muscle hypertrophy.',
     fullDescription: `YK-11 is a steroidal SARM that operates through a mechanism distinct from all other SARMs: it inhibits myostatin by inducing expression of follistatin in muscle cells. Myostatin is a negative regulator of muscle growth that establishes the genetic ceiling on muscle mass — individuals with myostatin mutations or knockout naturally develop extreme muscularity. YK-11 pharmacologically mimics this effect.
 
 **The Myostatin-Follistatin Axis**
@@ -6503,7 +6503,7 @@ YK-11 has less clinical data than Ostarine or LGD-4033. Animal and in vitro data
 - Start at 5mg to assess tolerance
 - Not recommended as a first SARM`,
     synergies: ['lgd-4033', 'mk-677', 'igf-1lr3', 'cjc1295-ipamorelin'],
-    seoTitle: 'Buy YK-11 10mg x30 | Myostatin Inhibitor SARM Max Muscle Growth | BPC-157 Stack',
+    seoTitle: 'YK-11 10mg x30 For Sale | Myostatin Inhibitor SARM Max Muscle Growth | BPC-157 Stack',
     deepDiveTitle: 'YK-11: The Myostatin Inhibitor That Breaks the Genetic Ceiling on Muscle Growth',
     highlights: [
       { title: 'Myostatin Inhibition', body: 'Induces follistatin expression to neutralize myostatin — pharmacologically mimicking the extreme muscularity of myostatin-knockout genetics.' },
@@ -6521,7 +6521,7 @@ YK-11 has less clinical data than Ostarine or LGD-4033. Animal and in vitro data
     tags: ['cardarine', 'GW501516', 'PPARδ', 'endurance', 'fat oxidation', 'AMPK'],
     image: 'https://phiogen.is/images/products/5-amino-1mq-capsules-50mg-x-60-capsules.png',
     affiliateUrl: 'https://phiogen.is/products/cardarine-gw-501516-10mg-x-30-capsules?ref=PEPS',
-    shortDescription: 'Cardarine (GW501516) is a PPARδ agonist that dramatically enhances endurance, fat oxidation, and metabolic flexibility — the "exercise in a bottle" compound from early AMPK research.',
+    shortDescription: 'Cheap Cardarine (GW501516) 10mg x30 Capsules — Cardarine (GW501516) is a PPARδ agonist that dramatically enhances endurance, fat oxidation, and metabolic flexibility — the "exercise in a bottle" compound from early AMPK research.',
     fullDescription: `Cardarine (GW501516) is a PPARδ (Peroxisome Proliferator-Activated Receptor delta) agonist that fundamentally changes how cells generate energy — favoring fat oxidation over glucose utilization and dramatically increasing mitochondrial density in skeletal muscle. In animal studies, Cardarine increased running endurance by 68% and produced a lean body composition phenotype without caloric restriction.
 
 **The PPARδ Mechanism**
@@ -6550,7 +6550,7 @@ GW501516 was discontinued from pharmaceutical development after showing dose-dep
 - No PCT required — non-hormonal mechanism
 - Stack with AICAR for maximum metabolic effect`,
     synergies: ['aicar', 'slu-pp-332-30caps', 'mk-677', '5-amino-1mq-50mg'],
-    seoTitle: 'Buy Cardarine GW501516 10mg x30 | PPARδ Agonist Endurance Fat Burning | BPC-157 Stack',
+    seoTitle: 'Cheap Cardarine GW501516 10mg x30 | PPARδ Agonist Endurance Fat Burning | BPC-157 Stack',
     deepDiveTitle: 'Cardarine GW501516: The PPARδ Agonist That Reprograms Metabolism for Fat Burning',
     highlights: [
       { title: '68% Endurance Boost', body: 'Animal studies: 68% increase in running endurance — via mitochondrial density increase and shift to fat as primary fuel.' },
@@ -6568,7 +6568,7 @@ GW501516 was discontinued from pharmaceutical development after showing dose-dep
     tags: ['SR9009', 'stenabolic', 'Rev-erbα', 'circadian', 'endurance', 'metabolism'],
     image: 'https://phiogen.is/images/products/5-amino-1mq-capsules-50mg-x-60-capsules.png',
     affiliateUrl: 'https://phiogen.is/products/sr9009-stenabolic-10mg-x-30-capsules?ref=PEPS',
-    shortDescription: 'SR9009 (Stenabolic) activates Rev-erbα — the circadian clock nuclear receptor that programs metabolic activity cycles. Increases mitochondrial number and exercise capacity.',
+    shortDescription: 'Trusted SR9009 (Stenabolic) 10mg x30 Capsules — SR9009 (Stenabolic) activates Rev-erbα — the circadian clock nuclear receptor that programs metabolic activity cycles. Increases mitochondrial number and exercise capacity.',
     fullDescription: `SR9009 (Stenabolic) is a synthetic ligand for Rev-erbα (nuclear receptor subfamily 1 group D member 1) — a key component of the circadian molecular clock that regulates metabolic gene expression in a time-dependent manner. By activating Rev-erbα, SR9009 reprograms the circadian metabolic program toward the "active" state regardless of time of day, increasing mitochondrial number, enhancing fat oxidation, and dramatically improving exercise capacity.
 
 **Circadian Metabolism**
@@ -6597,7 +6597,7 @@ SR9009 has modest oral bioavailability — some users prefer sublingual or intra
 - No PCT required — non-hormonal
 - Note: oral bioavailability is modest; some prefer sublingual dosing`,
     synergies: ['cardarine-gw501516', 'aicar', 'mk-677', 'slu-pp-332-30caps'],
-    seoTitle: 'Buy SR9009 Stenabolic 10mg x30 | Rev-erbα Agonist Circadian Metabolism | BPC-157 Stack',
+    seoTitle: 'Trusted SR9009 Stenabolic 10mg x30 | Rev-erbα Agonist Circadian Metabolism | BPC-157 Stack',
     deepDiveTitle: 'SR9009 Stenabolic: Rev-erbα Activation for Continuous Circadian Metabolic Advantage',
     highlights: [
       { title: '50% More Mitochondria', body: 'Animal models: 50% increase in skeletal muscle mitochondrial number — structural adaptation that improves endurance capacity permanently during treatment.' },
@@ -6615,7 +6615,7 @@ SR9009 has modest oral bioavailability — some users prefer sublingual or intra
     tags: ['semaglutide', 'pen', 'GLP-1', 'Wegovy', 'ready-to-use', 'convenience'],
     image: 'https://phiogen.is/images/products/semaglutide-6mg.png',
     affiliateUrl: 'https://phiogen.is/products/semaglutide-2-4mg-pre-filled-pen?ref=PEPS',
-    shortDescription: 'Pre-filled semaglutide 2.4mg pen — ready-to-use, no reconstitution required. The most convenient format for Wegovy-equivalent GLP-1 weekly injection.',
+    shortDescription: 'Verified Semaglutide 2.4mg Pre-filled Pen — Pre-filled semaglutide 2.4mg pen — ready-to-use, no reconstitution required. The most convenient format for Wegovy-equivalent GLP-1 weekly injection.',
     fullDescription: `The pre-filled semaglutide pen provides a ready-to-use format that eliminates reconstitution entirely — pre-loaded at 2.4mg/dose for users already at therapeutic dosing. Simply dial the dose, attach a needle, and inject. This format is particularly valued by users who travel frequently, prefer simplicity over flexibility, or are transitioning from pharmaceutical GLP-1 products.
 
 **No Reconstitution Convenience**
@@ -6644,7 +6644,7 @@ The pen format uses standard pen needles (4mm-8mm, 31-32G) available separately.
 - Rotate injection sites weekly
 - Store at room temperature; refrigerate after first use`,
     synergies: ['glp-1s-semaglutide', 'cagrilintide', '5-amino-1mq-50mg', 'nad'],
-    seoTitle: 'Buy Semaglutide 2.4mg Pre-filled Pen | Wegovy-Equivalent Convenience | BPC-157 Stack',
+    seoTitle: 'Verified Semaglutide 2.4mg Pre-filled Pen | Wegovy-Equivalent Convenience | BPC-157 Stack',
     deepDiveTitle: 'Semaglutide 2.4mg Pen: Ready-to-Use Maximum Dose GLP-1 for Committed Users',
     highlights: [
       { title: 'Zero Prep', body: 'Pre-filled and ready to inject — no bacteriostatic water, no syringe calibration, no volume calculation needed.' },
@@ -6662,7 +6662,7 @@ The pen format uses standard pen needles (4mm-8mm, 31-32G) available separately.
     tags: ['NAD+', 'patches', 'transdermal', 'anti-aging', 'no injection', 'sustained release'],
     image: 'https://phiogen.is/images/products/nad-500mg.png',
     affiliateUrl: 'https://phiogen.is/products/nad-transdermal-patches-x30?ref=PEPS',
-    shortDescription: 'NAD+ transdermal patches — sustained-release delivery over 12-24 hours without injection, ideal for consistent NAD+ maintenance between higher-dose injection protocols.',
+    shortDescription: 'Buy NAD+ Transdermal Patches x30 — NAD+ transdermal patches — sustained-release delivery over 12-24 hours without injection, ideal for consistent NAD+ maintenance between higher-dose injection protocols.',
     fullDescription: `NAD+ transdermal patches provide a sustained-release delivery mechanism that maintains elevated NAD+ levels over 12-24 hours without the acute peak-and-trough profile of injection. Each patch is designed for once or twice daily application to clean dry skin on the inner arm, back, or abdomen.
 
 **Transdermal vs Injection**
@@ -6708,7 +6708,7 @@ The typical advanced user protocol: monthly or quarterly intensive NAD+ injectio
     tags: ['melanotan II', 'tanning', 'libido', 'capsules', 'oral', 'melanocortin'],
     image: 'https://phiogen.is/images/products/bpc-157-capsules-500mcg-x-60-capsules.png',
     affiliateUrl: 'https://phiogen.is/products/melanotan-2-capsules-1mg-x30?ref=PEPS',
-    shortDescription: 'Melanotan II capsules 1mg x30 — oral delivery of the tanning and libido-enhancing melanocortin peptide without subcutaneous injection.',
+    shortDescription: 'Melanotan II Capsules 1mg x30 For Sale — Melanotan II capsules 1mg x30 — oral delivery of the tanning and libido-enhancing melanocortin peptide without subcutaneous injection.',
     fullDescription: `Melanotan II (MT-2) is a synthetic analog of alpha-melanocyte-stimulating hormone (α-MSH) that activates melanocortin receptors to produce skin darkening, increased libido, and appetite suppression. The 1mg capsule format provides oral delivery — lower bioavailability than injection but adequate for users seeking tanning effects with maximum convenience.
 
 **Melanocortin Receptor Effects**
@@ -6737,7 +6737,7 @@ Melanotan II-induced melanogenesis requires some UV stimulus for optimal results
 - Reduce to every-other-day once desired tan is achieved
 - Common side effects: flushing, nausea at initiation`,
     synergies: ['melanotan-2', 'melanotan-1', 'pt-141', 'ghk-cu'],
-    seoTitle: 'Buy Melanotan II Capsules 1mg x30 | Oral Tanning Libido Peptide | BPC-157 Stack',
+    seoTitle: 'Melanotan II Capsules 1mg x30 For Sale | Oral Tanning Libido Peptide | BPC-157 Stack',
     deepDiveTitle: 'Melanotan II Capsules: Oral Delivery for Tanning and Libido Enhancement',
     highlights: [
       { title: 'No Injection', body: 'Oral capsule format provides melanocortin effects without subcutaneous injection — most accessible MT-2 delivery method.' },
@@ -6755,7 +6755,7 @@ Melanotan II-induced melanogenesis requires some UV stimulus for optimal results
     tags: ['GDF-11', 'anti-aging', 'parabiosis', 'rejuvenation', 'TGF-beta', 'longevity'],
     image: 'https://phiogen.is/images/products/igf-1-lr3-1mg.png',
     affiliateUrl: 'https://phiogen.is/products/gdf-11-100mcg?ref=PEPS',
-    shortDescription: 'GDF-11 is the circulating "young blood factor" from parabiosis research — a TGF-beta family protein that declines with aging and whose restoration reverses cardiac and neurological aging markers.',
+    shortDescription: 'Cheap GDF-11 100mcg — GDF-11 is the circulating "young blood factor" from parabiosis research — a TGF-beta family protein that declines with aging and whose restoration reverses cardiac and neurological aging markers.',
     fullDescription: `GDF-11 (Growth Differentiation Factor 11) gained widespread attention after 2013 Harvard research demonstrated that its declining levels in aging blood contribute to multiple aging phenotypes, and that restoration of GDF-11 levels (via parabiotic blood exchange with young animals) reversed cardiac hypertrophy, improved skeletal muscle regeneration, and enhanced neurogenesis. GDF-11 is a circulating protein that declines with age and acts as a systemic signal of biological youth.
 
 **The Parabiosis Research**
@@ -6783,7 +6783,7 @@ At 100mcg doses, GDF-11 is used in anti-aging research protocols targeting cardi
 - Best combined with GHK-Cu and Epithalon for comprehensive anti-aging
 - Store reconstituted; refrigerate; use within 14 days`,
     synergies: ['epithalon', 'ghk-cu', 'humanin', 'mots-c'],
-    seoTitle: 'Buy GDF-11 100mcg | Young Blood Factor Anti-Aging Peptide | BPC-157 Stack',
+    seoTitle: 'Cheap GDF-11 100mcg | Young Blood Factor Anti-Aging Peptide | BPC-157 Stack',
     deepDiveTitle: 'GDF-11: The Circulating Young Blood Factor from Parabiosis Anti-Aging Research',
     highlights: [
       { title: 'Young Blood Factor', body: 'Identified in Harvard parabiosis research as a key molecule in young blood that reverses aging phenotypes — circulating TGF-beta youth signal.' },
@@ -6801,7 +6801,7 @@ At 100mcg doses, GDF-11 is used in anti-aging research protocols targeting cardi
     tags: ['FGL2', 'immune', 'anti-inflammatory', 'fibroleukin', 'Treg', 'autoimmune'],
     image: 'https://phiogen.is/images/products/igf-1-lr3-1mg.png',
     affiliateUrl: 'https://phiogen.is/products/fgl2-1mg?ref=PEPS',
-    shortDescription: 'FGL2 (Fibroleukin) is an immune checkpoint molecule that expands regulatory T cells (Tregs) and reduces autoimmune inflammation — studied for tolerance induction and chronic inflammation.',
+    shortDescription: 'Trusted FGL2 (Fibroleukin) 1mg — FGL2 (Fibroleukin) is an immune checkpoint molecule that expands regulatory T cells (Tregs) and reduces autoimmune inflammation — studied for tolerance induction and chronic inflammation.',
     fullDescription: `FGL2 (Fibroleukin) is a member of the fibrinogen superfamily that functions as an immune checkpoint molecule. It is secreted by regulatory T cells (Tregs) and exerts immunosuppressive effects through FcγRIIB receptor signaling, inhibiting dendritic cell maturation and effector T cell activation. FGL2 represents a novel approach to modulating the immune system for autoimmune and chronic inflammatory conditions.
 
 **Regulatory T Cell Axis**
@@ -6829,7 +6829,7 @@ FGL2 is a frontier immune research compound with significant mechanistic interes
 - Best combined with BPC-157 for complementary local + systemic immune effects
 - Advanced users only — limited clinical data`,
     synergies: ['bpc-157', 'thymosin-alpha-1', 'll-37', 'kpv-10mg'],
-    seoTitle: 'Buy FGL2 Fibroleukin 1mg | Immune Checkpoint Regulatory T Cell Modulator | BPC-157 Stack',
+    seoTitle: 'Trusted FGL2 Fibroleukin 1mg | Immune Checkpoint Regulatory T Cell Modulator | BPC-157 Stack',
     deepDiveTitle: 'FGL2 Fibroleukin: Immune Checkpoint Molecule for Regulatory T Cell-Based Immune Modulation',
     highlights: [
       { title: 'Treg Amplifier', body: 'Secreted by and enhances regulatory T cells — the immune cells responsible for preventing autoimmune overactivation and maintaining tolerance.' },
@@ -6847,7 +6847,7 @@ FGL2 is a frontier immune research compound with significant mechanistic interes
     tags: ['IGF-1 DES', 'IGF', 'muscle', 'local anabolic', 'hypertrophy', 'satellite cells'],
     image: 'https://phiogen.is/images/products/igf-1-lr3-1mg.png',
     affiliateUrl: 'https://phiogen.is/products/igf-1-des-1mg?ref=PEPS',
-    shortDescription: 'IGF-1 DES is a truncated form of IGF-1 that is 10x more potent than native IGF-1 for local muscle anabolic signaling — the most potent injectable muscle growth peptide.',
+    shortDescription: 'Verified IGF-1 DES 1mg — IGF-1 DES is a truncated form of IGF-1 that is 10x more potent than native IGF-1 for local muscle anabolic signaling — the most potent injectable muscle growth peptide.',
     fullDescription: `IGF-1 DES (Des(1-3)IGF-1) is a naturally occurring truncated form of IGF-1 lacking the first three amino acids. This truncation reduces binding to IGF-binding proteins (IGFBPs), which would otherwise sequester most injected IGF-1 LR3. Without IGFBP binding, DES IGF-1 is immediately bioavailable at the injection site — making it 10x more potent than native IGF-1 for local muscle anabolic signaling.
 
 **DES vs LR3 — Different Tools for Different Purposes**
@@ -6876,7 +6876,7 @@ DES IGF-1 is administered immediately post-workout while muscle satellite cells 
 - Frequency: post-workout sessions only
 - Monitor for hypoglycemia at higher doses — eat within 30 min`,
     synergies: ['igf-1lr3', 'igf-1-lr3-100mcg', 'cjc1295-ipamorelin', 'tb-500'],
-    seoTitle: 'Buy IGF-1 DES 1mg | 10x More Potent Local Anabolic Peptide | BPC-157 Stack',
+    seoTitle: 'Verified IGF-1 DES 1mg | 10x More Potent Local Anabolic Peptide | BPC-157 Stack',
     deepDiveTitle: 'IGF-1 DES: The Truncated IGF-1 Variant That Is 10x More Potent for Local Muscle Anabolism',
     highlights: [
       { title: '10x More Potent', body: 'IGFBP bypass makes DES IGF-1 10x more potent than native IGF-1 locally — the same anabolic effect at one-tenth the dose at the injection site.' },

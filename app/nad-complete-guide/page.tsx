@@ -167,7 +167,7 @@ export default function NadCompleteGuide() {
             Your NAD+ Is Half What It{' '}
             <span className="text-[#00ff88]">Used to Be</span>
           </h1>
-          <p className="text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto mb-8">
+          <p className="text-xl text-gray-900 leading-relaxed max-w-3xl mx-auto mb-8">
             By age 50, your NAD+ levels are roughly half what they were at 20. That single fact explains a staggering amount of what we call "getting old" — the fatigue, the slower recovery, the cognitive fog, the cellular decay. David Sinclair called NAD+ "the closest thing to a fountain of youth we've discovered." That's a big claim from a Harvard scientist who's usually very careful with his words.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
@@ -194,7 +194,7 @@ export default function NadCompleteGuide() {
       {/* What NAD+ Actually Does */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
         <h2 className="text-3xl font-black text-gray-900 mb-4">What NAD+ Actually Does at the Cellular Level</h2>
-        <p className="text-gray-600 leading-relaxed text-lg mb-10">
+        <p className="text-gray-900 leading-relaxed text-lg mb-10">
           Before we talk about dosing or delivery routes, it's worth understanding why NAD+ occupies such a central position in aging biology. This isn't a vitamin that plugs a minor gap. NAD+ is a fundamental currency of cellular energy and information — involved in over 500 enzymatic reactions in the human body.
         </p>
         <div className="grid sm:grid-cols-2 gap-5">
@@ -252,7 +252,7 @@ export default function NadCompleteGuide() {
       {/* IV vs Injectable vs Oral */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
         <h2 className="text-3xl font-black text-gray-900 mb-4">IV vs Injectable vs Oral NAD+</h2>
-        <p className="text-gray-600 leading-relaxed text-lg mb-8">
+        <p className="text-gray-900 leading-relaxed text-lg mb-8">
           Not all NAD+ delivery is equal. The route of administration dramatically affects how much NAD+ actually reaches your tissues, how quickly levels rise, and how long the elevation lasts. The body's NAD+ repletion isn't just about giving it more — it's about getting it past the absorption bottleneck.
         </p>
         <div className="space-y-4">
@@ -322,7 +322,7 @@ export default function NadCompleteGuide() {
       {/* Stacking NAD+ with Other Peptides */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
         <h2 className="text-3xl font-black text-gray-900 mb-4">The NAD+ Anti-Aging Stack</h2>
-        <p className="text-gray-600 leading-relaxed text-lg mb-8">
+        <p className="text-gray-900 leading-relaxed text-lg mb-8">
           NAD+ is powerful on its own, but it reaches its full potential when combined with peptides that address the other hallmarks of aging simultaneously. Think of it as restoring the electrical grid (NAD+/mitochondria), rewriting the damaged code (Epithalon/telomeres), retraining the maintenance crews (GHK-Cu/gene expression), and repairing the infrastructure (BPC-157).
         </p>
         <div className="glass-card p-6 overflow-x-auto">
@@ -359,7 +359,7 @@ export default function NadCompleteGuide() {
             <FlaskConical className="w-8 h-8 text-[#00ff88] shrink-0 mt-1" />
             <div>
               <h3 className="text-gray-900 text-xl font-black mb-3">The Oral Supplement Problem</h3>
-              <p className="text-gray-600 leading-relaxed text-base">
+              <p className="text-gray-900 leading-relaxed text-base">
                 The NMN and NR supplement market is worth billions. And while oral NAD+ precursors do work — they do raise blood NAD+ levels — the ceiling is much lower than injectable. Here's why: NAD+ itself is too large to survive gut transit intact. So you're supplementing with precursors (NMN, NR) that must be enzymatically converted, first in the gut, then in various tissues. Each conversion step means losses. Injectable NAD+ skips all of that. You're delivering the actual molecule. For people who are already NAD+-depleted (basically everyone over 35), the injectable route provides faster, more complete, and more verifiable repletion.
               </p>
             </div>
@@ -377,7 +377,7 @@ export default function NadCompleteGuide() {
                 {faq.q}
                 <span className="text-[#00ff88] text-xl font-black shrink-0 group-open:rotate-45 transition-transform">+</span>
               </summary>
-              <div className="px-6 pb-6 text-gray-600 leading-relaxed text-base">
+              <div className="px-6 pb-6 text-gray-900 leading-relaxed text-base">
                 {faq.a}
               </div>
             </details>

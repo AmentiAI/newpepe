@@ -280,7 +280,7 @@ export default function GuidePage() {
         {/* Buy CTA */}
         <div className="text-center p-10 glass-card">
           <h2 className="text-2xl font-bold text-gray-900 mb-3">Ready to Start?</h2>
-          <p className="text-gray-700 mb-6">Get your peptides from our recommended supplier — COA verified, US domestic.</p>
+          <p className="text-gray-900 mb-6">Get your peptides from our recommended supplier — COA verified, US domestic.</p>
           <div className="flex flex-wrap gap-4 justify-center">
             <a href={SOURCE_URL} target="_blank" rel="nofollow noopener noreferrer" className="btn-cta text-base px-8 py-4 flex items-center gap-2">
               View <ArrowRight className="w-5 h-5" />

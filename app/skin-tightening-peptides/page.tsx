@@ -135,7 +135,7 @@ export default function SkinTighteningPeptides() {
             Actual Collagen Fibers,{' '}
             <span className="text-[#00ff88]">Not Just Hope</span>
           </h1>
-          <p className="text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto mb-8">
+          <p className="text-xl text-gray-900 leading-relaxed max-w-3xl mx-auto mb-8">
             The skincare industry sells you hope. Peptides sell you collagen fibers — actual structural proteins that change the architecture of your skin. GHK-Cu triggers your fibroblasts to synthesize collagen I, III, and IV. SNAP-8 prevents the muscle contractions that form expression lines. BPC-157 drives angiogenesis in the dermis, restoring the vascular supply that collagen production depends on.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
@@ -162,7 +162,7 @@ export default function SkinTighteningPeptides() {
       {/* Why Skin Loses Firmness */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
         <h2 className="text-3xl font-black text-gray-900 mb-4">Why Skin Loses Its Firmness</h2>
-        <p className="text-gray-600 leading-relaxed text-lg mb-10">
+        <p className="text-gray-900 leading-relaxed text-lg mb-10">
           Skin aging isn't mysterious — it's a set of specific, addressable biological processes. Understanding the mechanisms tells you exactly which peptides to deploy and why.
         </p>
         <div className="grid sm:grid-cols-2 gap-5">
@@ -181,7 +181,7 @@ export default function SkinTighteningPeptides() {
       {/* GHK-Cu Mechanisms */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
         <h2 className="text-3xl font-black text-gray-900 mb-4">What GHK-Cu Actually Synthesizes</h2>
-        <p className="text-gray-600 leading-relaxed text-lg mb-8">
+        <p className="text-gray-900 leading-relaxed text-lg mb-8">
           GHK-Cu (copper peptide) is the most extensively researched peptide in skin biology. Its key mechanism is direct upregulation of collagen synthesis enzymes in dermal fibroblasts — across multiple collagen subtypes, not just one. Here's what it actually builds.
         </p>
         <div className="glass-card p-6">
@@ -276,7 +276,7 @@ export default function SkinTighteningPeptides() {
             <FlaskConical className="w-8 h-8 text-[#00ff88] shrink-0 mt-1" />
             <div>
               <h3 className="text-gray-900 text-2xl font-black mb-3">BPC-157: The Skin Repair Peptide</h3>
-              <p className="text-gray-600 leading-relaxed text-base mb-4">
+              <p className="text-gray-900 leading-relaxed text-base mb-4">
                 BPC-157 is primarily known for its role in tendon and gut healing — but its skin repair effects are equally impressive. The key mechanism for skin is angiogenesis: BPC-157 drives new blood vessel formation in damaged or aging tissue. This is critical because collagen synthesis is an energy-intensive process that requires constant nutrient delivery. Aging skin is often poorly vascularized — and improving blood flow to the dermis dramatically accelerates every other repair process.
               </p>
               <div className="grid sm:grid-cols-3 gap-4">
@@ -339,7 +339,7 @@ export default function SkinTighteningPeptides() {
                 {faq.q}
                 <span className="text-[#00ff88] text-xl font-black shrink-0 group-open:rotate-45 transition-transform">+</span>
               </summary>
-              <div className="px-6 pb-6 text-gray-600 leading-relaxed text-base">
+              <div className="px-6 pb-6 text-gray-900 leading-relaxed text-base">
                 {faq.a}
               </div>
             </details>

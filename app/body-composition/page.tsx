@@ -159,7 +159,7 @@ export default function BodyCompositionPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-black text-gray-900 mb-3">How the GH Peptide Stack Works</h2>
-            <p className="text-gray-700 max-w-2xl mx-auto">
+            <p className="text-gray-900 max-w-2xl mx-auto">
               CJC-1295 + Ipamorelin work in a 2-step mechanism that mirrors and amplifies
               the body&apos;s own growth hormone regulation system.
             </p>
@@ -183,7 +183,7 @@ export default function BodyCompositionPage() {
       <section className="py-16 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-10">
           <h2 className="text-3xl font-black text-gray-900 mb-3">Body Recomp Goal Calculator</h2>
-          <p className="text-gray-700 max-w-xl mx-auto">
+          <p className="text-gray-900 max-w-xl mx-auto">
             Enter your current stats and goal. Get a personalized peptide stack, protein target, and realistic timeline estimate.
           </p>
         </div>
@@ -366,7 +366,7 @@ export default function BodyCompositionPage() {
       <section className="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-black text-gray-900 mb-3">Body Composition Peptide Profiles</h2>
-          <p className="text-gray-700 max-w-xl mx-auto">
+          <p className="text-gray-900 max-w-xl mx-auto">
             Different peptides for different goals. Start with the stack that matches your primary objective.
           </p>
         </div>
@@ -397,7 +397,7 @@ export default function BodyCompositionPage() {
                     <div className="text-amber-600 text-xs font-bold mb-1">DOSE GUIDE</div>
                     <div className="text-gray-900 text-sm font-mono">{p.dose}</div>
                   </div>
-                  <div className="text-xs text-gray-600 leading-relaxed">{p.ideal}</div>
+                  <div className="text-xs text-gray-900 leading-relaxed">{p.ideal}</div>
                 </div>
               </div>
             </div>
@@ -410,7 +410,7 @@ export default function BodyCompositionPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-black text-gray-900 mb-3">The 12-Week Recomp Timeline</h2>
-            <p className="text-gray-700 max-w-xl mx-auto">What to expect week by week on the CJC-1295/Ipamorelin + IGF-1 LR3 stack.</p>
+            <p className="text-gray-900 max-w-xl mx-auto">What to expect week by week on the CJC-1295/Ipamorelin + IGF-1 LR3 stack.</p>
           </div>
           <div className="relative">
             <div className="hidden md:block h-1 bg-gradient-to-r from-blue-200 via-blue-400 to-blue-200 rounded-full mb-10" />

@@ -207,7 +207,7 @@ export default function LooksmaxxingPeptidesPage() {
               Looksmaxxing with Peptides:{' '}
               <span className="text-emerald-700">The Complete Science-Backed Protocol</span>
             </h1>
-            <p className="text-xl text-gray-600 mb-8 leading-relaxed">
+            <p className="text-xl text-gray-900 mb-8 leading-relaxed">
               Looksmaxxing has moved beyond gym routines and skincare serums. Research peptides — GHK-Cu, SNAP-8, BPC-157, IGF-1 LR3, and others — operate at the gene expression and cellular signaling level, producing appearance improvements that topical cosmetics cannot replicate. This guide covers every appearance-relevant peptide, how they work, and how to stack them strategically.
             </p>
             <div className="flex flex-wrap gap-3">
@@ -229,7 +229,7 @@ export default function LooksmaxxingPeptidesPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">What Is Looksmaxxing — And Why Peptides Change the Game</h2>
           <div className="grid lg:grid-cols-2 gap-10 items-start">
-            <div className="space-y-5 text-gray-600 leading-relaxed">
+            <div className="space-y-5 text-gray-900 leading-relaxed">
               <p>
                 Looksmaxxing is the systematic optimization of physical appearance through deliberate intervention — diet, training, grooming, skincare, and increasingly, biomedical tools including research peptides. The concept, once discussed only in niche online communities, has gone mainstream as the evidence base for interventional approaches to appearance has grown.
               </p>
@@ -321,11 +321,11 @@ export default function LooksmaxxingPeptidesPage() {
                 <div className="grid md:grid-cols-2 gap-5">
                   <div>
                     <p className="text-xs font-semibold uppercase tracking-wider text-gray-500 mb-2">Mechanism</p>
-                    <p className="text-sm text-gray-600 leading-relaxed">{pep.mechanism}</p>
+                    <p className="text-sm text-gray-900 leading-relaxed">{pep.mechanism}</p>
                   </div>
                   <div>
                     <p className="text-xs font-semibold uppercase tracking-wider text-gray-500 mb-2">Appearance Effects</p>
-                    <p className="text-sm text-gray-600 leading-relaxed">{pep.appearance}</p>
+                    <p className="text-sm text-gray-900 leading-relaxed">{pep.appearance}</p>
                   </div>
                 </div>
               </div>

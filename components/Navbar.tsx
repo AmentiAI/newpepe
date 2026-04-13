@@ -43,7 +43,7 @@ export default function Navbar() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="px-3 py-2 text-sm text-gray-600 hover:text-amber-600 transition-colors rounded-md hover:bg-amber-50"
+                className="px-3 py-2 text-sm text-gray-800 hover:text-amber-600 transition-colors rounded-md hover:bg-amber-50"
               >
                 {link.label}
               </Link>
@@ -68,7 +68,7 @@ export default function Navbar() {
             <SearchModal />
             <button
               onClick={() => setOpen(!open)}
-              className="p-2 text-gray-500 hover:text-amber-600 transition-colors"
+              className="p-2 text-gray-700 hover:text-amber-600 transition-colors"
             >
               {open ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
             </button>
@@ -85,7 +85,7 @@ export default function Navbar() {
                 key={link.href}
                 href={link.href}
                 onClick={() => setOpen(false)}
-                className="px-3 py-2 text-sm text-gray-600 hover:text-amber-600 transition-colors rounded-md"
+                className="px-3 py-2 text-sm text-gray-800 hover:text-amber-600 transition-colors rounded-md"
               >
                 {link.label}
               </Link>
@@ -99,7 +99,7 @@ export default function Navbar() {
                   key={link.href}
                   href={link.href}
                   onClick={() => setOpen(false)}
-                  className="px-3 py-2 text-sm text-gray-500 hover:text-amber-600 transition-colors rounded-md flex items-center gap-1.5"
+                  className="px-3 py-2 text-sm text-gray-700 hover:text-amber-600 transition-colors rounded-md flex items-center gap-1.5"
                 >
                   <span className="w-1.5 h-1.5 rounded-full bg-amber-400 shrink-0" />
                   {link.label}

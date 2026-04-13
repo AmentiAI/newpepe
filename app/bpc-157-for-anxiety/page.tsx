@@ -353,7 +353,7 @@ export default function Bpc157AnxietyPage() {
         <div className="space-y-6">
           <div className="glass-card p-8">
             <h3 className="text-xl font-black text-indigo-400 mb-4">What the Gut-Brain Axis Actually Is</h3>
-            <div className="space-y-4 text-gray-600 text-sm leading-relaxed">
+            <div className="space-y-4 text-gray-900 text-sm leading-relaxed">
               <p>{gutBrainAxisContent.intro}</p>
               <p>{gutBrainAxisContent.whatIsIt}</p>
             </div>

@@ -157,7 +157,7 @@ export default function RetatrutideCompleteGuide() {
             What If We Didn't{' '}
             <span className="text-[#00ff88]">Stop at Two Receptors?</span>
           </h1>
-          <p className="text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto mb-8">
+          <p className="text-xl text-gray-900 leading-relaxed max-w-3xl mx-auto mb-8">
             Retatrutide is what happens when scientists ask: what if we didn't stop at two receptors? Semaglutide hit one. Tirzepatide hit two. Retatrutide hits three — GLP-1, GIP, and glucagon — and the results are something the weight loss field had never seen before: 24.2% weight loss with no plateau at 48 weeks.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
@@ -184,7 +184,7 @@ export default function RetatrutideCompleteGuide() {
       {/* Evolution Section */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
         <h2 className="text-3xl font-black text-gray-900 mb-4">The GLP Evolution: One Receptor at a Time</h2>
-        <p className="text-gray-600 leading-relaxed text-lg mb-10">
+        <p className="text-gray-900 leading-relaxed text-lg mb-10">
           Each generation of GLP-based therapy added a receptor and dramatically expanded results. Retatrutide is the logical third step — and each addition has delivered non-linear gains.
         </p>
         <div className="space-y-5">
@@ -219,7 +219,7 @@ export default function RetatrutideCompleteGuide() {
       {/* The Glucagon Receptor */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
         <h2 className="text-3xl font-black text-gray-900 mb-4">Why the Glucagon Receptor Changes Everything</h2>
-        <p className="text-gray-600 leading-relaxed text-lg mb-8">
+        <p className="text-gray-900 leading-relaxed text-lg mb-8">
           Adding GIP to GLP-1 pushed weight loss from 15% to 22.5%. Adding glucagon pushed it to 24.2% — but the more important finding was no plateau. Here's what the glucagon receptor actually does in the retatrutide context.
         </p>
         <div className="grid sm:grid-cols-3 gap-5">
@@ -345,7 +345,7 @@ export default function RetatrutideCompleteGuide() {
                 {faq.q}
                 <span className="text-[#00ff88] text-xl font-black shrink-0 group-open:rotate-45 transition-transform">+</span>
               </summary>
-              <div className="px-6 pb-6 text-gray-600 leading-relaxed text-base">
+              <div className="px-6 pb-6 text-gray-900 leading-relaxed text-base">
                 {faq.a}
               </div>
             </details>

@@ -157,7 +157,7 @@ export default function AntiAgingPage() {
             <span className="text-amber-600 text-sm font-bold tracking-wide">BIOLOGICAL AGE ASSESSMENT</span>
           </div>
           <h2 className="text-3xl font-black text-gray-900 mb-3">How Old Are You, Biologically?</h2>
-          <p className="text-gray-700 max-w-xl mx-auto">
+          <p className="text-gray-900 max-w-xl mx-auto">
             Rate 10 aspects of your current health and vitality. The assessment calculates your estimated biological age gap and recommends a targeted peptide protocol.
           </p>
         </div>
@@ -175,7 +175,7 @@ export default function AntiAgingPage() {
             <h2 className="text-3xl font-black text-gray-900 mb-3">
               5 Hallmarks of Aging. 5 Targeted Peptides.
             </h2>
-            <p className="text-gray-700 max-w-2xl mx-auto">
+            <p className="text-gray-900 max-w-2xl mx-auto">
               Aging is not one process — it&apos;s a cascade of simultaneous molecular failures.
               Each peptide targets a different root cause. Here is the full science.
             </p>
@@ -374,7 +374,7 @@ export default function AntiAgingPage() {
             <span className="text-amber-600 text-sm font-bold tracking-wide">YEAR-ROUND PROTOCOL</span>
           </div>
           <h2 className="text-3xl font-black text-gray-900 mb-3">Anti-Aging Stack Calendar</h2>
-          <p className="text-gray-700 max-w-2xl mx-auto">
+          <p className="text-gray-900 max-w-2xl mx-auto">
             The most effective longevity protocol layers cyclical and ongoing interventions across the full year. This calendar represents the optimal annual protocol.
           </p>
         </div>
@@ -536,7 +536,7 @@ export default function AntiAgingPage() {
             Anti-Aging Blood Panel:<br />
             <span style={{ color: '#d97706' }}>What to Test and When</span>
           </h2>
-          <p className="text-gray-700 mb-8 max-w-2xl">
+          <p className="text-gray-900 mb-8 max-w-2xl">
             Objective biomarker tracking is the most powerful way to confirm that your longevity protocol is working at the cellular level. Test before starting, and retest at 3–6 months. Here is what to measure and what the results mean.
           </p>
 
@@ -653,7 +653,7 @@ export default function AntiAgingPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-black text-gray-900 mb-3">The Science Timeline</h2>
-            <p className="text-gray-700 max-w-xl mx-auto">Three decades of longevity peptide research leading to today&apos;s protocols.</p>
+            <p className="text-gray-900 max-w-xl mx-auto">Three decades of longevity peptide research leading to today&apos;s protocols.</p>
           </div>
           <div className="relative">
             <div className="absolute left-6 top-0 bottom-0 w-px bg-gradient-to-b from-amber-600/50 via-amber-600/20 to-transparent" />
