@@ -13,6 +13,9 @@ interface Props {
   params: { slug: string };
 }
 
+export const dynamic = 'force-static';
+export const revalidate = 86400;
+
 export async function generateStaticParams() {
   return products.map((p) => ({ slug: p.slug }));
 }
