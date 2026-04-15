@@ -58,7 +58,7 @@ export const products: Product[] = [
     category: 'Healing',
     tags: ['healing', 'gut', 'tendons', 'ligaments', 'inflammation', 'flagship', 'oral'],
     image: IMG.bpc157,
-    affiliateUrl: aff('bpc157-10mg'),
+    affiliateUrl: aff('bpc-157-10mg'),
     shortDescription: 'Buy BPC-157 — BPC-157 is the most studied healing peptide — accelerates tendon, ligament, muscle, and gut repair with zero systemic side effects and no known LD50.',
     fullDescription: `BPC-157 (Body Protection Compound 157) is a 15-amino acid peptide derived from human gastric juice. It has been studied in over 100 peer-reviewed papers and consistently demonstrates remarkable regenerative properties across multiple tissue types.
 
@@ -121,7 +121,7 @@ BPC-157 has no known LD50 in animal studies — no dose has been found to cause 
     category: 'Healing',
     tags: ['healing', 'flexibility', 'muscle', 'tendons', 'systemic', 'stem cells'],
     image: IMG.tb500,
-    affiliateUrl: aff('tb500-10mg'),
+    affiliateUrl: aff('tb-500-thymosin-beta-4-10mg'),
     shortDescription: 'TB-500 For Sale — TB-500 (Thymosin Beta-4) provides systemic healing — mobilizes stem cells, repairs muscles and tendons simultaneously, and dramatically improves flexibility.',
     fullDescription: `TB-500 is a synthetic version of Thymosin Beta-4, a naturally occurring peptide found in virtually all human and animal cells. It plays a critical role in tissue repair, cell migration, and the regulation of actin — the protein responsible for cellular movement and wound healing.
 
@@ -187,7 +187,7 @@ Flexibility improvements within 2-3 weeks. Chronic tendon injuries show measurab
     category: 'Anti-Aging',
     tags: ['anti-aging', 'skin', 'collagen', 'copper', 'hair', 'gene-reset', 'longevity'],
     image: IMG.ghkcu,
-    affiliateUrl: aff('ghk-cu'),
+    affiliateUrl: aff('ghk-cu-50mg'),
     shortDescription: 'Cheap GHK-Cu — GHK-Cu (Copper Peptide) reverses the gene expression of 31% of aged genes, rebuilds collagen, and activates cellular cleanup — the master anti-aging signal.',
     fullDescription: `GHK-Cu (Glycine-Histidine-Lysine Copper) is a naturally occurring copper complex found in human plasma, saliva, and urine. Discovered in the 1970s, it has been studied as what may be the body's most important anti-aging molecular signal.
 
@@ -249,7 +249,7 @@ GHK-Cu enlarges hair follicle size, prolongs the growth phase, and blocks DHT lo
     category: 'Anti-Aging',
     tags: ['longevity', 'telomeres', 'telomerase', 'sleep', 'epigenetics', 'mortality'],
     image: IMG.epithalon,
-    affiliateUrl: aff('epithalon-50mg'),
+    affiliateUrl: aff('epitalon-50mg'),
     shortDescription: 'Trusted Epithalon — Epithalon is the only known compound to stimulate telomerase and lengthen telomeres — with a 28% mortality reduction shown in a 12-year human clinical trial.',
     fullDescription: `Epithalon (Epitalon) is a tetrapeptide (Ala-Glu-Asp-Gly) derived from Epithalamin, a polypeptide extracted from the pineal gland. Developed and studied by Russian scientist Vladimir Khavinson, who has published over 60 research papers on its longevity effects over 40 years.
 
@@ -311,7 +311,7 @@ Epithalon normalizes the hypothalamus-pituitary axis and restores pineal gland f
     category: 'Anti-Aging',
     tags: ['NAD+', 'longevity', 'mitochondria', 'energy', 'DNA repair', 'sirtuins'],
     image: IMG.nad,
-    affiliateUrl: aff('nad'),
+    affiliateUrl: aff('nad-500mg'),
     shortDescription: 'Verified NAD+ 500mg — NAD+ is the master cellular energy molecule that declines 50% by age 50 — supplementation restores sirtuin activity, DNA repair, and mitochondrial function.',
     fullDescription: `NAD+ (Nicotinamide Adenine Dinucleotide) is a coenzyme found in every living cell and essential for over 500 enzymatic reactions. It is most critical for mitochondrial energy production (ATP synthesis) and as a substrate for sirtuins — the longevity proteins that control epigenetic aging.
 
@@ -369,7 +369,7 @@ Users report significant increases in physical energy within 1-2 weeks. Exercise
     category: 'Anti-Aging',
     tags: ['anti-aging', 'skin', 'wrinkles', 'expression lines', 'topical', 'Botox-alternative'],
     image: IMG.snap8,
-    affiliateUrl: aff('snap-8'),
+    affiliateUrl: aff('snap-8-10mg'),
     shortDescription: 'Buy SNAP-8 — SNAP-8 is a peptide that inhibits neuromuscular transmission to reduce expression wrinkles — a non-injection alternative to Botox with clinical efficacy data.',
     fullDescription: `SNAP-8 (Acetyl Glutamyl Heptapeptide-3) is a synthetic octapeptide that mimics the N-terminal end of SNAP-25, a protein involved in neuromuscular signal transmission. By competing with SNAP-25, it reduces the release of neurotransmitters that cause muscle contractions — softening expression wrinkles without injections.
 
@@ -428,7 +428,7 @@ SNAP-8 + GHK-Cu is the definitive topical anti-aging stack: SNAP-8 reduces expre
     category: 'Body Composition',
     tags: ['growth hormone', 'GH', 'fat loss', 'muscle', 'sleep', 'recovery', 'GHRH', 'GHRP'],
     image: IMG.cjcipa,
-    affiliateUrl: aff('cjc1295-ipamorelin'),
+    affiliateUrl: aff('ipamorelin-cjc-1295-blend-cjc-1295-5mg-ipa-5mg'),
     shortDescription: 'CJC-1295 / Ipamorelin For Sale — CJC-1295 + Ipamorelin is the gold standard GH peptide combination — synergistically producing 8-10x more growth hormone than either alone, with zero cortisol spike.',
     fullDescription: `CJC-1295 (Modified GRF 1-29) is a synthetic GHRH analog. Ipamorelin is a selective GHRP (Growth Hormone Releasing Peptide). Together they form the most widely prescribed peptide combination in anti-aging and regenerative medicine clinics worldwide.
 
@@ -489,7 +489,7 @@ Months 2-4: Lean muscle gains, significant body composition shift`,
     category: 'Body Composition',
     tags: ['IGF-1', 'muscle growth', 'recovery', 'anabolic', 'satellite cells', 'performance'],
     image: IMG.igf,
-    affiliateUrl: aff('igf-1lr3'),
+    affiliateUrl: aff('igf-1-lr3-1mg'),
     shortDescription: 'Cheap IGF-1 LR3 — IGF-1 LR3 is a long-acting analog of Insulin-Like Growth Factor 1 — activating muscle satellite cells and driving muscle hypertrophy and repair beyond what GH alone achieves.',
     fullDescription: `IGF-1 LR3 (Long R3 Insulin-Like Growth Factor 1) is a modified form of IGF-1 with an arginine substitution and an extended N-terminal peptide that dramatically increases its half-life from minutes to hours and reduces binding to IGF-binding proteins.
 
@@ -552,7 +552,7 @@ IGF-1 LR3 is a potent compound. Due to its anabolic potency, it's best used in s
     category: 'Weight Loss',
     tags: ['GLP-1', 'semaglutide', 'weight loss', 'insulin', 'Ozempic', 'Wegovy', 'metabolic'],
     image: IMG.sema,
-    affiliateUrl: aff('glp-1s-10mg'),
+    affiliateUrl: aff('semaglutide-12mg'),
     shortDescription: 'Trusted GLP-1 S (Semaglutide) — Semaglutide (GLP-1 S) is a GLP-1 receptor agonist with clinical trials showing 15-20% body weight reduction — the most effective pharmacological weight loss agent studied.',
     fullDescription: `Semaglutide is a GLP-1 (Glucagon-Like Peptide-1) receptor agonist — a class of compounds that mimic the gut hormone GLP-1, which regulates appetite, insulin secretion, and gastric emptying. Commercially available as Ozempic (diabetes) and Wegovy (weight loss), semaglutide represents the most significant advancement in metabolic medicine in decades.
 
@@ -612,7 +612,7 @@ Semaglutide has shown benefits beyond weight loss:
     category: 'Weight Loss',
     tags: ['GLP-1', 'GIP', 'tirzepatide', 'weight loss', 'Mounjaro', 'dual agonist', 'metabolic'],
     image: IMG.tirz,
-    affiliateUrl: aff('glp-2t-15m'),
+    affiliateUrl: aff('tirzepatide-15mg'),
     shortDescription: 'Verified GLP-2 T (Tirzepatide) — Tirzepatide (GLP-2 T) is a dual GIP/GLP-1 receptor agonist showing up to 22.5% body weight reduction in trials — outperforming semaglutide in head-to-head data.',
     fullDescription: `Tirzepatide is a first-in-class dual glucose-dependent insulinotropic polypeptide (GIP) and GLP-1 receptor agonist. By activating both receptor types simultaneously, it achieves superior weight loss efficacy compared to GLP-1 agonists alone. Available commercially as Mounjaro (diabetes) and Zepbound (obesity).
 
@@ -675,7 +675,7 @@ In the SURPASS-2 trial directly comparing tirzepatide vs semaglutide, tirzepatid
     category: 'Weight Loss',
     tags: ['GLP-1', 'GIP', 'glucagon', 'retatrutide', 'triple agonist', 'weight loss', 'next-gen'],
     image: IMG.reta,
-    affiliateUrl: aff('glp-3r-10mg'),
+    affiliateUrl: aff('retatrutide-10mg'),
     shortDescription: 'Buy GLP-3 R (Retatrutide) — Retatrutide (GLP-3 R) is a triple GLP-1/GIP/glucagon receptor agonist showing 24% body weight reduction in Phase II — the most potent weight loss peptide in clinical development.',
     fullDescription: `Retatrutide is a triple receptor agonist simultaneously targeting GLP-1, GIP, and glucagon receptors — representing the next frontier beyond dual agonists like tirzepatide. It is in late-stage clinical development and has already demonstrated the most impressive weight loss data in clinical trial history.
 
@@ -738,7 +738,7 @@ Retatrutide is currently in Phase III trials. If results hold, it will represent
     category: 'Weight Loss',
     tags: ['cagrilintide', 'semaglutide', 'amylin', 'GLP-1', 'combination', 'weight loss', 'next-gen'],
     image: IMG.cagri,
-    affiliateUrl: aff('glp-1cglp-1s-5mg'),
+    affiliateUrl: aff('cagri-sema-blend-5mg-cagrilintide-5mg-sema-10mg'),
     shortDescription: 'GLP-1 C + GLP-1 S (Cagrisema) For Sale — Cagrisema combines cagrilintide (amylin analog) with semaglutide — targeting two separate appetite pathways for additive weight loss exceeding either compound alone.',
     fullDescription: `Cagrisema is a novel combination of cagrilintide (a long-acting amylin analog) and semaglutide. This combination targets two completely distinct appetite regulatory systems simultaneously — the amylin pathway and the GLP-1 pathway — achieving additive weight loss superior to semaglutide alone.
 
@@ -798,7 +798,7 @@ Cagrisema is in Phase III trials. Early data positions it between tirzepatide an
     category: 'Weight Loss',
     tags: ['GLP-1', 'semaglutide', 'weight loss', 'Ozempic', 'starter', 'metabolic'],
     image: IMG.sema5,
-    affiliateUrl: aff('glp-1s-5mg'),
+    affiliateUrl: aff('semaglutide-6mg'),
     shortDescription: 'Cheap GLP-1 S Semaglutide 5mg — Semaglutide 5mg — ideal starter vial for GLP-1 weight loss protocols. Same compound as Ozempic/Wegovy at a research-grade price point for dose titration.',
     fullDescription: `Semaglutide 5mg is the preferred starting size for GLP-1 receptor agonist protocols. At a 0.25mg/week starting dose, a single 5mg vial provides roughly 20 weeks of initial dosing — making it the ideal entry point for those new to GLP-1 therapy who want to assess tolerability before committing to larger vials. Starting low is not just cautious; it is the protocol that produced the clinical trial results.
 
@@ -843,7 +843,7 @@ A 5mg vial reconstituted with 2mL bacteriostatic water yields a 2.5mg/mL concent
     category: 'Weight Loss',
     tags: ['GLP-1', 'semaglutide', 'weight loss', 'Wegovy', 'maintenance', 'full course'],
     image: IMG.sema15,
-    affiliateUrl: aff('glp-1s-15mg'),
+    affiliateUrl: aff('semaglutide-20mg'),
     shortDescription: 'Trusted GLP-1 S Semaglutide 15mg — Semaglutide 15mg — the largest single-vial option for full-protocol GLP-1 weight loss. Covers multiple months at maintenance doses for maximum weight reduction.',
     fullDescription: `Semaglutide 15mg is the most cost-effective option for experienced GLP-1 users already at therapeutic doses. At 2mg/week, a 15mg vial provides 7.5 weeks of maximum-dose coverage. At 1mg/week, it covers 15 full weeks — making it the best value per milligram for committed users who have completed escalation and are maintaining their target dose.
 
@@ -887,7 +887,7 @@ Reconstitute with 3mL bacteriostatic water for a 5mg/mL concentration. At 2mg/we
     category: 'Weight Loss',
     tags: ['GLP-1', 'GIP', 'tirzepatide', 'Mounjaro', 'high dose', 'escalation', 'dual agonist'],
     image: IMG.tirz30,
-    affiliateUrl: aff('glp-2t-30mg'),
+    affiliateUrl: aff('tirzepatide-30mg'),
     shortDescription: 'Verified GLP-2 T Tirzepatide 30mg — Tirzepatide 30mg — covers the complete escalation from 2.5mg to 7.5mg/week in one vial. Optimal size for full SURMOUNT protocol dosing.',
     fullDescription: `Tirzepatide 30mg is the ideal vial for running a complete escalation protocol from start to the mid-range dose. The SURMOUNT trial escalates from 2.5mg/week to 15mg/week over several months — a 30mg vial covers the first three escalation steps cleanly, providing 4 weeks at each dose level before needing to move to a larger vial.
 
@@ -932,7 +932,7 @@ Reconstitute with 3mL bacteriostatic water for a 10mg/mL concentration. Week 1-4
     category: 'Weight Loss',
     tags: ['GLP-1', 'GIP', 'tirzepatide', 'Mounjaro', 'bulk', 'maintenance', 'long-term'],
     image: IMG.tirz60,
-    affiliateUrl: aff('glp-2-t-60mg'),
+    affiliateUrl: aff('tirzepatide-60mg'),
     shortDescription: 'Buy GLP-2 T Tirzepatide 60mg — Tirzepatide 60mg — maximum bulk supply for long-term protocols at 10-15mg/week maintenance. Best per-milligram pricing for committed tirzepatide users.',
     fullDescription: `Tirzepatide 60mg provides the best economy of scale for users who have completed escalation and are maintaining at 10-15mg/week. At 10mg/week, one vial covers 6 full weeks. At 15mg/week (the maximum dose), a single vial covers 4 weeks. This is the bulk option for committed users who have verified their optimal dose and want to minimize cost and reconstitution frequency.
 
@@ -977,7 +977,7 @@ Reconstitute with 4-6mL bacteriostatic water to achieve a working concentration 
     category: 'Weight Loss',
     tags: ['GLP-1', 'GIP', 'glucagon', 'retatrutide', 'triple agonist', 'Phase III', 'escalation'],
     image: IMG.reta15,
-    affiliateUrl: aff('glp-3r-15mg'),
+    affiliateUrl: aff('retatrutide-15mg'),
     shortDescription: 'GLP-3 R Retatrutide 15mg For Sale — Retatrutide 15mg — starter vial for the world\'s most potent weight loss peptide in Phase III development. 24% weight loss with no plateau at 48 weeks.',
     fullDescription: `Retatrutide 15mg covers the first 7-8 weeks of the escalation protocol at 2mg/week, making it the ideal entry point for the most advanced weight loss peptide in clinical development. The triple receptor mechanism — simultaneously activating GLP-1, GIP, and glucagon receptors — adds hepatic fat oxidation and basal metabolic rate elevation beyond what dual agonists like tirzepatide can achieve, which is why Phase II data showed 24.2% weight reduction at 48 weeks.
 
@@ -1022,7 +1022,7 @@ Reconstitute with 3mL bacteriostatic water for a 5mg/mL concentration. At 2mg/we
     category: 'Weight Loss',
     tags: ['GLP-1', 'GIP', 'glucagon', 'retatrutide', 'triple agonist', 'escalation', 'weight loss'],
     image: IMG.reta30,
-    affiliateUrl: aff('glp-3-r-30mg'),
+    affiliateUrl: aff('retatrutide-20mg'),
     shortDescription: 'Cheap GLP-3 R Retatrutide 30mg — Retatrutide 30mg — most practical vial for the complete triple agonist escalation protocol. Covers weeks 1-12 of the Phase II reference dosing schedule.',
     fullDescription: `Retatrutide 30mg covers the complete initial escalation from 2mg to 8mg/week over the first 8-10 weeks. Running 4 weeks at 2mg (8mg total) and 4 weeks at 4mg (16mg total) uses 24mg — leaving 6mg as a bridging dose before moving to the 60mg vial for high-dose maintenance. This makes the 30mg vial the most efficient single purchase for establishing the retatrutide protocol.
 
@@ -1067,7 +1067,7 @@ Reconstitute with 3mL bacteriostatic water for a 10mg/mL concentration, making d
     category: 'Weight Loss',
     tags: ['GLP-1', 'GIP', 'glucagon', 'retatrutide', 'triple agonist', 'bulk', 'maximum dose'],
     image: IMG.reta60,
-    affiliateUrl: aff('glp-3-r-60mg'),
+    affiliateUrl: aff('retatrutide-30mg'),
     shortDescription: 'Trusted GLP-3 R Retatrutide 60mg — Retatrutide 60mg — bulk supply for the most potent weight loss peptide in Phase III. Optimal for maintenance dosing at 8-12mg/week with the lowest per-mg cost.',
     fullDescription: `Retatrutide 60mg is the bulk format for experienced users who have completed the escalation protocol and are maintaining at 8-12mg/week. At 12mg/week it provides 5 full weeks of uninterrupted treatment. At 8mg/week, one vial covers 7.5 weeks. Phase II data at 12mg/week showed continued weight loss through 48 weeks without plateau — the only weight loss compound to demonstrate this, and the core reason continuous uninterrupted high-dose use is both achievable and clinically justified.
 
@@ -1114,7 +1114,7 @@ The 60mg vial represents the lowest per-milligram cost for retatrutide. Reconsti
     category: 'Supplies',
     tags: ['reconstitution', 'bacteriostatic water', 'injection supplies', 'essential', 'peptide prep'],
     image: IMG.bacwater,
-    affiliateUrl: aff('bacteriostatic-water-reconstitution-solution-10ml'),
+    affiliateUrl: aff('bacteriostatic-water-30ml'),
     shortDescription: 'Verified Bacteriostatic Water 10mL — Pharmaceutical-grade bacteriostatic water for safe peptide reconstitution — contains 0.9% benzyl alcohol to prevent bacterial growth in multi-use vials.',
     fullDescription: `Bacteriostatic water is sterile water containing 0.9% benzyl alcohol as a bacteriostatic agent. It is specifically designed for reconstituting lyophilized (freeze-dried) peptides and other compounds. Using the correct reconstitution solution is essential for maintaining peptide integrity, purity, and sterility.
 
