@@ -8,6 +8,7 @@ import ProductCard from '@/components/ProductCard';
 import InternalLinks from '@/components/InternalLinks';
 import { productFaqs } from '@/lib/product-faqs';
 import ProductUniqueWidget from '@/components/ProductUniqueWidget';
+import { getMainPlan, getTailPlan, getSectionCopy, type SectionKey } from '@/lib/product-sections';
 
 interface Props {
   params: { slug: string };
@@ -130,6 +131,120 @@ export default function ProductPage({ params }: Props) {
   const faqs = productFaqs[product.slug] ?? [];
 
   const descLines = product.fullDescription.split('\n').filter(Boolean);
+
+  const mainPlan = getMainPlan(product);
+  const tailPlan = getTailPlan(product);
+
+  const sectionRenderers: Record<SectionKey, React.ReactNode> = {
+    highlights: (
+      <div key="highlights" className="rounded-2xl p-6 bg-gray-50 border border-gray-200">
+        <h2 className="text-xl font-black text-gray-900 mb-6">{getSectionCopy(product, 'highlights').heading}</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          {product.highlights.map((h) => (
+            <div key={h.title} className="glass-card p-5 rounded-xl">
+              <h3 className={`${theme.accentLight} font-black text-base mb-2`}>{h.title}</h3>
+              <p className="text-gray-900 text-sm leading-relaxed">{h.body}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    ),
+    science: (() => {
+      const copy = getSectionCopy(product, 'science');
+      return (
+        <div key="science" className="glass-card p-6">
+          {copy.eyebrow && (
+            <div className={`${theme.accentLight} text-xs font-mono font-bold uppercase tracking-wider mb-2`}>
+              {copy.eyebrow}
+            </div>
+          )}
+          <h2 className="text-xl font-black text-gray-900 mb-6">{copy.heading}</h2>
+          <div className="prose-dark space-y-3">
+            {descLines.map((line, i) => {
+              if (line.startsWith('**') && line.endsWith('**')) {
+                return (
+                  <h3 key={i} className={`${theme.accentLight} font-black text-base mt-6 mb-2 flex items-center gap-2`}>
+                    <span style={{ color: theme.accentColor }}>▸</span>
+                    {line.replace(/\*\*/g, '')}
+                  </h3>
+                );
+              }
+              if (line.startsWith('- ')) {
+                return (
+                  <p key={i} className="text-gray-900 text-sm pl-4 flex items-start gap-2">
+                    <span className={theme.accentLight}>→</span>
+                    {line.slice(2)}
+                  </p>
+                );
+              }
+              return <p key={i} className="text-gray-900 text-sm leading-relaxed">{line}</p>;
+            })}
+          </div>
+        </div>
+      );
+    })(),
+    widget: <ProductUniqueWidget key="widget" slug={product.slug} />,
+    benefits: (() => {
+      const copy = getSectionCopy(product, 'benefits');
+      return (
+        <div key="benefits" className="glass-card p-6">
+          {copy.eyebrow && (
+            <div className={`${theme.accentLight} text-xs font-mono font-bold uppercase tracking-wider mb-2`}>
+              {copy.eyebrow}
+            </div>
+          )}
+          <h2 className="text-xl font-black text-gray-900 mb-6">{copy.heading}</h2>
+          <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            {product.benefits.map((b) => (
+              <li key={b} className="flex items-start gap-2 text-sm text-gray-800">
+                <CheckCircle className={`w-4 h-4 ${theme.accentLight} shrink-0 mt-0.5`} />
+                {b}
+              </li>
+            ))}
+          </ul>
+        </div>
+      );
+    })(),
+    protocol: (() => {
+      const copy = getSectionCopy(product, 'protocol');
+      return (
+        <div key="protocol" className="rounded-2xl overflow-hidden" style={{ border: `1px solid ${theme.accentColor}20` }}>
+          <div className="px-6 py-4" style={{ background: `${theme.glow}` }}>
+            {copy.eyebrow && (
+              <div className={`${theme.accentLight} text-xs font-mono font-bold uppercase tracking-wider mb-1`}>
+                {copy.eyebrow}
+              </div>
+            )}
+            <h2 className={`text-lg font-black ${theme.accentLight} flex items-center gap-2`}>
+              <FlaskConical className="w-5 h-5" />
+              {copy.heading}
+            </h2>
+          </div>
+          <div className="p-6 bg-gray-50">
+            <div className="font-mono text-sm space-y-2">
+              {product.protocol.split('\n').filter(Boolean).map((line, i) => {
+                if (line.startsWith('**')) {
+                  return (
+                    <p key={i} className={`${theme.accentLight} font-black mt-5 mb-2 first:mt-0`}>
+                      {line.replace(/\*\*/g, '')}
+                    </p>
+                  );
+                }
+                if (line.startsWith('- ')) {
+                  return (
+                    <p key={i} className="text-gray-800 pl-4">
+                      <span className={theme.accentLight}>•</span> {line.slice(2)}
+                    </p>
+                  );
+                }
+                return <p key={i} className="text-gray-600">{line}</p>;
+              })}
+            </div>
+          </div>
+        </div>
+      );
+    })(),
+  };
 
   return (
     <div className="bg-white min-h-screen pt-24 pb-20">
@@ -263,98 +378,9 @@ export default function ProductPage({ params }: Props) {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-          {/* Main content */}
+          {/* Main content — per-product section plan */}
           <div className="lg:col-span-2 space-y-8">
-
-            {/* Highlights grid — unique per product via deepDiveTitle */}
-            <div className="rounded-2xl p-6 bg-gray-50 border border-gray-200">
-              <h2 className="text-xl font-black text-gray-900 mb-6">{product.deepDiveTitle}</h2>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                {product.highlights.map((h) => (
-                  <div key={h.title} className="glass-card p-5 rounded-xl">
-                    <h3 className={`${theme.accentLight} font-black text-base mb-2`}>{h.title}</h3>
-                    <p className="text-gray-900 text-sm leading-relaxed">{h.body}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            {/* Full description */}
-            <div className="glass-card p-6">
-              <h2 className="text-xl font-black text-gray-900 mb-6">
-                The Science Behind <span className={theme.accentLight}>{product.name}</span>
-              </h2>
-              <div className="prose-dark space-y-3">
-                {descLines.map((line, i) => {
-                  if (line.startsWith('**') && line.endsWith('**')) {
-                    return (
-                      <h3 key={i} className={`${theme.accentLight} font-black text-base mt-6 mb-2 flex items-center gap-2`}>
-                        <span style={{ color: theme.accentColor }}>▸</span>
-                        {line.replace(/\*\*/g, '')}
-                      </h3>
-                    );
-                  }
-                  if (line.startsWith('- ')) {
-                    return (
-                      <p key={i} className="text-gray-900 text-sm pl-4 flex items-start gap-2">
-                        <span className={theme.accentLight}>→</span>
-                        {line.slice(2)}
-                      </p>
-                    );
-                  }
-                  return <p key={i} className="text-gray-900 text-sm leading-relaxed">{line}</p>;
-                })}
-              </div>
-            </div>
-
-            {/* Unique interactive widget — specific to this product */}
-            <ProductUniqueWidget slug={product.slug} />
-
-            {/* All benefits — styled to category */}
-            <div className="glass-card p-6">
-              <h2 className="text-xl font-black text-gray-900 mb-6">
-                Complete {product.name} Benefits
-              </h2>
-              <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                {product.benefits.map((b) => (
-                  <li key={b} className="flex items-start gap-2 text-sm text-gray-800">
-                    <CheckCircle className={`w-4 h-4 ${theme.accentLight} shrink-0 mt-0.5`} />
-                    {b}
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            {/* Protocol — styled box */}
-            <div className="rounded-2xl overflow-hidden" style={{ border: `1px solid ${theme.accentColor}20` }}>
-              <div className="px-6 py-4" style={{ background: `${theme.glow}` }}>
-                <h2 className={`text-lg font-black ${theme.accentLight} flex items-center gap-2`}>
-                  <FlaskConical className="w-5 h-5" />
-                  {product.name} Dosing Protocol
-                </h2>
-              </div>
-              <div className="p-6 bg-gray-50">
-                <div className="font-mono text-sm space-y-2">
-                  {product.protocol.split('\n').filter(Boolean).map((line, i) => {
-                    if (line.startsWith('**')) {
-                      return (
-                        <p key={i} className={`${theme.accentLight} font-black mt-5 mb-2 first:mt-0`}>
-                          {line.replace(/\*\*/g, '')}
-                        </p>
-                      );
-                    }
-                    if (line.startsWith('- ')) {
-                      return (
-                        <p key={i} className="text-gray-800 pl-4">
-                          <span className={theme.accentLight}>•</span> {line.slice(2)}
-                        </p>
-                      );
-                    }
-                    return <p key={i} className="text-gray-600">{line}</p>;
-                  })}
-                </div>
-              </div>
-            </div>
+            {mainPlan.map((key) => sectionRenderers[key])}
 
             <div className="rounded-xl p-4 bg-gray-50 border border-gray-200">
               <p className="text-gray-700 text-xs leading-relaxed">
@@ -450,56 +476,60 @@ export default function ProductPage({ params }: Props) {
           </div>
         </div>
 
-        {/* Related Products */}
-        {related.length > 0 && (
-          <div className="mt-16">
-            <div className="flex items-center justify-between mb-6">
-              <h2 className="text-2xl font-black text-gray-900">
-                Stack <span className={theme.accentLight}>{product.name}</span> With
-              </h2>
-              <a href={product.affiliateUrl} target="_blank" rel="nofollow noopener noreferrer"
-                className="btn-cta text-sm px-5 py-2.5 flex items-center gap-2 hidden sm:flex">
-                Buy the Full Stack <ArrowRight className="w-4 h-4" />
-              </a>
-            </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
-              {related.map((p) => (
-                <ProductCard key={p.slug} product={p} />
-              ))}
-            </div>
-            <div className="text-center">
-              <a
-                href={product.affiliateUrl}
-                target="_blank"
-                rel="nofollow noopener noreferrer"
-                className="btn-cta text-base px-8 py-4 inline-flex items-center gap-2"
-              >
-                Buy Now <ArrowRight className="w-5 h-5" />
-              </a>
-            </div>
-          </div>
-        )}
-
-        {faqs.length > 0 && (
-          <div className="mt-16">
-            <h2 className="text-2xl font-black text-gray-900 mb-6">
-              Common <span className={theme.accentLight}>Questions</span>
-            </h2>
-            <div className="space-y-3">
-              {faqs.map(({ q, a }) => (
-                <details key={q} className="glass-card group">
-                  <summary className="p-5 cursor-pointer list-none flex items-center justify-between">
-                    <span className="text-gray-900 font-bold text-base pr-4">{q}</span>
-                    <span className={`${theme.accentLight} text-lg shrink-0 group-open:rotate-45 transition-transform`}>+</span>
-                  </summary>
-                  <div className="px-5 pb-5">
-                    <p className="text-gray-900 text-sm leading-relaxed">{a}</p>
-                  </div>
-                </details>
-              ))}
-            </div>
-          </div>
-        )}
+        {/* Tail sections — related + faq, ordered per product */}
+        {tailPlan.map((key) => {
+          if (key === 'related' && related.length > 0) {
+            const copy = getSectionCopy(product, 'related');
+            return (
+              <div key="related" className="mt-16">
+                <div className="flex items-center justify-between mb-6">
+                  <h2 className="text-2xl font-black text-gray-900">{copy.heading}</h2>
+                  <a href={product.affiliateUrl} target="_blank" rel="nofollow noopener noreferrer"
+                    className="btn-cta text-sm px-5 py-2.5 flex items-center gap-2 hidden sm:flex">
+                    Buy the Full Stack <ArrowRight className="w-4 h-4" />
+                  </a>
+                </div>
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+                  {related.map((p) => (
+                    <ProductCard key={p.slug} product={p} />
+                  ))}
+                </div>
+                <div className="text-center">
+                  <a
+                    href={product.affiliateUrl}
+                    target="_blank"
+                    rel="nofollow noopener noreferrer"
+                    className="btn-cta text-base px-8 py-4 inline-flex items-center gap-2"
+                  >
+                    Buy Now <ArrowRight className="w-5 h-5" />
+                  </a>
+                </div>
+              </div>
+            );
+          }
+          if (key === 'faq' && faqs.length > 0) {
+            const copy = getSectionCopy(product, 'faq');
+            return (
+              <div key="faq" className="mt-16">
+                <h2 className="text-2xl font-black text-gray-900 mb-6">{copy.heading}</h2>
+                <div className="space-y-3">
+                  {faqs.map(({ q, a }) => (
+                    <details key={q} className="glass-card group">
+                      <summary className="p-5 cursor-pointer list-none flex items-center justify-between">
+                        <span className="text-gray-900 font-bold text-base pr-4">{q}</span>
+                        <span className={`${theme.accentLight} text-lg shrink-0 group-open:rotate-45 transition-transform`}>+</span>
+                      </summary>
+                      <div className="px-5 pb-5">
+                        <p className="text-gray-900 text-sm leading-relaxed">{a}</p>
+                      </div>
+                    </details>
+                  ))}
+                </div>
+              </div>
+            );
+          }
+          return null;
+        })}
 
         <InternalLinks path={`/products/${params.slug}`} title="Related Peptides & Guides" />
       </div>

@@ -167,9 +167,9 @@ export default function TB500Page() {
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <p className="text-emerald-700 text-xs font-semibold uppercase tracking-widest mb-3">Evidence-Based Effects</p>
+            <p className="text-emerald-700 text-xs font-semibold uppercase tracking-widest mb-3">Body-Wide Mechanisms</p>
             <h2 className="text-4xl sm:text-5xl font-black text-gray-900 mb-4">
-              What TB-500 <span className="gradient-text">Actually Does</span>
+              How TB-500 Heals <span className="gradient-text">Everywhere at Once</span>
             </h2>
             <p className="text-gray-500 max-w-2xl mx-auto">
               TB-500 works systemically — giving it reach that BPC-157 alone can&apos;t achieve.
@@ -249,9 +249,9 @@ export default function TB500Page() {
       <section className="py-24 bg-white grid-bg">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <p className="text-emerald-700 text-xs font-semibold uppercase tracking-widest mb-3">Dosing Protocol</p>
+            <p className="text-emerald-700 text-xs font-semibold uppercase tracking-widest mb-3">Loading + Maintenance Schedule</p>
             <h2 className="text-4xl font-black text-gray-900 mb-4">
-              How to Use <span className="gradient-text">TB-500</span>
+              The TB-500 <span className="gradient-text">Injection Schedule</span>
             </h2>
           </div>
 
@@ -309,7 +309,7 @@ export default function TB500Page() {
       <section className="py-20 bg-gray-50 border-t border-gray-100">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 text-center">
           <h2 className="text-4xl font-black text-gray-900 mb-4">
-            Start Your <span className="gradient-text">TB-500 Protocol</span>
+            Order <span className="gradient-text">Systemic Healing</span>
           </h2>
           <p className="text-gray-500 text-lg mb-8">
             US domestic. COA-verified. Shipped cold. Stack with BPC-157 for maximum healing.

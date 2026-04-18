@@ -168,9 +168,9 @@ export default function GHKCuPage() {
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <p className="text-emerald-700 text-xs font-semibold uppercase tracking-widest mb-3">Evidence-Based Effects</p>
+            <p className="text-emerald-700 text-xs font-semibold uppercase tracking-widest mb-3">Five Anti-Aging Pathways</p>
             <h2 className="text-4xl sm:text-5xl font-black text-gray-900 mb-4">
-              What GHK-Cu <span className="gradient-text">Actually Does</span>
+              Five Ways GHK-Cu <span className="gradient-text">Reverses Aging</span>
             </h2>
             <p className="text-gray-500 max-w-2xl mx-auto">
               GHK-Cu acts through at least five distinct anti-aging mechanisms — it&apos;s not a cosmetic tweak, it changes how cells function.
@@ -204,9 +204,9 @@ export default function GHKCuPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             <div>
-              <p className="text-emerald-700 text-xs font-semibold uppercase tracking-widest mb-3">Dosing Protocol</p>
+              <p className="text-emerald-700 text-xs font-semibold uppercase tracking-widest mb-3">Injectable + Topical Methods</p>
               <h2 className="text-4xl font-black text-gray-900 mb-6">
-                How to Use <span className="gradient-text">GHK-Cu</span>
+                GHK-Cu <span className="gradient-text">Application Guide</span>
               </h2>
 
               <div className="space-y-4 mb-8">
@@ -233,7 +233,7 @@ export default function GHKCuPage() {
               <div className="glass-card p-6 border-purple-400/20">
                 <h3 className="text-gray-900 font-bold text-lg mb-3 flex items-center gap-2">
                   <Award className="w-5 h-5 text-purple-400" />
-                  Best Stacks with GHK-Cu
+                  Combine GHK-Cu With
                 </h3>
                 <div className="space-y-3">
                   {[
@@ -269,7 +269,7 @@ export default function GHKCuPage() {
       <section className="py-20 bg-white grid-bg">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-black text-gray-900 mb-8">
-            GHK-Cu <span className="gradient-text">Deep-Dive Guides</span>
+            More on <span className="gradient-text">Copper Peptides</span>
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-10">
             {[

@@ -180,9 +180,9 @@ export default function BPC157Page() {
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <p className="text-emerald-700 text-xs font-semibold uppercase tracking-widest mb-3">Evidence-Based Effects</p>
+            <p className="text-emerald-700 text-xs font-semibold uppercase tracking-widest mb-3">Six Mechanisms of Action</p>
             <h2 className="text-4xl sm:text-5xl font-black text-gray-900 mb-4">
-              What BPC-157 <span className="gradient-text">Actually Does</span>
+              How BPC-157 Rebuilds <span className="gradient-text">Damaged Tissue</span>
             </h2>
             <p className="text-gray-500 max-w-2xl mx-auto">
               BPC-157 doesn&apos;t just mask symptoms — it repairs the underlying structural damage through multiple simultaneous mechanisms.
@@ -216,9 +216,9 @@ export default function BPC157Page() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
             <div>
-              <p className="text-emerald-700 text-xs font-semibold uppercase tracking-widest mb-3">Dosing Protocol</p>
+              <p className="text-emerald-700 text-xs font-semibold uppercase tracking-widest mb-3">Injection + Oral Blueprint</p>
               <h2 className="text-4xl font-black text-gray-900 mb-6">
-                How to Use <span className="gradient-text">BPC-157</span>
+                The BPC-157 <span className="gradient-text">Dosing Blueprint</span>
               </h2>
               <div className="space-y-4">
                 {[
@@ -244,7 +244,7 @@ export default function BPC157Page() {
               <div className="glass-card p-6 border-emerald-400/20">
                 <h3 className="text-gray-900 font-bold text-lg mb-3 flex items-center gap-2">
                   <Award className="w-5 h-5 text-emerald-400" />
-                  Best Stacks with BPC-157
+                  Pair BPC-157 With
                 </h3>
                 <div className="space-y-3">
                   {[
@@ -284,9 +284,9 @@ export default function BPC157Page() {
       <section className="py-24 bg-white grid-bg">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <p className="text-emerald-700 text-xs font-semibold uppercase tracking-widest mb-3">Peer-Reviewed Science</p>
+            <p className="text-emerald-700 text-xs font-semibold uppercase tracking-widest mb-3">100+ Peer-Reviewed Citations</p>
             <h2 className="text-4xl font-black text-gray-900 mb-4">
-              The Research Behind <span className="gradient-text">BPC-157</span>
+              Landmark BPC-157 <span className="gradient-text">Studies</span>
             </h2>
           </div>
 
@@ -315,7 +315,7 @@ export default function BPC157Page() {
       <section className="py-20 bg-gray-50 border-t border-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-black text-gray-900 mb-8">
-            BPC-157 <span className="gradient-text">Deep-Dive Guides</span>
+            Continue Your BPC-157 <span className="gradient-text">Research</span>
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {[
@@ -347,7 +347,7 @@ export default function BPC157Page() {
             <span className="text-emerald-400 text-xs font-semibold uppercase tracking-widest">COA-Verified · 98%+ Purity</span>
           </div>
           <h2 className="text-4xl sm:text-5xl font-black text-gray-900 mb-4">
-            Start Your <span className="gradient-text">BPC-157 Protocol</span>
+            Ready to Rebuild Your <span className="gradient-text">Tendons?</span>
           </h2>
           <p className="text-gray-500 text-lg mb-8">
             US domestic shipping. Third-party tested. Cold-chain packaging. Every batch comes with a Certificate of Analysis.

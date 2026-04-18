@@ -2,10 +2,19 @@ import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { ArrowRight, CheckCircle, Clock, ChevronLeft } from 'lucide-react';
-import { stacks, getStackById } from '@/lib/stacks';
+import { stacks, getStackById, type StackSectionKey } from '@/lib/stacks';
 import { getRelatedProducts } from '@/lib/products';
 import ProductCard from '@/components/ProductCard';
 import InternalLinks from '@/components/InternalLinks';
+
+const DEFAULT_STACK_PLAN: StackSectionKey[] = ['overview', 'benefits', 'protocol', 'peptides'];
+const FALLBACK_STACK_COPY: Record<StackSectionKey | 'cta', { eyebrow?: string; heading: string }> = {
+  overview: { heading: 'About This Protocol' },
+  benefits: { heading: 'What the Stack Delivers' },
+  protocol: { heading: 'The Exact Schedule' },
+  peptides: { heading: 'Peptides in the Kit' },
+  cta: { heading: 'Ready to Start This Protocol?' },
+};
 
 interface Props {
   params: { slug: string };
@@ -46,6 +55,103 @@ export default function StackPage({ params }: Props) {
   if (!stack) notFound();
 
   const peptideProducts = getRelatedProducts(stack.peptides);
+
+  const plan = stack.sectionPlan ?? DEFAULT_STACK_PLAN;
+  const copyFor = (key: StackSectionKey | 'cta') =>
+    stack.sectionCopy?.[key] ?? FALLBACK_STACK_COPY[key];
+
+  const sectionRenderers: Record<StackSectionKey, React.ReactNode> = {
+    overview: (() => {
+      const copy = copyFor('overview');
+      return (
+        <div key="overview" className="glass-card p-6">
+          {copy.eyebrow && (
+            <div className="text-emerald-700 text-xs font-mono font-bold uppercase tracking-wider mb-2">
+              {copy.eyebrow}
+            </div>
+          )}
+          <h2 className="text-xl font-bold text-gray-900 mb-4">{copy.heading}</h2>
+          <div className="space-y-3">
+            {stack.description.split('\n').filter(Boolean).map((line, i) => {
+              if (line.startsWith('**') && line.endsWith('**')) {
+                return <h3 key={i} className="text-emerald-700 font-semibold">{line.replace(/\*\*/g, '')}</h3>;
+              }
+              return <p key={i} className="text-gray-500 text-sm leading-relaxed">{line}</p>;
+            })}
+          </div>
+        </div>
+      );
+    })(),
+    benefits: (() => {
+      const copy = copyFor('benefits');
+      return (
+        <div key="benefits" className="glass-card p-6">
+          {copy.eyebrow && (
+            <div className="text-emerald-700 text-xs font-mono font-bold uppercase tracking-wider mb-2">
+              {copy.eyebrow}
+            </div>
+          )}
+          <h2 className="text-xl font-bold text-gray-900 mb-4">{copy.heading}</h2>
+          <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            {stack.benefits.map((b) => (
+              <li key={b} className="flex items-start gap-2 text-sm text-gray-600">
+                <CheckCircle className="w-4 h-4 text-emerald-700 shrink-0 mt-0.5" />
+                {b}
+              </li>
+            ))}
+          </ul>
+        </div>
+      );
+    })(),
+    protocol: (() => {
+      const copy = copyFor('protocol');
+      return (
+        <div key="protocol" className="glass-card p-6">
+          {copy.eyebrow && (
+            <div className="text-emerald-700 text-xs font-mono font-bold uppercase tracking-wider mb-2">
+              {copy.eyebrow}
+            </div>
+          )}
+          <h2 className="text-xl font-bold text-gray-900 mb-4">{copy.heading}</h2>
+          <div className="bg-dark-700/50 rounded-xl p-5 border border-neon-green/10 font-mono text-sm">
+            {stack.protocol.split('\n').filter(Boolean).map((line, i) => {
+              if (line.startsWith('**')) {
+                return (
+                  <p key={i} className="text-emerald-700 font-bold mt-4 mb-1 first:mt-0">
+                    {line.replace(/\*\*/g, '')}
+                  </p>
+                );
+              }
+              if (line.startsWith('- ')) {
+                return <p key={i} className="text-gray-600 pl-4">• {line.slice(2)}</p>;
+              }
+              return <p key={i} className="text-gray-500">{line}</p>;
+            })}
+          </div>
+        </div>
+      );
+    })(),
+    peptides: peptideProducts.length > 0 ? (() => {
+      const copy = copyFor('peptides');
+      return (
+        <div key="peptides">
+          {copy.eyebrow && (
+            <div className="text-emerald-700 text-xs font-mono font-bold uppercase tracking-wider mb-2">
+              {copy.eyebrow}
+            </div>
+          )}
+          <h2 className="text-xl font-bold text-gray-900 mb-4">{copy.heading}</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            {peptideProducts.map((p) => (
+              <ProductCard key={p.slug} product={p} />
+            ))}
+          </div>
+        </div>
+      );
+    })() : null,
+  };
+
+  const ctaCopy = copyFor('cta');
 
   return (
     <div className="grid-bg min-h-screen pt-24 pb-20">
@@ -108,65 +214,9 @@ export default function StackPage({ params }: Props) {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-          {/* Main */}
+          {/* Main — per-stack section plan */}
           <div className="lg:col-span-2 space-y-6">
-            {/* Description */}
-            <div className="glass-card p-6">
-              <h2 className="text-xl font-bold text-gray-900 mb-4">About This Stack</h2>
-              <div className="space-y-3">
-                {stack.description.split('\n').filter(Boolean).map((line, i) => {
-                  if (line.startsWith('**') && line.endsWith('**')) {
-                    return <h3 key={i} className="text-emerald-700 font-semibold">{line.replace(/\*\*/g, '')}</h3>;
-                  }
-                  return <p key={i} className="text-gray-500 text-sm leading-relaxed">{line}</p>;
-                })}
-              </div>
-            </div>
-
-            {/* Benefits */}
-            <div className="glass-card p-6">
-              <h2 className="text-xl font-bold text-gray-900 mb-4">Stack Benefits</h2>
-              <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                {stack.benefits.map((b) => (
-                  <li key={b} className="flex items-start gap-2 text-sm text-gray-600">
-                    <CheckCircle className="w-4 h-4 text-emerald-700 shrink-0 mt-0.5" />
-                    {b}
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            {/* Protocol */}
-            <div className="glass-card p-6">
-              <h2 className="text-xl font-bold text-gray-900 mb-4">Exact Protocol</h2>
-              <div className="bg-dark-700/50 rounded-xl p-5 border border-neon-green/10 font-mono text-sm">
-                {stack.protocol.split('\n').filter(Boolean).map((line, i) => {
-                  if (line.startsWith('**')) {
-                    return (
-                      <p key={i} className="text-emerald-700 font-bold mt-4 mb-1 first:mt-0">
-                        {line.replace(/\*\*/g, '')}
-                      </p>
-                    );
-                  }
-                  if (line.startsWith('- ')) {
-                    return <p key={i} className="text-gray-600 pl-4">• {line.slice(2)}</p>;
-                  }
-                  return <p key={i} className="text-gray-500">{line}</p>;
-                })}
-              </div>
-            </div>
-
-            {/* Peptide cards */}
-            {peptideProducts.length > 0 && (
-              <div>
-                <h2 className="text-xl font-bold text-gray-900 mb-4">Peptides in This Stack</h2>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                  {peptideProducts.map((p) => (
-                    <ProductCard key={p.slug} product={p} />
-                  ))}
-                </div>
-              </div>
-            )}
+            {plan.map((key) => sectionRenderers[key])}
           </div>
 
           {/* Sidebar */}
@@ -210,7 +260,7 @@ export default function StackPage({ params }: Props) {
 
         {/* Bottom CTA */}
         <div className="mt-16 text-center p-10 glass-card">
-          <h2 className="text-2xl font-bold text-gray-900 mb-3">Ready to Start This Protocol?</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-3">{ctaCopy.heading}</h2>
           <p className="text-gray-500 mb-6">
             Source all peptides for the {stack.name} from our recommended supplier — the most trusted, COA-verified source.
           </p>

@@ -1,3 +1,8 @@
+import type { SectionCopy } from './product-sections';
+
+export type StackSectionKey = 'overview' | 'benefits' | 'protocol' | 'peptides';
+export type StackCopyMap = Partial<Record<StackSectionKey | 'cta', SectionCopy>>;
+
 export interface Stack {
   id: string;
   name: string;
@@ -11,6 +16,8 @@ export interface Stack {
   benefits: string[];
   seoTitle: string;
   image: string;
+  sectionPlan?: StackSectionKey[];
+  sectionCopy?: StackCopyMap;
 }
 
 const AFFILIATE = 'https://phiogen.is/?ref=PEPS';
@@ -52,6 +59,14 @@ This is the gold standard stack for athletes, anyone recovering from surgery, or
     ],
     seoTitle: 'BPC-157 + TB-500 Stack | Ultimate Healing Protocol | BPC-157 Stack Guide',
     image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=600&q=80',
+    sectionPlan: ['overview', 'benefits', 'peptides', 'protocol'],
+    sectionCopy: {
+      overview: { eyebrow: 'The case for this pairing', heading: 'Why BPC-157 + TB-500 Became the Default Injury Stack' },
+      benefits: { eyebrow: 'Cycle outcomes', heading: 'What a Full Healing Cycle Actually Changes' },
+      protocol: { eyebrow: 'Schedule', heading: 'Loading-to-Maintenance, Week by Week' },
+      peptides: { eyebrow: 'The components', heading: 'The Two Peptides Doing the Work' },
+      cta: { heading: 'Source Both Peptides and Start This Week' },
+    },
   },
   {
     id: 'anti-aging-longevity',
@@ -89,6 +104,14 @@ This is the most comprehensive anti-aging peptide protocol available outside of 
     ],
     seoTitle: 'Anti-Aging Peptide Stack | Epithalon + GHK-Cu + SS-31 Protocol | BPC-157 Stack',
     image: 'https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?w=600&q=80',
+    sectionPlan: ['overview', 'protocol', 'benefits', 'peptides'],
+    sectionCopy: {
+      overview: { eyebrow: 'First principles', heading: 'Targeting the Three Roots of Biological Aging' },
+      benefits: { eyebrow: 'What users track', heading: 'The Longevity Outcomes Worth Measuring' },
+      protocol: { eyebrow: 'Multi-compound rhythm', heading: 'Cycling Epithalon, GHK-Cu, and SS-31 Without Overlap' },
+      peptides: { eyebrow: 'Inside the trio', heading: 'The Three Compounds That Make This Stack Work' },
+      cta: { heading: 'Start the 20-Week Longevity Program' },
+    },
   },
   {
     id: 'body-recomp',
@@ -127,6 +150,14 @@ Combined, this stack is the most effective non-hormonal approach to body recompo
     ],
     seoTitle: 'Body Recomp Peptide Stack | Ipamorelin + CJC-1295 + HGH Frag | BPC-157 Stack',
     image: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=600&q=80',
+    sectionPlan: ['benefits', 'overview', 'protocol', 'peptides'],
+    sectionCopy: {
+      overview: { eyebrow: 'Why this combo', heading: 'Why Three Peptides Outperform Solo Recomp Attempts' },
+      benefits: { eyebrow: 'The outcome spread', heading: 'Fat Loss, Muscle Retention, and the Signals That Matter' },
+      protocol: { eyebrow: 'Daily rhythm', heading: 'Morning, Pre-Workout, and Pre-Bed — the Full Schedule' },
+      peptides: { eyebrow: 'Meet the compounds', heading: 'The Three Peptides Powering the Recomp Stack' },
+      cta: { heading: 'Pick Up the Full Recomp Stack' },
+    },
   },
   {
     id: 'cognitive-stack',
@@ -164,6 +195,14 @@ Together, this stack creates a state of calm, focused mental clarity with enhanc
     ],
     seoTitle: 'Cognitive Peptide Stack | Semax + Selank for Focus & Anxiety | BPC-157 Stack',
     image: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=600&q=80',
+    sectionPlan: ['protocol', 'overview', 'peptides', 'benefits'],
+    sectionCopy: {
+      overview: { eyebrow: 'Origin story', heading: 'The Russian Nootropic Combo That Broke Mainstream' },
+      benefits: { eyebrow: 'Two-week window', heading: 'What Users Notice in the First Two Weeks' },
+      protocol: { eyebrow: 'Dose across the day', heading: 'Dosing Semax and Selank Morning to Evening' },
+      peptides: { eyebrow: 'Peak-focus components', heading: 'The Peptides Powering Calm, Focused Output' },
+      cta: { heading: 'Assemble the Cognitive Stack' },
+    },
   },
   {
     id: 'athlete-performance',
@@ -201,6 +240,14 @@ The GH component (Ipamorelin/CJC-1295) drives overnight muscle repair and recove
     ],
     seoTitle: 'Athlete Performance Peptide Stack | BPC-157 + TB-500 + Ipamorelin | BPC-157 Stack',
     image: 'https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?w=600&q=80',
+    sectionPlan: ['peptides', 'overview', 'benefits', 'protocol'],
+    sectionCopy: {
+      overview: { eyebrow: 'Locker-room reality', heading: 'Why Pros Quietly Run This Three-Peptide Protocol' },
+      benefits: { eyebrow: 'Training output', heading: 'Recovery, Load Tolerance, and Season-Long Availability' },
+      protocol: { eyebrow: 'Timing grid', heading: 'Morning, Pre-Workout, Pre-Bed, and the Twice-Weekly Injection' },
+      peptides: { eyebrow: 'What is in the kit', heading: 'The Three Compounds Athletes Actually Stack' },
+      cta: { heading: 'Source the Athlete Stack' },
+    },
   },
 ];
 

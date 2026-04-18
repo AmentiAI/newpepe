@@ -1,3 +1,5 @@
+import type { SectionKey, TailKey, SectionCopyMap } from './product-sections';
+
 export const DISCOUNT = 0.10;
 export function sale(price: number): string {
   return (price * (1 - DISCOUNT)).toFixed(2);
@@ -20,6 +22,9 @@ export interface Product {
   seoTitle: string;
   deepDiveTitle: string;
   highlights: { title: string; body: string }[];
+  sectionPlan?: SectionKey[];
+  tailPlan?: TailKey[];
+  sectionCopy?: SectionCopyMap;
 }
 
 const aff = (slug: string) => `https://phiogen.is/products/${slug}?ref=PEPS`;
@@ -112,6 +117,14 @@ BPC-157 has no known LD50 in animal studies — no dose has been found to cause 
       { title: 'Nerve Healing', body: 'Crosses the blood-brain barrier and protects dopaminergic neurons — unique among healing peptides. Used for peripheral nerve repair.' },
       { title: 'Oral Bioavailability', body: 'One of the only peptides that maintains effectiveness orally — gastric acid stable and systemically absorbed through gut wall.' },
     ],
+    sectionPlan: ['highlights', 'science', 'widget', 'benefits', 'protocol'],
+    sectionCopy: {
+      science: { eyebrow: 'Regenerative biology', heading: 'Why BPC-157 Outrepairs NSAIDs and Steroids' },
+      benefits: { eyebrow: 'Cycle outcomes', heading: 'What a BPC-157 Cycle Actually Changes' },
+      protocol: { eyebrow: 'Injury playbook', heading: 'The 4-Week BPC-157 Tendon Protocol' },
+      related: { heading: 'Peptides That Compound With BPC-157' },
+      faq: { heading: 'What BPC-157 Users Keep Asking' },
+    },
   },
   {
     slug: 'tb-500',
@@ -176,6 +189,14 @@ Flexibility improvements within 2-3 weeks. Chronic tendon injuries show measurab
       { title: 'Flexibility Factor', body: 'Actin regulation improves muscle fiber alignment and elasticity. Users report feeling noticeably more flexible within 2-3 weeks of loading.' },
       { title: 'Scar Reduction', body: 'Reduces fibrotic scar tissue formation compared to natural healing — leading to higher-quality tissue repair with better function.' },
     ],
+    sectionPlan: ['benefits', 'protocol', 'science', 'widget', 'highlights'],
+    sectionCopy: {
+      science: { eyebrow: 'Stem-cell science', heading: 'How TB-500 Mobilizes Stem Cells From Bone Marrow' },
+      benefits: { eyebrow: 'Body-wide effects', heading: 'Everywhere TB-500 Shows Up in the Body' },
+      protocol: { eyebrow: 'Load then maintain', heading: 'TB-500: Six Loading Weeks, Then Weekly Maintenance' },
+      related: { heading: 'What Stacks Best Alongside TB-500' },
+      faq: { heading: 'TB-500 Answers Without the Hedge' },
+    },
   },
 
   // ─── ANTI-AGING ─────────────────────────────────────────────────────────────
@@ -240,6 +261,14 @@ GHK-Cu enlarges hair follicle size, prolongs the growth phase, and blocks DHT lo
       { title: 'Hair Rescue', body: 'Enlarges hair follicle size and prolongs the growth (anagen) phase — one of the most evidence-backed peptides for improving hair density naturally.' },
       { title: 'Proteasome Activator', body: 'Activates the cellular cleanup machine that removes damaged, aggregated proteins — one of the core mechanisms behind the aging phenotype.' },
     ],
+    sectionPlan: ['science', 'benefits', 'highlights', 'protocol', 'widget'],
+    sectionCopy: {
+      science: { eyebrow: 'Gene expression data', heading: 'The 31% Gene-Reset Finding, Unpacked' },
+      benefits: { eyebrow: 'Tissue-level shifts', heading: 'What GHK-Cu Does to Skin, Hair, and Collagen' },
+      protocol: { eyebrow: 'Two routes of administration', heading: 'Injectable and Topical GHK-Cu, Side by Side' },
+      related: { heading: 'Anti-Aging Partners for GHK-Cu' },
+      faq: { heading: 'Copper Peptide Questions Worth Answering' },
+    },
   },
   {
     slug: 'epithalon',
@@ -302,6 +331,14 @@ Epithalon normalizes the hypothalamus-pituitary axis and restores pineal gland f
       { title: 'Sleep Restoration', body: 'Restores pineal gland function and melatonin rhythm. Users almost universally report dramatically improved sleep quality within the first 10-day cycle.' },
       { title: '60 Published Studies', body: 'Dr. Vladimir Khavinson\'s 40 years of research produced over 60 peer-reviewed papers — making Epithalon one of the most documented longevity compounds in existence.' },
     ],
+    sectionPlan: ['benefits', 'highlights', 'widget', 'science', 'protocol'],
+    sectionCopy: {
+      science: { eyebrow: 'Telomere biology', heading: 'Telomerase Activation: The Epithalon Evidence' },
+      benefits: { eyebrow: 'Measurable shifts', heading: 'Markers That Move During an Epithalon Cycle' },
+      protocol: { eyebrow: 'The Khavinson method', heading: 'Ten to Twenty Days, Twice a Year' },
+      related: { heading: 'Longevity Peptides That Stack With Epithalon' },
+      faq: { heading: 'Epithalon, Honestly' },
+    },
   },
   {
     slug: 'nad',
@@ -360,6 +397,14 @@ Users report significant increases in physical energy within 1-2 weeks. Exercise
       { title: 'DNA Repair Engine', body: 'PARP enzymes that repair DNA damage — the #1 cause of cancer and cellular aging — require NAD+ to function.' },
       { title: 'Energy Restoration', body: 'Powers Complex I of the mitochondrial electron transport chain — restoring the foundational energy production that declines with aging.' },
     ],
+    sectionPlan: ['protocol', 'science', 'benefits', 'highlights', 'widget'],
+    sectionCopy: {
+      science: { eyebrow: 'Mitochondrial biochemistry', heading: 'Why Sirtuins and PARPs Fail Without NAD+' },
+      benefits: { eyebrow: 'Energy and cognition', heading: 'Where NAD+ Replenishment Shows Up First' },
+      protocol: { eyebrow: 'Route and dose', heading: 'Sub-Q, IM, and IV NAD+ Compared' },
+      related: { heading: 'Longevity Stacks Featuring NAD+' },
+      faq: { heading: 'NAD+ Administration, Demystified' },
+    },
   },
   {
     slug: 'snap-8',
@@ -417,6 +462,14 @@ SNAP-8 + GHK-Cu is the definitive topical anti-aging stack: SNAP-8 reduces expre
       { title: 'Superior to Argireline', body: 'Head-to-head comparison shows SNAP-8 outperforms Argireline, the original neuromuscular wrinkle peptide, in clinical settings.' },
       { title: 'Dual-Stack Power', body: 'Combined with GHK-Cu, SNAP-8 addresses wrinkles from two directions — neuromuscular reduction from above, collagen rebuilding from below.' },
     ],
+    sectionPlan: ['widget', 'highlights', 'protocol', 'science', 'benefits'],
+    sectionCopy: {
+      science: { eyebrow: 'Neuromuscular pharmacology', heading: 'How SNAP-8 Interferes With SNARE Protein Assembly' },
+      benefits: { eyebrow: 'Visible changes', heading: 'What a 28-Day SNAP-8 Regimen Looks Like in the Mirror' },
+      protocol: { eyebrow: 'Topical routine', heading: 'Concentration, Layering, and Twice-Daily Application' },
+      related: { heading: 'Topicals That Amplify SNAP-8' },
+      faq: { heading: 'SNAP-8 vs Botox, and Other Skin Questions' },
+    },
   },
 
   // ─── BODY COMPOSITION ───────────────────────────────────────────────────────
@@ -480,6 +533,14 @@ Months 2-4: Lean muscle gains, significant body composition shift`,
       { title: 'Sleep Architecture', body: 'GH is primarily secreted during slow-wave sleep. This combination amplifies nocturnal GH pulses, deepening sleep and accelerating overnight recovery.' },
       { title: 'Clinic Standard', body: 'The most commonly prescribed peptide protocol in anti-aging clinics — with years of real-world data on safety and efficacy.' },
     ],
+    sectionPlan: ['highlights', 'protocol', 'benefits', 'science', 'widget'],
+    sectionCopy: {
+      science: { eyebrow: 'GHRH meets GHRP', heading: 'Why Priming Plus Pulling Outperforms Either Alone' },
+      benefits: { eyebrow: 'Recomp signals', heading: 'What Changes First on the CJC/Ipa Protocol' },
+      protocol: { eyebrow: 'Pre-bed dosing', heading: 'Dosing the Clinic-Standard GH Combo' },
+      related: { heading: 'Performance Add-Ons for This Stack' },
+      faq: { heading: 'CJC/Ipamorelin: The Questions People Google' },
+    },
   },
   {
     slug: 'igf-1lr3',
@@ -541,6 +602,14 @@ IGF-1 LR3 is a potent compound. Due to its anabolic potency, it's best used in s
       { title: 'Direct Tissue Delivery', body: 'Bypasses the GH → liver → IGF-1 conversion pathway, delivering growth factor signaling directly to muscle and other target tissues.' },
       { title: 'Post-Workout Prime', body: 'Most effective when injected post-workout — amplifying the anabolic window when satellite cells are most receptive to growth signals.' },
     ],
+    sectionPlan: ['science', 'widget', 'highlights', 'benefits', 'protocol'],
+    sectionCopy: {
+      science: { eyebrow: 'Why LR3 matters', heading: 'How the LR3 Modification Evades Binding Proteins' },
+      benefits: { eyebrow: 'Anabolic outcomes', heading: 'Hypertrophy and Recovery Markers That Respond' },
+      protocol: { eyebrow: 'Site injection strategy', heading: 'Where, When, and How Much IGF-1 LR3' },
+      related: { heading: 'Anabolic Pairings for IGF-1 LR3' },
+      faq: { heading: 'IGF-1 LR3 Without the Bro-Science' },
+    },
   },
 
   // ─── WEIGHT LOSS (GLP) ──────────────────────────────────────────────────────
@@ -603,6 +672,14 @@ Semaglutide has shown benefits beyond weight loss:
       { title: 'Brain Appetite Control', body: 'Acts on hypothalamic GLP-1 receptors to fundamentally reprogram hunger signals — reducing cravings for high-calorie foods at the neurological level.' },
       { title: 'Glucose Intelligence', body: 'Stimulates insulin only when blood glucose is elevated — the glucose-dependent mechanism that makes GLP-1 agonists far safer than traditional insulin secretagogues.' },
     ],
+    sectionPlan: ['widget', 'benefits', 'science', 'highlights', 'protocol'],
+    sectionCopy: {
+      science: { eyebrow: 'Hypothalamic action', heading: 'GLP-1 Receptors and the Rewiring of Hunger' },
+      benefits: { eyebrow: 'Appetite and metabolic shifts', heading: 'What Semaglutide Changes in Weeks vs Months' },
+      protocol: { eyebrow: 'The titration ladder', heading: 'Four Dose Steps From 0.25 mg to Maintenance' },
+      related: { heading: 'What to Run With or After Semaglutide' },
+      faq: { heading: 'Semaglutide: The Practical Q&A' },
+    },
   },
   {
     slug: 'glp-2t-tirzepatide',
@@ -666,6 +743,14 @@ In the SURPASS-2 trial directly comparing tirzepatide vs semaglutide, tirzepatid
       { title: 'Dual Mechanism', body: 'GIP + GLP-1 dual agonism creates synergistic metabolic effects that neither receptor can achieve alone — explaining the superior clinical outcomes.' },
       { title: 'Visceral Fat Priority', body: 'Tirzepatide has shown preferential reduction of visceral adipose tissue — the metabolically dangerous fat that surrounds organs and drives inflammation.' },
     ],
+    sectionPlan: ['protocol', 'highlights', 'widget', 'benefits', 'science'],
+    sectionCopy: {
+      science: { eyebrow: 'Two receptors, one peptide', heading: 'Why GIP + GLP-1 Beats GLP-1 Alone' },
+      benefits: { eyebrow: 'Head-to-head outcomes', heading: 'Where Tirzepatide Pulls Ahead of Semaglutide' },
+      protocol: { eyebrow: 'The SURMOUNT schedule', heading: 'Scaling Tirzepatide From 2.5 mg to 15 mg' },
+      related: { heading: 'Complementary Peptides to Tirzepatide' },
+      faq: { heading: 'Tirzepatide Without the Marketing Spin' },
+    },
   },
   {
     slug: 'glp-3r-retatrutide',
@@ -729,6 +814,14 @@ Retatrutide is currently in Phase III trials. If results hold, it will represent
       { title: 'Liver Fat Reduction', body: 'Significant hepatic fat reduction — making retatrutide potentially the first anti-obesity agent with strong NASH (liver disease) efficacy simultaneously.' },
       { title: 'No Plateau', body: 'Unlike semaglutide, retatrutide showed continued weight loss trajectory at 48 weeks with no plateau — suggesting even greater efficacy over longer treatment.' },
     ],
+    sectionPlan: ['highlights', 'benefits', 'protocol', 'widget', 'science'],
+    sectionCopy: {
+      science: { eyebrow: 'Triple-receptor agonism', heading: 'Why the Glucagon Arm Changes Everything' },
+      benefits: { eyebrow: 'Phase II signals', heading: 'What Trial Subjects Actually Lost on Retatrutide' },
+      protocol: { eyebrow: 'Escalation, done carefully', heading: 'The Four-Step Retatrutide Ladder' },
+      related: { heading: 'Peptides to Support a Retatrutide Protocol' },
+      faq: { heading: 'Retatrutide: The Unvarnished Answers' },
+    },
   },
   {
     slug: 'cagri-sema',
@@ -787,6 +880,14 @@ Cagrisema is in Phase III trials. Early data positions it between tirzepatide an
       { title: 'Different from GIP Combos', body: 'While tirzepatide and retatrutide use GIP receptor pathways, cagrisema uses the amylin system — offering a mechanistically distinct option for non-responders.' },
       { title: 'Phase III Pipeline', body: 'In Phase III trials with Novo Nordisk — positioned as the next generation of obesity pharmacotherapy beyond semaglutide monotherapy.' },
     ],
+    sectionPlan: ['science', 'highlights', 'benefits', 'widget', 'protocol'],
+    sectionCopy: {
+      science: { eyebrow: 'Two receptors, one vial', heading: 'Amylin + GLP-1: Why the Combination Outperforms Either Alone' },
+      benefits: { eyebrow: 'Body-comp signature', heading: 'The Cagrisema Weight-Loss Signature' },
+      protocol: { eyebrow: 'Weight-loss cycle', heading: 'Running a Cagrisema Escalation' },
+      related: { heading: 'What to Stack With Cagri-Sema' },
+      faq: { heading: 'Cagri-Sema: The Real Questions' },
+    },
   },
 
   // ─── GLP DOSAGE VARIANTS ────────────────────────────────────────────────────

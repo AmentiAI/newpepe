@@ -171,9 +171,9 @@ export default function EpithalonPage() {
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <p className="text-emerald-700 text-xs font-semibold uppercase tracking-widest mb-3">Evidence-Based Effects</p>
+            <p className="text-emerald-700 text-xs font-semibold uppercase tracking-widest mb-3">Longevity Pathways</p>
             <h2 className="text-4xl sm:text-5xl font-black text-gray-900 mb-4">
-              What Epithalon <span className="gradient-text">Actually Does</span>
+              Six Mechanisms Behind <span className="gradient-text">Epithalon&apos;s Longevity Effect</span>
             </h2>
             <p className="text-gray-500 max-w-2xl mx-auto">
               Over 40 years of research by Dr. Vladimir Khavinson has produced the most comprehensive longevity dataset for any single peptide.
@@ -237,9 +237,9 @@ export default function EpithalonPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             <div>
-              <p className="text-emerald-700 text-xs font-semibold uppercase tracking-widest mb-3">Dosing Protocol</p>
+              <p className="text-emerald-700 text-xs font-semibold uppercase tracking-widest mb-3">Khavinson Cycling Method</p>
               <h2 className="text-4xl font-black text-gray-900 mb-6">
-                How to Use <span className="gradient-text">Epithalon</span>
+                The Khavinson <span className="gradient-text">Cycling Protocol</span>
               </h2>
 
               <div className="space-y-4">
@@ -265,7 +265,7 @@ export default function EpithalonPage() {
               <div className="glass-card p-6 border-purple-400/20">
                 <h3 className="text-gray-900 font-bold text-lg mb-4 flex items-center gap-2">
                   <Award className="w-5 h-5 text-purple-400" />
-                  Best Stacks with Epithalon
+                  Stack Epithalon With
                 </h3>
                 <div className="space-y-3">
                   {[
