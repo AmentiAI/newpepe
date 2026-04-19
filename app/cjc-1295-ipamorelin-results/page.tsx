@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     title: 'CJC-1295 Ipamorelin Results: Week-by-Week Timeline',
     description: 'What results to expect from CJC-1295 Ipamorelin and when — complete week-by-week timeline.',
     type: 'article',
-    url: 'https://bp157stack.com/cjc-1295-ipamorelin-results',
+    url: 'https://www.bp157stack.com/cjc-1295-ipamorelin-results',
   },
   twitter: {
     card: 'summary_large_image',
@@ -109,9 +109,9 @@ export default function CjcIpamoreinResultsPage() {
               '@context': 'https://schema.org',
               '@type': 'BreadcrumbList',
               itemListElement: [
-                { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://bp157stack.com' },
-                { '@type': 'ListItem', position: 2, name: 'Body Composition', item: 'https://bp157stack.com/body-composition' },
-                { '@type': 'ListItem', position: 3, name: 'CJC-1295 Ipamorelin Results', item: 'https://bp157stack.com/cjc-1295-ipamorelin-results' },
+                { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.bp157stack.com' },
+                { '@type': 'ListItem', position: 2, name: 'Body Composition', item: 'https://www.bp157stack.com/body-composition' },
+                { '@type': 'ListItem', position: 3, name: 'CJC-1295 Ipamorelin Results', item: 'https://www.bp157stack.com/cjc-1295-ipamorelin-results' },
               ],
             },
             {
@@ -128,7 +128,7 @@ export default function CjcIpamoreinResultsPage() {
               '@type': 'Article',
               headline: 'CJC-1295 Ipamorelin Results: Week-by-Week Timeline',
               description: 'Complete timeline of CJC-1295 Ipamorelin results — sleep, fat loss, muscle, and body composition changes from week 1 to 6 months.',
-              author: { '@type': 'Organization', name: 'BPC-157 Stack', url: 'https://bp157stack.com' },
+              author: { '@type': 'Organization', name: 'BPC-157 Stack', url: 'https://www.bp157stack.com' },
             },
           ]),
         }}

@@ -13,10 +13,10 @@ export const metadata: Metadata = {
     title: 'NAD+ Complete Guide: Injectable vs IV, Sirtuins & Anti-Aging Stacks',
     description: 'Your NAD+ drops 50% by age 50. Discover how to reverse cellular aging with injectable NAD+ and the science behind why it works.',
     type: 'article',
-    url: 'https://bp157stack.com/nad-complete-guide',
+    url: 'https://www.bp157stack.com/nad-complete-guide',
   },
   alternates: {
-    canonical: 'https://bp157stack.com/nad-complete-guide',
+    canonical: 'https://www.bp157stack.com/nad-complete-guide',
   },
 };
 
@@ -150,7 +150,7 @@ export default function NadCompleteGuide() {
             '@type': 'Article',
             headline: 'NAD+ Complete Guide: Injectable vs IV, Sirtuins & Anti-Aging Stacks',
             description: 'NAD+ declines 50% by age 50. Learn how injectable NAD+ activates sirtuins, powers PARP DNA repair, and stacks with peptides for longevity.',
-            url: 'https://bp157stack.com/nad-complete-guide',
+            url: 'https://www.bp157stack.com/nad-complete-guide',
             author: { '@type': 'Organization', name: 'BPC-157 Stack' },
           }),
         }}

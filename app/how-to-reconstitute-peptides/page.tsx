@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     title: 'How to Reconstitute Peptides: Complete Step-by-Step Guide',
     description: 'How to reconstitute BPC-157 and other peptides — bacteriostatic water amounts, dose calculations, and storage.',
     type: 'article',
-    url: 'https://bp157stack.com/how-to-reconstitute-peptides',
+    url: 'https://www.bp157stack.com/how-to-reconstitute-peptides',
   },
   twitter: {
     card: 'summary_large_image',
@@ -236,9 +236,9 @@ export default function HowToReconstitutePage() {
               '@context': 'https://schema.org',
               '@type': 'BreadcrumbList',
               itemListElement: [
-                { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://bp157stack.com' },
-                { '@type': 'ListItem', position: 2, name: 'Guide', item: 'https://bp157stack.com/guide' },
-                { '@type': 'ListItem', position: 3, name: 'How to Reconstitute Peptides', item: 'https://bp157stack.com/how-to-reconstitute-peptides' },
+                { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.bp157stack.com' },
+                { '@type': 'ListItem', position: 2, name: 'Guide', item: 'https://www.bp157stack.com/guide' },
+                { '@type': 'ListItem', position: 3, name: 'How to Reconstitute Peptides', item: 'https://www.bp157stack.com/how-to-reconstitute-peptides' },
               ],
             },
           ]),

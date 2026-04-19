@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     title: 'Anti-Aging Peptides: Epithalon, GHK-Cu, SS-31 & NAD+ | Longevity Protocols',
     description: 'Epithalon lengthens telomeres, GHK-Cu resets 31% of aged genes, SS-31 restores mitochondrial function. Full dosing protocols.',
     type: 'article',
-    url: 'https://bp157stack.com/anti-aging',
+    url: 'https://www.bp157stack.com/anti-aging',
   },
   twitter: {
     card: 'summary_large_image',

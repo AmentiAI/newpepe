@@ -13,10 +13,10 @@ export const metadata: Metadata = {
     title: 'Retatrutide Complete Guide: Triple Receptor Mechanism & 24% Weight Loss',
     description: 'What happens when scientists don\'t stop at two receptors. Retatrutide\'s triple agonist mechanism and Phase II 24% weight loss data explained.',
     type: 'article',
-    url: 'https://bp157stack.com/retatrutide-complete-guide',
+    url: 'https://www.bp157stack.com/retatrutide-complete-guide',
   },
   alternates: {
-    canonical: 'https://bp157stack.com/retatrutide-complete-guide',
+    canonical: 'https://www.bp157stack.com/retatrutide-complete-guide',
   },
 };
 
@@ -140,7 +140,7 @@ export default function RetatrutideCompleteGuide() {
             '@type': 'Article',
             headline: 'Retatrutide Complete Guide: Triple Receptor Mechanism & 24% Weight Loss',
             description: 'Retatrutide is the first triple GLP-1+GIP+Glucagon agonist. Phase II shows 24.2% weight loss with no plateau at 48 weeks.',
-            url: 'https://bp157stack.com/retatrutide-complete-guide',
+            url: 'https://www.bp157stack.com/retatrutide-complete-guide',
             author: { '@type': 'Organization', name: 'BPC-157 Stack' },
           }),
         }}

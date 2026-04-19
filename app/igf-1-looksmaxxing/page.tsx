@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     title: 'IGF-1 LR3 for Looksmaxxing: 7 Appearance Mechanisms (2026)',
     description: 'How IGF-1 LR3 affects every aspect of your appearance — collagen, facial fat, muscle volume, hair, bone structure, and more.',
     type: 'article',
-    url: 'https://bp157stack.com/igf-1-looksmaxxing',
+    url: 'https://www.bp157stack.com/igf-1-looksmaxxing',
   },
   twitter: {
     card: 'summary_large_image',
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     description: 'The complete guide to IGF-1 LR3 for appearance optimization.',
   },
   alternates: {
-    canonical: 'https://bp157stack.com/igf-1-looksmaxxing',
+    canonical: 'https://www.bp157stack.com/igf-1-looksmaxxing',
   },
 };
 

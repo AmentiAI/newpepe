@@ -10,7 +10,7 @@ import { getProductBySlug, sale } from '@/lib/products';
 export const metadata: Metadata = {
   title: 'Buy Epithalon | Telomere Extension & 28% Mortality Reduction | BPC-157 Stack',
   description: 'Epithalon is the only compound proven to lengthen telomeres — with 28% lower mortality in a 12-year human trial. The most evidence-backed longevity peptide.',
-  alternates: { canonical: 'https://bp157stack.com/epithalon' },
+  alternates: { canonical: 'https://www.bp157stack.com/epithalon' },
 };
 
 const SOURCE_URL = '/out?p=epithalon-50mg';

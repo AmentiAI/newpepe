@@ -296,8 +296,8 @@ export default function HomePage() {
             '@type': 'WebPage',
             name: 'BPC-157 Stack — #1 Peptide Protocols for Healing, Performance & Longevity',
             description: 'The most comprehensive BPC-157 and peptide protocol resource. Science-backed stacks for injury healing, body recomposition, anti-aging, and cognitive enhancement.',
-            url: 'https://bp157stack.com',
-            isPartOf: { '@type': 'WebSite', name: 'BPC-157 Stack', url: 'https://bp157stack.com' },
+            url: 'https://www.bp157stack.com',
+            isPartOf: { '@type': 'WebSite', name: 'BPC-157 Stack', url: 'https://www.bp157stack.com' },
             about: [
               { '@type': 'Thing', name: 'BPC-157' },
               { '@type': 'Thing', name: 'TB-500' },

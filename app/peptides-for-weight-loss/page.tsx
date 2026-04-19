@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     title: 'Best Peptides for Weight Loss 2026 — Complete Guide',
     description: 'GLP-1 peptides, GH secretagogues, and fat-burning peptides compared. Find the right protocol for your weight loss goal.',
     type: 'article',
-    url: 'https://bp157stack.com/peptides-for-weight-loss',
+    url: 'https://www.bp157stack.com/peptides-for-weight-loss',
   },
   twitter: {
     card: 'summary_large_image',
@@ -78,11 +78,11 @@ export default function PeptidesForWeightLossPage() {
     <div className="min-h-screen" style={{ background: 'linear-gradient(180deg, #060610 0%, #0d0610 50%, #060610 100%)' }}>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify([
         { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [
-          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://bp157stack.com' },
-          { '@type': 'ListItem', position: 2, name: 'Peptides for Weight Loss', item: 'https://bp157stack.com/peptides-for-weight-loss' },
+          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.bp157stack.com' },
+          { '@type': 'ListItem', position: 2, name: 'Peptides for Weight Loss', item: 'https://www.bp157stack.com/peptides-for-weight-loss' },
         ]},
         { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: allFaqs.map(({ q, a }) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })) },
-        { '@context': 'https://schema.org', '@type': 'Article', headline: 'Best Peptides for Weight Loss 2026', description: 'Complete guide comparing GLP-1 peptides, GH secretagogues, and fat-burning peptide protocols.', author: { '@type': 'Organization', name: 'BPC-157 Stack', url: 'https://bp157stack.com' } },
+        { '@context': 'https://schema.org', '@type': 'Article', headline: 'Best Peptides for Weight Loss 2026', description: 'Complete guide comparing GLP-1 peptides, GH secretagogues, and fat-burning peptide protocols.', author: { '@type': 'Organization', name: 'BPC-157 Stack', url: 'https://www.bp157stack.com' } },
       ]) }} />
 
       {/* Hero */}

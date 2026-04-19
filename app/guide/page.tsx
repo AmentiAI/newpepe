@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     title: 'Complete BPC-157 Beginner Guide | How to Use Peptides Safely',
     description: 'Learn how to reconstitute, dose, inject, and stack peptides safely. The definitive beginner guide.',
     type: 'article',
-    url: 'https://bp157stack.com/guide',
+    url: 'https://www.bp157stack.com/guide',
   },
   twitter: {
     card: 'summary_large_image',

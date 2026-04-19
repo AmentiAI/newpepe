@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     title: 'Peptides for Collagen: Ranked by Evidence (2026)',
     description: 'The complete guide to collagen-boosting peptides — GHK-Cu, BPC-157, IGF-1 LR3, and more. Protocols and timelines.',
     type: 'article',
-    url: 'https://bp157stack.com/peptides-for-collagen',
+    url: 'https://www.bp157stack.com/peptides-for-collagen',
   },
   twitter: {
     card: 'summary_large_image',
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     description: 'Top collagen-boosting peptides ranked by evidence — GHK-Cu leads the pack.',
   },
   alternates: {
-    canonical: 'https://bp157stack.com/peptides-for-collagen',
+    canonical: 'https://www.bp157stack.com/peptides-for-collagen',
   },
 };
 

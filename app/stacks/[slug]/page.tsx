@@ -36,7 +36,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       title: stack.seoTitle,
       description: stack.tagline,
       type: 'article',
-      url: `https://bp157stack.com/stacks/${params.slug}`,
+      url: `https://www.bp157stack.com/stacks/${params.slug}`,
       images: [{ url: stack.image, width: 600, alt: stack.name }],
     },
     twitter: {
@@ -163,9 +163,9 @@ export default function StackPage({ params }: Props) {
               '@context': 'https://schema.org',
               '@type': 'BreadcrumbList',
               itemListElement: [
-                { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://bp157stack.com' },
-                { '@type': 'ListItem', position: 2, name: 'Stacks', item: 'https://bp157stack.com/stacks' },
-                { '@type': 'ListItem', position: 3, name: stack.name, item: `https://bp157stack.com/stacks/${stack.id}` },
+                { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.bp157stack.com' },
+                { '@type': 'ListItem', position: 2, name: 'Stacks', item: 'https://www.bp157stack.com/stacks' },
+                { '@type': 'ListItem', position: 3, name: stack.name, item: `https://www.bp157stack.com/stacks/${stack.id}` },
               ],
             },
             {
@@ -174,8 +174,8 @@ export default function StackPage({ params }: Props) {
               headline: stack.name,
               description: stack.tagline,
               image: stack.image,
-              author: { '@type': 'Organization', name: 'BPC-157 Stack', url: 'https://bp157stack.com' },
-              publisher: { '@type': 'Organization', name: 'BPC-157 Stack', url: 'https://bp157stack.com' },
+              author: { '@type': 'Organization', name: 'BPC-157 Stack', url: 'https://www.bp157stack.com' },
+              publisher: { '@type': 'Organization', name: 'BPC-157 Stack', url: 'https://www.bp157stack.com' },
               about: stack.goal,
               keywords: [stack.name, ...stack.peptides, stack.goal].join(', '),
             },

@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     title: 'BPC-157 & TB-500 Healing Peptides | Injury Recovery Protocols',
     description: 'BPC-157 and TB-500 are the most studied healing peptides. Complete guide for tendons, ligaments, gut, and nerve repair.',
     type: 'article',
-    url: 'https://bp157stack.com/healing',
+    url: 'https://www.bp157stack.com/healing',
   },
   twitter: {
     card: 'summary_large_image',

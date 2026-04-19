@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     title: 'Looksmaxxing with Peptides: Complete Protocol 2026',
     description: 'Science-backed peptide protocols for skin, structure, hair, and body composition. The complete looksmaxxing guide.',
     type: 'article',
-    url: 'https://bp157stack.com/looksmaxxing-peptides',
+    url: 'https://www.bp157stack.com/looksmaxxing-peptides',
   },
   twitter: {
     card: 'summary_large_image',
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     description: 'GHK-Cu, SNAP-8, BPC-157, IGF-1 LR3 and more — complete guide to peptides for appearance optimization.',
   },
   alternates: {
-    canonical: 'https://bp157stack.com/looksmaxxing-peptides',
+    canonical: 'https://www.bp157stack.com/looksmaxxing-peptides',
   },
 };
 

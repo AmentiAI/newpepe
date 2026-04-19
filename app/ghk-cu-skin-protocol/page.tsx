@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     title: 'GHK-Cu Skin Protocol: Complete Guide 2026',
     description: '31% gene reset, 5 collagen types — topical and injectable GHK-Cu skin protocols with week-by-week timelines.',
     type: 'article',
-    url: 'https://bp157stack.com/ghk-cu-skin-protocol',
+    url: 'https://www.bp157stack.com/ghk-cu-skin-protocol',
   },
   twitter: {
     card: 'summary_large_image',
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     description: 'Complete GHK-Cu skin protocol — concentrations, timing, combinations, and evidence.',
   },
   alternates: {
-    canonical: 'https://bp157stack.com/ghk-cu-skin-protocol',
+    canonical: 'https://www.bp157stack.com/ghk-cu-skin-protocol',
   },
 };
 

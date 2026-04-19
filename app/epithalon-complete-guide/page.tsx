@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     title: 'Epithalon Complete Guide: Dosing, Benefits & Protocol 2026',
     description: 'Complete guide to Epithalon — telomere lengthening, anti-aging, dosing protocol, and results.',
     type: 'article',
-    url: 'https://bp157stack.com/epithalon-complete-guide',
+    url: 'https://www.bp157stack.com/epithalon-complete-guide',
   },
   twitter: {
     card: 'summary_large_image',
@@ -143,9 +143,9 @@ export default function EpithalonCompleteGuidePage() {
               '@context': 'https://schema.org',
               '@type': 'BreadcrumbList',
               itemListElement: [
-                { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://bp157stack.com' },
-                { '@type': 'ListItem', position: 2, name: 'Anti-Aging', item: 'https://bp157stack.com/anti-aging' },
-                { '@type': 'ListItem', position: 3, name: 'Epithalon Complete Guide', item: 'https://bp157stack.com/epithalon-complete-guide' },
+                { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.bp157stack.com' },
+                { '@type': 'ListItem', position: 2, name: 'Anti-Aging', item: 'https://www.bp157stack.com/anti-aging' },
+                { '@type': 'ListItem', position: 3, name: 'Epithalon Complete Guide', item: 'https://www.bp157stack.com/epithalon-complete-guide' },
               ],
             },
             {
@@ -162,7 +162,7 @@ export default function EpithalonCompleteGuidePage() {
               '@type': 'Article',
               headline: 'Epithalon Complete Guide: Dosing, Benefits & Longevity Protocol',
               description: 'Complete guide to Epithalon — telomere lengthening, anti-aging mechanisms, dosing protocol, and results timeline.',
-              author: { '@type': 'Organization', name: 'BPC-157 Stack', url: 'https://bp157stack.com' },
+              author: { '@type': 'Organization', name: 'BPC-157 Stack', url: 'https://www.bp157stack.com' },
             },
           ]),
         }}

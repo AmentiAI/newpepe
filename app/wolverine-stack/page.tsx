@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     title: 'The Wolverine Stack: BPC-157 + TB-500 Ultimate Healing Protocol',
     description: 'BPC-157 + TB-500: heal injuries 2–4× faster. Complete dosing guide for the most researched healing peptide combination.',
     type: 'article',
-    url: 'https://bp157stack.com/wolverine-stack',
+    url: 'https://www.bp157stack.com/wolverine-stack',
   },
   twitter: {
     card: 'summary_large_image',
@@ -83,8 +83,8 @@ export default function WolverineStackPage() {
               '@context': 'https://schema.org',
               '@type': 'BreadcrumbList',
               itemListElement: [
-                { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://bp157stack.com' },
-                { '@type': 'ListItem', position: 2, name: 'The Wolverine Stack', item: 'https://bp157stack.com/wolverine-stack' },
+                { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.bp157stack.com' },
+                { '@type': 'ListItem', position: 2, name: 'The Wolverine Stack', item: 'https://www.bp157stack.com/wolverine-stack' },
               ],
             },
             {
@@ -101,8 +101,8 @@ export default function WolverineStackPage() {
               '@type': 'Article',
               headline: 'The Wolverine Stack: BPC-157 + TB-500 Ultimate Healing Protocol',
               description: 'Complete guide to the Wolverine Stack — BPC-157 and TB-500 combined for maximum injury healing speed.',
-              author: { '@type': 'Organization', name: 'BPC-157 Stack', url: 'https://bp157stack.com' },
-              publisher: { '@type': 'Organization', name: 'BPC-157 Stack', url: 'https://bp157stack.com' },
+              author: { '@type': 'Organization', name: 'BPC-157 Stack', url: 'https://www.bp157stack.com' },
+              publisher: { '@type': 'Organization', name: 'BPC-157 Stack', url: 'https://www.bp157stack.com' },
               about: 'Peptide healing protocols',
               keywords: 'wolverine stack, BPC-157, TB-500, healing peptides',
             },

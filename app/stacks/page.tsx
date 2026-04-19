@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     title: 'Peptide Stack Protocols | BPC-157, Anti-Aging & Body Recomp Stacks',
     description: 'Proven peptide stack protocols for healing, anti-aging, body recomposition, cognitive performance, and athletics.',
     type: 'website',
-    url: 'https://bp157stack.com/stacks',
+    url: 'https://www.bp157stack.com/stacks',
   },
   twitter: {
     card: 'summary_large_image',

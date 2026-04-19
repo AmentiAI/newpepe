@@ -29,13 +29,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: { absolute: product.seoTitle },
     description: product.shortDescription,
     keywords,
-    alternates: { canonical: `https://bp157stack.com/products/${params.slug}` },
+    alternates: { canonical: `https://www.bp157stack.com/products/${params.slug}` },
     openGraph: {
       title: product.seoTitle,
       description: product.shortDescription,
       images: [{ url: product.image, width: 600, alt: product.name }],
       type: 'website',
-      url: `https://bp157stack.com/products/${params.slug}`,
+      url: `https://www.bp157stack.com/products/${params.slug}`,
       siteName: 'BPC-157 Stack',
     },
     twitter: {
@@ -257,9 +257,9 @@ export default function ProductPage({ params }: Props) {
               '@context': 'https://schema.org',
               '@type': 'BreadcrumbList',
               itemListElement: [
-                { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://bp157stack.com' },
-                { '@type': 'ListItem', position: 2, name: 'Products', item: 'https://bp157stack.com/products' },
-                { '@type': 'ListItem', position: 3, name: product.name, item: `https://bp157stack.com/products/${product.slug}` },
+                { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.bp157stack.com' },
+                { '@type': 'ListItem', position: 2, name: 'Products', item: 'https://www.bp157stack.com/products' },
+                { '@type': 'ListItem', position: 3, name: product.name, item: `https://www.bp157stack.com/products/${product.slug}` },
               ],
             },
             {
@@ -276,7 +276,7 @@ export default function ProductPage({ params }: Props) {
                 priceCurrency: 'USD',
                 availability: 'https://schema.org/InStock',
                 seller: { '@type': 'Organization', name: 'BPC-157 Stack' },
-                url: `https://bp157stack.com/products/${product.slug}`,
+                url: `https://www.bp157stack.com/products/${product.slug}`,
               },
             },
             ...(faqs.length > 0 ? [{

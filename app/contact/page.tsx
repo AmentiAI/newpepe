@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     title: 'Contact & Resources | BPC-157 Stack',
     description: 'Get help with BPC-157, peptide protocols, stacking, and sourcing. Comprehensive resources and Q&A.',
     type: 'website',
-    url: 'https://bp157stack.com/contact',
+    url: 'https://www.bp157stack.com/contact',
   },
 };
 

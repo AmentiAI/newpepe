@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     title: 'BPC-157 for Gut Health: Complete Protocol Guide',
     description: 'BPC-157 oral vs injectable for leaky gut, IBD, IBS — dosing, timeline, and results.',
     type: 'article',
-    url: 'https://bp157stack.com/bpc-157-for-gut-health',
+    url: 'https://www.bp157stack.com/bpc-157-for-gut-health',
   },
   twitter: {
     card: 'summary_large_image',
@@ -199,9 +199,9 @@ export default function Bpc157GutHealthPage() {
               '@context': 'https://schema.org',
               '@type': 'BreadcrumbList',
               itemListElement: [
-                { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://bp157stack.com' },
-                { '@type': 'ListItem', position: 2, name: 'Healing', item: 'https://bp157stack.com/healing' },
-                { '@type': 'ListItem', position: 3, name: 'BPC-157 for Gut Health', item: 'https://bp157stack.com/bpc-157-for-gut-health' },
+                { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.bp157stack.com' },
+                { '@type': 'ListItem', position: 2, name: 'Healing', item: 'https://www.bp157stack.com/healing' },
+                { '@type': 'ListItem', position: 3, name: 'BPC-157 for Gut Health', item: 'https://www.bp157stack.com/bpc-157-for-gut-health' },
               ],
             },
             {
@@ -218,7 +218,7 @@ export default function Bpc157GutHealthPage() {
               '@type': 'Article',
               headline: 'BPC-157 for Gut Health: Leaky Gut, IBD & IBS Protocol',
               description: 'Complete guide to BPC-157 for gut healing — oral vs injectable, dosing protocol, and results timeline.',
-              author: { '@type': 'Organization', name: 'BPC-157 Stack', url: 'https://bp157stack.com' },
+              author: { '@type': 'Organization', name: 'BPC-157 Stack', url: 'https://www.bp157stack.com' },
             },
           ]),
         }}

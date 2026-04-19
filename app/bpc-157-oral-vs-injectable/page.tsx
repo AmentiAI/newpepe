@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     title: 'BPC-157 Oral vs Injectable: Which Is Better?',
     description: 'Complete comparison of oral vs injectable BPC-157 — bioavailability, effectiveness, and which to choose.',
     type: 'article',
-    url: 'https://bp157stack.com/bpc-157-oral-vs-injectable',
+    url: 'https://www.bp157stack.com/bpc-157-oral-vs-injectable',
   },
   twitter: {
     card: 'summary_large_image',
@@ -128,9 +128,9 @@ export default function Bpc157OralVsInjectablePage() {
               '@context': 'https://schema.org',
               '@type': 'BreadcrumbList',
               itemListElement: [
-                { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://bp157stack.com' },
-                { '@type': 'ListItem', position: 2, name: 'BPC-157', item: 'https://bp157stack.com/products/bpc-157' },
-                { '@type': 'ListItem', position: 3, name: 'BPC-157 Oral vs Injectable', item: 'https://bp157stack.com/bpc-157-oral-vs-injectable' },
+                { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.bp157stack.com' },
+                { '@type': 'ListItem', position: 2, name: 'BPC-157', item: 'https://www.bp157stack.com/products/bpc-157' },
+                { '@type': 'ListItem', position: 3, name: 'BPC-157 Oral vs Injectable', item: 'https://www.bp157stack.com/bpc-157-oral-vs-injectable' },
               ],
             },
             {
@@ -147,7 +147,7 @@ export default function Bpc157OralVsInjectablePage() {
               '@type': 'Article',
               headline: 'BPC-157 Oral vs Injectable: Which Administration Route Is Better?',
               description: 'Complete comparison of oral vs injectable BPC-157 — bioavailability, effectiveness, and which to choose for different goals.',
-              author: { '@type': 'Organization', name: 'BPC-157 Stack', url: 'https://bp157stack.com' },
+              author: { '@type': 'Organization', name: 'BPC-157 Stack', url: 'https://www.bp157stack.com' },
             },
           ]),
         }}

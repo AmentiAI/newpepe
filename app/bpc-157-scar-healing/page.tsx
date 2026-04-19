@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     title: 'BPC-157 for Scar Healing: Complete Protocol Guide 2026',
     description: 'BPC-157 scar remodeling via angiogenesis, fibroblast activation, and TGF-β regulation. Protocols for every scar type.',
     type: 'article',
-    url: 'https://bp157stack.com/bpc-157-scar-healing',
+    url: 'https://www.bp157stack.com/bpc-157-scar-healing',
   },
   twitter: {
     card: 'summary_large_image',
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     description: 'Angiogenesis, collagen remodeling, TGF-β regulation — how BPC-157 heals every scar type.',
   },
   alternates: {
-    canonical: 'https://bp157stack.com/bpc-157-scar-healing',
+    canonical: 'https://www.bp157stack.com/bpc-157-scar-healing',
   },
 };
 

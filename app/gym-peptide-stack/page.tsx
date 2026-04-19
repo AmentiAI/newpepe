@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     title: 'The Complete Gym Peptide Stack (2026)',
     description: 'Pre-workout GH optimization, post-workout repair, muscle building, and fat loss — the complete peptide stack for serious gym-goers.',
     type: 'article',
-    url: 'https://bp157stack.com/gym-peptide-stack',
+    url: 'https://www.bp157stack.com/gym-peptide-stack',
   },
   twitter: {
     card: 'summary_large_image',
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     description: 'CJC/Ipa, BPC-157, TB-500, IGF-1, Tirzepatide — the full gym protocol.',
   },
   alternates: {
-    canonical: 'https://bp157stack.com/gym-peptide-stack',
+    canonical: 'https://www.bp157stack.com/gym-peptide-stack',
   },
 };
 
@@ -32,9 +32,9 @@ const jsonLd = {
   '@type': 'Article',
   headline: 'The Complete Gym Peptide Stack: CJC/Ipa, BPC-157, IGF-1 & Tirzepatide',
   description: 'The definitive gym peptide stack guide for serious athletes and gym-goers.',
-  url: 'https://bp157stack.com/gym-peptide-stack',
+  url: 'https://www.bp157stack.com/gym-peptide-stack',
   author: { '@type': 'Organization', name: 'BPC-157 Stack' },
-  publisher: { '@type': 'Organization', name: 'BPC-157 Stack', url: 'https://bp157stack.com' },
+  publisher: { '@type': 'Organization', name: 'BPC-157 Stack', url: 'https://www.bp157stack.com' },
 };
 
 const stats = [

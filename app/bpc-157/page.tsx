@@ -10,7 +10,7 @@ import { getProductBySlug, sale } from '@/lib/products';
 export const metadata: Metadata = {
   title: 'Buy BPC-157 | #1 Healing Peptide — Tendons, Gut, Recovery | BPC-157 Stack',
   description: 'BPC-157 is the most studied healing peptide — 100+ peer-reviewed studies, no known LD50, works orally. Heals tendons, ligaments, gut, and more in 4-8 weeks.',
-  alternates: { canonical: 'https://bp157stack.com/bpc-157' },
+  alternates: { canonical: 'https://www.bp157stack.com/bpc-157' },
 };
 
 const SOURCE_URL = '/out?p=bpc157-10mg';

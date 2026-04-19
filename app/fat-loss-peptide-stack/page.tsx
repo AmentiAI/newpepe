@@ -13,10 +13,10 @@ export const metadata: Metadata = {
     title: 'Ultimate Fat Loss Peptide Stack: 4 Layers, 3 Budget Tiers',
     description: 'Fat loss peptides work by changing your hormonal environment 24 hours a day — not by burning fat during your workout. The full layered protocol explained.',
     type: 'article',
-    url: 'https://bp157stack.com/fat-loss-peptide-stack',
+    url: 'https://www.bp157stack.com/fat-loss-peptide-stack',
   },
   alternates: {
-    canonical: 'https://bp157stack.com/fat-loss-peptide-stack',
+    canonical: 'https://www.bp157stack.com/fat-loss-peptide-stack',
   },
 };
 
@@ -153,7 +153,7 @@ export default function FatLossPeptideStack() {
             '@type': 'Article',
             headline: 'The Ultimate Fat Loss Peptide Stack: 4 Layers, 3 Budget Tiers',
             description: 'The complete layered fat loss peptide stack — GLP-1 agonists, GH secretagogues, direct fat burners, and metabolic repair. Budget tiers from $100–$400/month.',
-            url: 'https://bp157stack.com/fat-loss-peptide-stack',
+            url: 'https://www.bp157stack.com/fat-loss-peptide-stack',
             author: { '@type': 'Organization', name: 'BPC-157 Stack' },
           }),
         }}

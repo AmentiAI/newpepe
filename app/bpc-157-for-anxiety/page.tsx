@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     title: 'BPC-157 for Anxiety: What the Research Shows',
     description: 'How BPC-157 reduces anxiety and depression — mechanisms, dosing, and results.',
     type: 'article',
-    url: 'https://bp157stack.com/bpc-157-for-anxiety',
+    url: 'https://www.bp157stack.com/bpc-157-for-anxiety',
   },
   twitter: {
     card: 'summary_large_image',
@@ -190,9 +190,9 @@ export default function Bpc157AnxietyPage() {
               '@context': 'https://schema.org',
               '@type': 'BreadcrumbList',
               itemListElement: [
-                { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://bp157stack.com' },
-                { '@type': 'ListItem', position: 2, name: 'BPC-157', item: 'https://bp157stack.com/products/bpc-157' },
-                { '@type': 'ListItem', position: 3, name: 'BPC-157 for Anxiety', item: 'https://bp157stack.com/bpc-157-for-anxiety' },
+                { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.bp157stack.com' },
+                { '@type': 'ListItem', position: 2, name: 'BPC-157', item: 'https://www.bp157stack.com/products/bpc-157' },
+                { '@type': 'ListItem', position: 3, name: 'BPC-157 for Anxiety', item: 'https://www.bp157stack.com/bpc-157-for-anxiety' },
               ],
             },
             {
@@ -209,7 +209,7 @@ export default function Bpc157AnxietyPage() {
               '@type': 'Article',
               headline: 'BPC-157 for Anxiety & Depression: What the Research Shows',
               description: 'How BPC-157 reduces anxiety and depression — gut-brain axis, dopamine, GABA mechanisms and dosing protocol.',
-              author: { '@type': 'Organization', name: 'BPC-157 Stack', url: 'https://bp157stack.com' },
+              author: { '@type': 'Organization', name: 'BPC-157 Stack', url: 'https://www.bp157stack.com' },
             },
           ]),
         }}

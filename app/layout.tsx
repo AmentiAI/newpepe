@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     title: 'BPC-157 Stack — Expert Peptide Protocols',
     description: 'The most comprehensive BPC-157 and peptide stack guide. Healing, anti-aging, and performance protocols backed by 100+ clinical studies.',
     type: 'website',
-    url: 'https://bp157stack.com',
+    url: 'https://www.bp157stack.com',
     siteName: 'BPC-157 Stack',
   },
   twitter: {
@@ -32,7 +32,8 @@ export const metadata: Metadata = {
     description: 'Science-backed peptide stacks for healing, performance & longevity. 100+ studies.',
   },
   robots: { index: true, follow: true },
-  metadataBase: new URL('https://bp157stack.com'),
+  metadataBase: new URL('https://www.bp157stack.com'),
+  alternates: { canonical: '/' },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -53,13 +54,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 '@context': 'https://schema.org',
                 '@type': 'WebSite',
                 name: 'BPC-157 Stack',
-                url: 'https://bp157stack.com',
+                url: 'https://www.bp157stack.com',
                 description: 'Expert peptide stack guides and protocols for healing, anti-aging, and performance.',
                 potentialAction: {
                   '@type': 'SearchAction',
                   target: {
                     '@type': 'EntryPoint',
-                    urlTemplate: 'https://bp157stack.com/products?q={search_term_string}',
+                    urlTemplate: 'https://www.bp157stack.com/products?q={search_term_string}',
                   },
                   'query-input': 'required name=search_term_string',
                 },
@@ -68,9 +69,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 '@context': 'https://schema.org',
                 '@type': 'Organization',
                 name: 'BPC-157 Stack',
-                url: 'https://bp157stack.com',
+                url: 'https://www.bp157stack.com',
                 description: 'Expert peptide stack guides and protocols for healing, anti-aging, and performance.',
-                sameAs: ['https://bp157stack.com'],
+                sameAs: ['https://www.bp157stack.com'],
               },
             ]),
           }}

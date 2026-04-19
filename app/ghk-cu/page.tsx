@@ -10,7 +10,7 @@ import { getProductBySlug, sale } from '@/lib/products';
 export const metadata: Metadata = {
   title: 'Buy GHK-Cu Copper Peptide | Reverses 31% of Aged Genes, Skin & Hair | BPC-157 Stack',
   description: 'GHK-Cu reverses gene expression of 31% of aged genes, rebuilds collagen, restores hair follicles, and activates cellular cleanup. The master anti-aging signal.',
-  alternates: { canonical: 'https://bp157stack.com/ghk-cu' },
+  alternates: { canonical: 'https://www.bp157stack.com/ghk-cu' },
 };
 
 const SOURCE_URL = '/out?p=ghk-cu';

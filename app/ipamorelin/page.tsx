@@ -10,7 +10,7 @@ import { getProductBySlug, sale } from '@/lib/products';
 export const metadata: Metadata = {
   title: 'Buy CJC-1295 / Ipamorelin | Gold Standard GH Stack for Fat Loss & Muscle | BPC-157 Stack',
   description: 'CJC-1295 + Ipamorelin produces 8-10x more growth hormone than either alone — with zero cortisol spike. The most prescribed peptide stack in anti-aging clinics.',
-  alternates: { canonical: 'https://bp157stack.com/ipamorelin' },
+  alternates: { canonical: 'https://www.bp157stack.com/ipamorelin' },
 };
 
 const SOURCE_URL = '/out?p=cjc1295-ipamorelin';

@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     title: 'Peptides for Skin Quality: Complete Guide 2026',
     description: 'Science-backed peptide protocols for skin texture, firmness, luminosity, and anti-aging. GHK-Cu, SNAP-8, Epithalon, and BPC-157.',
     type: 'article',
-    url: 'https://bp157stack.com/peptides-for-skin-quality',
+    url: 'https://www.bp157stack.com/peptides-for-skin-quality',
   },
   twitter: {
     card: 'summary_large_image',
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     description: 'GHK-Cu gene reset, SNAP-8 wrinkle mechanism, BPC-157 gut-skin axis — evidence-based skin peptide protocols.',
   },
   alternates: {
-    canonical: 'https://bp157stack.com/peptides-for-skin-quality',
+    canonical: 'https://www.bp157stack.com/peptides-for-skin-quality',
   },
 };
 

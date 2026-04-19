@@ -13,10 +13,10 @@ export const metadata: Metadata = {
     title: 'Skin Tightening Peptides: GHK-Cu, SNAP-8 & Collagen Rebuilding Protocol',
     description: 'The skincare industry sells you hope. Peptides sell you collagen fibers — actual structural proteins that change the architecture of your skin.',
     type: 'article',
-    url: 'https://bp157stack.com/skin-tightening-peptides',
+    url: 'https://www.bp157stack.com/skin-tightening-peptides',
   },
   alternates: {
-    canonical: 'https://bp157stack.com/skin-tightening-peptides',
+    canonical: 'https://www.bp157stack.com/skin-tightening-peptides',
   },
 };
 
@@ -118,7 +118,7 @@ export default function SkinTighteningPeptides() {
             '@type': 'Article',
             headline: 'Skin Tightening Peptides: GHK-Cu, SNAP-8 & Collagen Rebuilding Protocol',
             description: 'GHK-Cu synthesizes collagen I, III, IV. SNAP-8 prevents expression lines. BPC-157 repairs skin architecture. The complete peptide protocol for skin firmness.',
-            url: 'https://bp157stack.com/skin-tightening-peptides',
+            url: 'https://www.bp157stack.com/skin-tightening-peptides',
             author: { '@type': 'Organization', name: 'BPC-157 Stack' },
           }),
         }}

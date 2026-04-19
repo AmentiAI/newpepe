@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     title: 'Peptides for Sleep: The Deep Sleep Optimization Protocol',
     description: 'DSIP, Epithalon, CJC/Ipamorelin and GHRP-6 — the complete peptide sleep stack. Restore your nocturnal GH pulse and deep sleep architecture.',
     type: 'article',
-    url: 'https://bp157stack.com/peptides-for-sleep',
+    url: 'https://www.bp157stack.com/peptides-for-sleep',
   },
   twitter: {
     card: 'summary_large_image',
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     description: 'The complete guide to DSIP, Epithalon, and GH secretagogues for sleep depth and recovery.',
   },
   alternates: {
-    canonical: 'https://bp157stack.com/peptides-for-sleep',
+    canonical: 'https://www.bp157stack.com/peptides-for-sleep',
   },
 };
 
@@ -32,9 +32,9 @@ const jsonLd = {
   '@type': 'Article',
   headline: 'Peptides for Sleep: DSIP, Epithalon & CJC/Ipamorelin Sleep Protocol',
   description: 'Science-backed guide to sleep peptides including DSIP, Epithalon, and CJC-1295/Ipamorelin for deep sleep optimization.',
-  url: 'https://bp157stack.com/peptides-for-sleep',
+  url: 'https://www.bp157stack.com/peptides-for-sleep',
   author: { '@type': 'Organization', name: 'BPC-157 Stack' },
-  publisher: { '@type': 'Organization', name: 'BPC-157 Stack', url: 'https://bp157stack.com' },
+  publisher: { '@type': 'Organization', name: 'BPC-157 Stack', url: 'https://www.bp157stack.com' },
 };
 
 const stats = [

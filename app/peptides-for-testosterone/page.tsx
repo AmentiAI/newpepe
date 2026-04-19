@@ -13,10 +13,10 @@ export const metadata: Metadata = {
     title: 'Peptides for Testosterone: Kisspeptin, Gonadorelin & Natural Axis Support',
     description: 'TRT shuts down your natural production. These peptides work the other way — helping your body make testosterone itself.',
     type: 'article',
-    url: 'https://bp157stack.com/peptides-for-testosterone',
+    url: 'https://www.bp157stack.com/peptides-for-testosterone',
   },
   alternates: {
-    canonical: 'https://bp157stack.com/peptides-for-testosterone',
+    canonical: 'https://www.bp157stack.com/peptides-for-testosterone',
   },
 };
 
@@ -102,7 +102,7 @@ export default function PeptidesForTestosterone() {
             '@type': 'Article',
             headline: 'Peptides for Testosterone: Kisspeptin, Gonadorelin & Natural Axis Support',
             description: 'Peptides that support the male hormonal axis without suppressing natural production. Kisspeptin, Gonadorelin, Sermorelin, and BPC-157.',
-            url: 'https://bp157stack.com/peptides-for-testosterone',
+            url: 'https://www.bp157stack.com/peptides-for-testosterone',
             author: { '@type': 'Organization', name: 'BPC-157 Stack' },
           }),
         }}

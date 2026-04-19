@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next';
 import { products } from '@/lib/products';
 import { stacks } from '@/lib/stacks';
 
-const BASE_URL = 'https://bp157stack.com';
+const BASE_URL = 'https://www.bp157stack.com';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticPages: MetadataRoute.Sitemap = [

@@ -10,7 +10,7 @@ import { getProductBySlug, sale } from '@/lib/products';
 export const metadata: Metadata = {
   title: 'Buy TB-500 (Thymosin Beta-4) | Systemic Healing & Flexibility Peptide | BPC-157 Stack',
   description: 'TB-500 mobilizes stem cells body-wide, heals multiple injuries simultaneously, and dramatically improves flexibility. The perfect partner to BPC-157.',
-  alternates: { canonical: 'https://bp157stack.com/tb-500' },
+  alternates: { canonical: 'https://www.bp157stack.com/tb-500' },
 };
 
 const SOURCE_URL = '/out?p=tb500-10mg';

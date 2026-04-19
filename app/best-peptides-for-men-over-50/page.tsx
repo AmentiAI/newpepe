@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     title: 'Best Peptides for Men Over 50: Complete Guide 2026',
     description: 'Restore GH, rebuild muscle, and fight aging — the best peptide protocols for men 50+.',
     type: 'article',
-    url: 'https://bp157stack.com/best-peptides-for-men-over-50',
+    url: 'https://www.bp157stack.com/best-peptides-for-men-over-50',
   },
   twitter: {
     card: 'summary_large_image',
@@ -107,9 +107,9 @@ export default function PeptidesForMenOver50Page() {
               '@context': 'https://schema.org',
               '@type': 'BreadcrumbList',
               itemListElement: [
-                { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://bp157stack.com' },
-                { '@type': 'ListItem', position: 2, name: 'Anti-Aging', item: 'https://bp157stack.com/anti-aging' },
-                { '@type': 'ListItem', position: 3, name: 'Peptides for Men Over 50', item: 'https://bp157stack.com/best-peptides-for-men-over-50' },
+                { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.bp157stack.com' },
+                { '@type': 'ListItem', position: 2, name: 'Anti-Aging', item: 'https://www.bp157stack.com/anti-aging' },
+                { '@type': 'ListItem', position: 3, name: 'Peptides for Men Over 50', item: 'https://www.bp157stack.com/best-peptides-for-men-over-50' },
               ],
             },
             {
@@ -126,7 +126,7 @@ export default function PeptidesForMenOver50Page() {
               '@type': 'Article',
               headline: 'Best Peptides for Men Over 50: Anti-Aging, Muscle & Vitality Guide',
               description: 'Complete guide to the best peptides for men over 50 — GH restoration, muscle, longevity, and joint healing.',
-              author: { '@type': 'Organization', name: 'BPC-157 Stack', url: 'https://bp157stack.com' },
+              author: { '@type': 'Organization', name: 'BPC-157 Stack', url: 'https://www.bp157stack.com' },
             },
           ]),
         }}

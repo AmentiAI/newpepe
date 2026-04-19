@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     title: 'GHK-Cu for Hair Loss: Complete Guide 2026',
     description: 'Does GHK-Cu copper peptide regrow hair? Research, protocol, and realistic results.',
     type: 'article',
-    url: 'https://bp157stack.com/ghk-cu-for-hair-loss',
+    url: 'https://www.bp157stack.com/ghk-cu-for-hair-loss',
   },
   twitter: {
     card: 'summary_large_image',
@@ -219,9 +219,9 @@ export default function GhkCuHairLossPage() {
               '@context': 'https://schema.org',
               '@type': 'BreadcrumbList',
               itemListElement: [
-                { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://bp157stack.com' },
-                { '@type': 'ListItem', position: 2, name: 'Anti-Aging', item: 'https://bp157stack.com/anti-aging' },
-                { '@type': 'ListItem', position: 3, name: 'GHK-Cu for Hair Loss', item: 'https://bp157stack.com/ghk-cu-for-hair-loss' },
+                { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.bp157stack.com' },
+                { '@type': 'ListItem', position: 2, name: 'Anti-Aging', item: 'https://www.bp157stack.com/anti-aging' },
+                { '@type': 'ListItem', position: 3, name: 'GHK-Cu for Hair Loss', item: 'https://www.bp157stack.com/ghk-cu-for-hair-loss' },
               ],
             },
             {
@@ -238,7 +238,7 @@ export default function GhkCuHairLossPage() {
               '@type': 'Article',
               headline: 'GHK-Cu for Hair Loss: Does Copper Peptide Actually Regrow Hair?',
               description: 'Complete guide to GHK-Cu for hair regrowth — mechanisms, protocol, and realistic results timeline.',
-              author: { '@type': 'Organization', name: 'BPC-157 Stack', url: 'https://bp157stack.com' },
+              author: { '@type': 'Organization', name: 'BPC-157 Stack', url: 'https://www.bp157stack.com' },
             },
           ]),
         }}

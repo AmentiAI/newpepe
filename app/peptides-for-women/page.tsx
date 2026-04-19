@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     title: 'Best Peptides for Women 2026: Complete Guide',
     description: 'Fat loss, anti-aging, healing — the best peptides for women with dosing and safety guide.',
     type: 'article',
-    url: 'https://bp157stack.com/peptides-for-women',
+    url: 'https://www.bp157stack.com/peptides-for-women',
   },
   twitter: {
     card: 'summary_large_image',
@@ -115,8 +115,8 @@ export default function PeptidesForWomenPage() {
               '@context': 'https://schema.org',
               '@type': 'BreadcrumbList',
               itemListElement: [
-                { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://bp157stack.com' },
-                { '@type': 'ListItem', position: 2, name: 'Peptides for Women', item: 'https://bp157stack.com/peptides-for-women' },
+                { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.bp157stack.com' },
+                { '@type': 'ListItem', position: 2, name: 'Peptides for Women', item: 'https://www.bp157stack.com/peptides-for-women' },
               ],
             },
             {
@@ -133,7 +133,7 @@ export default function PeptidesForWomenPage() {
               '@type': 'Article',
               headline: 'Best Peptides for Women 2026: Fat Loss, Anti-Aging, Healing & Hormones',
               description: 'Complete guide to the best peptides for women — fat loss, anti-aging, skin, healing, and safety.',
-              author: { '@type': 'Organization', name: 'BPC-157 Stack', url: 'https://bp157stack.com' },
+              author: { '@type': 'Organization', name: 'BPC-157 Stack', url: 'https://www.bp157stack.com' },
             },
           ]),
         }}

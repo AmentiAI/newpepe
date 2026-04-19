@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     title: 'Semaglutide vs Tirzepatide vs Retatrutide: Full Comparison 2026',
     description: 'Which GLP peptide wins for fat loss? Complete mechanism, results, and side-effect comparison.',
     type: 'article',
-    url: 'https://bp157stack.com/semaglutide-vs-tirzepatide-vs-retatrutide',
+    url: 'https://www.bp157stack.com/semaglutide-vs-tirzepatide-vs-retatrutide',
   },
   twitter: {
     card: 'summary_large_image',
@@ -95,9 +95,9 @@ export default function GlpComparisonPage() {
               '@context': 'https://schema.org',
               '@type': 'BreadcrumbList',
               itemListElement: [
-                { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://bp157stack.com' },
-                { '@type': 'ListItem', position: 2, name: 'Body Composition', item: 'https://bp157stack.com/body-composition' },
-                { '@type': 'ListItem', position: 3, name: 'Semaglutide vs Tirzepatide vs Retatrutide', item: 'https://bp157stack.com/semaglutide-vs-tirzepatide-vs-retatrutide' },
+                { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.bp157stack.com' },
+                { '@type': 'ListItem', position: 2, name: 'Body Composition', item: 'https://www.bp157stack.com/body-composition' },
+                { '@type': 'ListItem', position: 3, name: 'Semaglutide vs Tirzepatide vs Retatrutide', item: 'https://www.bp157stack.com/semaglutide-vs-tirzepatide-vs-retatrutide' },
               ],
             },
             {
@@ -114,7 +114,7 @@ export default function GlpComparisonPage() {
               '@type': 'Article',
               headline: 'Semaglutide vs Tirzepatide vs Retatrutide: Which GLP Peptide Wins?',
               description: 'Full comparison of semaglutide, tirzepatide, and retatrutide — mechanisms, fat loss results, side effects, and which to choose.',
-              author: { '@type': 'Organization', name: 'BPC-157 Stack', url: 'https://bp157stack.com' },
+              author: { '@type': 'Organization', name: 'BPC-157 Stack', url: 'https://www.bp157stack.com' },
             },
           ]),
         }}

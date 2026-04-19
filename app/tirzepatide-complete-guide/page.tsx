@@ -13,10 +13,10 @@ export const metadata: Metadata = {
     title: 'Tirzepatide Complete Guide: Dual Mechanism, 22.5% Weight Loss & Protocol',
     description: 'How tirzepatide broke 30 years of weight loss medicine. Dual GIP+GLP-1 mechanism, escalation protocol, and comparison with semaglutide.',
     type: 'article',
-    url: 'https://bp157stack.com/tirzepatide-complete-guide',
+    url: 'https://www.bp157stack.com/tirzepatide-complete-guide',
   },
   alternates: {
-    canonical: 'https://bp157stack.com/tirzepatide-complete-guide',
+    canonical: 'https://www.bp157stack.com/tirzepatide-complete-guide',
   },
 };
 
@@ -107,7 +107,7 @@ export default function TirzepatideCompleteGuide() {
             '@type': 'Article',
             headline: 'Tirzepatide Complete Guide: Dual Mechanism, 22.5% Weight Loss & Protocol',
             description: 'How tirzepatide broke 30 years of weight loss medicine. Dual GIP+GLP-1 mechanism, escalation protocol, comparison to semaglutide.',
-            url: 'https://bp157stack.com/tirzepatide-complete-guide',
+            url: 'https://www.bp157stack.com/tirzepatide-complete-guide',
             author: { '@type': 'Organization', name: 'BPC-157 Stack' },
           }),
         }}

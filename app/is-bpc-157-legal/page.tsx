@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     title: 'Is BPC-157 Legal? FDA Status & Research Chemical Laws 2026',
     description: 'Complete guide to BPC-157 legal status — FDA, WADA, and research chemical laws explained.',
     type: 'article',
-    url: 'https://bp157stack.com/is-bpc-157-legal',
+    url: 'https://www.bp157stack.com/is-bpc-157-legal',
   },
   twitter: {
     card: 'summary_large_image',
@@ -253,8 +253,8 @@ export default function IsBpc157LegalPage() {
               '@context': 'https://schema.org',
               '@type': 'BreadcrumbList',
               itemListElement: [
-                { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://bp157stack.com' },
-                { '@type': 'ListItem', position: 2, name: 'Is BPC-157 Legal?', item: 'https://bp157stack.com/is-bpc-157-legal' },
+                { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.bp157stack.com' },
+                { '@type': 'ListItem', position: 2, name: 'Is BPC-157 Legal?', item: 'https://www.bp157stack.com/is-bpc-157-legal' },
               ],
             },
             {
@@ -271,7 +271,7 @@ export default function IsBpc157LegalPage() {
               '@type': 'Article',
               headline: 'Is BPC-157 Legal? FDA Status, WADA Rules & Research Chemical Laws',
               description: 'Complete guide to BPC-157 legal status including FDA regulatory actions, WADA anti-doping rules, and research chemical purchase laws.',
-              author: { '@type': 'Organization', name: 'BPC-157 Stack', url: 'https://bp157stack.com' },
+              author: { '@type': 'Organization', name: 'BPC-157 Stack', url: 'https://www.bp157stack.com' },
             },
           ]),
         }}

@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     title: 'BPC-157 vs TB-500: Which Is Better for Healing?',
     description: 'Complete comparison of BPC-157 and TB-500 — mechanisms, dosing, and which to use for your injury type.',
     type: 'article',
-    url: 'https://bp157stack.com/bpc-157-vs-tb-500',
+    url: 'https://www.bp157stack.com/bpc-157-vs-tb-500',
   },
   twitter: {
     card: 'summary_large_image',
@@ -73,8 +73,8 @@ export default function BpcVsTb500Page() {
               '@context': 'https://schema.org',
               '@type': 'BreadcrumbList',
               itemListElement: [
-                { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://bp157stack.com' },
-                { '@type': 'ListItem', position: 2, name: 'BPC-157 vs TB-500', item: 'https://bp157stack.com/bpc-157-vs-tb-500' },
+                { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.bp157stack.com' },
+                { '@type': 'ListItem', position: 2, name: 'BPC-157 vs TB-500', item: 'https://www.bp157stack.com/bpc-157-vs-tb-500' },
               ],
             },
             {

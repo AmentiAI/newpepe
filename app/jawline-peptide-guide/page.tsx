@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     title: 'Jawline Peptide Guide: The Looksmaxxing Protocol',
     description: 'IGF-1, GHK-Cu, BPC-157, and CJC/Ipa — how each peptide improves facial bone structure, collagen architecture, and jawline definition.',
     type: 'article',
-    url: 'https://bp157stack.com/jawline-peptide-guide',
+    url: 'https://www.bp157stack.com/jawline-peptide-guide',
   },
   twitter: {
     card: 'summary_large_image',
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     description: 'Science-backed guide to using IGF-1, GHK-Cu, BPC-157, and CJC/Ipamorelin for jawline and facial structure optimization.',
   },
   alternates: {
-    canonical: 'https://bp157stack.com/jawline-peptide-guide',
+    canonical: 'https://www.bp157stack.com/jawline-peptide-guide',
   },
 };
 
@@ -32,9 +32,9 @@ const jsonLd = {
   '@type': 'Article',
   headline: 'Jawline Peptide Guide: IGF-1, GHK-Cu & BPC-157 for Facial Structure',
   description: 'The complete looksmaxxing guide to jawline optimization with research peptides.',
-  url: 'https://bp157stack.com/jawline-peptide-guide',
+  url: 'https://www.bp157stack.com/jawline-peptide-guide',
   author: { '@type': 'Organization', name: 'BPC-157 Stack' },
-  publisher: { '@type': 'Organization', name: 'BPC-157 Stack', url: 'https://bp157stack.com' },
+  publisher: { '@type': 'Organization', name: 'BPC-157 Stack', url: 'https://www.bp157stack.com' },
 };
 
 const stats = [

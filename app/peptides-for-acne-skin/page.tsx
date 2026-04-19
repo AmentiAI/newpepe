@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     title: 'Peptides for Acne & Skin: BPC-157 and GHK-Cu Protocol 2026',
     description: 'BPC-157 heals the gut-skin axis. GHK-Cu rebuilds skin architecture. The complete peptide acne protocol.',
     type: 'article',
-    url: 'https://bp157stack.com/peptides-for-acne-skin',
+    url: 'https://www.bp157stack.com/peptides-for-acne-skin',
   },
   twitter: {
     card: 'summary_large_image',
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     description: 'BPC-157 and GHK-Cu for acne, PIH, and scar remodeling — complete protocol.',
   },
   alternates: {
-    canonical: 'https://bp157stack.com/peptides-for-acne-skin',
+    canonical: 'https://www.bp157stack.com/peptides-for-acne-skin',
   },
 };
 

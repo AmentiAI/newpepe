@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     title: 'SNAP-8: The Botox Alternative Neuropeptide — Complete Guide 2026',
     description: 'SNARE complex inhibition without neurotoxin — SNAP-8 reduces wrinkle depth by up to 63%. Full protocol guide.',
     type: 'article',
-    url: 'https://bp157stack.com/snap-8-anti-wrinkle-peptide',
+    url: 'https://www.bp157stack.com/snap-8-anti-wrinkle-peptide',
   },
   twitter: {
     card: 'summary_large_image',
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     description: 'How SNAP-8\'s SNARE inhibition reduces wrinkle depth by 63% without injection, paralysis, or neurotoxin.',
   },
   alternates: {
-    canonical: 'https://bp157stack.com/snap-8-anti-wrinkle-peptide',
+    canonical: 'https://www.bp157stack.com/snap-8-anti-wrinkle-peptide',
   },
 };
 

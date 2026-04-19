@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     title: 'The Complete Looksmaxxing Peptide Stack 2026',
     description: 'Three tiers of looksmaxxing peptide protocols — from Foundation to Advanced. Build your appearance optimization stack.',
     type: 'article',
-    url: 'https://bp157stack.com/looksmaxxing-stack',
+    url: 'https://www.bp157stack.com/looksmaxxing-stack',
   },
   twitter: {
     card: 'summary_large_image',
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     description: 'The ultimate peptide protocol for appearance optimization — Foundation, Complete, and Advanced tiers.',
   },
   alternates: {
-    canonical: 'https://bp157stack.com/looksmaxxing-stack',
+    canonical: 'https://www.bp157stack.com/looksmaxxing-stack',
   },
 };
 

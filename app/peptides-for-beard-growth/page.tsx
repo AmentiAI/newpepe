@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     title: 'Peptides for Beard Growth: Complete Protocol Guide 2026',
     description: 'GHK-Cu, IGF-1 LR3, TB-500 and BPC-157 for beard density — biology, protocols, and timelines.',
     type: 'article',
-    url: 'https://bp157stack.com/peptides-for-beard-growth',
+    url: 'https://www.bp157stack.com/peptides-for-beard-growth',
   },
   twitter: {
     card: 'summary_large_image',
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     description: 'Which peptides improve beard density and how to use them correctly.',
   },
   alternates: {
-    canonical: 'https://bp157stack.com/peptides-for-beard-growth',
+    canonical: 'https://www.bp157stack.com/peptides-for-beard-growth',
   },
 };
 

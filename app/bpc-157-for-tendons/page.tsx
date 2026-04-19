@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     title: 'BPC-157 for Tendons & Ligaments: Complete Healing Protocol',
     description: 'BPC-157 tendon and ligament healing — dosing, injection sites, and results timeline.',
     type: 'article',
-    url: 'https://bp157stack.com/bpc-157-for-tendons',
+    url: 'https://www.bp157stack.com/bpc-157-for-tendons',
   },
   twitter: {
     card: 'summary_large_image',
@@ -127,9 +127,9 @@ export default function Bpc157TendonsPage() {
               '@context': 'https://schema.org',
               '@type': 'BreadcrumbList',
               itemListElement: [
-                { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://bp157stack.com' },
-                { '@type': 'ListItem', position: 2, name: 'Healing', item: 'https://bp157stack.com/healing' },
-                { '@type': 'ListItem', position: 3, name: 'BPC-157 for Tendons', item: 'https://bp157stack.com/bpc-157-for-tendons' },
+                { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.bp157stack.com' },
+                { '@type': 'ListItem', position: 2, name: 'Healing', item: 'https://www.bp157stack.com/healing' },
+                { '@type': 'ListItem', position: 3, name: 'BPC-157 for Tendons', item: 'https://www.bp157stack.com/bpc-157-for-tendons' },
               ],
             },
             {
@@ -146,7 +146,7 @@ export default function Bpc157TendonsPage() {
               '@type': 'Article',
               headline: 'BPC-157 for Tendons & Ligaments: Healing Protocol & Timeline',
               description: 'Complete protocol for BPC-157 tendon and ligament healing — dosing, injection sites, and results timeline.',
-              author: { '@type': 'Organization', name: 'BPC-157 Stack', url: 'https://bp157stack.com' },
+              author: { '@type': 'Organization', name: 'BPC-157 Stack', url: 'https://www.bp157stack.com' },
             },
           ]),
         }}

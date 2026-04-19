@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     title: 'Body Composition Peptides | CJC-1295, Ipamorelin, IGF-1 LR3 & GLP Peptides',
     description: 'CJC-1295 + Ipamorelin, IGF-1 LR3, MOTS-c, and GLP peptides for fat loss, lean muscle, and GH optimization.',
     type: 'article',
-    url: 'https://bp157stack.com/body-composition',
+    url: 'https://www.bp157stack.com/body-composition',
   },
   twitter: {
     card: 'summary_large_image',
