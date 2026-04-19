@@ -19,6 +19,7 @@ export const metadata: Metadata = {
     title: 'The Wolverine Stack: BPC-157 + TB-500 | Ultimate Healing Protocol',
     description: 'The most researched healing peptide combination. Heal injuries 2–4× faster.',
   },
+  alternates: { canonical: 'https://www.bp157stack.com/wolverine-stack' },
 };
 
 const SOURCE_URL = 'https://phiogen.is/?ref=PEPS';

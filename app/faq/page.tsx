@@ -18,6 +18,7 @@ export const metadata: Metadata = {
     title: 'BPC-157 FAQ | Common Peptide Questions Answered',
     description: 'Answers to the most common BPC-157 questions — dosing, safety, stacking, oral vs injectable.',
   },
+  alternates: { canonical: 'https://www.bp157stack.com/faq' },
 };
 
 const SOURCE_URL = 'https://phiogen.is/?ref=PEPS';

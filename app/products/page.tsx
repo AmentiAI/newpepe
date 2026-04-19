@@ -6,6 +6,7 @@ import ProductCatalogCard from '@/components/ProductCatalogCard';
 export const metadata: Metadata = {
   title: 'All Peptides & Research Compounds | BPC-157 Stack',
   description: 'Complete catalog of 140+ research peptides — BPC-157, TB-500, GLP-1 agonists, SARMs, nootropics, anti-aging compounds and more. Third-party tested, COA verified.',
+  alternates: { canonical: 'https://www.bp157stack.com/products' },
 };
 
 const categoryColor: Record<string, string> = {

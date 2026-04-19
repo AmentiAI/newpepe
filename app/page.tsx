@@ -14,6 +14,7 @@ import ProductImage from '@/components/ProductImage';
 export const metadata: Metadata = {
   title: 'BPC-157 Stack | #1 Peptide Protocols for Healing, Performance & Longevity',
   description: 'Discover the most effective BPC-157 stacks and peptide protocols. Science-backed guides for injury healing, body recomposition, anti-aging, and cognitive enhancement.',
+  alternates: { canonical: 'https://www.bp157stack.com' },
 };
 
 const SOURCE_URL = 'https://phiogen.is/?ref=PEPS';

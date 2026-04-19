@@ -21,6 +21,7 @@ export const metadata: Metadata = {
     title: 'Anti-Aging Peptides: Epithalon, GHK-Cu, SS-31 & NAD+',
     description: 'The most scientifically advanced anti-aging peptide protocols for longevity.',
   },
+  alternates: { canonical: 'https://www.bp157stack.com/anti-aging' },
 };
 
 const SOURCE_URL = 'https://phiogen.is/?ref=PEPS';

@@ -21,6 +21,7 @@ export const metadata: Metadata = {
     title: 'BPC-157 & TB-500 Healing Peptides | Injury Recovery Protocols',
     description: 'BPC-157 and TB-500: the most studied healing peptides. Heal injuries 2–4x faster.',
   },
+  alternates: { canonical: 'https://www.bp157stack.com/healing' },
 };
 
 const SOURCE_URL = 'https://phiogen.is/?ref=PEPS';

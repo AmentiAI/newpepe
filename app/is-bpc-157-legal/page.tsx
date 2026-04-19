@@ -18,6 +18,7 @@ export const metadata: Metadata = {
     title: 'Is BPC-157 Legal? FDA Status & Research Chemical Laws 2026',
     description: 'Complete guide to BPC-157 legal status — FDA, WADA, and research chemical laws.',
   },
+  alternates: { canonical: 'https://www.bp157stack.com/is-bpc-157-legal' },
 };
 
 const SOURCE_URL = 'https://phiogen.is/?ref=PEPS';

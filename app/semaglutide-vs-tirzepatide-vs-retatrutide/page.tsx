@@ -19,6 +19,7 @@ export const metadata: Metadata = {
     title: 'Semaglutide vs Tirzepatide vs Retatrutide',
     description: 'Which GLP peptide is best for fat loss? Head-to-head comparison.',
   },
+  alternates: { canonical: 'https://www.bp157stack.com/semaglutide-vs-tirzepatide-vs-retatrutide' },
 };
 
 const SOURCE_URL = 'https://phiogen.is/?ref=PEPS';

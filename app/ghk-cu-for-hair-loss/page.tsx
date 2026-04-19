@@ -19,6 +19,7 @@ export const metadata: Metadata = {
     title: 'GHK-Cu for Hair Loss: Does It Work?',
     description: 'Complete guide to GHK-Cu copper peptide for hair regrowth — research, protocol, and results.',
   },
+  alternates: { canonical: 'https://www.bp157stack.com/ghk-cu-for-hair-loss' },
 };
 
 const SOURCE_URL = 'https://phiogen.is/?ref=PEPS';

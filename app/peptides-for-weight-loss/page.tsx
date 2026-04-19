@@ -19,6 +19,7 @@ export const metadata: Metadata = {
     title: 'Best Peptides for Weight Loss 2026 — Complete Guide',
     description: 'GLP-1s, GH peptides, and fat burners compared. Find the right protocol for your goal.',
   },
+  alternates: { canonical: 'https://www.bp157stack.com/peptides-for-weight-loss' },
 };
 
 const SOURCE_URL = 'https://phiogen.is/?ref=PEPS';

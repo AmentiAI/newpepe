@@ -19,6 +19,7 @@ export const metadata: Metadata = {
     title: 'Best Peptides for Men Over 50',
     description: 'Anti-aging, muscle, and vitality peptides for men 50+ — complete 2026 guide.',
   },
+  alternates: { canonical: 'https://www.bp157stack.com/best-peptides-for-men-over-50' },
 };
 
 const SOURCE_URL = 'https://phiogen.is/?ref=PEPS';

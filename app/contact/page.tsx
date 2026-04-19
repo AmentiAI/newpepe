@@ -12,6 +12,7 @@ export const metadata: Metadata = {
     type: 'website',
     url: 'https://www.bp157stack.com/contact',
   },
+  alternates: { canonical: 'https://www.bp157stack.com/contact' },
 };
 
 const SOURCE_URL = 'https://phiogen.is/?ref=PEPS';

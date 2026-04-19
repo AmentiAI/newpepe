@@ -265,17 +265,25 @@ export default function ProductPage({ params }: Props) {
             {
               '@context': 'https://schema.org',
               '@type': 'Product',
+              '@id': `https://www.bp157stack.com/products/${product.slug}#product`,
               name: product.name,
               description: product.shortDescription,
               image: product.image,
+              url: `https://www.bp157stack.com/products/${product.slug}`,
+              sku: product.slug,
+              mpn: product.slug.toUpperCase(),
+              category: product.category,
               keywords: [product.name, ...product.tags].join(', '),
-              brand: { '@type': 'Brand', name: 'BPC-157 Stack' },
+              brand: { '@type': 'Brand', name: 'Phiogen' },
+              manufacturer: { '@type': 'Organization', name: 'Phiogen' },
               offers: {
                 '@type': 'Offer',
-                price: product.price.toString(),
+                price: sale(product.price),
                 priceCurrency: 'USD',
+                priceValidUntil: `${new Date().getFullYear() + 1}-12-31`,
                 availability: 'https://schema.org/InStock',
-                seller: { '@type': 'Organization', name: 'BPC-157 Stack' },
+                itemCondition: 'https://schema.org/NewCondition',
+                seller: { '@type': 'Organization', name: 'Phiogen' },
                 url: `https://www.bp157stack.com/products/${product.slug}`,
               },
             },
@@ -336,7 +344,10 @@ export default function ProductPage({ params }: Props) {
               <span className={`${theme.accentLight} text-sm font-mono font-semibold`}>{product.category.toUpperCase()}</span>
             </div>
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black text-gray-900 mb-2 leading-tight">Buy {product.name}</h1>
-            <p className={`text-lg sm:text-xl ${theme.accentLight} font-bold mb-4`}>{product.tagline}</p>
+            <p className={`text-lg sm:text-xl ${theme.accentLight} font-bold mb-2`}>{product.tagline}</p>
+            <p className="text-gray-500 text-xs font-mono mb-4">
+              Last updated {new Date().toLocaleString('en-US', { month: 'long', year: 'numeric' })} · COA-verified
+            </p>
             <p className="text-gray-900 leading-relaxed mb-6 text-base">{product.shortDescription}</p>
 
             {/* Benefits preview */}

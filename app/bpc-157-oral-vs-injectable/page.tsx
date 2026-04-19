@@ -19,6 +19,7 @@ export const metadata: Metadata = {
     title: 'BPC-157 Oral vs Injectable: Full Comparison',
     description: 'Which BPC-157 administration route is best? Complete 2026 guide.',
   },
+  alternates: { canonical: 'https://www.bp157stack.com/bpc-157-oral-vs-injectable' },
 };
 
 const SOURCE_URL = 'https://phiogen.is/?ref=PEPS';

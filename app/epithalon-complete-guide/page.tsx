@@ -19,6 +19,7 @@ export const metadata: Metadata = {
     title: 'Epithalon Complete Guide 2026',
     description: 'Everything about Epithalon — telomere lengthening, dosing, protocol, and anti-aging results.',
   },
+  alternates: { canonical: 'https://www.bp157stack.com/epithalon-complete-guide' },
 };
 
 const SOURCE_URL = 'https://phiogen.is/?ref=PEPS';

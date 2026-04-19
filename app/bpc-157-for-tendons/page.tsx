@@ -19,6 +19,7 @@ export const metadata: Metadata = {
     title: 'BPC-157 for Tendons: Healing Protocol & Timeline',
     description: 'Complete BPC-157 protocol for tendon and ligament repair.',
   },
+  alternates: { canonical: 'https://www.bp157stack.com/bpc-157-for-tendons' },
 };
 
 const SOURCE_URL = 'https://phiogen.is/?ref=PEPS';

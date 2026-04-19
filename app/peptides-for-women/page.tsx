@@ -19,6 +19,7 @@ export const metadata: Metadata = {
     title: 'Best Peptides for Women 2026',
     description: 'Complete guide to peptides for women — fat loss, anti-aging, healing, and hormones.',
   },
+  alternates: { canonical: 'https://www.bp157stack.com/peptides-for-women' },
 };
 
 const SOURCE_URL = 'https://phiogen.is/?ref=PEPS';

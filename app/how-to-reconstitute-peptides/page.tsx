@@ -20,6 +20,7 @@ export const metadata: Metadata = {
     title: 'How to Reconstitute Peptides: Step-by-Step Guide',
     description: 'Complete guide to mixing and dosing BPC-157 and other peptides safely.',
   },
+  alternates: { canonical: 'https://www.bp157stack.com/how-to-reconstitute-peptides' },
 };
 
 const SOURCE_URL = 'https://phiogen.is/?ref=PEPS';

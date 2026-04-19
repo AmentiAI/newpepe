@@ -18,6 +18,7 @@ export const metadata: Metadata = {
     title: 'BPC-157 vs TB-500: Which Is Better for Healing?',
     description: 'BPC-157 vs TB-500 — complete comparison of mechanisms, dosing, and which to use.',
   },
+  alternates: { canonical: 'https://www.bp157stack.com/bpc-157-vs-tb-500' },
 };
 
 const SOURCE_URL = 'https://phiogen.is/?ref=PEPS';

@@ -19,6 +19,7 @@ export const metadata: Metadata = {
     title: 'BPC-157 for Gut Health: Leaky Gut, IBD & IBS Protocol',
     description: 'Complete guide to BPC-157 for gut healing — oral vs injectable, dosing, and results.',
   },
+  alternates: { canonical: 'https://www.bp157stack.com/bpc-157-for-gut-health' },
 };
 
 const SOURCE_URL = 'https://phiogen.is/?ref=PEPS';

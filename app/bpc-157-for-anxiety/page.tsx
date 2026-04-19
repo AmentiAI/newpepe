@@ -19,6 +19,7 @@ export const metadata: Metadata = {
     title: 'BPC-157 for Anxiety & Depression',
     description: 'BPC-157 gut-brain, dopamine, and GABA mechanisms for anxiety reduction.',
   },
+  alternates: { canonical: 'https://www.bp157stack.com/bpc-157-for-anxiety' },
 };
 
 const SOURCE_URL = 'https://phiogen.is/?ref=PEPS';

@@ -19,6 +19,7 @@ export const metadata: Metadata = {
     title: 'CJC-1295 Ipamorelin Results: Week-by-Week Timeline',
     description: 'When do CJC-1295 Ipamorelin results appear? Complete timeline from week 1 to 6 months.',
   },
+  alternates: { canonical: 'https://www.bp157stack.com/cjc-1295-ipamorelin-results' },
 };
 
 const SOURCE_URL = 'https://phiogen.is/?ref=PEPS';

@@ -22,6 +22,7 @@ export const metadata: Metadata = {
     title: 'Peptide Stack Protocols | BPC-157, Anti-Aging & Body Recomp Stacks',
     description: 'Proven peptide stack protocols for healing, anti-aging, body recomposition, and cognitive performance.',
   },
+  alternates: { canonical: 'https://www.bp157stack.com/stacks' },
 };
 
 const SOURCE_URL = 'https://phiogen.is/?ref=PEPS';

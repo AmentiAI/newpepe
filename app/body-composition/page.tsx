@@ -21,6 +21,7 @@ export const metadata: Metadata = {
     title: 'Body Composition Peptides | CJC-1295, Ipamorelin & GLP Peptides',
     description: 'Burn fat and build muscle with the most effective body recomposition peptide protocols.',
   },
+  alternates: { canonical: 'https://www.bp157stack.com/body-composition' },
 };
 
 const SOURCE_URL = 'https://phiogen.is/?ref=PEPS';

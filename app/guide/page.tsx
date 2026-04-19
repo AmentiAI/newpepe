@@ -19,6 +19,7 @@ export const metadata: Metadata = {
     title: 'Complete BPC-157 Beginner Guide | How to Use Peptides Safely',
     description: 'Learn how to reconstitute, dose, inject, and stack peptides safely for maximum results.',
   },
+  alternates: { canonical: 'https://www.bp157stack.com/guide' },
 };
 
 const SOURCE_URL = 'https://phiogen.is/?ref=PEPS';

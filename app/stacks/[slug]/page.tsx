@@ -45,6 +45,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       description: stack.tagline,
       images: [stack.image],
     },
+    alternates: { canonical: `https://www.bp157stack.com/stacks/${params.slug}` },
   };
 }
 
