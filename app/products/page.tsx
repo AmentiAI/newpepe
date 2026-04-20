@@ -1,11 +1,14 @@
 import type { Metadata } from 'next';
 import { FlaskConical, ArrowRight } from 'lucide-react';
-import { products } from '@/lib/products';
+import { products as allProducts } from '@/lib/products';
+import { isAbsorbed } from '@/lib/absorbed-slugs';
 import ProductCatalogCard from '@/components/ProductCatalogCard';
 
+const products = allProducts.filter((p) => !isAbsorbed(p.slug));
+
 export const metadata: Metadata = {
-  title: 'All Peptides & Research Compounds | BPC-157 Stack',
-  description: 'Complete catalog of 140+ research peptides — BPC-157, TB-500, GLP-1 agonists, SARMs, nootropics, anti-aging compounds and more. Third-party tested, COA verified.',
+  title: 'Buy Peptides Online — Full Catalog, COA Verified | BPC-157 Stack',
+  description: 'Buy 140+ peptides online — BPC-157, TB-500, GLP-1 agonists, growth hormone, nootropics, anti-aging compounds. Third-party tested, COA verified, US domestic shipping.',
   alternates: { canonical: 'https://www.bp157stack.com/products' },
 };
 
@@ -41,10 +44,10 @@ export default function ProductsPage() {
             <span className="text-amber-600 font-bold text-sm uppercase tracking-widest">Full Catalog</span>
           </div>
           <h1 className="text-4xl sm:text-5xl font-black text-gray-900 mb-3">
-            All {products.length} Peptides
+            Buy Peptides Online — {products.length} Compounds, COA Verified
           </h1>
           <p className="text-gray-900 text-lg max-w-2xl">
-            Complete research compound catalog — healing peptides, GLP-1 agonists, growth hormone secretagogues, nootropics, anti-aging compounds, and SARMs.
+            Full peptide catalog with third-party tested purity — healing peptides, GLP-1 agonists, growth hormone secretagogues, nootropics, anti-aging compounds, and SARMs. US domestic shipping.
           </p>
 
           {/* Category jump links */}

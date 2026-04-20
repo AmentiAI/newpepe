@@ -1,4 +1,5 @@
 import type { SectionKey, TailKey, SectionCopyMap } from './product-sections';
+import { ABSORBED_SET } from './absorbed-slugs';
 
 export const DISCOUNT = 0.10;
 export function sale(price: number): string {
@@ -6993,11 +6994,40 @@ export function getProductBySlug(slug: string): Product | undefined {
 }
 
 export function getProductsByCategory(category: string): Product[] {
-  return products.filter((p) => p.category === category);
+  return products.filter((p) => p.category === category && !ABSORBED_SET.has(p.slug));
 }
 
 export function getRelatedProducts(slugs: string[]): Product[] {
   return products.filter((p) => slugs.includes(p.slug));
+}
+
+function xmur3(s: string): () => number {
+  let h = 1779033703 ^ s.length;
+  for (let i = 0; i < s.length; i++) {
+    h = Math.imul(h ^ s.charCodeAt(i), 3432918353);
+    h = (h << 13) | (h >>> 19);
+  }
+  return function () {
+    h = Math.imul(h ^ (h >>> 16), 2246822507);
+    h = Math.imul(h ^ (h >>> 13), 3266489909);
+    h ^= h >>> 16;
+    return h >>> 0;
+  };
+}
+
+export function shuffleSeeded<T>(arr: T[], seed: string): T[] {
+  const out = arr.slice();
+  const rng = xmur3(seed);
+  for (let i = out.length - 1; i > 0; i--) {
+    const j = rng() % (i + 1);
+    [out[i], out[j]] = [out[j], out[i]];
+  }
+  return out;
+}
+
+export function getRelatedProductsVaried(slug: string, slugs: string[], n: number): Product[] {
+  const pool = getRelatedProducts(slugs);
+  return shuffleSeeded(pool, slug + ':related').slice(0, n);
 }
 
 export const categories = Array.from(new Set(products.map((p) => p.category)));

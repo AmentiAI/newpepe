@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "seed": "node scripts/seed-db.mjs",
-    "indexnow": "node scripts/indexnow-submit.mjs"
+    "indexnow": "node scripts/indexnow-submit.mjs",
+    "shingle-check": "node scripts/shingle-check.mjs"
   },
   "dependencies": {
     "@neondatabase/serverless": "^0.9.0",

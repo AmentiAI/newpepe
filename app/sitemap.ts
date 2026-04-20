@@ -1,6 +1,7 @@
 import { MetadataRoute } from 'next';
 import { products } from '@/lib/products';
 import { stacks } from '@/lib/stacks';
+import { isAbsorbed } from '@/lib/absorbed-slugs';
 
 const BASE_URL = 'https://www.bp157stack.com';
 
@@ -58,12 +59,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/tirzepatide-complete-guide`,                    priority: 0.9,  changeFrequency: 'monthly', lastModified: now },
   ];
 
-  const productPages: MetadataRoute.Sitemap = products.map((p) => ({
-    url: `${BASE_URL}/products/${p.slug}`,
-    priority: 0.85,
-    changeFrequency: 'weekly' as const,
-    lastModified: now,
-  }));
+  const productPages: MetadataRoute.Sitemap = products
+    .filter((p) => !isAbsorbed(p.slug))
+    .map((p) => ({
+      url: `${BASE_URL}/products/${p.slug}`,
+      priority: 0.85,
+      changeFrequency: 'weekly' as const,
+      lastModified: now,
+    }));
 
   const stackPages: MetadataRoute.Sitemap = stacks.map((s) => ({
     url: `${BASE_URL}/stacks/${s.id}`,

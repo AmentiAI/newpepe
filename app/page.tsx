@@ -6,7 +6,10 @@ import {
   Microscope, Dna, HeartPulse, Leaf, Wind, ExternalLink,
   AlertTriangle, Package, Thermometer, BadgeCheck,
 } from 'lucide-react';
-import { products, sale } from '@/lib/products';
+import { products as allProducts, sale } from '@/lib/products';
+import { isAbsorbed } from '@/lib/absorbed-slugs';
+
+const products = allProducts.filter((p) => !isAbsorbed(p.slug));
 import { stacks } from '@/lib/stacks';
 import ProductCard from '@/components/ProductCard';
 import ProductImage from '@/components/ProductImage';

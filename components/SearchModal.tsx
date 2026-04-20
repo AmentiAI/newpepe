@@ -3,8 +3,11 @@ import { useState, useEffect, useRef, useMemo } from 'react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import { Search, X, ArrowRight, Command } from 'lucide-react';
-import { products, sale } from '@/lib/products';
+import { products as allProducts, sale } from '@/lib/products';
+import { isAbsorbed } from '@/lib/absorbed-slugs';
 import ProductImage from '@/components/ProductImage';
+
+const products = allProducts.filter((p) => !isAbsorbed(p.slug));
 
 const categoryColor: Record<string, string> = {
   Healing: 'bg-emerald-50 text-emerald-700 border-emerald-200',

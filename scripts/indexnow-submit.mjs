@@ -27,12 +27,17 @@ function collectStaticRoutes() {
 }
 
 async function loadProductAndStackSlugs() {
-  const [{ products }, { stacks }] = await Promise.all([
+  const [{ products }, { stacks }, absorbedMod] = await Promise.all([
     import(resolve(__dirname, '..', 'lib', 'products.ts')).catch(() => ({ products: [] })),
     import(resolve(__dirname, '..', 'lib', 'stacks.ts')).catch(() => ({ stacks: [] })),
+    import(resolve(__dirname, '..', 'lib', 'absorbed-slugs.ts')).catch(() => ({ ABSORBED_SET: new Set() })),
   ]);
+  const absorbed = absorbedMod.ABSORBED_SET || new Set();
   const urls = [];
-  for (const p of products) urls.push(`https://${HOST}/products/${p.slug}`);
+  for (const p of products) {
+    if (absorbed.has(p.slug)) continue;
+    urls.push(`https://${HOST}/products/${p.slug}`);
+  }
   for (const s of stacks) urls.push(`https://${HOST}/stacks/${s.id}`);
   return urls;
 }

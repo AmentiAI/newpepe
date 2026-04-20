@@ -148,6 +148,56 @@ function pick<T>(pool: T[], seed: string): T {
   return pool[hash(seed) % pool.length];
 }
 
+// Page-shape classifier — different physical-product types deserve
+// different H1 framing and lead sections. Avoids the "name-swap trap" where
+// a 5mg vial and a 30mg vial use identical H1 just with the size swapped.
+export type PageShape =
+  | 'capsule'   // oral capsule format
+  | 'nasal'     // nasal spray
+  | 'liquid'    // pre-mixed liquid
+  | 'blend'     // multi-peptide blend in one vial
+  | 'solvent'   // bacteriostatic water and similar reconstitution supplies
+  | 'glp'       // GLP-1/2/3 weight-loss agonists (their own buying intent)
+  | 'sarm'      // SARMs sub-category
+  | 'syringe'   // injection supplies
+  | 'standard'; // default lyophilized peptide vial
+
+export function inferPageShape(p: Product): PageShape {
+  const slug = p.slug.toLowerCase();
+  const cat = p.category;
+  const tags = (p.tags || []).map((t) => t.toLowerCase());
+
+  if (slug.includes('capsules') || slug.includes('-caps')) return 'capsule';
+  if (slug.includes('nasal')) return 'nasal';
+  if (slug.includes('blend') || slug.includes('-cagri') || slug.includes('cjc-ghrp') || tags.includes('blend')) return 'blend';
+  if (slug.includes('liquid')) return 'liquid';
+  if (slug.includes('water') || slug.includes('syringe') || cat === 'Supplies') {
+    if (slug.includes('syringe')) return 'syringe';
+    if (slug.includes('water')) return 'solvent';
+    return 'standard';
+  }
+  if (cat === 'Weight Loss' || tags.includes('glp-1') || tags.includes('glp-2') || tags.includes('glp-3') || tags.includes('semaglutide') || tags.includes('tirzepatide') || tags.includes('retatrutide')) return 'glp';
+  if (slug.startsWith('mk-') || slug.startsWith('lgd-') || slug.startsWith('rad-') || slug.startsWith('yk-') || slug.startsWith('sr') || slug.includes('cardarine') || slug.includes('ostarine') || slug.includes('stenabolic')) return 'sarm';
+  return 'standard';
+}
+
+const H1_FORMULAS: Record<PageShape, (name: string) => string> = {
+  capsule:  (n) => `Buy ${n} Capsules — Oral Format, COA Verified`,
+  nasal:    (n) => `Buy ${n} Nasal Spray — COA Verified`,
+  liquid:   (n) => `Buy ${n} Liquid — Pre-Mixed, Ready to Dose`,
+  blend:    (n) => `Buy ${n} Blend — Multi-Peptide Vial`,
+  solvent:  (n) => `Buy ${n} — Sterile Reconstitution Solvent`,
+  glp:      (n) => `Buy ${n} Online — GLP Weight-Loss Peptide`,
+  sarm:     (n) => `Buy ${n} — Research SARM, COA Verified`,
+  syringe:  (n) => `Buy ${n} — Injection Supplies, US Domestic`,
+  standard: (n) => `Buy ${n} Online — COA Verified Research Peptide`,
+};
+
+export function getProductH1(p: Product): string {
+  const shape = inferPageShape(p);
+  return H1_FORMULAS[shape](p.name);
+}
+
 export function getMainPlan(product: Product): SectionKey[] {
   return product.sectionPlan ?? MAIN_PLANS[hash(product.slug + ':main') % MAIN_PLANS.length];
 }
