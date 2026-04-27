@@ -182,7 +182,7 @@ export default function StacksPage() {
             Every stack is available from our recommended supplier — COA verified, US domestic, ships 24–48 hours.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <a href={SOURCE_URL} target="_blank" rel="nofollow noopener noreferrer"
+            <a href={SOURCE_URL} target="_blank" rel="sponsored nofollow noopener noreferrer"
               className="btn-cta text-base px-8 py-4 inline-flex items-center gap-2">
               View <ArrowRight className="w-5 h-5" />
             </a>
@@ -328,7 +328,7 @@ export default function StacksPage() {
                         className="btn-secondary text-sm px-6 py-3 flex items-center gap-2">
                         Full Protocol Guide <ChevronRight className="w-4 h-4" />
                       </Link>
-                      <a href={SOURCE_URL} target="_blank" rel="nofollow noopener noreferrer"
+                      <a href={SOURCE_URL} target="_blank" rel="sponsored nofollow noopener noreferrer"
                         className="btn-cta text-sm px-6 py-3 flex items-center gap-2">
                         View This Stack <ArrowRight className="w-4 h-4" />
                       </a>
@@ -585,7 +585,7 @@ export default function StacksPage() {
                 <h3 className="text-gray-900 font-black text-xl mb-2">Ready to Start?</h3>
                 <p className="text-gray-700 text-base mb-5">Get COA-verified BPC-157 and TB-500 from our recommended supplier.</p>
                 <div className="space-y-3">
-                  <a href={SOURCE_URL} target="_blank" rel="nofollow noopener noreferrer"
+                  <a href={SOURCE_URL} target="_blank" rel="sponsored nofollow noopener noreferrer"
                     className="w-full btn-cta text-sm py-3 flex items-center justify-center gap-2">
                     View the Wolverine Stack <ArrowRight className="w-4 h-4" />
                   </a>
@@ -730,7 +730,7 @@ export default function StacksPage() {
               </p>
               <p className="text-gray-600 text-sm mb-8">COA verified · US domestic · 24–48hr shipping</p>
               <div className="flex flex-wrap gap-4 justify-center">
-                <a href={SOURCE_URL} target="_blank" rel="nofollow noopener noreferrer"
+                <a href={SOURCE_URL} target="_blank" rel="sponsored nofollow noopener noreferrer"
                   className="btn-cta text-base px-10 py-4 inline-flex items-center gap-2">
                   View <ArrowRight className="w-5 h-5" />
                 </a>

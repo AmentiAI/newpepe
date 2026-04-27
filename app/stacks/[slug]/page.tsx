@@ -230,7 +230,7 @@ export default function StackPage({ params }: Props) {
               <a
                 href={SOURCE_URL}
                 target="_blank"
-                rel="nofollow noopener noreferrer"
+                rel="sponsored nofollow noopener noreferrer"
                 className="btn-cta text-sm py-3 w-full text-center flex items-center justify-center gap-2 mb-3"
               >
                 View <ArrowRight className="w-4 h-4" />
@@ -268,7 +268,7 @@ export default function StackPage({ params }: Props) {
           <a
             href={SOURCE_URL}
             target="_blank"
-            rel="nofollow noopener noreferrer"
+            rel="sponsored nofollow noopener noreferrer"
             className="btn-cta text-base px-8 py-4 inline-flex items-center gap-2"
           >
             View <ArrowRight className="w-5 h-5" />

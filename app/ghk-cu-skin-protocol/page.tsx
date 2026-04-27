@@ -191,7 +191,7 @@ export default function GhkCuSkinProtocolPage() {
             <a
               href={SOURCE_URL}
               target="_blank"
-              rel="nofollow noopener noreferrer"
+              rel="sponsored nofollow noopener noreferrer"
               className="btn-cta inline-flex items-center gap-2"
             >
               Source GHK-Cu <ArrowRight className="w-4 h-4" />
@@ -349,7 +349,7 @@ export default function GhkCuSkinProtocolPage() {
             <a
               href={SOURCE_URL}
               target="_blank"
-              rel="nofollow noopener noreferrer"
+              rel="sponsored nofollow noopener noreferrer"
               className="btn-cta inline-flex items-center gap-2"
             >
               Source Research-Grade GHK-Cu <ArrowRight className="w-4 h-4" />

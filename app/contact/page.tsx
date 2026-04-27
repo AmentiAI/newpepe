@@ -160,7 +160,7 @@ export default function ContactPage() {
               <a
                 href={SOURCE_URL}
                 target="_blank"
-                rel="nofollow noopener noreferrer"
+                rel="sponsored nofollow noopener noreferrer"
                 className="inline-flex items-center gap-1.5 text-emerald-700 text-sm font-semibold hover:underline"
               >
                 Visit Supplier <ExternalLink className="w-3.5 h-3.5" />
@@ -236,7 +236,7 @@ export default function ContactPage() {
             <a
               href={SOURCE_URL}
               target="_blank"
-              rel="nofollow noopener noreferrer"
+              rel="sponsored nofollow noopener noreferrer"
               className="btn-cta text-base px-8 py-4 flex items-center gap-2"
             >
               View Peptides <ArrowRight className="w-5 h-5" />

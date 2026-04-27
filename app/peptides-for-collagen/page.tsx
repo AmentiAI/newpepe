@@ -190,7 +190,7 @@ export default function PeptidesForCollagenPage() {
             Collagen is the structural foundation of your appearance. Here are the peptides with the strongest evidence for rebuilding it — ranked, explained, and with complete protocols.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <Link href={SOURCE_URL} rel="nofollow noopener noreferrer" className="btn-cta flex items-center gap-2">
+            <Link href={SOURCE_URL} rel="sponsored nofollow noopener noreferrer" className="btn-cta flex items-center gap-2">
               View Collagen Peptides <ArrowRight className="w-4 h-4" />
             </Link>
             <Link href="/guide" className="flex items-center gap-2 px-6 py-3 border border-gray-300 rounded-xl text-gray-600 hover:border-gray-400 transition-colors">
@@ -459,7 +459,7 @@ export default function PeptidesForCollagenPage() {
           </div>
           <Link
             href={SOURCE_URL}
-            rel="nofollow noopener noreferrer"
+            rel="sponsored nofollow noopener noreferrer"
             className="btn-cta inline-flex items-center gap-2 text-lg px-8 py-4"
           >
             View Recommended Suppliers <ArrowRight className="w-5 h-5" />

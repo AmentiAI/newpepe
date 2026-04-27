@@ -121,7 +121,7 @@ export default function JawlinePeptideGuidePage() {
               <a
                 href={SOURCE_URL}
                 target="_blank"
-                rel="nofollow noopener noreferrer"
+                rel="sponsored nofollow noopener noreferrer"
                 className="btn-cta text-base px-8 py-4 flex items-center gap-2 group"
               >
                 Shop Jaw Peptides
@@ -258,7 +258,7 @@ export default function JawlinePeptideGuidePage() {
                 <a
                   href={SOURCE_URL}
                   target="_blank"
-                  rel="nofollow noopener noreferrer"
+                  rel="sponsored nofollow noopener noreferrer"
                   className="btn-cta inline-flex items-center gap-2 px-6 py-3"
                 >
                   Shop IGF-1 LR3 <ArrowRight className="w-4 h-4" />
@@ -331,7 +331,7 @@ export default function JawlinePeptideGuidePage() {
                   <a
                     href={SOURCE_URL}
                     target="_blank"
-                    rel="nofollow noopener noreferrer"
+                    rel="sponsored nofollow noopener noreferrer"
                     className="btn-cta inline-flex items-center gap-2 px-6 py-3"
                   >
                     Shop GHK-Cu <ArrowRight className="w-4 h-4" />
@@ -380,7 +380,7 @@ export default function JawlinePeptideGuidePage() {
                     </div>
                   ))}
                 </div>
-                <a href={SOURCE_URL} target="_blank" rel="nofollow noopener noreferrer" className="text-purple-400 text-sm font-bold hover:text-gray-900 transition-colors flex items-center gap-1">
+                <a href={SOURCE_URL} target="_blank" rel="sponsored nofollow noopener noreferrer" className="text-purple-400 text-sm font-bold hover:text-gray-900 transition-colors flex items-center gap-1">
                   Shop BPC-157 <ArrowRight className="w-3.5 h-3.5" />
                 </a>
               </div>
@@ -415,7 +415,7 @@ export default function JawlinePeptideGuidePage() {
                     </div>
                   ))}
                 </div>
-                <a href={SOURCE_URL} target="_blank" rel="nofollow noopener noreferrer" className="text-sm font-bold hover:text-gray-900 transition-colors flex items-center gap-1" style={{ color: '#00ff88' }}>
+                <a href={SOURCE_URL} target="_blank" rel="sponsored nofollow noopener noreferrer" className="text-sm font-bold hover:text-gray-900 transition-colors flex items-center gap-1" style={{ color: '#00ff88' }}>
                   Shop CJC/Ipamorelin <ArrowRight className="w-3.5 h-3.5" />
                 </a>
               </div>
@@ -532,7 +532,7 @@ export default function JawlinePeptideGuidePage() {
               <a
                 href={SOURCE_URL}
                 target="_blank"
-                rel="nofollow noopener noreferrer"
+                rel="sponsored nofollow noopener noreferrer"
                 className="btn-cta text-base px-10 py-4 inline-flex items-center gap-2"
               >
                 Shop Jawline Peptides <ArrowRight className="w-5 h-5" />

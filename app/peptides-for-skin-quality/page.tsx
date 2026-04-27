@@ -300,7 +300,7 @@ export default function PeptidesForSkinQualityPage() {
             <a
               href={SOURCE_URL}
               target="_blank"
-              rel="nofollow noopener noreferrer"
+              rel="sponsored nofollow noopener noreferrer"
               className="btn-cta inline-flex items-center gap-2"
             >
               Get Research Peptides <ArrowRight className="w-4 h-4" />
@@ -480,7 +480,7 @@ export default function PeptidesForSkinQualityPage() {
             <a
               href={SOURCE_URL}
               target="_blank"
-              rel="nofollow noopener noreferrer"
+              rel="sponsored nofollow noopener noreferrer"
               className="btn-cta inline-flex items-center gap-2"
             >
               Get Research Peptides <ArrowRight className="w-4 h-4" />

@@ -276,7 +276,7 @@ export default function ProductPage({ params }: Props) {
               category: product.category,
               keywords: [product.name, ...product.tags].join(', '),
               brand: { '@type': 'Brand', name: 'Phiogen' },
-              manufacturer: { '@type': 'Organization', name: 'Phiogen' },
+              manufacturer: { '@type': 'Organization', name: 'Phiogen', url: 'https://phiogen.is' },
               offers: {
                 '@type': 'Offer',
                 price: sale(product.price),
@@ -284,30 +284,14 @@ export default function ProductPage({ params }: Props) {
                 priceValidUntil: `${new Date().getFullYear() + 1}-12-31`,
                 availability: 'https://schema.org/InStock',
                 itemCondition: 'https://schema.org/NewCondition',
-                seller: { '@type': 'Organization', name: 'Phiogen' },
+                seller: { '@type': 'Organization', name: 'Phiogen', url: 'https://phiogen.is' },
+                url: product.affiliateUrl,
+              },
+              subjectOf: {
+                '@type': 'WebPage',
                 url: `https://www.bp157stack.com/products/${product.slug}`,
+                publisher: { '@id': 'https://www.bp157stack.com/#organization' },
               },
-              aggregateRating: {
-                '@type': 'AggregateRating',
-                ratingValue: '5',
-                reviewCount: '1',
-                bestRating: '5',
-                worstRating: '1',
-              },
-              review: [
-                {
-                  '@type': 'Review',
-                  reviewRating: {
-                    '@type': 'Rating',
-                    ratingValue: '5',
-                    bestRating: '5',
-                    worstRating: '1',
-                  },
-                  author: { '@type': 'Organization', name: 'BPC-157 Stack Lab Verification' },
-                  reviewBody: `Independent third-party HPLC analysis of ${product.name} confirms the labelled identity and >99% peptide purity. Certificate of Analysis (COA) is available for the batch and matches the manufacturer's stated specifications. Reconstitution behaviour, mass spectrometry mass-match, and visual inspection were all consistent with research-grade ${product.name}.`,
-                  datePublished: `${new Date().getFullYear()}-01-15`,
-                },
-              ],
             },
           ]),
         }}
@@ -389,7 +373,7 @@ export default function ProductPage({ params }: Props) {
               <a
                 href={product.affiliateUrl}
                 target="_blank"
-                rel="nofollow noopener noreferrer"
+                rel="sponsored nofollow noopener noreferrer"
                 className="btn-cta text-base py-4 w-full flex items-center justify-center gap-2"
               >
                 Buy {product.name} on Phiogen <ArrowRight className="w-5 h-5" />
@@ -425,7 +409,7 @@ export default function ProductPage({ params }: Props) {
               <a
                 href={product.affiliateUrl}
                 target="_blank"
-                rel="nofollow noopener noreferrer"
+                rel="sponsored nofollow noopener noreferrer"
                 className="btn-cta text-sm py-3 w-full text-center flex items-center justify-center gap-2 mb-3"
               >
                 Buy Now <ArrowRight className="w-4 h-4" />
@@ -491,7 +475,7 @@ export default function ProductPage({ params }: Props) {
               <a
                 href={product.affiliateUrl}
                 target="_blank"
-                rel="nofollow noopener noreferrer"
+                rel="sponsored nofollow noopener noreferrer"
                 className="btn-cta text-sm py-3 px-6 inline-flex items-center gap-2"
               >
                 Buy {product.name} on Phiogen <ArrowRight className="w-4 h-4" />
@@ -508,7 +492,7 @@ export default function ProductPage({ params }: Props) {
               <div key="related" className="mt-16">
                 <div className="flex items-center justify-between mb-6">
                   <h2 className="text-2xl font-black text-gray-900">{copy.heading}</h2>
-                  <a href={product.affiliateUrl} target="_blank" rel="nofollow noopener noreferrer"
+                  <a href={product.affiliateUrl} target="_blank" rel="sponsored nofollow noopener noreferrer"
                     className="btn-cta text-sm px-5 py-2.5 flex items-center gap-2 hidden sm:flex">
                     Buy the Full Stack <ArrowRight className="w-4 h-4" />
                   </a>
@@ -522,7 +506,7 @@ export default function ProductPage({ params }: Props) {
                   <a
                     href={product.affiliateUrl}
                     target="_blank"
-                    rel="nofollow noopener noreferrer"
+                    rel="sponsored nofollow noopener noreferrer"
                     className="btn-cta text-base px-8 py-4 inline-flex items-center gap-2"
                   >
                     Buy Now <ArrowRight className="w-5 h-5" />

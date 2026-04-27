@@ -124,7 +124,7 @@ export default function JawlineGoalQuiz() {
         <a
           href="/out"
           target="_blank"
-          rel="nofollow noopener noreferrer"
+          rel="sponsored nofollow noopener noreferrer"
           className="inline-flex items-center gap-2 px-6 py-3 rounded-lg font-bold text-sm transition-all"
           style={{ background: '#00ff88', color: '#060610' }}
         >

@@ -2,6 +2,12 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { ArrowRight, CheckCircle, AlertTriangle, Shield } from 'lucide-react';
 import InternalLinks from '@/components/InternalLinks';
+import MedicalReviewByline from '@/components/MedicalReviewByline';
+import { articleLd, breadcrumbLd, faqLd } from '@/lib/jsonld';
+import { SITE } from '@/lib/site';
+
+const PUBLISHED = '2026-01-10';
+const UPDATED = '2026-04-27';
 
 export const metadata: Metadata = {
   title: 'Is BPC-157 Legal? FDA Status, WADA Rules & Research Chemical Laws 2026',
@@ -250,30 +256,22 @@ export default function IsBpc157LegalPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify([
-            {
-              '@context': 'https://schema.org',
-              '@type': 'BreadcrumbList',
-              itemListElement: [
-                { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.bp157stack.com' },
-                { '@type': 'ListItem', position: 2, name: 'Is BPC-157 Legal?', item: 'https://www.bp157stack.com/is-bpc-157-legal' },
-              ],
-            },
-            {
-              '@context': 'https://schema.org',
-              '@type': 'FAQPage',
-              mainEntity: faqs.map(({ q, a }) => ({
-                '@type': 'Question',
-                name: q,
-                acceptedAnswer: { '@type': 'Answer', text: a },
-              })),
-            },
-            {
-              '@context': 'https://schema.org',
-              '@type': 'Article',
+            breadcrumbLd([
+              { name: 'Home', item: SITE.url },
+              { name: 'Is BPC-157 Legal?', item: `${SITE.url}/is-bpc-157-legal` },
+            ]),
+            faqLd(faqs),
+            articleLd({
+              url: `${SITE.url}/is-bpc-157-legal`,
               headline: 'Is BPC-157 Legal? FDA Status, WADA Rules & Research Chemical Laws',
-              description: 'Complete guide to BPC-157 legal status including FDA regulatory actions, WADA anti-doping rules, and research chemical purchase laws.',
-              author: { '@type': 'Organization', name: 'BPC-157 Stack', url: 'https://www.bp157stack.com' },
-            },
+              description:
+                'Complete guide to BPC-157 legal status including FDA 503A action, WADA Section S2 prohibition, and country-by-country research chemical laws as of 2026.',
+              datePublished: PUBLISHED,
+              dateModified: UPDATED,
+              reviewed: true,
+              type: 'Article',
+              speakable: ['h1', 'h2'],
+            }),
           ]),
         }}
       />
@@ -290,10 +288,11 @@ export default function IsBpc157LegalPage() {
             Is BPC-157 Legal?<br />
             <span style={{ color: '#00ff88' }}>The Complete 2026 Answer</span>
           </h1>
-          <p className="text-gray-600 text-xl leading-relaxed mb-8">
-            BPC-157's legal status is nuanced — and the answer depends on who you are and how you're using it.
-            Here's a clear breakdown of FDA status, WADA rules, and research chemical law.
+          <p className="text-gray-600 text-xl leading-relaxed mb-2">
+            BPC-157&apos;s legal status is nuanced — and the answer depends on who you are and how you&apos;re using it.
+            Here&apos;s a clear breakdown of FDA status, WADA rules, and research chemical law.
           </p>
+          <MedicalReviewByline datePublished={PUBLISHED} dateModified={UPDATED} />
           {/* Quick answer box */}
           <div className="glass-card p-6 border-emerald-500/30 mb-8">
             <h2 className="text-gray-900 font-bold text-lg mb-4">Quick Answer Summary</h2>
@@ -374,7 +373,7 @@ export default function IsBpc157LegalPage() {
             Research chemicals are not subject to the same regulatory framework as pharmaceutical drugs. They are legal to purchase and possess, though they are marketed for research purposes rather than human consumption.
           </p>
           <div className="flex gap-3 mt-4">
-            <a href={SOURCE_URL} target="_blank" rel="nofollow noopener noreferrer"
+            <a href={SOURCE_URL} target="_blank" rel="sponsored nofollow noopener noreferrer"
               className="btn-cta text-sm px-6 py-3 flex items-center gap-2">
               View COA-Verified BPC-157 <ArrowRight className="w-4 h-4" />
             </a>

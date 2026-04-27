@@ -217,7 +217,7 @@ export default function BpcRouteRecommender() {
             <a
               href={SOURCE_URL}
               target="_blank"
-              rel="nofollow noopener noreferrer"
+              rel="sponsored nofollow noopener noreferrer"
               className="btn-cta px-6 py-3 text-sm flex items-center gap-2"
             >
               Get BPC-157 <ArrowRight className="w-4 h-4" />

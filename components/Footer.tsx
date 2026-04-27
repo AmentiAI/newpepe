@@ -25,7 +25,7 @@ export default function Footer() {
             <a
               href={SOURCE_URL}
               target="_blank"
-              rel="nofollow noopener noreferrer"
+              rel="sponsored nofollow noopener noreferrer"
               className="btn-cta text-sm inline-flex items-center gap-2"
             >
               View <ExternalLink className="w-4 h-4" />
@@ -83,10 +83,23 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-gray-200 mt-12 pt-8">
+          <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 mb-6 text-xs">
+            {[
+              { label: 'About', href: '/about' },
+              { label: 'Editorial Policy', href: '/editorial-policy' },
+              { label: 'Medical Disclaimer', href: '/medical-disclaimer' },
+              { label: 'Privacy', href: '/privacy' },
+              { label: 'Terms', href: '/terms' },
+            ].map(({ label, href }) => (
+              <Link key={href} href={href} className="text-gray-500 hover:text-amber-600 transition-colors">
+                {label}
+              </Link>
+            ))}
+          </div>
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-gray-400 text-xs text-center md:text-left">
-              © 2025 BPC-157 Stack. All rights reserved.
-              Not medical advice. Consult a physician before use.
+              © {new Date().getFullYear()} BPC-157 Stack. All rights reserved.
+              Medically reviewed by Prof. Alastair D. Burt (MB ChB MD FRCPath, Newcastle University).
             </p>
             <p className="text-gray-400 text-xs">
               For research purposes only. Not medical advice.

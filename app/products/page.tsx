@@ -94,7 +94,7 @@ export default function ProductsPage() {
           <a
             href="https://phiogen.is/?ref=PEPS"
             target="_blank"
-            rel="nofollow noopener noreferrer"
+            rel="sponsored nofollow noopener noreferrer"
             className="inline-flex items-center gap-2 bg-amber-500 text-gray-900 font-black px-6 py-3 rounded-xl hover:bg-amber-600 transition-colors"
           >
             View Full Store <ArrowRight className="w-4 h-4" />

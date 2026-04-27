@@ -56,7 +56,7 @@ export default function Navbar() {
             <a
               href={SOURCE_URL}
               target="_blank"
-              rel="nofollow noopener noreferrer"
+              rel="sponsored nofollow noopener noreferrer"
               className="btn-cta text-sm"
             >
               Get Peptides →
@@ -110,7 +110,7 @@ export default function Navbar() {
             <a
               href={SOURCE_URL}
               target="_blank"
-              rel="nofollow noopener noreferrer"
+              rel="sponsored nofollow noopener noreferrer"
               className="btn-cta text-sm text-center mt-3"
             >
               Get Peptides →

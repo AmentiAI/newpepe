@@ -84,7 +84,7 @@ export default function IpamorelinPage() {
                 <a
                   href={SOURCE_URL}
                   target="_blank"
-                  rel="nofollow noopener noreferrer"
+                  rel="sponsored nofollow noopener noreferrer"
                   className="btn-cta text-base px-8 py-4 flex items-center gap-2 group"
                 >
                   Shop Ipamorelin/CJC — ${sale(product.price)}
@@ -245,7 +245,7 @@ export default function IpamorelinPage() {
             </h3>
             <p className="text-gray-500 text-sm mb-4">Combo vial available · US domestic shipping · third-party tested</p>
             <div className="flex flex-wrap gap-3 justify-center">
-              <a href={SOURCE_URL} target="_blank" rel="nofollow noopener noreferrer" className="btn-cta px-8 py-3 inline-flex items-center gap-2">
+              <a href={SOURCE_URL} target="_blank" rel="sponsored nofollow noopener noreferrer" className="btn-cta px-8 py-3 inline-flex items-center gap-2">
                 Buy Ipamorelin/CJC — $50 <ExternalLink className="w-4 h-4" />
               </a>
               <Link href="/cjc-1295-ipamorelin-results" className="btn-secondary px-6 py-3">
@@ -292,7 +292,7 @@ export default function IpamorelinPage() {
             The clinic-standard GH peptide stack. US domestic shipping. COA-verified. Start seeing results in 1-2 weeks.
           </p>
           <div className="flex flex-wrap gap-4 justify-center mb-4">
-            <a href={SOURCE_URL} target="_blank" rel="nofollow noopener noreferrer" className="btn-cta text-base px-10 py-4 inline-flex items-center gap-2">
+            <a href={SOURCE_URL} target="_blank" rel="sponsored nofollow noopener noreferrer" className="btn-cta text-base px-10 py-4 inline-flex items-center gap-2">
               Shop Ipamorelin/CJC — $50 <ArrowRight className="w-5 h-5" />
             </a>
             <Link href="/body-composition" className="btn-secondary text-base px-8 py-4">

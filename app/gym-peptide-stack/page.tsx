@@ -176,7 +176,7 @@ export default function GymPeptideStackPage() {
               <a
                 href={SOURCE_URL}
                 target="_blank"
-                rel="nofollow noopener noreferrer"
+                rel="sponsored nofollow noopener noreferrer"
                 className="btn-cta text-base px-8 py-4 flex items-center gap-2 group"
               >
                 Shop Gym Peptides
@@ -325,7 +325,7 @@ export default function GymPeptideStackPage() {
                 <a
                   href={SOURCE_URL}
                   target="_blank"
-                  rel="nofollow noopener noreferrer"
+                  rel="sponsored nofollow noopener noreferrer"
                   className="btn-cta inline-flex items-center gap-2 px-6 py-3"
                 >
                   Shop CJC/Ipamorelin <ArrowRight className="w-4 h-4" />
@@ -371,7 +371,7 @@ export default function GymPeptideStackPage() {
                 <a
                   href={SOURCE_URL}
                   target="_blank"
-                  rel="nofollow noopener noreferrer"
+                  rel="sponsored nofollow noopener noreferrer"
                   className="btn-cta inline-flex items-center gap-2 px-6 py-3"
                 >
                   Shop BPC-157 + TB-500 <ArrowRight className="w-4 h-4" />
@@ -439,7 +439,7 @@ export default function GymPeptideStackPage() {
                   ))}
                 </div>
 
-                <a href={SOURCE_URL} target="_blank" rel="nofollow noopener noreferrer" className="text-purple-400 text-sm font-bold hover:text-gray-900 transition-colors flex items-center gap-1">
+                <a href={SOURCE_URL} target="_blank" rel="sponsored nofollow noopener noreferrer" className="text-purple-400 text-sm font-bold hover:text-gray-900 transition-colors flex items-center gap-1">
                   Shop IGF-1 LR3 <ArrowRight className="w-3.5 h-3.5" />
                 </a>
               </div>
@@ -484,7 +484,7 @@ export default function GymPeptideStackPage() {
                   ))}
                 </div>
 
-                <a href={SOURCE_URL} target="_blank" rel="nofollow noopener noreferrer" className="text-amber-400 text-sm font-bold hover:text-gray-900 transition-colors flex items-center gap-1">
+                <a href={SOURCE_URL} target="_blank" rel="sponsored nofollow noopener noreferrer" className="text-amber-400 text-sm font-bold hover:text-gray-900 transition-colors flex items-center gap-1">
                   Shop Tirzepatide <ArrowRight className="w-3.5 h-3.5" />
                 </a>
               </div>
@@ -537,7 +537,7 @@ export default function GymPeptideStackPage() {
                     <a
                       href={SOURCE_URL}
                       target="_blank"
-                      rel="nofollow noopener noreferrer"
+                      rel="sponsored nofollow noopener noreferrer"
                       className="text-xs font-bold px-4 py-2 rounded-lg flex items-center gap-1 transition-all hover:opacity-90"
                       style={{ background: hex, color: '#000' }}
                     >
@@ -607,7 +607,7 @@ export default function GymPeptideStackPage() {
               <a
                 href={SOURCE_URL}
                 target="_blank"
-                rel="nofollow noopener noreferrer"
+                rel="sponsored nofollow noopener noreferrer"
                 className="btn-cta text-base px-10 py-4 inline-flex items-center gap-2"
               >
                 Shop All Gym Peptides <ArrowRight className="w-5 h-5" />

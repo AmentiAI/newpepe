@@ -188,7 +188,7 @@ export default function Igf1LooksmaxxingPage() {
             IGF-1 LR3 affects seven distinct appearance mechanisms. Here is exactly how it works, what doses to use, and how to stack it for maximum appearance optimization.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <Link href={SOURCE_URL} rel="nofollow noopener noreferrer" className="btn-cta flex items-center gap-2">
+            <Link href={SOURCE_URL} rel="sponsored nofollow noopener noreferrer" className="btn-cta flex items-center gap-2">
               View IGF-1 LR3 Sources <ArrowRight className="w-4 h-4" />
             </Link>
             <Link href="/anti-aging" className="flex items-center gap-2 px-6 py-3 border border-gray-300 rounded-xl text-gray-600 hover:border-gray-400 transition-colors">
@@ -431,7 +431,7 @@ export default function Igf1LooksmaxxingPage() {
           </div>
           <Link
             href={SOURCE_URL}
-            rel="nofollow noopener noreferrer"
+            rel="sponsored nofollow noopener noreferrer"
             className="btn-cta inline-flex items-center gap-2 text-lg px-8 py-4"
           >
             View Recommended Suppliers <ArrowRight className="w-5 h-5" />

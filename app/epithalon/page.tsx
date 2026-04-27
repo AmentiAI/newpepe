@@ -84,7 +84,7 @@ export default function EpithalonPage() {
                 <a
                   href={SOURCE_URL}
                   target="_blank"
-                  rel="nofollow noopener noreferrer"
+                  rel="sponsored nofollow noopener noreferrer"
                   className="btn-cta text-base px-8 py-4 flex items-center gap-2 group"
                 >
                   Shop Epithalon — ${sale(product.price)}
@@ -195,7 +195,7 @@ export default function EpithalonPage() {
           </div>
 
           <div className="text-center">
-            <a href={SOURCE_URL} target="_blank" rel="nofollow noopener noreferrer" className="btn-cta text-base px-10 py-4 inline-flex items-center gap-2">
+            <a href={SOURCE_URL} target="_blank" rel="sponsored nofollow noopener noreferrer" className="btn-cta text-base px-10 py-4 inline-flex items-center gap-2">
               Shop Epithalon Now <ArrowRight className="w-5 h-5" />
             </a>
           </div>
@@ -220,7 +220,7 @@ export default function EpithalonPage() {
                 size that no supplement has ever matched.
               </p>
               <div className="flex flex-wrap gap-4 justify-center">
-                <a href={SOURCE_URL} target="_blank" rel="nofollow noopener noreferrer" className="btn-cta px-8 py-3 inline-flex items-center gap-2">
+                <a href={SOURCE_URL} target="_blank" rel="sponsored nofollow noopener noreferrer" className="btn-cta px-8 py-3 inline-flex items-center gap-2">
                   Shop Epithalon <ArrowRight className="w-4 h-4" />
                 </a>
                 <Link href="/epithalon-complete-guide" className="btn-secondary px-8 py-3 inline-flex items-center gap-2">
@@ -287,7 +287,7 @@ export default function EpithalonPage() {
               <div className="glass-card p-6 border-neon-green/15 text-center">
                 <h3 className="text-gray-900 font-bold mb-2">Get COA-Verified Epithalon</h3>
                 <p className="text-gray-500 text-sm mb-4">50mg vial · US domestic · third-party tested</p>
-                <a href={SOURCE_URL} target="_blank" rel="nofollow noopener noreferrer" className="btn-cta px-8 py-3 inline-flex items-center gap-2">
+                <a href={SOURCE_URL} target="_blank" rel="sponsored nofollow noopener noreferrer" className="btn-cta px-8 py-3 inline-flex items-center gap-2">
                   Buy Epithalon — $139.99 <ExternalLink className="w-4 h-4" />
                 </a>
                 <p className="text-gray-600 text-xs mt-2">Affiliate link — at no extra cost to you.</p>
@@ -307,7 +307,7 @@ export default function EpithalonPage() {
             The only compound proven to extend telomeres. 28% lower mortality. Stack with GHK-Cu for the complete anti-aging protocol.
           </p>
           <div className="flex flex-wrap gap-4 justify-center mb-4">
-            <a href={SOURCE_URL} target="_blank" rel="nofollow noopener noreferrer" className="btn-cta text-base px-10 py-4 inline-flex items-center gap-2">
+            <a href={SOURCE_URL} target="_blank" rel="sponsored nofollow noopener noreferrer" className="btn-cta text-base px-10 py-4 inline-flex items-center gap-2">
               Shop Epithalon — $139.99 <ArrowRight className="w-5 h-5" />
             </a>
             <Link href="/anti-aging" className="btn-secondary text-base px-8 py-4">

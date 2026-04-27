@@ -178,7 +178,7 @@ export default function GymGoalPeptideMatch() {
           <a
             href="/out"
             target="_blank"
-            rel="nofollow noopener noreferrer"
+            rel="sponsored nofollow noopener noreferrer"
             className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg font-bold text-sm transition-all"
             style={{ background: match.accentHex, color: match.accentHex === '#f59e0b' || match.accentHex === '#10b981' ? '#000' : '#fff' }}
           >

@@ -313,7 +313,7 @@ export default function GhkCuProtocolGuide() {
         <a
           href={SOURCE_URL}
           target="_blank"
-          rel="nofollow noopener noreferrer"
+          rel="sponsored nofollow noopener noreferrer"
           className="btn-cta inline-flex items-center gap-2 w-full justify-center"
         >
           Source GHK-Cu <ArrowRight className="w-4 h-4" />

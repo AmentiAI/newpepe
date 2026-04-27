@@ -129,7 +129,7 @@ export default function SleepPeptideSelector() {
           <a
             href="/out"
             target="_blank"
-            rel="nofollow noopener noreferrer"
+            rel="sponsored nofollow noopener noreferrer"
             className="mt-5 inline-flex items-center gap-2 text-sm font-bold px-5 py-2.5 rounded-lg transition-all"
             style={{ background: rec.accentColor, color: '#000' }}
           >

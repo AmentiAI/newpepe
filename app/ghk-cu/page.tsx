@@ -81,7 +81,7 @@ export default function GHKCuPage() {
                 <a
                   href={SOURCE_URL}
                   target="_blank"
-                  rel="nofollow noopener noreferrer"
+                  rel="sponsored nofollow noopener noreferrer"
                   className="btn-cta text-base px-8 py-4 flex items-center gap-2 group"
                 >
                   Shop GHK-Cu — ${sale(product.price)}
@@ -192,7 +192,7 @@ export default function GHKCuPage() {
           </div>
 
           <div className="text-center">
-            <a href={SOURCE_URL} target="_blank" rel="nofollow noopener noreferrer" className="btn-cta text-base px-10 py-4 inline-flex items-center gap-2">
+            <a href={SOURCE_URL} target="_blank" rel="sponsored nofollow noopener noreferrer" className="btn-cta text-base px-10 py-4 inline-flex items-center gap-2">
               Shop GHK-Cu Now <ArrowRight className="w-5 h-5" />
             </a>
           </div>
@@ -255,7 +255,7 @@ export default function GHKCuPage() {
               <div className="glass-card p-6 border-neon-green/15 text-center">
                 <h3 className="text-gray-900 font-bold mb-2">Get COA-Verified GHK-Cu</h3>
                 <p className="text-gray-500 text-sm mb-4">Injectable + topical options · US domestic shipping</p>
-                <a href={SOURCE_URL} target="_blank" rel="nofollow noopener noreferrer" className="btn-cta px-8 py-3 inline-flex items-center gap-2">
+                <a href={SOURCE_URL} target="_blank" rel="sponsored nofollow noopener noreferrer" className="btn-cta px-8 py-3 inline-flex items-center gap-2">
                   Buy GHK-Cu — $50 <ExternalLink className="w-4 h-4" />
                 </a>
                 <p className="text-gray-600 text-xs mt-2">Affiliate link — at no extra cost to you.</p>
@@ -289,7 +289,7 @@ export default function GHKCuPage() {
           </div>
 
           <div className="text-center">
-            <a href={SOURCE_URL} target="_blank" rel="nofollow noopener noreferrer" className="btn-cta text-base px-10 py-4 inline-flex items-center gap-2">
+            <a href={SOURCE_URL} target="_blank" rel="sponsored nofollow noopener noreferrer" className="btn-cta text-base px-10 py-4 inline-flex items-center gap-2">
               Shop GHK-Cu — $50.00 <ArrowRight className="w-5 h-5" />
             </a>
           </div>

@@ -4,6 +4,12 @@ import { ArrowRight, CheckCircle, AlertTriangle, Thermometer, FlaskConical, Clip
 import InternalLinks from '@/components/InternalLinks';
 import ReconstitutionCalculator from '@/components/ReconstitutionCalculator';
 import EquipmentChecklist from '@/components/EquipmentChecklist';
+import MedicalReviewByline from '@/components/MedicalReviewByline';
+import { articleLd, breadcrumbLd, faqLd } from '@/lib/jsonld';
+import { SITE } from '@/lib/site';
+
+const PUBLISHED = '2026-01-18';
+const UPDATED = '2026-04-27';
 
 export const metadata: Metadata = {
   title: 'How to Reconstitute Peptides: Step-by-Step Guide 2026 | BPC-157 Stack',
@@ -206,6 +212,23 @@ export default function HowToReconstitutePage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify([
+            breadcrumbLd([
+              { name: 'Home', item: SITE.url },
+              { name: 'Guide', item: `${SITE.url}/guide` },
+              { name: 'How to Reconstitute Peptides', item: `${SITE.url}/how-to-reconstitute-peptides` },
+            ]),
+            articleLd({
+              url: `${SITE.url}/how-to-reconstitute-peptides`,
+              headline: 'How to Reconstitute Peptides: Step-by-Step Guide',
+              description:
+                'Sterile reconstitution of lyophilized peptides with bacteriostatic water — full protocol, dose calculations, and storage troubleshooting.',
+              datePublished: PUBLISHED,
+              dateModified: UPDATED,
+              reviewed: true,
+              type: 'Article',
+              speakable: ['h1', 'h2'],
+            }),
+            faqLd(faqs),
             {
               '@context': 'https://schema.org',
               '@type': 'HowTo',
@@ -224,24 +247,6 @@ export default function HowToReconstitutePage() {
                 { '@type': 'HowToSupply', name: 'Alcohol swabs' },
               ],
             },
-            {
-              '@context': 'https://schema.org',
-              '@type': 'FAQPage',
-              mainEntity: faqs.map(({ q, a }) => ({
-                '@type': 'Question',
-                name: q,
-                acceptedAnswer: { '@type': 'Answer', text: a },
-              })),
-            },
-            {
-              '@context': 'https://schema.org',
-              '@type': 'BreadcrumbList',
-              itemListElement: [
-                { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.bp157stack.com' },
-                { '@type': 'ListItem', position: 2, name: 'Guide', item: 'https://www.bp157stack.com/guide' },
-                { '@type': 'ListItem', position: 3, name: 'How to Reconstitute Peptides', item: 'https://www.bp157stack.com/how-to-reconstitute-peptides' },
-              ],
-            },
           ]),
         }}
       />
@@ -258,6 +263,9 @@ export default function HowToReconstitutePage() {
           <p className="text-gray-500 text-lg max-w-2xl mx-auto">
             A complete guide to mixing BPC-157, TB-500, and other peptides with bacteriostatic water — including exact amounts, dose calculations, and storage.
           </p>
+          <div className="max-w-2xl mx-auto">
+            <MedicalReviewByline datePublished={PUBLISHED} dateModified={UPDATED} />
+          </div>
         </div>
 
         {/* Warning */}
@@ -489,7 +497,7 @@ export default function HowToReconstitutePage() {
           <h2 className="text-2xl font-bold text-gray-900 mb-3">Get COA-Verified Peptides & Supplies</h2>
           <p className="text-gray-500 mb-6">BPC-157, TB-500, bacteriostatic water, and insulin syringes — everything you need.</p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <a href={SOURCE_URL} target="_blank" rel="nofollow noopener noreferrer"
+            <a href={SOURCE_URL} target="_blank" rel="sponsored nofollow noopener noreferrer"
               className="btn-cta text-base px-8 py-4 flex items-center gap-2">
               View <ArrowRight className="w-5 h-5" />
             </a>

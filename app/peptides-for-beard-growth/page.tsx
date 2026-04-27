@@ -194,7 +194,7 @@ export default function PeptidesForBeardGrowthPage() {
             The biology of beard follicles is fundamentally different from scalp hair. Here is how to use peptides correctly for beard density — with full protocols and realistic timelines.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <Link href={SOURCE_URL} rel="nofollow noopener noreferrer" className="btn-cta flex items-center gap-2">
+            <Link href={SOURCE_URL} rel="sponsored nofollow noopener noreferrer" className="btn-cta flex items-center gap-2">
               View Beard Peptides <ArrowRight className="w-4 h-4" />
             </Link>
             <Link href="/ghk-cu-for-hair-loss" className="flex items-center gap-2 px-6 py-3 border border-gray-300 rounded-xl text-gray-600 hover:border-gray-400 transition-colors">
@@ -412,7 +412,7 @@ export default function PeptidesForBeardGrowthPage() {
           </div>
           <Link
             href={SOURCE_URL}
-            rel="nofollow noopener noreferrer"
+            rel="sponsored nofollow noopener noreferrer"
             className="btn-cta inline-flex items-center gap-2 text-lg px-8 py-4"
           >
             View Recommended Suppliers <ArrowRight className="w-5 h-5" />

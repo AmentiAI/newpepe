@@ -234,7 +234,7 @@ export default function StackQuiz() {
           <a
             href={SOURCE_URL}
             target="_blank"
-            rel="nofollow noopener noreferrer"
+            rel="sponsored nofollow noopener noreferrer"
             className="flex-1 btn-cta text-sm py-3.5 text-center flex items-center justify-center gap-2"
           >
             Get the Peptides <ArrowRight className="w-4 h-4" />

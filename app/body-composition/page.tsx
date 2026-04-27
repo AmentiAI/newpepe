@@ -123,7 +123,7 @@ export default function BodyCompositionPage() {
                 that compounds over 12 weeks.
               </p>
               <div className="flex flex-wrap gap-4">
-                <a href={SOURCE_URL} target="_blank" rel="nofollow noopener noreferrer"
+                <a href={SOURCE_URL} target="_blank" rel="sponsored nofollow noopener noreferrer"
                   className="btn-cta text-base px-8 py-4 flex items-center gap-2">
                   View <ArrowRight className="w-5 h-5" />
                 </a>
@@ -492,7 +492,7 @@ export default function BodyCompositionPage() {
                   </div>
                 ))}
               </div>
-              <a href={SOURCE_URL} target="_blank" rel="nofollow noopener noreferrer"
+              <a href={SOURCE_URL} target="_blank" rel="sponsored nofollow noopener noreferrer"
                 className="btn-cta text-sm px-6 py-3 flex items-center gap-2 inline-flex">
                 View <ArrowRight className="w-4 h-4" />
               </a>
@@ -533,7 +533,7 @@ export default function BodyCompositionPage() {
             <h2 className="text-3xl font-black text-gray-900">Body Composition Peptides</h2>
             <p className="text-gray-700 mt-1">GH peptides, metabolic activators, and GLP weight loss compounds</p>
           </div>
-          <a href={SOURCE_URL} target="_blank" rel="nofollow noopener noreferrer"
+          <a href={SOURCE_URL} target="_blank" rel="sponsored nofollow noopener noreferrer"
             className="btn-cta text-sm px-5 py-2.5 flex items-center gap-2 hidden sm:flex">
             View All <ArrowRight className="w-4 h-4" />
           </a>
@@ -613,7 +613,7 @@ export default function BodyCompositionPage() {
               </p>
               <p className="text-gray-600 text-sm mb-8">COA verified · US domestic · Fast shipping</p>
               <div className="flex flex-wrap gap-4 justify-center">
-                <a href={SOURCE_URL} target="_blank" rel="nofollow noopener noreferrer"
+                <a href={SOURCE_URL} target="_blank" rel="sponsored nofollow noopener noreferrer"
                   className="btn-cta text-base px-10 py-4 inline-flex items-center gap-2">
                   View <ArrowRight className="w-5 h-5" />
                 </a>

@@ -32,7 +32,14 @@
       "Bash(kill %1)",
       "Bash(wait)",
       "Bash(grep -nE \"^\\\\s*\\\\{\\\\s*$|^\\\\s*slug:\" /mnt/c/Users/Wilso/newpepe/lib/products.ts)",
-      "Bash(grep -v ':0$')"
+      "Bash(grep -v ':0$')",
+      "WebFetch(domain:bp157stack.com)",
+      "Bash(python3 *)",
+      "WebFetch(domain:www.bp157stack.com)",
+      "Bash(grep -oE '<script type=\"application/ld\\\\+json\"[^>]*>[^<]{0,5000}</script>')",
+      "Bash(grep -oE '<script type=\"application/ld\\\\+json\"[^>]*>[^<]{0,8000}</script>')",
+      "WebFetch(domain:www.arnoldpublishers.com)",
+      "Bash(xargs -0 sed -i 's/rel=\"nofollow noopener noreferrer\"/rel=\"sponsored nofollow noopener noreferrer\"/g')"
     ]
   }
 }

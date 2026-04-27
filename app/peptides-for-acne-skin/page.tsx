@@ -221,7 +221,7 @@ export default function PeptidesForAcneSkinPage() {
             Acne and acne scarring are among the most significant appearance detractors. BPC-157 heals the gut-skin axis that drives inflammation. GHK-Cu rebuilds the skin architecture left damaged by years of acne.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <Link href={SOURCE_URL} rel="nofollow noopener noreferrer" className="btn-cta flex items-center gap-2">
+            <Link href={SOURCE_URL} rel="sponsored nofollow noopener noreferrer" className="btn-cta flex items-center gap-2">
               View Acne Peptides <ArrowRight className="w-4 h-4" />
             </Link>
             <Link href="/bpc-157-for-gut-health" className="flex items-center gap-2 px-6 py-3 border border-gray-300 rounded-xl text-gray-600 hover:border-gray-400 transition-colors">
@@ -428,7 +428,7 @@ export default function PeptidesForAcneSkinPage() {
           </div>
           <Link
             href={SOURCE_URL}
-            rel="nofollow noopener noreferrer"
+            rel="sponsored nofollow noopener noreferrer"
             className="btn-cta inline-flex items-center gap-2 text-lg px-8 py-4"
           >
             View Recommended Suppliers <ArrowRight className="w-5 h-5" />

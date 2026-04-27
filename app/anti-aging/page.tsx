@@ -125,7 +125,7 @@ export default function AntiAgingPage() {
             targeting the actual molecular mechanisms of biological aging.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <a href={SOURCE_URL} target="_blank" rel="nofollow noopener noreferrer"
+            <a href={SOURCE_URL} target="_blank" rel="sponsored nofollow noopener noreferrer"
               className="btn-cta text-base px-8 py-4 flex items-center gap-2">
               View <ArrowRight className="w-5 h-5" />
             </a>
@@ -495,7 +495,7 @@ export default function AntiAgingPage() {
                 studied by leading longevity researchers at Harvard, Stanford, and the Buck Institute.
               </p>
               <div className="flex gap-3">
-                <a href={SOURCE_URL} target="_blank" rel="nofollow noopener noreferrer"
+                <a href={SOURCE_URL} target="_blank" rel="sponsored nofollow noopener noreferrer"
                   className="btn-cta text-sm px-6 py-3 flex items-center gap-2">
                   View the Stack <ArrowRight className="w-4 h-4" />
                 </a>
@@ -682,7 +682,7 @@ export default function AntiAgingPage() {
             <h2 className="text-3xl font-black text-gray-900">Anti-Aging Peptides</h2>
             <p className="text-gray-700 mt-1">Epithalon, GHK-Cu, SS-31, NAD+, and SNAP-8 — the complete longevity stack</p>
           </div>
-          <a href={SOURCE_URL} target="_blank" rel="nofollow noopener noreferrer"
+          <a href={SOURCE_URL} target="_blank" rel="sponsored nofollow noopener noreferrer"
             className="btn-cta text-sm px-5 py-2.5 flex items-center gap-2 hidden sm:flex">
             View All <ArrowRight className="w-4 h-4" />
           </a>
@@ -720,7 +720,7 @@ export default function AntiAgingPage() {
               </div>
             </div>
             <div className="flex flex-wrap gap-4 justify-center">
-              <a href={SOURCE_URL} target="_blank" rel="nofollow noopener noreferrer"
+              <a href={SOURCE_URL} target="_blank" rel="sponsored nofollow noopener noreferrer"
                 className="btn-cta text-base px-10 py-4 inline-flex items-center gap-2">
                 Start Your Longevity Protocol <ArrowRight className="w-5 h-5" />
               </a>

@@ -6,6 +6,9 @@ import {
   Star, ExternalLink, Award, HeartPulse, Brain, Leaf,
 } from 'lucide-react';
 import { getProductBySlug, sale } from '@/lib/products';
+import MedicalReviewByline from '@/components/MedicalReviewByline';
+import { articleLd, breadcrumbLd } from '@/lib/jsonld';
+import { SITE } from '@/lib/site';
 
 export const metadata: Metadata = {
   title: 'Buy BPC-157 | #1 Healing Peptide — Tendons, Gut, Recovery | BPC-157 Stack',
@@ -14,6 +17,8 @@ export const metadata: Metadata = {
 };
 
 const SOURCE_URL = '/out?p=bpc157-10mg';
+const PUBLISHED = '2026-01-15';
+const UPDATED = '2026-04-27';
 
 export default function BPC157Page() {
   const product = getProductBySlug('bpc-157')!;
@@ -52,6 +57,36 @@ export default function BPC157Page() {
 
   return (
     <div className="overflow-hidden">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify([
+            breadcrumbLd([
+              { name: 'Home', item: SITE.url },
+              { name: 'BPC-157', item: `${SITE.url}/bpc-157` },
+            ]),
+            articleLd({
+              url: `${SITE.url}/bpc-157`,
+              headline: "BPC-157: The World's Most Studied Healing Peptide",
+              description:
+                'BPC-157 mechanisms, dosing blueprint, and landmark research summary. Reviewed by Prof. Alastair D. Burt (Newcastle University).',
+              image: product.image,
+              datePublished: PUBLISHED,
+              dateModified: UPDATED,
+              type: 'MedicalWebPage',
+              reviewed: true,
+              about: [
+                { name: 'BPC-157', alternateName: 'Body Protection Compound 157', type: 'Drug' },
+              ],
+              speakable: ['h1', 'h2', 'p:first-of-type'],
+              breadcrumb: [
+                { name: 'Home', item: SITE.url },
+                { name: 'BPC-157', item: `${SITE.url}/bpc-157` },
+              ],
+            }),
+          ]),
+        }}
+      />
 
       {/* ── HERO ─────────────────────────────────────────── */}
       <section className="relative min-h-[90vh] flex items-center pt-20 bg-white grid-bg">
@@ -84,16 +119,17 @@ export default function BPC157Page() {
                 </span>
               </h1>
 
-              <p className="text-lg text-gray-500 leading-relaxed mb-8 max-w-lg">
+              <p className="text-lg text-gray-500 leading-relaxed mb-2 max-w-lg">
                 BPC-157 accelerates tendon, ligament, muscle, and gut repair with zero systemic side effects.
                 Works orally or by injection. 100+ published studies. No known lethal dose.
               </p>
+              <MedicalReviewByline datePublished={PUBLISHED} dateModified={UPDATED} />
 
               <div className="flex flex-wrap gap-3 mb-6">
                 <a
                   href={SOURCE_URL}
                   target="_blank"
-                  rel="nofollow noopener noreferrer"
+                  rel="sponsored nofollow noopener noreferrer"
                   className="btn-cta text-base px-8 py-4 flex items-center gap-2 group"
                 >
                   Shop BPC-157 — ${sale(product.price)}
@@ -204,7 +240,7 @@ export default function BPC157Page() {
           </div>
 
           <div className="text-center">
-            <a href={SOURCE_URL} target="_blank" rel="nofollow noopener noreferrer" className="btn-cta text-base px-10 py-4 inline-flex items-center gap-2">
+            <a href={SOURCE_URL} target="_blank" rel="sponsored nofollow noopener noreferrer" className="btn-cta text-base px-10 py-4 inline-flex items-center gap-2">
               Shop BPC-157 Now <ArrowRight className="w-5 h-5" />
             </a>
           </div>
@@ -270,7 +306,7 @@ export default function BPC157Page() {
                 <FlaskConical className="w-8 h-8 text-emerald-700 mx-auto mb-3" />
                 <h3 className="text-gray-900 font-bold mb-2">Ready to Order?</h3>
                 <p className="text-gray-500 text-sm mb-4">COA-verified, 98%+ purity, US domestic shipping.</p>
-                <a href={SOURCE_URL} target="_blank" rel="nofollow noopener noreferrer" className="btn-cta px-8 py-3 inline-flex items-center gap-2">
+                <a href={SOURCE_URL} target="_blank" rel="sponsored nofollow noopener noreferrer" className="btn-cta px-8 py-3 inline-flex items-center gap-2">
                   Buy BPC-157 <ExternalLink className="w-4 h-4" />
                 </a>
                 <p className="text-gray-600 text-xs mt-2">Affiliate link — at no extra cost to you.</p>
@@ -304,7 +340,7 @@ export default function BPC157Page() {
             <Link href="/products/bpc-157" className="btn-secondary px-8 py-3 inline-flex items-center gap-2 mr-4">
               Full Product Details <ArrowRight className="w-4 h-4" />
             </Link>
-            <a href={SOURCE_URL} target="_blank" rel="nofollow noopener noreferrer" className="btn-cta px-8 py-3 inline-flex items-center gap-2">
+            <a href={SOURCE_URL} target="_blank" rel="sponsored nofollow noopener noreferrer" className="btn-cta px-8 py-3 inline-flex items-center gap-2">
               Shop BPC-157 <ArrowRight className="w-4 h-4" />
             </a>
           </div>
@@ -353,7 +389,7 @@ export default function BPC157Page() {
             US domestic shipping. Third-party tested. Cold-chain packaging. Every batch comes with a Certificate of Analysis.
           </p>
           <div className="flex flex-wrap gap-4 justify-center mb-6">
-            <a href={SOURCE_URL} target="_blank" rel="nofollow noopener noreferrer" className="btn-cta text-base px-10 py-4 inline-flex items-center gap-2">
+            <a href={SOURCE_URL} target="_blank" rel="sponsored nofollow noopener noreferrer" className="btn-cta text-base px-10 py-4 inline-flex items-center gap-2">
               Shop BPC-157 — $54.99 <ArrowRight className="w-5 h-5" />
             </a>
             <Link href="/stacks/healing-stack" className="btn-secondary text-base px-8 py-4">

@@ -81,7 +81,7 @@ export default function TB500Page() {
                 <a
                   href={SOURCE_URL}
                   target="_blank"
-                  rel="nofollow noopener noreferrer"
+                  rel="sponsored nofollow noopener noreferrer"
                   className="btn-cta text-base px-8 py-4 flex items-center gap-2 group"
                 >
                   Shop TB-500 — ${sale(product.price)}
@@ -191,7 +191,7 @@ export default function TB500Page() {
           </div>
 
           <div className="text-center">
-            <a href={SOURCE_URL} target="_blank" rel="nofollow noopener noreferrer" className="btn-cta text-base px-10 py-4 inline-flex items-center gap-2">
+            <a href={SOURCE_URL} target="_blank" rel="sponsored nofollow noopener noreferrer" className="btn-cta text-base px-10 py-4 inline-flex items-center gap-2">
               Shop TB-500 Now <ArrowRight className="w-5 h-5" />
             </a>
           </div>
@@ -293,7 +293,7 @@ export default function TB500Page() {
             <h3 className="text-gray-900 font-bold text-lg mb-2">Get COA-Verified TB-500</h3>
             <p className="text-gray-500 text-sm mb-4">98%+ purity · US domestic shipping · cold-chain packaging</p>
             <div className="flex flex-wrap gap-3 justify-center">
-              <a href={SOURCE_URL} target="_blank" rel="nofollow noopener noreferrer" className="btn-cta px-8 py-3 inline-flex items-center gap-2">
+              <a href={SOURCE_URL} target="_blank" rel="sponsored nofollow noopener noreferrer" className="btn-cta px-8 py-3 inline-flex items-center gap-2">
                 Buy TB-500 — $59.99 <ExternalLink className="w-4 h-4" />
               </a>
               <Link href="/products/tb-500" className="btn-secondary px-6 py-3">
@@ -315,7 +315,7 @@ export default function TB500Page() {
             US domestic. COA-verified. Shipped cold. Stack with BPC-157 for maximum healing.
           </p>
           <div className="flex flex-wrap gap-4 justify-center mb-4">
-            <a href={SOURCE_URL} target="_blank" rel="nofollow noopener noreferrer" className="btn-cta text-base px-10 py-4 inline-flex items-center gap-2">
+            <a href={SOURCE_URL} target="_blank" rel="sponsored nofollow noopener noreferrer" className="btn-cta text-base px-10 py-4 inline-flex items-center gap-2">
               Shop TB-500 — $59.99 <ArrowRight className="w-5 h-5" />
             </a>
             <Link href="/bpc-157" className="btn-secondary text-base px-8 py-4">

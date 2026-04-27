@@ -3,6 +3,12 @@ import Link from 'next/link';
 import { ArrowRight, BookOpen, AlertTriangle, CheckCircle, RotateCcw, XCircle } from 'lucide-react';
 import InternalLinks from '@/components/InternalLinks';
 import DosageCalculator from '@/components/DosageCalculator';
+import MedicalReviewByline from '@/components/MedicalReviewByline';
+import { articleLd, breadcrumbLd } from '@/lib/jsonld';
+import { SITE } from '@/lib/site';
+
+const PUBLISHED = '2026-01-20';
+const UPDATED = '2026-04-27';
 
 export const metadata: Metadata = {
   title: 'Complete BPC-157 Guide 2026 | How to Use Peptides Safely | BPC-157 Stack',
@@ -98,18 +104,35 @@ export default function GuidePage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'HowTo',
-            name: 'How to Use Peptides Safely: Complete Beginner Guide',
-            description: 'The definitive beginner guide to BPC-157 and peptides. Learn how to reconstitute, dose, inject, and stack peptides safely for maximum results.',
-            step: steps.map((s, i) => ({
-              '@type': 'HowToStep',
-              position: i + 1,
-              name: s.title,
-              text: s.desc,
-            })),
-          }),
+          __html: JSON.stringify([
+            breadcrumbLd([
+              { name: 'Home', item: SITE.url },
+              { name: 'Guide', item: `${SITE.url}/guide` },
+            ]),
+            articleLd({
+              url: `${SITE.url}/guide`,
+              headline: 'Complete BPC-157 Guide: How to Use Peptides Safely',
+              description:
+                'Beginner-to-advanced reference for BPC-157 and peptides — reconstitution, dosing, injection sites, cycling, and storage. Reviewed by Prof. Alastair D. Burt.',
+              datePublished: PUBLISHED,
+              dateModified: UPDATED,
+              reviewed: true,
+              type: 'Article',
+              speakable: ['h1', 'h2'],
+            }),
+            {
+              '@context': 'https://schema.org',
+              '@type': 'HowTo',
+              name: 'How to Use Peptides Safely: Complete Beginner Guide',
+              description: 'The definitive beginner guide to BPC-157 and peptides. Learn how to reconstitute, dose, inject, and stack peptides safely for maximum results.',
+              step: steps.map((s, i) => ({
+                '@type': 'HowToStep',
+                position: i + 1,
+                name: s.title,
+                text: s.desc,
+              })),
+            },
+          ]),
         }}
       />
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -122,9 +145,12 @@ export default function GuidePage() {
           <h1 className="text-4xl sm:text-5xl font-black text-gray-900 mb-4">
             How to Use <span className="gradient-text">Peptides</span>
           </h1>
-          <p className="text-gray-700 text-lg max-w-xl mx-auto">
+          <p className="text-gray-700 text-lg max-w-xl mx-auto mb-2">
             Everything you need to know to start using BPC-157 and peptides safely and effectively.
           </p>
+          <div className="max-w-2xl mx-auto">
+            <MedicalReviewByline datePublished={PUBLISHED} dateModified={UPDATED} />
+          </div>
         </div>
 
         {/* Disclaimer */}
@@ -283,7 +309,7 @@ export default function GuidePage() {
           <h2 className="text-2xl font-bold text-gray-900 mb-3">Ready to Start?</h2>
           <p className="text-gray-900 mb-6">Get your peptides from our recommended supplier — COA verified, US domestic.</p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <a href={SOURCE_URL} target="_blank" rel="nofollow noopener noreferrer" className="btn-cta text-base px-8 py-4 flex items-center gap-2">
+            <a href={SOURCE_URL} target="_blank" rel="sponsored nofollow noopener noreferrer" className="btn-cta text-base px-8 py-4 flex items-center gap-2">
               View <ArrowRight className="w-5 h-5" />
             </a>
             <Link href="/stacks" className="btn-secondary text-base px-8 py-4">Browse Stacks</Link>

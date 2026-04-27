@@ -62,7 +62,7 @@ export default function ProductCatalogCard({ product }: { product: Product }) {
           <a
             href={product.affiliateUrl}
             target="_blank"
-            rel="nofollow noopener noreferrer"
+            rel="sponsored nofollow noopener noreferrer"
             onClick={(e) => e.stopPropagation()}
             className="text-xs font-bold px-3 py-2 rounded-lg bg-amber-500 text-gray-900 hover:bg-amber-600 transition-colors flex items-center gap-1"
           >

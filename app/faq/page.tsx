@@ -2,6 +2,12 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
 import InternalLinks from '@/components/InternalLinks';
+import MedicalReviewByline from '@/components/MedicalReviewByline';
+import { breadcrumbLd, faqLd, articleLd } from '@/lib/jsonld';
+import { SITE } from '@/lib/site';
+
+const PUBLISHED = '2026-01-12';
+const UPDATED = '2026-04-27';
 
 export const metadata: Metadata = {
   title: 'BPC-157 FAQ 2026 | Common Questions About Peptides & Protocols | BPC-157 Stack',
@@ -122,15 +128,24 @@ export default function FAQPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'FAQPage',
-            mainEntity: allFaqItems.map(({ q, a }) => ({
-              '@type': 'Question',
-              name: q,
-              acceptedAnswer: { '@type': 'Answer', text: a },
-            })),
-          }),
+          __html: JSON.stringify([
+            breadcrumbLd([
+              { name: 'Home', item: SITE.url },
+              { name: 'FAQ', item: `${SITE.url}/faq` },
+            ]),
+            faqLd(allFaqItems),
+            articleLd({
+              url: `${SITE.url}/faq`,
+              headline: 'BPC-157 & Peptide FAQ',
+              description:
+                '40+ expert-reviewed answers about BPC-157 dosing, safety, stacking, sourcing, side effects, and women-specific protocols.',
+              datePublished: PUBLISHED,
+              dateModified: UPDATED,
+              reviewed: true,
+              type: 'Article',
+              speakable: ['h1', 'h2'],
+            }),
+          ]),
         }}
       />
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -142,6 +157,9 @@ export default function FAQPage() {
           <p className="text-gray-700 text-lg max-w-xl mx-auto">
             Answers to the most common questions about BPC-157 and peptides — across {allFaqItems.length} detailed entries.
           </p>
+          <div className="max-w-2xl mx-auto">
+            <MedicalReviewByline datePublished={PUBLISHED} dateModified={UPDATED} />
+          </div>
         </div>
 
         {/* Quick Jump Navigation */}
@@ -215,7 +233,7 @@ export default function FAQPage() {
           <h2 className="text-2xl font-bold text-gray-900 mb-3">Ready to Start?</h2>
           <p className="text-gray-900 mb-6">Get COA-verified peptides from the most trusted source.</p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <a href={SOURCE_URL} target="_blank" rel="nofollow noopener noreferrer" className="btn-cta text-base px-8 py-4 flex items-center gap-2">
+            <a href={SOURCE_URL} target="_blank" rel="sponsored nofollow noopener noreferrer" className="btn-cta text-base px-8 py-4 flex items-center gap-2">
               View <ArrowRight className="w-5 h-5" />
             </a>
             <Link href="/guide" className="btn-secondary text-base px-8 py-4">Read Beginner Guide</Link>

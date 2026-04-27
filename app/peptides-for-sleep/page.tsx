@@ -176,7 +176,7 @@ export default function PeptidesForSleepPage() {
               <a
                 href={SOURCE_URL}
                 target="_blank"
-                rel="nofollow noopener noreferrer"
+                rel="sponsored nofollow noopener noreferrer"
                 className="btn-cta text-base px-8 py-4 flex items-center gap-2 group"
               >
                 Shop Sleep Peptides
@@ -327,7 +327,7 @@ export default function PeptidesForSleepPage() {
                 <a
                   href={SOURCE_URL}
                   target="_blank"
-                  rel="nofollow noopener noreferrer"
+                  rel="sponsored nofollow noopener noreferrer"
                   className="btn-cta inline-flex items-center gap-2 px-6 py-3"
                 >
                   Shop DSIP <ArrowRight className="w-4 h-4" />
@@ -374,7 +374,7 @@ export default function PeptidesForSleepPage() {
                   <a
                     href={SOURCE_URL}
                     target="_blank"
-                    rel="nofollow noopener noreferrer"
+                    rel="sponsored nofollow noopener noreferrer"
                     className="btn-cta inline-flex items-center gap-2 px-6 py-3"
                   >
                     Shop Epithalon <ArrowRight className="w-4 h-4" />
@@ -463,7 +463,7 @@ export default function PeptidesForSleepPage() {
                 <a
                   href={SOURCE_URL}
                   target="_blank"
-                  rel="nofollow noopener noreferrer"
+                  rel="sponsored nofollow noopener noreferrer"
                   className="btn-cta inline-flex items-center gap-2 px-6 py-3"
                 >
                   Shop CJC/Ipamorelin <ArrowRight className="w-4 h-4" />
@@ -622,7 +622,7 @@ export default function PeptidesForSleepPage() {
               <a
                 href={SOURCE_URL}
                 target="_blank"
-                rel="nofollow noopener noreferrer"
+                rel="sponsored nofollow noopener noreferrer"
                 className="btn-cta text-base px-10 py-4 inline-flex items-center gap-2"
               >
                 Shop All Sleep Peptides <ArrowRight className="w-5 h-5" />
@@ -671,7 +671,7 @@ export default function PeptidesForSleepPage() {
               <a
                 href={SOURCE_URL}
                 target="_blank"
-                rel="nofollow noopener noreferrer"
+                rel="sponsored nofollow noopener noreferrer"
                 className="btn-cta text-base px-10 py-4 inline-flex items-center gap-2"
               >
                 Shop Sleep Peptides <ArrowRight className="w-5 h-5" />

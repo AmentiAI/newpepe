@@ -4,6 +4,7 @@ import './globals.css';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import ChatWidget from '@/components/ChatWidget';
+import { organizationLd, websiteLd, editorialOrgLd, reviewerPersonLd } from '@/lib/jsonld';
 
 const inter = Inter({ subsets: ['latin'], display: 'swap' });
 
@@ -49,29 +50,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify([
-              {
-                '@context': 'https://schema.org',
-                '@type': 'WebSite',
-                name: 'BPC-157 Stack',
-                url: 'https://www.bp157stack.com',
-                description: 'Expert peptide stack guides and protocols for healing, anti-aging, and performance.',
-                potentialAction: {
-                  '@type': 'SearchAction',
-                  target: {
-                    '@type': 'EntryPoint',
-                    urlTemplate: 'https://www.bp157stack.com/products?q={search_term_string}',
-                  },
-                  'query-input': 'required name=search_term_string',
-                },
-              },
-              {
-                '@context': 'https://schema.org',
-                '@type': 'Organization',
-                name: 'BPC-157 Stack',
-                url: 'https://www.bp157stack.com',
-                description: 'Expert peptide stack guides and protocols for healing, anti-aging, and performance.',
-                sameAs: ['https://www.bp157stack.com'],
-              },
+              websiteLd(),
+              organizationLd(),
+              editorialOrgLd(),
+              reviewerPersonLd(),
             ]),
           }}
         />
